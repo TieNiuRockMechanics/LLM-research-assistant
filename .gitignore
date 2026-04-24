@@ -1,0 +1,10 @@
+.env
+.pqa/
+.venv/
+.packages/
+tmp/
+data/indexes/
+data/papers/*.pdf
+data/zotero-import-manifest.json
+__pycache__/
+*.pyc
