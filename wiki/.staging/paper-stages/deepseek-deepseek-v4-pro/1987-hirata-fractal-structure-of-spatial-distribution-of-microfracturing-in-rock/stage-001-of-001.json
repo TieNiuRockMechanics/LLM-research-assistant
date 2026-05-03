@@ -1,0 +1,144 @@
+{
+  "schema_version": "paper-stage-v1-2026-04-30",
+  "one_line_summary": "Spatial distribution of acoustic emission hypocentres during creep of Oshima granite is a fractal; its correlation exponent decreases from 2.75 to 2.25 as fracturing evolves, suggesting a scale-invariant process from microcracking to earthquakes.",
+  "research_question": "Is the spatial distribution of acoustic emission hypocentres in rock a fractal, and how does its fractal dimension change with the evolution of rock fracturing?",
+  "study_area_data": [
+    "Rock specimen: Oshima granite, cylinder 50 mm diameter × 100 mm long, vacuum dried then kept at room environment >2 months prior to experiment.",
+    "Confining pressure: 40 MPa; differential stress held constant at 547 MPa (~85% of fracture strength obtained at ~2×10⁻¹ MPa s⁻¹).",
+    "Fluctuations of axial stress <±0.1%, confining pressure <±0.2%."
+  ],
+  "methods": [
+    "Constant-stress (creep) fracture experiment with acoustic emission (AE) detection by 20 PZT transducers (2 MHz resonant frequency).",
+    "P-wave velocity measured both parallel and perpendicular to the loading axis to correct for anisotropy; hypocentres located using arrival times.",
+    "Correlation integral method: C(r) = (2/(N(N-1))) * N_R(R<r), where N_R is number of event pairs with distance <r; fractal dimension D from C(r) ∝ r^D.",
+    "Hypocentres grouped into primary (0–4410 s, 353 events), secondary (4410–15210 s, 273 events), and tertiary (15210–22410 s, 1438 events) creep stages."
+  ],
+  "key_findings": [
+    "The spatial distribution of AE hypocentres forms a fractal (stochastic self-similar) at all creep stages.",
+    "Fractal dimension D (correlation exponent) decreases with creep: 2.75 (primary), 2.66 (secondary), 2.25 (tertiary).",
+    "Hypocentre clusters are volumetric (not planar); orientation clustering intensifies toward failure.",
+    "The dimension of a planar section (D-1) is between 1.25 and 1.75, roughly consistent with earthquake epicentre fractal dimensions (1.0–1.6).",
+    "No correlation observed between b (of magnitude-frequency) and D, though b decreases just before failure; D appeared more sensitive for predicting main fracturing."
+  ],
+  "evidence": [
+    {
+      "evidence": "Hypocentres of 2064 acoustic emission events were located during the creep. ... The accuracy of determination of acoustic emission hypocentres was within ±2 mm.",
+      "source": "[Hirata 1987, p. 371]",
+      "conditions": "Constant stress (creep) at 40 MPa confining pressure, Oshima granite.",
+      "notes": "Breakdown of event numbers by creep stage: 353, 273, 1438."
+    },
+    {
+      "evidence": "The actual data fall on the straight lines, which indicate that the spatial distributions of acoustic emission have fractal structures.",
+      "source": "[Hirata 1987, p. 372]",
+      "conditions": "Double logarithmic plot of correlation integral vs. distance.",
+      "notes": "Straight-line fit confirms fractal nature."
+    },
+    {
+      "evidence": "The fractal dimension estimated from the slope was 2.75, 2.66 and 2.25 at the stages of primary creep, secondary creep and tertiary creep, respectively.",
+      "source": "[Hirata 1987, p. 372]",
+      "conditions": "From correlation integral slopes in 3-D for each stage.",
+      "notes": "Decrease of D indicates progressive clustering."
+    },
+    {
+      "evidence": "Since the dimension of the planar section of a fractal set with fractal dimension D in 3-D space is generally D - 1, the fractal dimension of the planar section of the acoustic emission hypocentres is between 1.75 and 1.25, roughly coinciding with the fractal dimension (1.0~ D< 1.6) of earthquake epicentres which occur within a plate.",
+      "source": "[Hirata 1987, p. 373]",
+      "conditions": "Assumes hypocentral distribution is fractal; extrapolates to planar earthquake epicentre data.",
+      "notes": "Suggests scaling between laboratory and field."
+    },
+    {
+      "evidence": "We did not observe a correlation between b and D, though b tends to decrease just before failure.",
+      "source": "[Hirata 1987, p. 373]",
+      "conditions": "Magnitude-frequency relation log N(m>M)=a−bM from maximum AE amplitude.",
+      "notes": "b-value behaviour is independent of fractal dimension in this experiment."
+    },
+    {
+      "evidence": "The fractal dimension D appeared to be more sensitive than the b-values for predicting the main fracturing.",
+      "source": "[Hirata 1987, p. 374]",
+      "conditions": "Laboratory creep test; possible shortcoming acknowledged.",
+      "notes": "Sensitivity claim is tentative; may be limited to this experiment."
+    }
+  ],
+  "limitations": [
+    "Small sample sizes for primary (353 events) and secondary (273 events) creep stages may affect D estimation stability.",
+    "Hypocentre location accuracy ±2 mm limits resolution at small scales.",
+    "Greater apparent sensitivity of D over b may be due to a shortcoming in the laboratory experiment (acknowledged by authors).",
+    "Findings are for a single rock type (Oshima granite) under specific pressure and stress conditions; generalization not tested."
+  ],
+  "assumptions_conditions": [
+    "Constant differential stress (547 MPa) at 40 MPa confining pressure simulates creep.",
+    "Acoustic emission locations assume isotropic P-wave velocity corrected with measured parallel and perpendicular velocities.",
+    "Correlation integral slope directly gives a fractal dimension (correlation exponent) representing lower limit of Hausdorff dimension.",
+    "Self-similar scaling holds over the range of distances probed (1–64 mm)."
+  ],
+  "variables_parameters": [
+    "Fractal dimension D (correlation exponent): 2.75 (primary), 2.66 (secondary), 2.25 (tertiary)",
+    "Number of events N: 353 (primary), 273 (secondary), 1438 (tertiary); total 2064",
+    "Confining pressure: 40 MPa",
+    "Differential stress: 547 MPa (~85% of fracture strength)",
+    "Rock specimen: Oshima granite, 50 mm × 100 mm cylinder",
+    "Transducers: 20 PZT, resonant frequency 2 MHz",
+    "Hypocentre accuracy: within ±2 mm",
+    "Creep stage durations: primary 0–4410 s, secondary 4410–15210 s, tertiary 15210–22410 s",
+    "P-wave velocity: measured parallel and perpendicular to loading axis",
+    "b-value: derived from log N(m>M)=a−bM, no correlation with D observed"
+  ],
+  "reusable_claims": [
+    {
+      "claim": "The spatial distribution of microfracturing hypocentres in granite under creep is a fractal, with the correlation exponent D decreasing from 2.75 to 2.25 as failure approaches.",
+      "source": "[Hirata 1987, pp. 372-374]",
+      "condition": "Under constant stress (creep) at 40 MPa confining pressure in Oshima granite; acoustic emission locations accurate to ±2 mm.",
+      "limitation": "Small event numbers for early stages; single rock type; laboratory scale."
+    },
+    {
+      "claim": "The fractal dimension of the planar section of hypocentres (D-1) is between 1.25 and 1.75, comparable to the fractal dimension of earthquake epicentres (1.0–1.6).",
+      "source": "[Hirata 1987, p. 373]",
+      "condition": "Assuming hypocentral distribution is 3-D fractal; comparing to published earthquake catalogues.",
+      "limitation": "Planar section represents a geometric idealisation; not directly observed at the same scale."
+    },
+    {
+      "claim": "The decrease in fractal dimension D may serve as a more sensitive precursor to large fracturing than b-value changes, at least in laboratory experiments.",
+      "source": "[Hirata 1987, p. 374]",
+      "condition": "Laboratory constant-stress test on Oshima granite.",
+      "limitation": "Acknowledged possible experimental shortcoming; need for field validation."
+    }
+  ],
+  "candidate_concepts": [
+    "[[fractal]]",
+    "[[stochastic self-similarity]]",
+    "[[correlation integral]]",
+    "[[fractal dimension]]",
+    "[[correlation exponent]]",
+    "[[acoustic emission]]",
+    "[[hypocentre distribution]]",
+    "[[creep stages]]",
+    "[[scale invariance]]"
+  ],
+  "candidate_methods": [
+    "[[correlation integral method]]",
+    "[[acoustic emission hypocentre location]]",
+    "[[constant-stress fracture experiment]]",
+    "[[box-counting algorithm]]"
+  ],
+  "connections": [
+    "Links microfracturing (laboratory AE) to earthquake hypocentre spatial distributions via fractal dimension, suggesting a universal scale-invariant fracturing process.",
+    "Proposes fractal dimension decrease as a possible precursor for large earthquakes, similar to changes in seismic clustering reported by Ouchi & Uekawa (1986).",
+    "Compares fractal dimension sensitivity to b-value changes in magnitude-frequency relationships."
+  ],
+  "open_questions": [
+    "Is the decrease in fractal dimension a universal and robust earthquake precursor applicable to natural fault systems?",
+    "What physical mechanisms cause the progressive clustering and fractal dimension reduction during creep?",
+    "Why did b-value not correlate with D in this experiment, and under what conditions might they co-vary?",
+    "Can the extrapolation from granite under 40 MPa to crustal earthquakes be validated with field data?"
+  ],
+  "coverage_notes": "The supplied fragments cover the abstract, introduction, experimental method, results (hypocentre maps, correlation integral plots, D values, orientation plots), and discussion including scaling to earthquakes. Limitations are only briefly acknowledged. No raw data tables or detailed sensitivity analyses are present.",
+  "_meta": {
+    "paper_id": "1987-hirata-fractal-structure-of-spatial-distribution-of-microfracturing-in-rock",
+    "stage_index": 1,
+    "stage_count": 1,
+    "source_block_count": 4,
+    "source_chars": 15696,
+    "source_signature": "4a850e3bc28adf93e4f578a803ea87bd680c7874",
+    "model": "deepseek/deepseek-v4-pro",
+    "compiled_at": "2026-04-30T22:26:01"
+  }
+}

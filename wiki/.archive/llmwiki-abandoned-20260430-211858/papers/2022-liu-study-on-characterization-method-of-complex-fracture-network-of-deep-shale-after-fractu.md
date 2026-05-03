@@ -1,0 +1,155 @@
+---
+type: "paper"
+schema_version: "paper-v2-2026-04-28"
+paper_id: "2022-liu-study-on-characterization-method-of-complex-fracture-network-of-deep-shale-after-fractu"
+title: "Study on Characterization Method of Complex Fracture Network of Deep Shale after Fracturing based on Microseismic Monitoring."
+status: "draft"
+source_pdf: "data/papers/2023 - 基于微地震监测的深层页岩压裂缝网表征方法研究.pdf"
+collections:
+  - "大论文-离散裂缝网络"
+citation: "Liu, Xing. \"Study on Characterization Method of Complex Fracture Network of Deep Shale after Fracturing based on Microseismic Monitoring.\" PhD dissertation, China University of Petroleum, Beijing, 2022."
+indexed_texts: "36"
+indexed_chars: "179214"
+compiled_model: "deepseek/deepseek-v4-pro"
+compiled_at: "2026-04-30T13:30:04"
+---
+
+# Study on Characterization Method of Complex Fracture Network of Deep Shale after Fracturing based on Microseismic Monitoring.
+
+## One-line Summary
+
+This PhD dissertation develops an integrated computer-vision-based framework to reconstruct complex fracture networks, calculate stimulated reservoir volume (SRV), and directly estimate stimulated reservoir area (SRA) from microseismic event clouds, achieving high robustness against noise (reconstruction error <20% under 50% noise for SRV and SRA) [Liu 2022, pp. 1-5].
+
+## Research Question
+
+Conventional microseismic interpretation for hydraulically fractured deep shale suffers from three main problems: (1) fracture network reconstruction models lack robustness against noise and are limited to 2D/pseudo-3D, with no quantitative validation method; (2) existing SRV envelopes contain large internal voids and low-density zones, reducing accuracy; (3) SRA estimation depends on prior network reconstruction, leading to accumulated errors and high complexity [Liu 2022, pp. 24-29]. The research aims to establish a comprehensive characterization model that directly exploits the computer‑vision properties of microseismic point clouds to solve these problems.
+
+## Study Area / Data
+
+- Physical simulation: True-triaxial fracturing experiments were performed on natural shale cores (300 mm × 300 mm × 300 mm) with two stress states (5/6/4 MPa and 18/25/12 MPa) to capture real fracture morphology and justify the use of random‑polygon models [Liu 2022, pp. 29-35].
+- Synthetic data: A simulation event‑point generator based on Monte Carlo simulation and Gaussian mixture models was built to quantitatively evaluate model performance under controlled fracture configurations and noise levels [Liu 2022, pp. 1-5] [Liu 2022, pp. 29-35].
+- Field data: A field engineering case with microseismic monitoring was described (geological background and SRV‑production correlation), but the specific location, well name, and operator are not confirmed from the provided fragments [Liu 2022, pp. 8-11].
+
+## Methods
+
+**1. Three-dimensional complex fracture network reconstruction**  
+- Fracture geometry: Real fracture boundaries from true‑triaxial experiments are generalized by a random‑polygon model to capture complex shapes [Liu 2022, pp. 29-35].  
+- Orientation identification: RANSAC (Random Sample Consensus) is applied to robustly estimate fracture attitude (dip direction, dip angle) under high noise without prior noise ratio knowledge [Liu 2022, pp. 35-40].  
+- Shape extraction: Alpha‑shape algorithm fills the boundary of events belonging to each identified fracture, generating a non‑convex polygonal fracture surface that tightly matches the point cloud [Liu 2022, pp. 35-40].  
+- Denoising: DBSCAN (Density-Based Spatial Clustering of Applications with Noise) removes isolated low‑density “dry” (non‑connected) event clusters, further improving the fit between the reconstructed network and the effective events [Liu 2022, pp. 35-40].
+
+**2. Stimulated reservoir volume (SRV) calculation**  
+Three categories of SRV models were systematically compared [Liu 2022, pp. 24-29]:  
+- Conventional envelope (convex hull, ellipsoid, shrink‑wrap) – only considers the outer boundary.  
+- Uniform voxel grid – covers the cloud with regularly sized voxels and removes void cells.  
+- Non‑uniform voxel grid – adapts grid resolution to local point density, retaining only cells that contain events.  
+Voxelization (both uniform and non‑uniform) is introduced from computer vision to achieve high‑fidelity SRV with better removal of empty and low‑density regions [Liu 2022, pp. 5-8] [Liu 2022, pp. 8-11].
+
+**3. Stimulated reservoir area (SRA) direct estimation**  
+An octree‑decomposition algorithm recursively subdivides the space into non‑empty active cubes according to the point‑cloud distribution. The SRA is computed directly from the characteristic areas of the multi‑level octree voxels, bypassing any intermediate fracture‑plane reconstruction. This avoids errors introduced by fracture‑construction assumptions and parameters [Liu 2022, pp. 5-8] [Liu 2022, pp. 11-18].
+
+**4. Validation framework**  
+Synthetic event clouds were generated by Monte Carlo sampling of complex networks defined by Gaussian mixture models, enabling quantitative comparison of reconstructed vs. true networks for varied fracture scales, orientations, and noise levels [Liu 2022, pp. 1-5].
+
+## Key Findings
+
+1. The RANSAC + Alpha‑shape + DBSCAN reconstruction method can stably handle arbitrary point‑cloud distributions and yields reconstruction errors below 20% even when 50% of the events are noise [Liu 2022, pp. 1-5].  
+2. Both uniform and non‑uniform voxel SRV models effectively eliminate empty and low‑density interior regions, and both significantly outperform traditional envelope models in accuracy, adaptability to different network configurations, and robustness to noise [Liu 2022, pp. 5-8].  
+3. At the same grid resolution, the non‑uniform voxel model provides higher SRV accuracy than the uniform voxel model [Liu 2022, pp. 5-8].  
+4. The octree‑based SRA direct estimation method achieves an average error below 20% for medium‑scale fracture networks and maintains high accuracy and robustness across different network geometries, without requiring network reconstruction [Liu 2022, pp. 5-8].
+
+## Core Evidence Table
+
+| Evidence | Source | Conditions | Notes |
+|----------|--------|------------|-------|
+| Reconstruction error <20% under 50% noise for the proposed 3D network reconstruction method (RANSAC+Alpha‑shape+DBSCAN) | [Liu 2022, pp. 1-5] | Monte Carlo synthetic point clouds with known true networks; 50% event points treated as noise. | Quantitative validation using Gaussian‑mixture‑based generator. |
+| Uniform and non‑uniform voxel SRV models remove interior voids and low‑density zones, outperforming traditional envelope models in accuracy, adaptability, and noise robustness | [Liu 2022, pp. 5-8] | Synthetic networks of various configurations; field case application. | Non‑uniform grid shows advantage at equal resolution. |
+| Non‑uniform voxel grid SRV model achieves higher accuracy than uniform voxel grid at the same resolution | [Liu 2022, pp. 5-8] | Controlled grid‑resolution comparisons. | Specific accuracy values not given in fragments. |
+| Octree‑based direct SRA estimation yields average error <20% for medium‑scale fracture networks; adaptable to different network configurations | [Liu 2022, pp. 5-8] | Synthetic validation; “medium‑scale” definition not detailed in fragments. | Model avoids intermediate fracture reconstruction. |
+
+## Limitations
+
+- The validation relied heavily on synthetic data generated by Monte Carlo and Gaussian mixture models; performance on highly heterogeneous natural fracture systems with unknown true geometries is not fully confirmed from the indexed fragments [Liu 2022, pp. 1-5].
+- The field‑application section (sec. 3.5) is mentioned but specific results, such as SRV‑production correlation strength and the exact improvement brought by the proposed models in a real reservoir, are not detailed in the provided fragments [Liu 2022, pp. 8-11].
+- The SRA direct estimation using octree decomposition assumes the microseismic cloud faithfully represents the fracture‑area structure; the effect of missing small‑scale events or systematic location biases is not discussed in the fragments.
+- The random‑polygon model, while flexible, is validated only against two true‑triaxial experiments; its representativeness for highly laminated or heavily cemented deep shale formations is not established from the available excerpts.
+
+## Assumptions / Conditions
+
+- Microseismic events are predominantly generated by shear slip at the intersection of hydraulic and natural fractures, and the event cloud delineates the spatial extent and internal structure of the connected fracture network [Liu 2022, pp. 18-24] [Liu 2022, pp. 29-35].
+- The fracture‑network geometry can be approximated by an assemblage of random polygons whose orientation and shape are captured by RANSAC and Alpha‑shape algorithms; this is supported by true‑triaxial observations [Liu 2022, pp. 29-35].
+- “Dry” (non‑connected) events manifest as low‑density, isolated clusters that can be distinguished from the connected (“wet”) fracture‑network events via DBSCAN density clustering [Liu 2022, pp. 35-40].
+- The SRV models assume that the stimulated volume corresponds to the region occupied by connected microseismic events, and that voxelization can adequately exclude void and low‑density regions without losing significant connected volume [Liu 2022, pp. 24-29].
+- For SRA estimation, the octree mesh structure extracted from the point cloud represents the equivalent fracture surface area; thus the characteristic area of non‑empty octree voxels provides a direct proxy for fracture area, eliminating the need for full fracture‑plane extraction [Liu 2022, pp. 5-8].
+- Synthetic data generation assumes that microseismic events can be modeled as samples from Gaussian mixture components placed along the true fracture planes, allowing controllable validation [Liu 2022, pp. 1-5].
+
+## Key Variables / Parameters
+
+- **Alpha‑shape contraction factor** (k): relates alpha‑radius to maximum/minimum alpha values; typically set below 0.5 to obtain smooth boundaries [Liu 2022, pp. 35-40].
+- **RANSAC inlier threshold**: defines the maximum distance for a point to be considered compatible with a hypothesized fracture plane; controls the balance between capturing points and excluding noise.
+- **DBSCAN parameters**: (eps, minPts) for density‑based clustering, used to separate connected network points from isolated dry events.
+- **Voxel grid resolution**: controls the size of uniform or base‑level non‑uniform cells; sensitivity analysis performed for both SRV models [Liu 2022, pp. 8-11].
+- **Octree subdivision level**: determines the depth of recursive decomposition and hence the granularity of the SRA estimate; specific optimal levels not reported in fragments.
+- **Noise ratio**: proportion of contaminating “dry” events or random noise, up to 50% in validation simulations [Liu 2022, pp. 1-5].
+- **Fracture network configuration parameters**: number of fractures, scale, dip angles used to test model adaptability and robustness [Liu 2022, pp. 8-11].
+
+## Reusable Claims
+
+1. **Claim**: A 3D fracture network reconstruction method combining RANSAC orientation fitting, Alpha‑shape boundary extraction, and DBSCAN density‑based denoising can achieve stable reconstruction error below 20% when up to 50% of microseismic events are noise.  
+   *Conditions*: Applies to microseismic point clouds from multi‑stage hydraulic fracturing in shale; assumes fractures can be modeled as random polygons and that noise events are spatially separable by density.  
+   *Evidence*: Monte Carlo simulations with known truth networks [Liu 2022, pp. 1-5].  
+   *Limitation*: Validation is synthetic; field‑scale performance on real, heterogeneous fracture systems is not confirmed from the provided fragments.
+
+2. **Claim**: Voxel‑based SRV models (uniform or non‑uniform) systematically outperform traditional boundary‑envelope models in accuracy, adaptability to different fracture configurations, and robustness to noise, because they exclude interior void and low‑density regions.  
+   *Conditions*: Requires microseismic event clouds where stimulation is indicated by event density; the voxel cell size must be chosen appropriately via sensitivity analysis.  
+   *Evidence*: Comparative simulations across multiple network numbers, scales, and dip angles, plus a field example [Liu 2022, pp. 5-8] [Liu 2022, pp. 8-11].  
+   *Limitation*: The superiority of the non‑uniform over the uniform grid is demonstrated at the same resolution, but the optimal resolution selection criteria are not fully detailed in fragments.
+
+3. **Claim**: A direct SRA estimation method using octree decomposition of the microseismic point cloud can compute complex fracture‑network area without any intermediate network reconstruction, with an average error below 20% for medium‑scale networks.  
+   *Conditions*: The point cloud adequately samples the fracture surfaces; the characteristic area of non‑empty octree cells serves as a proxy for fracture area.  
+   *Evidence*: Simulation studies [Liu 2022, pp. 5-8].  
+   *Limitation*: The definition of “medium‑scale” and the performance on very dense or sparse networks are not specified in the fragments; field‑data verification is not included in the indexed excerpts.
+
+4. **Claim**: A simulation event‑point generator based on Gaussian mixture models and Monte Carlo sampling can be used to quantitatively validate fracture‑network characterization methods when the true network is unknown.  
+   *Conditions*: The true fracture network is represented as a set of planes or polygons from which events are probabilistically sampled.  
+   *Evidence*: The framework is used to produce the error metrics reported throughout the dissertation [Liu 2022, pp. 1-5].  
+   *Limitation*: The generator assumes events are clustered along planes; it may not capture complex event‑producing mechanisms (e.g., distributed volumetric shear) if they deviate from planar clustering.
+
+## Candidate Concepts
+
+- [[microseismic monitoring]]
+- [[hydraulic fracturing]]
+- [[complex fracture network]]
+- [[stimulated reservoir volume (SRV)]]
+- [[stimulated reservoir area (SRA)]]
+- [[random sample consensus (RANSAC)]]
+- [[alpha shape]]
+- [[DBSCAN]]
+- [[octree decomposition]]
+- [[Gaussian mixture model]]
+- [[voxelization]]
+- [[deep shale reservoir]]
+
+## Candidate Methods
+
+- [[RANSAC-based fracture orientation identification]]
+- [[Alpha-shape-based fracture boundary extraction]]
+- [[DBSCAN-based dry event removal]]
+- [[Uniform voxel-grid SRV computation]]
+- [[Non-uniform voxel-grid SRV computation]]
+- [[Octree-based direct SRA estimation]]
+- [[Monte Carlo synthetic microseismic generation]]
+
+## Connections To Other Work
+
+- The dissertation places its work in the context of earlier microseismic‑based fracture interpretation: Fisher’s time‑series linear fitting [Fisher, 35-36], Warpinski’s orthogonal grid fitting [Warpinski, 38], Hugot’s shortest‑path rule [Hugot, 39], and Hough‑transform‑based extraction [55], as cited in the literature review [Liu 2022, pp. 18-24]. It also discusses SRV estimation via discrete bins [Mayerhofer, 78], bubble envelopes [Cipolla, 79], geocellular volumes [Williams‑Stroud, 52], and convex/concave polygons [Lin, 82], showing that existing envelope methods suffer from low tightness with the point cloud [Liu 2022, pp. 24-29]. Connections are therefore candidate thematic links rather than direct methodological extensions: the proposed work advances from 2D/pseudo‑3D to full 3D computer‑vision approaches, and from indirect to direct SRA estimation.
+
+## Open Questions
+
+- The field‑scale validation of the methods on multiple shale plays with independent fracture diagnostics (e.g., fiber‑optic sensing, production logging) is not reported in the indexed fragments.
+- The sensitivity of the octree SRA method to event location uncertainty and to the choice of minimum voxel size is not detailed.
+- The interaction between SRV grid resolution and production forecasting accuracy, as well as the criteria for selecting uniform vs. non‑uniform grids in practical operations, remains unaddressed in the provided excerpts.
+
+## Source Coverage
+
+This wiki page is based on 36 indexed fragments from the dissertation, including the abstract, innovation points, table of contents (showing chapter structure), portions of Chapter 1 (introduction and literature review), Chapter 2 (fracture network reconstruction), and Chapter 3 (SRV models). Coverage is biased toward the problem statement and methodological overview. Detailed quantitative results from the sensitivity analyses, the full field case study (sec. 3.5), and the complete SRA chapter (Chapter 4) are only partially represented; specific parameter values, error distributions, and practical recommendations are absent from the fragments. Therefore, the page may miss nuanced performance comparisons and the full scope of engineering implications.

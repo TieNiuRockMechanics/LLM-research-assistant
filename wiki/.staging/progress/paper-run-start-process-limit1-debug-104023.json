@@ -1,0 +1,23 @@
+{
+  "run_id": "start-process-limit1-debug-104023",
+  "updated_at": "2026-05-01T10:40:35",
+  "phase": "done",
+  "status": "completed",
+  "total_records": 1,
+  "completed": 0,
+  "skipped_complete": 1,
+  "skipped_over_budget": 0,
+  "failed": 0,
+  "remaining": 0,
+  "counts": {
+    "papers": 8,
+    "concepts": 0,
+    "methods": 0,
+    "claims": 0,
+    "syntheses": 0,
+    "open-questions": 0,
+    "inbox": 0
+  },
+  "problems": [],
+  "warnings": []
+}

@@ -1,0 +1,181 @@
+{
+  "schema_version": "paper-stage-v1-2026-04-30",
+  "one_line_summary": "Field experiment at the Rangely oil field demonstrated that earthquake frequency correlates closely with pore fluid pressure, confirming that fluid injection can trigger earthquakes and that pressure reduction can control them, consistent with the Hubbert-Rubey effective stress principle.",
+  "research_question": "Can earthquake activity be controlled by varying fluid pressure in a stressed fault zone, and does the Hubbert-Rubey effective stress law accurately predict the critical pressure for triggering?",
+  "study_area_data": [
+    "Rangely Oil Field, Colorado – a doubly plunging anticline in Mesozoic and Paleozoic sedimentary rocks with Mancos shale at surface [Raleigh 1976, pp. 1-1].",
+    "Weber sandstone reservoir: dense, fine-grained, porosity 12%, average permeability 1 millidarcy, depth about 1700 m [Raleigh 1976, pp. 1-2].",
+    "A subsurface fault trending N50°E, right-lateral strike-slip, with 10–15 m vertical displacement and no clear surface expression [Raleigh 1976, pp. 1-1–1-2].",
+    "Seismicity concentrated in two clusters along the fault, depths 2.0–2.5 km (northeast) and ~3.5 km (southwest), with focal mechanisms indicating right-lateral slip on subvertical planes [Raleigh 1976, pp. 2-3, 3-4].",
+    "Maximum compressive stress approximately east-west, consistent with right-lateral motion on N50°E faults [Raleigh 1976, pp. 4-5].",
+    "Waterflooding for secondary oil recovery since 1957; reservoir pressures up to 290 bars by 1967 [Raleigh 1976, pp. 1-2]."
+  ],
+  "methods": [
+    "Installation of a 14-station short-period vertical seismometer network with telemetry to Menlo Park, continuously recording from October 1969 [Raleigh 1976, pp. 2-3].",
+    "Precise hypocenter location using a flat-layered velocity model optimized to minimize P-wave arrival residuals; station corrections applied [Raleigh 1976, pp. 2-3].",
+    "Magnitude estimation from signal duration using M = 1.8 log(t) - 1.0; only events with coda > 2 s located (M > -0.5) [Raleigh 1976, pp. 2-3].",
+    "In-situ stress measurement by hydraulic fracturing in a well at 2 km depth in the Weber sandstone, with breakdown and shut-in pressures analyzed to derive S₁, S₂, S₃ [Raleigh 1976, pp. 3-4].",
+    "Laboratory experiments on Weber sandstone cores to determine tensile strength (100 bars at 3 bars/s pressurization rate) and static friction coefficient (μ = 0.81) [Raleigh 1976, pp. 3-4].",
+    "Reservoir pressure monitoring via surface transducers in five shut-in wells and monthly bottom-hole surveys [Raleigh 1976, pp. 4-5].",
+    "Reservoir simulation with a single-phase finite-difference model to compute pressure distributions in the field [Raleigh 1976, pp. 4-5].",
+    "Controlled fluid pressure variation: alternating injection and backflow from four wells to adjust bottom-hole pressure around the predicted critical value [Raleigh 1976, pp. 5-6]."
+  ],
+  "key_findings": [
+    "Earthquake frequency closely tracked fluid pressure changes: when pressure dropped from 275 to 203 bars, seismicity within 1 km of wells fell from 28 to 1 event/month [Raleigh 1976, pp. 5-6].",
+    "When pressure was raised above the predicted critical value of 257 bars in 1972–1973, seismicity rose to 6 then 26 events/month; after backflowing began on 6 May 1973, no earthquakes were recorded within 1 km of the injection wells [Raleigh 1976, pp. 6-7].",
+    "The observed critical fluid pressure agreed with the value predicted from in-situ stress measurements and laboratory friction using the Hubbert-Rubey effective stress criterion (Pc = 257 bars) [Raleigh 1976, pp. 3-4, 5-6].",
+    "The fault zone is not a single plane but a broad zone of subparallel fractures, as epicentral zone width (>1 km) exceeds relative location error (~0.3 km) [Raleigh 1976, pp. 3-4].",
+    "Rapid pressure communication (e.g., within 1 day) between injection wells and the fault zone enabled immediate cessation of seismicity upon backflowing [Raleigh 1976, pp. 5-6, 6-7]."
+  ],
+  "evidence": [
+    {
+      "evidence": "From October 1969 to 10 November 1970, injection raised bottom-hole pressure from 235 to 275 bars; more than 900 earthquakes occurred in the field, 367 of them within 1 km of the four injection wells.",
+      "source": "Raleigh 1976, pp. 5-6",
+      "conditions": "Injection into four wells in the Weber sandstone, pressure measured at well Fee69.",
+      "notes": "Establishes baseline seismicity correlated with high pressure."
+    },
+    {
+      "evidence": "After backflowing began in November 1970, pressure in Fee69 dropped from 275 to 203 bars in 6 months, and seismic activity within 1 km fell from an average of 28 earthquakes per month to about 1 per month.",
+      "source": "Raleigh 1976, pp. 5-6",
+      "conditions": "Pressure reduction by backflowing from the same wells.",
+      "notes": "First demonstration of seismicity reduction by pressure decrease."
+    },
+    {
+      "evidence": "Between October 1972 (when bottom-hole pressure first exceeded 257 bars) and January 1973 (pressure 275 bars), monthly earthquake average near the wells rose to 6; from January to April 1973 at ~280 bars, it was 26.",
+      "source": "Raleigh 1976, pp. 6-7",
+      "conditions": "Pressure exceeded predicted critical value of 257 bars.",
+      "notes": "Repeats and confirms triggering threshold."
+    },
+    {
+      "evidence": "On 6 May 1973, backflowing was begun; since that day no earthquakes have been recorded within 1 km of the bottom of the four injection wells, and only one earthquake per month along the fault zone to the southwest.",
+      "source": "Raleigh 1976, pp. 6-7",
+      "conditions": "Pressure reduced below critical threshold.",
+      "notes": "Strongest evidence for control; seismicity stopped immediately."
+    },
+    {
+      "evidence": "Hydraulic fracturing gave S₁ = 552 bars, S₂ = 427 bars, S₃ = 314 bars; resolved shear stress on fault 72 bars, normal stress 342 bars; with μ = 0.81, critical fluid pressure for triggering computed as Pc = 257 bars.",
+      "source": "Raleigh 1976, pp. 3-4",
+      "conditions": "At 2 km depth in Weber sandstone, using lab-measured friction coefficient and tensile strength.",
+      "notes": "Quantitative prediction of threshold."
+    },
+    {
+      "evidence": "Focal plane solutions show a bimodal distribution of nearly vertical nodal planes; the set parallel to epicentral trend and subsurface fault indicates right-lateral strike-slip with slip direction plunging 10°–20° to the southwest.",
+      "source": "Raleigh 1976, pp. 3-4",
+      "conditions": "Compressional wave first-motion data from local network.",
+      "notes": "Confirms fault geometry and slip sense."
+    },
+    {
+      "evidence": "Calibration shot at 2000 m depth located 200–300 m north of its true position, demonstrating a systematic northward bias in earthquake locations due to lateral velocity variations and pressure-induced changes.",
+      "source": "Raleigh 1976, pp. 2-3",
+      "conditions": "Flat-layered isotropic velocity model used for routine locations.",
+      "notes": "Important limitation for interpreting earthquake maps."
+    }
+  ],
+  "limitations": [
+    "Earthquake locations have a systematic northward bias of 200–300 m due to lateral velocity variations and pressure-induced velocity changes; locations are uncorrected [Raleigh 1976, pp. 2-3].",
+    "No seismic data from before waterflooding (started 1957) to establish a baseline of natural seismicity [Raleigh 1976, pp. 1-2].",
+    "The vertical distribution of fluid pressure is not known, only horizontal pressure distributions are modeled [Raleigh 1976, pp. 5-6].",
+    "Fault permeability at seismogenic depths is uncertain; rapid communication was demonstrated only within the immediate injection area [Raleigh 1976, pp. 6-7, 7-8].",
+    "The pressure-controlled region is limited to a small fault segment; the experiment does not prove control over large ruptures [Raleigh 1976, pp. 6-7].",
+    "Magnitude estimation is based on signal duration; events with M < -0.5 could not be reliably located [Raleigh 1976, pp. 2-3].",
+    "Reinjection after initial backflow did not immediately restore high seismicity, suggesting incomplete understanding of pressure recovery or stressing [Raleigh 1976, pp. 5-6]."
+  ],
+  "assumptions_conditions": [
+    "Earthquake triggering follows the Hubbert-Rubey effective stress law: shear failure when τ > μ(σ_n - P) [Raleigh 1976, pp. 1-1, 5-6].",
+    "Bottom-hole pressure in well Fee69 is representative of fluid pressure in the seismogenic fault zone [Raleigh 1976, pp. 5-6].",
+    "The fault is a broad zone of subparallel fractures, not a single plane [Raleigh 1976, pp. 3-4].",
+    "In hydraulic fracturing, the tensile strength of Weber sandstone is 100 bars at a pressurization rate of 3 bars/s, as determined by lab tests [Raleigh 1976, pp. 3-4].",
+    "Friction coefficient μ = 0.81 measured in laboratory on Weber sandstone is applicable in-situ [Raleigh 1976, pp. 3-4].",
+    "The reservoir model uses single-phase flow with variable compressibility, ignoring multiphase effects of oil, gas, and water [Raleigh 1976, pp. 4-5]."
+  ],
+  "variables_parameters": [
+    "Bottom-hole fluid pressure (P), bars; predicted critical pressure Pc = 257 bars",
+    "Principal stresses: S₁ = 552, S₂ = 427, S₃ = 314 bars; shear stress on fault τ = 72 bars; normal stress σ_n = 342 bars",
+    "Friction coefficient μ = 0.81; tensile strength T = 100 bars",
+    "Seismicity rate: number of earthquakes per month within 1 km of experimental wells",
+    "Magnitude: M = 1.8 log(t) - 1.0 (t = signal duration in seconds); b-values: 0.81 (SW cluster), 0.96 (NE cluster)",
+    "Reservoir transmissibility ~15,000–30,000 mD·cm; permeability anisotropy factor 5",
+    "Pressurization rate in hydraulic fracturing: 3 bars/s",
+    "Depth of injection horizon (Weber sandstone): ~1700 m; earthquake focal depths: 2.0–3.5 km"
+  ],
+  "reusable_claims": [
+    {
+      "claim": "Increasing pore fluid pressure in a critically stressed fault reduces effective normal stress and can trigger earthquakes.",
+      "source": "Raleigh 1976, pp. 5-6",
+      "condition": "Shear stress on the fault must exceed μ(σ_n - P); fault zone must be sufficiently permeable to allow pressure transmission.",
+      "limitation": "Demonstrated on a small fault segment; scaling to large plate-boundary faults uncertain."
+    },
+    {
+      "claim": "Reducing fluid pressure by withdrawing water from a fault zone can stop earthquake activity within days.",
+      "source": "Raleigh 1976, pp. 6-7",
+      "condition": "Pressure can be lowered below the critical threshold across the entire seismogenic patch.",
+      "limitation": "Only confirmed at shallow depth (~2 km) and over a limited area; unknown for deeper crustal faults."
+    },
+    {
+      "claim": "The critical pore pressure for triggering slip can be predicted from in-situ stress measurements and laboratory friction tests using the Hubbert-Rubey criterion Pc = σ_n – (τ/μ).",
+      "source": "Raleigh 1976, pp. 3-4",
+      "condition": "Complete stress tensor and fault friction coefficient are accurately known.",
+      "limitation": "Requires reliable stress measurements; lateral stress heterogeneity may reduce accuracy."
+    },
+    {
+      "claim": "Right-lateral strike-slip faulting on N50°E planes is consistent with an approximately east-west maximum compressive stress direction.",
+      "source": "Raleigh 1976, pp. 3-4, 4-5",
+      "condition": "Stress orientation confirmed by hydraulic fracturing and regional data.",
+      "limitation": "Only one fault segment analyzed; may not represent all faults in the area."
+    },
+    {
+      "claim": "Earthquake swarms on a fault may arise from a broad zone of subparallel fractures rather than a single discrete plane.",
+      "source": "Raleigh 1976, pp. 3-4",
+      "condition": "Epicentral zone width significantly larger than relative location error.",
+      "limitation": "Observation from one oil field; other settings may exhibit different fault zone architectures."
+    }
+  ],
+  "candidate_concepts": [
+    "[[induced seismicity]]",
+    "[[effective stress]]",
+    "[[earthquake control]]",
+    "[[Hubbert-Rubey failure criterion]]",
+    "[[hydraulic fracturing stress measurement]]",
+    "[[reservoir-induced seismicity]]",
+    "[[fault permeability]]",
+    "[[seismic swarm]]",
+    "[[b-value]]",
+    "[[focal mechanism]]",
+    "[[pore pressure diffusion]]",
+    "[[fault strengthening]]"
+  ],
+  "candidate_methods": [
+    "[[microearthquake monitoring network]]",
+    "[[hypocenter location by velocity model optimization]]",
+    "[[signal duration magnitude estimation]]",
+    "[[in-situ stress measurement by hydraulic fracturing]]",
+    "[[laboratory friction and tensile strength testing]]",
+    "[[reservoir pressure simulation with finite-difference model]]",
+    "[[bottom-hole pressure monitoring]]",
+    "[[controlled injection and backflow experiment]]"
+  ],
+  "connections": [
+    "Built on the 1966 discovery that fluid injection at the Rocky Mountain Arsenal triggered earthquakes near Denver; Rangely tested the effective stress hypothesis conclusively [Raleigh 1976, pp. 1-1].",
+    "Reservoir-induced seismicity (e.g., from large dams) is mentioned as analogous, where fluid pressure increases in faults likely trigger earthquakes [Raleigh 1976, pp. 6-7].",
+    "The paper speculates that the same principles could be applied to control earthquakes on large faults like the San Andreas by creating pressure barriers and inducing small slips [Raleigh 1976, pp. 7-8]."
+  ],
+  "open_questions": [
+    "What is the permeability of fault zones at seismogenic depths (5–15 km), and can fluid pressure be effectively manipulated there? [Raleigh 1976, pp. 7-8]",
+    "Can earthquake control be scaled to major, plate-boundary faults without inducing damaging events? [Raleigh 1976, pp. 7-8]",
+    "How do temperature, mineralogy, and fluid chemistry affect fault strength and pressure transmission? [Raleigh 1976, pp. 7-8]",
+    "How do lateral variations in stress and fluid pressure influence the predictability of the critical pore pressure? [Raleigh 1976, pp. 3-4]",
+    "Can seismic barriers created by fluid withdrawal permanently arrest a rupture, or do stress concentrations eventually overcome them? [Raleigh 1976, pp. 7-8]",
+    "What is the long-term stability of a pressure-controlled fault segment after repeated injection-withdrawal cycles? [Raleigh 1976, pp. 5-6]"
+  ],
+  "coverage_notes": "The extracted fragments cover the full paper: introduction and motivation (Denver), site description (Rangely field geology, fault, reservoir), seismic monitoring and location methods, stress measurement and failure criterion, reservoir pressure modeling, the two-cycle injection-withdrawal experiment with seismicity statistics, discussion of results and implications for earthquake control, and speculations on San Andreas applications. All core experimental evidence is included.",
+  "_meta": {
+    "paper_id": "1976-raleigh-the-rangely-field-an-experiment-in-earthquake-control-at-rangely-colorado",
+    "stage_index": 1,
+    "stage_count": 1,
+    "source_block_count": 9,
+    "source_chars": 43483,
+    "source_signature": "674c980a2d8223b25373b29fdc8c8c108f66aed9",
+    "model": "deepseek/deepseek-v4-pro",
+    "compiled_at": "2026-04-30T22:08:48"
+  }
+}

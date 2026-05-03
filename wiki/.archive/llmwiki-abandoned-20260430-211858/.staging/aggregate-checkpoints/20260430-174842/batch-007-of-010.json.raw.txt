@@ -1,0 +1,521 @@
+{
+  "concepts": [
+    {
+      "name": "离散裂缝网络",
+      "slug": "discrete-fracture-network",
+      "definition": "采用随机或确定性分布描述裂缝位置、方位、长度、开度等几何参数的裂缝系统模型，用于分析岩体连通性与流动传输。",
+      "aliases": ["DFN"],
+      "boundary": "适用于裂缝主导的渗透介质，不适用于基质孔隙流主导的储层。",
+      "related_methods": ["fracture-pipe-network-model", "dfn-generation-from-microseismic", "graph-global-efficiency"],
+      "related_claims": ["dfn-connectivity-evaluated-via-global-efficiency", "2d-connected-cluster-indicates-3d-percolation", "3d-dfn-connectivity-better-than-2d"],
+      "sources": ["2021-xu-裂隙网络对岩体试件单轴压缩力学特性影响研究", "2021-zhu-impact-of-fracture-geometry-and-topology-on-the-connectivity-and-flow-properties-of-sto", "2022-he-numerical-evaluation-of-heat-extraction-performance-in-enhanced-geothermal-system-consid", "2022-unknown-can-we-infer-the-percolation-status-of-3d-fractured-media-from-2d-outcrops", "2022-wang-improvements-to-the-fracture-pipe-network-model-for-complex-3d-discrete-fracture-netwo"]
+    },
+    {
+      "name": "热冲击",
+      "slug": "thermal-shock",
+      "definition": "高温岩石与低温流体接触时，因急剧温差产生热应力，导致微裂纹萌生和扩展的过程。",
+      "aliases": ["thermal shock", "thermal cycling"],
+      "boundary": "仅适用于快速冷却过程；缓慢冷却或自然冷却的损伤机制不同，不属于热冲击。",
+      "related_methods": ["water-cooling-treatment", "liquid-nitrogen-cooling"],
+      "related_claims": ["first-cycle-damage-largest", "water-cooling-more-severe-than-air-cooling", "thermal-damage-threshold-400c"],
+      "sources": ["2021-yu-mechanical-test-of-granite-with-multiple-water-thermal-cycles", "2021-zhang-macroscopic-and-microscopic-experimental-research-on-granite-properties-after-high-te", "2022-ge-thermal-damage-and-mechanical-properties-of-high-temperature-sandstone-with-cyclic-heati", "2022-li-experimental-studies-on-the-effect-of-cyclic-thermal-shock-and-cooling-methods-on-the-me"]
+    },
+    {
+      "name": "裂缝粗糙度",
+      "slug": "fracture-roughness",
+      "definition": "节理或裂缝表面的不规则起伏程度，常用JRC或基于多形态参数综合的FRC表征。",
+      "aliases": ["joint roughness", "FRC"],
+      "boundary": "适用于剪切强度模型和裂缝水力传导性评估；粗糙度对力学开度的影响受限于闭合效应。",
+      "related_methods": ["fuzzy-comprehensive-evaluation-roughness"],
+      "related_claims": ["frc-higher-than-jrc", "rough-fracture-reduces-heat-extraction"],
+      "sources": ["2021-zhao-shear-related-roughness-classification-and-strength-model-of-natural-rock-joint-based", "2022-he-numerical-evaluation-of-heat-extraction-performance-in-enhanced-geothermal-system-consid"]
+    },
+    {
+      "name": "逾渗",
+      "slug": "percolation",
+      "definition": "裂缝网络形成跨越系统边界的连通团，从而使流体能够流动的几何状态。",
+      "aliases": ["percolation threshold"],
+      "boundary": "几何逾渗仅考虑裂缝交切关系，不考虑开度、应力及充填等水力效应。",
+      "related_methods": ["dfn-generation"],
+      "related_claims": ["2d-connected-cluster-indicates-3d-percolation"],
+      "sources": ["2022-unknown-can-we-infer-the-percolation-status-of-3d-fractured-media-from-2d-outcrops"]
+    },
+    {
+      "name": "热-水-力耦合",
+      "slug": "thm-coupling",
+      "definition": "温度、流体压力和岩石力学变形之间的双向耦合过程，是地热储层长期行为模拟的核心。",
+      "aliases": ["THM coupling"],
+      "boundary": "适用于高温、流体饱和的裂隙岩体；忽略化学作用时为THM，加入化学作用时为THMC。",
+      "related_methods": ["finite-element-thm-model"],
+      "related_claims": ["cooling-induced-contraction-drives-late-fracture-activation"],
+      "sources": ["2022-he-numerical-evaluation-of-heat-extraction-performance-in-enhanced-geothermal-system-consid", "2022-jiang-fracture-activation-and-induced-seismicity-during-long-term-heat-production-in-fractu", "2022-viswanathan-from-fluid-flow-to-coupled-processes-in-fractured-rock-recent-advances-and-new"]
+    },
+    {
+      "name": "分形维数",
+      "slug": "fractal-dimension",
+      "definition": "描述裂缝空间分布或表面粗糙程度的分形特性参数，如相关维数D₂用于表征裂缝聚类程度。",
+      "aliases": ["fractal dimension"],
+      "boundary": "适用于符合幂律标度的裂缝分布；当尺度超出幂律范围或数据不完整时不适用。",
+      "related_methods": ["normalized-correlation-integral"],
+      "related_claims": ["fracture-spatial-distribution-fractal-behavior-d2-0.85-0.9"],
+      "sources": ["2022-afshari-moein-fractal-characteristics-of-fractures-in-crystalline-basement-rocks-insights-f", "2022-unknown-can-we-infer-the-percolation-status-of-3d-fractured-media-from-2d-outcrops", "2021-zhou-thermal-experiments-for-fractured-rock-characterization-theoretical-analysis-and-inver"]
+    },
+    {
+      "name": "增强型地热系统",
+      "slug": "enhanced-geothermal-system",
+      "definition": "通过人工改造低渗热储（如干热岩）以增强流体循环和热能提取的系统。",
+      "aliases": ["EGS"],
+      "boundary": "目标为温度>180°C、渗透率极低的岩体；不适用于天然高渗水热系统。",
+      "related_methods": ["hydraulic-stimulation", "thermal-stimulation"],
+      "related_claims": ["egs-reservoir-heterogeneity-controls-thermal-breakthrough"],
+      "sources": ["2022-kang-增强地热系统研究现状-挑战与机遇", "2022-he-numerical-evaluation-of-heat-extraction-performance-in-enhanced-geothermal-system-consid", "2022-jiang-fracture-activation-and-induced-seismicity-during-long-term-heat-production-in-fractu"]
+    },
+    {
+      "name": "温度阈值损伤",
+      "slug": "thermal-damage-threshold",
+      "definition": "岩石在加热过程中，物理力学性质开始显著劣化的临界温度，常见于400°C左右。",
+      "aliases": [],
+      "boundary": "依赖于岩石类型和矿物组成；不同岩性阈值不同，例如花岗岩与砂岩有差异。",
+      "related_methods": [],
+      "related_claims": ["thermal-damage-threshold-400c"],
+      "sources": ["2022-li-effect-of-thermal-treatment-on-the-physical-and-mechanical-properties-of-sandstone-insig", "2022-ge-thermal-damage-and-mechanical-properties-of-high-temperature-sandstone-with-cyclic-heati", "2022-pathiranagei-investigation-of-the-microstructural-characteristics-of-heated-sandstone-by-mi"]
+    },
+    {
+      "name": "冷却方式",
+      "slug": "cooling-methods",
+      "definition": "岩石加热后降温的介质类型（空气、水、液氮、高粘度液体等），显著影响热损伤程度。",
+      "aliases": [],
+      "boundary": "不同冷却介质产生的热传递速率和温度梯度不同；适用条件取决于工程场景。",
+      "related_methods": ["air-cooling", "water-cooling", "liquid-nitrogen-cooling"],
+      "related_claims": ["water-cooling-more-severe-than-air-cooling", "ln2-cooling-enhances-damage-vs-air-cooling"],
+      "sources": ["2021-zhu-changes-in-thermomechanical-properties-due-to-air-and-water-cooling-of-hot-dry-granite", "2022-fan-evaluation-of-the-effects-of-three-different-cooling-methods-on-the-dynamic-mechanical", "2022-pan-experimental-studies-on-the-physical-and-mechanical-properties-of-heated-rock-by-air-wa"]
+    },
+    {
+      "name": "岩心饼化",
+      "slug": "core-discing",
+      "definition": "深钻孔岩心在应力解除过程中断裂成饼状的现象，可用于估计原位地应力。",
+      "aliases": ["core discing"],
+      "boundary": "适用于高应力环境下脆性岩石的岩心；饼化裂缝形态受岩性、应力路径控制。",
+      "related_methods": ["diametrical-core-deformation-analysis"],
+      "related_claims": ["dcd-estimates-sig-hmax-direction-consistent-with-borehole-breakouts"],
+      "sources": ["2021-ziegler-evaluation-of-the-diametrical-core-deformation-and-discing-analyses-for-in-situ-str", "2022-gao-discing-behavior-and-mechanism-of-cores-extracted-from-songke-2-well-at-depths-below-4"]
+    },
+    {
+      "name": "微震监测",
+      "slug": "microseismic-monitoring",
+      "definition": "通过记录水力压裂诱发的微震事件反演裂缝网络几何和储层改造体积的技术。",
+      "aliases": [],
+      "boundary": "适用于能产生可记录微震信号的压裂作业；微震定位精度依赖于速度模型。",
+      "related_methods": ["ransac-alpha-shape-dbscan-reconstruction"],
+      "related_claims": ["microseismic-reconstruction-robust-against-50-percent-noise"],
+      "sources": ["2022-liu-study-on-characterization-method-of-complex-fracture-network-of-deep-shale-after-fractu"]
+    },
+    {
+      "name": "岩石热损伤本构模型",
+      "slug": "thermal-damage-constitutive-model",
+      "definition": "基于损伤力学和统计强度理论建立的描述岩石在热力耦合下变形破坏过程的本构关系。",
+      "aliases": [],
+      "boundary": "模型通常假设微元体强度服从Weibull分布，适用于热损伤各向同性近似。",
+      "related_methods": ["weibull-distribution-damage-model"],
+      "related_claims": ["thermal-damage-variable-based-on-p-wave-velocity-effective"],
+      "sources": ["2022-cao-damage-deterioration-mechanism-and-damage-constitutive-modelling-of-red-sandstone-under", "2022-chen-damage-evaluation-and-statistic-constitutive-model-of-high-temperature-granites-subjec", "2022-meng-study-on-the-effect-of-sandstone-microscopic-damage-and-dynamic-compressive-properties"]
+    }
+  ],
+  "methods": [
+    {
+      "name": "合成岩体模型",
+      "slug": "synthetic-rock-mass-model",
+      "purpose": "构建含离散裂隙网络的岩体数值模型，模拟裂隙对宏观力学行为的影响。",
+      "workflow": "采用平直节理模型（FJBM）模拟完整岩石，用光滑节理模型（SJM）模拟裂隙，嵌入离散裂隙网络（DFN）进行力学测试。",
+      "inputs": ["岩石基质微观参数", "DFN几何参数（密度P21，倾角等）"],
+      "outputs": ["单轴抗压强度", "变形模量", "破坏模式", "微裂隙数量"],
+      "assumptions": ["二维平面应变假设", "平直节理粘结模型适用于拉压强度比"],
+      "strengths": ["可独立控制基质和裂隙的性质", "能复现实验室标定的宏观参数"],
+      "limitations": ["二维模型无法完全反映三维裂隙网络几何", "裂隙的力学参数未充分标定"],
+      "related_concepts": ["discrete-fracture-network"],
+      "sources": ["2021-xu-裂隙网络对岩体试件单轴压缩力学特性影响研究"]
+    },
+    {
+      "name": "贝叶斯推断 + DNN代理模型",
+      "slug": "bayesian-inversion-dnn-surrogate",
+      "purpose": "通过热示踪实验突破曲线反演裂隙网络统计参数（裂隙密度和分形维数）。",
+      "workflow": "生成DFN→正演热传输模拟→训练全连接DNN代理模型→网格搜索贝叶斯反演→后验分布。",
+      "inputs": ["热示踪突破曲线", "先验参数范围"],
+      "outputs": ["裂隙密度C", "分形维数D的后验分布"],
+      "assumptions": ["基质不可渗透", "流体为不可压缩层流", "完全混合假设"],
+      "strengths": ["大幅降低正演计算成本", "可量化参数不确定性"],
+      "limitations": ["仅验证了低维（≤2）参数合成案例", "未考虑测量噪声"],
+      "related_concepts": ["discrete-fracture-network", "fractal-dimension"],
+      "sources": ["2021-zhou-thermal-experiments-for-fractured-rock-characterization-theoretical-analysis-and-inver"]
+    },
+    {
+      "name": "模糊综合评价粗糙度分类",
+      "slug": "fuzzy-comprehensive-evaluation-roughness",
+      "purpose": "综合多形态参数提出新的断裂粗糙度系数FRC，建立剪切强度模型。",
+      "workflow": "扫描节理表面→提取高度与纹理参数→相关分析选取S_i,S_q,S_c,S_k→FCE融合为FRC→直剪试验验证。",
+      "inputs": ["节理表面形貌数据"],
+      "outputs": ["FRC值", "FRC-JCS剪切强度模型"],
+      "assumptions": ["采样间隔0.5mm适用于节理尺度", "评价等级线性分为十级"],
+      "strengths": ["弥补了JRC仅依赖单一参数的不足", "能更好反映多形态特性"],
+      "limitations": ["未提供经验证的具体公式参数", "仅在大理岩等三类岩石低法向应力下验证"],
+      "related_concepts": ["fracture-roughness"],
+      "sources": ["2021-zhao-shear-related-roughness-classification-and-strength-model-of-natural-rock-joint-based"]
+    },
+    {
+      "name": "颗粒流程序扩展晶粒模型",
+      "slug": "extended-grain-based-model-pfc",
+      "purpose": "基于真实矿物晶粒形状构建非均质花岗岩模型，模拟工具-岩石相互作用中的裂纹演化。",
+      "workflow": "图像处理提取晶粒边界→PFC中构建平行粘结模型和光滑节理模型→标定宏观力学参数→切削/压入模拟。",
+      "inputs": ["花岗岩表面晶粒图像", "矿物微观力学参数"],
+      "outputs": ["岩屑尺寸", "刀具受力", "裂纹萌生扩展路径"],
+      "assumptions": ["颗粒的运动满足牛顿第二定律", "光滑节理模型代表晶界"],
+      "strengths": ["能真实反映晶界对裂纹扩展的引导作用"],
+      "limitations": ["颗粒半径需权衡计算成本", "二维模型尚未扩展到三维"],
+      "related_concepts": [],
+      "sources": ["2022-liu-investigation-on-the-tool-rock-interaction-using-an-extended-grain-based-model"]
+    },
+    {
+      "name": "分离式霍普金森压杆动态测试",
+      "slug": "split-hopkinson-pressure-bar",
+      "purpose": "测量岩石在不同冲击速度下的动态抗压强度和弹性模量。",
+      "workflow": "将热处理后的试样置于SHPB装置中，施加不同冲击速度，记录入射、反射、透射波计算应力-应变。",
+      "inputs": ["热处理试样", "冲击速度"],
+      "outputs": ["动态峰值应力", "动态弹性模量", "峰值应变"],
+      "assumptions": ["一维应力波传播理论", "试样各向同性", "应力平衡"],
+      "strengths": ["可获得高应变率下的力学参数"],
+      "limitations": ["仅适用于单轴动态加载", "试样的各向异性和非均匀性可能引入误差"],
+      "related_concepts": ["thermal-shock"],
+      "sources": ["2022-fan-evaluation-of-the-effects-of-three-different-cooling-methods-on-the-dynamic-mechanical", "2022-meng-study-on-the-effect-of-sandstone-microscopic-damage-and-dynamic-compressive-properties"]
+    },
+    {
+      "name": "核磁共振与微CT联合微观表征",
+      "slug": "nmr-and-micro-ct-characterization",
+      "purpose": "定量表征热处理后岩石的孔隙结构、微裂纹分布和演化。",
+      "workflow": "热处理后对试样进行核磁共振T₂谱测量并用CT扫描三维重构，分析孔隙度和孔径分布。",
+      "inputs": ["热处理岩石试样"],
+      "outputs": ["孔隙度", "孔径分布（大孔、中孔、微孔）", "三维孔隙结构图像"],
+      "assumptions": ["固定C值转换T₂至孔隙半径", "CT阈值分割能区分固/气"],
+      "strengths": ["无损、三维可视化", "可区分不同尺寸孔隙"],
+      "limitations": ["CT分辨率有限", "C值可能随温度变化"],
+      "related_concepts": ["thermal-shock", "thermal-damage-threshold"],
+      "sources": ["2022-meng-study-on-the-effect-of-sandstone-microscopic-damage-and-dynamic-compressive-properties", "2022-pathiranagei-investigation-of-the-microstructural-characteristics-of-heated-sandstone-by-mi", "2022-fan-spatially-distributed-damage-in-sandstone-under-stress-freeze-thaw-coupling-conditions"]
+    },
+    {
+      "name": "直径岩心变形分析",
+      "slug": "diametrical-core-deformation-analysis",
+      "purpose": "利用岩心直径差异估计原位水平差应力及最大水平主应力方向。",
+      "workflow": "摄影测量获取岩心直径→计算最大最小直径差→基于线弹性解析解计算差应力和方向。",
+      "inputs": ["岩心直径数据 d_max, d_min", "弹性模量E, 泊松比ν"],
+      "outputs": ["水平差应力ΔS", "S_Hmax方向"],
+      "assumptions": ["线弹性、各向同性", "垂直井取心", "d_min近似初始直径"],
+      "strengths": ["设备简单，可获取方向信息"],
+      "limitations": ["弹性各向异性导致估计偏差", "对直径测量精度要求极高 (±0.0001 mm)"],
+      "related_concepts": ["core-discing"],
+      "sources": ["2021-ziegler-evaluation-of-the-diametrical-core-deformation-and-discing-analyses-for-in-situ-str", "2022-li-determination-of-mining-induced-stresses-using-diametral-rock-core-deformations"]
+    },
+    {
+      "name": "裂缝管道网络模型",
+      "slug": "fracture-pipe-network-model",
+      "purpose": "将复杂三维离散裂缝网络简化为等效管道网络以快速计算绝对渗透率。",
+      "workflow": "将每条裂缝的渗流子域等效为矩形→用立方定律计算传导率→构建节点-键网络→求解达西定律得渗透率。",
+      "inputs": ["DFN几何数据"],
+      "outputs": ["网络绝对渗透率"],
+      "assumptions": ["滑移无边界条件", "单相不可压缩层流", "平板裂缝假设"],
+      "strengths": ["计算效率高", "改进后可降低渗透率预测偏差"],
+      "limitations": ["复杂DFN下原模型偏差大", "未考虑裂缝粗糙度和非达西流"],
+      "related_concepts": ["discrete-fracture-network"],
+      "sources": ["2022-wang-improvements-to-the-fracture-pipe-network-model-for-complex-3d-discrete-fracture-netwo"]
+    },
+    {
+      "name": "微震事件三维复杂裂缝网络重构",
+      "slug": "microseismic-fracture-network-reconstruction",
+      "purpose": "从微震事件点云重建三维裂缝面，计算储层改造体积(SRV)和面积(SRA)。",
+      "workflow": "RANSAC平面拟合→Alpha-shape边界提取→DBSCAN聚类去噪→裂缝面重构→SRV/SRA计算。",
+      "inputs": ["微震事件空间坐标"],
+      "outputs": ["裂缝面几何", "SRV", "SRA"],
+      "assumptions": ["微震事件主要由剪切滑移产生", "事件云勾勒连通裂缝网络范围"],
+      "strengths": ["抗噪声能力强（50%噪声下误差<20%）", "可定量评价压裂效果"],
+      "limitations": ["验证依赖合成数据", "实际非均质裂缝系统几何未知"],
+      "related_concepts": ["microseismic-monitoring"],
+      "sources": ["2022-liu-study-on-characterization-method-of-complex-fracture-network-of-deep-shale-after-fractu"]
+    },
+    {
+      "name": "全耦合THM有限元数值模拟",
+      "slug": "fully-coupled-thm-finite-element-model",
+      "purpose": "模拟裂隙型地热储层中流体流动、热传输和岩石变形的长期耦合过程。",
+      "workflow": "建立DFN储层模型→赋予热-水-力学参数→施加注入/生产边界→求解THM方程→分析裂缝激活和地震活动。",
+      "inputs": ["储层几何", "原位应力", "注入参数", "裂缝力学参数"],
+      "outputs": ["压力场", "温度场", "裂缝开度变化", "剪切滑移事件分布"],
+      "assumptions": ["单相流", "局部热平衡", "小应变热孔弹性"],
+      "strengths": ["能模拟数年尺度的热采过程", "可区分加压与热收缩效应"],
+      "limitations": ["二维DFN简化", "未考虑非均质基质渗流和化学作用"],
+      "related_concepts": ["thm-coupling", "enhanced-geothermal-system", "discrete-fracture-network"],
+      "sources": ["2022-jiang-fracture-activation-and-induced-seismicity-during-long-term-heat-production-in-fractu", "2022-he-numerical-evaluation-of-heat-extraction-performance-in-enhanced-geothermal-system-consid"]
+    },
+    {
+      "name": "机器学习预测热损伤模型",
+      "slug": "machine-learning-thermal-damage-prediction",
+      "purpose": "基于物理性质（孔隙率、密度、温度、P波速度）预测花岗岩的热损伤因子。",
+      "workflow": "实验获取训练数据→训练ANN/ANFIS/MLR模型→比较精度选择最优模型。",
+      "inputs": ["孔隙率", "密度", "温度", "P波速度"],
+      "outputs": ["热损伤因子DT"],
+      "assumptions": ["训练数据覆盖参数空间", "Sugeno型FIS计算高效"],
+      "strengths": ["可以高精度预测非砂岩损伤", "LM训练函数收敛快"],
+      "limitations": ["样本量有限", "外推至其他岩类未验证"],
+      "related_concepts": ["thermal-shock"],
+      "sources": ["2022-khan-development-of-predictive-models-for-determination-of-the-extent-of-damage-in-granite"]
+    },
+    {
+      "name": "图论全局效率连通性评价",
+      "slug": "graph-global-efficiency-connectivity",
+      "purpose": "利用图论的全局效率指标评估随机裂缝网络的连通性及其与宏观流动的关系。",
+      "workflow": "将裂缝网络转化为图（节点与连接）→计算全局效率E→对比2D/3D网络→分析几何参数影响。",
+      "inputs": ["裂缝网络几何"],
+      "outputs": ["全局效率", "简化图流动贡献比例"],
+      "assumptions": ["裂缝简化为线段或凸多边形", "流动满足立方律"],
+      "strengths": ["量化了最短路径对流动的主导作用", "可识别3D连通性优势"],
+      "limitations": ["忽略裂缝粗糙度、充填和应力耦合", "边界条件固定"],
+      "related_concepts": ["discrete-fracture-network", "percolation"],
+      "sources": ["2021-zhu-impact-of-fracture-geometry-and-topology-on-the-connectivity-and-flow-properties-of-sto"]
+    }
+  ],
+  "claims": [
+    {
+      "claim": "岩体内裂隙会显著降低岩体抗压强度，裂隙密度P21从1增至5 m/m²，平均强度由103.5 MPa降至69.5 MPa，变形模量由66.7 GPa降至45.7 GPa。",
+      "slug": "fracture-density-reduces-ucs-and-modulus",
+      "evidence": "数值模拟：SRM模型下P21变化对应强度与模量负相关。",
+      "condition": "二维离散元模型，平直节理粘结模型，单轴压缩。",
+      "limitation": "二维模型可能高估或低估强度损伤；未考虑三维效应。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [{"paper_id": "2021-xu-裂隙网络对岩体试件单轴压缩力学特性影响研究", "locator": "pp. 5-7"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "首次热冲击循环引起的力学性质劣化幅度最大，后续循环劣化减缓并趋于恒定。",
+      "slug": "first-cycle-damage-largest",
+      "evidence": "含预制裂隙砂岩在400°C热冲击下，峰值应力和弹性模量指数衰减，首次循环后劣化最严重。",
+      "condition": "砂岩加热至400°C，水冷或空冷，最多8次循环。",
+      "limitation": "仅对在400°C下的砂岩验证；其他温度和岩性趋势可能不同。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [{"paper_id": "2022-li-experimental-studies-on-the-effect-of-cyclic-thermal-shock-and-cooling-methods-on-the-me", "locator": "pp. 5-7"}, {"paper_id": "2021-zhang-macroscopic-and-microscopic-experimental-research-on-granite-properties-after-high-te", "locator": "pp. 1-1"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "水冷却引起的热损伤显著大于空气冷却，导致P波速度、强度和弹性模量下降更剧烈。",
+      "slug": "water-cooling-more-severe-than-air-cooling",
+      "evidence": "花岗岩在600°C时水冷UCS、E、Vp降幅分别比空冷大1-17.7%；砂岩SHPB测试水冷波速下降率更大。",
+      "condition": "花岗岩、砂岩加热至200-800°C后水冷与空冷对比。",
+      "limitation": "冷却水温和流量可能影响损伤程度，结果受限于特定条件。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [{"paper_id": "2021-zhu-changes-in-thermomechanical-properties-due-to-air-and-water-cooling-of-hot-dry-granite", "locator": "pp. 1-2"}, {"paper_id": "2022-fan-evaluation-of-the-effects-of-three-different-cooling-methods-on-the-dynamic-mechanical", "locator": "pp. 8-9"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "砂岩和花岗岩在400°C附近存在热损伤阈值，超过该温度后孔隙率急剧增加、强度大幅下降。",
+      "slug": "thermal-damage-threshold-400c",
+      "evidence": "实验显示400°C以内物理力学性质变化小，超过后孔隙率增加37-53%，强度显著降低。",
+      "condition": "致密砂岩、花岗岩缓慢加热，自然冷却或水冷。",
+      "limitation": "矿物组成不同（如石英含量）可能导致阈值变化；适用于干样条件。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [{"paper_id": "2022-li-effect-of-thermal-treatment-on-the-physical-and-mechanical-properties-of-sandstone-insig", "locator": "pp. 1-2"}, {"paper_id": "2022-ge-thermal-damage-and-mechanical-properties-of-high-temperature-sandstone-with-cyclic-heati", "locator": "pp. 1-2"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在DFN中，全局效率指标可有效评估裂缝网络连通性，且3D网络连通性优于2D，简化最短路径图主导流体输运。",
+      "slug": "dfn-connectivity-evaluated-via-global-efficiency",
+      "evidence": "2D参考网络中67%节点贡献95%流量；3D网络中77%节点贡献98%流量。",
+      "condition": "均匀随机DFN，恒定开度，单相层流。",
+      "limitation": "仅适用于几何连通性分析；未考虑应力、开度变化和非达西效应。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [{"paper_id": "2021-zhu-impact-of-fracture-geometry-and-topology-on-the-connectivity-and-flow-properties-of-sto", "locator": "pp. 8-8"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "二维露头图上若形成连通团，则对应的地下三维裂缝网络很可能处于过度逾渗或连通状态。",
+      "slug": "2d-connected-cluster-indicates-3d-percolation",
+      "evidence": "DFN模拟中，2D截面出现连通团时，3D网络已几何连通良好。",
+      "condition": "裂缝长度幂律分布，方向均匀，中心均匀或分形分布。",
+      "limitation": "仅基于几何连通性，未考虑裂缝开度和充填；连接团的形成依赖露头图完整性。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [{"paper_id": "2022-unknown-can-we-infer-the-percolation-status-of-3d-fractured-media-from-2d-outcrops", "locator": "pp. 1-2, 10-11"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在长期热采中，注入诱发的流体加压早期主导裂缝激活，后期热收缩引起的剪切滑移逐渐起到控制作用；低差应力下激活以热采主导。",
+      "slug": "cooling-induced-contraction-drives-late-fracture-activation",
+      "evidence": "THM耦合模拟显示低差应力状态中后期热抽采驱动裂缝激活，高差应力时早期加压已引发大量滑移。",
+      "condition": "二维DFN，单相水，温度降100-200°C，储层深度3000m。",
+      "limitation": "未考虑三维流径和基质渗透率非均质性；忽略了化学作用。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [{"paper_id": "2022-jiang-fracture-activation-and-induced-seismicity-during-long-term-heat-production-in-fractu", "locator": "pp. 6-7, 9"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "液氮冷却诱发的高拉伸热应力可导致煤体微结构损伤，且加剧其力学性质的各向异性。",
+      "slug": "ln2-cooling-enhances-damage-and-anisotropy",
+      "evidence": "SEM显示裂纹扩展；P波波速降低；抗拉强度各向异性增大。",
+      "condition": "煤样液氮浸泡冻结/冻融处理，巴西劈裂试验。",
+      "limitation": "热-力耦合模型基于线热弹性假设；未考虑现场循环冷却。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [{"paper_id": "2022-hou-effect-of-liquid-nitrogen-cooling-on-mechanical-characteristics-and-fracture-morphology", "locator": "pp. 3-4, 1-1"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "粗糙壁裂缝会降低EGS热提取峰值和总产热量，延长热回收周期。",
+      "slug": "rough-fracture-reduces-heat-extraction",
+      "evidence": "144个DFN模型THM模拟：平行板模型峰值热提取率更高、出现更早，总产出更大，持续时间更短。",
+      "condition": "二维概念储层，JRC-开度经验关系，固定压力梯度。",
+      "limitation": "仅间接反映粗糙度，未直接模拟细观形貌；二维模型。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [{"paper_id": "2022-he-numerical-evaluation-of-heat-extraction-performance-in-enhanced-geothermal-system-consid", "locator": "pp. 1-2"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "裂纹密度和空间分布具有分形特征，图像测井数据相关维数D₂集中在0.85-0.9窄范围。",
+      "slug": "fracture-spatial-distribution-fractal-behavior-d2-0.85-0.9",
+      "evidence": "六个深钻孔UBI图像测井数据的归一化相关积分分析显示幂律标度。",
+      "condition": "结晶基底岩，深度至5 km，评估尺度米级至数百米级。",
+      "limitation": "一维数据集无法提取长度分布信息；上限尺度受限。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [{"paper_id": "2022-afshari-moein-fractal-characteristics-of-fractures-in-crystalline-basement-rocks-insights-f", "locator": "pp. 1-2"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "FRC通常高于传统JRC值，能更全面反映节理多形态参数对剪切强度的影响。",
+      "slug": "frc-higher-than-jrc",
+      "evidence": "基于FCE融合四个参数（S_i, S_q, S_c, S_k）计算FRC，对比JRC‑JCS模型倾向低估。",
+      "condition": "三类天然岩石节理，常法向载荷条件，低法向应力0.4-1.6 MPa。",
+      "limitation": "FRC具体公式未公开；缺乏定量误差比较；外推高应力条件未验证。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [{"paper_id": "2021-zhao-shear-related-roughness-classification-and-strength-model-of-natural-rock-joint-based", "locator": "pp. 1-1"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "激光扫描可有效降低花岗岩强度，矩形光斑比圆形光斑降低幅度更大（UCS下降24% vs 15%）。",
+      "slug": "laser-scanning-reduces-granite-strength-rectangular-better",
+      "evidence": "1000W激光，矩形光斑扫描区域UCS降24%，抗拉降20%，可钻性降16%；圆形对应15%, 11%, 10%。",
+      "condition": "特定激光参数和花岗岩试样，扫描区域评估。",
+      "limitation": "仅针对扫描区域；样本量未知；其他岩性未验证。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [{"paper_id": "2022-deng-simulation-and-experimental-research-of-laser-scanning-breaking-granite", "locator": "pp. 1-1"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "基于P波速度的损伤因子可以较好地反映高温处理后花岗岩的强度退化。",
+      "slug": "thermal-damage-variable-based-on-p-wave-velocity-effective",
+      "evidence": "D_v1 和 D_v2 与抗拉强度和断裂韧性具有良好的相关性。",
+      "condition": "花岗岩，20-600°C缓慢加热，自然冷却。",
+      "limitation": "假设均匀损伤；不适用于热冲击场景。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [{"paper_id": "2022-hu-experimental-investigation-of-the-relationships-among-p-wave-velocity-tensile-strength-a", "locator": "pp. 12-13"}],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "微震事件三维重构方法对噪声鲁棒，即使50%噪声事件，重构误差仍低于20%。",
+      "slug": "microseismic-reconstruction-robust-against-50-percent-noise",
+      "evidence": "合成数据测试中RANSAC+Alpha-shape+DBSCAN算法稳定。",
+      "condition": "点云分布任意，基于合成压裂数据。",
+      "limitation": "实际非均质裂缝系统几何未知，验证有限。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [{"paper_id": "2022-liu-study-on-characterization-method-of-complex-fracture-network-of-deep-shale-after-fractu", "locator": "pp. 1-5"}],
+      "supports": [],
+      "contradicts": []
+    }
+  ],
+  "syntheses": [
+    {
+      "title": "冷却介质对高温岩石热损伤效应的对比",
+      "slug": "cooling-media-damage-comparison",
+      "central_question": "不同冷却介质（空气、水、液氮、高粘度液体）对高温岩石物理力学性质劣化的差异如何？",
+      "summary": "多篇论文一致表明，水冷却和液氮冷却造成的热损伤显著大于空气冷却，表现为P波速度、单轴抗压强度和弹性模量的更大降幅。高粘度液体冷却损伤介于水和空气之间。首次热冲击循环的损伤贡献最大，后续循环趋于平缓。岩石类型和矿物组成影响热损伤阈值（如400°C）和劣化幅度。",
+      "evidence_chain": ["2021-zhu水冷空冷对比花岗岩", "2022-fan三种冷却方式SHPB砂岩", "2022-pan高粘度流体冷却石灰岩和花岗岩", "2022-li-experimental热冲击循环砂岩"],
+      "disagreements": ["不同冷却水温的影响：20°C vs 50°C vs 80°C，水温越低损伤越大，但高粘度液体初始粘度效应需进一步澄清。"],
+      "boundary_conditions": ["实验室加热温度范围100-800°C", "干样条件", "缓慢加热消除加热阶段热冲击"],
+      "writing_uses": ["可用于构建热刺激储层改造的损伤预测模型", "比较不同压裂液的热冲击效应"],
+      "sources": ["2021-zhu-changes-in-thermomechanical-properties-due-to-air-and-water-cooling-of-hot-dry-granite", "2022-fan-evaluation-of-the-effects-of-three-different-cooling-methods-on-the-dynamic-mechanical", "2022-pan-experimental-studies-on-the-physical-and-mechanical-properties-of-heated-rock-by-air-wa", "2022-li-experimental-studies-on-the-effect-of-cyclic-thermal-shock-and-cooling-methods-on-the-me"]
+    },
+    {
+      "title": "离散裂缝网络连通性表征的多尺度进展",
+      "slug": "dfn-connectivity-multiscale-advances",
+      "central_question": "如何从二维露头、三维DFN模型到现场微震推断裂缝网络的连通性，多尺度表征有何一致性与差异？",
+      "summary": "从二维露头逾渗分析指明若有连通团则三维可能良好连通；到三维DFN图论全局效率揭示最短路径主导流动且3D连通性优于2D；再到微震重构裂缝网络计算SRV，体现了从几何连通性到水力连通性的升级。分形维数、幂律长度分布和团簇效应是连接这些尺度的关键参数。",
+      "evidence_chain": ["2022-unknown 2D露头逾渗推断3D", "2021-zhu-impact图论全局效率", "2022-afshari-moein分形裂缝分布", "2022-liu-study微震重构SRV", "2022-wang-improvements FPNM渗透率预测"],
+      "disagreements": ["每裂缝平均交点数不是合适的逾渗参数（2022-unknown） vs. 图论全局效率作为连通性指标（2021-zhu-impact）"],
+      "boundary_conditions": ["几何连通性 vs. 水力传导性未统一", "微震只反映剪切滑移事件，遗漏张性裂缝"],
+      "writing_uses": ["可撰写裂缝网络多尺度表征方法与连通性预测的综述", "用于开发从地震到露头的裂缝建模工作流"],
+      "sources": ["2022-unknown-can-we-infer-the-percolation-status-of-3d-fractured-media-from-2d-outcrops", "2021-zhu-impact-of-fracture-geometry-and-topology-on-the-connectivity-and-flow-properties-of-sto", "2022-afshari-moein-fractal-characteristics-of-fractures-in-crystalline-basement-rocks-insights-f", "2022-liu-study-on-characterization-method-of-complex-fracture-network-of-deep-shale-after-fractu", "2022-wang-improvements-to-the-fracture-pipe-network-model-for-complex-3d-discrete-fracture-netwo"]
+    },
+    {
+      "title": "热-水-力耦合在增强型地热系统中的应用与挑战",
+      "slug": "thm-coupling-in-egs-applications",
+      "central_question": "THM耦合数值模拟如何揭示EGS长期热采过程中的裂缝激活、诱发地震和热突破机制？",
+      "summary": "二篇关键论文系统展示了THM耦合的应用：Jiang等(2022)揭示了注入压力与热收缩在时间和应力状态上的竞争控制裂缝激活；He等(2022)量化了裂缝粗糙度对热提取的削弱；Fadel等(2022)的现场案例证明裂缝非均质性导致过早热突破。三者共同指出，等效多孔介质模型无法捕捉优先流，需采用离散裂缝建模并与应力、温度耦合。",
+      "evidence_chain": ["Jiang2022裂缝激活与诱发地震", "He2022粗糙裂缝降低热提取", "Fadel2022现场热突破非均质性", "Viswanathan2022综述THMC耦合进展"],
+      "disagreements": ["平行板假设在特定条件下可能高估热提取效率，而粗糙度效应定量化仍缺乏统一指标。"],
+      "boundary_conditions": ["仿真限于单相水，二维DFN", "真实储层涉及多相、化学沉淀和三维流"],
+      "writing_uses": ["为EGS数值模拟指南提供案例", "用于讨论热突破预测中的不确定性"],
+      "sources": ["2022-jiang-fracture-activation-and-induced-seismicity-during-long-term-heat-production-in-fractu", "2022-he-numerical-evaluation-of-heat-extraction-performance-in-enhanced-geothermal-system-consid", "2022-fadel-causes-of-a-premature-thermal-breakthrough-of-a-hydrothermal-project-in-germany", "2022-viswanathan-from-fluid-flow-to-coupled-processes-in-fractured-rock-recent-advances-and-new"]
+    }
+  ],
+  "open_questions": [
+    {
+      "question": "如何将实验室单一冷却条件下的热损伤模型外推到实际地热储层的多物理场耦合循环条件？",
+      "slug": "lab-to-field-thermal-damage-extrapolation",
+      "why_it_matters": "实验室常采用简化冷却方式，现场则面临复杂应力、循环次数和化学环境，外推缺乏依据。",
+      "current_evidence": "实验室确认了首次循环损伤最大、400°C阈值等规律，但缺乏现场验证。",
+      "needed_evidence": "长期现场监测数据与实验室循环实验的对比，包含围压和流体化学的耦合实验。",
+      "sources": ["2022-li-experimental-studies-on-the-effect-of-cyclic-thermal-shock-and-cooling-methods-on-the-me", "2022-ge-thermal-damage-and-mechanical-properties-of-high-temperature-sandstone-with-cyclic-heati"]
+    },
+    {
+      "question": "如何准确量化裂缝粗糙度对水力传导和热提取的综合影响，并将粗糙度参数有效整合进EGS储层尺度模型？",
+      "slug": "fracture-roughness-hydraulic-thermal-integration",
+      "why_it_matters": "粗糙度显著影响机械开度和传热，现有模型多依赖经验JRC，不易推广。",
+      "current_evidence": "He(2022)表明粗糙壁降低热提取，但仅用JRC-开度关系间接反映；Zhao(2021)提出FRC但未在流动模型中验证。",
+      "needed_evidence": "高分辨率粗糙度扫描与流动/传热实验的直接关联，发展基于拓扑的粗糙度参数。",
+      "sources": ["2022-he-numerical-evaluation-of-heat-extraction-performance-in-enhanced-geothermal-system-consid", "2021-zhao-shear-related-roughness-classification-and-strength-model-of-natural-rock-joint-based"]
+    },
+    {
+      "question": "几何逾渗状态在多大程度上可以预测实际裂隙岩体的有效渗透率？应从哪些方面将几何连通性转化为水力连通性？",
+      "slug": "percolation-to-permeability-gap",
+      "why_it_matters": "逾渗模型是裂缝介质流动的基础，但忽略开度分布和应力导致渗透率预测误差大。",
+      "current_evidence": "2D露头连接团可指示3D连通（2022-unknown），但未给出渗透率量化；图论效率能识别高贡献节点。",
+      "needed_evidence": "结合应力、开度分布和逾渗的随机建模，与现场水力测试对比研究。",
+      "sources": ["2022-unknown-can-we-infer-the-percolation-status-of-3d-fractured-media-from-2d-outcrops", "2021-zhu-impact-of-fracture-geometry-and-topology-on-the-connectivity-and-flow-properties-of-sto"]
+    },
+    {
+      "question": "基于机器学习的裂缝网络特性预测模型如何提高在不同岩性和应力条件下的泛化能力？",
+      "slug": "ml-fracture-prediction-generalization",
+      "why_it_matters": "ML模型在特定数据集上表现良好，但岩石非均质性和应力历史差异大，泛化是挑战。",
+      "current_evidence": "McBeck(2022)发现火成岩裂缝预测性高于大理岩；Khan(2022)的ANN模型仅验证了一种花岗岩。",
+      "needed_evidence": "包含多岩性、多应力路径的共享实验数据库，开发物理约束的ML模型。",
+      "sources": ["2022-mcbeck-predicting-fracture-network-development-in-crystalline-rocks", "2022-khan-development-of-predictive-models-for-determination-of-the-extent-of-damage-in-granite"]
+    }
+  ]
+}

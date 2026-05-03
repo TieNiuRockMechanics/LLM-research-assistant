@@ -1,0 +1,2110 @@
+{
+  "concepts": [
+    {
+      "name": "thermal damage",
+      "slug": "thermal-damage",
+      "definition": "岩石在高温及热循环（加热-冷却）作用下，因矿物热膨胀不匹配、相变和微裂纹萌生、扩展导致的物理力学性能不可逆劣化。",
+      "aliases": [
+        "heat-induced damage",
+        "热损伤"
+      ],
+      "boundary": "适用于脆性结晶岩（花岗岩、砂岩等），温度通常高于200°C或经历快速冷却。不适用于塑性流动主导的岩石或低温差环境。",
+      "related_methods": [
+        "ct-scanning",
+        "nmr",
+        "acoustic-emission",
+        "brazilian-test",
+        "ucs-test"
+      ],
+      "related_claims": [
+        "thermal-damage-threshold-granite-450c",
+        "ln2-cooling-more-damage-than-water",
+        "cyclic-heating-damage-saturation",
+        "tensile-strength-decrease-water-cooling",
+        "quartz-phase-transition-573c-damage"
+      ],
+      "sources": [
+        "2022-wu-tensile-properties",
+        "2022-xi-experimental-comparison",
+        "2023-guo-mechanical-properties",
+        "2023-cui-experimental-investigation",
+        "2023-wu-effect-of-cooling-methods"
+      ]
+    },
+    {
+      "name": "liquid nitrogen (LN2) cooling",
+      "slug": "ln2-cooling",
+      "definition": "使用液氮（-196°C）对高温岩石进行急速冷却的技术，旨在产生热冲击引起微裂纹网络，增强渗透性。",
+      "aliases": [
+        "LN₂ cooling",
+        "液氮冷却"
+      ],
+      "boundary": "多见于干热岩储层增产；实验室条件下模拟热冲击。莱顿弗罗斯特效应会抑制部分传热，简化模型中换热系数取100 W/(m²·K)。不适用于含水或粘土矿物易膨胀的岩石。",
+      "related_methods": [
+        "thermal-shock-test",
+        "brazilian-test",
+        "sirb"
+      ],
+      "related_claims": [
+        "ln2-cooling-more-damage-than-water",
+        "ln2-leidenfrost-effect",
+        "ln2-porosity-increase"
+      ],
+      "sources": [
+        "2022-xi-experimental-comparison",
+        "2022-zhou-variations-in-stress-thresholds",
+        "2023-lai-study-on-damage",
+        "2023-wu-investigation-on-physico-mechanical",
+        "2023-deng-study-on-fracture-surface"
+      ]
+    },
+    {
+      "name": "discrete fracture network (DFN)",
+      "slug": "discrete-fracture-network",
+      "definition": "一种岩体结构模型，将裂隙视为平面（二维线段或三维多边形/圆盘），按统计分布或确定性方式在空间中定位，用于分析渗流、强度和连通性。",
+      "aliases": [
+        "DFN",
+        "离散裂缝网络"
+      ],
+      "boundary": "适用于裂缝性岩体，假设裂隙为平面且相互独立；忽略裂缝厚度和粗糙度（除非特别建模）。不能直接模拟孔隙介质基质。",
+      "related_methods": [
+        "dfn-generation",
+        "hatchfrac",
+        "fracman",
+        "parametric-dfn",
+        "non-parametric-dfn",
+        "bayesian-inversion-fracture"
+      ],
+      "related_claims": [
+        "dfn-fractal-dimension-vs-clustering",
+        "dfn-connectivity-computation-linear",
+        "dfn-power-law-length",
+        "p32-underestimation-angle-cutoff",
+        "dfn-fractal-ifs-change-injection"
+      ],
+      "sources": [
+        "2022-zhu-hatchfrac",
+        "2022-zhu-fractal-and-multifractal",
+        "2022-zhu-enhancing-fracture-network",
+        "2023-gomez-non-parametric-dfn",
+        "2023-ojeda-discrete-fracture-network",
+        "2023-meng-ifs-based"
+      ]
+    },
+    {
+      "name": "fractal dimension",
+      "slug": "fractal-dimension",
+      "definition": "一种描述物体或图案自相似性和复杂性的定量指标；在岩体力学中用于描述裂缝表面粗糙度、裂缝网络几何复杂性或碎片分布。",
+      "aliases": [
+        "分形维数",
+        "fractal dimension D"
+      ],
+      "boundary": "适用于统计自相似的结构；单一分形维数可能无法区分空间聚类，需与多重分形谱结合。计算结果依赖于测量尺度和方法。",
+      "related_methods": [
+        "box-counting",
+        "ifs-fractal-interpolation",
+        "wm-function"
+      ],
+      "related_claims": [
+        "dfn-fractal-dimension-vs-clustering",
+        "fractal-dimension-unreliable-crushing-index",
+        "fractal-ifs-rough-dfn"
+      ],
+      "sources": [
+        "2022-zhu-fractal-and-multifractal",
+        "2022-zhu-hatchfrac",
+        "2023-meng-ifs-based",
+        "2023-li-comparative-study",
+        "2023-wang-rough-dfn"
+      ]
+    },
+    {
+      "name": "acoustic emission",
+      "slug": "acoustic-emission",
+      "definition": "材料在受力过程中，内部微裂纹萌生和扩展时释放的瞬态弹性波，用于监测岩石损伤演化和破坏阶段。",
+      "aliases": [
+        "AE",
+        "声发射"
+      ],
+      "boundary": "适用于脆性岩石加载过程；需要适当的传感器布置和去噪。不能直接区分张拉型和剪切型微破裂（需RA-AF分析）。信号衰减受材料状态影响。",
+      "related_methods": [
+        "acoustic-emission-monitoring",
+        "ra-af-analysis"
+      ],
+      "related_claims": [
+        "ae-signal-attenuation-cooling-shock",
+        "ae-accumulation-damage-stages"
+      ],
+      "sources": [
+        "2023-cui-experimental-investigation",
+        "2023-ge-thermal-damage",
+        "2022-wu-tensile-properties",
+        "2023-wu-effect-of-cooling-methods"
+      ]
+    },
+    {
+      "name": "enhanced geothermal system",
+      "slug": "enhanced-geothermal-system",
+      "definition": "通过水力压裂、热冲击等人工手段在干热岩中形成或改善裂缝网络的工程系统，用于经济开采地热能。",
+      "aliases": [
+        "EGS",
+        "增强型地热系统"
+      ],
+      "boundary": "典型条件是低渗透率、高温（>150°C）的基岩；依赖于有效的裂缝连通性和流体循环。不包括天然温泉型地热。",
+      "related_methods": [
+        "dfn-generation",
+        "tracer-test",
+        "thermal-hydraulic-simulation",
+        "microseismic-inversion"
+      ],
+      "related_claims": [
+        "egs-th-constant-properties-acceptable",
+        "ln2-cooling-more-damage-than-water",
+        "flow-channelization-aperture-variability"
+      ],
+      "sources": [
+        "2022-xiong-three-dimensional",
+        "2023-gao-heat-extraction",
+        "2023-ren-tracer-review",
+        "2023-jiang-fracture-network",
+        "2023-wu-temperature-dependent"
+      ]
+    },
+    {
+      "name": "joint roughness coefficient",
+      "slug": "joint-roughness-coefficient",
+      "definition": "Barton提出的描述节理面粗糙度对剪切强度影响的系数，典型范围0–20；常用视觉比较法、倾斜试验及统计参数估计。",
+      "aliases": [
+        "JRC",
+        "节理粗糙度系数"
+      ],
+      "boundary": "通常与JCS、基本摩擦角结合；JRC值依赖于测量尺度、方向和节理风化程度。倾斜试验可反映三维方向性粗糙度。",
+      "related_methods": [
+        "jrc-estimation-tilt-test",
+        "visual-comparison-jrc"
+      ],
+      "related_claims": [
+        "jrc-three-dimensional-roughness"
+      ],
+      "sources": [
+        "2023-barton-advances"
+      ]
+    },
+    {
+      "name": "thermal shock",
+      "slug": "thermal-shock",
+      "definition": "岩石在高温下突然接触低温介质（水、液氮等）时，因瞬时温度梯度产生热应力导致的损伤。",
+      "aliases": [
+        "热冲击"
+      ],
+      "boundary": "主要发生在冷却速率极高时；损伤程度由材料热物性、初始温度、冷却介质和换热系数控制。与缓慢冷却和高温常压效应区分。",
+      "related_methods": [
+        "thermal-shock-test"
+      ],
+      "related_claims": [
+        "thermal-shock-stronger-than-high-temp",
+        "water-cooling-vs-air-cooling-damage"
+      ],
+      "sources": [
+        "2023-dong-experimental-study",
+        "2023-ge-thermal-damage",
+        "2022-zhou-variations-in-stress-thresholds"
+      ]
+    },
+    {
+      "name": "shale oil occurrence",
+      "slug": "shale-oil-occurrence",
+      "definition": "页岩油在储层微观空间（有机孔、无机孔、微裂缝）中的赋存，分为游离态、吸附态和溶解态，受TOC、成熟度和孔隙结构控制。",
+      "aliases": [
+        "shale oil storage",
+        "页岩油赋存"
+      ],
+      "boundary": "适用于油基泥浆取芯和热成熟度0.5%–2.0%的有机质页岩。超过Ro 3.5%有机孔减少。不包括常规砂岩储层。",
+      "related_methods": [
+        "solvent-extraction-fluid-intrusion",
+        "mip",
+        "co2-adsorption"
+      ],
+      "related_claims": [
+        "shale-oil-mainly-meso-macro-pores",
+        "inertinite-no-organic-pores"
+      ],
+      "sources": [
+        "2022-xu-occurrence-space"
+      ]
+    },
+    {
+      "name": "stress thresholds",
+      "slug": "stress-thresholds",
+      "definition": "岩石加载过程中的临界应力值：裂纹闭合应力(σcc)、裂纹起始应力(σci)、裂纹损伤应力(σcd)和峰值应力(σp)，划分不同损伤阶段。",
+      "aliases": [
+        "crack initiation stress",
+        "damage stress"
+      ],
+      "boundary": "通过裂纹体积应变法或AE确定；受围压和热损伤影响。适用于脆性岩石单轴/三轴压缩。",
+      "related_methods": [
+        "crack-volumetric-strain-method",
+        "acoustic-emission-monitoring"
+      ],
+      "related_claims": [
+        "confining-pressure-suppresses-thermal-degradation"
+      ],
+      "sources": [
+        "2022-zhou-variations-in-stress-thresholds",
+        "2023-cui-experimental-investigation"
+      ]
+    },
+    {
+      "name": "flow channelization",
+      "slug": "flow-channelization",
+      "definition": "在非均质开度场中，流体倾向于沿着阻力最小的路径流动，形成局部高流速通道，减少有效换热面积。",
+      "aliases": [
+        "流通道化"
+      ],
+      "boundary": "发生在裂缝开度变化大的裂隙系统中；有效流动面积通常不足40%。受相关长度和接触障碍影响。",
+      "related_claims": [
+        "flow-channelization-effective-area-less-40"
+      ],
+      "sources": [
+        "2023-gao-heat-extraction"
+      ]
+    },
+    {
+      "name": "core discing",
+      "slug": "core-discing",
+      "definition": "在高地应力环境中钻取的岩芯呈现饼状或薄饼状断裂，主要由拉伸破坏引起，其形态可反映原地应力状态。",
+      "aliases": [
+        "岩芯饼化"
+      ],
+      "boundary": "常见于花岗岩类脆性岩石高地应力钻探；受钻头形状和应力差影响。断口形态如杯状凹面指示高水平应力。",
+      "related_methods": [
+        "3d-discrete-continuum-simulation"
+      ],
+      "related_claims": [
+        "core-discing-fracture-morphology-stress-indicator"
+      ],
+      "sources": [
+        "2022-zhang-core-discing"
+      ]
+    },
+    {
+      "name": "Weibull statistical damage model",
+      "slug": "weibull-statistical-damage-model",
+      "definition": "基于Weibull分布描述岩石非均质性的统计损伤本构模型，用于表征岩石强度的随机性和渐进破坏。",
+      "aliases": [
+        "Weibull损伤模型"
+      ],
+      "boundary": "假设岩石微元强度服从Weibull分布；适用于脆性岩石在压缩荷载下的损伤演化。需要标定非均质度参数。",
+      "related_methods": [
+        "weibull-fitting"
+      ],
+      "related_claims": [
+        "shale-weibull-heterogeneity-index-m=3"
+      ],
+      "sources": [
+        "2023-li-unknown-year-deep-shale",
+        "2023-jiang-experimental-damage"
+      ]
+    },
+    {
+      "name": "tracer test in EGS",
+      "slug": "tracer-test-egs",
+      "definition": "在增强地热系统中注入示踪物质，通过监测回收曲线评估井间连通性、储层体积、换热表面积和预测热突破。",
+      "aliases": [
+        "示踪试验",
+        "tracer test"
+      ],
+      "boundary": "需要稳定流动条件，示踪剂需具有热稳定性和低吸附损失。常用于压裂后储层表征。",
+      "related_methods": [
+        "rtd-analysis",
+        "advective-dispersion-model"
+      ],
+      "related_claims": [
+        "adsorptive-tracer-improves-thermal-breakthrough-prediction"
+      ],
+      "sources": [
+        "2023-ren-tracer-review"
+      ]
+    },
+    {
+      "name": "grain-based model",
+      "slug": "grain-based-model",
+      "definition": "在PFC等离散元软件中，根据矿物晶粒几何构建的细观结构模型，用于模拟晶间和穿晶破坏行为。",
+      "aliases": [
+        "GBM",
+        "颗粒流矿物模型"
+      ],
+      "boundary": "适用于结晶岩，需要矿物分布图像（如CT或薄片）；微参数标定具有不确定性。",
+      "related_methods": [
+        "ct-gbm",
+        "tm-gbm"
+      ],
+      "related_claims": [
+        "granite-450c-thermal-damage-threshold",
+        "thermal-damage-tensile-mode-gbm"
+      ],
+      "sources": [
+        "2023-guo-mechanical-properties",
+        "2023-guo-microcracking-behavior"
+      ]
+    },
+    {
+      "name": "rate of penetration model",
+      "slug": "rop-model",
+      "definition": "预测PDC钻头机械钻速的经验或半经验模型，考虑钻压、转速、岩石强度和钻头磨损。",
+      "aliases": [
+        "ROP模型",
+        "机械钻速模型"
+      ],
+      "boundary": "针对特定PDC钻头几何和岩石类型；假设理想清洁条件；磨损指数衰减有效。不适用于严重齿失效工况。",
+      "related_methods": [
+        "laboratory-wear-test"
+      ],
+      "related_claims": [
+        "rop-exponential-decay-with-wear"
+      ],
+      "sources": [
+        "2023-miyazaki-pdc-bit-rop"
+      ]
+    },
+    {
+      "name": "thermo-hydro-mechanical coupling",
+      "slug": "thm-coupling",
+      "definition": "地热储层中温度场、渗流场和应力场之间的相互作用过程，控制裂缝开度、渗透率和热提取效率。",
+      "aliases": [
+        "THM耦合",
+        "热-水-力耦合"
+      ],
+      "boundary": "忽略了化学过程（THMC）；数值模拟常基于连续介质或DFN。EGS运行中温度降低引起的应力变化重要。",
+      "related_methods": [
+        "th-simulation",
+        "dfn-generation"
+      ],
+      "related_claims": [
+        "temperature-dependent-th-effect-cancel"
+      ],
+      "sources": [
+        "2022-xiong-three-dimensional",
+        "2023-jiang-experimental-damage",
+        "2023-wu-temperature-dependent"
+      ]
+    },
+    {
+      "name": "microseismic monitoring",
+      "slug": "microseismic-monitoring",
+      "definition": "通过检测储层改造过程中微小地震事件的空间分布和能量，推断水力裂缝扩展和地质结构激活。",
+      "aliases": [
+        "微地震监测"
+      ],
+      "boundary": "定位精度受速度模型和传感器排列限制；区分干/湿事件对裂缝识别至关重要。",
+      "related_methods": [
+        "joint-inversion-microseismic-thermal"
+      ],
+      "related_claims": [
+        "microseismic-inversion-active-fracture-network"
+      ],
+      "sources": [
+        "2023-jiang-fracture-network"
+      ]
+    },
+    {
+      "name": "non-parametric direction-linear KDE",
+      "slug": "non-parametric-direction-linear-kde",
+      "definition": "一种基于核密度估计的统计方法，无需假设参数分布，联合估计裂隙产状和迹长或尺寸的概率密度函数。",
+      "aliases": [
+        "非参数定向核密度估计"
+      ],
+      "boundary": "适用于露头或钻孔裂隙数据，要求样本独立同分布；带宽选择影响估计平滑度。",
+      "related_methods": [
+        "non-parametric-dfn"
+      ],
+      "related_claims": [
+        "non-parametric-kde-joint-orientation-trace"
+      ],
+      "sources": [
+        "2023-gomez-non-parametric-dfn"
+      ]
+    },
+    {
+      "name": "double-porosity media",
+      "slug": "double-porosity-media",
+      "definition": "将岩土体视为基质孔隙和裂缝/大孔隙两种孔隙系统的概念模型，各自有不同的渗透和储存特性。",
+      "aliases": [
+        "双重孔隙介质",
+        "dual-porosity"
+      ],
+      "boundary": "适用于裂隙性低渗岩石，假设基质和裂缝间存在流体交换。",
+      "related_methods": [
+        "dbpm-ifu-model"
+      ],
+      "related_claims": [
+        "dbpm-applicable-loess-dam-cracks"
+      ],
+      "sources": [
+        "2023-liu-fractal-theory-loess-dam"
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "name": "Brazilian splitting test",
+      "slug": "brazilian-test",
+      "purpose": "测量岩石的间接抗拉强度，通过圆盘径向压缩产生中心拉伸应力。",
+      "workflow": "将岩石加工成圆盘试样，在径向施加线载荷至破坏，记录峰值载荷，计算抗拉强度。",
+      "inputs": [
+        "岩石圆盘试样，直径50 mm，厚度25 mm等"
+      ],
+      "outputs": [
+        "抗拉强度 (MPa)",
+        "载荷-位移曲线"
+      ],
+      "assumptions": [
+        "试样为均质各向同性线弹性体",
+        "破坏起始于中心点"
+      ],
+      "strengths": [
+        "简单、标准方法",
+        "广泛应用于岩石力学测试"
+      ],
+      "limitations": [
+        "存在尺寸效应",
+        "间接测量",
+        "不适用于塑性岩"
+      ],
+      "related_concepts": [
+        "tensile-strength",
+        "thermal-damage"
+      ],
+      "sources": [
+        "2022-wu-tensile-properties",
+        "2023-wu-effect-of-cooling-methods"
+      ]
+    },
+    {
+      "name": "SHPB dynamic test",
+      "slug": "sirb-test",
+      "purpose": "测定岩石在高应变率下的动态压缩或拉伸力学性能。",
+      "workflow": "利用霍普金森压杆，通过撞击杆产生入射应力波，加载试样，记录入射、反射和透射波，计算动态应力-应变。",
+      "inputs": [
+        "圆柱试样（长度/直径比≤1）",
+        "撞击速度（10-20 m/s）"
+      ],
+      "outputs": [
+        "动态峰值应力",
+        "动态弹性模量",
+        "破碎形态",
+        "分形维数"
+      ],
+      "assumptions": [
+        "一维应力波传播",
+        "试样应力均匀"
+      ],
+      "strengths": [
+        "能在高应变率下测试",
+        "适用于热损伤后岩石"
+      ],
+      "limitations": [
+        "应力平衡假设可能需要验证",
+        "不能用于超低应变率"
+      ],
+      "related_concepts": [
+        "thermal-damage",
+        "fractal-dimension"
+      ],
+      "sources": [
+        "2022-xi-experimental-comparison",
+        "2023-li-comparative-study"
+      ]
+    },
+    {
+      "name": "X-ray computed tomography",
+      "slug": "ct-scanning",
+      "purpose": "无损获取岩石内部三维微观结构（孔隙、裂缝、矿物分布）图像。",
+      "workflow": "对试样进行旋转X射线扫描，经重建得到三维灰度图，通过阈值分割孔隙、矿物等。",
+      "inputs": [
+        "岩心试样",
+        "扫描参数（电压、电流、分辨率）"
+      ],
+      "outputs": [
+        "孔隙度分布",
+        "裂纹三维形态",
+        "矿物空间分布图"
+      ],
+      "assumptions": [
+        "不同密度矿物在灰度上可区分"
+      ],
+      "strengths": [
+        "无损、三维可视化",
+        "可实时加载扫描"
+      ],
+      "limitations": [
+        "小尺寸试样的代表性有限",
+        "射束硬化伪影"
+      ],
+      "related_concepts": [
+        "porosity",
+        "thermal-damage"
+      ],
+      "sources": [
+        "2023-fan-real-time-fatigue",
+        "2023-fan-stress-water-coupling",
+        "2023-guo-microcracking-behavior"
+      ]
+    },
+    {
+      "name": "nuclear magnetic resonance",
+      "slug": "nmr",
+      "purpose": "测量岩石孔隙度及孔径分布，通过氢原子核的弛豫时间T2谱。",
+      "workflow": "将饱和水岩石置于NMR仪中，施加射频脉冲，接收回波信号，反演T2分布，再根据表面弛豫率换算孔径。",
+      "inputs": [
+        "饱水岩心试样",
+        "表面弛豫率（固定值如5 μm/s）"
+      ],
+      "outputs": [
+        "孔隙度",
+        "T2谱",
+        "孔径分布"
+      ],
+      "assumptions": [
+        "孔隙中的水可自由弛豫",
+        "表面弛豫率为常数",
+        "T2与孔径正相关"
+      ],
+      "strengths": [
+        "可测微小孔径（纳米级）",
+        "无损"
+      ],
+      "limitations": [
+        "无法区分闭孔",
+        "受矿物磁性干扰"
+      ],
+      "related_concepts": [
+        "porosity",
+        "pore-size-distribution"
+      ],
+      "sources": [
+        "2022-wu-tensile-properties",
+        "2023-lai-study-on-damage"
+      ]
+    },
+    {
+      "name": "DFN generation software (HatchFrac)",
+      "slug": "hatchfrac",
+      "purpose": "快速生成二维和三维离散裂缝网络模型，支持分形聚集、T型交切和连通性分析。",
+      "workflow": "定义裂缝长度分布（幂律）、方位分布（von Mises-Fisher）、空间分形维数，通过逆CDF和MLP生成随机变量，使用扩展Newman-Ziff算法检查连通集群。",
+      "inputs": [
+        "裂缝长度幂律指数a",
+        "方位集中参数κ",
+        "分形维数D",
+        "裂缝强度P32"
+      ],
+      "outputs": [
+        "裂缝网络几何",
+        "连通集群大小分布"
+      ],
+      "assumptions": [
+        "裂缝为平面线段/多边形，忽略粗糙度",
+        "各裂缝独立生成"
+      ],
+      "strengths": [
+        "开源、高效，可处理百万级裂缝"
+      ],
+      "limitations": [
+        "二维和三维简化",
+        "形状假设为直线/凸多边形"
+      ],
+      "related_concepts": [
+        "discrete-fracture-network",
+        "power-law-distribution"
+      ],
+      "sources": [
+        "2022-zhu-hatchfrac"
+      ]
+    },
+    {
+      "name": "box-counting fractal dimension",
+      "slug": "box-counting",
+      "purpose": "计算二维裂缝网络或岩石断口的分形维数。",
+      "workflow": "用不同尺寸的网格覆盖图像，统计包含裂缝的网格数N(r)，以log(N(r))与log(1/r)的斜率绝对值作为分形维数D。",
+      "inputs": [
+        "裂缝网络二值图像"
+      ],
+      "outputs": [
+        "分形维数D"
+      ],
+      "assumptions": [
+        "图像具有统计自相似性"
+      ],
+      "strengths": [
+        "简单、常用"
+      ],
+      "limitations": [
+        "对网格尺寸范围敏感",
+        "无法区分空间聚类"
+      ],
+      "related_concepts": [
+        "fractal-dimension"
+      ],
+      "sources": [
+        "2022-zhu-fractal-and-multifractal"
+      ]
+    },
+    {
+      "name": "iterated function system (IFS) fracture interpolation",
+      "slug": "ifs-fractal-interpolation",
+      "purpose": "生成具有分形粗糙形态的裂隙曲线，用于构建粗糙离散裂隙网络。",
+      "workflow": "在初始折线上通过仿射变换和垂直缩放因子d_n迭代生成细分点，形成分形曲线；再替换DFN中的直线裂缝。",
+      "inputs": [
+        "初始折线控制点",
+        "垂直缩放因子d_n（|d_n|<1）",
+        "迭代次数"
+      ],
+      "outputs": [
+        "分形粗糙裂隙曲线",
+        "分形维数D"
+      ],
+      "assumptions": [
+        "裂缝表面符合自仿射分形特征"
+      ],
+      "strengths": [
+        "可控制粗糙度"
+      ],
+      "limitations": [
+        "平滑后可能改变连通性",
+        "参数选择影响结果"
+      ],
+      "related_concepts": [
+        "fractal-dimension",
+        "joint-roughness-coefficient"
+      ],
+      "sources": [
+        "2023-meng-ifs-based"
+      ]
+    },
+    {
+      "name": "Bayesian inversion of fracture network",
+      "slug": "bayesian-inversion-fracture",
+      "purpose": "利用水力、热或微震观测反推裂缝网络几何参数及其不确定性。",
+      "workflow": "设定先验分布（裂缝数量、产状、孔径），通过rjMCMC采样，结合正向模拟（流动换热）评估似然，更新得到后验裂缝模型。",
+      "inputs": [
+        "微震事件云",
+        "热突破数据",
+        "流量-压力数据"
+      ],
+      "outputs": [
+        "裂缝数量、位置、方位、孔径的后验分布"
+      ],
+      "assumptions": [
+        "裂缝网络可用二维DFN近似",
+        "流体为不可压缩，符合达西定律"
+      ],
+      "strengths": [
+        "能量化不确定性",
+        "仅需少量钻孔数据"
+      ],
+      "limitations": [
+        "限于二维",
+        "依赖微震定位精度和干湿事件鉴别"
+      ],
+      "related_concepts": [
+        "discrete-fracture-network",
+        "microseismic-monitoring"
+      ],
+      "sources": [
+        "2023-jiang-fracture-network",
+        "2023-chen-fracture-network-characterization"
+      ]
+    },
+    {
+      "name": "acoustic emission monitoring",
+      "slug": "acoustic-emission-monitoring",
+      "purpose": "实时采集岩石加载过程的AE信号，反演微破裂位置、能量和类型。",
+      "workflow": "在试样表面布置AE传感器，加载中连续记录AE事件，计算到达时间、幅值、能量，可进行定位和RA-AF分析。",
+      "inputs": [
+        "AE传感器、前置放大器（增益可调）",
+        "加载系统"
+      ],
+      "outputs": [
+        "AE计数、累积能量",
+        "震级分布",
+        "裂纹类型分类"
+      ],
+      "assumptions": [
+        "AE信号衰减修正可可靠定位"
+      ],
+      "strengths": [
+        "高灵敏度",
+        "可区分张拉与剪切微破裂"
+      ],
+      "limitations": [
+        "信号衰减影响解释，尤其在冷却冲击后",
+        "噪声干扰"
+      ],
+      "related_concepts": [
+        "acoustic-emission"
+      ],
+      "sources": [
+        "2023-cui-experimental-investigation",
+        "2023-ge-thermal-damage"
+      ]
+    },
+    {
+      "name": "real-time CT scanning under loading",
+      "slug": "real-time-ct-loading",
+      "purpose": "观测岩石在载荷作用下内部微结构动态演化，实现渐进破坏过程的可视化。",
+      "workflow": "将CT扫描系统与加载装置集成，在加载过程中暂停并保持应力，进行CT扫描，重建三维图像，分析孔隙率变化。",
+      "inputs": [
+        "小尺寸试样（直径6mm）",
+        "加载速率控制"
+      ],
+      "outputs": [
+        "不同应力水平下的孔隙率、裂纹体积",
+        "等效孔径分布"
+      ],
+      "assumptions": [
+        "扫描时应力保持不影响后续破坏过程"
+      ],
+      "strengths": [
+        "提供直接的微观损伤演化证据"
+      ],
+      "limitations": [
+        "小试样代表性",
+        "射束硬化裁剪边界"
+      ],
+      "related_concepts": [
+        "porosity",
+        "stress-thresholds"
+      ],
+      "sources": [
+        "2023-fan-real-time-fatigue",
+        "2023-fan-stress-water-coupling"
+      ]
+    },
+    {
+      "name": "multi-stage single cyclic loading (MLSCL)",
+      "slug": "mlscl",
+      "purpose": "研究递增应力水平下的岩石硬化和能量特征。",
+      "workflow": "对试样施加递增振幅的单循环加卸载，每个应力水平后完全卸载，记录应力-应变回线，计算弹性模量、残余应变和能量密度。",
+      "inputs": [
+        "圆柱试样",
+        "温度处理",
+        "上限应力水平比（0.4,0.6,...0.9 UCS）"
+      ],
+      "outputs": [
+        "弹性模量对数增长规律",
+        "能量耗散比"
+      ],
+      "assumptions": [
+        "卸载曲线下面积代表可释放弹性能"
+      ],
+      "strengths": [
+        "揭示循环硬化现象"
+      ],
+      "limitations": [
+        "仅峰前阶段"
+      ],
+      "related_concepts": [
+        "cyclic-loading",
+        "damage"
+      ],
+      "sources": [
+        "2022-zhao-effects-of-temperature"
+      ]
+    },
+    {
+      "name": "tracer test interpretation (RTD method)",
+      "slug": "tracer-rtd",
+      "purpose": "从示踪剂回收曲线估算储层体积、换热表面积和井间连通性。",
+      "workflow": "注入惰性或活性示踪剂，监测产出浓度得到突破曲线，转化为停留时间分布RTD，基于一维对流弥散模型分析。",
+      "inputs": [
+        "示踪剂注入质量",
+        "产出浓度历史"
+      ],
+      "outputs": [
+        "储层体积",
+        "井间连通性指数",
+        "换热表面积"
+      ],
+      "assumptions": [
+        "稳态流动条件",
+        "示踪剂为惰性溶质"
+      ],
+      "strengths": [
+        "常用的储层表征工具"
+      ],
+      "limitations": [
+        "稳态假设难实现",
+        "吸附示踪剂模型复杂"
+      ],
+      "related_concepts": [
+        "tracer-test-egs"
+      ],
+      "sources": [
+        "2023-ren-tracer-review"
+      ]
+    },
+    {
+      "name": "thermal-hydraulic coupled simulation (TH)",
+      "slug": "th-simulation",
+      "purpose": "模拟地热储层中流体流动与热交换过程，预测生产温度演化和热突破时间。",
+      "workflow": "建立DFN或等效连续介质模型，耦合Darcy方程和能量守恒方程，考虑局部热非平衡或热平衡，采用有限元或有限体积求解。",
+      "inputs": [
+        "裂缝网络几何",
+        "注入温度/流量",
+        "岩石热物性"
+      ],
+      "outputs": [
+        "生产温度时间变化",
+        "流场分布",
+        "采收率"
+      ],
+      "assumptions": [
+        "流体为不可压缩牛顿流体",
+        "忽略力学变形（TH模式）"
+      ],
+      "strengths": [
+        "可直接用于EGS设计"
+      ],
+      "limitations": [
+        "忽略THM耦合可能高估或低估性能"
+      ],
+      "related_concepts": [
+        "egs",
+        "thm-coupling"
+      ],
+      "sources": [
+        "2022-xiong-three-dimensional",
+        "2023-gao-heat-extraction",
+        "2023-wu-temperature-dependent"
+      ]
+    },
+    {
+      "name": "CT-based grain-based model (CT-GBM)",
+      "slug": "ct-gbm",
+      "purpose": "利用真实矿物分布建立离散元数值模型，模拟热诱导微裂纹。",
+      "workflow": "通过CT扫描获取矿物相分布图像，转换成PFC2D颗粒模型，对不同矿物和晶界赋予不同热-力参数，计算热应力致使微裂纹萌生。",
+      "inputs": [
+        "CT灰度图像",
+        "矿物热-力性质"
+      ],
+      "outputs": [
+        "微裂纹数量和类型（晶间/穿晶）",
+        "裂纹密度演化"
+      ],
+      "assumptions": [
+        "二维模型可近似表征",
+        "粘结热膨胀系数取平均"
+      ],
+      "strengths": [
+        "考虑非均质性",
+        "能区分晶界与穿晶开裂"
+      ],
+      "limitations": [
+        "参数标定非唯一",
+        "忽略初始压缩阶段"
+      ],
+      "related_concepts": [
+        "grain-based-model",
+        "thermal-damage"
+      ],
+      "sources": [
+        "2023-guo-microcracking-behavior"
+      ]
+    },
+    {
+      "name": "SGSIM aperture field generation",
+      "slug": "sgsim-aperture",
+      "purpose": "生成具有指定空间相关长度的非均质裂缝开度场。",
+      "workflow": "利用序贯高斯模拟，输入均值、方差和相关长度，生成二维高斯随机场，投影至裂缝网格上作为开度分布。",
+      "inputs": [
+        "平均开度",
+        "方差",
+        "相关长度φ"
+      ],
+      "outputs": [
+        "各单元开度值"
+      ],
+      "assumptions": [
+        "开度场服从对数正态或高斯分布"
+      ],
+      "strengths": [
+        "能再现裂缝开度的空间变异性"
+      ],
+      "limitations": [
+        "需固定随机种子以保持结构相似"
+      ],
+      "related_concepts": [
+        "flow-channelization"
+      ],
+      "sources": [
+        "2023-gao-heat-extraction"
+      ]
+    },
+    {
+      "name": "diametrical core deformation method",
+      "slug": "core-diametrical-deformation",
+      "purpose": "利用应力释放后岩心直径变形估算原位双轴主应力。",
+      "workflow": "从采场自由面附近钻取岩心，测量释放前后的最大和最小直径，结合弹性模量和泊松比计算主应力大小。",
+      "inputs": [
+        "岩心直径d_max, d_min, 原直径d_o",
+        "E, ν"
+      ],
+      "outputs": [
+        "主应力σ_H, σ_h"
+      ],
+      "assumptions": [
+        "垂直于自由面的正应力为零",
+        "线弹性各向同性",
+        "变形弹性恢复"
+      ],
+      "strengths": [
+        "简便、成本低"
+      ],
+      "limitations": [
+        "仅适用于双轴应力状态",
+        "需要极高直径测量精度"
+      ],
+      "related_concepts": [
+        "in-situ-stress"
+      ],
+      "sources": [
+        "2023-li-methodology"
+      ]
+    },
+    {
+      "name": "3D rough DFN with W-M function",
+      "slug": "wm-rough-dfn",
+      "purpose": "构建包含分形粗糙结构面的三维离散裂隙网络模型。",
+      "workflow": "用Weierstrass-Mandelbrot函数生成粗糙曲面，替换DFN中光滑平面；根据分形参数和JRC的映射关系赋予粗糙度，导出为FE/DE模型。",
+      "inputs": [
+        "分形维数D",
+        "高度幅度G",
+        "表面精度Pr",
+        "裂隙几何统计参数"
+      ],
+      "outputs": [
+        "RDFN3D模型",
+        "可导入数值分析"
+      ],
+      "assumptions": [
+        "岩体结构面具有分形特征"
+      ],
+      "strengths": [
+        "统一表征粗糙度",
+        "可直接用于数值分析"
+      ],
+      "limitations": [
+        "建模复杂",
+        "需大量参数",
+        "网格剖分可能简化裂缝数"
+      ],
+      "related_concepts": [
+        "fractal-dimension",
+        "joint-roughness-coefficient"
+      ],
+      "sources": [
+        "2023-wang-rough-dfn"
+      ]
+    },
+    {
+      "name": "explosive fracturing simulation (FDM+DDM)",
+      "slug": "explosive-fracturing-simulation",
+      "purpose": "模拟爆炸冲击波和气体压力驱动的井周径向裂缝起裂与扩展。",
+      "workflow": "首先用FLAC FDM模拟冲击波动载产生初始裂缝，再将裂缝作为位移不连续面，施加准静态气体压力模拟扩展。",
+      "inputs": [
+        "爆压波形",
+        "岩石弹性参数",
+        "井孔半径"
+      ],
+      "outputs": [
+        "裂缝数量、长度"
+      ],
+      "assumptions": [
+        "介质为弹性各向同性",
+        "冲击波与气体压力阶段顺序解耦"
+      ],
+      "strengths": [
+        "结合动力和静力效应"
+      ],
+      "limitations": [
+        "二维模型",
+        "气体压力简化为固定比例"
+      ],
+      "related_concepts": [
+        "hydraulic-fracturing"
+      ],
+      "sources": [
+        "2023-marji-explosive-fracturing"
+      ]
+    },
+    {
+      "name": "digital image correlation",
+      "slug": "dic",
+      "purpose": "通过处理试样表面数字图像，获得全场位移和应变分布。",
+      "workflow": "在试样表面制作随机散斑，加载过程中连续拍摄高分辨率图像，通过图像相关算法计算变形场。",
+      "inputs": [
+        "散斑图像序列"
+      ],
+      "outputs": [
+        "应变场（轴向、横向、剪切）",
+        "裂纹萌生位置"
+      ],
+      "assumptions": [
+        "表面变形代表内部变形"
+      ],
+      "strengths": [
+        "全场非接触测量"
+      ],
+      "limitations": [
+        "表面条件敏感"
+      ],
+      "related_concepts": [
+        "acoustic-emission"
+      ],
+      "sources": [
+        "2023-wu-effect-of-cooling-methods"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim": "花岗岩在450°C是热损伤阈值：低于此温度微裂纹发展不显著，超过则P波速度和力学性质显著劣化。",
+      "slug": "thermal-damage-threshold-granite-450c",
+      "evidence": "实验室实验显示，在T ≤ 450°C时P波速度和强度劣化不明显；450°C以上穿晶裂纹进入不稳定发展期。",
+      "condition": "特定花岗岩（长石65.22%，石英32.45%），小试样直径10mm，20mm高。",
+      "limitation": "仅对该花岗岩成立，其他岩性阈值不同。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-guo-mechanical-properties",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "液氮冷却对花岗岩造成的物理力学性质劣化（波速下降、孔隙度增加）比水冷和空冷更显著。",
+      "slug": "ln2-cooling-more-damage-than-water",
+      "evidence": "多家实验：600°C时LN₂冷却导致的波速衰减率高于水冷；孔隙度增幅更大。",
+      "condition": "加热至600°C，冷却介质为液氮（-196°C）或水（25°C），花岗岩。",
+      "limitation": "结果受莱顿弗罗斯特效应影响，实际换热系数不确定；仅对特定花岗岩有效。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2022-xi-experimental-comparison",
+          "locator": "pp. 6-8"
+        },
+        {
+          "paper_id": "2023-lai-study-on-damage",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "花岗岩在递增振幅循环加载下出现硬化现象，弹性模量随应力水平对数增长，残余应变减小。",
+      "slug": "cyclic-hardening-granite",
+      "evidence": "多级单循环加载实验，100-500°C硬化显著，弹性模量对数式增长，600°C时减弱。",
+      "condition": "MLSCL加载路径，上限应力水平0.4–0.9 UCS，温度25–600°C，单轴压缩。",
+      "limitation": "仅峰前，未考虑频率影响，试样小尺寸。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2022-zhao-effects-of-temperature",
+          "locator": "pp. 1-2, 5-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "分形维数D不能区分裂缝中心位置聚类效应；多重分形谱宽度Δα可反映空间非均质性。",
+      "slug": "dfn-fractal-dimension-vs-clustering",
+      "evidence": "1138次DFN模拟，单分形D对空间分布分形维FD变化不敏感。",
+      "condition": "二维随机DFN，裂缝长度幂律分布，以形成贯穿集群为终止准则。",
+      "limitation": "结果限于该研究参数范围；真实裂缝网络含T型交叉，行为可能不同。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2022-zhu-fractal-and-multifractal",
+          "locator": "pp. 13-15"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "基于微震事件云和热突破数据的贝叶斯联合反演可有效推断水力活跃裂缝网络的数量、方位和孔径。",
+      "slug": "microseismic-inversion-active-fracture-network",
+      "evidence": "方法在二维验证案例中展现了能力。",
+      "condition": "能够区分湿/干微震事件，热突破曲线有足够分辨率，储层激励完成后的静态网络。",
+      "limitation": "当前仅二维，忽略THM耦合，依赖微震定位精度。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2023-jiang-fracture-network",
+          "locator": "pp. 1-1, 2-3, 6-7"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在EGS数值模拟中，温度依赖的岩石热导率和比热容变化效应相互抵消，使用室温恒定参数可提供可接受的预测精度。",
+      "slug": "temperature-dependent-th-effect-cancel",
+      "evidence": "单裂隙EGS模型模拟显示，热导率增加提升生产温度，比热容减小降低生产温度，总体影响小于10%。",
+      "condition": "系统温差较大（200→50°C），TH耦合模式，单裂隙。",
+      "limitation": "未考虑THM耦合、复杂网络或化学效应。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-wu-temperature-dependent",
+          "locator": "pp. 1-1, 5-7"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "裂缝开度变异性（相关长度和接触障碍）导致严重流通道化，有效流动面积不足40%。",
+      "slug": "flow-channelization-effective-area-less-40",
+      "evidence": "中尺度DFN模型流动换热模拟，非均质开度场产生强烈通道化。",
+      "condition": "基于二维DFN，开度由SGSIM生成，相关长度0.5-2 m。",
+      "limitation": "模拟限于中尺度，未经验证实际场地。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-gao-heat-extraction",
+          "locator": "pp. 1-1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "采用Terzaghi加权时，限制最小交角α会导致体积裂缝强度P32的系统性低估。",
+      "slug": "p32-underestimation-angle-cutoff",
+      "evidence": "合成DFN分析，许多软件默认α>5°就引起偏差。",
+      "condition": "钻孔扫描线采样，Terzaghi加权法。",
+      "limitation": "基于合成DFN，未在复杂天然网络中验证。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-ojeda-discrete-fracture-network",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "花岗岩热损伤主要以拉伸破坏模式发展，穿晶裂纹演化分为平静期（室温~300°C）、稳定期（300°C~450°C）和不稳定期（450°C~600°C）。",
+      "slug": "thermal-damage-tensile-mode-gbm",
+      "evidence": "CT-GBM模拟结果显示拉伸应力主导微裂纹。",
+      "condition": "花岗岩，基于真实矿物分布二维模型。",
+      "limitation": "参数标定非唯一，未模拟压密阶段。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-guo-microcracking-behavior",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [
+        "thermal-damage-threshold-granite-450c"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "在相同加热温度下，热冲击对石灰岩表观颜色和力学性质的劣化效应强于单纯高温作用。",
+      "slug": "thermal-shock-stronger-than-high-temp",
+      "evidence": "热冲击下600°C颜色变白，而纯高温需700°C。",
+      "condition": "石灰岩，加热至600°C后水冷。",
+      "limitation": "仅一种石灰岩，低温数据离散。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-dong-experimental-study",
+          "locator": "pp. 5-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "热冲击对张性裂隙面的损伤（粗糙度增加）普遍大于剪切裂隙面。",
+      "slug": "tensile-fracture-more-damaged-than-shear",
+      "evidence": "张性试样500°C时ΔRrms=0.0772，剪切最大0.0485（300°C）。",
+      "condition": "花岗岩人工裂隙，5次400-500°C热冲击后20°C水冷。",
+      "limitation": "仅针对人工裂隙，真实裂隙可能有差异。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-deng-study-on-fracture-surface",
+          "locator": "pp. 8-9"
+        }
+      ],
+      "supports": [
+        "ln2-cooling-more-damage-than-water"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "页岩油主要赋存于中孔和宏孔，溶剂提取后这两种孔隙体积显著降低，微孔体积几乎不变。",
+      "slug": "shale-oil-mainly-meso-macro-pores",
+      "evidence": "对比溶剂提取前后孔径分布。",
+      "condition": "油基泥浆取芯页岩样本。",
+      "limitation": "轻烃损失影响定量。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2022-xu-occurrence-space",
+          "locator": "pp. 5-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "惰质组在热演化中基本不发生热解，因此不生成有机孔。",
+      "slug": "inertinite-no-organic-pores",
+      "evidence": "综述总结。",
+      "condition": "TOC > 0.5%，热成熟度范围Ro 0.5-2.0%。",
+      "limitation": "仅对于惰质组，其他显微组分则否。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2022-xu-occurrence-space",
+          "locator": "pp. 2-3"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "花岗岩在循环加热-水冷作用后物理力学性质变化在三次循环后趋于平稳，呈现不可逆损伤。",
+      "slug": "cyclic-heating-damage-saturation",
+      "evidence": "质量损失率、体积膨胀率和P波速度变化在3次循环后指数增加趋势减缓。",
+      "condition": "加热至400°C，水冷，花岗岩。",
+      "limitation": "特定花岗岩，单一温度，冷却方式仅水冷。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-cui-experimental-investigation",
+          "locator": "pp. 1-2, 5-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "使用吸附示踪剂或温度响应示踪剂比仅用惰性示踪剂能更可靠预测EGS热突破。",
+      "slug": "adsorptive-tracer-improves-thermal-breakthrough-prediction",
+      "evidence": "综述基于近期高质量现场测试和模型发展。",
+      "condition": "需要示踪剂热稳定、吸附特性明确。",
+      "limitation": "新型示踪剂在现场的应用仍有限。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-ren-tracer-review",
+          "locator": "pp. 1-1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "爆炸冲击波可在弹性岩石井周产生约8条对称径向初始裂缝。",
+      "slug": "explosion-8-radial-cracks",
+      "evidence": "FLAC2D模拟，忽略微裂纹合并。",
+      "condition": "均质各向同性弹性岩石，不考虑地应力差异。",
+      "limitation": "二维，裂缝数受参数影响。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2023-marji-explosive-fracturing",
+          "locator": "pp. 9-10"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "水平钻孔中水力压裂裂缝起始于钻孔中部，而非孔底，导致泵压非线性上升。",
+      "slug": "horizontal-borehole-fracture-initiation-middle",
+      "evidence": "真三轴实验和ABAQUS模拟。",
+      "condition": "花岗岩立方体，无预存裂缝，注入速率2-11 ml/min。",
+      "limitation": "实验室尺度，特定应力场。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-piao-experimental-and-numerical",
+          "locator": "pp. 8-9"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "围压对热冲击引起的高温花岗岩应力阈值（σci, σcd, σp）劣化具有显著抑制作用。",
+      "slug": "confining-pressure-suppresses-thermal-degradation",
+      "evidence": "0 MPa围压下降幅度达54%，60 MPa时仅13%。",
+      "condition": "花岗岩，加热至400°C后水冷，围压0-60 MPa。",
+      "limitation": "特定花岗岩，热冲击处理。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2022-zhou-variations-in-stress-thresholds",
+          "locator": "pp. 5-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "非参数定向-线性核密度估计可无需分布假设联合表征裂隙产状和迹长的概率密度函数。",
+      "slug": "non-parametric-kde-joint-orientation-trace",
+      "evidence": "12个非平面高墙面验证结果 outstanding。",
+      "condition": "从摄影测量模型提取的迹线数据，迹线截断比已知。",
+      "limitation": "假设产状与尺寸独立，带宽选择需方法优化。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-gomez-non-parametric-dfn",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "冷却速率增大导致砂岩单轴抗压强度、弹性模量单调下降，破碎度增加。",
+      "slug": "cooling-rate-ucs-decrease",
+      "evidence": "实验5-10°C/min及数值模拟扩展到180°C/min。",
+      "condition": "砂岩加热至200°C后冷却至-30°C，特定加载。",
+      "limitation": "高冷却速率结果来自数值外推。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-guo-impact-of-cooling-rate",
+          "locator": "pp. 3-6, 9-12"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "加热-水冷循环后花岗岩声发射信号衰减，建议调整前置放大器以改善监测。",
+      "slug": "ae-signal-attenuation-cooling-shock",
+      "evidence": "800°C水冷砂岩AE信号衰减及前置放大调整。",
+      "condition": "800°C加热后水冷砂岩。",
+      "limitation": "单一温度和岩性。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2023-ge-thermal-damage",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "岩芯饼化断口形态可反映地应力状态：杯状凹面指示高水平应力环境，平面断口对应低水平应力。",
+      "slug": "core-discing-fracture-morphology-stress-indicator",
+      "evidence": "现场岩芯观察与数值模拟对比。",
+      "condition": "垂直钻孔，花岗岩类脆性岩石。",
+      "limitation": "未考虑钻头施工因素，马鞍形断口未再现。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2022-zhang-core-discing",
+          "locator": "pp. 1-2, 7-9"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "双重双分散多孔介质（DBPM）混合分形单元等效渗透率模型对最大裂缝长度和最大孔隙直径最敏感。",
+      "slug": "dbpm-sensitive-crack-length",
+      "evidence": "DBPM-IFU模型参数敏感性分析。",
+      "condition": "黄土填筑坝体，非饱和/饱和条件，分形描述。",
+      "limitation": "模型仅在南坪水库单例验证。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2023-liu-fractal-theory-loess-dam",
+          "locator": "pp. 4"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在DFN中，裂缝长度呈多段幂律分布，大裂缝幂律指数较大。",
+      "slug": "dfn-power-law-length",
+      "evidence": "80张露头图分析，51张显示聚合概率随长度增加减小。",
+      "condition": "不同尺度露头，采样方法有截断。",
+      "limitation": "数据可能选择性偏差。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2022-zhu-enhancing-fracture-network",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "实时CT扫描证实，在水-力耦合作用下，红砂岩孔隙率劣化比纯应力作用更显著且更早发生。",
+      "slug": "water-weakening-porosity-evolution",
+      "evidence": "干燥和饱和红砂岩单轴压缩CT对比。",
+      "condition": "特定红砂岩试样。",
+      "limitation": "小试样，人工饱和条件。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-fan-stress-water-coupling",
+          "locator": "pp. 6-10"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "JRC通过倾斜试验获得时能反映节理的真实三维方向性粗糙度。",
+      "slug": "jrc-three-dimensional-roughness",
+      "evidence": "综述强调倾斜试验体现出三维性。",
+      "condition": "节理未风化，试验方向与剪切方向一致。",
+      "limitation": "需要可靠的基本摩擦角和JCS。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-barton-advances",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "组合Newman-Ziff算法与空间分块可在近似线性时间内完成二维和三维DFN的连通集群识别。",
+      "slug": "dfn-connectivity-computation-linear",
+      "evidence": "算法标度图表明计算时间近似线性。",
+      "condition": "裂缝网络具有一定密度，预先划分空间块。",
+      "limitation": "最佳块大小需依赖裂缝密度分布。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2022-zhu-hatchfrac",
+          "locator": "pp. 4-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "对于完整花岗岩在水冷循环后，其剪切强度和剪切刚度随温度升高和循环次数增加而非线性下降。",
+      "slug": "shear-strength-nonlinear-decrease-thermal-cycles",
+      "evidence": "直接剪切实验，法向应力20 MPa。",
+      "condition": "花岗岩，300-500°C，1-7次水冷循环。",
+      "limitation": "单一法向应力，完整岩石。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-jiang-morphological-features",
+          "locator": "pp. 1-1, 4-7"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "页岩弹性模量的非均质度参数m=3，可用于深部页岩非匀质力学表征。",
+      "slug": "shale-weibull-heterogeneity-index-m=3",
+      "evidence": "通过单轴、三轴、真三轴模拟试验标定。",
+      "condition": "四川盆地龙马溪组页岩，不同埋深。",
+      "limitation": "特定页岩储层。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-li-unknown-year-deep-shale",
+          "locator": "pp. 1-4"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "分形维数对大尺寸碎片质量过于敏感，不宜单独作为岩石损伤程度的判据。",
+      "slug": "fractal-dimension-unreliable-crushing-index",
+      "evidence": "SHPB试验发现分形维数在特定碎片分布下反趋势。",
+      "condition": "花岗岩动态冲击，基于质量-粒径分布分形分析。",
+      "limitation": "方法局限，需结合其他指标。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-li-comparative-study",
+          "locator": "pp. 10-11"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "花岗岩在实时高温下的力学劣化程度高于高温后自然冷却，峰值应力降幅更大。",
+      "slug": "real-time-high-temperature-stronger-degradation",
+      "evidence": "自然冷却400-700°C下降6.96-31.51%，实时高温下降8.36-46.55%。",
+      "condition": "色季拉山加里东期花岗岩，SHPB冲击。",
+      "limitation": "特定花岗岩，应变率固定。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-li-comparative-study",
+          "locator": "pp. 1-2, 6-8"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "从岩心直径变形可估算开采面附近双轴主应力，实验室验证R²=0.93。",
+      "slug": "core-diametral-deformation-stress-estimation",
+      "evidence": "12组单轴压缩取芯试验。",
+      "condition": "线弹性各向同性，自由面法向应力近似为零。",
+      "limitation": "尚未经双轴或现场验证。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2023-li-methodology",
+          "locator": "pp. 5-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "IFS分形插值构建的DFN在水力压裂模拟中，注入压力呈突然上升、快速下降、稳定三阶段。",
+      "slug": "injection-pressure-ifs-dfn",
+      "evidence": "二维共轭断层分形DFN数值模拟。",
+      "condition": "零厚度CZM，立方定律，基质渗流。",
+      "limitation": "二维，未经验证。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2023-meng-ifs-based",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "基于CT-GBM模拟，花岗岩热损伤穿晶裂纹在450°C以下稳定，超过后快速扩展。",
+      "slug": "intragranular-crack-three-stages",
+      "evidence": "模拟分为平静期、稳定发展期、不稳定发展期。",
+      "condition": "花岗岩二维CT-GBM。",
+      "limitation": "数值模型，参数标定非唯一。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2023-guo-microcracking-behavior",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [
+        "thermal-damage-threshold-granite-450c"
+      ],
+      "contradicts": []
+    }
+  ],
+  "syntheses": [
+    {
+      "title": "冷却方式对高温花岗岩力学性质劣化的影响比较",
+      "slug": "cooling-method-comparison-granite",
+      "central_question": "水冷、液氮冷却和空气冷却三种方式对高温花岗岩造成的热损伤有何差异？",
+      "summary": "多项实验量化了不同冷却方式对高温花岗岩的影响。液氮冷却因其极低温度和快速传热特性，引起最大热应力，导致P波速度下降最多、孔隙度增加最显著，抗拉强度和UCS劣化最严重。水冷次之，空气冷却损伤最小。但液氮的莱顿弗罗斯特效应可能部分抑制换热。综合来看，热梯度是控制损伤的主导因素。",
+      "evidence_chain": [
+        "2022-xi 比较自然、水和LN₂冷却，600°C花岗岩波速下降约60%（LN₂影响最大）",
+        "2023-wu-effect-of-cooling 水冷试样抗拉强度始终低于空冷试样，差距随温度升高扩大",
+        "2022-zhou 围压抑制热劣化，衬出热冲击效应重要性",
+        "2023-lai LN₂循环冷冲击后孔隙度增幅随温度急剧增加"
+      ],
+      "disagreements": [
+        "液氮冷却莱顿弗罗斯特效应的换热系数取值在模拟中不一（100 W/m²·K），可能低估损伤。"
+      ],
+      "boundary_conditions": [
+        "加热温度200–800°C范围",
+        "冷却介质温度：水20°C，液氮-196°C，空气室温",
+        "岩性主要为花岗岩"
+      ],
+      "writing_uses": [
+        "用于EGS储层刺激策略选择",
+        "用于理解钻井冷却对井壁稳定的影响"
+      ],
+      "sources": [
+        "2022-xi-experimental-comparison",
+        "2023-wu-effect-of-cooling-methods",
+        "2022-zhou-variations-in-stress-thresholds",
+        "2023-lai-study-on-damage"
+      ]
+    },
+    {
+      "title": "裂缝网络表征中的分形与多重分形方法",
+      "slug": "fractal-analysis-fracture-networks",
+      "central_question": "如何利用分形和多重分形工具定量描述天然裂缝网络的复杂性？",
+      "summary": "一系列研究展示了分形在裂缝表征中的应用和局限。传统盒计数单分形维数对空间聚类不敏感；多重分形谱能区分裂缝长度、方位和位置的综合效应。随机DFN模拟表明，系统尺寸和裂缝长度分布对分形维数影响最大。IFS分形插值可生成粗糙裂隙曲线用于建模。总体而言，分形提供了超越欧氏几何的定量指标，但解释时需要结合多重分形和特定地质约束。",
+      "evidence_chain": [
+        "2022-zhu-fractal-and-multifractal 单分形D无法识别聚类；多重分形Δα可区分",
+        "2022-zhu-enhancing 裂缝长度呈多段幂律分布",
+        "2023-meng IFS生成分形粗糙DFN，显著改变水力压裂行为",
+        "2023-wang W-M分形函数生成3D粗糙结构面网络"
+      ],
+      "disagreements": [
+        "单分形维数与多重分形谱的适用性权衡：D简洁但信息有限，Δα更丰富但计算复杂。"
+      ],
+      "boundary_conditions": [
+        "观测数据源于露头或合成DFN",
+        "二维分析为主，三维拓展仍在发展中"
+      ],
+      "writing_uses": [
+        "为储层裂缝建模提供统计参数",
+        "评估水力压裂设计复杂性影响"
+      ],
+      "sources": [
+        "2022-zhu-fractal-and-multifractal",
+        "2022-zhu-enhancing-fracture-network",
+        "2023-meng-ifs-based",
+        "2023-wang-rough-dfn"
+      ]
+    },
+    {
+      "title": "高温花岗岩热损伤机理与温度阈值",
+      "slug": "thermal-damage-mechanism-granite",
+      "central_question": "高温和热循环如何从微观角度导致花岗岩力学性质劣化？",
+      "summary": "多篇论文通过实验和数值模拟（CT-GBM）揭示了花岗岩热损伤的微观机制。低于α-β石英相变温度（573°C）时，损伤主要由矿物热膨胀不匹配引起，晶界裂纹占主导。超过450°C后，穿晶裂纹急剧增加，450°C被视为热损伤阈值。600°C以上石英相变进一步加剧劣化。损伤主要以拉伸破裂形式发展，表现为P波速度下降、孔隙度增加、抗拉和抗压强度降低。循环加热-冷却累积损伤，但在数次循环后趋于饱和。",
+      "evidence_chain": [
+        "2023-guo-mechanical-properties 450°C是热损伤阈值",
+        "2023-guo-microcracking 穿晶裂纹三阶段：平静-稳定-不稳定",
+        "2022-wu-tensile-properties 600°C循环拉伸强度劣化",
+        "2023-cui 循环加热-水冷损伤饱和在3次循环后",
+        "2023-wu-investigation LN₂冷却密度三阶段下降"
+      ],
+      "disagreements": [
+        "不同花岗岩的热损伤阈值可能因矿物组成而异（450°C vs 400°C）。"
+      ],
+      "boundary_conditions": [
+        "花岗岩类，石英含量较高",
+        "加热速率通常≤5°C/min以避免额外热冲击",
+        "冷却介质为水或液氮"
+      ],
+      "writing_uses": [
+        "干热岩开发中储层热刺激参数设计",
+        "高温隧道围岩稳定性评估"
+      ],
+      "sources": [
+        "2023-guo-mechanical-properties",
+        "2023-guo-microcracking-behavior",
+        "2022-wu-tensile-properties",
+        "2023-cui-experimental-investigation",
+        "2023-wu-investigation-on-physico-mechanical"
+      ]
+    },
+    {
+      "title": "EGS储层流动与换热模拟的简化与局限",
+      "slug": "egs-flow-heat-modeling-assumptions",
+      "central_question": "当前EGS数值模拟模型中普遍采用的简化假设对预测准确性有何影响？",
+      "summary": "现有许多EGS模型基于二维DFN或单裂隙，忽略三维效应和力学耦合。研究表明，二维模型预测非均质DFN时可能不准确；裂缝开度非均质性导致严重流通道化，而传统平行板模型忽视这一点。同时，温度依赖的热物性变化效应在整体上相互抵消，因此使用恒定参数尚可接受。然而，忽略长期THMC耦合可能导致对裂缝渗透率演化和寿命的错误估计。",
+      "evidence_chain": [
+        "2022-xiong 3D TH模型提出2D可能不准确",
+        "2023-gao 开度变异性造成流通道化，有效流动面积<40%",
+        "2023-wu-temperature-dependent 温度依赖热导率和比热容效应部分抵消",
+        "2023-ren tracer review指出多种假设限制"
+      ],
+      "disagreements": [
+        "对于温度依赖热物性的重要性，不同研究结论部分矛盾（单一裂隙 vs 复杂网络）。"
+      ],
+      "boundary_conditions": [
+        "模型尺度从实验室到场地不等",
+        "多数忽略力学和化学过程"
+      ],
+      "writing_uses": [
+        "指导EGS数值模拟软件开发和参数选择",
+        "评价现有模拟结果的可靠性"
+      ],
+      "sources": [
+        "2022-xiong-three-dimensional",
+        "2023-gao-heat-extraction",
+        "2023-wu-temperature-dependent"
+      ]
+    },
+    {
+      "title": "基于微震和示踪的裂缝网络参数反演方法",
+      "slug": "inversion-fracture-network-geophysics",
+      "central_question": "如何融合多种地球物理和生产数据反演隐藏的裂缝网络结构？",
+      "summary": "稀疏钻孔环境下，微震事件云可作为裂缝几何的先验约束，联合示踪或热突破数据进行贝叶斯反演，可以估计裂缝数量、产状和孔径。同时，示踪剂测试解释方法（RTD等）可提供储层体积和连通性。连续反演（如行波时层析成像）提供高分辨率水力扩散率图，可辅助DFN反演。这些方法各有假设，如稳态流动、二维简化等，但为EGS储层表征提供了可行框架。",
+      "evidence_chain": [
+        "2023-jiang-fracture-network 微震+热突破联合反演验证",
+        "2023-ren 示踪测试解释储层体积和换热面积",
+        "2023-jalali 连续与离散反演结合表征开挖诱导裂隙网络",
+        "2023-chen-fracture-network VAEs-GAN反演"
+      ],
+      "disagreements": [
+        "微震事件与裂缝的关联（干湿事件区分）仍存挑战。"
+      ],
+      "boundary_conditions": [
+        "通常限于二维，需要高质量观测数据",
+        "假设裂缝网络在反演期内固定"
+      ],
+      "writing_uses": [
+        "为EGS储层管理提供裂缝特征输入",
+        "指导观测系统设计"
+      ],
+      "sources": [
+        "2023-jiang-fracture-network",
+        "2023-ren-tracer-review",
+        "2023-jalali-high-resolution"
+      ]
+    },
+    {
+      "title": "热冲击下岩石力学性质的多尺度实验研究",
+      "slug": "multiscale-thermal-damage-experiments",
+      "central_question": "如何通过多尺度实验手段（宏观力学测试、微观CT/NMR、声发射）综合表征热损伤？",
+      "summary": "从宏观的单轴/三轴压缩、巴西劈裂到微观的NMR、CT扫描、声发射，研究搭建了多尺度分析框架。NMR揭示孔径分布变化，CT可视化微裂纹扩展，AE判别破裂模式和损伤阶段，DIC测量表面应变场。这些技术相互印证，形成了从现象到机制的桥梁。例如，CT证实了高温下孔隙率的急剧增加，与宏观强度下降一致；AE信号衰减可用于前置放大调整。",
+      "evidence_chain": [
+        "2023-cui AE与损伤阶段对应，循环热损伤",
+        "2023-fan-stress-water 实时CT展示孔隙率三阶段变化",
+        "2022-wu-tensile NMR与波速反相关",
+        "2023-wu-effect DIC和AE结合分析冷却影响"
+      ],
+      "disagreements": [
+        "小尺寸CT试样的代表性争议。"
+      ],
+      "boundary_conditions": [
+        "实验室尺度，干燥或饱水试样",
+        "温度200-800°C"
+      ],
+      "writing_uses": [
+        "建立热损伤诊断流程",
+        "验证数值模型"
+      ],
+      "sources": [
+        "2023-cui-experimental-investigation",
+        "2023-fan-stress-water-coupling",
+        "2022-wu-tensile-properties",
+        "2023-wu-effect-of-cooling-methods"
+      ]
+    },
+    {
+      "title": "裂缝粗糙度表征及其对流体流动和强度的影响",
+      "slug": "fracture-roughness-effects",
+      "central_question": "裂缝粗糙度如何影响岩体水力-力学行为？",
+      "summary": "节理粗糙度系数JRC是工程上表征粗糙度的关键参数，可通过倾斜试验反映三维方向性。分形维数D和W-M函数提供了数学描述工具。粗糙裂缝使渗流偏离理想立方定律，产生流通道化，影响水力开度与力学开度的关系。在水力压裂中，粗糙DFN显著改变注入压力响应。剪切强度方面，JRC-jCS准则综合了粗糙度和壁面强度。因此，忽略粗糙度将导致强度和安全系数的高估。",
+      "evidence_chain": [
+        "2023-barton JRC综述，强调三维性",
+        "2023-wang W-M分形曲面对应JRC",
+        "2023-meng IFS粗糙DFN压力突变",
+        "2023-gao 开度变异导致流通道化"
+      ],
+      "disagreements": [
+        "JRC估计方法（视觉比较、统计参数、分形）存在不一致。"
+      ],
+      "boundary_conditions": [
+        "裂隙单条或网络，饱和单相流"
+      ],
+      "writing_uses": [
+        "岩体稳定性分析中的抗剪强度参数选取",
+        "水力压裂设计"
+      ],
+      "sources": [
+        "2023-barton-advances",
+        "2023-wang-rough-dfn",
+        "2023-meng-ifs-based",
+        "2023-gao-heat-extraction"
+      ]
+    },
+    {
+      "title": "岩石热循环累积损伤模型与应用",
+      "slug": "cumulative-thermal-cycle-damage",
+      "central_question": "如何建立描述多次热循环引起的岩石渐进损伤模型？",
+      "summary": "热-冷循环对岩石造成不可逆损伤，其演化遵循典型的指数或非线性规律，在数次循环后趋于饱和。研究者采用基于波速或弹性模量的损伤变量（如D=1-(Vp/V0)²），并扩展至统计损伤理论（Weibull分布）。这些模型能较好拟合实验数据，为工程长期稳定性评估提供了工具。但模型大多假设均质连续体，忽略矿物相各向异性。",
+      "evidence_chain": [
+        "2022-wu 提出基于波速和抗拉强度的损伤变量D1、D2",
+        "2023-cui 质量损失、体积膨胀指数增长拟合R²=0.99",
+        "2023-jiang-experimental 统计损伤理论耦合热循环初始损伤",
+        "2023-lai 损伤因子随温度非线性增加"
+      ],
+      "disagreements": [
+        "不同岩性损伤饱和的循环次数可能不同。"
+      ],
+      "boundary_conditions": [
+        "实验室控制循环次数和温差"
+      ],
+      "writing_uses": [
+        "地热储层寿命预测",
+        "高寒区岩土工程耐久性评价"
+      ],
+      "sources": [
+        "2022-wu-tensile-properties",
+        "2023-cui-experimental-investigation",
+        "2023-jiang-experimental-damage",
+        "2023-lai-study-on-damage"
+      ]
+    },
+    {
+      "title": "页岩油气储层微观孔隙与裂缝表征技术",
+      "slug": "shale-reservoir-characterization",
+      "central_question": "如何综合运用多种技术手段表征页岩储层的微观孔隙和天然裂缝，以评估油气富集？",
+      "summary": "页岩油赋存于有机孔、无机孔和微裂缝中。流体注入法（CO₂、N₂、MIP）与溶剂提取结合可区分孔隙类型，显示油主要占据中孔/宏孔。有机孔发育受TOC和热成熟度控制，惰质组不生孔。CT和FMI测井可分别表征微米级裂缝和大尺度裂缝。DFN建模融合不同尺度信息，但面临模型集成挑战。这些综合表征为页岩油可动性评价提供了微观证据。",
+      "evidence_chain": [
+        "2022-xu 综述指出有机孔演化及溶剂提取法",
+        "2023-li-unknown 深部页岩DFN建模采用Weibull和Monte Carlo",
+        "2023-liu-j 多尺度裂缝建模综述",
+        "2022-xu 惰质组不生孔"
+      ],
+      "disagreements": [
+        "油基泥浆取样轻烃损失导致游离油低估"
+      ],
+      "boundary_conditions": [
+        "成熟度Ro 0.5-3.5%的页岩",
+        "样品制备和保存要求严格"
+      ],
+      "writing_uses": [
+        "页岩油甜点预测",
+        "压裂方案设计基础"
+      ],
+      "sources": [
+        "2022-xu-occurrence-space",
+        "2023-li-unknown-year-deep-shale",
+        "2023-liu-fracture-network-modeling-comparison"
+      ]
+    },
+    {
+      "title": "深部硬岩地应力提取与岩芯破坏机制",
+      "slug": "deep-hard-rock-stress-core-damage",
+      "central_question": "如何从深部钻探岩芯的破坏特征反演原地应力状态？",
+      "summary": "高地应力下花岗岩类岩芯常出现饼化现象，多为拉伸机制主导。杯状凹面断口指示高水平应力环境，平面断口对应低应力差。基于岩芯的直径弹性变形可定量估算双轴主应力。同时，水平孔水力压裂地应力测量理论得到发展，裂缝起始位置与垂直孔不同。这些方法为深部地质工程（地热、隧道、矿山）提供了可行的应力估计手段。",
+      "evidence_chain": [
+        "2022-zhang-core-discing 断口形态-应力状态推断",
+        "2023-li-methodology 岩心直径变形应力估计R²=0.93",
+        "2023-piao 水平孔HF地应力测量实验验证",
+        "2022-zhou 围压抑制应力阈值劣化，间接反映应力环境影响"
+      ],
+      "disagreements": [
+        "饼化断口形态受钻头施工因素影响，纯粹应力解释有局限。"
+      ],
+      "boundary_conditions": [
+        "脆性结晶岩，深部高地应力环境"
+      ],
+      "writing_uses": [
+        "钻井岩芯地质编录",
+        "地应力测量方案设计"
+      ],
+      "sources": [
+        "2022-zhang-core-discing",
+        "2023-li-methodology",
+        "2023-piao-experimental-and-numerical"
+      ]
+    },
+    {
+      "title": "岩石破坏过程的声发射与数字图像相关技术",
+      "slug": "ae-dic-damage-evolution",
+      "central_question": "如何利用AE和DIC技术实时监测岩石损伤演化的不同阶段？",
+      "summary": "AE事件计数和能量率与岩石损伤阶段（裂纹闭合、弹性、稳定扩展、非稳定扩展）有良好对应。DIC提供表面应变场，可识别应变局部化区域。两者结合可全面描述从微破裂到宏观断裂的过程。在热损伤岩石中，AE信号可能衰减，但通过调节前置放大仍可使用。DIC能测量全过程应变，为数值模型验证提供数据。",
+      "evidence_chain": [
+        "2023-cui AE计数与损伤阶段对应",
+        "2023-ge AE衰减需调整前置放大器",
+        "2023-wu-effect DIC用于巴西劈裂应变测量",
+        "2023-fan-real-time 循环加载下AE与CT结合"
+      ],
+      "disagreements": [
+        "AE定位精度与介质各向异性的权衡"
+      ],
+      "boundary_conditions": [
+        "实验室准静态加载",
+        "需要高灵敏度传感器和高帧率相机"
+      ],
+      "writing_uses": [
+        "岩石破坏预警",
+        "本构模型校核"
+      ],
+      "sources": [
+        "2023-cui-experimental-investigation",
+        "2023-ge-thermal-damage",
+        "2023-wu-effect-of-cooling-methods",
+        "2023-fan-real-time-fatigue"
+      ]
+    },
+    {
+      "title": "矿井与隧道工程中开挖扰动区的裂缝网络特性",
+      "slug": "excavation-damage-zone-fractures",
+      "central_question": "开挖诱发裂缝网络具有怎样的几何和渗透特性，如何高效表征？",
+      "summary": "隧道/钻孔周围形成的开挖损伤区包含张性和剪性裂缝系统。高分辨率气动跨孔测试结合旅行时层析成像和DFN反演可重建裂缝连通性和水力特性。张性裂缝带渗透率比剪切带高数个数量级。在低渗储层，爆炸压裂技术也可产生径向裂缝。这些研究为核废料处置、采矿和隧道支护提供了关键参数。",
+      "evidence_chain": [
+        "2023-jalali 连续+离散反演刻画EDI裂缝网络",
+        "2023-marji 爆炸在低渗储层产生径向裂缝",
+        "2023-chen-underwater-shield 渗流与沉降的流固耦合模拟"
+      ],
+      "disagreements": [
+        "DFN反演的不确定性较大。"
+      ],
+      "boundary_conditions": [
+        "结晶岩或坚硬沉积岩，低基质渗透率"
+      ],
+      "writing_uses": [
+        "放射性废物处置库安全评估",
+        "爆破设计优化"
+      ],
+      "sources": [
+        "2023-jalali-high-resolution",
+        "2023-marji-explosive-fracturing"
+      ]
+    }
+  ],
+  "open_questions": [
+    {
+      "question": "液氮冷却过程中的莱顿弗罗斯特效应如何定量影响换热系数和热冲击强度？",
+      "slug": "ln2-leidenfrost-effect-quantification",
+      "why_it_matters": "准确预测液氮冷却对干热岩的造缝效果，优化储层刺激设计。",
+      "current_evidence": "许多研究将换热系数简化为固定值（如100 W/m²·K），承认与实际复杂沸腾过程有偏差。",
+      "needed_evidence": "在高温高压条件下测量液氮冷却岩石表面的瞬态换热系数，建立诺谟图或解析模型。",
+      "sources": [
+        "2022-xi-experimental-comparison",
+        "2022-zhou-variations-in-stress-thresholds",
+        "2023-lai-study-on-damage"
+      ]
+    },
+    {
+      "question": "长期EGS运行中，热-水-力-化学（THMC）耦合对裂缝渗透率演化的综合效应是什么？",
+      "slug": "egs-long-term-thmc-permeability",
+      "why_it_matters": "预测地热田寿命和发电性能，防止过早热突破或渗透率闭合。",
+      "current_evidence": "现有研究多限于TH耦合或短期实验，矿化沉淀和应力腐蚀的贡献未充分耦合。",
+      "needed_evidence": "开展含反应溶剂的长期渗流实验，开发全耦合THMC数值模拟并与现场观测对比。",
+      "sources": [
+        "2023-gao-heat-extraction",
+        "2022-xiong-three-dimensional",
+        "2023-ren-tracer-review"
+      ]
+    },
+    {
+      "question": "如何可靠地从单钻孔数据估计三维DFN的P32并避免角度截断引起的系统偏差？",
+      "slug": "p32-reliable-estimation-from-boreholes",
+      "why_it_matters": "体积裂缝强度是储层建模的关键输入，其误差直接影响储量估算。",
+      "current_evidence": "Ojeda等发现Terzaghi加权角度截断会导致P32低估，但未提出完备的校正方案。",
+      "needed_evidence": "开发适用于任意钻孔方向和裂缝组数的无偏P32估计量，并在实际DFN数据集上验证。",
+      "sources": [
+        "2023-ojeda-discrete-fracture-network",
+        "2022-zhu-hatchfrac"
+      ]
+    },
+    {
+      "question": "微震联合反演中，如何有效区分湿微震事件和干微震事件以提高裂缝识别可靠性？",
+      "slug": "microseismic-dry-wet-event-discrimination",
+      "why_it_matters": "错误归类会导致裂缝网络几何失真，影响储层流动模拟。",
+      "current_evidence": "目前依赖经验阈值或专家判断，缺乏物理依据的自动化方法。",
+      "needed_evidence": "结合震源机制、波形和数值模拟建立湿/干事件判据，并在实际EGS微震数据集验证。",
+      "sources": [
+        "2023-jiang-fracture-network"
+      ]
+    },
+    {
+      "question": "如何实现从CT微米级裂缝到地震千米级裂缝的无缝多尺度耦合建模？",
+      "slug": "multiscale-fracture-modeling-integration",
+      "why_it_matters": "低孔低渗储层裂缝是主要渗流通道，多尺度整合是完整表征的前提。",
+      "current_evidence": "Liu等提出多尺度框架，但目前各尺度独立建模，缺乏统一的统计或物理融合方法。",
+      "needed_evidence": "发展跨尺度裂缝分布函数匹配方法，如分形级联或嵌套DFN，并用实际储层数据验证。",
+      "sources": [
+        "2023-liu-fracture-network-modeling-comparison",
+        "2023-li-unknown-year-deep-shale"
+      ]
+    },
+    {
+      "question": "高围压（>60 MPa）下热冲击对深层储层岩石脆-韧性转变的影响机制是什么？",
+      "slug": "high-confinement-thermal-shock-brittle-ductile",
+      "why_it_matters": "深部地热储层处于高围压，热冲击致裂机制可能与浅层不同，影响储层可改造性。",
+      "current_evidence": "Zhou等发现围压显著抑制应力阈值劣化，但实验围压限于60 MPa。",
+      "needed_evidence": "开展超高压（>100 MPa）下热冲击后三轴实验，并与弹塑性损伤模型结合。",
+      "sources": [
+        "2022-zhou-variations-in-stress-thresholds"
+      ]
+    },
+    {
+      "question": "吸附示踪剂在实际高温地热储层中的热稳定性和可检测性如何保证？",
+      "slug": "adsorptive-tracer-stability-field",
+      "why_it_matters": "室内研究显示吸附示踪剂能提高热突破预测，但其现场实用性尚未证实。",
+      "current_evidence": "Ren综述指出新型示踪剂得到验证，但实际应用有限。",
+      "needed_evidence": "进行实际EGS场地吸附示踪剂测试，评价高温降解和回收率，建立场适用指南。",
+      "sources": [
+        "2023-ren-tracer-review"
+      ]
+    },
+    {
+      "question": "爆炸压裂技术在低渗储层增产中的现场适用性：如何控制裂缝数量避免过度破碎？",
+      "slug": "explosive-fracturing-field-control",
+      "why_it_matters": "爆炸可能产生过多裂缝或压实带，需要工程控制以形成有效导流网络。",
+      "current_evidence": "Marji等仅二维模拟，指出气体压力主导扩展，但缺乏现场验证。",
+      "needed_evidence": "开展爆炸压裂矿场试验，联合微震、压降分析评估裂缝几何和产能，优化装药设计。",
+      "sources": [
+        "2023-marji-explosive-fracturing"
+      ]
+    },
+    {
+      "question": "水平钻孔中水力压裂地应力测量方法的现场验证与三维主应力反演公式的完善？",
+      "slug": "horizontal-hf-stress-measurement-field",
+      "why_it_matters": "水平定向勘探日益重要，缺少可靠的地应力测量手段。",
+      "current_evidence": "Piao实验和数值模拟建立了解释原理，但仅单轴实验和有限应力条件。",
+      "needed_evidence": "在已知地应力的现场水平钻孔中进行压裂测试，验证闭合/重开压力公式，并推广至三维。",
+      "sources": [
+        "2023-piao-experimental-and-numerical"
+      ]
+    },
+    {
+      "question": "岩芯直径变形法在双轴乃至三轴应力状态下的适用性如何？",
+      "slug": "core-diametral-deformation-multiaxial",
+      "why_it_matters": "该方法目前仅验证于单轴压缩取芯，实际采场多为双轴。",
+      "current_evidence": "Li and Mitri解析解基于双轴假设，但验证仅为单轴。",
+      "needed_evidence": "设计双轴压缩取芯实验，检验直径变形法估算主应力的精度，并探讨三维扩展方案。",
+      "sources": [
+        "2023-li-methodology"
+      ]
+    }
+  ]
+}

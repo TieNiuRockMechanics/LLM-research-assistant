@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "db2184e898a336a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "952d483c2b18be85",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4323b059f9458fbb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "papers/2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b4d546fe19f63596",
+    "type": "split",
+    "children": [
+      {
+        "id": "72c7d4d1f866594a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b505537f31be6bec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "a433705de9273cba",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "dd9d2b786e447d0b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 455.5
+  },
+  "right": {
+    "id": "45f920099eba136e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0be68f0f050e89ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68e18318c13b62c7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "papers/2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol 的反向链接列表"
+            }
+          },
+          {
+            "id": "b2677f7a71f2e297",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "428ee728b772338f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "67574022244cc3c2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "d73000f7716ba8f2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 575.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "4323b059f9458fbb",
+  "lastOpenFiles": [
+    "papers/2023-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate.md",
+    "papers/2017-yang-an-experimental-investigation-on-thermal-damage-and-failure-mechanical-behavior-of-gra.md",
+    "papers/2019-li-characterization-of-a-jointed-rock-mass-based-on-fractal-geometry-theory.md",
+    "methods/multifractal-analysis.md",
+    "syntheses/thermal-damage-quantitative-characterization.md",
+    "index.md",
+    "syntheses/fracture-fractal-connectivity.md",
+    "papers/2019-dong-analysis-of-relationship-between-underground-space-percolation-and-fracture-properties.md",
+    "papers/1967-haimson-initiation-and-extension-of-hydraulic-fractures-in-rocks.md",
+    "papers/2024-yin-p-clet-number-dependent-longitudinal-dispersion-in-discrete-fracture-networks.md",
+    "methods/thm-coupled-simulation.md",
+    "methods/stratified-modeling-strategy.md",
+    "methods/steady-state-gas-permeability.md",
+    "methods/statistical-parameter-for-jrc.md",
+    "methods/spectral-simulation.md",
+    "methods/slug-interference-test.md",
+    "methods/skeletonization-distance-transform.md",
+    "methods/sequential-parent-daughter-poisson-process.md",
+    "methods/seismic-receiver-function-migration.md",
+    "methods/schmidt-hammer-rebound-test.md",
+    "methods/scanline-sampling.md",
+    "methods/scan-circle-technique.md",
+    "methods/monte-carlo-percolation-simulation.md",
+    "methods/moment-tensor-inversion.md",
+    "methods/microseismic-monitoring.md",
+    "methods/mercury-injection-capillary-pressure.md"
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": "paper-stage-v1-2026-04-30",
+  "one_line_summary": "Laboratory simulations of continental collision produce fractal fault patterns that naturally explain the existence of large undeformed regions and challenge homogenization models of lithospheric deformation.",
+  "research_question": "Can the preservation of large undeformed regions in continental deformation arise from a fractal style of faulting without invoking local strength variations?",
+  "study_area_data": [
+    "Laboratory model scaled to India-Asia collision: length scale 1 m = 10,000 km, time scale 1 h ≈ 1 Myr, brittle-ductile sandwich of sand, silicone putties, and golden syrup.",
+    "Fault patterns digitized from top-view experiments (rectangular indenter penetrating a multilayered system).",
+    "Analysis of fault length distributions and spatial clustering over scales 1 cm to 40 cm."
+  ],
+  "methods": [
+    "Scaled physical experiments of continental collision with brittle and ductile layers.",
+    "Fractal analysis of fault patterns: measuring total fault length L(r) within disks of radius r to determine fractal dimension Df.",
+    "Fault length distribution fitted to N(l) ∝ l^(−a+1).",
+    "Derivation of scaling relation N(l, r) = (a−1) l_min^(a−1) N_t (r/A)^b (l_min/l)^a.",
+    "Probabilistic calculation of maximum undeformed domain size Amax assuming random fractal distribution of faults.",
+    "Homogenization condition analysis based on the average number of faults N(l ≥ L_H) crossing a representative volume."
+  ],
+  "key_findings": [
+    "Fault patterns are self-similar with fractal dimension Df = 1.70–1.73 ± 0.05.",
+    "Fault length distribution exponent a = 2.1–2.5.",
+    "The existence of large undeformed regions (e.g., Tarim basin) follows deterministically from the fractal fault statistics without requiring macroscopic strength contrasts.",
+    "Maximum undeformed domain size L_max/A scales as (log N_t / N_t)^(1/b); predicted values match observed basin sizes for N_t ~ 10^2–10^3.",
+    "When b+1−a > 0 (as found: b=1.7, a=2.1–2.5), homogenization fails because heterogeneity grows with observation scale."
+  ],
+  "evidence": [
+    {
+      "evidence": "Fault patterns are self-similar with a fractal dimension Df = 1.70 ± 0.05 in the interval 1–40 cm.",
+      "source": "[Nature 1990, pp. 1-2]",
+      "conditions": "Experiments with upper brittle sand layer 0.5 cm, lower silicone viscosity 4.5×10^4 Pa s, indenter penetration 25 cm.",
+      "notes": "Reported in a previous paper and confirmed here."
+    },
+    {
+      "evidence": "L(r) fitted by L(r) ∝ r^Df yields Df = 1.73 ± 0.05 (correlation coefficient >0.99).",
+      "source": "[Nature 1990, pp. 2-3]",
+      "conditions": "Experiment 1a and 1b, same parameters; L(r) is total fault length within a disk of radius r.",
+      "notes": "Figure 2c and 3b."
+    },
+    {
+      "evidence": "Fault length distribution N(l) ∝ l^(−a+1) with a = 2.3 ± 0.1 (Fig. 2) and a = 2.5 ± 0.1 (Fig. 3c).",
+      "source": "[Nature 1990, pp. 2-3, 3-3]",
+      "conditions": "Experiment 1: a = 2.3; experiment 2: a = 2.5 (different ductile layer viscosity).",
+      "notes": "Exponent a controls the frequency-size distribution."
+    },
+    {
+      "evidence": "Total number of faults N_t scales with minimum fault size as N_t ∝ l_min^(−(a−1)).",
+      "source": "[Nature 1990, pp. 1-2]",
+      "conditions": "Derived from normalization condition; requires a > 1.",
+      "notes": "Thus N_t depends strongly on the observational resolution l_min."
+    },
+    {
+      "evidence": "Maximum stable domain size L_max/A calculated for b = Df = 1.7: L_max/A = 0.22, 0.07, 0.02, 0.006, 0.002 for N_t = 10^2, 10^3, 10^4, 10^5, 10^6 respectively.",
+      "source": "[Nature 1990, pp. 3-3]",
+      "conditions": "Assumes random fractal fault distribution; b = 1.7.",
+      "notes": "For N_t ~ 100–1000, L_max/A ≈ 0.1–0.2, consistent with the size of the Tarim basin (A ~ 3000 km)."
+    },
+    {
+      "evidence": "Homogenization condition: if b+1−a > 0, the average number of large faults N(l ≥ L_H) increases with L_H, making homogenization impossible.",
+      "source": "[Nature 1990, pp. 3-3]",
+      "conditions": "Derived from N(l ≥ L_H) ∝ L_H^(b+1−a). Experiments show b=1.7, a=2.1–2.5, so b+1−a > 0.",
+      "notes": "Homogenization might become valid if a > 2.5, which correlates with stronger ductile smoothing."
+    }
+  ],
+  "limitations": [
+    "Laboratory experiments are scaled simplifications; may not capture all geological complexities.",
+    "Sensitivity to initial conditions (e.g., sand compaction, boundary details) leads to different realizations.",
+    "Assumption of random (Markovian) distribution of faults is not fully verified.",
+    "The analysis uses a specific brittle-ductile rheology and indenter geometry; extrapolation to all continental regions requires field verification.",
+    "The results on homogenization assume the experimental exponent values; a small change in a could switch the conclusion."
+  ],
+  "assumptions_conditions": [
+    "Fault patterns are fractal and self-similar over the measured range.",
+    "Faults are randomly distributed according to the fractal distribution (Markovian hypothesis).",
+    "The scaling law N(l, r) ∝ r^b l^{−a} holds for all scales.",
+    "Minimal fault size l_min can be chosen arbitrarily, and N_t depends on it.",
+    "The laboratory model correctly captures the essential physics of continental faulting.",
+    "Brittle-ductile layering with specific viscosities represents the lithosphere."
+  ],
+  "variables_parameters": [
+    "Fractal dimension of fault patterns Df ≈ 1.7",
+    "Barycentre fractal exponent b (≈ Df)",
+    "Fault length distribution exponent a (2.1–2.5)",
+    "Minimum fault size l_min",
+    "Total number of faults N_t(l_min)",
+    "System size A (lab: 40 cm, nature: ~3000 km)",
+    "Maximum undeformed domain size Amax (or L_max)",
+    "Homogenization length L_H",
+    "Viscosities of ductile layers (2.3×10^4 – 11×10^4 Pa s)",
+    "Indenter penetration distance"
+  ],
+  "reusable_claims": [
+    {
+      "claim": "Continental fault patterns can be fractal with a dimension Df ≈ 1.7.",
+      "source": "[Nature 1990, pp. 1-2, 2-3]",
+      "condition": "Observed in scaled laboratory models of the India-Asia collision over scales 1–40 cm.",
+      "limitation": "Requires field validation; not yet confirmed for all natural fault systems."
+    },
+    {
+      "claim": "The fault length distribution follows a power law N(l) ∝ l^(−a+1) with a ≈ 2.1–2.5.",
+      "source": "[Nature 1990, pp. 2-3, 3-3]",
+      "condition": "Derived from the same laboratory experiments.",
+      "limitation": "Exponent a may vary with ductile layer viscosity."
+    },
+    {
+      "claim": "The existence of large undeformed basins (e.g., Tarim) can be explained by fractal fault statistics without invoking strength heterogeneities.",
+      "source": "[Nature 1990, pp. 3-3]",
+      "condition": "Faults are randomly distributed according to the observed fractal law; N_t ~ 100–1000 for l_min ≈ 100 km.",
+      "limitation": "Tested only for one natural example; applicability may depend on tectonic setting."
+    },
+    {
+      "claim": "When b+1−a > 0, the heterogeneity of deformation increases with scale, invalidating homogenization approaches.",
+      "source": "[Nature 1990, pp. 3-3]",
+      "condition": "True for the measured exponents (b=1.7, a=2.1–2.5).",
+      "limitation": "If a > 2.5, homogenization may become possible; this regime correlates with higher ductile smoothing."
+    }
+  ],
+  "candidate_concepts": [
+    "[[fractal faulting]]",
+    "[[self-similarity]]",
+    "[[fault length distribution]]",
+    "[[undeformed domains]]",
+    "[[homogenization length]]",
+    "[[barycentre exponent]]"
+  ],
+  "candidate_methods": [
+    "[[scaled gravity experiments]]",
+    "[[fractal box-counting]]",
+    "[[power-law fitting]]",
+    "[[probabilistic stability analysis]]"
+  ],
+  "connections": [
+    "Links laboratory fault patterns to the Tarim basin stability via a scaling law.",
+    "Demonstrates that fractal geometry can replace heterogeneity assumptions in explaining large undeformed regions.",
+    "Shows that the validity of continuum homogenization models depends critically on the fractal exponents."
+  ],
+  "open_questions": [
+    "Are natural continental fault systems fractal with similar exponents?",
+    "How do the exponents depend on lithospheric rheology, strain rate, and tectonic setting?",
+    "What is the physical origin of the transition a > 2.5 that allows homogenization?",
+    "Can the probabilistic model for undeformed domains be tested on other stable cratons?"
+  ],
+  "coverage_notes": "The provided fragments contain the complete Letter to Nature by Davy, Sornette, and Sornette (1990), including the experimental setup, scaling analysis, probabilistic theory, and discussion of implications. All key elements are present.",
+  "_meta": {
+    "paper_id": "1990-letters-to-nature-nature-letters-to-nature",
+    "stage_index": 1,
+    "stage_count": 1,
+    "source_block_count": 4,
+    "source_chars": 19424,
+    "source_signature": "fca9b20d99eb40186eaaabfc098f1917e1d1a90d",
+    "model": "deepseek/deepseek-v4-pro",
+    "compiled_at": "2026-04-30T22:29:46"
+  }
+}

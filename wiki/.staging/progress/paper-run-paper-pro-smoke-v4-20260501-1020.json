@@ -1,0 +1,25 @@
+{
+  "run_id": "paper-pro-smoke-v4-20260501-1020",
+  "updated_at": "2026-05-01T10:24:36",
+  "phase": "done",
+  "status": "completed_with_problems",
+  "total_records": 1,
+  "completed": 1,
+  "skipped_complete": 0,
+  "skipped_over_budget": 0,
+  "failed": 0,
+  "remaining": 0,
+  "counts": {
+    "papers": 8,
+    "concepts": 0,
+    "methods": 0,
+    "claims": 0,
+    "syntheses": 0,
+    "open-questions": 0,
+    "inbox": 0
+  },
+  "problems": [
+    "missing front matter: wiki/钻孔应变解除法.md"
+  ],
+  "warnings": []
+}

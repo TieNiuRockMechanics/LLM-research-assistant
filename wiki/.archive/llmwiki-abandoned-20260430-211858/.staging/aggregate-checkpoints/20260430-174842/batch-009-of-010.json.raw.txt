@@ -1,0 +1,889 @@
+{
+  "concepts": [
+    {
+      "name": "Thermal shock damage",
+      "slug": "thermal-shock-damage",
+      "definition": "Rapid temperature change (heating or cooling) that induces thermal stress exceeding rock strength, leading to initiation and propagation of microcracks, porosity increase, and degradation of physical/mechanical properties.",
+      "aliases": ["thermal cracking", "thermal stress damage", "cooling shock damage"],
+      "boundary": "Observed mainly in brittle crystalline rocks (granite, sandstone) under rapid cooling or heating; less pronounced when temperature change is slow or maximum temperature is below ~200°C.",
+      "related_methods": ["nmr-pore-characterization", "micro-ct-scanning", "uniaxial-compression-test", "p-wave-velocity-measurement", "permeability-test"],
+      "related_claims": ["ln2-cooling-max-damage", "cooling-method-damage-ranking", "thermal-damage-threshold-300c"],
+      "sources": ["2023-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate", "2023-xi-pore-characteristic-evolution-and-damage-deterioration-of-granite-subjected-to-the-therm", "2023-zhao-pore-characteristics-and-permeability-changes-of-high-temperature-sandstone-after-rapi", "2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s", "2025-he-spatial-variability-and-quantitative-characterization-of-thermal-shock-damage-in-sandsto"]
+    },
+    {
+      "name": "Cooling method",
+      "slug": "cooling-method",
+      "definition": "Different media and rates used to lower rock temperature after heating, including natural cooling (air), water cooling, liquid nitrogen (LN2) cooling, and dry ice cooling, each inducing different thermal gradients and damage severity.",
+      "aliases": ["cooling mode", "cooling medium", "quenching method"],
+      "boundary": "Applicable to laboratory thermal treatment and wellbore cooling scenarios in geothermal drilling; relative damage ranking may depend on rock type and temperature range.",
+      "related_methods": ["thermal-treatment-and-cooling", "nmr-pore-characterization", "sphb-dynamic-tensile-test"],
+      "related_claims": ["cooling-method-damage-ranking", "ln2-cooling-max-damage", "water-cooling-severe-in-sandstone", "cooling-rate-effect-on-thermal-conductivity"],
+      "sources": ["2023-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate", "2023-xi-pore-characteristic-evolution-and-damage-deterioration-of-granite-subjected-to-the-therm", "2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling", "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under", "2025-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte"]
+    },
+    {
+      "name": "Porosity evolution",
+      "slug": "porosity-evolution",
+      "definition": "Increase in rock pore volume (especially micro- and mesopores) with rising temperature and number of thermal cycles, driven by mineral expansion mismatch, phase transitions, and thermal cracking.",
+      "aliases": ["pore volume change", "pore development"],
+      "boundary": "Applicable to granitic and sandstone rocks under thermal treatment; porosity increase rate accelerates above mineral decomposition temperatures (e.g., ~400–600°C).",
+      "related_methods": ["nmr-pore-characterization", "micro-ct-scanning", "mercury-intrusion-porosimetry"],
+      "related_claims": ["porosity-increases-with-temperature-exponential", "microcrack-density-negative-linear-with-thermal-conductivity"],
+      "sources": ["2023-xi-pore-characteristic-evolution-and-damage-deterioration-of-granite-subjected-to-the-therm", "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm", "2024-xi-experimental-study-on-pore-characteristics-evolution-and-rock-damage-mechanism-of-therma", "2025-he-spatial-variability-and-quantitative-characterization-of-thermal-shock-damage-in-sandsto"]
+    },
+    {
+      "name": "Permeability enhancement",
+      "slug": "permeability-enhancement",
+      "definition": "Increase in rock permeability due to heat-induced microcrack network connectivity, strongly dependent on cooling method, temperature, and confining pressure.",
+      "aliases": ["permeability evolution", "hydraulic conductivity increase"],
+      "boundary": "Significant changes occur above ~400°C; effective under low confining pressure; rapid cooling enhances permeability more than slow cooling.",
+      "related_methods": ["gas-permeability-test", "nmr-pore-characterization"],
+      "related_claims": ["permeability-increases-with-temperature-fast-cooling", "permeability-stress-sensitive-exponential-decrease"],
+      "sources": ["2023-zhu-不同冷却速率下干热花岗岩渗透率演化特征对比研究", "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under", "2025-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte"]
+    },
+    {
+      "name": "Discrete fracture network (DFN)",
+      "slug": "discrete-fracture-network",
+      "definition": "A stochastic or deterministic representation of fractures as discrete planar features (e.g., polygons or discs) with statistical distributions of orientation, size, aperture, and spatial density, used to model flow and transport in fractured rock.",
+      "aliases": ["DFN", "fracture network model"],
+      "boundary": "Applied to hard rock where matrix permeability is negligible relative to fracture flow; requires assumptions about fracture shape and connectivity.",
+      "related_methods": ["dfn-generation-and-flow-simulation", "percolation-threshold-analysis", "tracer-test-inversion"],
+      "related_claims": ["preferential-flow-paths-equal-tracer-breakthrough-curve-inflection-points", "t-intersections-enhance-mass-retention", "percolation-threshold-maximum-dead-end-fracture-density"],
+      "sources": ["2023-yoon-effects-of-dead-end-fractures-on-non-fickian-transport-in-three-dimensional-discrete-f", "2023-zhu-impacts-of-t-type-intersections-on-the-connectivity-and-flow-in-complex-two-dimensional", "2024-davy-structural-and-hydrodynamic-controls-on-fluid-travel-time-distributions-across-fractur", "2024-yin-p-clet-number-dependent-longitudinal-dispersion-in-discrete-fracture-networks"]
+    },
+    {
+      "name": "Percolation threshold",
+      "slug": "percolation-threshold",
+      "definition": "The critical density of conducting elements (fractures or pores) at which a globally connected cluster emerges, marking the transition from isolated to system-spanning flow paths.",
+      "aliases": ["connectivity threshold"],
+      "boundary": "Depends on network topology (fracture orientation, length distribution); in DFN, non-Fickian transport is maximal near threshold.",
+      "related_methods": ["dfn-generation-and-flow-simulation", "percolation-threshold-analysis"],
+      "related_claims": ["percolation-threshold-maximum-dead-end-fracture-density", "asymptotic-dispersion-in-dense-dfn"],
+      "sources": ["2023-yoon-effects-of-dead-end-fractures-on-non-fickian-transport-in-three-dimensional-discrete-f", "2024-yin-p-clet-number-dependent-longitudinal-dispersion-in-discrete-fracture-networks", "2024-huang-3d-percolation-modeling-for-connectivity-and-permeability-of-sandstone-with-different"]
+    },
+    {
+      "name": "Microcrack density",
+      "slug": "microcrack-density",
+      "definition": "Quantitative measure of microcrack abundance per unit length or area, often estimated from optical/SEM images or indirectly from P-wave velocity/porosity changes.",
+      "aliases": ["crack density", "micro-fracture density"],
+      "boundary": "Valid for brittle rocks; correlated with thermal damage; linear relationship with equivalent thermal conductivity established for some granites.",
+      "related_methods": ["optical-microscopy", "sem-imaging", "p-wave-velocity-measurement"],
+      "related_claims": ["microcrack-density-negative-linear-with-thermal-conductivity", "crack-density-increases-with-temperature-and-cycles"],
+      "sources": ["2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling", "2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s", "2025-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte"]
+    },
+    {
+      "name": "Equivalent thermal conductivity degradation",
+      "slug": "equivalent-thermal-conductivity-degradation",
+      "definition": "Reduction in the effective ability of rock to conduct heat as a result of increased porosity and microcrack density caused by thermal treatment.",
+      "aliases": ["ETC deterioration", "thermal conductivity reduction"],
+      "boundary": "Nonlinear decrease with temperature; cooling rate amplifies degradation; linear correlation with microcrack density reported for granite (R² > 0.97).",
+      "related_methods": ["transient-hot-wire-method", "nmr-pore-characterization"],
+      "related_claims": ["cooling-rate-effect-on-thermal-conductivity"],
+      "sources": ["2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling"]
+    },
+    {
+      "name": "Thermal cycling effect",
+      "slug": "thermal-cycling-effect",
+      "definition": "Repeated heating and cooling cycles cause cumulative rock damage, but the majority of degradation occurs in the first few cycles; properties like UCS, elastic modulus, and porosity tend to stabilize after multiple cycles.",
+      "aliases": ["cyclic thermal treatment", "thermal fatigue"],
+      "boundary": "Observed for granite and sandstone; damage saturates after 5-10 cycles depending on rock type and temperature amplitude.",
+      "related_methods": ["cyclic-heating-cooling-treatment", "uniaxial-compression-test", "nmr-pore-characterization"],
+      "related_claims": ["damage-accumulates-most-in-first-few-cycles", "porosity-increase-slows-with-cycles"],
+      "sources": ["2023-zhu-a-comprehensive-review-on-mechanical-responses-of-granite-in-enhanced-geothermal-system", "2024-harshini-australia-s-geothermal-frontier-unlocking-granite-s-energy-secrets", "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm"]
+    },
+    {
+      "name": "α-β quartz transition",
+      "slug": "alpha-beta-quartz-transition",
+      "definition": "Quartz undergoes a reversible phase change from α (trigonal) to β (hexagonal) at approximately 573°C, accompanied by a sudden volume expansion of ~0.8%, causing intense microcracking and drastic mechanical property deterioration.",
+      "aliases": ["quartz phase transition", "quartz inversion"],
+      "boundary": "Occurs in quartz-rich rocks at ~573°C; critical for thermal damage prediction in granite and sandstone; effects are irreversible upon cooling.",
+      "related_methods": ["x-ray-diffraction", "thermal-analysis"],
+      "related_claims": ["quartz-transition-causes-abrupt-property-drop", "threshold-500-600c-property-mutation"],
+      "sources": ["2023-zhao-pore-characteristics-and-permeability-changes-of-high-temperature-sandstone-after-rapi", "2024-zheng-physical-and-mechanical-properties-and-damage-mechanism-of-sandstone-at-high-temperat", "2025-gu-effects-of-high-temperature-and-thermal-cycles-on-fracture-surface-s-roughness-of-granit"]
+    },
+    {
+      "name": "Anisotropic mechanical behavior",
+      "slug": "anisotropic-mechanical-behavior",
+      "definition": "Direction-dependent mechanical properties (strength, modulus, failure mode) of layered or thermally cracked rocks, controlled by bedding orientation and thermally induced microcrack alignment.",
+      "aliases": ["mechanical anisotropy", "bedding anisotropy"],
+      "boundary": "Common in sedimentary (sandstone, shale) and metamorphic rocks; U-shaped variation with bedding angle; thermal anisotropy enhances when temperature >400°C in oil shale.",
+      "related_methods": ["triaxial-compression-test", "uniaxial-compression-test"],
+      "related_claims": ["strength-u-shaped-vs-bedding-angle", "anisotropy-enhanced-above-400c-steam"],
+      "sources": ["2023-zheng-study-on-mechanical-characteristics-and-damage-model-of-layered-sandstone-after-high", "2024-wang-research-on-the-mechanical-properties-and-anisotropy-evolution-of-uniaxial-compression"]
+    },
+    {
+      "name": "Preferential flow path",
+      "slug": "preferential-flow-path",
+      "definition": "A small number of dominant fractures that carry the majority of fluid flow and solute transport in a fracture network, often identifiable by multiple peaks or inflection points in tracer breakthrough curves.",
+      "aliases": ["dominant flow path", "fast flow channel"],
+      "boundary": "Valid under forced-gradient convergent flow conditions; number of paths stable under varying injection rates if network topology unchanged.",
+      "related_methods": ["tracer-test-analysis", "dfn-generation-and-flow-simulation"],
+      "related_claims": ["preferential-flow-paths-equal-tracer-breakthrough-curve-inflection-points"],
+      "sources": ["2024-hua-tracer-test-based-dimensionality-reduction-model-for-characterizing-fracture-network-an", "2024-davy-structural-and-hydrodynamic-controls-on-fluid-travel-time-distributions-across-fractur"]
+    },
+    {
+      "name": "Non-Fickian transport",
+      "slug": "non-fickian-transport",
+      "definition": "Solute transport behavior in fractured media characterized by heavy-tailed breakthrough curves (late-time tailing) due to solute retention in low-velocity zones such as dead-end fractures and matrix diffusion, where the advection-dispersion equation (Fickian) fails.",
+      "aliases": ["anomalous transport", "non-Fickian behavior"],
+      "boundary": "Occurs when fracture density is near percolation threshold or dead-end fracture density is high; transitions to Fickian when density is sufficiently high (ρ > 2).",
+      "related_methods": ["dfn-generation-and-flow-simulation", "particle-tracking"],
+      "related_claims": ["percolation-threshold-maximum-dead-end-fracture-density", "t-intersections-enhance-mass-retention"],
+      "sources": ["2023-yoon-effects-of-dead-end-fractures-on-non-fickian-transport-in-three-dimensional-discrete-f", "2024-davy-structural-and-hydrodynamic-controls-on-fluid-travel-time-distributions-across-fractur"]
+    },
+    {
+      "name": "Statistical damage constitutive model",
+      "slug": "statistical-damage-constitutive-model",
+      "definition": "A model that describes rock stress-strain behavior under thermal–mechanical coupling by assuming that micro-elements strength follows a statistical distribution (e.g., Weibull) and combining damage variables using strain equivalence hypothesis.",
+      "aliases": ["damage mechanics model"],
+      "boundary": "Applicable to brittle rocks under uniaxial/triaxial compression; needs calibration of distribution parameters; temperature and bedding effects must be separately accounted for.",
+      "related_methods": ["triaxial-compression-test", "acoustic-emission-monitoring"],
+      "related_claims": ["damage-model-captures-thermal-softening", "ae-based-damage-variable-improves-model"],
+      "sources": ["2023-zheng-study-on-mechanical-characteristics-and-damage-model-of-layered-sandstone-after-high", "2025-bu-temperature-dependent-acoustic-emission-characteristics-and-statistical-constitutive-mod"]
+    },
+    {
+      "name": "Diametrical core deformation technique (DCDT)",
+      "slug": "diametrical-core-deformation-technique",
+      "definition": "A stress measurement method that infers in-situ stress orientation and magnitude from the elastic recovery (diametral expansion) of a core sample retrieved from a borehole, assuming linear elasticity.",
+      "aliases": ["DCDT", "core deformation stress measurement"],
+      "boundary": "Assumes isotropic linear elastic rock; requires accurate core diameter measurement and knowledge of elastic modulus; mainly provides 2D stress state in plane perpendicular to borehole.",
+      "related_methods": ["laser-scanning-diameter-measurement", "ultrasonic-velocity-analysis"],
+      "related_claims": ["dcdt-estimates-mining-induced-stress"],
+      "sources": ["2024-li-practical-methodology-for-evaluating-mining-front-stability-based-on-the-diametrical-cor", "2024-li-validation-of-diametrical-core-deformation-technique-for-mining-induced-stress-estimatio", "2025-dargahizarandi-determination-of-3d-stress-state-using-a-novel-integrated-diametrical-core-d"]
+    },
+    {
+      "name": "Fracture roughness",
+      "slug": "fracture-roughness",
+      "definition": "The geometric deviation of a fracture surface from a perfect plane, quantified by parameters such as JRC (joint roughness coefficient), 3D height/angle parameters, and fractal dimension, influencing shear strength and fluid flow.",
+      "aliases": ["joint roughness", "fracture surface morphology"],
+      "boundary": "Scale-dependent; thermal cycling increases roughness; governs shear strength via waviness component; used in Barton's shear strength criterion.",
+      "related_methods": ["3d-laser-scanning", "direct-shear-test"],
+      "related_claims": ["jrc-scale-effect-from-sampling-method", "thermal-cycling-increases-fracture-roughness"],
+      "sources": ["2024-zhang-changes-in-shear-properties-of-granite-fractures-subjected-to-cyclic-heating-and-air", "2025-gu-effects-of-high-temperature-and-thermal-cycles-on-fracture-surface-s-roughness-of-granit", "2025-l-revisiting-scale-effect-on-joint-roughness-coefficient-and-shear-strength-considering-sam"]
+    },
+    {
+      "name": "Enhanced Geothermal System (EGS)",
+      "slug": "enhanced-geothermal-system",
+      "definition": "An engineered geothermal reservoir created by stimulating low-permeability hot dry rock (HDR) through hydraulic, thermal, or chemical fracturing to enable economic heat extraction by circulating a working fluid.",
+      "aliases": ["EGS", "engineered geothermal reservoir"],
+      "boundary": "Applicable to deep crystalline rock with high temperature gradient; stimulation methods must account for in-situ stress and natural fractures; induced seismicity is a risk.",
+      "related_methods": ["thermal-hydraulic-mechanical-coupling-model", "dfn-generation-and-flow-simulation"],
+      "related_claims": ["co2-water-hybrid-egs-best-npv", "rapid-cooling-enhances-wellbore-instability"],
+      "sources": ["2023-xue-effect-of-water-cooling-shock-on-fracture-initiation-and-morphology-of-high-temperature", "2023-江海洋-基于离散裂缝网络模型的深部花岗岩热储地热资源产能评估-以山东文登花岗岩体-3003-17m-地热探井为例", "2024-qiao-review-on-heat-extraction-systems-of-hot-dry-rock-classifications-benefits-limitations", "2024-xue-integrated-technological-and-economic-feasibility-comparisons-of-enhanced-geothermal-sy"]
+    },
+    {
+      "name": "Thermal-mechanical (TM) coupling",
+      "slug": "thermal-mechanical-coupling",
+      "definition": "The interaction between temperature field and stress/deformation field in rocks, where thermal expansion/contraction induces stresses and microcracks, and deformation alters thermal properties.",
+      "aliases": ["TM coupling", "thermo-mechanical coupling"],
+      "boundary": "Considered in numerical models for EGS and wellbore stability; often simplified by neglecting chemical reactions and assuming constant thermal expansion coefficients.",
+      "related_methods": ["thermal-hydraulic-mechanical-coupling-model", "grain-based-model-udec-pfc"],
+      "related_claims": ["cooling-induced-tensile-stress-controls-damage"],
+      "sources": ["2023-xue-effect-of-water-cooling-shock-on-fracture-initiation-and-morphology-of-high-temperature", "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under", "2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s"]
+    },
+    {
+      "name": "Box-counting fractal dimension",
+      "slug": "box-counting-fractal-dimension",
+      "definition": "A measure of the space-filling capacity of a fracture network or surface profile, calculated by counting covering boxes; increases with fracture density and length, used to characterize network complexity.",
+      "aliases": ["fractal dimension", "fracture network fractal dimension"],
+      "boundary": "Limited to 2D projections; provides a single scalar descriptor; can be predicted from fracture number, length, and orientation using rational functions under certain distributions.",
+      "related_methods": ["box-counting-method", "dfn-generation"],
+      "related_claims": ["fractal-dimension-rational-function-of-fracture-parameters"],
+      "sources": ["2024-shaoqun-dong-relationship-between-box-counting-fractal-dimension-and-properties-of-fracture", "2024-feng-three-dimensional-simulation-for-radon-migration-in-fractured-rock-masses-a-computatio"]
+    },
+    {
+      "name": "Core damage/discing",
+      "slug": "core-damage-disking",
+      "definition": "Stress-induced fracturing of drill core, ranging from single fractures to complete pancake-shaped disking, caused by stress relief when the core is extracted from high in-situ stress environments; reduces core strength and increases porosity.",
+      "aliases": ["core disking", "stress-induced core damage"],
+      "boundary": "Occurs when maximum in-situ stress exceeds a threshold (~6 times tensile strength); damage magnitude increases with sampling confining pressure; specific to brittle rocks.",
+      "related_methods": ["core-logging", "uniaxial-compression-test", "p-wave-velocity-measurement"],
+      "related_claims": ["core-disking-initiation-stress-6-1-times-tensile-strength"],
+      "sources": ["2024-chen-quantitative-study-of-drilling-induced-core-damage-through-laboratory-tests"]
+    }
+  ],
+  "methods": [
+    {
+      "name": "NMR pore characterization",
+      "slug": "nmr-pore-characterization",
+      "purpose": "Non-destructive measurement of pore size distribution, porosity, and pore connectivity in rocks by analyzing T2 relaxation time spectra of fluid-saturated samples.",
+      "workflow": "Saturate rock sample with water; measure T2 decay using low-field NMR; convert T2 distribution to pore size distribution using surface relaxivity; often combined with SEM for validation.",
+      "inputs": ["water-saturated cylindrical rock core"],
+      "outputs": ["T2 spectrum", "porosity (%)", "pore size distribution (micro, meso, macro pores)"],
+      "assumptions": ["Surface relaxation dominates; bulk and diffusion relaxation negligible", "pores are water-wet", "constant surface relaxivity ρ2"],
+      "strengths": ["Rapid, non-destructive", "detects both connected and some isolated porosity", "high sensitivity to small pores"],
+      "limitations": ["Calibration requires independent surface relaxivity", "does not capture pore shape or tortuosity directly", "signal may be affected by magnetic minerals"],
+      "related_concepts": ["porosity-evolution", "thermal-shock-damage"],
+      "sources": ["2023-xi-pore-characteristic-evolution-and-damage-deterioration-of-granite-subjected-to-the-therm", "2024-xi-experimental-study-on-pore-characteristics-evolution-and-rock-damage-mechanism-of-therma", "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm"]
+    },
+    {
+      "name": "Micro-CT scanning",
+      "slug": "micro-ct-scanning",
+      "purpose": "3D visualization and quantification of internal structure, microcracks, and pore space in rocks at micron resolution, enabling spatial analysis of damage.",
+      "workflow": "Mount rock sample; acquire projection images at multiple angles; reconstruct 3D volume; segment phases (solid, pore, crack); extract porosity, crack density, connectivity, and spatial distribution.",
+      "inputs": ["rock core (typically φ25–50 mm)"],
+      "outputs": ["3D grayscale volume", "segmented pore/crack network", "porosity variation with depth"],
+      "assumptions": ["X-ray attenuation contrast sufficient to distinguish phases", "no significant beam hardening artifacts", "representative sub-volume selection (REV)"],
+      "strengths": ["High spatial resolution", "true 3D", "nondestructive"],
+      "limitations": ["Limited sample size (trade-off with resolution)", "time-intensive for high resolution", "difficulty distinguishing closed microcracks from pores"],
+      "related_concepts": ["thermal-shock-damage", "porosity-evolution"],
+      "sources": ["2023-zhu-不同冷却速率下干热花岗岩渗透率演化特征对比研究", "2025-he-spatial-variability-and-quantitative-characterization-of-thermal-shock-damage-in-sandsto"]
+    },
+    {
+      "name": "SHPB dynamic tensile test",
+      "slug": "sphb-dynamic-tensile-test",
+      "purpose": "Measure dynamic tensile strength and energy absorption of rock under high strain rate loading using a split Hopkinson pressure bar system.",
+      "workflow": "Place disc specimen between incident and transmitter bars; launch striker bar to generate stress wave; record strain signals; calculate dynamic tensile strength using stress wave theory assuming dynamic stress equilibrium.",
+      "inputs": ["rock disc specimen (φ50 mm × 25 mm)"],
+      "outputs": ["dynamic tensile strength", "strain signals (εI, εR, εT)", "energy absorption"],
+      "assumptions": ["One-dimensional stress wave propagation", "dynamic stress equilibrium within specimen", "uniform deformation"],
+      "strengths": ["Well-established technique for high strain rate testing", "captures dynamic behavior"],
+      "limitations": ["Requires specimen flatness and parallelism", "results depend on pulse shaping", "not directly extrapolatable to static conditions"],
+      "related_concepts": ["thermal-shock-damage"],
+      "sources": ["2023-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate"]
+    },
+    {
+      "name": "Gas permeability test",
+      "slug": "gas-permeability-test",
+      "purpose": "Measure rock permeability using steady-state or transient gas flow methods (e.g., nitrogen) under controlled confining pressure, to assess flow capacity and stress sensitivity.",
+      "workflow": "Apply confining pressure; impose gas pressure gradient; measure flow rate and pressure drop; calculate permeability using Darcy's law or transient pulse decay; often done along loading and unloading paths.",
+      "inputs": ["cylindrical rock core", "confining pressure series"],
+      "outputs": ["permeability (mD or m²)", "permeability vs. effective stress", "flow rate"],
+      "assumptions": ["Laminar flow (Darcy)", "gas is ideal or compressibility accounted for", "no slip (Klinkenberg correction where needed)"],
+      "strengths": ["Sensitive to small permeability changes", "can evaluate stress dependency"],
+      "limitations": ["Gas slippage effects at low pressure", "possible non-Darcy flow in highly cracked samples", "steady-state method slow for tight rocks"],
+      "related_concepts": ["permeability-enhancement"],
+      "sources": ["2023-zhu-不同冷却速率下干热花岗岩渗透率演化特征对比研究", "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under"]
+    },
+    {
+      "name": "DFN generation and flow simulation",
+      "slug": "dfn-generation-and-flow-simulation",
+      "purpose": "Create stochastic discrete fracture networks and simulate fluid flow and solute transport to study connectivity, upscaling, and transport behavior.",
+      "workflow": "Define statistical distributions (fracture size, orientation, density); generate network (Poisson, multiplicative cascade, etc.); assign aperture (cubic law); solve flow (boundary conditions) and particle tracking; compute breakthrough curves, permeability, etc.",
+      "inputs": ["fracture statistics (power-law length exponent, density, orientation Fisher κ)", "aperture model", "domain size"],
+      "outputs": ["fracture network", "flow field", "breakthrough curves", "permeability tensor", "first-passage time distributions"],
+      "assumptions": ["Fractures are planar discs/polygons", "flow in fractures obeys cubic law", "matrix impermeable or treated separately", "advection-dominated transport unless diffusion included"],
+      "strengths": ["Explicitly represents fracture geometry", "captures connectivity and channeling", "suitable for upscaling"],
+      "limitations": ["Computational cost for dense networks", "assumes idealized shapes", "sensitive to statistical input"],
+      "related_concepts": ["discrete-fracture-network", "percolation-threshold", "non-fickian-transport"],
+      "sources": ["2023-yoon-effects-of-dead-end-fractures-on-non-fickian-transport-in-three-dimensional-discrete-f", "2024-davy-structural-and-hydrodynamic-controls-on-fluid-travel-time-distributions-across-fractur", "2024-yin-p-clet-number-dependent-longitudinal-dispersion-in-discrete-fracture-networks"]
+    },
+    {
+      "name": "Acoustic emission monitoring",
+      "slug": "acoustic-emission-monitoring",
+      "purpose": "Real-time detection of microcracking events during rock loading by recording elastic waves, used to infer crack initiation, damage accumulation, and failure precursors.",
+      "workflow": "Attach AE sensors to rock specimen; load specimen (uniaxial/triaxial); record AE hits, counts, energy, and waveforms; localize events; determine crack initiation (CI) and crack damage (CD) thresholds.",
+      "inputs": ["rock specimen under load"],
+      "outputs": ["AE hit rate/cumulative counts", "event locations", "CI and CD stress thresholds"],
+      "assumptions": ["AE signals correspond to microcrack formation", "attenuation and sensor coupling constant", "P-wave velocity known for location"],
+      "strengths": ["Sensitive to rapid damage evolution", "continuous monitoring", "provides spatial-temporal information"],
+      "limitations": ["Attenuation in large or heterogeneous samples", "noise filtering required", "event location accuracy limited by sensor array"],
+      "related_concepts": ["thermal-shock-damage", "statistical-damage-constitutive-model"],
+      "sources": ["2024-zheng-physical-and-mechanical-properties-and-damage-mechanism-of-sandstone-at-high-temperat", "2025-bu-temperature-dependent-acoustic-emission-characteristics-and-statistical-constitutive-mod"]
+    },
+    {
+      "name": "Thermal-hydraulic-mechanical (THM) coupling model",
+      "slug": "thm-coupling-model",
+      "purpose": "Numerical simulation coupling heat transfer, fluid flow, and rock deformation to predict reservoir behavior in geothermal systems, wellbore stability, and hydraulic fracturing.",
+      "workflow": "Solve coupled partial differential equations for solid deformation, fluid flow (Darcy), and heat transport (advection-conduction) iteratively or simultaneously using finite element or finite volume methods; often implemented in software like COMSOL, FLAC3D, CMG STARS.",
+      "inputs": ["rock properties (elastic, thermal, hydraulic)", "in-situ stress and pressure", "boundary conditions", "fracture network"],
+      "outputs": ["temperature, pressure, stress fields", "permeability changes", "production temperature over time"],
+      "assumptions": ["Local thermal equilibrium between fluid and solid", "linear elastic or elastoplastic rock behavior", "Darcy flow", "ignoring chemical reactions"],
+      "strengths": ["Captures multi-physics interactions", "can incorporate DFN or continuum representations", "predictive capability"],
+      "limitations": ["Computationally intensive", "requires detailed input parameters", "calibration to field data challenging"],
+      "related_concepts": ["permeability-enhancement", "enhanced-geothermal-system"],
+      "sources": ["2023-xue-effect-of-water-cooling-shock-on-fracture-initiation-and-morphology-of-high-temperature", "2024-mu-investigation-on-the-heat-extraction-performance-considering-a-rough-fracture-network-in", "2024-yoon-effect-of-fracture-characteristics-on-groundwater-flow-adjacent-to-high-level-radioact"]
+    },
+    {
+      "name": "Optical microscopy / FE-SEM imaging",
+      "slug": "optical-microscopy-fe-sem",
+      "purpose": "Direct observation of microstructure, microcrack morphology, and mineral phases in rock thin sections or polished surfaces.",
+      "workflow": "Prepare thin section or argon-ion polished surface; image using polarizing microscope (optical) or field-emission SEM; perform qualitative and quantitative analysis of crack density, mineral alteration, and pore characteristics.",
+      "inputs": ["rock thin section or polished chip"],
+      "outputs": ["micrographs", "crack length, width, density", "mineral identification"],
+      "assumptions": ["Area examined is representative", "artifacts from sample preparation are minimal"],
+      "strengths": ["High detail", "direct evidence of damage"],
+      "limitations": ["2D and local", "subjective in crack identification", "sample preparation may induce damage"],
+      "related_concepts": ["microcrack-density"],
+      "sources": ["2023-xi-pore-characteristic-evolution-and-damage-deterioration-of-granite-subjected-to-the-therm", "2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s"]
+    },
+    {
+      "name": "Transient hot-wire method",
+      "slug": "transient-hot-wire-method",
+      "purpose": "Measure equivalent thermal conductivity (ETC) of rock by monitoring temperature rise near a heated wire, based on the theory of transient heat conduction.",
+      "workflow": "Insert a thin wire between two polished rock surfaces or embed in specimen; apply a constant heating power; record temperature rise over time; fit to analytical solution to derive thermal conductivity.",
+      "inputs": ["polished rock disc or core"],
+      "outputs": ["equivalent thermal conductivity (W/m·K)"],
+      "assumptions": ["Homogeneous medium", "line heat source", "negligible contact resistance", "temperature rise small enough to not alter properties"],
+      "strengths": ["Simple, quick", "good accuracy (~3%)", "suitable for small samples"],
+      "limitations": ["Measures only local region (~10 mm radius)", "sensitive to surface roughness and contact", "does not directly capture anisotropy"],
+      "related_concepts": ["equivalent-thermal-conductivity-degradation"],
+      "sources": ["2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling"]
+    },
+    {
+      "name": "3D laser scanning for fracture roughness",
+      "slug": "3d-laser-scanning-roughness",
+      "purpose": "High-precision acquisition of fracture surface topography to compute roughness parameters (JRC, Z2, fractal dimension) and study thermal/hydro-mechanical effects.",
+      "workflow": "Scan fracture surface using laser profilometer; generate point cloud; compute 3D roughness parameters (height, angle, area, fractal dimension); analyze anisotropy and scale effects.",
+      "inputs": ["rock fracture surface"],
+      "outputs": ["digital elevation model", "JRC", "fractal dimension D", "roughness parameters"],
+      "assumptions": ["Surface representative", "no post-processing artifacts", "sufficient resolution"],
+      "strengths": ["High accuracy (μm)", "entire surface captured", "enables quantitative comparison"],
+      "limitations": ["Shadowing on steep surfaces", "data volume", "post-processing requires filtering"],
+      "related_concepts": ["fracture-roughness"],
+      "sources": ["2025-gu-effects-of-high-temperature-and-thermal-cycles-on-fracture-surface-s-roughness-of-granit", "2025-l-revisiting-scale-effect-on-joint-roughness-coefficient-and-shear-strength-considering-sam"]
+    },
+    {
+      "name": "Thermo-mechanical grain-based model (TM-GBM)",
+      "slug": "thermo-mechanical-grain-based-model",
+      "purpose": "Numerically simulate inter- and intra-granular thermal cracking in polycrystalline rocks by representing mineral grains as discrete particles or Voronoi cells with differing thermal and mechanical properties.",
+      "workflow": "Generate grain structure from rock image or statistical parameters; assign grain-specific properties (modulus, strength, thermal expansion); apply thermal loading; solve using PFC or UDEC; track crack initiation and propagation.",
+      "inputs": ["rock grain geometry", "mineral properties", "temperature history"],
+      "outputs": ["crack patterns", "stress-strain curves", "macro mechanical properties", "crack density vs. temperature"],
+      "assumptions": ["Grains bonded linearly elastically", "heat conduction between particles", "constant thermal expansion coefficients"],
+      "strengths": ["Explicitly models grain-scale heterogeneity", "captures both inter- and transgranular cracking"],
+      "limitations": ["2D commonly used (3D computationally demanding)", "parameter calibration challenging", "ignores fluid and chemical effects"],
+      "related_concepts": ["thermal-shock-damage", "microcrack-density"],
+      "sources": ["2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s"]
+    },
+    {
+      "name": "Statistical damage constitutive model development",
+      "slug": "statistical-damage-constitutive-model",
+      "purpose": "Formulate a stress-strain relation for rock under thermal-mechanical loading using damage variables derived from statistical distribution of micro-element strength and strain equivalence.",
+      "workflow": "Assume micro-element strength follows Weibull distribution; define thermal damage variable from elastic modulus reduction; combine through strain equivalence principle; calibrate parameters against experiments; incorporate AE-based damage variable for pre-peak hardening.",
+      "inputs": ["experimental stress-strain curves", "temperature-dependent elastic moduli", "AE data"],
+      "outputs": ["constitutive equation parameters", "predicted stress-strain curves"],
+      "assumptions": ["Rock micro-elements strength follows Weibull or similar distribution", "strain equivalence hypothesis holds", "thermal and mechanical damages are additive"],
+      "strengths": ["Provides closed-form equations", "captures the full stress-strain curve including peak", "can incorporate anisotropy"],
+      "limitations": ["Physical meaning of some parameters not always clear", "calibration requires many experiments", "usually limited to uniaxial/triaxial loading"],
+      "related_concepts": ["statistical-damage-constitutive-model", "thermal-shock-damage"],
+      "sources": ["2023-zheng-study-on-mechanical-characteristics-and-damage-model-of-layered-sandstone-after-high", "2025-bu-temperature-dependent-acoustic-emission-characteristics-and-statistical-constitutive-mod"]
+    },
+    {
+      "name": "Tracer-test analysis for preferential flow paths",
+      "slug": "tracer-test-preferential-flow-path",
+      "purpose": "Use conservative tracer injection and breakthrough curve (TBC) analysis to identify number and properties of dominant flow paths in a fracture aquifer under forced-gradient conditions.",
+      "workflow": "Perform cross-hole tracer test; monitor concentration at observation well; identify inflection points (peaks and distinct slowdowns) in TBC; map these to parallel fractures in a dimensionality reduction model; infer flow path properties.",
+      "inputs": ["tracer injection and monitoring data", "flow rate", "aquifer geometry"],
+      "outputs": ["number of dominant paths", "path transmissivity", "simplified fracture network"],
+      "assumptions": ["Flow is advection-dominated", "preferential paths stable", "each inflection point corresponds to a distinct fast path"],
+      "strengths": ["Simple inversion from TBC shape", "no detailed fracture network needed a priori"],
+      "limitations": ["Requires high-quality TBC with distinguishable inflections", "not suitable for diffusion-dominated transport", "2D/3D assumption must be consistent"],
+      "related_concepts": ["preferential-flow-path", "discrete-fracture-network"],
+      "sources": ["2024-hua-tracer-test-based-dimensionality-reduction-model-for-characterizing-fracture-network-an"]
+    },
+    {
+      "name": "Cyclic heating-cooling treatment",
+      "slug": "cyclic-heating-cooling-treatment",
+      "purpose": "Subject rock samples to multiple thermal cycles to simulate repetitive thermal stress (e.g., from operational shut-ins or seasonal variations) and evaluate cumulative damage.",
+      "workflow": "Heat sample to target temperature, hold for thermal equilibrium, quench or cool slowly, repeat for desired number of cycles (1 to 80+); measure physical/mechanical properties after cycles.",
+      "inputs": ["rock specimens", "target temperature", "cooling medium", "number of cycles"],
+      "outputs": ["strength, modulus, porosity, permeability post-cycles"],
+      "assumptions": ["Uniform heating within specimen", "cooling rate controlled", "damage accumulates predictably"],
+      "strengths": ["Directly mimics thermal fatigue", "reveals stabilization/acceleration behavior"],
+      "limitations": ["Time-intensive", "realistic in-situ stress not always applied", "damage from heating and cooling may differ from field"],
+      "related_concepts": ["thermal-cycling-effect", "thermal-shock-damage"],
+      "sources": ["2024-harshini-australia-s-geothermal-frontier-unlocking-granite-s-energy-secrets", "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm", "2024-zhang-changes-in-shear-properties-of-granite-fractures-subjected-to-cyclic-heating-and-air"]
+    },
+    {
+      "name": "3D percolation modeling with particle distribution factor",
+      "slug": "3d-percolation-modeling-m-d",
+      "purpose": "Reconstruct virtual sandstone with controlled pore distribution using a modified site percolation model incorporating particle distribution factor M and dilation filter D to mimic real pore-throat structures.",
+      "workflow": "Generate solid particles using M to control size and shape; dilate with spherical filter D to adjust porosity while maintaining topology; identify percolation threshold; simulate flow and compute porosity, tortuosity, coordination number.",
+      "inputs": ["M and D parameters", "system size L"],
+      "outputs": ["virtual 3D pore network", "percolation threshold", "porosity-permeability trend"],
+      "assumptions": ["Binary medium (solid/pore)", "simple cubic lattice", "finite-size scaling valid"],
+      "strengths": ["Generates realistic pore structures", "controls throat size and pore coordination", "links to real sandstone CT data"],
+      "limitations": ["Ignores mineral heterogeneity", "geometric rather than process-based", "finite-size effects require extrapolation"],
+      "related_concepts": ["porosity-evolution", "percolation-threshold"],
+      "sources": ["2024-huang-3d-percolation-modeling-for-connectivity-and-permeability-of-sandstone-with-different"]
+    },
+    {
+      "name": "Diametrical core deformation analysis (DCDA) method",
+      "slug": "diametrical-core-deformation-analysis",
+      "purpose": "Determine in-situ stress orientation and magnitude from the elliptical deformation of a retrieved core using high-precision diameter measurement and linear elastic theory.",
+      "workflow": "Drill oriented core; measure diameter variations along circumference using laser scanner; fit sinusoidal curve to obtain dmax/dmin and orientation; compute principal stress magnitudes using Hooke's law (assuming plane stress) and elastic modulus.",
+      "inputs": ["oriented core segment", "Young's modulus and Poisson's ratio"],
+      "outputs": ["maximum and minimum horizontal stress direction", "stress magnitudes"],
+      "assumptions": ["Isotropic linear elastic rock", "core deformation purely elastic recovery", "stress state in plane perpendicular to borehole", "vertical stress effect negligible"],
+      "strengths": ["Low cost", "no downhole equipment", "can be applied to existing core"],
+      "limitations": ["Provides 2D stress, not full 3D", "accuracy affected by sample heterogeneity", "requires careful handling and measurement"],
+      "related_concepts": ["diametrical-core-deformation-technique-dcdt"],
+      "sources": ["2024-li-validation-of-diametrical-core-deformation-technique-for-mining-induced-stress-estimatio", "2025-dargahizarandi-determination-of-3d-stress-state-using-a-novel-integrated-diametrical-core-d"]
+    },
+    {
+      "name": "X-ray diffraction (XRD) for mineral analysis",
+      "slug": "xrd-mineral-analysis",
+      "purpose": "Quantitative identification of crystalline mineral phases in rock powder, essential for understanding mineralogical controls on thermal damage (e.g., quartz content).",
+      "workflow": "Grind rock to fine powder; scan in X-ray diffractometer; match peaks to reference databases; perform Rietveld refinement for quantitative analysis.",
+      "inputs": ["rock powder"],
+      "outputs": ["mineral composition (wt%)"],
+      "assumptions": ["Sample representative", "peak positions accurate", "Rietveld refinement assumptions satisfied"],
+      "strengths": ["Precise mineral quantification", "standard method"],
+      "limitations": ["Cannot detect amorphous phases", "clay minerals may require oriented mounts", "overlapping peaks can complicate analysis"],
+      "related_concepts": [],
+      "sources": ["2023-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate", "2024-xi-experimental-study-on-pore-characteristics-evolution-and-rock-damage-mechanism-of-therma"]
+    },
+    {
+      "name": "Uniaxial compression test with AE",
+      "slug": "uniaxial-compression-ae",
+      "purpose": "Determine rock strength, elastic modulus, and stress-strain behavior while simultaneously monitoring acoustic emission to track damage evolution.",
+      "workflow": "Load cylindrical rock specimen in axial direction at constant displacement rate; record force and displacement; acquire AE signals; compute UCS, Young's modulus, and crack stress thresholds.",
+      "inputs": ["rock specimen"],
+      "outputs": ["UCS, E, stress-strain curve", "AE cumulative counts", "CI and CD thresholds"],
+      "assumptions": ["Specimen ends flat and parallel", "quasi-static loading", "AE sensors properly coupled"],
+      "strengths": ["Simple, widely used", "integrated damage monitoring"],
+      "limitations": ["Uniaxial stress state not representative of in-situ", "post-peak behavior may be unstable if stiff machine not used"],
+      "related_concepts": ["thermal-shock-damage", "acoustic-emission-monitoring"],
+      "sources": ["2025-bu-temperature-dependent-acoustic-emission-characteristics-and-statistical-constitutive-mod", "2024-zheng-physical-and-mechanical-properties-and-damage-mechanism-of-sandstone-at-high-temperat"]
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Liquid nitrogen (LN2) cooling induces the most severe damage to thermal-treated granite, followed by water cooling, then natural cooling, as evidenced by the largest reductions in P-wave velocity, dynamic tensile strength, and final absorbed energy.",
+      "slug": "ln2-cooling-max-damage-granite",
+      "evidence": "P-wave velocity, dynamic tensile strength, and energy absorption all showed greatest decline under LN2 cooling at the same heating temperature for granite up to 800°C. [Xi 2023, pp. 1-2] [Xi 2023, pp. 7-8]",
+      "condition": "Granite heated to 25–800°C, cooled for 4 h, dynamic SHPB Brazilian test.",
+      "limitation": "Only tested one granite type (fine-grained, from Hunan); loading rate fixed; does not include intermediate cooling rates.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {"paper_id": "2023-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate", "locator": "pp. 1-2, 7-8"}
+      ],
+      "supports": ["cooling-method-damage-ranking"],
+      "contradicts": []
+    },
+    {
+      "claim": "Under thermal shock, water cooling can cause more severe overall damage (porosity increase) than LN2 cooling in sandstone, with maximum porosity increase of 17.05% for water cooling vs. 13.82% for LN2 at 600°C.",
+      "slug": "water-cooling-severe-in-sandstone",
+      "evidence": "Data from NMR and SEM analysis of Rizhao sandstone: porosity rose by 17.05% after water cooling at 600°C, compared to 13.82% for LN2. [Xi 2024, pp. 1-2] [Xi 2024, pp. 6-7]",
+      "condition": "Medium sandstone (quartz 61.7%), heating to 600°C with 5°C/min, 150 min hold, then rapid cooling.",
+      "limitation": "Observed for a specific sandstone; different mineralogy (e.g., higher quartz) might shift ranking; only at 600°C maximum.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {"paper_id": "2024-xi-experimental-study-on-pore-characteristics-evolution-and-rock-damage-mechanism-of-therma", "locator": "pp. 1-2, 6-7"}
+      ],
+      "supports": [],
+      "contradicts": ["cooling-method-damage-ranking"]
+    },
+    {
+      "claim": "The damage severity ranking of cooling methods is: LN2 > water > natural cooling for granite, consistent across porosity, permeability, strength, and P-wave velocity.",
+      "slug": "cooling-method-damage-ranking",
+      "evidence": "Multiple studies (Xi 2023a, 2023b, Bu 2024, Suo 2024) on granite consistently show LN2 causing highest porosity, greatest strength reduction, and largest P-wave drop, with water intermediate and air least. [Xi 2023, pp. 1-2] [Suo 2024, pp. 3-5] [Bu 2024, pp. 1-1]",
+      "condition": "Granitic rocks (fine- to coarse-grained) heated up to 800°C; cooling duration > few hours; no confining pressure.",
+      "limitation": "Ranking may reverse for sandstones (water sometimes worse than LN2); does not account for intermediate cooling rates or presence of stress; mostly unconfined lab tests.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {"paper_id": "2023-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate", "locator": "pp. 1-2"},
+        {"paper_id": "2023-xi-pore-characteristic-evolution-and-damage-deterioration-of-granite-subjected-to-the-therm", "locator": "pp. 1-2"},
+        {"paper_id": "2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling", "locator": "pp. 1-1"},
+        {"paper_id": "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under", "locator": "pp. 3-5"}
+      ],
+      "supports": ["ln2-cooling-max-damage-granite"],
+      "contradicts": ["water-cooling-severe-in-sandstone"]
+    },
+    {
+      "claim": "A temperature threshold around 300°C exists for granite, above which thermal shock damage accelerates, as indicated by rapid changes in density, porosity, permeability, and mechanical strength.",
+      "slug": "thermal-damage-threshold-300c",
+      "evidence": "In granodiorite and granite, density drops sharply and porosity/permeability rise after 300°C; crack initiation becomes significant. [Gomah 2025, pp. 1-2, 10-11] [Yang 2024, pp. 4-5]",
+      "condition": "Granodiorite/granite heated to 300°C or above; liquid nitrogen or water cooling.",
+      "limitation": "Threshold may vary with rock mineralogy (quartz content, grain size); lower (~200°C) for P-wave velocity; higher (400°C) for sandstone.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {"paper_id": "2025-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte", "locator": "pp. 1-2, 10-11"},
+        {"paper_id": "2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s", "locator": "pp. 4-5"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "The equivalent thermal conductivity (ETC) of granite decreases nonlinearly with heating temperature, and faster cooling (LN2) causes greater ETC reduction; ETC is strongly linearly negatively correlated with microcrack density (R² > 0.97).",
+      "slug": "cooling-rate-effect-on-thermal-conductivity",
+      "evidence": "ETC measured by transient hot-wire method on Xiamen granite; microcrack density from optical images; linear regression R² > 0.97. [Bu 2024, pp. 1-1, 10-12]",
+      "condition": "Fine-grained granite (Xiamen), 20–750°C, air/water/LN2 cooling.",
+      "limitation": "ETC measurement local (~10 mm); relationship established for one granite; requires independent microcrack density calibration.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {"paper_id": "2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling", "locator": "pp. 1-1, 10-12"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Porosity increase in sandstone with temperature follows an exponential function P_T = a + b·e^(cT) (R² ≥ 0.97), with rapid growth after 500°C due to mineral decomposition and thermal cracking.",
+      "slug": "porosity-increases-with-temperature-exponential",
+      "evidence": "Data from NMR measurements on Rizhao sandstone after heating to 200–600°C and three cooling methods; curve fitting gave R² ≥ 0.97. [Xi 2024, pp. 6-7]",
+      "condition": "Medium sandstone, 25–600°C, heated at 5°C/min, held 150 min.",
+      "limitation": "Limited to 600°C; above 600°C quartz transition may alter relation; only one sandstone type.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {"paper_id": "2024-xi-experimental-study-on-pore-characteristics-evolution-and-rock-damage-mechanism-of-therma", "locator": "pp. 6-7"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "For granite, the normalised mechanical parameters (UCS, elastic modulus) decrease linearly with increasing heating temperature, regardless of cooling method.",
+      "slug": "normalized-mechanical-parameters-linear-decrease",
+      "evidence": "Comprehensive review of multiple granite types showed linear decrease of normalized UCS and E with temperature. [Zhu 2023, pp. 1-2]",
+      "condition": "Various granites heated to 150–800°C; air, water, LN2 cooling; unconfined or triaxial tests.",
+      "limitation": "Normalization masks absolute values; some data scatter; mostly post-treatment tests, not real-time.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {"paper_id": "2023-zhu-a-comprehensive-review-on-mechanical-responses-of-granite-in-enhanced-geothermal-system", "locator": "pp. 1-2"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "In thermal cycling of granite, the majority of mechanical degradation (strength, modulus) occurs within the first few cycles (≤10), after which damage accumulation slows significantly.",
+      "slug": "damage-accumulates-most-in-first-few-cycles",
+      "evidence": "Review (Zhu 2023) summarizes that thermal cycles degrade mechanical parameters mostly in initial cycles. Xi 2024 shows porosity increase rate decelerates after 2–4 cycles for granite. [Zhu 2023, pp. 1-2] [Xi 2024, pp. 1-2]",
+      "condition": "Granite, T up to 900°C, water or air cooling, 1–15 cycles.",
+      "limitation": "Cycle-dependent saturation may not hold for very high temperatures (>600°C); number of cycles to saturation depends on temperature amplitude.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {"paper_id": "2023-zhu-a-comprehensive-review-on-mechanical-responses-of-granite-in-enhanced-geothermal-system", "locator": "pp. 1-2"},
+        {"paper_id": "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm", "locator": "pp. 1-2"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "In 3D discrete fracture networks, dead-end fracture density reaches a maximum at the percolation threshold (ρ=1), causing the strongest late-time tailing and non-Fickian transport (tail slope < 3); transport becomes Fickian when ρ > 2.",
+      "slug": "percolation-threshold-maximum-dead-end-fracture-density",
+      "evidence": "Large-scale DFN simulations (α=2.0,2.2,2.4) showed tail slope minimum at ρ=1 and slope <3 for ρ≤2, >3 for ρ>2. [Yoon 2023, pp. 8-10]",
+      "condition": "3D Poissonian DFN, power-law length distribution, advection-only, impermeable matrix, no diffusion.",
+      "limitation": "Excludes diffusion and matrix exchange; aperture variability ignored; 15 m domain; synthetic networks.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {"paper_id": "2023-yoon-effects-of-dead-end-fractures-on-non-fickian-transport-in-three-dimensional-discrete-f", "locator": "pp. 8-10"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "In convergent flow tracer tests, the number of preferential flow paths in a fractured aquifer equals the number of distinct inflection points (peaks and significant slowdowns) in the tracer breakthrough curve, and these paths remain stable under varying pumping rates.",
+      "slug": "preferential-flow-paths-equal-tracer-breakthrough-curve-inflection-points",
+      "evidence": "Laboratory 3D-printed fracture network with 7 fractures showed 3 dominant paths matching 3 TBC inflection points; field-scale synthetic model confirmed. [Hua 2024, pp. 1-1, 6-7]",
+      "condition": "Forced gradient dipole test; advection-dominated transport; relatively simple network with parallel-like paths.",
+      "limitation": "Not confirmed for very dense or highly chaotic networks; requires high-quality TBC with clear inflections; may not apply if diffusion or matrix exchange significant.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {"paper_id": "2024-hua-tracer-test-based-dimensionality-reduction-model-for-characterizing-fracture-network-an", "locator": "pp. 1-1, 6-7"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "In 2D DFN, the box-counting fractal dimension D can be accurately predicted from fracture number n and length L using a rational function y = (a1*x + a2)/(x + a3), with high R², for constant-length random-orientation networks.",
+      "slug": "fractal-dimension-rational-function-of-fracture-parameters",
+      "evidence": "DFN simulations with n=[130,970], L=[7,95] gave rational fits with high goodness-of-fit. [Shaoqun 2024, pp. 5-7]",
+      "condition": "2D DFN, constant fracture length, random orientation, 100m×100m domain.",
+      "limitation": "2D only; extension to 3D uncertain; other length distributions (exponential, lognormal) require different relationships; fixed domain size.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {"paper_id": "2024-shaoqun-dong-relationship-between-box-counting-fractal-dimension-and-properties-of-fracture", "locator": "pp. 5-7"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "The compressive strength and elastic modulus of layered sandstone exhibit a U-shaped variation with bedding angle, reaching a minimum at ~45°, while the thermal damage model using Weibull distribution and Drucker-Prager criterion can reproduce this anisotropy.",
+      "slug": "strength-u-shaped-vs-bedding-angle",
+      "evidence": "Triaxial test at 5 MPa confining pressure on sandstone heated to 20–800°C; peak strength minimal at 45° bedding. [Zheng 2023, pp. 7-9]",
+      "condition": "Layered sandstone, high temperature treatment (up to 800°C), 5 MPa confining pressure, bedding angles 0–90°.",
+      "limitation": "Verified for one specific yellow sandstone; model parameters need calibration for other rock types; does not include post-peak behavior.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {"paper_id": "2023-zheng-study-on-mechanical-characteristics-and-damage-model-of-layered-sandstone-after-high", "locator": "pp. 7-9"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Core discing initiates at a tensile stress approximately 6.1 times the rock tensile strength under simplified isotropic in-situ stress conditions for medium- to coarse-grained granite.",
+      "slug": "core-disking-initiation-stress-6-1-times-tensile-strength",
+      "evidence": "Laboratory drilling simulation at confining pressure 30 MPa showed core disking onset stress ~6.1 BTS. [Chen 2024, pp. 6-8]",
+      "condition": "Macheng granite, plane isotropic stress, laboratory simulation.",
+      "limitation": "Specific to one granite type; field stress anisotropy may alter threshold; not confirmed for all rock types.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {"paper_id": "2024-chen-quantitative-study-of-drilling-induced-core-damage-through-laboratory-tests", "locator": "pp. 6-8"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "For oil shale under real-time high-temperature steam, compressive strength and elastic modulus reach a minimum at 400°C, and anisotropy in strength increases significantly above 400°C due to parallel-to-bedding cracking.",
+      "slug": "anisotropy-enhanced-above-400c-steam",
+      "evidence": "Experimental tests show minimum strength at 400°C and greater anisotropy >400°C. [Wang 2024, pp. 1-2]",
+      "condition": "Oil shale, convection heating by steam up to 550°C, uniaxial compression.",
+      "limitation": "Specific to oil shale; no triaxial tests; sample source not specified.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {"paper_id": "2024-wang-research-on-the-mechanical-properties-and-anisotropy-evolution-of-uniaxial-compression", "locator": "pp. 1-2"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Thermal shock damage in sandstone is spatially limited to a shallow surface zone (depth of several mm), with the maximum at the surface and decreasing inward; boiling water (100°C) cooling significantly exacerbates this surface damage due to enhanced heat transfer from nucleate boiling.",
+      "slug": "thermal-shock-damage-surface-only",
+      "evidence": "Micro-CT analysis of sandstone heated to 600°C and then cooled with water at 20, 60, 100°C showed damage only near surface; 100°C cooling caused most damage. [He 2025, pp. 1-1, 6-9]",
+      "condition": "Fine sandstone, preheated to 600°C uniformly, water quench; damage quantified by CT porosity variation with depth.",
+      "limitation": "Only tested 600°C; small sample diameter (25 mm) may affect depth estimation; one rock type.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {"paper_id": "2025-he-spatial-variability-and-quantitative-characterization-of-thermal-shock-damage-in-sandsto", "locator": "pp. 1-1, 6-9"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "In granite, the heating process generates fewer thermal cracks than the cooling process for the same temperature shock, and cracks are predominantly transgranular in quartz grains.",
+      "slug": "heating-vs-cooling-crack-difference",
+      "evidence": "TM-GBM simulations with Changsha granite: crack number and thermal stress lower during heating than cooling. [Yang 2024, pp. 1-2]",
+      "condition": "Coarse-grained granite (Quartz 38.4%, Feldspar 39.1%), thermal shock from 100–400°C.",
+      "limitation": "Only up to 400°C; model 2D; cooling rate fixed at 25°C boundary; ignores fluid effects.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {"paper_id": "2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s", "locator": "pp. 1-2"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "High confining pressure enhances granite strength, suppresses initial nonlinear deformation, and causes a transition from brittle to ductile failure, while also reducing the apparent sensitivity of permeability to thermal cracks.",
+      "slug": "confining-pressure-effect-on-thermal-behavior",
+      "evidence": "Review of granite mechanical responses: confining pressure improves mechanical parameters and masks crack-closure nonlinearity. [Zhu 2023, pp. 1-2, 10-11]",
+      "condition": "Granite, post-thermal treatment, triaxial compression with confining pressure up to tens of MPa.",
+      "limitation": "Based on compiled literature; may vary with temperature and rock type; quantitative relationships not universal.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {"paper_id": "2023-zhu-a-comprehensive-review-on-mechanical-responses-of-granite-in-enhanced-geothermal-system", "locator": "pp. 1-2, 10-11"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "A hybrid CO2-water horizontal well EGS yields the highest net present value (NPV, 35.3 M$) compared to pure water or pure CO2 EGS, due to balance of heat extraction and carbon storage with lower CO2 consumption.",
+      "slug": "co2-water-hybrid-egs-best-npv",
+      "evidence": "Techno-economic model for Gonghe EGS: NPV 35.3 M$ for hybrid; pure CO2 may have negative NPV. [Xue 2024, pp. 1-2]",
+      "condition": "Gonghe HDR, 3700 m depth, 500m well spacing, 10% CO2 mass ratio, carbon credit 60 $/t, 20-year operation.",
+      "limitation": "Economic assessment based on specific assumptions (no transport cost, constant prices); field not validated; results site-specific.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {"paper_id": "2024-xue-integrated-technological-and-economic-feasibility-comparisons-of-enhanced-geothermal-sy", "locator": "pp. 1-2"}
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Rapid water cooling increases granite permeability significantly more than natural cooling, with the difference widening as temperature increases, and permeability decreases exponentially with increasing confining pressure, exhibiting irreversible closure upon unloading.",
+      "slug": "permeability-stress-sensitive-exponential-decrease",
+      "evidence": "Gas permeability tests on Fujian granite after heating to 200–1000°C: fast cooling permeability > slow cooling; exponential decay with confining pressure; hysteresis on unloading. [Zhu 2023, pp. 3-13]",
+      "condition": "Granite, T 200–1000°C, natural vs. water cooling, gas permeability under 5–40 MPa confining pressure.",
+      "limitation": "Single granite type; only two extreme cooling rates; no in-situ stress validation; gas permeability may not represent liquid.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {"paper_id": "2023-zhu-不同冷却速率下干热花岗岩渗透率演化特征对比研究", "locator": "pp. 3-13"}
+      ],
+      "supports": [],
+      "contradicts": []
+    }
+  ],
+  "syntheses": [
+    {
+      "title": "Cooling rate as primary control on thermal shock damage extent",
+      "slug": "cooling-rate-primary-damage-control",
+      "central_question": "How does the cooling rate (natural, water, liquid nitrogen) after high-temperature heating determine the severity of damage in crystalline rocks?",
+      "summary": "Across granitic rocks, faster cooling consistently produces more severe damage (higher porosity, lower strength, lower P-wave velocity). LN2, due to extreme temperature difference and boiling heat transfer, induces the most extensive microcracking, followed by water, and then natural air cooling. However, in sandstones, mineral composition (e.g., high clay content) may lead to water cooling being more damaging than LN2 because water-rock interactions exacerbate deterioration. The effect is magnified at higher heating temperatures (>400°C).",
+      "evidence_chain": [
+        "Xi 2023 (granite dynamic tensile): LN2 > water > air [pp. 1-2]",
+        "Zhu 2023 review: linear decline in normalized mechanical properties with temperature regardless of cooling [pp. 1-2] but cooling method ranking consistent.",
+        "Bu 2024: thermal conductivity reduction follows cooling rate order [pp. 1-1]",
+        "Xi 2024 sandstone: exception – water cooling more damaging [pp. 1-2]"
+      ],
+      "disagreements": [
+        "Water cooling ranked more damaging than LN2 in sandstone (Xi 2024b), highlighting rock-type dependency."
+      ],
+      "boundary_conditions": [
+        "Valid for rocks with moderate quartz content; ranking inversion possible for sandstone or when clay minerals present.",
+        "Heating temperature must exceed ~250°C for cooling method effect to be pronounced.",
+        "All studies were on small specimens without confining pressure; in-situ stress may reduce damage."
+      ],
+      "writing_uses": [
+        "Use this synthesis to discuss the importance of selecting drilling fluids in geothermal wells: faster cooling fluids increase near-wellbore damage, potentially stabilizing wellbore while enhancing permeability.",
+        "For EGS stimulation, LN2 or water-based rapid cooling can be designed to deliberately create a damaged zone to improve connectivity."
+      ],
+      "sources": [
+        "2023-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate",
+        "2023-zhu-a-comprehensive-review-on-mechanical-responses-of-granite-in-enhanced-geothermal-system",
+        "2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling",
+        "2024-xi-experimental-study-on-pore-characteristics-evolution-and-rock-damage-mechanism-of-therma"
+      ]
+    },
+    {
+      "title": "Thermal cycle damage saturation and engineering implications",
+      "slug": "thermal-cycle-damage-saturation",
+      "central_question": "Does rock damage accumulate indefinitely with repeated thermal cycles, or does it saturate, and what are the implications for long-term EGS operation?",
+      "summary": "Several studies indicate that the most significant changes in porosity, strength, and stiffness occur within the first few thermal cycles (1–10), after which damage accumulation decelerates markedly. This saturation behavior is attributed to the exhaustion of weak grain boundaries and pre-existing microcracks early on. Practically, this means that thermal fatigue from operational cycling may not linearly degrade reservoir integrity over decades; early cycles condition the rock, and subsequent performance stabilizes.",
+      "evidence_chain": [
+        "Zhu 2023 review: thermal cycling degradation is concentrated in first few cycles [pp. 1-2].",
+        "Xi 2024 NMR: porosity increase rate slows after 2–4 cycles for granite; T2 spectra curves show plateauing [pp. 6-7].",
+        "Zhang 2024 shear on granite fractures: cohesion fluctuates initially then decreases gradually after 10 cycles [pp. 10-12]."
+      ],
+      "disagreements": [
+        "No major disagreement; all show saturation but the number of cycles to stabilization varies from 4 to 10 depending on temperature and cooling method."
+      ],
+      "boundary_conditions": [
+        "Observed for granite at 400–600°C; at higher temperatures (>800°C) or with reactive fluids, mineral decomposition may prevent saturation.",
+        "Applicable to unconfined or low-confining-pressure conditions; high in-situ stress may alter crack closure and reopening behavior, potentially changing saturation pattern."
+      ],
+      "writing_uses": [
+        "For reservoir lifetime assessment, early-cycle accelerated degradation tests can be used to predict long-term mechanical properties.",
+        "In wellbore design, stress history from the first few drill-fluid circulation cycles may dominate damage extent."
+      ],
+      "sources": [
+        "2023-zhu-a-comprehensive-review-on-mechanical-responses-of-granite-in-enhanced-geothermal-system",
+        "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm",
+        "2024-zhang-changes-in-shear-properties-of-granite-fractures-subjected-to-cyclic-heating-and-air"
+      ]
+    },
+    {
+      "title": "Percolation and topology control on flow and transport in fracture networks",
+      "slug": "percolation-topology-transport",
+      "central_question": "How do fracture network density and topology (dead-ends, T-intersections, length scaling) control connectivity, flow channeling, and anomalous transport?",
+      "summary": "Several simulation-based studies concur that the percolation threshold is a critical state where dead-end fracture density peaks, leading to maximum non-Fickian transport (strong tailing). Above the threshold, increasing density reduces tailing by promoting multiple interconnected paths and channeling. However, channeling itself, while increasing velocity heterogeneity, actually suppresses anomalous transport by organizing flow into a backbone that reduces particle trapping time. T-intersections increase overall connectivity but also create mass retention zones, enhancing late-time tailing. These findings provide a unifying framework: fracture density and intersection types together dictate whether transport is Fickian or non-Fickian.",
+      "evidence_chain": [
+        "Yoon 2023: dead-end density max at ρ=1, tail slope min; Fickian for ρ>2 [pp. 8-10].",
+        "Davy 2024: channeling reduces anomalous transport despite wider point-velocity distributions [pp. 1-1].",
+        "Zhu 2023: T-intersections connect more fractures but reduce total intersections; increase mass retention [pp. 5-6].",
+        "Yin 2024: asymptotic dispersion occurs in dense DFN; Pe number redefinition based on largest fractures [pp. 1-1]."
+      ],
+      "disagreements": [
+        "The exact threshold for Fickian transport (ρ > 2) is based on 3D Poissonian DFN without diffusion; inclusion of diffusion or non-Poissonian networks may shift this threshold."
+      ],
+      "boundary_conditions": [
+        "Valid for advection-dominated transport in crystalline rock where matrix permeability is negligible.",
+        "Models assume impermeable matrix and neglect diffusion; in real systems, matrix diffusion can extend tailing even above percolation threshold."
+      ],
+      "writing_uses": [
+        "Use percolation concepts to guide EGS stimulation design: aim for fracture density above percolation but not so high that channeling shortcuts cause early thermal breakthrough.",
+        "Transport tailing can be used as diagnostic of fracture network connectivity state from tracer tests."
+      ],
+      "sources": [
+        "2023-yoon-effects-of-dead-end-fractures-on-non-fickian-transport-in-three-dimensional-discrete-f",
+        "2023-zhu-impacts-of-t-type-intersections-on-the-connectivity-and-flow-in-complex-two-dimensional",
+        "2024-davy-structural-and-hydrodynamic-controls-on-fluid-travel-time-distributions-across-fractur",
+        "2024-yin-p-clet-number-dependent-longitudinal-dispersion-in-discrete-fracture-networks"
+      ]
+    },
+    {
+      "title": "Relationship between microcrack density, porosity, and macroscopic transport/mechanical properties",
+      "slug": "microcrack-density-property-relationships",
+      "central_question": "Can we quantitatively link microstructural damage (microcrack density, porosity) to bulk physical properties (thermal conductivity, permeability, UCS) after thermal treatment?",
+      "summary": "A strong empirical linear correlation exists between microcrack density (r_l) and equivalent thermal conductivity (ETC) reduction in granite (R² > 0.97). Similarly, porosity increase measured by NMR or CT correlates exponentially or linearly with temperature and cooling severity, and these porosity changes map onto permeability enhancement (often via power-law or exponential relations) and mechanical weakening. The cross-scale linkage stems from the fact that thermal cracks increase both porosity and specific surface area, reducing conductive pathways (lower ETC) and enhancing hydraulic pathways (higher permeability), while degrading bonds between grains (lower strength). These findings support the development of physics-based damage models that use measurable pore/crack metrics to predict transport and mechanical responses.",
+      "evidence_chain": [
+        "Bu 2024: ETC vs. microcrack density r_l linear R² > 0.97 [pp. 10-12].",
+        "Xi 2024 sandstone: porosity exponential with temperature [pp. 6-7]; permeability enhancement observed.",
+        "Zhu 2023 granite: permeability sensitive to confining pressure, showing crack closure dominance [pp. 3-13].",
+        "Gomah 2025: crack width and density correlate with permeability increase above 300°C [pp. 1-2]."
+      ],
+      "disagreements": [
+        "The exact functional form (linear vs. exponential) linking porosity to permeability differs between studies, likely due to pore connectivity variations."
+      ],
+      "boundary_conditions": [
+        "Relations are rock-type specific; the ETC–r_l linearity was established for one granite sample.",
+        "At low confining pressure (<5 MPa) where crack closure is minimal; at higher pressure, permeability reduction may deviate from simple porosity relations.",
+        "Not yet validated for cyclic thermal loading or in fully saturated conditions."
+      ],
+      "writing_uses": [
+        "These correlations can be used to constrain coupled THM models: for example, defining a damage variable based on microcrack density that simultaneously reduces ETC, increases permeability, and weakens rock.",
+        "Field estimation of thermal conductivity or permeability via acoustic logs and image-based crack density."
+      ],
+      "sources": [
+        "2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling",
+        "2024-xi-experimental-study-on-pore-characteristics-evolution-and-rock-damage-mechanism-of-therma",
+        "2023-zhu-不同冷却速率下干热花岗岩渗透率演化特征对比研究",
+        "2025-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte"
+      ]
+    }
+  ],
+  "open_questions": [
+    {
+      "question": "What is the scaling relationship between laboratory-measured thermal damage (porosity, permeability, strength) and field-scale rock mass behavior under in-situ stress and temperature gradients?",
+      "slug": "scale-effect-thermal-damage",
+      "why_it_matters": "Most thermal shock studies are on small cores (φ25–50 mm) without confining pressure; extrapolation to EGS reservoir scale is uncertain, affecting design of stimulation and prediction of thermal breakthrough.",
+      "current_evidence": "Lab studies show consistent trends but few have been compared with field data; micro-CT spatial analysis (He 2025) suggests damage is restricted to surface zones, which may not be representative of bulk rock mass.",
+      "needed_evidence": "In-situ thermal stimulation experiments with multi-scale monitoring (acoustic, tracer, well logging) and comparative core testing; large block thermal shock tests with realistic boundary conditions.",
+      "sources": ["2025-he-spatial-variability-and-quantitative-characterization-of-thermal-shock-damage-in-sandsto", "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under"]
+    },
+    {
+      "question": "How do chemical interactions (mineral dissolution/precipitation) and fluid phase changes affect the long-term evolution of thermally-induced permeability and fracture roughness?",
+      "slug": "chemical-effects-thermal-permeability",
+      "why_it_matters": "EGS operational fluids are not pure water; they contain dissolved species that can precipitate in cooling fractures, altering permeability and heat transfer over years.",
+      "current_evidence": "Existing studies focus on physical cooling damage; few incorporate reactive transport. Yin 2023 noted hydrothermal backfill alters mechanical behavior, hinting at chemical cementation effects.",
+      "needed_evidence": "Long-term flow-through experiments with geothermal fluids at high temperature, coupled THMC models with field tracer and geochemical data.",
+      "sources": ["2023-yin-effect-of-hydrothermal-fluid-backfill-on-the-mechanical-behavior-of-deep-granite-under"]
+    },
+    {
+      "question": "What is the mechanistic origin of the threshold temperature (200–400°C) where thermal shock damage accelerates, and can it be predicted from mineralogical and petrophysical properties?",
+      "slug": "thermal-damage-threshold-prediction",
+      "why_it_matters": "Identifying this threshold is critical for deciding drilling and stimulation strategies; universal prediction would allow site screening without extensive testing.",
+      "current_evidence": "Multiple studies identify thresholds around 300°C for granite and 400–500°C for sandstone, often attributed to mineral decomposition or quartz transition, but quantitative models that predict threshold from rock composition are lacking.",
+      "needed_evidence": "Systematic experiments on rocks with varying quartz, clay, and carbonate contents, combined with micro-mechanical modeling (e.g., TM-GBM) to separate mechanisms.",
+      "sources": ["2025-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte", "2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s", "2024-zhang-investigation-of-high-temperature-effects-on-the-strengthening-and-degradation-of-mec"]
+    },
+    {
+      "question": "Can the number and properties of preferential flow paths in a geothermal reservoir be reliably inferred from surface or borehole tracer tests, independent of prior knowledge of fracture network geometry?",
+      "slug": "tracer-inversion-preferential-paths",
+      "why_it_matters": "Successful inversion would greatly reduce the uncertainty in reservoir models and improve prediction of thermal drawdown.",
+      "current_evidence": "The DRM approach (Hua 2024) shows promise in synthetic cases, proving that TBC inflection points correspond to dominant paths. However, field verification is limited to one lab-scale model and one synthetic.",
+      "needed_evidence": "Blind tests at well-characterized fractured field sites (e.g., Grimsel, Äspö) using multiple tracer tests and hydraulic tomography; comparison with independent DFN realizations.",
+      "sources": ["2024-hua-tracer-test-based-dimensionality-reduction-model-for-characterizing-fracture-network-an", "2024-r-mhild-hybrid-discrete-fracture-network-inversion-of-hydraulic-tomography-data-from-a-frac"]
+    },
+    {
+      "question": "How does fracture roughness evolution under thermal cycling and shear affect the long-term hydraulic and mechanical behavior of EGS reservoirs?",
+      "slug": "roughness-evolution-hydro-thermal-mechanical",
+      "why_it_matters": "Thermal and shear-induced roughness changes can alter fracture transmissivity (cubic law) and shear strength, impacting heat extraction efficiency and induced seismicity.",
+      "current_evidence": "Gu 2025 shows fracture roughness increases with temperature and cycles; Zhang 2024 shows shear properties degrade with cycles. However, coupled effects on transmissivity during flow are not yet studied.",
+      "needed_evidence": "Coupled shear-flow experiments on thermally-cycled fractures; numerical models that incorporate progressive roughness change and its impact on transmissivity and heat extraction.",
+      "sources": ["2025-gu-effects-of-high-temperature-and-thermal-cycles-on-fracture-surface-s-roughness-of-granit", "2024-zhang-changes-in-shear-properties-of-granite-fractures-subjected-to-cyclic-heating-and-air"]
+    },
+    {
+      "question": "To what extent can acoustic emission and diametrical core deformation techniques provide real-time 3D stress and damage monitoring for enhanced geothermal systems?",
+      "slug": "ae-dcdt-real-time-egs-monitoring",
+      "why_it_matters": "Continuous stress and damage monitoring is essential for safe EGS operation and avoiding induced seismicity; these methods offer potentially low-cost alternatives to downhole instrumentation.",
+      "current_evidence": "AE has been used in lab to monitor thermal damage thresholds (Bu 2025) and DCDT validated for mining-induced stress (Li 2024). Their combined use for thermal stress evolution is untested.",
+      "needed_evidence": "Field trials of core-based DCDT before/after thermal stimulation, correlated with AE or microseismic monitoring; integrated interpretation framework.",
+      "sources": ["2025-bu-temperature-dependent-acoustic-emission-characteristics-and-statistical-constitutive-mod", "2024-li-validation-of-diametrical-core-deformation-technique-for-mining-induced-stress-estimatio"]
+    },
+    {
+      "question": "What are the optimal injection strategies (fluid type, rate, temperature) to maximize heat extraction while minimizing thermal breakthrough and induced seismicity in fractured granite?",
+      "slug": "optimal-egs-injection-strategy",
+      "why_it_matters": "EGS viability depends on balancing high energy output with reservoir sustainability; integrated multi-parameter optimization under geological uncertainty is still an open challenge.",
+      "current_evidence": "Xue 2024 suggests hybrid CO2-water provides best NPV; numerical studies show that high injection rates cause early thermal breakthrough and decreasing efficiency (Mu 2024). However, these are not validated in the field.",
+      "needed_evidence": "Coupled THM simulations with stochastic fracture networks and real-time feedback; field pilot tests with adaptive injection strategies.",
+      "sources": ["2024-xue-integrated-technological-and-economic-feasibility-comparisons-of-enhanced-geothermal-sy", "2024-mu-investigation-on-the-heat-extraction-performance-considering-a-rough-fracture-network-in"]
+    }
+  ]
+}

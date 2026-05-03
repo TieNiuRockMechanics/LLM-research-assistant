@@ -1,26 +1,33 @@
-param(
+﻿param(
     [Parameter(Mandatory = $true)]
     [string]$Question,
     [string]$IndexName = "papers",
-    [string]$PaperDirectory,
-    [string]$IndexDirectory,
+    [ValidateSet("auto", "paper", "chat")]
+    [string]$Route = "auto",
+    [ValidateSet("direct", "agent")]
+    [string]$PaperMode = "direct",
+    [ValidateSet("text", "json")]
+    [string]$Format = "text",
     [Parameter(ValueFromRemainingArguments = $true)]
     [string[]]$ExtraArgs
 )
 
 $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
-if (-not $PaperDirectory) {
-    $PaperDirectory = Join-Path $ProjectRoot "data\\papers"
-}
-if (-not $IndexDirectory) {
-    $IndexDirectory = Join-Path $ProjectRoot "data\\indexes"
+$Python = "python"
+$VenvPython = Join-Path $ProjectRoot ".venv\Scripts\python.exe"
+
+if (Test-Path $VenvPython) {
+    $Python = $VenvPython
 }
 
-& (Join-Path $ProjectRoot "scripts\\pqa.ps1") `
-    "--index" $IndexName `
-    "--agent.index.paper_directory" $PaperDirectory `
-    "--agent.index.index_directory" $IndexDirectory `
+$env:PYTHONUTF8 = "1"
+& $Python `
+    (Join-Path $ProjectRoot "scripts\pqa-api.py") `
     "ask" `
+    "--index-name" $IndexName `
+    "--route" $Route `
+    "--paper-mode" $PaperMode `
+    "--format" $Format `
     $Question `
     @ExtraArgs
 

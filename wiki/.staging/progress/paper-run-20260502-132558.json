@@ -1,0 +1,10 @@
+{
+  "run_id": "20260502-132558",
+  "updated_at": "2026-05-02T13:26:21",
+  "shard_count": 1,
+  "shard_index": 0,
+  "phase": "aggregate",
+  "status": "running",
+  "paper_pages": 487,
+  "model": "deepseek/deepseek-v4-pro"
+}

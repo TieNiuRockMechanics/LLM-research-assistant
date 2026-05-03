@@ -1,0 +1,124 @@
+{
+  "schema_version": "paper-stage-v1-2026-04-30",
+  "one_line_summary": "Derives a weighting function to correct sampling bias in orientation data for finite circular discontinuities intersecting a finite vertical rectangular exposure, and applies it to shear data from Ohio shales.",
+  "research_question": "How to correct sampling bias in orientation data for thin circular disc discontinuities of finite size intersecting a finite-size vertical rectangular window?",
+  "study_area_data": [
+    "Shear orientation data from red shales of the Conemaugh Shale Formation, southeastern Ohio, U.S.A. (Williams 1982). Vertical rectangular window: width w=0.9 m, height h=0.6 m, strike γ=π/2 (90° from north)."
+  ],
+  "methods": [
+    "Derivation of probability of intersection for a circular disc with a vertical rectangular window based on volume of locus of centers that cause intersection.",
+    "Dividing the locus volume into components: parallelepiped V1, and two half oblique cylinders V2 and V3.",
+    "Solving for x0 as the distance from window to tangent of ellipse projection on horizontal plane.",
+    "Formulating the probability Pr(I|D,θ,β,h,w) proportional to total volume.",
+    "Deriving weighting function W = k/Pr(I) to correct observed frequencies, with separate formulas for two orientation cases (dip direction to one side or the other of vertical plane).",
+    "Applying to field data: computing corrected numbers and frequencies for D/h = 1, D/h = 1/4, and D/h→0."
+  ],
+  "key_findings": [
+    "For the Conemaugh shale shear data (w=0.9 m, h=0.6 m, γ=π/2), the bias correction was small and the corrected relative frequencies were insensitive to D/h ranging from 1 to 0.",
+    "The probability of intersection for a disc depends on its diameter, dip, and relative orientation to the window; the weighting function can be computed via Eq. (20) / (22) for finite windows and (21)/(23) for infinite windows."
+  ],
+  "evidence": [
+    {
+      "evidence": "Pr(I|D,θ,β,h,w) ∝ Dwh (cos²θ sin²β + cos²β)^{1/2} + (πD²/4) w sinθ cosβ + (πD²/4) h cosθ for the disc orientation in Fig. 1a.",
+      "source": "[Kulatilake 1984, pp. 1-5, eq. (15)]",
+      "conditions": "Vertical rectangular window; disc orientation with dip direction on one side of the vertical plane (Fig. 1a); β is the parameter derived from dip direction α and window strike γ (Table 1).",
+      "notes": "Derived from the volume in which the disc center must lie to intersect the window, assuming probability proportional to that volume."
+    },
+    {
+      "evidence": "For the alternative disc orientation (Fig. 1b), Pr(I) ∝ Dwh (cos²θ cos²β + sin²β)^{1/2} + (πD²/4) w sinβ sinθ + (πD²/4) h cosθ.",
+      "source": "[Kulatilake 1984, pp. 5-10, eq. (18)]",
+      "conditions": "Vertical window; disc dip direction on the opposite side.",
+      "notes": "The corresponding weighting function is W = 1/Pr(I) as in eq. (22)."
+    },
+    {
+      "evidence": "When window dimensions are large compared to disc diameter (h/D →∞, w/D →∞), Pr(I) ∝ D (cos²θ sin²β + cos²β)^{1/2} for case 1.",
+      "source": "[Kulatilake 1984, pp. 5-10, eqs. (17),(19)]",
+      "conditions": "h, w >> D.",
+      "notes": "The weighting function simplifies to (cos²θ sin²β + cos²β)^{-1/2} for case 1 and (cos²θ cos²β + sin²β)^{-1/2} for case 2."
+    },
+    {
+      "evidence": "For the observation pair (θ=30°, α=170°, β=80°) with D/h=1/4 and the finite-window weighting function, W=0.999, giving an unbiased frequency of 0.029 compared to the observed 0.027.",
+      "source": "[Kulatilake 1984, pp. 10-11, eqs. (24)-(25)]",
+      "conditions": "Window: w=0.9 m, h=0.6 m, γ=π/2. Data from Williams (1982) Conemaugh shales.",
+      "notes": "The correction changed the frequency from 0.027 to 0.029, showing a minor effect for this data."
+    }
+  ],
+  "limitations": [
+    "The disc diameter D is typically unknown in field surveys; the correction requires an assumed or measured D, and the sensitivity analysis for this dataset showed insensitivity to D/h, but this may not hold for other geometries.",
+    "The probability model assumes that disc centers are uniformly distributed in space and that intersection probability is strictly proportional to the locus volume.",
+    "The derivation is for vertical rectangular windows only; generalization to arbitrary exposure orientations and shapes is not provided.",
+    "The application used a small sample from a single window orientation, limiting the generality of the insensitivity finding."
+  ],
+  "assumptions_conditions": [
+    "Discontinuities are modeled as thin circular discs with finite diameter.",
+    "The probability of intersection is proportional to the volume in which the disc center must lie to intersect the window.",
+    "The exposure is a vertical rectangular window of width w and height h.",
+    "The disc diameter D is fixed but unknown; corrections are computed for assumed D/h ratios.",
+    "The dip direction α and dip angle θ uniquely define disc orientation; two cases (Figs. 1a and 1b) cover all possibilities.",
+    "The parameters β, derived from α and the window strike γ via Table 1, capture the relative orientation."
+  ],
+  "variables_parameters": [
+    "D: disc diameter",
+    "θ: dip angle",
+    "α: dip direction (0 to 2π)",
+    "γ: strike of vertical window (0 to π)",
+    "β: orientation parameter (function of α and γ, 12 cases in Table 1)",
+    "w: window width",
+    "h: window height",
+    "Pr(I|D,θ,β,h,w): probability of intersection",
+    "W(θ,β,D,h,w): weighting function = inverse of probability component",
+    "V1, V2, V3: volume components of the locus of disc centers",
+    "x0: distance from window plane to tangent of projected ellipse"
+  ],
+  "reusable_claims": [
+    {
+      "claim": "For a thin circular disc of diameter D intersecting a vertical rectangular window of width w and height h, the weighting function to correct orientation bias is W = 1/[Dwh (cos²θ sin²β+cos²β)^{1/2} + (πD²/4) w sinθ cosβ + (πD²/4) h cosθ] when the dip direction is on the side shown in Fig. 1a.",
+      "source": "[Kulatilake 1984, pp. 1-10, eqs. (20) and (21)]",
+      "condition": "Vertical rectangular window; disc orientation case 1; disc diameter D known or assumed.",
+      "limitation": "Assumes circular discs and proportional-volume probability; only corrects for intersection probability bias."
+    },
+    {
+      "claim": "When window dimensions are much larger than disc diameter (h/D →∞, w/D →∞), the weighting function simplifies to W = (cos²θ sin²β+cos²β)^{-1/2} for case 1, independent of D.",
+      "source": "[Kulatilake 1984, pp. 5-10, eqs. (21) and (23)]",
+      "condition": "h,w >> D; vertical rectangular window.",
+      "limitation": "Approximation valid only for very large exposures relative to disc size; does not account for finite window effects."
+    },
+    {
+      "claim": "For the Conemaugh shale shear data (w=0.9 m, h=0.6 m, γ=π/2), the correction for sampling bias changed relative frequencies by ≤0.002, and the corrected frequencies were insensitive to D/h between 0 and 1.",
+      "source": "[Kulatilake 1984, pp. 10-11]",
+      "condition": "Shears in red shales, Ohio; limited sample size; single window orientation.",
+      "limitation": "Insensitivity conclusion is specific to this dataset; bias may be more significant for other orientations or window geometries."
+    }
+  ],
+  "candidate_concepts": [
+    "[[Sampling bias on orientation]]",
+    "[[Probability of intersection of disc with window]]",
+    "[[Weighting function for orientation correction]]",
+    "[[Circular disc discontinuity model]]",
+    "[[Stereological correction]]",
+    "[[Terzaghi correction extension]]"
+  ],
+  "candidate_methods": [
+    "[[Geometric probability for intersection of disc and rectangle]]",
+    "[[Volume locus method for intersection probability]]",
+    "[[Weighting function correction for orientation data]]",
+    "[[Stereological bias correction for finite discontinuities]]"
+  ],
+  "connections": [
+    "Extends Terzaghi's (1965) correction for orientation data from infinite planar discontinuities to finite circular discs.",
+    "Uses orientation data from Williams (1982) on Conemaugh Shale shears.",
+    "The derived weighting functions become part of later discrete fracture network sampling corrections (e.g., in Baecher et al. 1977 for statistical description)."
+  ],
+  "open_questions": "not-confirmed-from-current-fragments",
+  "coverage_notes": "The fragments cover the entire technical note: introduction, derivation of probability expressions, derivation of weighting functions, Table 1 for orientation cases, application to Ohio shear data, and references. All key equations and numerical examples are present.",
+  "_meta": {
+    "paper_id": "1984-kulatilake-sampling-bias-on-orientation-of-discontinuities",
+    "stage_index": 1,
+    "stage_count": 1,
+    "source_block_count": 3,
+    "source_chars": 11904,
+    "source_signature": "7b4664c46b3c5bae8ef33ca5a8bcc654a3ecbbdc",
+    "model": "deepseek/deepseek-v4-pro",
+    "compiled_at": "2026-04-30T22:17:31"
+  }
+}

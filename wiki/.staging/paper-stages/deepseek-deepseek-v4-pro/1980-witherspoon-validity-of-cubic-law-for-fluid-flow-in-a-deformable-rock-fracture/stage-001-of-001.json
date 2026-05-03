@@ -1,0 +1,165 @@
+{
+  "schema_version": "paper-stage-v1-2026-04-30",
+  "one_line_summary": "Laboratory experiments on induced tension fractures in granite, basalt, and marble demonstrate that the cubic law Q/Δh = (C/f)(2b)^3 holds for apertures 4–250 μm under normal stresses up to 20 MPa, whether fractures are open or closed; deviations from ideal parallel plates are captured by a factor f ranging from 1.04 to 1.65.",
+  "research_question": "Is the cubic law valid for laminar fluid flow in a deformable rock fracture when the surfaces are in contact and aperture decreases under normal stress?",
+  "study_area_data": [
+    "Homogeneous intact samples of granite, basalt, and marble from quarries in California; matrix permeabilities negligible.",
+    "Artificial tension fractures created by modified Brazilian loading method, yielding surfaces orthogonal to cylindrical axis for radial flow and a horizontal tension fracture for straight flow."
+  ],
+  "methods": [
+    "Radial flow tests on cylindrical samples (0.15 m diameter, length 0.17–0.21 m) with a central 0.022 m diameter hole; outward radial flow.",
+    "Straight flow test on a rectangular granite block (0.121 m × 0.207 m × 0.155 m) with a sealed central groove for water distribution; flow along the fracture length.",
+    "Axial loading up to 20 MPa using a Riehle testing machine; piston also used to hold fractures open for initial open conditions.",
+    "Fracture deformation measured by three linear variable differential transformers (LVDTs) spaced 120° apart (radial) or three LVDTs across the block (straight), capable of detecting changes as small as 0.4 μm.",
+    "Hydraulic head difference Δh of 20 m of water (runs 1,2) and 0.5 m (run 3) to keep flow laminar.",
+    "Apparent aperture 2b_a determined from maximum fracture deformation ΔV_m and net deformation ΔV: 2b_a = ΔV_m − ΔV; true aperture 2b = 2b_a + 2b_r with residual aperture 2b_r treated as an unknown.",
+    "Least-squares minimization of Σ ω_i [log(Q/Δh)_i − log(C) − n log(2b_a + 2b_r)_i]^2 to fit exponent n and 2b_r, then fixing n=3 to fit factor f and 2b_r via Σ ω_i [log(Q/Δh)_i − log(C/f) − 3 log(2b_a + 2b_r)_i]^2, using weighting factor ω_i = 0.5 |log(Q/Δh)_{i+1} − log(Q/Δh)_{i-1}|."
+  ],
+  "key_findings": [
+    "The cubic law Q/Δh = (C/f)(2b)^3 is valid for laminar flow in deformable rock fractures whether surfaces are open or in contact under normal stress, for apertures from 4 μm to 250 μm and stresses up to 20 MPa.",
+    "The exponent n obtained from least-squares fits is within 3% of 3 (values 3.01–3.10) for all rock types and flow geometries.",
+    "The deviation factor f accounting for roughness and non-parallelism ranges from 1.04 to 1.65; f generally decreases with repeated loading cycles as fracture surfaces become better mated.",
+    "Permeability is uniquely defined by fracture aperture and is independent of the loading/unloading stress history; hysteresis and permanent set do not alter the cubic law relationship.",
+    "The process of fracture closing under normal stress is controlled by the strength of asperities in contact, which maintain flow pathways; the strong (2b)^3 dependence means small aperture changes dominate flow behavior, masking other geometrical changes.",
+    "Results are independent of rock type (granite, basalt, marble)."
+  ],
+  "evidence": [
+    {
+      "evidence": "For granite with straight flow, run 1, least-squares fit gave n=3.04 and residual aperture 2b_r=9.0 μm; calculated 2b_r from cubic law directly was 7.9 μm.",
+      "source": "[Witherspoon 1980, pp. 4-5, Table 1]",
+      "conditions": "Straight flow, granite, run 1, loading and unloading, Δh=20 m.",
+      "notes": "n close to 3; residual aperture from fit and direct calculation are consistent."
+    },
+    {
+      "evidence": "For granite with radial flow, run 2, fitted f=1.29, 2b_r=3.8 μm; cubic-law calculation gave 3.2 μm.",
+      "source": "[Witherspoon 1980, pp. 4-5, Table 2]",
+      "conditions": "Radial flow, granite, run 2, loading/unloading.",
+      "notes": "f > 1, indicating deviation from ideal parallel plates."
+    },
+    {
+      "evidence": "For marble with radial flow, run 3, f=1.05 and 2b_r fitted=18.2 μm, calculated from cubic law also 18.1 μm; initial aperture was 123.0 μm, and surfaces were open during unloading.",
+      "source": "[Witherspoon 1980, pp. 7-8, Table 2]",
+      "conditions": "Radial flow, marble, run 3, Δh=0.5 m, fracture opened during unloading cycle.",
+      "notes": "Shows validity of cubic law from open to closed condition; f close to 1."
+    },
+    {
+      "evidence": "The friction factor diagram (f vs. Re) shows data for granite straight flow follow f=1.21 (run 1–2) and f=1.04 (run 3); for radial flow granite, f up to 1.49.",
+      "source": "[Witherspoon 1980, pp. 5-7, Figures 5 and 6]",
+      "conditions": "Laminar flow; Reynolds numbers based on inner radius for radial cases.",
+      "notes": "Graphical confirmation of cubic law with f-factor correction; radial flow shows larger f due to more complex roughness effects."
+    },
+    {
+      "evidence": "Basalt radial flow run 2 gave f=1.65, the largest deviation; a rock chip broke off around the center borehole, potentially altering the flow field.",
+      "source": "[Witherspoon 1980, pp. 7, Table 2]",
+      "conditions": "Radial flow, basalt, run 2, modified inner radius assumption from 0.011 m to 0.02 m.",
+      "notes": "Largest f factor observed; experimental artefact may have influenced result."
+    }
+  ],
+  "limitations": [
+    "Only normal stresses were applied; shear deformation and its effect on flow were not studied.",
+    "Experiments conducted at room temperature; thermal expansion effects on aperture not investigated.",
+    "Potential size effect not addressed in these tests (mentioned as open issue).",
+    "Basalt sample experienced a rock chip around the borehole, possibly affecting flow results.",
+    "Marble runs 1 and 2 showed marked deviations from the cubic law at apertures below 10 μm due to experimental difficulties.",
+    "The cubic law was tested up to a minimum aperture of 4 μm under a maximum normal stress of 20 MPa; higher stresses or smaller apertures not explored."
+  ],
+  "assumptions_conditions": [
+    "Laminar flow of a viscous incompressible fluid (water) under isothermal conditions.",
+    "Darcy's law is valid; Q ∝ Δh for a given aperture.",
+    "Fracture surfaces are idealized as parallel plates, with deviations accounted for by factor f.",
+    "Matrix permeability is negligible compared to fracture flow.",
+    "No chemical reactions or mineral dissolution/precipitation.",
+    "Deformation of fracture is purely normal; no shear displacement.",
+    "The true aperture is the sum of an apparent (measured) and a constant residual aperture for each run.",
+    "The contact areas deform elastically without significant change in contact area under the applied stress levels."
+  ],
+  "variables_parameters": [
+    "Q (flow rate, L³/T)",
+    "Δh (hydraulic head difference, L)",
+    "C (proportional constant, L²T⁻¹; C = (ρg/12μ) × (W/L) for straight flow, C = (2πρg/12μ ln(rₑ/r_w)) for radial flow)",
+    "2b (true fracture aperture, L)",
+    "2b_a (apparent aperture, L)",
+    "2b_r (residual aperture, L)",
+    "f (fracture surface characteristic factor, dimensionless)",
+    "n (exponent in flow law, dimensionless)",
+    "Re (Reynolds number, dimensionless)",
+    "ψ (friction factor, dimensionless)",
+    "ω (weighting factor for least squares, dimensionless)",
+    "ΔV (net fracture deformation, L), ΔV_m (maximum deformation, L), ΔV_t (total deformation, L), ΔV_r (rock deformation, L)",
+    "σ_a (axial/normal stress, M/LT²)"
+  ],
+  "reusable_claims": [
+    {
+      "claim": "The cubic law Q/Δh = (C/f)(2b)³ is valid for laminar flow in rock fractures with apertures from 4 to 250 μm and normal stresses up to 20 MPa, independent of rock type (granite, basalt, marble) and stress history.",
+      "source": "[Witherspoon 1980, pp. 8-9]",
+      "condition": "Laminar flow, negligible matrix permeability, no shear movement, ambient temperature, water as fluid.",
+      "limitation": "Not validated for shear deformation, thermal effects, or apertures < 4 μm."
+    },
+    {
+      "claim": "Deviations from the ideal parallel-plate cubic law due to fracture roughness and non-parallelism can be captured by a factor f, with values between 1.04 and 1.65 for tension fractures in crystalline rocks.",
+      "source": "[Witherspoon 1980, pp. 7-8, Table 2]",
+      "condition": "Induced tension fractures, cyclic loading, radial and straight flow.",
+      "limitation": "f may depend on degree of mating, loading cycles, and flow geometry; larger f for radial than straight flow in granite."
+    },
+    {
+      "claim": "Permeability of a fracture under normal load is uniquely determined by the aperture and is independent of loading/unloading paths.",
+      "source": "[Witherspoon 1980, pp. 1-2, 7]",
+      "condition": "Normal loading/unloading cycles, no shear.",
+      "limitation": "Not tested with shear or chemical alteration."
+    },
+    {
+      "claim": "The transition from laminar to turbulent flow in fractures occurs at a critical Reynolds number of about 2300–2400.",
+      "source": "[Witherspoon 1980, pp. 1-2, referencing Lomize, Louis, Romm]",
+      "condition": "Open or closed fractures with parallel-plate analogy.",
+      "limitation": "Data from prior work; not directly tested in the present experiments."
+    }
+  ],
+  "candidate_concepts": [
+    "[[cubic law]]",
+    "[[fracture aperture]]",
+    "[[asperity contact]]",
+    "[[friction factor f]]",
+    "[[roughness factor]]",
+    "[[residual aperture]]",
+    "[[apparent aperture]]",
+    "[[parallel plate model]]",
+    "[[normal stress-permeability relation]]",
+    "[[laminar flow in fractures]]",
+    "[[radial flow geometry]]",
+    "[[straight flow geometry]]",
+    "[[hysteresis of fracture aperture]]",
+    "[[cyclic loading effect on permeability]]"
+  ],
+  "candidate_methods": [
+    "[[least-squares fitting of power-law exponent n and residual aperture]]",
+    "[[radial flow test with LVDT displacement monitoring]]",
+    "[[straight flow sealed fracture test]]",
+    "[[Brazilian loading to create tension fractures]]",
+    "[[friction factor vs. Reynolds number correlation for fractures]]",
+    "[[derivation of fracture aperture from deformation measurements]]"
+  ],
+  "connections": [
+    "Builds on earlier cubic law derivations by Boussinesq (1868), Lomize (1951), Romm (1966), and Louis (1969) for open fractures.",
+    "Contrasts with Sharp (1970) and Sharp & Maini (1972) who proposed an exponent of 2 for fracture flow; the present work reinterprets their data as consistent with cubic law when true aperture is used (as noted by Gale, 1975).",
+    "Relates to Lomize's (1951) roughness factor ε and empirical correction ψ = 96/Re [1+ (ε/2b)] which is analogous to the factor f introduced here.",
+    "Connects to the concept of hydraulic conductivity of a fracture K_f = (2b)²ρg/12μ and Darcy's law, extending it to closed fractures under stress."
+  ],
+  "open_questions": [
+    "How does the cubic law behave when shear deformation is superimposed on normal stress?",
+    "What is the effect of elevated temperature on fracture aperture and flow due to thermal expansion?",
+    "Is there a size effect when scaling laboratory results to field-scale fractures?",
+    "What are the detailed mechanics of asperity deformation and contact area change at higher stresses or under chemical weathering?",
+    "Can a universal f factor be predicted from fracture surface roughness statistics?"
+  ],
+  "coverage_notes": "The provided fragments cover the abstract, introduction, laboratory procedures, results (including tables and figures), discussion, conclusions, and notation, giving complete coverage of the paper's main content.",
+  "_meta": {
+    "paper_id": "1980-witherspoon-validity-of-cubic-law-for-fluid-flow-in-a-deformable-rock-fracture",
+    "stage_index": 1,
+    "stage_count": 1,
+    "source_block_count": 8,
+    "source_chars": 38755,
+    "source_signature": "38f03ca0a005ea99e4a3b94cd96ff870d47cb56b",
+    "model": "deepseek/deepseek-v4-pro",
+    "compiled_at": "2026-04-30T22:12:31"
+  }
+}

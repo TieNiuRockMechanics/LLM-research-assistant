@@ -1,0 +1,1324 @@
+{
+  "concepts": [
+    {
+      "name": "分形维数",
+      "slug": "fractal-dimension",
+      "definition": "描述裂缝或断层空间分布自相似标度特性的指数，常用关联积分法或盒计数法测量，维数越低表示聚集程度越高。",
+      "aliases": [
+        "fractal dimension",
+        "D"
+      ],
+      "boundary": "适用于表现出统计自相似性的裂缝/断层网络；当裂缝模式非分形时，常规方法可能给出伪分形维数。",
+      "related_methods": [
+        "correlation-integral",
+        "box-counting",
+        "two-point-correlation-function"
+      ],
+      "related_claims": [
+        "ae-fractal-dimension-decreases-before-failure",
+        "fault-length-and-position-correlation-exists"
+      ],
+      "sources": [
+        "1987-hirata-fractal-structure-of-spatial-distribution-of-microfracturing-in-rock",
+        "1995-cowie-multifractal-scaling-properties-of-a-growing-fault-population",
+        "2001-bonnet-scaling-of-fracture-systems-in-geological-media",
+        "2002-bour-a-statistical-scaling-model-for-fracture-network-geometry-with-validation-on-a-multisc",
+        "2003-darcel-connectivity-properties-of-two-dimensional-fracture-networks-with-stochastic-fractal"
+      ]
+    },
+    {
+      "name": "幂律长度分布",
+      "slug": "power-law-length-distribution",
+      "definition": "裂缝或断层长度（或开度）服从 n(l) ∝ l^{-a} 的分布，指数 a 控制大小裂缝的相对比例。",
+      "aliases": [
+        "power-law size distribution",
+        "fracture length distribution exponent"
+      ],
+      "boundary": "适用于缺乏内在特征尺度的裂缝生长过程；在成核主导的早期变形或存在物理层厚时趋向指数分布。所有自然幂律必有上下截断。",
+      "related_methods": [
+        "scanline-sampling",
+        "cumulative-frequency-fitting"
+      ],
+      "related_claims": [
+        "fracture-length-distribution-evolves-from-exponential-to-power-law",
+        "power-law-size-distribution-has-upper-and-lower-cutoffs"
+      ],
+      "sources": [
+        "1995-cowie-multifractal-scaling-properties-of-a-growing-fault-population",
+        "1997-bour-connectivity-of-random-fault-networks-following-a-power-law-fault-length-distribution",
+        "2001-bonnet-scaling-of-fracture-systems-in-geological-media",
+        "2002-bour-a-statistical-scaling-model-for-fracture-network-geometry-with-validation-on-a-multisc",
+        "2006-ortega-a-scale-independent-approach-to-fracture-intensity-and-average-spacing-measurement"
+      ]
+    },
+    {
+      "name": "逾渗阈值",
+      "slug": "percolation-threshold",
+      "definition": "裂缝网络开始形成跨越整个系统连通路径的临界裂缝密度或几何条件，是判断网络是否导流的关键指标。",
+      "aliases": [
+        "percolation critical point",
+        "connectivity threshold"
+      ],
+      "boundary": "适用于随机或分形裂缝网络，阈值依赖于裂缝长度分布指数 a、空间分形维数 D 和系统尺寸 L。",
+      "related_methods": [
+        "dfn-percolation-analysis"
+      ],
+      "related_claims": [
+        "three-connectivity-regimes-exist-in-power-law-fault-networks",
+        "percolation-threshold-depends-on-a-and-d"
+      ],
+      "sources": [
+        "1997-bour-connectivity-of-random-fault-networks-following-a-power-law-fault-length-distribution",
+        "2003-darcel-connectivity-properties-of-two-dimensional-fracture-networks-with-stochastic-fractal",
+        "2003-nakaya-percolation-conditions-in-binary-fractal-fracture-networks-applications-to-rock-frac",
+        "2006-feng-research-on-laws-of-2d-percolation-of-fully-random-distribution-fracture-media"
+      ]
+    },
+    {
+      "name": "有效应力",
+      "slug": "effective-stress",
+      "definition": "控制多孔介质力学行为的应力，等于总应力减去孔隙流体压力的贡献，通常写为 σ' = σ - α P，其中 α 为 Biot 系数。",
+      "aliases": [
+        "effective stress principle",
+        "Terzaghi effective stress"
+      ],
+      "boundary": "适用于饱和多孔介质，基于 Biot 孔弹性理论；在裂缝岩石中用于判断断层滑动或裂缝起裂。",
+      "related_methods": [
+        "hydraulic-fracturing-stress-measurement",
+        "coulomb-failure-criterion"
+      ],
+      "related_claims": [
+        "fluid-pressure-controls-earthquake-activity",
+        "breakdown-pressure-depends-on-poroelastic-constants"
+      ],
+      "sources": [
+        "1967-haimson-initiation-and-extension-of-hydraulic-fractures-in-rocks",
+        "1976-raleigh-the-rangely-field-an-experiment-in-earthquake-control-at-rangely-colorado",
+        "1997-bai-thermoporoelastic-coupling-with-application-to-consolidation",
+        "2004-coussy-poromechanics"
+      ]
+    },
+    {
+      "name": "立方定律",
+      "slug": "cubic-law",
+      "definition": "描述平行板间不可压缩层流的立方关系 Q ∝ (2b)³，是与裂缝孔径相关的渗透率简化模型。",
+      "aliases": [
+        "cubic law for fracture flow"
+      ],
+      "boundary": "适用于层流、等温条件；在粗糙裂缝中需考虑孔径变化及接触面积，但实验表明即使裂缝闭合立方律仍然近似成立。",
+      "related_methods": [],
+      "related_claims": [
+        "cubic-law-valid-for-closed-deformable-fractures"
+      ],
+      "sources": [
+        "1980-witherspoon-validity-of-cubic-law-for-fluid-flow-in-a-deformable-rock-fracture"
+      ]
+    },
+    {
+      "name": "声发射 Kaiser 效应",
+      "slug": "kaiser-effect",
+      "definition": "岩石在重复加载过程中，当载荷未超过先前最大应力时几乎不产生声发射的现象，可用于估计原地应力。",
+      "aliases": [
+        "acoustic emission Kaiser effect"
+      ],
+      "boundary": "假定 Kaiser 效应只响应最大压应力，且地质年代内的应力作用与实验室时间尺度等效。",
+      "related_methods": [
+        "ae-stress-measurement"
+      ],
+      "related_claims": [
+        "ae-method-yields-consistent-stress-with-hydrofracturing"
+      ],
+      "sources": [
+        "2004-li-北京房山花岗岩原地应力状态-ae-法估计"
+      ]
+    },
+    {
+      "name": "临界应力断层",
+      "slug": "critically-stressed-fault",
+      "definition": "在现今应力场中剪切应力与有效法向应力之比接近或超过摩擦系数的断层，具有最佳破坏取向且渗透率显著偏高。",
+      "aliases": [
+        "critically stressed fracture",
+        "optimally oriented fault"
+      ],
+      "boundary": "适用条件：已知原地应力分量和孔隙压力，且断层岩摩擦系数可用 Byerlee 定律（μ ≈ 0.6–0.85）近似。",
+      "related_methods": [
+        "borehole-temperature-logging",
+        "coulomb-failure-criterion"
+      ],
+      "related_claims": [
+        "critically-stressed-faults-are-main-fluid-conduits"
+      ],
+      "sources": [
+        "1995-barton-fluid-flow-along-potentially-active-faults-in-crystalline-rock"
+      ]
+    },
+    {
+      "name": "体视学外推",
+      "slug": "stereological-extrapolation",
+      "definition": "利用从低维观测（一维测线、二维露头）获取的裂缝参数推断三维裂缝网络统计特征的理论和方法。",
+      "aliases": [
+        "stereology of fractures"
+      ],
+      "boundary": "基于裂缝为圆盘、随机取向等假设；在非幂律分布或强空间相关性下，标准维度外推失效。",
+      "related_methods": [
+        "scanline-sampling",
+        "disk-fracture-network-model"
+      ],
+      "related_claims": [
+        "stereological-exponent-shift-constant",
+        "2d-to-3d-extrapolation-not-trivial"
+      ],
+      "sources": [
+        "1998-berkowitz-stereological-analysis-of-fracture-network-structure-in-geological-formations",
+        "2003-darcel-stereological-analysis-of-fractal-fracture-networks",
+        "2000-borgos-practicalities-of-extrapolating-one-dimensional-fault-and-fracture-size-frequency-di"
+      ]
+    },
+    {
+      "name": "热孔弹性",
+      "slug": "thermoporoelasticity",
+      "definition": "考虑温度场、渗流场和固体骨架变形完全耦合的多孔介质力学理论，扩展了 Biot 固结理论。",
+      "aliases": [
+        "thermoporoelastic coupling"
+      ],
+      "boundary": "适用于线弹性、小变形、各向同性多孔介质；忽略热对流的条件下成立。",
+      "related_method": [],
+      "related_claims": [
+        "full-coupling-necessary-for-pore-pressure-under-thermal-loading"
+      ],
+      "sources": [
+        "1997-bai-thermoporoelastic-coupling-with-application-to-consolidation"
+      ]
+    },
+    {
+      "name": "自仿射粗糙度",
+      "slug": "self-affine-roughness",
+      "definition": "裂缝壁面形貌的统计标度律，其中高度起伏的均方根与长度尺度满足 σ ∝ L^H，H 为 Hurst 指数。",
+      "aliases": [
+        "self-affine fracture surface"
+      ],
+      "boundary": "适用于一定标度范围内的岩石节理或裂缝表面；当壁面完全互补错动后可产生渗透率各向异性。",
+      "related_method": [],
+      "related_claims": [
+        "shear-displacement-induces-permeability-anisotropy"
+      ],
+      "sources": [
+        "2005-auradou-permeability-anisotropy-induced-by-the-shear-displacement-of-rough-fracture-walls"
+      ]
+    },
+    {
+      "name": "断层-裂缝网",
+      "slug": "fault-fracture-mesh",
+      "definition": "由流体压力驱动下相互连接的剪切断裂、张剪性和张性裂缝构成的三维渗透通道，是地壳深部流体运移的主要构造载体。",
+      "aliases": [
+        "structural permeability mesh",
+        "fault-fracture network"
+      ],
+      "boundary": "形成于存在应力非均质性和材料差异的岩体中；在伸展体制下需要流体超压激活。",
+      "related_methods": [],
+      "related_claims": [
+        "fault-fracture-meshes-are-self-generated-fluid-conduits"
+      ],
+      "sources": [
+        "1996-sibson-structural-permeability-of-fluid-driven-fault-fracture-meshes"
+      ]
+    },
+    {
+      "name": "岩石圈热结构",
+      "slug": "lithospheric-thermal-structure",
+      "definition": "岩石圈内温度随深度的分布，由地表热流、地壳生热率和地幔传导对流共同控制，可反映构造活动性。",
+      "aliases": [
+        "crustal geotherm",
+        "lithosphere thermal regime"
+      ],
+      "boundary": "稳态假设下由热传导方程计算；深部温度受控于地震速度反演和矿物学模型。",
+      "related_methods": [
+        "sv-wave-thermometry"
+      ],
+      "related_claims": [
+        "eastern-china-hotter-than-western-at-depth"
+      ],
+      "sources": [
+        "2007-an-three-dimensional-thermal-structure-of-the-chinese-continental-crust-and-upper-mantle"
+      ]
+    },
+    {
+      "name": "b 值",
+      "slug": "b-value",
+      "definition": "地震震级-频度分布 logN = a - bM 中的斜率参数，反映大、小地震的相对比例，高 b 值表示小震比例大。",
+      "aliases": [
+        "Gutenberg-Richter b-value"
+      ],
+      "boundary": "要求地震目录完整且满足幂律分布；b 值估计受完整性震级 Mc 和样本量影响。",
+      "related_methods": [
+        "maximum-likelihood-b-value-estimation"
+      ],
+      "related_claims": [
+        "b-value-varies-systematically-with-faulting-style"
+      ],
+      "sources": [
+        "2005-schorlemmer-variations-in-earthquake-size-distribution-across-different-stress-regimes"
+      ]
+    },
+    {
+      "name": "地表热流",
+      "slug": "surface-heat-flow",
+      "definition": "单位时间从地球内部通过单位面积地表散失的热量，是岩石圈热状态的关键约束。",
+      "aliases": [
+        "heat flow"
+      ],
+      "boundary": "受浅部地下水对流、古气候和地壳生热率非均质性影响，数据需校正才能用于深部热计算。",
+      "related_methods": [
+        "borehole-temperature-logging"
+      ],
+      "related_claims": [],
+      "sources": [
+        "2007-an-three-dimensional-thermal-structure-of-the-chinese-continental-crust-and-upper-mantle"
+      ]
+    },
+    {
+      "name": "变质 P-T-t 路径",
+      "slug": "p-t-t-path",
+      "definition": "岩石在变质作用期间压力-温度-时间轨迹，可推断构造环境（碰撞、伸展或地幔柱活动）。",
+      "aliases": [
+        "metamorphic pressure-temperature-time path"
+      ],
+      "boundary": "重建依赖于矿物组合和热力学平衡假设；不同构造域路径类型（顺时针/逆时针）对应不同的构造机制。",
+      "related_methods": [
+        "geothermobarometry"
+      ],
+      "related_claims": [
+        "north-china-craton-has-counterclockwise-p-t-path"
+      ],
+      "sources": [
+        "1998-zhao-thermal-evolution-of-archean-basement-rocks-from-the-eastern-part-of-the-north-china-c",
+        "2005-zhao-late-archean-to-paleoproterozoic-evolution-of-the-north-china-craton-key-issues-revisi"
+      ]
+    },
+    {
+      "name": "裂缝强度归一化",
+      "slug": "normalized-fracture-intensity",
+      "definition": "基于幂律尺寸分布的裂缝丰度指标，通过指定最小检测阈值消除采样尺度效应，使不同观测尺度数据可比。",
+      "aliases": [
+        "scale-independent fracture intensity"
+      ],
+      "boundary": "适用于尺寸分布服从幂律的裂缝组；需明确检测阈值，且特小或特大裂缝端可能偏离幂律。",
+      "related_methods": [
+        "scanline-sampling",
+        "cumulative-frequency-fitting"
+      ],
+      "related_claims": [
+        "fracture-intensity-meaningless-without-detection-threshold"
+      ],
+      "sources": [
+        "2006-ortega-a-scale-independent-approach-to-fracture-intensity-and-average-spacing-measurement"
+      ]
+    },
+    {
+      "name": "取样偏差校正",
+      "slug": "sampling-bias-correction",
+      "definition": "针对不连续面定向、尺寸和窗口效应导致的观测频率偏差进行几何概率修正的方法。",
+      "aliases": [
+        "orientation bias correction",
+        "trace length bias correction"
+      ],
+      "boundary": "假定不连续面形状（如圆盘）和空间均匀分布；不处理截断和遮掩效应。",
+      "related_methods": [
+        "circular-window-trace-sampling",
+        "scanline-sampling"
+      ],
+      "related_claims": [
+        "orientation-bias-correction-can-be-small"
+      ],
+      "sources": [
+        "1984-kulatilake-sampling-bias-on-orientation-of-discontinuities",
+        "1998-zhang-estimating-the-mean-trace-length-of-rock-discontinuities"
+      ]
+    },
+    {
+      "name": "裂隙密度参数 C",
+      "slug": "fracture-density-parameter",
+      "definition": "分形裂缝网络建模中，基于 N = C r^{-D} 关系表征单位岩体裂缝数量密度的常数。",
+      "aliases": [
+        "fractal fracture density"
+      ],
+      "boundary": "二维模型，分形维数 D 常固定为1；可通过岩心单位长度裂缝数量标定。",
+      "related_methods": [
+        "fractal-fracture-network-modeling"
+      ],
+      "related_claims": [
+        "connectivity-increases-with-fracture-density-c"
+      ],
+      "sources": [
+        "1995-watanabe-fractal-geometry-characterization-of-geothermal-reservoir-fracture-networks"
+      ]
+    },
+    {
+      "name": "表征单元体",
+      "slug": "representative-elementary-volume",
+      "definition": "岩体力学或水力特性趋于稳定且可代表连续介质的最小体积，是等效连续介质方法成立的前提。",
+      "aliases": [
+        "REV",
+        "representative volume element"
+      ],
+      "boundary": "REV 大小依赖于裂缝长度分布和开度变异性；当变异性过高时 REV 可能不存在。",
+      "related_methods": [
+        "dfn-up scaling"
+      ],
+      "related_claims": [
+        "rev-size-increases-with-aperture-variability"
+      ],
+      "sources": [
+        "2007-baghbanan-hydraulic-properties-of-fractured-rock-masses-with-correlated-fracture-length-and"
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "name": "水压致裂法地应力测量",
+      "slug": "hydraulic-fracturing-stress-measurement",
+      "purpose": "通过封隔钻孔段加压使之起裂，根据起裂压力、重张压力和关闭压力等反演原位主应力大小。",
+      "workflow": "1. 封隔钻孔试验段；2. 注射流体直至孔壁起裂，记录压力-时间曲线；3. 识别破裂压力、重张压力和瞬时关闭压力；4. 结合孔弹性理论计算最小水平主应力，并利用破裂扩展关系约束最大水平主应力。",
+      "inputs": [
+        "深度",
+        "岩石抗拉强度",
+        "孔隙压力",
+        "多孔弹性常数（Biot系数、泊松比等）"
+      ],
+      "outputs": [
+        "最小水平主应力",
+        "最大水平主应力（间接约束）",
+        "裂缝方位（通过印模或成像测井）"
+      ],
+      "assumptions": [
+        "线弹性均质各向同性岩石",
+        "裂缝为垂直平面应变裂缝",
+        "流体渗透井壁或非渗透井壁（分别对应不同公式）"
+      ],
+      "strengths": [
+        "适用深度大（数百米至数公里）",
+        "不需要取心定向"
+      ],
+      "limitations": [
+        "在非均质或强各向异性岩体中精度降低",
+        "起裂压力解释依赖孔弹性模型选择",
+        "无法直接测量垂直应力"
+      ],
+      "related_concepts": [
+        "effective-stress"
+      ],
+      "sources": [
+        "1967-haimson-initiation-and-extension-of-hydraulic-fractures-in-rocks",
+        "1997-xu-地应力研究现状与展望"
+      ]
+    },
+    {
+      "name": "声发射 Kaiser 效应法",
+      "slug": "ae-stress-measurement",
+      "purpose": "利用岩石重复加载时声发射活动记忆先前最大应力的特征，从定向岩心室内试验反演地应力状态。",
+      "workflow": "1. 获取定向岩心；2. 在不同方向钻取子样；3. 单轴重复加载并记录声发射事件；4. 识别 Kaiser 效应点（声发射急剧增加的应力水平）；5. 通过方向组合反演应力张量。",
+      "inputs": [
+        "定向岩心",
+        "加载方向"
+      ],
+      "outputs": [
+        "主应力方向",
+        "主应力大小"
+      ],
+      "assumptions": [
+        "Kaiser 效应只响应最大压应力",
+        "地质年代应力与实验室时间尺度应力等效",
+        "岩石无重大后期改造"
+      ],
+      "strengths": [
+        "室内方法，不需要现场大型设备",
+        "可获取三维应力状态"
+      ],
+      "limitations": [
+        "仅适用于能产生明显 Kaiser 效应的硬质岩石",
+        "岩心定向精度影响结果",
+        "未大规模验证于深部高地应力条件"
+      ],
+      "related_concepts": [
+        "kaiser-effect",
+        "in-situ-stress"
+      ],
+      "sources": [
+        "2004-li-北京房山花岗岩原地应力状态-ae-法估计"
+      ]
+    },
+    {
+      "name": "关联积分分形维数法",
+      "slug": "correlation-integral",
+      "purpose": "通过计算点群之间距离小于 r 的对数比例随 r 的标度关系，求取事件空间分布的分形维数。",
+      "workflow": "1. 获取事件（如声发射、断层中心）三维坐标；2. 计算不同尺度 r 下的关联积分 C(r)；3. 在双对数坐标下拟合 log C(r) vs log r，斜率即为分形维数 D。",
+      "inputs": [
+        "事件空间坐标",
+        "尺度范围"
+      ],
+      "outputs": [
+        "分形维数 D"
+      ],
+      "assumptions": [
+        "事件分布满足统计自相似性",
+        "尺度范围处于无标度区"
+      ],
+      "strengths": [
+        "对丛集结构敏感",
+        "计算简便"
+      ],
+      "limitations": [
+        "对样本量和边界效应敏感",
+        "不能区分均匀分形与多重分形"
+      ],
+      "related_concepts": [
+        "fractal-dimension"
+      ],
+      "sources": [
+        "1987-hirata-fractal-structure-of-spatial-distribution-of-microfracturing-in-rock",
+        "1999-bour-clustering-and-size-distributions-of-fault-patterns-theory-and-measurements"
+      ]
+    },
+    {
+      "name": "离散裂缝网络模拟",
+      "slug": "dfn-modeling",
+      "purpose": "根据统计几何参数（长度分布、方向分布、空间密度）生成裂缝网络实现，用于评估连通性和水力特性。",
+      "workflow": "1. 确定裂缝长度分布（如幂律）和方向分布（如 Fisher）；2. 指定空间点过程（泊松或分形）；3. 生成裂缝几何；4. 进行流通分析或渗流模拟。",
+      "inputs": [
+        "长度分布指数 a",
+        "空间分布类型与参数",
+        "裂缝方向参数",
+        "密度参数"
+      ],
+      "outputs": [
+        "裂缝网络几何图像",
+        "连通性指标",
+        "渗透率张量估计"
+      ],
+      "assumptions": [
+        "裂缝简化线段或平面圆盘",
+        "统计参数可代表现场条件",
+        "生成过程随机"
+      ],
+      "strengths": [
+        "灵活性高，可集成多源数据",
+        "可评估REV"
+      ],
+      "limitations": [
+        "真实裂缝形状可能非平面",
+        "模型参数不确定性大",
+        "计算成本随规模增大急剧上升"
+      ],
+      "related_concepts": [
+        "power-law-length-distribution",
+        "fractal-dimension",
+        "representative-elementary-volume"
+      ],
+      "sources": [
+        "1995-watanabe-fractal-geometry-characterization-of-geothermal-reservoir-fracture-networks",
+        "2007-baghbanan-hydraulic-properties-of-fractured-rock-masses-with-correlated-fracture-length-and",
+        "2003-nakaya-percolation-conditions-in-binary-fractal-fracture-networks-applications-to-rock-frac"
+      ]
+    },
+    {
+      "name": "扫描线调查法",
+      "slug": "scanline-sampling",
+      "purpose": "沿测线系统记录与测线相交的每条裂缝的位置、方位、迹长和开度等属性。",
+      "workflow": "1. 选择代表性露头面并架设测线方向（通常垂直于主裂缝组）；2. 沿测线记录每条相交裂缝的属性和位置；3. 进行方向、长度、间距等统计分析，必要时做偏差校正。",
+      "inputs": [
+        "测线方向",
+        "测量范围",
+        "最小记录阈值"
+      ],
+      "outputs": [
+        "裂缝迹线频率分布",
+        "平均间距",
+        "裂缝强度",
+        "方向玫瑰花图"
+      ],
+      "assumptions": [
+        "测线垂直于目标裂缝组以获得无偏估计",
+        "露头表面平坦并具代表性"
+      ],
+      "strengths": [
+        "操作简单，可直接获取一维统计量"
+      ],
+      "limitations": [
+        "一维数据外推到三维存在不确定性",
+        "受观测阈值的尺度效应影响"
+      ],
+      "related_concepts": [
+        "stereological-extrapolation",
+        "normalized-fracture-intensity",
+        "sampling-bias-correction"
+      ],
+      "sources": [
+        "2006-ortega-a-scale-independent-approach-to-fracture-intensity-and-average-spacing-measurement",
+        "1984-kulatilake-sampling-bias-on-orientation-of-discontinuities",
+        "2004-sisavath-geometry-percolation-and-transport-properties-of-fracture-networks-derived-from-li"
+      ]
+    },
+    {
+      "name": "从S波速度反演上地幔温度",
+      "slug": "sv-wave-thermometry",
+      "purpose": "基于高温高压实验岩石物理模型，将地震S波速度转换为上地幔温度场。",
+      "workflow": "1. 获取S波速度三维模型；2. 根据实验室弹性参数与温度的关系建立校正；3. 假设特定矿物组成和绝热线参考，迭代反演温度。",
+      "inputs": [
+        "三维S波速度",
+        "参考矿物组成",
+        "绝热线温度参考点（如1300°C）"
+      ],
+      "outputs": [
+        "上地幔温度分布"
+      ],
+      "assumptions": [
+        "在50–250 km深度，温度是控制波速的主导因素",
+        "矿物组成均匀给定（如非克拉通橄榄岩）",
+        "忽略流体影响"
+      ],
+      "strengths": [
+        "可提供区域尺度深部温度约束，弥补热流数据稀疏问题"
+      ],
+      "limitations": [
+        "波速分辨率有限（如4°–6°）",
+        "温度结果为上限估计（忽略流体软化效应）",
+        "成分假设影响结果"
+      ],
+      "related_concepts": [
+        "lithospheric-thermal-structure"
+      ],
+      "sources": [
+        "2007-an-three-dimensional-thermal-structure-of-the-chinese-continental-crust-and-upper-mantle"
+      ]
+    },
+    {
+      "name": "谱分析模拟",
+      "slug": "spectral-type-simulation",
+      "purpose": "利用傅里叶变换和变异函数模型生成具有指定空间相关结构的裂隙属性模拟场。",
+      "workflow": "1. 根据露头数据计算实验变异函数 γ(h)，得到协方差函数 C(h)=σ²-γ(h)；2. 对协方差函数进行傅里叶变换得到谱密度；3. 生成随机傅里叶系数并赋予与谱密度一致的方差；4. 逆傅里叶变换获得空间模拟值。",
+      "inputs": [
+        "变异函数",
+        "总体方差",
+        "模拟网格大小"
+      ],
+      "outputs": [
+        "具有指定空间相关性的裂隙属性场（如裂隙密度、方向）"
+      ],
+      "assumptions": [
+        "数据平稳且协方差函数对称",
+        "空间相关结构可由变异函数充分描述"
+      ],
+      "strengths": [
+        "计算高效（利用FFT）",
+        "可以模拟任意复杂的相关结构"
+      ],
+      "limitations": [
+        "仅适用于平稳假设成立的区域",
+        "未广泛验证于强烈非均质裂缝系统"
+      ],
+      "related_concepts": [
+        "fractal-dimension",
+        "variogram"
+      ],
+      "sources": [
+        "1985-miller-spectral-type-simulation-of-spatially-correlated-fracture-set-properties"
+      ]
+    },
+    {
+      "name": "实验室岩石圈物理模拟",
+      "slug": "analogue-lithosphere-modeling",
+      "purpose": "用砂、硅胶等材料按比例模拟岩石圈脆-韧性分层，研究大陆碰撞过程中断裂系统的几何演化与标度律。",
+      "workflow": "1. 构建多层模型（砂/硅胶/糖浆等）；2. 施加楔入或拉伸运动；3. 记录表面断层模式并数字化；4. 通过盒计数法、长度分布等分析分形和标度特征。",
+      "inputs": [
+        "模型材料流变参数",
+        "几何缩比因子",
+        "边界变形速率"
+      ],
+      "outputs": [
+        "断层模式图像",
+        "分形维数",
+        "断层长度分布"
+      ],
+      "assumptions": [
+        "模型材料代表地壳/地幔流变（如脆性-韧性耦合）",
+        "缩比定律适用"
+      ],
+      "strengths": [
+        "可观察断层系统从成核到局部化的完整演化过程",
+        "可重复实验"
+      ],
+      "limitations": [
+        "缩比关系中的时间、温度等效应难以完全模拟",
+        "仅适用于二维近似"
+      ],
+      "related_concepts": [
+        "power-law-length-distribution",
+        "fault-fracture-mesh"
+      ],
+      "sources": [
+        "1990-letters-to-nature-nature-letters-to-nature",
+        "1992-davy-experimental-discovery-of-scaling-laws-relating-fractal-dimensions-and-the-length-dist"
+      ]
+    },
+    {
+      "name": "精密温度测井裂隙检测",
+      "slug": "borehole-temperature-logging",
+      "purpose": "利用高分辨率温度测井曲线中的局部温度异常（地温梯度扰动）识别导水裂隙或断层位置。",
+      "workflow": "1. 在热平衡或接近热平衡的钻孔中获取高精度温度剖面；2. 分析温度梯度的正负异常；3. 结合成像测井标定异常对应的裂隙产状；4. 通过热对流模型定性判断裂隙导水性。",
+      "inputs": [
+        "温度深度曲线",
+        "钻孔成像数据"
+      ],
+      "outputs": [
+        "导水裂隙位置与产状",
+        "裂隙相对渗透性定性比较"
+      ],
+      "assumptions": [
+        "钻孔接近热平衡",
+        "温度扰动主要由流体对流引起"
+      ],
+      "strengths": [
+        "可识别毫米级开口裂缝的导水性",
+        "非破坏性测量"
+      ],
+      "limitations": [
+        "无法定量估算渗透率",
+        "异常延伸范围不确定"
+      ],
+      "related_concepts": [
+        "critically-stressed-fault"
+      ],
+      "sources": [
+        "1995-barton-fluid-flow-along-potentially-active-faults-in-crystalline-rock"
+      ]
+    },
+    {
+      "name": "真三轴压缩试验",
+      "slug": "true-triaxial-compression-test",
+      "purpose": "独立控制三个主应力，在实验室中模拟一般应力状态（σ1>σ2>σ3）以研究岩石破坏准则。",
+      "workflow": "1. 准备长方体岩石试样；2. 在三个正交方向施加独立均布载荷；3. 测量应力-应变曲线直至破坏；4. 分析断裂强度、屈服强度和延性与中间主应力的关系。",
+      "inputs": [
+        "三个主应力 σ1, σ2, σ3",
+        "试样尺寸（如1.5×1.5×3 cm）"
+      ],
+      "outputs": [
+        "极限强度",
+        "屈服强度",
+        "永久应变 εp"
+      ],
+      "assumptions": [
+        "试样近乎均质各向同性",
+        "端部摩擦通过润滑消除或可忽略"
+      ],
+      "strengths": [
+        "能够揭示中间主应力的真实影响",
+        "可建立广义破坏准则"
+      ],
+      "limitations": [
+        "实验仅在室温下进行",
+        "岩石种类有限（如7种）",
+        "屈服点确定存在模糊性"
+      ],
+      "related_concepts": [],
+      "sources": [
+        "1971-mogi-fracture-and-flow-of-rocks-under-high-triaxial-compression"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim": "在恒应力蠕变实验中，声发射事件空间分布的分形维数随着材料向宏观破裂演化而系统性下降。",
+      "slug": "ae-fractal-dimension-decreases-before-failure",
+      "evidence": "大岛花岗岩实验（围压40 MPa）中，从初级到三级蠕变阶段，关联积分法测得的分形维数 D 逐渐降低。",
+      "condition": "需对声发射事件进行精准三维定位；材料破裂过程存在自相似丛集特性。",
+      "limitation": "仅在单一岩石类型和围压条件下验证；定位精度 ±2mm 可能限制精细结构分辨。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "1987-hirata-fractal-structure-of-spatial-distribution-of-microfracturing-in-rock",
+          "locator": "pp. 3-5"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在二维随机断层网络中，当断层长度分布指数 a > 3 时，连通性由小断层控制，经典渗流理论完全适用；当 a < 1 时，连通性取决于最大单条断层。",
+      "slug": "three-connectivity-regimes-exist-in-power-law-fault-networks",
+      "evidence": "理论积分分析与数值模拟一致，覆盖 a 在 1 到 4 的范围。",
+      "condition": "断层位置和取向完全随机，系统尺寸 L 远大于最小断层长度且远小于最大断层长度。",
+      "limitation": "仅限于二维几何，未包含空间相关性或非均匀取向。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "1997-bour-connectivity-of-random-fault-networks-following-a-power-law-fault-length-distribution",
+          "locator": "pp. 1-1, 8-9"
+        }
+      ],
+      "supports": [
+        "percolation-threshold-depends-on-a-and-d"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "对于具有分形空间相关性的二维裂缝网络，当长度分布指数 a = D+1 时，连通性质尺度不变，逾渗阈值对应于临界分形密度。",
+      "slug": "percolation-threshold-depends-on-a-and-d",
+      "evidence": "通过乘性级联生成的分形裂缝网络数值模拟确认，a < D+1 时长裂缝主导，a > D+1 时空间相关性主导。",
+      "condition": "二维裂缝网络，裂缝中心分形分布维数为 D，长度服从幂律分布 n(l) ∝ l^{-a}，方向随机。",
+      "limitation": "未包含裂缝尺寸与位置的二阶相关性；仅限于二维系统。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2003-darcel-connectivity-properties-of-two-dimensional-fracture-networks-with-stochastic-fractal",
+          "locator": "pp. 1-1"
+        }
+      ],
+      "supports": [
+        "three-connectivity-regimes-exist-in-power-law-fault-networks"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "对于三维分形裂缝网络，通过二维平面或一维测线观测的裂缝长度幂律指数存在恒定偏移：a_3D = a_2D + 1，a_3D = a_1D + 2，该关系与分形维数 D 无关。",
+      "slug": "stereological-exponent-shift-constant",
+      "evidence": "体视函数解析推导与数值模拟验证（覆盖不同 D 和 a）。",
+      "condition": "裂缝可视为各向同性随机取向的圆盘，长度分布严格幂律且与分形维数独立。",
+      "limitation": "对非幂律或强各向异性分布的适用性需独立检验。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2003-darcel-stereological-analysis-of-fractal-fracture-networks",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": [
+        "2d-to-3d-extrapolation-not-trivial"
+      ]
+    },
+    {
+      "claim": "由于空间非均匀性和非幂律分布的影响，将一维断层样本统计直接外推至二三维往往导致显著偏差，不能简单套用理论偏移常数。",
+      "slug": "2d-to-3d-extrapolation-not-trivial",
+      "evidence": "数值模拟显示，即使在均匀分布下，一维幂律指数的标准偏差可达 0.07，导致外推差值波动于 0.85–1.1；如真实分布为指数型，外推差值远小于理论预期。",
+      "condition": "实际断层空间分布常偏离泊松过程，且非幂律分布常见。",
+      "limitation": "分析仅限于指数分布这一种非幂律情况；聚类模型作了简化假设。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2000-borgos-practicalities-of-extrapolating-one-dimensional-fault-and-fracture-size-frequency-di",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": [
+        "stereological-exponent-shift-constant"
+      ]
+    },
+    {
+      "claim": "裂缝强度（或平均间距）只有在明确指定所统计裂缝的最小尺寸（检测阈值）时才具有明确意义；未指定阈值的测量无法进行跨尺度或跨位置比较。",
+      "slug": "fracture-intensity-meaningless-without-detection-threshold",
+      "evidence": "Sierra Madre Oriental 碳酸盐岩脉型裂缝数据基于幂律标度推导归一化强度。",
+      "condition": "任何基于线取样的裂缝丰度估计。",
+      "limitation": "阈值的选择需与所有比较位置的采样能力相兼容，否则会引入截断假象。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2006-ortega-a-scale-independent-approach-to-fracture-intensity-and-average-spacing-measurement",
+          "locator": "pp. 7-8"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在结晶岩中，处于现今应力场下临界应力状态的断层（即剪切应力与有效法向应力比 ≥0.6）的渗透率，远高于非临界应力状态的断层。",
+      "slug": "critically-stressed-faults-are-main-fluid-conduits",
+      "evidence": "基于 Cajon Pass 等三个钻孔的精密温度测井和应力分析，导水裂隙产状与临界应力断层一致。",
+      "condition": "已知原地应力分量和孔隙压力，断层摩擦系数可用 Byerlee 定律接近。",
+      "limitation": "温度测井无法精确估算渗透率，且裂隙导水性延伸范围不确定；结论普适性未经验证。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "1995-barton-fluid-flow-along-potentially-active-faults-in-crystalline-rock",
+          "locator": "pp. 1-1, 3-4"
+        }
+      ],
+      "supports": [
+        "fluid-pressure-controls-earthquake-activity"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "在地震活跃的断层带中，通过注水提高孔隙流体压力至某个临界值以上可以触发地震，反之通过抽水降低孔隙压力可以抑制地震活动。",
+      "slug": "fluid-pressure-controls-earthquake-activity",
+      "evidence": "Rangely 油田实验：当井底压力从 235 巴升至 275 巴时，月均地震从 0 升至 28 次；泄压至 203 巴后降至约 1 次。",
+      "condition": "断层受到超过有效正应力与摩擦系数乘积的剪应力，且流体压力与断层带水力连通。",
+      "limitation": "仅基于一个油田实验，临界压力预测依赖应力测量和摩擦系数的准确性；压力分布依靠模拟推断。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "1976-raleigh-the-rangely-field-an-experiment-in-earthquake-control-at-rangely-colorado",
+          "locator": "pp. 4-6, 7-8"
+        }
+      ],
+      "supports": [
+        "critically-stressed-faults-are-main-fluid-conduits"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "流体驱动下，由断层、张剪性裂缝和张性裂缝相互连接形成的断层-裂缝网，是地壳中大规模流体运移的关键构造渗透通道。",
+      "slug": "fault-fracture-meshes-are-self-generated-fluid-conduits",
+      "evidence": "野外露头观察表明，增压流体渗入非均质岩体时，脆性构造互连方式符合 Mohr-Coulomb 破裂条件。",
+      "condition": "存在显著先存非均质性（如层理）和增压流体源。",
+      "limitation": "流供应速率和维持机制仍是定性概念，构造渗透性短暂性的时间尺度难以精确约束。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "1996-sibson-structural-permeability-of-fluid-driven-fault-fracture-meshes",
+          "locator": "pp. 1-1, 4-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在非等温一维固结且无对流时，任何形式的解耦都会导致孔隙压力时程与量级出现不可忽略的偏差，因此孔压预测必须采用完全耦合的热孔弹性模型。",
+      "slug": "full-coupling-necessary-for-pore-pressure-under-thermal-loading",
+      "evidence": "解析解与数值参数组合验证，完全耦合与完全解耦之间的压力存在显著差异。",
+      "condition": "一维、线弹性、Fourier 热传导、Darcy 流、无源汇、无热对流。",
+      "limitation": "三维情形或存在强对流/源汇时未经验证；仅基于单一参数组。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "1997-bai-thermoporoelastic-coupling-with-application-to-consolidation",
+          "locator": "pp. 9-10"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "粗糙裂缝壁面经历切向剪切位移后，渗透率出现各向异性，垂直剪切方向渗透率增强，平行方向渗透率降低。",
+      "slug": "shear-displacement-induces-permeability-anisotropy",
+      "evidence": "径向注入实验中，染色流体前沿在垂直于剪切方向拉长；自仿射隙宽场模型与实验入侵椭圆比一致。",
+      "condition": "裂缝壁面自仿射粗糙（Hurst 指数 ~0.75）、完全互补且无接触，平均隙宽固定。",
+      "limitation": "实验仅能获得渗透率比，无法获绝对渗透率；各向异性程度依赖剪切统计特征。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2005-auradou-permeability-anisotropy-induced-by-the-shear-displacement-of-rough-fracture-walls",
+          "locator": "pp. 3-4"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "立方定律适用于受应力闭合至开口的变形岩石裂缝，流量与孔径的3次方成正比，与岩石类型和应力历史无关。",
+      "slug": "cubic-law-valid-for-closed-deformable-fractures",
+      "evidence": "花岗岩、玄武岩、大理岩中，拟合指数 n 范围 3.01–3.10，即使在20 MPa 法向应力下孔径降至 4 μm。",
+      "condition": "层流、等温条件；最小孔径 4 μm 以上。",
+      "limitation": "未测试更小孔径或更高应力情况；粗糙接触面积和沟漕流效应未量化。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "1980-witherspoon-validity-of-cubic-law-for-fluid-flow-in-a-deformable-rock-fracture",
+          "locator": "pp. 3-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "地震 b 值随断层类型系统变化：正断层事件 b 值最高，走滑事件居中，逆冲事件最低，因此 b 值可作为差应力的代用指标。",
+      "slug": "b-value-varies-systematically-with-faulting-style",
+      "evidence": "南加州目录（SCSN）中正断层 b≈1.1，走滑 b≈0.9，逆冲 b≈0.7；全球 CMT 目录也呈现一致趋势。",
+      "condition": "需有足够数量的震源机制解（每类≥100 个事件），目录完整性震级低于所用事件最小震级。",
+      "limitation": "部分样本事件数在 100–200 间不确定性较大；b 值估计依赖完整性震级准确度。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2005-schorlemmer-variations-in-earthquake-size-distribution-across-different-stress-regimes",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "断裂强度不仅受最小主应力 σ3 影响，也显著受中间主应力 σ2 影响，且可用（σ1-σ3）= f1（σ2+σ3）的广义 von Mises 准则描述。",
+      "slug": "mogi-criterion-includes-intermediate-principal-stress",
+      "evidence": "七种岩石真三轴实验结果，碳酸盐岩符合性好，硅酸盐岩略有离散。",
+      "condition": "近乎各向同性岩石，室温条件，真三轴加载。",
+      "limitation": "未考虑高温效应，岩石类型有限；屈服点确定存在模糊性。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "1971-mogi-fracture-and-flow-of-rocks-under-high-triaxial-compression",
+          "locator": "pp. 1-2, 10-13"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "采用钻孔局部壁面应力全解除法（LBWCSRM）可在无需套钻且无需额外假设的条件下，反演获得完整地应力张量。",
+      "slug": "lbwcsrm-requires-no-overcoring",
+      "evidence": "理论推导基于线弹性公式，仅需6个独立应变测量。",
+      "condition": "钻孔围岩为均匀、各向同性、线弹性介质，钻孔方向已知。",
+      "limitation": "未提供现场测试验证或与传统方法对比的定量误差分析。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2004-ge-new-approach-to-measure-goestress-local-borehole-wall-complete-stress-relief-method",
+          "locator": "pp. 1-4"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在Hornelen盆地多尺度节理网络中，平均邻近断裂距离与断裂长度之间存在弱正幂律相关（dc ∝ l^0.3），表明长断裂更孤立。",
+      "slug": "fault-length-and-position-correlation-exists",
+      "evidence": "7张不同尺度裂缝图归一化分析的标度指数 0.3，随机化对照组指数为 0。",
+      "condition": "适用于自相似断裂网络中小长度范围（l/dmin 小于一个数量级）；大长度断裂该距离为常数。",
+      "limitation": "仅来自单一数据集，普适性未验证；0.3 指相关性弱。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2003-darcel-cross-correlation-between-length-and-position-in-real-fracture-networks",
+          "locator": "pp. 2-3"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "裂隙岩体的表征单元体（REV）尺寸随裂隙开度对数正态分布的第二矩增大而增大，且开度与长度相关时渗透率变异性比不相关时高一个数量级。",
+      "slug": "rev-size-increases-with-aperture-variability",
+      "evidence": "2D DFN 参数化研究，b=0,1,3 的结果对比。",
+      "condition": "二维裂缝网络，迹长分形分布，开度对数正态分布，均值 65 μm。",
+      "limitation": "限于二维，b=3 相关情形因计算资源限制未能确定 REV 是否存在。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2007-baghbanan-hydraulic-properties-of-fractured-rock-masses-with-correlated-fracture-length-and",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "裂缝长度分布从变形早期的指数型向幂律型转变，且幂律指数 c 随总应变增加而下降，标志着变形由成核主导向生长-合并主导转变。",
+      "slug": "fracture-length-distribution-evolves-from-exponential-to-power-law",
+      "evidence": "包含长程弹性相互作用的数值模型：早期呈指数分布，后发展为幂律，c 从约 2.0 降至更低渐近值。",
+      "condition": "二维薄板模型，材料异质性远大于应力降随机波动（A >> p），无显著旋转。",
+      "limitation": "模型为标量模型，未考虑三维几何与方向性剪应力。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "1995-cowie-multifractal-scaling-properties-of-a-growing-fault-population",
+          "locator": "pp. 3-5"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "华北克拉通东部带太古宙基底变质 P-T-t 路径为逆时针（CCW），表现为峰期后近等压冷却，指示垂向岩浆增生主导的地壳生长模式。",
+      "slug": "north-china-craton-has-counterclockwise-p-t-path",
+      "evidence": "基于多个域的矿物组合和传统温压计及 TWEEQUE 技术估算，各域均显示 CCW 路径。",
+      "condition": "所建 P-T 序列代表单一构造-热事件演化；矿物组合记录峰前到退变质连续阶段。",
+      "limitation": "泥质岩体积占比小，限制某些域温压计应用；低变质级岩石路径不易建立。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "1998-zhao-thermal-evolution-of-archean-basement-rocks-from-the-eastern-part-of-the-north-china-c",
+          "locator": "pp. 7-11"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "板内应力场在大尺度上表现出统一性，例如北美东部和西北欧的主压应力方向都指向大西洋洋脊，这种统一性可用于约束板块驱动机制模型。",
+      "slug": "intraplate-stress-fields-are-spatially-coherent",
+      "evidence": "世界应力场图数据库超过7300条数据：多区域应力方向与板块绝对运动速度方向一致。",
+      "condition": "基于不同深度和不同方法的应力数据具有可比性，且能代表大尺度构造应力场。",
+      "limitation": "此结论在数据空缺区域不适用，可能掩盖小尺度应力场的非均匀性；综述发表于1997年，有待现代数据更新。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "1997-xu-地应力研究现状与展望",
+          "locator": "pp. 5"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "中国大陆地震震源深度东浅西深，东部平均13 km，西部平均19 km，深震集中在上地壳，其底界与地壳厚度比值较稳定。",
+      "slug": "china-earthquake-depth-east-shallower-than-west",
+      "evidence": "统计1985–1997年32541次 ML≥2.0 浅源地震，网格滑动平均法结果。",
+      "condition": "仅基于 1、2 类精度的浅源地震样本；台网覆盖存在空间不均。",
+      "limitation": "深度测定受台网密度和速度模型影响，未量化残差；渤海海域等局部结果不可靠。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2002-张国民-中国大陆地震震源深度及其构造含义",
+          "locator": "pp. 3-4"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    }
+  ],
+  "syntheses": [
+    {
+      "title": "裂缝网络的分形标度律与连通性控制机制",
+      "slug": "fractal-scaling-and-connectivity",
+      "central_question": "裂缝和断层的空间分布与尺寸分布如何通过分形维数和长度指数共同控制网络的全局连通性？",
+      "summary": "多条证据表明，裂缝/断层网络的几何结构可由分形空间维数 D 和长度幂律指数 a 联合标度。当 a < D+1 时长裂缝主导连通性，a > D+1 时受空间相关性控制，a = D+1 时连通性尺度不变。立体学分析提供了不同维度间指数外推的理论关系（a_3D = a_2D + 1），但实际应用中因空间非均匀性和非幂律行为，直接外推常常误导。连通性阶段转变在数值模型和实验室物理模拟中均得到验证，对地热储层、油气藏和断层阀机制理解有直接指导。",
+      "evidence_chain": [
+        "Bour & Davy (1997) 理论推导三类连通机制",
+        "Darcel et al. (2003) 扩展至分形空间相关",
+        "Cowie et al. (1995) 展示长度分布从指数到幂律的演化",
+        "Borgos et al. (2000) 揭示1D-2D外推的实践陷阱",
+        "Bour et al. (2002) 提出 a = D+1 自相似条件并在 Hornelen 盆地验证"
+      ],
+      "disagreements": [
+        "立体学指数转换常数（a_3D = a_2D + 1）在理论上与 D 无关，但 Borgos 等指出非幂律分布和空间非均匀性可导致严重偏离，两者本质上是天然条件理想化程度之争。"
+      ],
+      "boundary_conditions": [
+        "自然分形必有上下截断，通常由岩性分层或地壳厚度限定",
+        "网络连通性评估前提是长度分布可用单一幂律近似"
+      ],
+      "writing_uses": [
+        "可用于撰写综述文章“裂缝网络几何标度律及其连通性含义”",
+        "在讨论 DFN 建模时引用标度关系确定参数范围"
+      ],
+      "sources": [
+        "1997-bour-connectivity-of-random-fault-networks-following-a-power-law-fault-length-distribution",
+        "2003-darcel-connectivity-properties-of-two-dimensional-fracture-networks-with-stochastic-fractal",
+        "1995-cowie-multifractal-scaling-properties-of-a-growing-fault-population",
+        "2000-borgos-practicalities-of-extrapolating-one-dimensional-fault-and-fracture-size-frequency-di",
+        "2002-bour-a-statistical-scaling-model-for-fracture-network-geometry-with-validation-on-a-multisc"
+      ]
+    },
+    {
+      "title": "流体压力在地震诱发与控制中的双重角色",
+      "slug": "fluid-pressure-and-earthquake-control",
+      "central_question": "孔隙流体压力如何通过有效应力原理控制断层摩擦稳定性，并在工程实践中实现地震活动的诱发与抑制？",
+      "summary": "Rangely 油田现场实验明确证实，通过注水/抽水调控孔隙压力可以直接增减地震活动。其理论基础是有效应力原理，即孔隙压力降低断层面摩擦阻力。该结论与结晶岩中临界应力断层即为主要导水通道的发现相辅相成，表明水力耦合过程在断层活化中的关键角色。这些为注水诱发地震风险评估、增强型地热系统和地震控制方案提供了可量化的工程参数（临界触发压力、摩擦系数）。",
+      "evidence_chain": [
+        "Raleigh et al. (1976) Rangely 油田提供因果关系证据",
+        "Barton et al. (1995) 给出临界应力断层渗透率差异",
+        "Haimson & Fairhurst (1967) 建立孔弹性起裂准则，可用于井壁稳定性分析"
+      ],
+      "disagreements": [],
+      "boundary_conditions": [
+        "必须已知原地应力状态和孔隙压力初始分布，且断层带与压力源水力连通",
+        "摩擦系数近似带来的预测不确定性（Byerlee 定律适用性）"
+      ],
+      "writing_uses": [
+        "用于注水引发地震的机理段落",
+        "论证地热开发中流体压力管理的重要性"
+      ],
+      "sources": [
+        "1976-raleigh-the-rangely-field-an-experiment-in-earthquake-control-at-rangely-colorado",
+        "1995-barton-fluid-flow-along-potentially-active-faults-in-crystalline-rock",
+        "1967-haimson-initiation-and-extension-of-hydraulic-fractures-in-rocks"
+      ]
+    },
+    {
+      "title": "原位应力测量的多方法互补性",
+      "slug": "in-situ-stress-measurement-methods",
+      "central_question": "不同深度、不同假设下的地应力测量方法（水压致裂、声发射 Kaiser 效应、应力解除等）如何相互验证，并构建可靠的应力场模型？",
+      "summary": "水压致裂法是目前深部（公里级）的主力方法，但其起裂压力解释依赖孔弹性参数。声发射 Kaiser 效应法可从室内定向岩心反演应力，在北京房山案例中与水压致裂结果一致，提供了低成本替代。Xu (1997) 的综述指出，板内大尺度应力方向的多方法一致性支持统一应力场假设，但局部偏差存在。方法间对比是评估结果可靠性的关键步骤。",
+      "evidence_chain": [
+        "Haimson & Fairhurst (1967) 奠定水压致裂孔弹性基础",
+        "Li & Zhang (2004) 房山 AE 法与水压致裂结果一致",
+        "Xu (1997) 综述全球应力数据方法一致性与量级矛盾"
+      ],
+      "disagreements": [
+        "AE 法假设地质时间和实验室时间尺度等效仍存争议",
+        "深部直接测量技术不成熟，导致震源机制解和浅部测井数据间的桥接难题"
+      ],
+      "boundary_conditions": [
+        "不同方法的深度适用范围不同（水压致裂~数公里，AE 法~百米）",
+        "岩体完整性影响 AE 信号质量"
+      ],
+      "writing_uses": [
+        "用于方法章节对比地应力测量技术",
+        "论证多方法综合约束的必要性"
+      ],
+      "sources": [
+        "1967-haimson-initiation-and-extension-of-hydraulic-fractures-in-rocks",
+        "2004-li-北京房山花岗岩原地应力状态-ae-法估计",
+        "1997-xu-地应力研究现状与展望",
+        "2004-ge-new-approach-to-measure-goestress-local-borehole-wall-complete-stress-relief-method"
+      ]
+    },
+    {
+      "title": "热-流-力多场耦合的必要性与解耦条件",
+      "slug": "thermo-hydro-mechanical-coupling",
+      "central_question": "在何种条件下，多孔介质中的热-流-固耦合分析可以忽略某些耦合项而保持工程可接受的精度？",
+      "summary": "Bai & Abousleiman (1997) 的一维热孔弹性固结分析表明，压力场对耦合程度高度敏感，任何解耦都导致显著误差，必须完全耦合；而温度和位移场对部分解耦不敏感。这与 Coussy (2004) 对孔力学统一连续介质框架的阐述一致，强调完全耦合的重要性，但为特定应用提供了简化可能。此结论对核废料处置、地热开采等热-力过程建模有指导。",
+      "evidence_chain": [
+        "Bai (1997) 提供一维非等温固结算例",
+        "Coussy (2004) 系统阐述孔力学理论与耦合框架"
+      ],
+      "disagreements": [
+        "三维情况或存在强对流时结论未经验证；Bai 研究仅基于单一参数组"
+      ],
+      "boundary_conditions": [
+        "导热和渗流遵循 Fourier 与 Darcy 定律",
+        "忽略内部源汇和热对流"
+      ],
+      "writing_uses": [
+        "在数值模拟方法部分讨论耦合策略",
+        "论证地热储层开发中热应力不可忽略"
+      ],
+      "sources": [
+        "1997-bai-thermoporoelastic-coupling-with-application-to-consolidation",
+        "2004-coussy-poromechanics"
+      ]
+    },
+    {
+      "title": "裂缝密度-尺寸关系的跨尺度标定难题",
+      "slug": "cross-scale-fracture-intensity-calibration",
+      "central_question": "如何将一维/二维观测的裂缝密度（强度）可靠地转换为三维网络特征，并使之在不同尺度、不同采样方法之间可比？",
+      "summary": "Ortega et al. (2006) 指出，裂缝强度必须与观测尺度阈值绑定才有意义，幂律分布为此提供了归一化基础，但其在天然裂缝中的普适性受限于截断效应。Watanabe (1995) 基于分形关系 N = C r^{-D} 用单参数 C 表征储层，但该二维模型将 D 固定为 1。Zhang & Einstein (1998) 提出圆形窗迹长估计法减少偏差，但同样依赖圆盘假设。这些研究共同指向：目前尚无通用且稳健的跨尺度裂缝强度校正方案，尤其是在三维和非幂律情形下。",
+      "evidence_chain": [
+        "Ortega et al. (2006) 提出归一化方法",
+        "Zhang & Einstein (1998) 圆形窗迹长估计",
+        "Watanabe (1995) 分形裂缝密度参数",
+        "Bonnet et al. (2001) 综述强调测量方法和尺度效应"
+      ],
+      "disagreements": [
+        "一维外推至二维/三维时，不同研究给出矛盾的指数偏移值（如 Borgos vs Darcel），核心在于是否满足理想化条件。"
+      ],
+      "boundary_conditions": [
+        "裂缝形状假设（圆盘或直线段）",
+        "空间分布随机性与真实聚类性之间的矛盾"
+      ],
+      "writing_uses": [
+        "在岩体分类和 DFN 模型参数输入时说明不确定性",
+        "提出联合多尺度数据的方法需求"
+      ],
+      "sources": [
+        "2006-ortega-a-scale-independent-approach-to-fracture-intensity-and-average-spacing-measurement",
+        "1998-zhang-estimating-the-mean-trace-length-of-rock-discontinuities",
+        "1995-watanabe-fractal-geometry-characterization-of-geothermal-reservoir-fracture-networks",
+        "2001-bonnet-scaling-of-fracture-systems-in-geological-media"
+      ]
+    },
+    {
+      "title": "华北克拉通早期演化与地壳生长模式",
+      "slug": "north-china-craton-early-evolution",
+      "central_question": "华北克拉通东部、中部和西部块体是在何时、以何种方式拼合？太古宙地壳生长以板块构造还是垂向增生为主导？",
+      "summary": "一系列构造地质、变质岩岩石学和地质年代学研究逐渐建立一个多阶段拼合模型：Zhao et al. 的研究表明东部块体太古宙经历了逆时针 P-T-t 路径（垂向岩浆增生为主），而中部造山带存在 1.85 Ga 陆-陆碰撞的顺时针变质记录。这指向华北克拉通并非单一太古宙克拉通化产物，而是经历复杂的早元古代块体拼贴。Kusky & Li (2003) 则提出 2.5 Ga 弧-陆碰撞模型，显示争议核心在于碰撞时针和机制。",
+      "evidence_chain": [
+        "Zhao et al. (1998) 报道东部带 CCW P-T 路径",
+        "Zhao et al. (2005) 建立三分块体拼合框架",
+        "Kusky & Li (2003) 提出 2.5 Ga 中央造山带弧-陆碰撞模型"
+      ],
+      "disagreements": [
+        "主要争点在于中部造山带代表 1.85 Ga 还是 2.5 Ga 的碰撞，以及 2.5 Ga 事件的性质（弧-陆 vs 陆-陆）",
+        "高压麻粒岩的精细 P-T-t 路径时间约束仍不充分"
+      ],
+      "boundary_conditions": [
+        "高级变质岩的年代学解释依赖于锆石生长域归属",
+        "部分关键地质体缺乏精确同位素年龄"
+      ],
+      "writing_uses": [
+        "用于讨论前寒武纪克拉通演化与板块构造启动",
+        "对比其他克拉通的变质记录"
+      ],
+      "sources": [
+        "1998-zhao-thermal-evolution-of-archean-basement-rocks-from-the-eastern-part-of-the-north-china-c",
+        "2005-zhao-late-archean-to-paleoproterozoic-evolution-of-the-north-china-craton-key-issues-revisi",
+        "2003-kusky-paleoproterozoic-tectonic-evolution-of-the-north-china-craton"
+      ]
+    }
+  ],
+  "open_questions": [
+    {
+      "question": "如何在不依赖裂缝网络各向同性假设和不规则形状的理想化条件下，建立稳健的二维到三维裂缝网络外推方法？",
+      "slug": "robust-2d-to-3d-fracture-extrapolation",
+      "why_it_matters": "实际岩体工程和水文地质应用严重依赖基于有限露头或钻孔推断的三维裂缝网络参数，目前方法在非幂律、强各向异性和非均质情况下偏差显著。",
+      "current_evidence": "立体学指数转换（a_3D=a_2D+1）在理论仿真中得到验证，但在野外实测中频繁失效（Borgos 2000）。",
+      "needed_evidence": "需要涵盖多种构造背景的高质量、多维度对照数据集（如同一区域的三维地震、露头全景图像和钻孔电话），并进行系统的偏差评估。",
+      "sources": [
+        "2003-darcel-stereological-analysis-of-fractal-fracture-networks",
+        "2000-borgos-practicalities-of-extrapolating-one-dimensional-fault-and-fracture-size-frequency-di"
+      ]
+    },
+    {
+      "question": "裂缝/断层长度分布的形状（幂律、指数、对数正态）受哪些物理过程控制，如何实现从成核阶段的指数分布向生长合并阶段的幂律分布转变的定量预测？",
+      "slug": "controls-on-fracture-size-distribution-shape",
+      "why_it_matters": "分布形状直接决定网络连通性、强度外推和地震危险性评估（b值），但转变的物理准则和普适性目前仅停留在数值实验层面。",
+      "current_evidence": "数值破裂模型显示指数-幂律转变与局部化相关（Cowie 1995），综述提出特征尺度（层厚）导致指数分布（Bonnet 2001）。",
+      "needed_evidence": "需同步测量变形各阶段的声发射/微震事件和宏观裂缝几何演化的大型三轴实验，或高分辨率四维（时空）野外监测数据。",
+      "sources": [
+        "1995-cowie-multifractal-scaling-properties-of-a-growing-fault-population",
+        "2001-bonnet-scaling-of-fracture-systems-in-geological-media"
+      ]
+    },
+    {
+      "question": "在深部高温高压条件下，临界应力断层是否仍然是主要的流体通道，水-岩化学反应和压力溶解效应如何随时间改变裂隙渗透率？",
+      "slug": "critically-stressed-fault-permeability-at-depth",
+      "why_it_matters": "地壳深部流体运移对超深钻探目标、地热开发和地震孕育环境都至关重要，但目前证据多来自浅部结晶岩钻孔。",
+      "current_evidence": "浅部（<3 km）结晶岩中临界应力断层与导水相关性已证实（Barton 1995），但 Sibson (1996) 强调深部构造渗透性的暂时性。",
+      "needed_evidence": "深钻（如 KTB 科学钻孔>9 km）中同时获取地应力、孔隙压力和导水性剖面的长周期监测数据，并配合水岩反应的实验模拟。",
+      "sources": [
+        "1995-barton-fluid-flow-along-potentially-active-faults-in-crystalline-rock",
+        "1996-sibson-structural-permeability-of-fluid-driven-fault-fracture-meshes"
+      ]
+    },
+    {
+      "question": "是否存在一个通用的渗透率张量来表征具有强非均质裂缝网络的宏观水力行为？表征单元体（REV）存在的临界条件是什么？",
+      "slug": "rev-existence-for-fractured-media",
+      "why_it_matters": "工程岩体力学常采用等效连续介质假设，当 REV 不存在或过大时，模拟将失效，需要采用离散模型。",
+      "current_evidence": "Baghbanan (2007) 发现开度变异增大会使 REV 趋于消失，尤其在长-开度相关条件下。",
+      "needed_evidence": "更系统的三维 DFN 参数化研究（特别是高 a 和 D 组合），并开发 REV 存在的定量判断准则。",
+      "sources": [
+        "2007-baghbanan-hydraulic-properties-of-fractured-rock-masses-with-correlated-fracture-length-and"
+      ]
+    },
+    {
+      "question": "如何利用地表观测（地震波速度、热流、地形）可靠地反演中国大陆乃至全球的岩石圈三维热-力学结构，并以此约束地震活动深度和强度分布？",
+      "slug": "imaging-lithosphere-thermal-mechanical-structure",
+      "why_it_matters": "热结构控制脆-韧性转换深度和孕震层底界，但现有地球物理成像方法在浅层和深层分辨率不足。",
+      "current_evidence": "An & Shi (2007) 利用S波速度反演上地幔温度，但深部流体和组分不确定性导致温度误差可达200°C。张国民等 (2002) 指出中国大陆震源深度与地壳厚度比相对稳定，但局部偏差原因不明。",
+      "needed_evidence": "联合多地球物理场（重、磁、电、震）的高分辨率联合反演，结合岩石学约束的深部岩石物理模型。",
+      "sources": [
+        "2007-an-three-dimensional-thermal-structure-of-the-chinese-continental-crust-and-upper-mantle",
+        "2002-张国民-中国大陆地震震源深度及其构造含义"
+      ]
+    }
+  ]
+}

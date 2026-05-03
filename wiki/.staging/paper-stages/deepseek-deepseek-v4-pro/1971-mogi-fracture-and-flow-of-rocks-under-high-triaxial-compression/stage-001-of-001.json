@@ -1,0 +1,142 @@
+{
+  "schema_version": "paper-stage-v1-2026-04-30",
+  "one_line_summary": "Experimental study using a new true triaxial apparatus reveals that fracture and flow of rocks are controlled by both minimum and intermediate principal stresses, leading to generalized von Mises criteria for fracture and yielding, and showing opposite effects of σ2 and σ3 on ductility.",
+  "research_question": "What are the functional relationships between the three principal stresses and the failure (fracture or yielding) and ductility of rocks under general triaxial compression where σ1 > σ2 > σ3?",
+  "study_area_data": [
+    "Solenhofen limestone (carbonate)",
+    "Dunham dolomite (carbonate)",
+    "Yamaguchi marble (carbonate)",
+    "Mizuho trachyte (silicate)",
+    "Orikabe monzonite (silicate)",
+    "Inada granite (silicate)",
+    "Manazuru andesite (silicate)",
+    "All tests at room temperature; confining pressure up to 5 kb; cubic specimens 1.5×1.5×3.0 cm"
+  ],
+  "methods": [
+    "True triaxial compression apparatus: σ3 applied by fluid confining pressure, σ1 and σ2 by independent solid pistons with teflon/rubber lubrication to minimize friction",
+    "Constant axial strain rate of 10⁻⁴/s during testing",
+    "Stress-strain curves recorded; ultimate strength defined as maximum differential stress (σ1−σ3), yield strength from knee of curve or specified permanent strain",
+    "Ductility defined as permanent axial strain just before fracture, obtained by subtracting elastic strain",
+    "Failure criteria examined by plotting octahedral shear stress τ_oct against effective mean pressures: (σ1+σ3)/2 for fracture, (σ1+σ2+σ3)/3 for yielding"
+  ],
+  "key_findings": [
+    "Fracture strength increases with both σ3 and σ2; τ_oct at fracture follows a single curve when plotted against (σ1+σ3)/2 for each rock, establishing a generalized von Mises fracture criterion τ_oct = f₁((σ1+σ3)/2).",
+    "Yield stress generally increases with both σ3 and σ2; τ_oct at yield follows τ_oct = f₂((σ1+σ2+σ3)/3), a generalized von Mises yielding criterion, which reduces to constant τ_oct (classic von Mises) for Solenhofen limestone.",
+    "Ductility increases markedly with σ3 but decreases with σ2; data can be fit by ε_p = f₃(σ3 − ασ2) with α ≈ 1/3 for Dunham dolomite and ~1/20 for Solenhofen limestone.",
+    "The physical interpretation is that failure occurs when distortional strain energy reaches a critical value that increases monotonically with the effective mean pressure on slip planes: (σ1+σ3)/2 for fracture (faulting parallel to σ2) and (σ1+σ2+σ3)/3 for yielding."
+  ],
+  "evidence": [
+    {
+      "evidence": "Dunham dolomite ultimate strength increases with confining pressure (σ2=σ3) and also increases with σ2 at constant σ3.",
+      "source": "Mogi 1971, pp. 5-6",
+      "conditions": "Room temperature, constant strain rate 10⁻⁴/s, dry sample; σ3 = 1.25 kb when varying σ2",
+      "notes": "Figure 5 and Figure 6a–b demonstrate opposite effects of σ2 and σ3 on ductility (σ3 increases ductility, σ2 decreases it)."
+    },
+    {
+      "evidence": "For Dunham dolomite and Mizuho trachyte, octahedral shear stress at fracture plotted against (σ1+σ3)/2 yields a single curve regardless of the individual σ2 and σ3 values, supporting the fracture criterion τ_oct = f₁((σ1+σ3)/2).",
+      "source": "Mogi 1971, pp. 7-9",
+      "conditions": "Various constant σ3 levels (0–1.45 kb) and varying σ2; room temperature, dry.",
+      "notes": "Slight scatter observed in some silicate rocks. Data from Hojem and Cook (1968) also consistent."
+    },
+    {
+      "evidence": "Yield stress for Solenhofen limestone and Dunham dolomite under triaxial compression follows a single curve when τ_oct is plotted against (σ1+σ2+σ3)/3, confirming the generalized von Mises yield criterion.",
+      "source": "Mogi 1971, pp. 10-11",
+      "conditions": "Carbonate rocks and Mizuho trachyte at room temperature; σ3 from 0.40 to 1.45 kb.",
+      "notes": "In Solenhofen limestone, τ_oct is nearly constant, consistent with classic von Mises; in Dunham dolomite, it increases with pressure."
+    },
+    {
+      "evidence": "Ductility ε_p (permanent axial strain at fracture) for Yamaguchi marble and Dunham dolomite can be expressed as a function of (σ3 − ασ2); data points for various σ2 and σ3 collapse onto a single curve when α is suitably chosen.",
+      "source": "Mogi 1971, pp. 13",
+      "conditions": "Room temperature, constant strain rate; Yamaguchi marble and Dunham dolomite.",
+      "notes": "α ≈ 1/3 for Dunham dolomite and ~1/20 for Solenhofen limestone. The relationship highlights the opposite influences of σ2 and σ3."
+    }
+  ],
+  "limitations": [
+    "Experiments conducted at room temperature and maximum confining pressure of ~5 kb; extrapolation to mantle temperature and pressure is not straightforward.",
+    "Possible errors from stress inhomogeneity due to residual friction between specimen and lateral pistons, although minimized by thin teflon sheets.",
+    "Yield stress determination has some ambiguity (knee of stress-strain curve) but does not affect the overall conclusions.",
+    "Only a limited set of rock types tested; observational data mainly from graphs, not tabulated numeric data."
+  ],
+  "assumptions_conditions": [
+    "All principal stresses compressive; σ1 > σ2 > σ3 (compressive positive).",
+    "Constant axial strain rate of 10⁻⁴/s during all tests.",
+    "Room temperature and dry specimen conditions.",
+    "Specimens are homogeneous and isotropic (same as previous conventional triaxial tests).",
+    "Lubrication effectively creates homogeneous intermediate principal stress.",
+    "Failure criteria assume monotonic increasing functions f₁ and f₂.",
+    "Ductility formula assumes a linear combination of σ3 and ασ2."
+  ],
+  "variables_parameters": [
+    "Principal stresses σ1, σ2, σ3 (kb)",
+    "Differential stress σ1−σ3 (kb)",
+    "Octahedral shear stress τ_oct (kb)",
+    "Effective mean pressures: (σ1+σ3)/2 for fracture, (σ1+σ2+σ3)/3 for yield (kb)",
+    "Axial strain ε",
+    "Permanent axial strain ε_p (ductility) at fracture",
+    "Ductility parameter α",
+    "Confining pressure up to 5 kb",
+    "Strain rate = 10⁻⁴/s"
+  ],
+  "reusable_claims": [
+    {
+      "claim": "The stress state at fracture for rocks under true triaxial compression (σ1>σ2>σ3) is governed by τ_oct = f₁((σ1+σ3)/2), where f₁ is a monotonically increasing function.",
+      "source": "Mogi 1971, pp. 7-9",
+      "condition": "Room temperature, constant strain rate, for tested carbonate and silicate rocks",
+      "limitation": "Not verified at high temperature or high pressure; assumes homogeneous stress; fracture occurs by shear faulting parallel to σ2."
+    },
+    {
+      "claim": "The stress state at yielding follows τ_oct = f₂((σ1+σ2+σ3)/3), a generalized von Mises criterion; f₂ is monotonic increasing.",
+      "source": "Mogi 1971, pp. 10-11",
+      "condition": "Observed only in carbonate rocks and trachyte under the tested stress range at room temperature.",
+      "limitation": "Pressure-dependency varies with rock type; criterion not applicable to brittle fracture."
+    },
+    {
+      "claim": "Ductility (permanent axial strain before fracture) under triaxial compression can be expressed as ε_p = f₃(σ3 − ασ2), with α ≈ 1/3 for Dunham dolomite and ~1/20 for Solenhofen limestone.",
+      "source": "Mogi 1971, pp. 13",
+      "condition": "Carbonate rocks at room temperature; σ2 and σ3 varied.",
+      "limitation": "α is rock-dependent; physical basis of α not fully explained; tested only on a few rocks."
+    },
+    {
+      "claim": "Increasing σ3 enhances ductility, while increasing σ2 reduces ductility; these effects are opposite.",
+      "source": "Mogi 1971, pp. 6, 13",
+      "condition": "Dunham dolomite and Yamaguchi marble at room temperature.",
+      "limitation": "Not systematically confirmed for all rock types; potential stress-path dependency not assessed."
+    }
+  ],
+  "candidate_concepts": [
+    "[[generalized von Mises criterion for fracture]]",
+    "[[generalized von Mises criterion for yielding]]",
+    "[[octahedral shear stress failure]]",
+    "[[effective mean pressure on fault planes]]",
+    "[[intermediate principal stress effect on ductility]]",
+    "[[ductility under triaxial stress]]"
+  ],
+  "candidate_methods": [
+    "[[true triaxial compression test]]",
+    "[[lubricated solid pistons for lateral stress]]",
+    "[[constant strain rate rock deformation test]]",
+    "[[differential stress-strain measurement]]",
+    "[[ductility from permanent axial strain]]"
+  ],
+  "connections": [
+    "Generalized von Mises criteria unify fracture and yielding descriptions under true triaxial stress, extending the classic von Mises yield criterion to pressure-dependent cases.",
+    "The ductility parameter α provides a simple linear combination of σ2 and σ3 to predict strain before fracture, linking stress state to failure mode."
+  ],
+  "open_questions": [
+    "How do the generalized criteria behave at elevated temperatures and pressures relevant to the upper mantle?",
+    "What microphysical mechanisms cause the opposite effects of σ2 and σ3 on ductility, and what determines the parameter α?",
+    "Are the proposed failure criteria valid for anisotropic or foliated rocks?",
+    "Can the criteria predict quantitative ductility under arbitrary triaxial loading paths?"
+  ],
+  "coverage_notes": "Fragments cover the full paper: abstract, introduction, experimental apparatus, procedures, stress-strain data, failure criteria for fracture and yielding, ductility results, conclusions, and references. Numerical tables are absent, but graphical trends and derived formulas are extensively discussed.",
+  "_meta": {
+    "paper_id": "1971-mogi-fracture-and-flow-of-rocks-under-high-triaxial-compression",
+    "stage_index": 1,
+    "stage_count": 1,
+    "source_block_count": 9,
+    "source_chars": 39529,
+    "source_signature": "850de6ae5560c61caed97080bb1bcd983fc5d8f9",
+    "model": "deepseek/deepseek-v4-pro",
+    "compiled_at": "2026-04-30T22:03:25"
+  }
+}

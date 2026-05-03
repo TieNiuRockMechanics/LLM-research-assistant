@@ -1,0 +1,17 @@
+{
+  "run_id": "paper-pro-resume-20260502-011337",
+  "updated_at": "2026-05-02T03:13:49",
+  "phase": "paper-pages",
+  "status": "running",
+  "total_records": 487,
+  "current_index": 252,
+  "current_paper": "2020-ma-mechanical-properties-of-granite-under-real-time-high-temperature-and-three-dimensional",
+  "completed": 39,
+  "skipped_complete": 213,
+  "skipped_over_budget": 0,
+  "failed": 0,
+  "remaining": 235,
+  "avg_seconds_per_completed": 184.93,
+  "eta_seconds": 43457,
+  "eta_at": "2026-05-02T15:18:06"
+}

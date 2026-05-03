@@ -1,0 +1,183 @@
+# Paper v4 Heading Normalization Report
+
+- generated_at: 2026-05-01T17:23:15
+- changed_pages: 20
+- already_canonical_pages: 101
+- empty_body_pages: 1
+- postcheck_nonstandard_pages: 0
+
+## Empty Body Pages
+- `2009-zhao-investigation-of-fractal-distribution-law-for-the-trace-number-of-random-and-grouped-f.md`
+
+## Changed Pages
+- `1976-raleigh-the-rangely-field-an-experiment-in-earthquake-control-at-rangely-colorado.md`
+  - core evidence table header normalized
+- `1985-miller-spectral-type-simulation-of-spatially-correlated-fracture-set-properties.md`
+  - core evidence table header normalized
+- `1996-sibson-structural-permeability-of-fluid-driven-fault-fracture-meshes.md`
+  - core evidence table header normalized
+- `1998-berkowitz-stereological-analysis-of-fracture-network-structure-in-geological-formations.md`
+  - core evidence table header normalized
+- `1999-bour-clustering-and-size-distributions-of-fault-patterns-theory-and-measurements.md`
+  - core evidence table header normalized
+- `2003-bao-modeling-and-computer-simulation-of-ultrasonic-sonic-driller-corer-usdc.md`
+  - `一句话摘要` -> `One-line Summary`
+  - `研究问题` -> `Research Question`
+  - `研究区域/数据` -> `Study Area / Data`
+  - `方法` -> `Methods`
+  - `关键发现` -> `Key Findings`
+  - `核心证据表` -> `Core Evidence Table`
+  - `局限性` -> `Limitations`
+  - `假设/条件` -> `Assumptions / Conditions`
+  - `关键变量/参数` -> `Key Variables / Parameters`
+  - `可重用主张` -> `Reusable Claims`
+  - `候选概念` -> `Candidate Concepts`
+  - `候选方法` -> `Candidate Methods`
+  - `与其他工作的联系` -> `Connections To Other Work`
+  - `开放问题` -> `Open Questions`
+  - `来源覆盖` -> `Source Coverage`
+  - core evidence table header normalized
+- `2003-darcel-connectivity-properties-of-two-dimensional-fracture-networks-with-stochastic-fractal.md`
+  - `一句话摘要` -> `One-line Summary`
+  - `研究问题` -> `Research Question`
+  - `研究区域/数据` -> `Study Area / Data`
+  - `方法` -> `Methods`
+  - `关键发现` -> `Key Findings`
+  - `核心证据表` -> `Core Evidence Table`
+  - `局限` -> `Limitations`
+  - `假设/约束条件` -> `Assumptions / Conditions`
+  - `关键变量/参数` -> `Key Variables / Parameters`
+  - `可复用的声明` -> `Reusable Claims`
+  - `候选概念` -> `Candidate Concepts`
+  - `候选方法` -> `Candidate Methods`
+  - `与其他工作的联系` -> `Connections To Other Work`
+  - `开放问题` -> `Open Questions`
+  - `源覆盖` -> `Source Coverage`
+  - core evidence table header normalized
+- `2003-darcel-cross-correlation-between-length-and-position-in-real-fracture-networks.md`
+  - `一句话摘要` -> `One-line Summary`
+  - `研究问题` -> `Research Question`
+  - `研究区域 / 数据` -> `Study Area / Data`
+  - `方法` -> `Methods`
+  - `关键发现` -> `Key Findings`
+  - `核心证据表` -> `Core Evidence Table`
+  - `局限性` -> `Limitations`
+  - `假设 / 条件` -> `Assumptions / Conditions`
+  - `关键变量 / 参数` -> `Key Variables / Parameters`
+  - `可重用主张` -> `Reusable Claims`
+  - `候选概念` -> `Candidate Concepts`
+  - `候选方法` -> `Candidate Methods`
+  - `与其他工作的联系` -> `Connections To Other Work`
+  - `开放问题` -> `Open Questions`
+  - `来源覆盖` -> `Source Coverage`
+  - core evidence table header normalized
+- `2004-sisavath-geometry-percolation-and-transport-properties-of-fracture-networks-derived-from-li.md`
+  - core evidence table header normalized
+- `2005-auradou-permeability-anisotropy-induced-by-the-shear-displacement-of-rough-fracture-walls.md`
+  - core evidence table header normalized
+- `2006-song-estimation-of-a-joint-diameter-distribution-by-an-implicit-scheme-and-interpolation-te.md`
+  - `一行总结` -> `One-line Summary`
+  - `研究问题` -> `Research Question`
+  - `研究区/数据` -> `Study Area / Data`
+  - `方法` -> `Methods`
+  - `关键发现` -> `Key Findings`
+  - `核心证据表` -> `Core Evidence Table`
+  - `局限性` -> `Limitations`
+  - `假设/条件` -> `Assumptions / Conditions`
+  - `关键变量/参数` -> `Key Variables / Parameters`
+  - `可复用声明` -> `Reusable Claims`
+  - `候选概念` -> `Candidate Concepts`
+  - `候选方法` -> `Candidate Methods`
+  - `与其他工作的联系` -> `Connections To Other Work`
+  - `开放问题` -> `Open Questions`
+  - `来源覆盖` -> `Source Coverage`
+- `2008-h-ring-characterisation-of-the-basel-1-enhanced-geothermal-system.md`
+  - `单行摘要` -> `One-line Summary`
+  - `研究问题` -> `Research Question`
+  - `研究区域与数据` -> `Study Area / Data`
+  - `方法` -> `Methods`
+  - `关键发现` -> `Key Findings`
+  - `核心证据表` -> `Core Evidence Table`
+  - `局限性` -> `Limitations`
+  - `假设与条件` -> `Assumptions / Conditions`
+  - `关键变量/参数` -> `Key Variables / Parameters`
+  - `可复用声明` -> `Reusable Claims`
+  - `候选概念` -> `Candidate Concepts`
+  - `候选方法` -> `Candidate Methods`
+  - `与其他工作的联系` -> `Connections To Other Work`
+  - `待解决问题` -> `Open Questions`
+  - `来源覆盖` -> `Source Coverage`
+- `2009-feng-investigating-the-scale-effects-in-strength-of-fractured-rock-mass.md`
+  - core evidence table header normalized
+- `2010-tatone-a-new-2d-discontinuity-roughness-parameter-and-its-correlation-with-jrc.md`
+  - `单行摘要` -> `One-line Summary`
+  - `研究问题` -> `Research Question`
+  - `研究区/数据` -> `Study Area / Data`
+  - `方法` -> `Methods`
+  - `主要发现` -> `Key Findings`
+  - `核心证据表` -> `Core Evidence Table`
+  - `局限性` -> `Limitations`
+  - `假设/条件` -> `Assumptions / Conditions`
+  - `关键变量/参数` -> `Key Variables / Parameters`
+  - `可复用断言` -> `Reusable Claims`
+  - `候选概念` -> `Candidate Concepts`
+  - `候选方法` -> `Candidate Methods`
+  - `与其他工作的关联` -> `Connections To Other Work`
+  - `开放问题` -> `Open Questions`
+  - `来源覆盖` -> `Source Coverage`
+- `2012-de-dreuzy-influence-of-fracture-scale-heterogeneity-on-the-flow-properties-of-three-dimensi.md`
+  - core evidence table header normalized
+- `2014-kim-effect-of-rapid-thermal-cooling-on-mechanical-rock-properties.md`
+  - core evidence table header normalized
+- `2014-liu-mechanical-properties-of-qinling-biotite-granite-after-high-temperature-treatment.md`
+  - `一句话总结` -> `One-line Summary`
+  - `研究问题` -> `Research Question`
+  - `研究区 / 数据` -> `Study Area / Data`
+  - `方法` -> `Methods`
+  - `关键发现` -> `Key Findings`
+  - `核心证据表` -> `Core Evidence Table`
+  - `局限性` -> `Limitations`
+  - `假设 / 条件` -> `Assumptions / Conditions`
+  - `关键变量 / 参数` -> `Key Variables / Parameters`
+  - `可复用的断言` -> `Reusable Claims`
+  - `候选概念` -> `Candidate Concepts`
+  - `候选方法` -> `Candidate Methods`
+  - `与其他工作的联系` -> `Connections To Other Work`
+  - `开放问题` -> `Open Questions`
+  - `来源覆盖` -> `Source Coverage`
+  - core evidence table header normalized
+- `2014-voorn-porosity-permeability-and-3d-fracture-network-characterisation-of-dolomite-reservoir.md`
+  - core evidence table header normalized
+- `2015-siratovich-saturated-heating-and-quenching-of-three-crustal-rocks-and-implications-for-ther.md`
+  - `一句话总结` -> `One-line Summary`
+  - `研究问题` -> `Research Question`
+  - `研究区域 / 数据` -> `Study Area / Data`
+  - `方法` -> `Methods`
+  - `关键发现` -> `Key Findings`
+  - `核心证据表` -> `Core Evidence Table`
+  - `局限性` -> `Limitations`
+  - `假设 / 条件` -> `Assumptions / Conditions`
+  - `关键变量 / 参数` -> `Key Variables / Parameters`
+  - `可重复使用的主张` -> `Reusable Claims`
+  - `候选概念` -> `Candidate Concepts`
+  - `候选方法` -> `Candidate Methods`
+  - `与其他工作的联系` -> `Connections To Other Work`
+  - `开放问题` -> `Open Questions`
+  - `来源覆盖` -> `Source Coverage`
+- `2015-zhu-a-review-of-geothermal-energy-resources-development-and-applications-in-china-current-s.md`
+  - `一行总结` -> `One-line Summary`
+  - `研究问题` -> `Research Question`
+  - `研究区域 / 数据` -> `Study Area / Data`
+  - `方法` -> `Methods`
+  - `关键发现` -> `Key Findings`
+  - `核心证据表` -> `Core Evidence Table`
+  - `局限性` -> `Limitations`
+  - `假设 / 条件` -> `Assumptions / Conditions`
+  - `关键变量 / 参数` -> `Key Variables / Parameters`
+  - `可复用声明` -> `Reusable Claims`
+  - `候选概念` -> `Candidate Concepts`
+  - `候选方法` -> `Candidate Methods`
+  - `与其他工作的关联` -> `Connections To Other Work`
+  - `未解决问题` -> `Open Questions`
+  - `源文献覆盖` -> `Source Coverage`
+  - core evidence table header normalized

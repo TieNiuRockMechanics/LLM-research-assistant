@@ -1,0 +1,17 @@
+{
+  "run_id": "paper-pro-resume-20260501-224447",
+  "updated_at": "2026-05-01T23:07:42",
+  "phase": "paper-pages",
+  "status": "running",
+  "total_records": 487,
+  "current_index": 205,
+  "current_paper": "2019-huang-experimental-investigation-of-seepage-and-heat-transfer-in-rough-fractures-for-enhanc",
+  "completed": 7,
+  "skipped_complete": 196,
+  "skipped_over_budget": 0,
+  "failed": 2,
+  "remaining": 282,
+  "avg_seconds_per_completed": 196.41,
+  "eta_seconds": 55388,
+  "eta_at": "2026-05-02T14:30:50"
+}

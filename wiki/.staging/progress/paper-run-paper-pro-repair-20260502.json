@@ -1,0 +1,25 @@
+{
+  "run_id": "paper-pro-repair-20260502",
+  "updated_at": "2026-05-02T09:28:14",
+  "shard_count": 1,
+  "shard_index": 0,
+  "phase": "done",
+  "status": "completed",
+  "total_records": 487,
+  "completed": 5,
+  "skipped_complete": 482,
+  "skipped_over_budget": 0,
+  "failed": 0,
+  "remaining": 0,
+  "counts": {
+    "papers": 487,
+    "concepts": 0,
+    "methods": 0,
+    "claims": 0,
+    "syntheses": 0,
+    "open-questions": 0,
+    "inbox": 0
+  },
+  "problems": [],
+  "warnings": []
+}

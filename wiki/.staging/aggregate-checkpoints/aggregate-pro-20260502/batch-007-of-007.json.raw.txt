@@ -1,0 +1,3930 @@
+{
+  "concepts": [
+    {
+      "name": "离散裂缝网络（DFN）",
+      "slug": "discrete-fracture-network",
+      "definition": "通过显式表征岩体中每条裂缝的几何形态（位置、方位、尺寸、开度）和拓扑结构，构建的裂缝岩体模型，用于模拟岩体力学和水力行为。",
+      "aliases": [
+        "DFN",
+        "Discrete Fracture Network",
+        "离散裂隙网络"
+      ],
+      "boundary": "适用于裂缝控制的渗流和力学分析，不适用于强风化、极高密度粉末化或塑性流动占优的岩体。",
+      "related_methods": [
+        "monte-carlo-dfn",
+        "3dec-simulation",
+        "rjns3d-toolbox",
+        "fractal-topography-dfn",
+        "fracgen",
+        "upscaling-gan"
+      ],
+      "related_claims": [
+        "fractal-dimension-uniqueness",
+        "dfn-vs-gan-realism",
+        "poisson-position-limitation",
+        "power-law-length-fit"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "分形维数",
+      "slug": "fractal-dimension",
+      "definition": "描述裂缝网络空间填充能力和自相似性的无量纲指标，常用盒计数维数、分形拓扑维数等量化裂缝分布复杂度和非均质性。",
+      "aliases": [
+        "fractal dimension",
+        "Db",
+        "Dt",
+        "D_3D",
+        "盒计数维数",
+        "分形拓扑维数"
+      ],
+      "boundary": "适用于具有统计自相似性的裂缝网络；对于高度异质、非分形分布的裂缝系统可能不适用。单一分形维数存在多对一映射局限。",
+      "related_methods": [
+        "box-counting-fractal-dimension",
+        "fractal-per-model",
+        "fractal-topography-modeling"
+      ],
+      "related_claims": [
+        "fractal-dimension-uniqueness",
+        "thermal-crack-fractal-dimension-cooling-rate",
+        "mining-crack-fractal-dimension-saturation"
+      ],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli"
+      ]
+    },
+    {
+      "name": "渗透性增强率（PER）",
+      "slug": "permeability-enhancement-rate",
+      "definition": "采动等扰动条件下，渗透率相对初始值随体积应变的瞬时变化率，用于定量评价裂缝网络演化对渗流能力的各向异性提升。",
+      "aliases": [
+        "PER",
+        "Permeability Enhancement Rate",
+        "渗透率增强率"
+      ],
+      "boundary": "基于分形理论与立方定律的等效模型，未显式考虑微米级裂缝和基质渗流；当前仅在采动工作面尺度验证。",
+      "related_methods": [
+        "fractal-per-model"
+      ],
+      "related_claims": [
+        "per-evolution-sequence",
+        "per-anisotropy-magnitude"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "热损伤（Thermal damage）",
+      "slug": "thermal-damage",
+      "definition": "高温及热冲击作用下岩石内部因矿物非均匀膨胀、相变及温度梯度应力导致的微裂纹起裂和扩展，引起物理力学性质劣化。",
+      "aliases": [
+        "thermal damage",
+        "热损伤"
+      ],
+      "boundary": "主要用于描述热应力引起的脆性损伤；不涵盖高温塑性变形、熔融或化学蚀变等非力学效应。",
+      "related_methods": [
+        "pfc-thermal-mechanical-simulation",
+        "ct-3d-reconstruction",
+        "sem-fracture-observation",
+        "ae-monitoring"
+      ],
+      "related_claims": [
+        "thermal-crack-three-stages",
+        "ucs-normalized-linear-fit",
+        "ln2-permeability-increase",
+        "cooling-rate-fractal-complexity",
+        "brittleness-increase-ln2"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "冷却介质（Cooling media）",
+      "slug": "cooling-media",
+      "definition": "从高温对岩石进行降温的介质，包括空气、水、液氮等，不同介质的冷却速率差异显著，导致不同的热冲击效应和裂缝模式。",
+      "aliases": [
+        "cooling media",
+        "空气冷却",
+        "水冷却",
+        "液氮冷却",
+        "LN2"
+      ],
+      "boundary": "适用于实验室尺度的可控冷却实验；实际储层中冷却过程受多相流动、围压和原位应力影响。",
+      "related_concepts": [
+        "thermal-shock"
+      ],
+      "related_claims": [
+        "ln2-permeability-increase",
+        "cooling-rate-fractal-complexity",
+        "water-cooling-instant-degradation"
+      ],
+      "sources": [
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "水力连通系数（HCC）",
+      "slug": "hydraulic-connectivity-coefficient",
+      "definition": "基于Slug干扰试验中观测孔与抽水孔最大水位降深比值定义的参数，用于量化钻孔间水力连通性的程度和方向性。",
+      "aliases": [
+        "HCC",
+        "Hydraulic Connectivity Coefficient",
+        "水力连通系数"
+      ],
+      "boundary": "适用于裂隙介质瞬时水位响应分析；假设观测孔和源孔处于同一无压含水层系统。",
+      "related_methods": [
+        "hcc-matrix-analysis",
+        "slug-interference-test"
+      ],
+      "related_claims": [
+        "hcc-anisotropy",
+        "preferential-flow-tortuosity"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "裂纹密度（Crack density）",
+      "slug": "crack-density",
+      "definition": "单位体积或面积内裂纹的总长度或数量，用于描述热或力学作用下岩石破裂程度。",
+      "aliases": [
+        "crack density",
+        "fracture density",
+        "裂纹密度",
+        "裂缝密度"
+      ],
+      "boundary": "二维裂纹密度 ρ_crack (mm/mm²) 或三维体积密度 (m⁻³) 均为统计指标，需配合空间分布分析。",
+      "related_methods": [
+        "box-counting-fractal-dimension",
+        "circular-scanline-method"
+      ],
+      "related_claims": [
+        "thermal-crack-three-stages",
+        "crack-density-exponential-model"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "应变率敏感性（Strain-rate sensitivity）",
+      "slug": "strain-rate-sensitivity",
+      "definition": "岩石动态强度随应变率提高而增大的特性，常用动态增强因子DIF表征，受热损伤和岩性控制。",
+      "aliases": [
+        "strain-rate sensitivity",
+        "rate dependence",
+        "应变率效应",
+        "DIF"
+      ],
+      "boundary": "在解耦假设下有效；高应变率（>10³ s⁻¹）和全耦合效应可能导致偏差。",
+      "related_methods": [
+        "decoupled-dif-model"
+      ],
+      "related_claims": [
+        "dif-thermal-attenuation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "动态增强因子（DIF）",
+      "slug": "dynamic-increase-factor",
+      "definition": "动态加载下岩石强度与准静态强度之比，是衡量应变率敏感性的核心参数。",
+      "aliases": [
+        "DIF",
+        "Dynamic Increase Factor",
+        "动态增强因子"
+      ],
+      "boundary": "DIF 取决于加载速率、材料损伤状态和围压，当前常用解耦模型，未完全耦合热软化效应。",
+      "related_claims": [
+        "dif-thermal-attenuation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "能量分配机制（弹性-断裂转变）",
+      "slug": "energy-partitioning",
+      "definition": "外力做功在岩石内部转化为弹性储存能和断裂耗散能的分配比例；热损伤使能量流从弹性储存转向断裂耗散，主导破坏模式转变。",
+      "aliases": [
+        "energy partitioning",
+        "elastic-to-fracture energy shift",
+        "能量分配机制"
+      ],
+      "boundary": "适用于动态拉伸条件下的热损伤岩石；围压和循环加载下的分配规律可能不同。",
+      "related_methods": [
+        "fdem-dem-simulation"
+      ],
+      "related_claims": [
+        "energy-shift-fragmentation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "热冲击（Thermal shock）",
+      "slug": "thermal-shock",
+      "definition": "由快速温度变化在材料表面和内部引起的高幅热应力，导致微裂纹萌生或扩展。",
+      "aliases": [
+        "thermal shock",
+        "热冲击"
+      ],
+      "boundary": "热冲击效应与冷却速率、矿物热膨胀系数差及初始缺陷相关；在高温梯度现场可能因蠕变或水岩反应而弱化。",
+      "related_concepts": [
+        "thermal-damage",
+        "cooling-media"
+      ],
+      "related_claims": [
+        "cooling-rate-fractal-complexity",
+        "brittleness-increase-ln2"
+      ],
+      "sources": [
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "增强型地热系统（EGS）",
+      "slug": "enhanced-geothermal-system",
+      "definition": "通过人工储层改造（水力、化学、热刺激）从低渗透高温岩体中提取热能的地热开发系统。",
+      "aliases": [
+        "EGS",
+        "Enhanced Geothermal System",
+        "增强型地热系统",
+        "工程地热系统"
+      ],
+      "boundary": "主要针对花岗岩等结晶岩深层地热（3–5 km，100–200 °C）；沉积岩或火山岩储层需调整工艺。",
+      "related_methods": [
+        "hydraulic-stimulation",
+        "chemical-stimulation",
+        "thermal-stimulation"
+      ],
+      "related_claims": [
+        "egs-trilemma",
+        "shear-mixed-mode-dominance",
+        "multi-stage-complexity"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "工程三难（Engineering Trilemma）",
+      "slug": "engineering-trilemma",
+      "definition": "增强型地热系统储层改造中必须同时权衡的三个相互冲突的目标：有效连通、避免热短路和控制诱发地震。",
+      "aliases": [
+        "Engineering Trilemma",
+        "EGS trilemma",
+        "工程三难"
+      ],
+      "boundary": "适用于EGS储层改造策略评估；超出该语境（如天然裂缝渗流）的三目标权衡需重新定义。",
+      "related_claims": [
+        "egs-trilemma"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "水力刺激（Hydraulic stimulation）",
+      "slug": "hydraulic-stimulation",
+      "definition": "通过向储层注入高压流体，降低有效应力，激活或创造裂缝网络以提高渗透率的储层改造技术。",
+      "aliases": [
+        "hydraulic stimulation",
+        "hydro-shearing",
+        "水力压裂",
+        "水力剪切"
+      ],
+      "boundary": "在水稀缺或人口密集区风险高；有效连通性强但诱发地震风险最高。",
+      "related_methods": [
+        "multi-stage-stimulation",
+        "cyclic-soft-stimulation"
+      ],
+      "related_claims": [
+        "shear-mixed-mode-dominance",
+        "multi-stage-complexity",
+        "css-seismicity-mitigation"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "化学刺激（Chemical stimulation）",
+      "slug": "chemical-stimulation",
+      "definition": "通过注入酸液或螯合剂溶解矿物堵塞或蚀刻裂缝面，改善近井或裂缝导流能力，以低于破裂压力运行。",
+      "aliases": [
+        "chemical stimulation",
+        "酸化",
+        "螯合剂刺激"
+      ],
+      "boundary": "作用半径有限，在花岗岩中仅作为辅助手段；深部递送和二次沉淀是主要挑战。",
+      "related_claims": [
+        "chemical-stimulation-low-seismicity"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "热刺激（Thermal stimulation）",
+      "slug": "thermal-stimulation",
+      "definition": "利用注入流体与储层间的温差驱使热应力扩展天然或人工裂缝，以增强渗透率。",
+      "aliases": [
+        "thermal stimulation",
+        "热致裂",
+        "cooling fracturing"
+      ],
+      "boundary": "作为独立方法需极高温差和发达天然裂缝（如>400 °C）；常规储层常作为水力刺激后的协同增效工具。",
+      "related_claims": [
+        "thermal-stimulation-scope"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli"
+      ]
+    },
+    {
+      "name": "诱发地震（Induced seismicity）",
+      "slug": "induced-seismicity",
+      "definition": "由流体注入或生产引起的地应力扰动所激发的地震事件，是EGS项目的主要社会和环境风险。",
+      "aliases": [
+        "induced seismicity",
+        "注入诱发地震",
+        "微地震"
+      ],
+      "boundary": "微地震监测局限于脆性破裂，无法捕捉无震滑移对渗透率的贡献。",
+      "related_methods": [
+        "microseismic-monitoring"
+      ],
+      "related_claims": [
+        "srv-not-equal-hydraulic-volume",
+        "css-seismicity-mitigation"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "裂缝网络重建（Fracture network reconstruction）",
+      "slug": "fracture-network-reconstruction",
+      "definition": "利用有限观测数据（如露头图像、钻孔信息）通过统计或机器学习方法生成具有代表性的三维/二维裂缝网络。",
+      "aliases": [
+        "fracture network reconstruction",
+        "裂缝网络重构"
+      ],
+      "boundary": "二维重建无法完全捕捉三维连通性和交切关系；三维重建依赖输入数据质量。",
+      "related_methods": [
+        "monte-carlo-dfn",
+        "fracgen",
+        "upscaling-gan",
+        "fractal-topography-dfn",
+        "neural-network-inversion"
+      ],
+      "related_claims": [
+        "single-image-upscaling-claim",
+        "upscaling-gan-aperture-variability",
+        "dfn-vs-gan-realism"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "裂缝网络升尺度（Fracture network upscaling）",
+      "slug": "fracture-network-upscaling",
+      "definition": "将小尺度裂缝图像或模型扩展到大尺度，并保持统计特征或结构一致性的方法。",
+      "aliases": [
+        "fracture network upscaling",
+        "升尺度",
+        "upscaling"
+      ],
+      "boundary": "大多数方法依赖于图像自相似性或预设统计模型；长程结构一致性有待验证。",
+      "related_methods": [
+        "fracgen",
+        "upscaling-gan"
+      ],
+      "related_claims": [
+        "single-image-upscaling-claim",
+        "upscaling-gan-aperture-variability"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "生成对抗网络（GAN）",
+      "slug": "generative-adversarial-network",
+      "definition": "一种深度学习框架，由生成器和判别器相互博弈，用于从数据中学习分布并生成新的样本。",
+      "aliases": [
+        "GAN",
+        "Generative Adversarial Network",
+        "生成对抗网络"
+      ],
+      "boundary": "训练稳定性依赖于网络结构和损失函数设计；在小样本场景可能面临模式坍塌。",
+      "related_methods": [
+        "fracgen",
+        "upscaling-gan",
+        "sinGAN"
+      ],
+      "related_claims": [
+        "sinGAN-fracture-upscaling",
+        "upscaling-gan-aperture-variability"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "节理粗糙度系数（JRC）",
+      "slug": "joint-roughness-coefficient",
+      "definition": "基于节理表面轮廓的几何参数，用于评价节理粗糙度及其对剪切强度和导流能力的影响。",
+      "aliases": [
+        "JRC",
+        "Joint Roughness Coefficient",
+        "节理粗糙度系数"
+      ],
+      "boundary": "JRC 值受采样网格、计算公式和测量方向影响；不同公式间可比性有限。",
+      "related_methods": [
+        "multi-direction-jrc",
+        "li-zhang-jrc-formula"
+      ],
+      "related_claims": [
+        "jrc-anisotropy-convergence",
+        "deep-jrc-stress-direction"
+      ],
+      "sources": [
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "Fisher分布",
+      "slug": "fisher-distribution",
+      "definition": "描述球面数据（裂缝产状）围绕平均方向集中程度的概率分布，由密度指数k控制。",
+      "aliases": [
+        "Fisher distribution",
+        "Fisher 分布",
+        "球面正态分布"
+      ],
+      "boundary": "假设裂缝方向成群且均匀围绕平均方向；不适用于多峰或强各向异性分布。",
+      "related_methods": [
+        "dips-fracture-grouping"
+      ],
+      "related_claims": [
+        "fisher-k-orientation-control"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "幂律长度分布（Power-law length distribution）",
+      "slug": "power-law-length-distribution",
+      "definition": "裂缝长度服从Pareto/幂律分布，由标度指数α和最小长度 xmin 描述，反映多尺度自相似性。",
+      "aliases": [
+        "power-law distribution",
+        "幂律分布",
+        "fracture size scaling"
+      ],
+      "boundary": "在极小或极大尺度可能截断；数据拟合受采样完整性和分辨限制。",
+      "related_methods": [
+        "power-law-mle-fitting"
+      ],
+      "related_claims": [
+        "power-law-length-fit",
+        "fractal-dimension-uniqueness"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "对数正态长度分布（Log-normal length distribution）",
+      "slug": "log-normal-length-distribution",
+      "definition": "裂缝长度取对数后服从正态分布，常用μ和σ描述，常在露头图像中因截断效应显现。",
+      "aliases": [
+        "log-normal distribution",
+        "对数正态分布"
+      ],
+      "boundary": "主要适用于二维出露迹线；三维裂缝尺寸分布可能为指数或幂律。",
+      "related_methods": [
+        "log-normal-fitting"
+      ],
+      "related_claims": [
+        "fracture-length-lognormal"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "裂纹长度优化算法（Crack length optimization）",
+      "slug": "crack-length-optimization",
+      "definition": "在保持网络拓扑不变的前提下，基于热力学驱动和Weibull随机调制，优化热裂纹长度以适应跨尺度映射的需求。",
+      "aliases": [
+        "crack length optimization",
+        "热力学驱动的裂纹长度优化"
+      ],
+      "boundary": "线性叠加假设在裂纹密度ρ<0.3 mm⁻¹ 且温度<0.6Tm时误差<15%；不适用于强相互作用网络。",
+      "related_methods": [
+        "weibull-crack-length-optimization"
+      ],
+      "related_claims": [
+        "crack-length-optimization-reduction"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "多尺度跨平台耦合（PFC-FDEM）",
+      "slug": "multi-scale-cross-platform-coupling",
+      "definition": "将颗粒流离散元（PFC）的微观热裂纹信息映射到有限-离散元（FDEM）的宏观动态力学模型，实现微观损伤到宏观响应的跨尺度桥接。",
+      "aliases": [
+        "PFC-FDEM coupling",
+        "multi-scale cross-platform coupling",
+        "PFC-FDEM多尺度耦合"
+      ],
+      "boundary": "目前为二维热力顺序耦合；热-力全耦合、三维映射和不同岩性的通用性待发展。",
+      "related_methods": [
+        "pfc-thermal-mechanical-simulation",
+        "fdem-dem-simulation"
+      ],
+      "related_claims": [
+        "pfc-fdem-mapping-efficiency",
+        "energy-consistency-mapping"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "分形地形理论（Fractal topography theory）",
+      "slug": "fractal-topography-theory",
+      "definition": "将裂隙网络视为双复杂度系统，用标度空亏度P、标度覆盖度F和演化层级i刻画其分形结构和空间异质性。",
+      "aliases": [
+        "fractal topography theory",
+        "分形地形理论"
+      ],
+      "boundary": "假设裂隙具有层次结构和一致标度行为；对于非层次、多标度系统仅能提取广义P。",
+      "related_concepts": [
+        "dual-complexity-system"
+      ],
+      "related_methods": [
+        "fractal-topography-modeling"
+      ],
+      "related_claims": [
+        "fractal-dimension-uniqueness",
+        "fractal-topography-mae"
+      ],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "双复杂度系统（Dual-complexity system）",
+      "slug": "dual-complexity-system",
+      "definition": "天然裂隙介质具有原始复杂度（由主裂隙几何定义）和行为复杂度（由标度不变行为和随机性定义）的双重特性。",
+      "aliases": [
+        "dual-complexity system",
+        "双复杂度系统"
+      ],
+      "boundary": "适用于具有分形特征的裂隙网络；若系统无自相似性，则行为复杂度定义可能失效。",
+      "related_concepts": [
+        "fractal-topography-theory"
+      ],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "F3s框架",
+      "slug": "f3s-framework",
+      "definition": "结合主裂隙几何（G）、分形地形（Ω_Pi）和随机性（ρ）的统一裂隙网络表征框架。",
+      "aliases": [
+        "F3s framework",
+        "F3s(G,Ω,ρ)"
+      ],
+      "boundary": "目前为二维框架，三维扩展待验证。",
+      "related_methods": [
+        "fractal-topography-dfn"
+      ],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "FT-DFN模型（Fractal Topography-based DFN）",
+      "slug": "ft-dfn-model",
+      "definition": "基于分形地形理论构建的离散裂隙网络模型，通过分形迭代生长形成裂隙结构。",
+      "aliases": [
+        "FT-DFN",
+        "Fractal Topography-based DFN"
+      ],
+      "boundary": "模型输出的裂隙位置和角度假设为独立分布；对连通性的精细表征有限。",
+      "related_methods": [
+        "fractal-topography-dfn"
+      ],
+      "related_claims": [
+        "fractal-topography-mae"
+      ],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "采动裂缝网络演化（Mining-induced fracture network evolution）",
+      "slug": "mining-induced-fracture-network-evolution",
+      "definition": "采掘活动导致上覆岩层应力重分布，诱发裂缝网络的生长、稳定和弱影响三个阶段，伴随分形维数和连通性的动态变化。",
+      "aliases": [
+        "mining-induced fracture network evolution",
+        "采动裂隙演化"
+      ],
+      "boundary": "当前结论基于特定煤矿工作面；对深部金属矿或不同开采方法的普适性需更多验证。",
+      "related_claims": [
+        "mining-crack-three-stages",
+        "mining-crack-fractal-dimension-saturation",
+        "per-evolution-sequence"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "各向异性渗透性（Anisotropic permeability）",
+      "slug": "anisotropic-permeability",
+      "definition": "岩体渗透率随方向变化的特性，由裂缝优先方位、开度、粗糙度等控制，在采动和热致裂中表现显著。",
+      "aliases": [
+        "anisotropic permeability",
+        "渗透率各向异性"
+      ],
+      "boundary": "等效连续渗透率张量假设流动为Darcy流；在密集裂缝网络中可能需离散裂缝模型校正。",
+      "related_claims": [
+        "per-anisotropy-magnitude",
+        "hcc-anisotropy"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "声发射（AE）",
+      "slug": "acoustic-emission",
+      "definition": "材料在受力过程中因微裂纹产生和扩展释放的弹性波，用于实时监测岩石损伤演化。",
+      "aliases": [
+        "AE",
+        "Acoustic Emission",
+        "声发射"
+      ],
+      "boundary": "AE 事件定位受探头布设和介质波速模型影响；不同尺度的微震与AE 对应关系不直接。",
+      "related_methods": [
+        "ae-monitoring"
+      ],
+      "related_claims": [
+        "ae-ln2-damage-signals"
+      ],
+      "sources": [
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli"
+      ]
+    },
+    {
+      "name": "微震监测（Microseismic monitoring）",
+      "slug": "microseismic-monitoring",
+      "definition": "通过布设地震检波器阵列记录储层改造和采热过程中诱发的小地震事件，评估裂缝扩展范围和地震风险。",
+      "aliases": [
+        "microseismic monitoring",
+        "微震监测"
+      ],
+      "boundary": "微震云体积（SRV）不等于有效渗透体积；无震滑移、流体扩散和热效应不能被微震直接捕捉。",
+      "related_claims": [
+        "srv-not-equal-hydraulic-volume"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "循环软刺激（CSS）",
+      "slug": "cyclic-soft-stimulation",
+      "definition": "通过多周期间断注入分散能量，将岩石破坏模式从单次大断裂转向渐进的微裂纹扩展，以降低单次地震震级。",
+      "aliases": [
+        "CSS",
+        "Cyclic Soft Stimulation",
+        "循环软刺激",
+        "疲劳压裂"
+      ],
+      "boundary": "长周期THMC耦合影响尚不明确；实验室参数向储层尺度外推缺乏可靠模型。",
+      "related_claims": [
+        "css-seismicity-mitigation"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "多级刺激（Multi-stage stimulation）",
+      "slug": "multi-stage-stimulation",
+      "definition": "用封隔器或可溶球分段注入，实现空间上分割储层，增大改造体积并抑制热短路。",
+      "aliases": [
+        "multi-stage stimulation",
+        "多级压裂",
+        "分段压裂"
+      ],
+      "boundary": "应力阴影效应和自支撑裂缝的长期导流性在EGS高温环境下是未知挑战。",
+      "related_claims": [
+        "multi-stage-complexity"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "等效流动通道模型（Equivalent flow channel model）",
+      "slug": "equivalent-flow-channel-model",
+      "definition": "将裂隙岩体中的溶质运移简化为一条或多条一维移流-弥散通道，用于反演达西速度、弥散度等参数。",
+      "aliases": [
+        "equivalent flow channel model",
+        "等效通道模型"
+      ],
+      "boundary": "忽略基质扩散和通道内的速度变化；适用于短时保守示踪剂试验。",
+      "related_methods": [
+        "equivalent-channel-inversion"
+      ],
+      "related_claims": [
+        "equivalent-channel-r2",
+        "preferential-flow-tortuosity"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "迂曲分形维数（Tortuosity fractal dimension）",
+      "slug": "tortuosity-fractal-dimension",
+      "definition": "描述流体在裂缝中流动路径迂曲程度的分形维数，影响有效渗透率。",
+      "aliases": [
+        "tortuosity fractal dimension",
+        "DT",
+        "Dl",
+        "迂曲分形维数"
+      ],
+      "boundary": "当前基于二维截面推测三维迂曲维数，缺乏直接测量和与体积应变的耦合模型。",
+      "related_methods": [
+        "fractal-per-model"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "裂隙迂曲度（Fracture tortuosity）",
+      "slug": "fracture-tortuosity",
+      "definition": "等效流动通道长度与井间直线距离之比，反映裂隙几何弯曲程度，用于区分优先流和弥散主导迁移。",
+      "aliases": [
+        "fracture tortuosity",
+        "裂隙迂曲度"
+      ],
+      "boundary": "迂曲度<1.5指示单通道优先流，>1.5可能为多通道弥散主导；此阈值基于特定试验条件。",
+      "related_claims": [
+        "preferential-flow-tortuosity"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "优先流通道（Preferential flow pathway）",
+      "slug": "preferential-flow-pathway",
+      "definition": "在裂隙网络中具有较低流动阻力和较高流速的通道，常常支配整体流体传输。",
+      "aliases": [
+        "preferential flow pathway",
+        "优先流路径"
+      ],
+      "boundary": "识别依赖于示踪或水力测试；在强烈非均质网络中，多条通道可能混合影响。",
+      "related_claims": [
+        "preferential-flow-tortuosity"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "裂缝强度（P21）",
+      "slug": "fracture-intensity-p21",
+      "definition": "单位面积裂缝总迹长，是一种常用裂缝密度度量。",
+      "aliases": [
+        "fracture intensity",
+        "P21",
+        "裂缝强度"
+      ],
+      "boundary": "P21 只反映迹线长度密度，不直接等价于三维裂缝密度或连通性。",
+      "related_methods": [
+        "circular-scanline-method"
+      ],
+      "related_claims": [
+        "fracgen-intensity-stability"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "归一化质量通量（Normalized mass flux）",
+      "slug": "normalized-mass-flux",
+      "definition": "示踪剂质量通量与注入质量和抽水速率的比值，用于拟合解析模型反演运移参数。",
+      "aliases": [
+        "normalized mass flux",
+        "yi"
+      ],
+      "boundary": "适用于脉冲注入等短时试验，忽略井筒储存和化学反应。",
+      "related_methods": [
+        "equivalent-channel-inversion"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "纵向弥散度（Longitudinal dispersivity）",
+      "slug": "longitudinal-dispersivity",
+      "definition": "反映在流动方向上溶质混合的宏观参数，在裂隙介质中随流径长度增大。",
+      "aliases": [
+        "longitudinal dispersivity",
+        "αL",
+        "纵向弥散度"
+      ],
+      "boundary": "标度律的普适性受裂隙网络非均质性影响；大尺度预测需谨慎。",
+      "related_claims": [
+        "dispersivity-scale-relationship"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "裂纹屏蔽与应力放大效应（Crack shielding and amplification）",
+      "slug": "crack-shielding-effect",
+      "definition": "相邻裂纹通过应力场相互作用，抑制或增强裂纹扩展的现象。",
+      "aliases": [
+        "crack shielding",
+        "stress amplification",
+        "裂纹屏蔽效应"
+      ],
+      "boundary": "PFC-FDEM 中采用线性叠加近似，在裂纹密度高时误差增大。",
+      "related_methods": [
+        "pfc-thermal-mechanical-simulation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "动态临界速度（0.6倍剪切波速）",
+      "slug": "dynamic-critical-velocity",
+      "definition": "裂纹扩展速度达到0.6倍剪切波速时，系统从单裂纹加速过渡到多裂纹并行扩展的临界阈值。",
+      "aliases": [
+        "dynamic critical velocity",
+        "0.6cs",
+        "动态临界速度"
+      ],
+      "boundary": "基于均质化FDEM模拟，与真实岩石的非均质性和微结构有关联，具体值可能变化。",
+      "related_claims": [
+        "critical-velocity-multi-cracking"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "Weibull分布随机调制",
+      "slug": "weibull-distribution-modulation",
+      "definition": "利用Weibull分布引入随机性，调制裂纹长度或强度分布，以模拟岩石材料的非均质性。",
+      "aliases": [
+        "Weibull distribution",
+        "Weibull随机调制"
+      ],
+      "boundary": "形状参数k和尺度参数λ需根据特定材料校准。",
+      "related_methods": [
+        "weibull-crack-length-optimization"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "拓扑保持（Topology preservation）",
+      "slug": "topology-preservation",
+      "definition": "在裂纹优化或映射过程中保持裂纹网络的连接性和相交关系不变。",
+      "aliases": [
+        "topology preservation",
+        "拓扑保持"
+      ],
+      "boundary": "二维映射中可定量保持；三维推广困难。",
+      "related_methods": [
+        "weibull-crack-length-optimization"
+      ],
+      "related_claims": [
+        "crack-length-optimization-reduction"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "粗糙度各向异性（Roughness anisotropy）",
+      "slug": "roughness-anisotropy",
+      "definition": "节理表面粗糙度随方向显著变化的特性，影响剪切强度、剪胀和流体流动的各向异性。",
+      "aliases": [
+        "roughness anisotropy",
+        "各向异性粗糙度"
+      ],
+      "boundary": "基于JRC的椭圆拟合提供主方向；精确值受测量方向和尺度影响。",
+      "related_methods": [
+        "ellipse-fitted-jrc-direction"
+      ],
+      "related_claims": [
+        "jrc-anisotropy-convergence"
+      ],
+      "sources": [
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "应力阴影（Stress shadow）",
+      "slug": "stress-shadow",
+      "definition": "先段压裂产生的附加应力场对邻段裂缝扩展的抑制作用，影响多级刺激效果。",
+      "aliases": [
+        "stress shadow",
+        "应力阴影"
+      ],
+      "boundary": "现有模型多基于等温或小温差，EGS大温差下热弹性效应可能显著改变阴影效应。",
+      "related_claims": [
+        "multi-stage-complexity"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "自支撑裂缝（Self-propping fractures）",
+      "slug": "self-propping-fractures",
+      "definition": "依靠剪切位移产生粗糙面不匹配而保持开度的裂缝，无需人工支撑剂。",
+      "aliases": [
+        "self-propping",
+        "自支撑裂缝"
+      ],
+      "boundary": "长期高温水岩反应可能改变粗糙度和导流性，退化规律不明确。",
+      "related_claims": [
+        "self-propping-degradation"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "离散系数A（Discreteness coefficient）",
+      "slug": "discreteness-coefficient-a",
+      "definition": "由分形地形模型导出的指标，量度标度空亏度的异质性，A值越大裂缝长度分布越极化。",
+      "aliases": [
+        "discreteness coefficient A",
+        "离散系数A"
+      ],
+      "boundary": "适用于存在多标度行为的裂缝系统；对单一标度系统敏感性低。",
+      "related_claims": [],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "花岗岩热损伤",
+      "slug": "granite-thermal-damage",
+      "definition": "指高温或热冲击下花岗岩内部微裂缝发育，导致强度、模量下降和渗透率提高的现象。",
+      "aliases": [
+        "granite thermal damage",
+        "granite weakening"
+      ],
+      "boundary": "不同产地花岗岩矿物组成差异影响损伤程度；加热和冷却速率是关键参数。",
+      "related_claims": [
+        "ucs-normalized-linear-fit",
+        "water-cooling-instant-degradation",
+        "brittleness-increase-ln2"
+      ],
+      "sources": [
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "单轴抗压强度归一化（Normalized UCS）",
+      "slug": "normalized-ucs",
+      "definition": "以室温初始值为基准的单轴抗压强度比值，用以消除不同花岗岩批次差异，研究温度效应。",
+      "aliases": [
+        "normalized UCS",
+        "σc/σc0"
+      ],
+      "boundary": "归一化假设室温下性质一致，忽略了原始孔隙率和微裂纹差异。",
+      "related_claims": [
+        "ucs-normalized-linear-fit"
+      ],
+      "sources": [
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "分段线性拟合（Segmented linear fitting）",
+      "slug": "segmented-linear-fitting",
+      "definition": "以转折温度（如300 °C）为界，对归一化力学参数进行分段线性回归的经验方法。",
+      "aliases": [
+        "segmented linear fitting",
+        "分段线性拟合"
+      ],
+      "boundary": "转折温度基于花岗岩矿物相变和热裂纹萌生阈值经验确定，可能随岩性变化。",
+      "related_claims": [
+        "ucs-normalized-linear-fit"
+      ],
+      "sources": [
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "X射线CT节理提取 (X-ray CT joint extraction)",
+      "slug": "x-ray-ct-joint-extraction",
+      "definition": "利用高分辨率CT扫描获取岩心内部节理的密度差异图像，重建闭合和开放节理的三维表面形貌。",
+      "aliases": [
+        "X-ray CT joint extraction",
+        "CT节理提取"
+      ],
+      "boundary": "闭合节理识别要求愈合矿物与围岩存在可分辨的密度差异；分辨率影响小尺度粗糙度的捕捉。",
+      "related_methods": [
+        "x-ray-ct-joint-surface-reconstruction"
+      ],
+      "related_claims": [
+        "deep-jrc-stress-direction"
+      ],
+      "sources": [
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "椭圆拟合方向分析 (Ellipse fitting for direction)",
+      "slug": "ellipse-fitting-direction",
+      "definition": "将多方向JRC数据拟合为椭圆，以确定节理表面的最大和最小粗糙度主方向。",
+      "aliases": [
+        "ellipse fitting for direction",
+        "椭圆拟合"
+      ],
+      "boundary": "基于各向异性分布可用椭圆近似的假设；对各向同性或复杂非椭圆分布不适用。",
+      "related_methods": [
+        "ellipse-fitted-jrc-direction"
+      ],
+      "related_claims": [
+        "jrc-anisotropy-convergence"
+      ],
+      "sources": [
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "裂缝开度（Fracture aperture）",
+      "slug": "fracture-aperture",
+      "definition": "裂缝两壁之间的距离，是控制渗透率和流体流动的关键参数，常具有空间变异性。",
+      "aliases": [
+        "fracture aperture",
+        "aperture",
+        "裂缝开度"
+      ],
+      "boundary": "许多模型简化开度为常数，但自然裂缝开度随有效应力、粗糙度和充填情况变化。",
+      "related_claims": [
+        "upscaling-gan-aperture-variability"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "局部填充（Local padding）",
+      "slug": "local-padding",
+      "definition": "在GAN生成大图时，利用相邻已生成补丁的边缘像素作为上下文约束，实现无缝拼接的技术。",
+      "aliases": [
+        "local padding",
+        "局部填充"
+      ],
+      "boundary": "能消除拼接缝，但极长程（>百米）的结构一致性仍有待检验。",
+      "related_methods": [
+        "upscaling-gan"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "自注意力机制（Self-attention）",
+      "slug": "self-attention",
+      "definition": "一种网络模块，使模型能关注输入特征图中远距离区域的依赖关系，用于提升裂缝结构的连续性。",
+      "aliases": [
+        "self-attention",
+        "self-attention mechanism",
+        "自注意力"
+      ],
+      "boundary": "计算代价随空间尺寸平方增长，在超大图上可能受限。",
+      "related_methods": [
+        "upscaling-gan"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "盒计数法（Box-counting）",
+      "slug": "box-counting",
+      "definition": "用不同尺寸的盒子覆盖裂缝图像，计算含有裂缝的盒子数，通过幂律关系估计分形维数。",
+      "aliases": [
+        "box-counting method",
+        "盒计数法"
+      ],
+      "boundary": "对二值化阈值和图像分辨率敏感；可能因裂缝交切和孤立点产生偏差。",
+      "related_methods": [
+        "box-counting-fractal-dimension"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "随机分形地形模型（Random fractal topography model）",
+      "slug": "random-fractal-topography-model",
+      "definition": "在分形地形模型中引入扰动因子k，以捕捉天然裂隙网络的局部变异性，提高局部拟合精度。",
+      "aliases": [
+        "random fractal topography model",
+        "随机分形地形模型"
+      ],
+      "boundary": "扰动幅值b由P_min、P_max按经验范围扩展±15%确定，可能需根据样本调整。",
+      "related_claims": [],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "神经网络参数反演（Neural network parameter inversion）",
+      "slug": "neural-network-parameter-inversion",
+      "definition": "利用训练好的BP或CC神经网络从二维裂隙统计参数反演三维DFN模型参数。",
+      "aliases": [
+        "neural network parameter inversion",
+        "NN inversion"
+      ],
+      "boundary": "反演精度依赖于训练数据库的代表性；仅通过单条平硐数据验证。",
+      "related_methods": [
+        "bp-neural-network",
+        "cc-neural-network"
+      ],
+      "related_claims": [
+        "stratified-inversion-reduction"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre"
+      ]
+    },
+    {
+      "name": "分层建模策略（Stratified modeling strategy）",
+      "slug": "stratified-modeling-strategy",
+      "definition": "按岩性或力学单元将研究区划分为子区，分别建立裂缝网络或反演模型以捕捉空间非均质性。",
+      "aliases": [
+        "stratified modeling",
+        "分层建模"
+      ],
+      "boundary": "层间界面需精确划分；若裂缝特征渐变而非突变效果可能下降。",
+      "related_methods": [
+        "stratified-modeling-strategy"
+      ],
+      "related_claims": [
+        "stratified-inversion-reduction"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre"
+      ]
+    },
+    {
+      "name": "图像特征提取（Image-based feature extraction）",
+      "slug": "image-based-feature-extraction",
+      "definition": "从裂缝图像中通过数字图像处理自动提取几何参数，如迹长、方位、分形维数等。",
+      "aliases": [
+        "image-based feature extraction",
+        "PCAS",
+        "FracPaQ"
+      ],
+      "boundary": "提取精度受图像分辨率、二值化阈值和预处理影响；可能遗漏微小或连接不完整的裂缝。",
+      "related_methods": [
+        "pcas-image-processing",
+        "fracpaq-toolbox",
+        "complex-shearlet-detection"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "平行板模型（Parallel plate model）",
+      "slug": "parallel-plate-model",
+      "definition": "将裂缝简化为两光滑平行板，基于立方定律（k = b²/12）估算渗透率。",
+      "aliases": [
+        "parallel plate model",
+        "立方定律",
+        "cubic law"
+      ],
+      "boundary": "忽略粗糙度、接触面积和充填物对流动的阻碍，常低估压降。",
+      "related_methods": [
+        "parallel-plate-permeability"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "Upscaling-GAN",
+      "slug": "upscaling-gan",
+      "definition": "一种基于GAN的两阶段算法，从单张小尺度裂缝图像学习，通过补丁拼接生成任意尺寸的高保真裂缝网络，同时保持开度变异性。",
+      "aliases": [
+        "Upscaling-GAN",
+        "AI-Geo AIG-Upscaling"
+      ],
+      "boundary": "当前为二维，单图训练泛化能力未验证，极长程结构一致性待研究。",
+      "related_methods": [
+        "upscaling-gan-framework"
+      ],
+      "related_claims": [
+        "upscaling-gan-aperture-variability"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "FracGen",
+      "slug": "fracgen",
+      "definition": "基于SinGAN的非参数裂缝网络重建和升尺度模型，仅需单张露头图像即可生成多尺度网络。",
+      "aliases": [
+        "FracGen",
+        "SinGAN-based fracture generation"
+      ],
+      "boundary": "仅支持二维，需要二值化预处理，不能自动生成变开度。",
+      "related_methods": [
+        "fracgen"
+      ],
+      "related_claims": [
+        "sinGAN-fracture-upscaling"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "PFC颗粒流模型",
+      "slug": "pfc-grain-based-model",
+      "definition": "利用颗粒流方法将岩石抽象为粘结颗粒集合，通过细观参数表征矿物接触和热力行为。",
+      "aliases": [
+        "PFC",
+        "Particle Flow Code",
+        "parallel bond model"
+      ],
+      "boundary": "二维模型未考虑三维效应；矿物组分简化，模型参数需多目标优化标定。",
+      "related_methods": [
+        "pfc-thermal-mechanical-simulation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "FDEM内聚力模型",
+      "slug": "fdem-cohesive-zone-model",
+      "definition": "采用零厚度内聚力单元和双线性牵引-分离法则模拟裂纹萌生与扩展的有限元-离散元耦合方法。",
+      "aliases": [
+        "FDEM",
+        "Finite-Discrete Element Method",
+        "cohesive zone model"
+      ],
+      "boundary": "网格依赖性和温度弱化本构的简化可能影响复杂路径的裂纹模拟精度。",
+      "related_methods": [
+        "fdem-dem-simulation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "KGS解析模型（KGS analytical model）",
+      "slug": "kgs-analytical-model",
+      "definition": "用于分析Slug试验的解析解，考虑无压含水层、部分贯穿井和侧向无限延伸等条件，反演径向水力传导系数。",
+      "aliases": [
+        "KGS model",
+        "KGS analytical solution"
+      ],
+      "boundary": "假设均质各向同性无压含水层，不适用于强非均质裂隙网络。",
+      "related_methods": [
+        "kgs-analytical-model"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "多目标粒子群优化（PSO calibration）",
+      "slug": "multi-objective-pso-calibration",
+      "definition": "利用粒子群优化算法同时拟合多个细观力学参数目标（如强度、模量），对PFC模型进行标定。",
+      "aliases": [
+        "multi-objective PSO",
+        "粒子群优化标定"
+      ],
+      "boundary": "标定结果依赖于目标函数的选择和优化迭代次数，可能陷入局部最优。",
+      "related_methods": [
+        "pso-calibration"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "Ripley’s K函数（Ripley's K function）",
+      "slug": "ripley-k-function",
+      "definition": "空间点模式分析方法，用于量化裂缝位置的空间聚散程度，判断是否服从泊松过程。",
+      "aliases": [
+        "Ripley's K function",
+        "Ripley K"
+      ],
+      "boundary": "对样本窗口边界效应敏感；需与泊松过程期望比较。",
+      "related_methods": [
+        "ripley-k-function"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "正弦剪切波变换（Complex shearlet transform）",
+      "slug": "complex-shearlet-transform",
+      "definition": "一种多尺度几何分析方法，用于检测图像中的曲线和边缘，实现自动化裂缝迹线提取。",
+      "aliases": [
+        "complex shearlet transform",
+        "复剪切波变换"
+      ],
+      "boundary": "提取完整性取决于图像对比度和噪声，可能漏检低对比度或细小裂缝。",
+      "related_methods": [
+        "complex-shearlet-detection"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "循环热冲击（Cyclic thermal shock）",
+      "slug": "cyclic-thermal-shock",
+      "definition": "多次重复的加热-冷却过程，累积损伤导致岩石力学性质在数次循环后趋于稳定。",
+      "aliases": [
+        "cyclic thermal shock",
+        "循环热冲击"
+      ],
+      "boundary": "当前实验集中于单次或少量循环，长时间循环的化学-力学耦合和微结构演化未充分评估。",
+      "related_claims": [
+        "cyclic-cooling-damage-saturation"
+      ],
+      "sources": [
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "注水返排率（Flowback efficiency）",
+      "slug": "flowback-efficiency",
+      "definition": "EGS水力刺激中，注入流体中最终产出的体积比例，反映流体损失和对环境的影响。",
+      "aliases": [
+        "flowback efficiency",
+        "返排率"
+      ],
+      "boundary": "高流体损失可能永久消耗水资源并破坏闭环循环目标，取决于是否连通区域断层。",
+      "related_claims": [],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "混合机制刺激（Mixed-mechanism stimulation）",
+      "slug": "mixed-mechanism-stimulation",
+      "definition": "在水力刺激中，同时激活已有裂缝的剪切滑移和纯张裂过程，以兼顾连通性与风险控制。",
+      "aliases": [
+        "mixed-mechanism stimulation",
+        "MMS",
+        "混合刺激"
+      ],
+      "boundary": "判别依赖于微震震源机制反演和注入压力数据，部分场地证据强度有限。",
+      "related_claims": [
+        "shear-mixed-mode-dominance"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "无震滑移（Aseismic slip）",
+      "slug": "aseismic-slip",
+      "definition": "在流体注入过程中发生的非地震性缓慢剪切滑移，可贡献渗透率提高但不产生可检测地震波。",
+      "aliases": [
+        "aseismic slip",
+        "无声滑移"
+      ],
+      "boundary": "当前无法通过微震直接监测，需应变或光纤传感补充，其定量贡献仍是挑战。",
+      "related_claims": [
+        "srv-not-equal-hydraulic-volume"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "裂缝方向余弦退火迭代优化",
+      "slug": "crack-direction-cosine-annealing",
+      "definition": "基于热弹性本构和最大能量释放率准则，采用余弦退火调度和随机扰动更新裂纹方向，使其趋向局部最大主应力方向。",
+      "aliases": [
+        "crack direction optimization",
+        "cosine annealing"
+      ],
+      "boundary": "应用于二维热裂纹模型，与三维非均匀应力场的结果可能有差异。",
+      "related_methods": [
+        "crack-direction-optimization"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "name": "PFC颗粒流热力顺序耦合模拟",
+      "slug": "pfc-thermal-mechanical-simulation",
+      "aliases": [
+        "PFC",
+        "Particle Flow Code",
+        "颗粒流热力耦合模拟"
+      ],
+      "purpose": "模拟矿物颗粒尺度的热传导、热应力和热裂纹演化，生成不同温度的微观裂纹网络。",
+      "workflow": "建立平行粘结颗粒集合体模型→设定温度边界（5 °C/min加热）→隐式求解瞬态温度场→计算非均匀热膨胀→按强度准则判断粘结破坏→记录裂纹时空信息。",
+      "inputs": [
+        "颗粒尺寸和堆积",
+        "接触模量E_c",
+        "粘结强度σ_c",
+        "热膨胀系数",
+        "矿物组分",
+        "加热曲线"
+      ],
+      "outputs": [
+        "裂纹位置、方向、长度",
+        "裂纹密度 ρ_crack",
+        "温度场",
+        "热应力场"
+      ],
+      "assumptions": [
+        "顺序热力耦合，忽略力场对温度场的反作用",
+        "岩石简化为球形颗粒集合体",
+        "仅考虑石英和长石两种矿物"
+      ],
+      "strengths": [
+        "可直接追踪热裂纹的萌生和相互作用",
+        "可提取裂纹网络统计和几何特征"
+      ],
+      "limitations": [
+        "二维模型",
+        "全耦合效应忽略",
+        "模型参数需通过PSO标定"
+      ],
+      "related_concepts": [
+        "thermal-damage",
+        "pfc-grain-based-model"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "FDEM内聚力单元动态断裂仿真",
+      "slug": "fdem-dem-simulation",
+      "aliases": [
+        "FDEM",
+        "Finite-Discrete Element Method",
+        "内聚力单元法"
+      ],
+      "purpose": "在宏观尺度上模拟热损伤岩石在动态拉伸（SHTB）下的裂纹扩展、破坏模式和能量耗散。",
+      "workflow": "导入PFC映射裂纹→插入零厚度内聚力单元（COH2D4）→设定双线性牵引-分离法则→施加一维应力波载荷→计算动态断裂响应。",
+      "inputs": [
+        "裂纹网络几何",
+        "内聚力断裂能G_f",
+        "损伤阈值σ_t",
+        "冲击速度v",
+        "材料弹性参数"
+      ],
+      "outputs": [
+        "动态应力-应变",
+        "裂纹扩展速度",
+        "能量分配",
+        "破坏模式"
+      ],
+      "assumptions": [
+        "平面应力条件",
+        "应变率效应解耦处理",
+        "裂纹按Grifith能量平衡扩展"
+      ],
+      "strengths": [
+        "能显式模拟裂纹动态扩展和多重破裂",
+        "可与PFC跨尺度映射"
+      ],
+      "limitations": [
+        "二维模型",
+        "网格依赖性",
+        "未考虑疲劳效应"
+      ],
+      "related_concepts": [
+        "fdem-cohesive-zone-model",
+        "multi-scale-cross-platform-coupling"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "多目标粒子群优化参数标定（PSO）",
+      "slug": "pso-calibration",
+      "aliases": [
+        "multi-objective PSO",
+        "粒子群优化"
+      ],
+      "purpose": "同时拟合多个细观力学参数（如强度、模量）以标定PFC模型。",
+      "workflow": "定义目标函数（模拟与实验值误差）→初始化粒子群→迭代更新粒子位置和速度→输出Pareto最优解集。",
+      "inputs": [
+        "宏观实验数据（UCS, E等）",
+        "细观参数范围"
+      ],
+      "outputs": [
+        "细观参数最优组合"
+      ],
+      "assumptions": [
+        "目标函数连续可导（或采用元启发式）",
+        "实验数据代表材料均质响应"
+      ],
+      "strengths": [
+        "可处理多目标耦合",
+        "避免局部最优"
+      ],
+      "limitations": [
+        "计算成本较高",
+        "标定结果依赖目标函数格式"
+      ],
+      "related_concepts": [
+        "pfc-grain-based-model"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "裂纹张量统计分析",
+      "slug": "crack-tensor-analysis",
+      "aliases": [
+        "crack tensor",
+        "fabric tensor"
+      ],
+      "purpose": "从裂纹网络中提取方向分布、密度和长度分布等统计特征。",
+      "workflow": "对每个裂纹计算单位法向量→构建二阶裂纹张量→分析特征值和特征向量→导出Fisher或von Mises分布参数。",
+      "inputs": [
+        "裂纹位置和方向"
+      ],
+      "outputs": [
+        "裂纹密度方向分布",
+        "主导方向",
+        "Fisher密度指数k"
+      ],
+      "assumptions": [
+        "裂纹网络可用二阶张量近似",
+        "方向分布服从特定分布族"
+      ],
+      "strengths": [
+        "适用于连续等效损伤描述"
+      ],
+      "limitations": [
+        "可能丢失高阶方向信息"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "基于Ripley K函数的空间异质性量化",
+      "slug": "ripley-k-function",
+      "aliases": [
+        "Ripley K",
+        "空间点模式分析"
+      ],
+      "purpose": "评估裂纹中心点在空间上的聚集或分散程度。",
+      "workflow": "计算不同距离环内点数量的期望值→与泊松过程理论值比较→对距离做包络测试。",
+      "inputs": [
+        "裂纹中点坐标"
+      ],
+      "outputs": [
+        "K(r)曲线",
+        "空间聚集尺度"
+      ],
+      "assumptions": [
+        "研究区为矩形或其它规则窗口",
+        "边界效应需校正"
+      ],
+      "strengths": [
+        "可探测多尺度聚集模式"
+      ],
+      "limitations": [
+        "对窗口形状敏感"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "Weibull分布随机调制裂纹长度优化",
+      "slug": "weibull-crack-length-optimization",
+      "aliases": [
+        "Weibull-modulated crack length optimization"
+      ],
+      "purpose": "在保持拓扑前提下，基于热力学驱动力和Weibull随机性优化裂纹长度，用于跨尺度映射。",
+      "workflow": "计算非均匀温度/应力场→von Mises应力驱动→嵌入Weibull分布调制强弱→结合裂纹间交互因子→迭代更新长度直至满足总长度约束。",
+      "inputs": [
+        "温度场",
+        "裂纹网络拓扑",
+        "Weibull参数k, λ",
+        "交互阈值"
+      ],
+      "outputs": [
+        "优化后裂纹长度",
+        "总长度减少量"
+      ],
+      "assumptions": [
+        "线性叠加近似裂纹相互作用（适用于ρ<0.3 mm⁻¹）",
+        "拓扑不变"
+      ],
+      "strengths": [
+        "大幅减少裂纹数量提升计算效率",
+        "保持几何特征"
+      ],
+      "limitations": [
+        "在高温高密度时交互误差增大",
+        "二维限定"
+      ],
+      "related_concepts": [
+        "crack-length-optimization",
+        "topology-preservation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "能量一致性校正的跨尺度映射",
+      "slug": "energy-consistency-mapping",
+      "aliases": [
+        "energy-based cross-scale mapping"
+      ],
+      "purpose": "将PFC裂纹网络映射至FDEM时，通过比较系统总弹性能施加能量校正因子，保证热力学一致性。",
+      "workflow": "计算PFC与FDEM初始模型弹性能差→若差>5%施加校正因子→调整局部裂纹开度或长度→重复直至误差< ε_tol。",
+      "inputs": [
+        "PFC裂纹网络",
+        "FDEM模型参数",
+        "ε_tol=0.05"
+      ],
+      "outputs": [
+        "校正后FDEM裂纹参数"
+      ],
+      "assumptions": [
+        "两模型总弹性能可比较",
+        "校正因子线性映射"
+      ],
+      "strengths": [
+        "保证跨平台映射的能量一致性"
+      ],
+      "limitations": [
+        "不考虑塑性功和热能",
+        "二维模型"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "解耦的DIF应变率增强模型",
+      "slug": "decoupled-dif-model",
+      "aliases": [
+        "decoupled DIF model",
+        "动态增强因子解耦模型"
+      ],
+      "purpose": "在FDEM模拟中近似再现应变率效应，避免全率相关本构的复杂性。",
+      "workflow": "根据应变率计算DIF经验函数→将DIF乘到材料的准静态强度（或断裂能）上→动态模拟时不显式求解速率强化。",
+      "inputs": [
+        "应变率",
+        "准静态材料强度"
+      ],
+      "outputs": [
+        "动态强度"
+      ],
+      "assumptions": [
+        "热软化与速率硬化解耦",
+        "耦合项<8%"
+      ],
+      "strengths": [
+        "计算高效"
+      ],
+      "limitations": [
+        "在高应变率或极端温度下误差大"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "裂纹方向余弦退火迭代优化",
+      "slug": "crack-direction-optimization",
+      "aliases": [
+        "crack direction optimization",
+        "cosine annealing"
+      ],
+      "purpose": "基于热弹性本构和最大能量释放率准则优化裂纹方向，使裂纹趋向局部最大主应力方向。",
+      "workflow": "计算应力张量→求最大主应力方向→构建复合权重函数→余弦退火迭代更新方向→自适应随机扰动增加鲁棒性。",
+      "inputs": [
+        "应力场",
+        "裂纹当前方向"
+      ],
+      "outputs": [
+        "优化后裂纹方向"
+      ],
+      "assumptions": [
+        "裂纹扩展遵循最大能量释放率准则",
+        "忽略次生裂纹干扰"
+      ],
+      "strengths": [
+        "可动态追踪应力方向变化"
+      ],
+      "limitations": [
+        "仅二维平面",
+        "计算收敛依赖退火参数"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "钻孔成像技术（BHTV）",
+      "slug": "borehole-imaging",
+      "aliases": [
+        "BHTV",
+        "borehole televiewer",
+        "钻孔声波电视"
+      ],
+      "purpose": "获取钻孔壁高分辨率图像，识别裂隙产状、开度和空间位置。",
+      "workflow": "下放成像探头→360°扫描孔壁→生成展开图像→人工/自动识别裂隙并导出参数。",
+      "inputs": [
+        "钻孔",
+        "声波或光学探头"
+      ],
+      "outputs": [
+        "裂隙倾角、方位、开度",
+        "裂隙位置"
+      ],
+      "assumptions": [
+        "孔壁图像能真实反映原位裂隙"
+      ],
+      "strengths": [
+        "非破坏性，可获取原位信息"
+      ],
+      "limitations": [
+        "仅捕捉毫米级以上裂隙",
+        "图像质量受钻井液和岩性影响"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "Slug干扰试验及HCC矩阵分析",
+      "slug": "slug-interference-test",
+      "aliases": [
+        "slug interference test",
+        "HCC matrix"
+      ],
+      "purpose": "通过多孔瞬时抽水-观测试验，利用KGS模型反演水力传导系数，并构建HCC矩阵量化井间连通性。",
+      "workflow": "在源孔快速抽水→在观测孔监测压力变化→用KGS模型拟合求K→计算最大水位降深比HCC→构建非对称矩阵。",
+      "inputs": [
+        "抽水量或抽水速率",
+        "孔压/水位观测序列",
+        "井结构参数"
+      ],
+      "outputs": [
+        "水力传导系数K",
+        "HCC矩阵",
+        "连通方向性"
+      ],
+      "assumptions": [
+        "无压含水层",
+        "侧向无限延伸",
+        "部分贯穿井"
+      ],
+      "strengths": [
+        "可揭示非均质各向异性连通性"
+      ],
+      "limitations": [
+        "未分段封隔，可能混合响应",
+        "需要多个观测孔"
+      ],
+      "related_concepts": [
+        "hydraulic-connectivity-coefficient"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "脉冲注入偶极示踪试验",
+      "slug": "dipole-tracer-test",
+      "aliases": [
+        "dipole tracer test",
+        "强制梯度示踪试验"
+      ],
+      "purpose": "在注水-抽水双井间脉冲注入保守示踪剂，监测浓度突破曲线以反演运移参数。",
+      "workflow": "选择注入-抽水孔对→恒定速率注抽→脉冲注入NaCl溶液→在抽水孔不同深度记录TDS→拟合归一化质量通量解析解。",
+      "inputs": [
+        "注入示踪剂浓度和体积",
+        "注/抽速率",
+        "距离"
+      ],
+      "outputs": [
+        "达西速度u",
+        "纵向弥散度α_L",
+        "等效通道长度X",
+        "回收率R_M"
+      ],
+      "assumptions": [
+        "一维移流-弥散为主",
+        "忽略基质扩散",
+        "保守示踪剂"
+      ],
+      "strengths": [
+        "可获得单通道/多通道参数"
+      ],
+      "limitations": [
+        "混合多个通道信息",
+        "短时试验忽略长期效应"
+      ],
+      "related_concepts": [
+        "equivalent-flow-channel-model"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "等效流动通道解析反演",
+      "slug": "equivalent-channel-inversion",
+      "aliases": [
+        "equivalent channel model inversion"
+      ],
+      "purpose": "通过拟合归一化质量通量曲线反演单/多通道的运移参数，评估优先流和弥散。",
+      "workflow": "假设1或2条通道→计算解析突破曲线→最小二乘拟合实测TDS→提取各通道参数→用迂曲度验证合理性。",
+      "inputs": [
+        "归一化质量通量y_i",
+        "井间距"
+      ],
+      "outputs": [
+        "达西速度、弥散度、回收率",
+        "迂曲度"
+      ],
+      "assumptions": [
+        "通道内流速恒定",
+        "各通道独立",
+        "脉冲源可理想化"
+      ],
+      "strengths": [
+        "简单快速",
+        "可鉴别优先流通道"
+      ],
+      "limitations": [
+        "不能处理三个以上通道",
+        "忽略通道间相互作用"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "蒙特卡洛随机裂缝网络生成（3DEC/RJNS3D）",
+      "slug": "monte-carlo-dfn",
+      "aliases": [
+        "Monte Carlo DFN",
+        "stochastic DFN",
+        "3DEC",
+        "RJNS3D"
+      ],
+      "purpose": "根据统计分布（Fisher方向、幂律尺寸、泊松位置）在DEM平台生成三维离散裂缝网络。",
+      "workflow": "定义裂缝产状、尺寸、密度分布→随机抽样生成裂缝→在3DEC或RJNS3D中构建几何→验证与露头/钻孔数据一致性。",
+      "inputs": [
+        "Fisher参数 k, θ0, φ0",
+        "幂律指数α, lmin, lmax",
+        "体积密度lv"
+      ],
+      "outputs": [
+        "三维裂缝网络几何",
+        "裂缝迹线图"
+      ],
+      "assumptions": [
+        "裂缝为圆盘形",
+        "中心点泊松过程",
+        "统计分布独立"
+      ],
+      "strengths": [
+        "可生成多种统计性网络",
+        "计算效率较高"
+      ],
+      "limitations": [
+        "忽略裂缝成因关联",
+        "泊松假设可能遗漏丛集"
+      ],
+      "related_concepts": [
+        "discrete-fracture-network"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "PCAS程序图像处理",
+      "slug": "pcas-image-processing",
+      "aliases": [
+        "PCAS",
+        "Particle and Crack Analysis Software"
+      ],
+      "purpose": "从裂缝迹线图中自动提取几何参数，如方位、长度、中心位置等。",
+      "workflow": "设置图像分辨率、颜色、透明度→PCAS识别裂缝迹线→输出23个几何特征参数。",
+      "inputs": [
+        "数字裂缝图像",
+        "像素参数"
+      ],
+      "outputs": [
+        "裂缝方向统计",
+        "迹长分布",
+        "中点坐标"
+      ],
+      "assumptions": [
+        "裂缝与背景对比度足够",
+        "图像预处理充分"
+      ],
+      "strengths": [
+        "自动化处理大量图像"
+      ],
+      "limitations": [
+        "提取精度受图像质量影响"
+      ],
+      "related_concepts": [
+        "image-based-feature-extraction"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre"
+      ]
+    },
+    {
+      "name": "BP神经网络",
+      "slug": "bp-neural-network",
+      "aliases": [
+        "BP neural network",
+        "Back Propagation"
+      ],
+      "purpose": "从二维裂缝统计参数反演三维DFN模型参数（k, α等）。",
+      "workflow": "构建3层或4层BP网络→用合成数据训练（60/20/20分割）→优化隐藏神经元数和学习步长→输入23参数预测6参数。",
+      "inputs": [
+        "23个裂缝图像特征参数"
+      ],
+      "outputs": [
+        "Fisher k, 长度指数α, lmin, lmax, Hbottom, Htop"
+      ],
+      "assumptions": [
+        "训练数据覆盖目标分布",
+        "映射为一一对应"
+      ],
+      "strengths": [
+        "泛化能力强，预测误差<30%"
+      ],
+      "limitations": [
+        "训练需大量合成数据",
+        "可能过拟合"
+      ],
+      "related_concepts": [
+        "neural-network-parameter-inversion"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre"
+      ]
+    },
+    {
+      "name": "CC神经网络（Cascade Correlation）",
+      "slug": "cc-neural-network",
+      "aliases": [
+        "Cascade Correlation neural network",
+        "CC神经网络"
+      ],
+      "purpose": "自动增长网络结构，用于裂缝参数反演，避免手动确定隐藏层神经元数。",
+      "workflow": "从最小网络开始→训练→若性能不满足动态增加神经元→重复直至收敛。",
+      "inputs": [
+        "23个裂缝特征"
+      ],
+      "outputs": [
+        "DFN参数"
+      ],
+      "assumptions": [
+        "CC能逼近所需函数"
+      ],
+      "strengths": [
+        "自动结构优化",
+        "收敛稳定"
+      ],
+      "limitations": [
+        "可能比BP竞争性能差（某些组）"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre"
+      ]
+    },
+    {
+      "name": "分层建模策略",
+      "slug": "stratified-modeling-strategy",
+      "aliases": [
+        "stratified modeling",
+        "分层建模"
+      ],
+      "purpose": "按岩性单元分别建立和反演裂缝模型以捕捉空间非均质性。",
+      "workflow": "划分岩性单元→每单元独立生成合成数据→训练专属神经网络→选择每单元最优模型→拼合总DFN。",
+      "inputs": [
+        "岩性边界",
+        "各单元裂缝统计"
+      ],
+      "outputs": [
+        "分单元DFN参数"
+      ],
+      "assumptions": [
+        "岩性界面为裂缝特征突变带",
+        "各层独立"
+      ],
+      "strengths": [
+        "显著降低反演误差（>18%）"
+      ],
+      "limitations": [
+        "层内均匀假设",
+        "需要足够合成数据"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre"
+      ]
+    },
+    {
+      "name": "网格搜索超参数优化",
+      "slug": "grid-search-hyperparameter",
+      "aliases": [
+        "grid search"
+      ],
+      "purpose": "为神经网络寻找最优隐藏神经元数和学习步长等超参数。",
+      "workflow": "定义参数网格→穷举训练→评估验证集误差→选择最佳组合。",
+      "inputs": [
+        "超参数范围",
+        "训练/验证数据"
+      ],
+      "outputs": [
+        "最优超参数组合"
+      ],
+      "assumptions": [
+        "网格间插值有效"
+      ],
+      "strengths": [
+        "简单可并行"
+      ],
+      "limitations": [
+        "计算开销随维度指数增长"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre"
+      ]
+    },
+    {
+      "name": "圆形扫描窗法测量裂缝强度P21",
+      "slug": "circular-scanline-method",
+      "aliases": [
+        "circular scanline method",
+        "scanline"
+      ],
+      "purpose": "通过在图像上放置圆形采样窗，计算单位面积内裂缝总长度（P21）或数量（P20）。",
+      "workflow": "定义采样圆半径→系统覆盖图像→统计每个圆内裂缝长度→计算均值及标准差。",
+      "inputs": [
+        "裂缝迹线图",
+        "圆半径"
+      ],
+      "outputs": [
+        "裂缝强度P21"
+      ],
+      "assumptions": [
+        "圆形窗无偏采样",
+        "裂缝迹线无重叠"
+      ],
+      "strengths": [
+        "操作简单，广泛使用"
+      ],
+      "limitations": [
+        "边界效应需校正"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "对数正态分布拟合评估裂缝长度",
+      "slug": "log-normal-fitting",
+      "aliases": [
+        "log-normal fitting",
+        "对数正态分布拟合"
+      ],
+      "purpose": "用对数正态分布拟合裂缝迹长直方图，获得μ和σ参数，用于定量比较生成网络与真实网络。",
+      "workflow": "测量所有裂缝长度→绘制直方图→用修正的对数正态分布函数拟合→提取μ, σ。",
+      "inputs": [
+        "裂缝长度测量值"
+      ],
+      "outputs": [
+        "μ, σ",
+        "拟合优度"
+      ],
+      "assumptions": [
+        "迹线长度服从对数正态分布（因低端截断）"
+      ],
+      "strengths": [
+        "简单直观"
+      ],
+      "limitations": [
+        "三维尺寸分布可能不同"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "平行板模型估算裂缝渗透率",
+      "slug": "parallel-plate-permeability",
+      "aliases": [
+        "parallel plate model",
+        "cubic law"
+      ],
+      "purpose": "采用恒定开度 b，利用立方定律 k=b²/12 估算裂缝网络渗透率。",
+      "workflow": "假设每个裂缝开度恒定→计算每个单元渗透率→通过网格化求取渗透率张量。",
+      "inputs": [
+        "裂缝网络几何",
+        "恒定开度 b"
+      ],
+      "outputs": [
+        "等效渗透率 k"
+      ],
+      "assumptions": [
+        "裂缝壁光滑平行",
+        "流动为层流"
+      ],
+      "strengths": [
+        "计算快速"
+      ],
+      "limitations": [
+        "忽略粗糙度和接触面积",
+        "不适用变开度"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "FracPaQ工具箱",
+      "slug": "fracpaq-toolbox",
+      "aliases": [
+        "FracPaQ",
+        "Fracture Pattern Quantification"
+      ],
+      "purpose": "用于裂缝网络定量分析，包括方向玫瑰图、长度分布和连通性等统计。",
+      "workflow": "导入裂缝迹线→在Matlab中运行FracPaQ→输出统计图表。",
+      "inputs": [
+        "裂缝段坐标"
+      ],
+      "outputs": [
+        "玫瑰图",
+        "长度直方图",
+        "强度"
+      ],
+      "assumptions": [
+        "裂缝已数字化为线段"
+      ],
+      "strengths": [
+        "集成多种统计，使用便捷"
+      ],
+      "limitations": [
+        "二维分析"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "基于复剪切波变换的自动化裂缝迹线检测",
+      "slug": "complex-shearlet-detection",
+      "aliases": [
+        "complex shearlet transform",
+        "复剪切波检测"
+      ],
+      "purpose": "从灰度裂缝图像中自动提取裂缝骨架，生成矢量裂缝迹线。",
+      "workflow": "对图像进行复剪切波分解→多尺度边缘检测→阈值分割（Otsu）→细化骨架→导出线段。",
+      "inputs": [
+        "裂缝灰度图"
+      ],
+      "outputs": [
+        "裂缝迹线段"
+      ],
+      "assumptions": [
+        "裂缝与背景对比鲜明"
+      ],
+      "strengths": [
+        "自动、多尺度"
+      ],
+      "limitations": [
+        "可能漏检或过分割"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "幂律MLE拟合（裂缝长度）",
+      "slug": "power-law-mle-fitting",
+      "aliases": [
+        "MLE power-law fitting",
+        "最大似然估计幂律拟合"
+      ],
+      "purpose": "用最大似然法估计裂缝长度幂律分布的标度指数α和最小长度xmin。",
+      "workflow": "设定xmin候选→计算似然函数→选择使似然最大或KS统计量最小的xmin→提取α。",
+      "inputs": [
+        "裂缝长度数据"
+      ],
+      "outputs": [
+        "α, xmin",
+        "拟合概率"
+      ],
+      "assumptions": [
+        "数据服从截断幂律分布"
+      ],
+      "strengths": [
+        "参数估计稳健"
+      ],
+      "limitations": [
+        "对小样本有偏"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "裂缝骨架化与距离变换（开度提取）",
+      "slug": "skeletonization-distance-transform",
+      "aliases": [
+        "skeletonization",
+        "distance transform",
+        "骨架化"
+      ],
+      "purpose": "从二值裂缝图像中获取骨架，再通过距离变换计算每个像素处的裂缝开度。",
+      "workflow": "裂缝二值图像→细化骨架→对骨架像素应用欧氏距离变换→记录开度值。",
+      "inputs": [
+        "裂缝二值图"
+      ],
+      "outputs": [
+        "开度分布",
+        "平均开度",
+        "变异系数CV"
+      ],
+      "assumptions": [
+        "裂缝可细化为单像素宽线条",
+        "距离变换反映真实开度"
+      ],
+      "strengths": [
+        "可提取空间变异性"
+      ],
+      "limitations": [
+        "对二值化敏感"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "盒计数分形维数计算",
+      "slug": "box-counting-fractal-dimension",
+      "aliases": [
+        "box-counting",
+        "Db"
+      ],
+      "purpose": "通过对裂缝网络图像（二维）或点云（三维）进行不同尺度的盒子覆盖，计算分形维数。",
+      "workflow": "生成多尺度网格→统计含裂缝的盒子数N(ε)→log(N) vs log(1/ε)斜率→得到分形维数。",
+      "inputs": [
+        "裂缝图像/点云"
+      ],
+      "outputs": [
+        "Db, D_3D"
+      ],
+      "assumptions": [
+        "自相似性成立",
+        "足够的尺度范围"
+      ],
+      "strengths": [
+        "应用广泛"
+      ],
+      "limitations": [
+        "对阈值敏感",
+        "单一维数表征不完全"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "CT扫描三维裂缝重建与分形分析",
+      "slug": "ct-3d-reconstruction",
+      "aliases": [
+        "Micro-CT",
+        "X-ray CT",
+        "医用CT",
+        "3D reconstruction"
+      ],
+      "purpose": "利用X射线CT扫描获得岩石内部结构，通过Mimics等软件重建三维裂缝网络，计算分形维数。",
+      "workflow": "对岩样进行CT扫描→产生系列切片→阈值分割提取裂缝→三维渲染→盒计数法计算D_3D。",
+      "inputs": [
+        "CT扫描参数（电压、切片厚度等）"
+      ],
+      "outputs": [
+        "三维裂缝分布",
+        "D_3D",
+        "裂缝开度"
+      ],
+      "assumptions": [
+        "裂缝与基质具有密度差异",
+        "切片厚度能捕捉目标裂缝"
+      ],
+      "strengths": [
+        "非破坏性三维表征"
+      ],
+      "limitations": [
+        "仅能解析高于分辨率的裂缝"
+      ],
+      "sources": [
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "扫描电镜（SEM）表面裂缝形貌观察",
+      "slug": "sem-fracture-observation",
+      "aliases": [
+        "SEM",
+        "Scanning Electron Microscope"
+      ],
+      "purpose": "高倍观察热冲击后岩石表面的微裂纹形态、宽度和分叉特征。",
+      "workflow": "制备小块样品→镀金或碳→在设定加速电压下观察→拍摄图像。",
+      "inputs": [
+        "处理后岩样表面"
+      ],
+      "outputs": [
+        "SEM图像",
+        "裂纹宽度、模式"
+      ],
+      "assumptions": [
+        "表面代表整体损伤特征"
+      ],
+      "strengths": [
+        "高分辨率"
+      ],
+      "limitations": [
+        "二维表面观察",
+        "样品制备可能引入损伤"
+      ],
+      "sources": [
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli"
+      ]
+    },
+    {
+      "name": "声发射全程监测",
+      "slug": "ae-monitoring",
+      "aliases": [
+        "Acoustic Emission monitoring"
+      ],
+      "purpose": "实时记录单轴压缩过程中岩石微破裂产生的弹性波，分析损伤演化和破坏前兆。",
+      "workflow": "在试样压头附近安装AE探头→开始加载→连续采集AE波形/参数→提取累积能量和计数。",
+      "inputs": [
+        "加载速率",
+        "探头布置"
+      ],
+      "outputs": [
+        "AE累计能量/计数",
+        "能量率",
+        "定位事件"
+      ],
+      "assumptions": [
+        "AE事件对应微裂纹",
+        "信号衰减可忽略"
+      ],
+      "strengths": [
+        "动态实时监测"
+      ],
+      "limitations": [
+        "定位精度受布设限制"
+      ],
+      "sources": [
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli"
+      ]
+    },
+    {
+      "name": "峰前脆性指数能量法计算",
+      "slug": "pre-peak-brittleness-index",
+      "aliases": [
+        "B_pre",
+        "brittleness index"
+      ],
+      "purpose": "基于应力-应变曲线，由强化模量H和杨氏模量E计算峰前脆性，评价热损伤对脆性的影响。",
+      "workflow": "从应力-应变曲线提取E和峰前强化模量H→计算B_pre=(E-H)/H。",
+      "inputs": [
+        "单轴压缩应力-应变曲线"
+      ],
+      "outputs": [
+        "峰前脆性指数"
+      ],
+      "assumptions": [
+        "岩石弹脆性行为适合此定义"
+      ],
+      "strengths": [
+        "简单"
+      ],
+      "limitations": [
+        "对曲线平滑敏感"
+      ],
+      "sources": [
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli"
+      ]
+    },
+    {
+      "name": "力学参数归一化分析法",
+      "slug": "normalized-analysis",
+      "aliases": [
+        "normalization analysis",
+        "归一化分析"
+      ],
+      "purpose": "将不同产地、不同冷却条件下花岗岩的力学参数除以室温初始值，消除批次差异进行趋势对比。",
+      "workflow": "收集已发表实验数据→提取室温参考值→计算归一化参数→绘制随温度/循环次数变化曲线→拟合经验公式。",
+      "inputs": [
+        "多文献力学数据",
+        "温度/循环条件"
+      ],
+      "outputs": [
+        "归一化曲线",
+        "分段线性公式"
+      ],
+      "assumptions": [
+        "各产地花岗岩在室温下性能相当",
+        "冷却条件可比较"
+      ],
+      "strengths": [
+        "可整合大范围数据"
+      ],
+      "limitations": [
+        "忽略岩性差异",
+        "数据量限制信度"
+      ],
+      "sources": [
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "高温遇水冷却试验",
+      "slug": "water-cooling-test",
+      "aliases": [
+        "water cooling test",
+        "遇水冷却"
+      ],
+      "purpose": "将加热岩石迅速浸入水中冷却，模拟钻井液接触热储层的情景，评估热冲击损伤。",
+      "workflow": "加热至目标温度→恒温→快速浸入水中→记录冷却曲线→测试力学/物理性质。",
+      "inputs": [
+        "加热温度",
+        "冷却水温"
+      ],
+      "outputs": [
+        "冷却速率",
+        "力学参数劣化程度"
+      ],
+      "assumptions": [
+        "水冷可代表钻井液热冲击"
+      ],
+      "strengths": [
+        "可实现快速冷却"
+      ],
+      "limitations": [
+        "忽略化学作用",
+        "小尺寸样品"
+      ],
+      "sources": [
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "液氮（LN2）冷却试验",
+      "slug": "ln2-cooling-test",
+      "aliases": [
+        "LN2 cooling",
+        "液氮冷却"
+      ],
+      "purpose": "利用-196°C液氮对高温花岗岩进行极速冷却，研究超低温热冲击致裂效果。",
+      "workflow": "加热至400°C→取出后立即浸入液氮或喷淋→观察温度剧降→测试渗透率等。",
+      "inputs": [
+        "初始温度",
+        "液氮量"
+      ],
+      "outputs": [
+        "冷却速率",
+        "裂缝网络复杂性",
+        "渗透率增幅"
+      ],
+      "assumptions": [
+        "液氮沸腾可忽略局部热传递差异"
+      ],
+      "strengths": [
+        "极高的冷却速率，产生复杂裂缝",
+        "EGS储层改造潜力"
+      ],
+      "limitations": [
+        "成本高",
+        "现场应用技术不成熟"
+      ],
+      "sources": [
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "X射线CT岩石节理三维表面重构",
+      "slug": "x-ray-ct-joint-surface-reconstruction",
+      "aliases": [
+        "X-ray CT joint surface reconstruction",
+        "CT节理重构"
+      ],
+      "purpose": "从深层岩心CT数据提取闭合节理界面，生成点云并重构三维表面形貌。",
+      "workflow": "CT扫描岩心→3D体素渲染→识别密度差异界面→生成点云→网格化（0.1 mm）→提取表面高度数据。",
+      "inputs": [
+        "CT体素数据",
+        "节理位置"
+      ],
+      "outputs": [
+        "节理表面点云",
+        "高度图"
+      ],
+      "assumptions": [
+        "闭合节理密度与围岩有差异"
+      ],
+      "strengths": [
+        "唯一性提取闭合节理形貌"
+      ],
+      "limitations": [
+        "受CT分辨率和密度差限制"
+      ],
+      "sources": [
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "多方向JRC各向异性测量法",
+      "slug": "multi-direction-jrc",
+      "aliases": [
+        "multi-direction JRC measurement",
+        "多方向JRC"
+      ],
+      "purpose": "在18个方向上提取节理轮廓线计算JRC，分析粗糙度各向异性。",
+      "workflow": "固定点云网格0.1 mm→每隔10°提取一条轮廓（间距2.5 mm）→用Li & Zhang公式计算每个方向的JRC→剔除异常值取平均。",
+      "inputs": [
+        "节理点云",
+        "轮廓参数"
+      ],
+      "outputs": [
+        "方向性JRC序列",
+        "玫瑰图"
+      ],
+      "assumptions": [
+        "Li & Zhang公式不受采样间距影响",
+        "各方向轮廓代表性足够"
+      ],
+      "strengths": [
+        "全面评估各向异性"
+      ],
+      "limitations": [
+        "仅18个方向可能遗漏细节"
+      ],
+      "sources": [
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "最小二乘椭圆拟合确定粗糙主方向",
+      "slug": "ellipse-fitted-jrc-direction",
+      "aliases": [
+        "ellipse fitting for JRC direction",
+        "椭圆拟合"
+      ],
+      "purpose": "对方向性JRC数据进行最小二乘椭圆拟合，精确提取最大/最小JRC值及其方向。",
+      "workflow": "将方向角与JRC值转为笛卡尔坐标→最小二乘法拟合椭圆方程→求解半轴长度和方向。",
+      "inputs": [
+        "方向角-JRC数据对"
+      ],
+      "outputs": [
+        "最大JRC值及方向",
+        "最小JRC值"
+      ],
+      "assumptions": [
+        "JRC各向异性可用椭圆近似"
+      ],
+      "strengths": [
+        "直接给出主方向"
+      ],
+      "limitations": [
+        "非线性强时偏差大"
+      ],
+      "sources": [
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "基于分形的渗透性增强率（PER）模型",
+      "slug": "fractal-per-model",
+      "aliases": [
+        "fractal PER model",
+        "分形渗透率模型"
+      ],
+      "purpose": "将裂缝迹长分形维数、迂曲分形维数和体积应变等参数代入公式，计算各向异性PER。",
+      "workflow": "提取三维网络各截面裂缝迹线→计算各自的分形维数→代入式(23)→得到不同方向PER。",
+      "inputs": [
+        "裂缝迹长分形维数Df",
+        "迂曲维数DT, Dl",
+        "体积应变εv"
+      ],
+      "outputs": [
+        "PER_x, PER_y, PER_z"
+      ],
+      "assumptions": [
+        "各维数代表对应方向的有效值",
+        "裂缝宽度与长度成比例"
+      ],
+      "strengths": [
+        "从分形统计直接外推渗透增强"
+      ],
+      "limitations": [
+        "未完全耦合多分形维数",
+        "基于等效二维截面"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "投影法计算一维连通性",
+      "slug": "projection-connectivity",
+      "aliases": [
+        "projection connectivity",
+        "一维连通性χ"
+      ],
+      "purpose": "将二维孔壁图像向量化投影到一维，通过连通段占比评估裂缝连通性。",
+      "workflow": "孔壁图像二值化→沿钻孔方向投影为一维数组→计算裂缝连通段总长/钻孔长度。",
+      "inputs": [
+        "孔壁二值图像"
+      ],
+      "outputs": [
+        "χ"
+      ],
+      "assumptions": [
+        "投影方向与钻孔一致"
+      ],
+      "strengths": [
+        "快速"
+      ],
+      "limitations": [
+        "仅一维方向连通性"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "RJNS3D工具箱",
+      "slug": "rjns3d-toolbox",
+      "aliases": [
+        "RJNS3D",
+        "Rock Mass Joint Network Simulation 3D"
+      ],
+      "purpose": "基于蒙特卡洛方法构建工程尺度三维离散裂缝网络模型。",
+      "workflow": "输入裂缝统计参数→进行均质区划分→Dips分组和Fisher校正→拟合间距和尺寸分布→生成三维椭圆裂缝模型。",
+      "inputs": [
+        "裂缝产状、间距、迹长",
+        "采样窗口信息"
+      ],
+      "outputs": [
+        "三维裂缝网络"
+      ],
+      "assumptions": [
+        "裂缝为椭圆",
+        "中心泊松分布"
+      ],
+      "strengths": [
+        "提供完整建模流程"
+      ],
+      "limitations": [
+        "依赖统计假设"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "Dips软件裂缝分组",
+      "slug": "dips-fracture-grouping",
+      "aliases": [
+        "Dips",
+        "下半球投影"
+      ],
+      "purpose": "利用下半球施密特投影和聚类分析对裂缝方位进行分组，识别优势组。",
+      "workflow": "导入裂缝产状→生成极点图→自动或手动聚类→每个组拟合Fisher分布。",
+      "inputs": [
+        "倾向/倾角数据"
+      ],
+      "outputs": [
+        "优势组数",
+        "平均方向",
+        "Fisher k"
+      ],
+      "assumptions": [
+        "每组服从Fisher分布"
+      ],
+      "strengths": [
+        "可视化清晰"
+      ],
+      "limitations": [
+        "三组以上复杂分布可能重叠"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "FracGen（基于SinGAN）",
+      "slug": "fracgen",
+      "aliases": [
+        "FracGen",
+        "SinGAN-based fracture generation"
+      ],
+      "purpose": "从单张露头裂缝图像学习，通过多尺度GAN金字塔重建和升尺度裂缝网络。",
+      "workflow": "图像数字化→构建图像金字塔（降采样因子1.2）→从最粗尺度训练GAN→逐层训练到原尺度→生成不同尺寸图像。",
+      "inputs": [
+        "单张裂缝二值图像"
+      ],
+      "outputs": [
+        "多尺度裂缝图像",
+        "统计指标"
+      ],
+      "assumptions": [
+        "图像内部块重复特性",
+        "二值化/骨架化预处理保留信息"
+      ],
+      "strengths": [
+        "无需参数化，保留复杂拓扑"
+      ],
+      "limitations": [
+        "仅二维，需要二值化丢失开度"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "Upscaling-GAN框架",
+      "slug": "upscaling-gan-framework",
+      "aliases": [
+        "Upscaling-GAN",
+        "AI-Geo upscaling"
+      ],
+      "purpose": "直接从灰度裂缝图像学习，通过补丁拼接生成任意尺寸的大尺度裂缝网络，同时保留开度空间变异性。",
+      "workflow": "阶段1：训练GAN（生成器+双PatchGAN判别器，hinge损失+梯度惩罚）→阶段2：补丁级联生成大图，用局部填充消除接缝。",
+      "inputs": [
+        "单张500×500灰度裂缝图像"
+      ],
+      "outputs": [
+        "任意尺寸裂缝图像（灰度）"
+      ],
+      "assumptions": [
+        "补丁可代表整体统计",
+        "局部填充实现无缝"
+      ],
+      "strengths": [
+        "保留开度变异性，内存高效",
+        "无需二值化预处理"
+      ],
+      "limitations": [
+        "二维，单图训练泛化能力待验证"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "双PatchGAN判别器",
+      "slug": "dual-patchgan",
+      "aliases": [
+        "Hybrid-D",
+        "dual PatchGAN"
+      ],
+      "purpose": "通过标准卷积和空洞卷积双分支增强多尺度感受野，提高生成裂缝质量。",
+      "workflow": "每个输入块同时进入两个分支→输出各自判别结果→合并损失。",
+      "inputs": [
+        "生成/真实图像块"
+      ],
+      "outputs": [
+        "真/假概率"
+      ],
+      "assumptions": [
+        "空洞卷积不丢失特征"
+      ],
+      "strengths": [
+        "提升训练稳定性"
+      ],
+      "limitations": [
+        "参数增加"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "hinge损失+梯度惩罚",
+      "slug": "hinge-loss-gradient-penalty",
+      "aliases": [
+        "hinge loss",
+        "gradient penalty"
+      ],
+      "purpose": "采用非饱和hinge损失和梯度惩罚训练GAN，避免梯度消失并提高生成图像真实性。",
+      "workflow": "判别器使用hinge损失，生成器使用负判别器输出，附加梯度惩罚项（λ=10）。",
+      "inputs": [
+        "判别器输出",
+        "真实图像"
+      ],
+      "outputs": [
+        "损失值"
+      ],
+      "assumptions": [
+        "损失函数适合裂缝生成任务"
+      ],
+      "strengths": [
+        "训练稳定，生成质量高"
+      ],
+      "limitations": [
+        "需调节λ"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "局部填充（Local padding）",
+      "slug": "local-padding",
+      "aliases": [
+        "local padding",
+        "局部填充"
+      ],
+      "purpose": "在大图生成时，用已生成补丁的边缘像素作为下一补丁的部分输入，实现无缝拼接。",
+      "workflow": "对当前待生成补丁，取相邻已生成补丁的边界像素，填入噪声输入图的对应局部填充区域。",
+      "inputs": [
+        "相邻补丁像素"
+      ],
+      "outputs": [
+        "无缝拼接图像"
+      ],
+      "assumptions": [
+        "边界相似性可保证拼接连续性"
+      ],
+      "strengths": [
+        "消除拼接痕迹"
+      ],
+      "limitations": [
+        "长程结构一致性未验证"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "自注意力机制（Self-attention）用于裂缝生成",
+      "slug": "self-attention-mechanism",
+      "aliases": [
+        "self-attention",
+        "self-attention module"
+      ],
+      "purpose": "嵌入生成器，捕捉裂缝的长距离依赖，避免生成裂缝断开或杂乱。",
+      "workflow": "在ResBlock后添加自注意力层，计算注意力图，重新加权特征。",
+      "inputs": [
+        "特征图"
+      ],
+      "outputs": [
+        "增强特征图"
+      ],
+      "assumptions": [
+        "远距离依赖对裂缝连续性重要"
+      ],
+      "strengths": [
+        "提高长裂缝连贯性"
+      ],
+      "limitations": [
+        "显存占用较高"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "裂缝开度自动提取（骨架化+距离变换）",
+      "slug": "aperture-extraction",
+      "aliases": [
+        "aperture extraction",
+        "开度自动提取"
+      ],
+      "purpose": "在不进行二值化训练的情况下，从灰度生成图像中提取空间变化的裂缝开度。",
+      "workflow": "对生成图像进行自适应二值化→骨架化→距离变换→计算每个骨架像素的开度。",
+      "inputs": [
+        "裂缝灰度图像"
+      ],
+      "outputs": [
+        "开度图",
+        "开度统计"
+      ],
+      "assumptions": [
+        "灰度与开度正相关"
+      ],
+      "strengths": [
+        "保留了开度变异性"
+      ],
+      "limitations": [
+        "提取误差取决于图像质量"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim": "热裂纹演化分为潜伏期、快速生长期和饱和期三个阶段，可用改进的指数型密度模型描述。",
+      "slug": "thermal-crack-three-stages",
+      "evidence": "在红砂岩PFC 2D模拟中，25–800 °C 加热条件下裂纹密度呈现先慢后快再饱和的三阶段特征；模型ρ_crack(T)=ρ_0+a(T−T_0)^b exp(c(T−T_0)/(T_m−T_0)) 拟合 R²=0.976。",
+      "condition": "红砂岩，加热速率5 °C/min，温度25–800 °C，矿物为石英和长石。",
+      "limitation": "模型参数（a=2.47×10⁻³, b=3.82, c=1.65）需针对不同岩性重新标定；二维模拟忽略三维效应。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+          "locator": "pp. 8-8"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "800 °C 热损伤导致动态强度降至室温值的40%，动态断裂韧度降至30%，动态应力强度因子增加67%，临界能量释放率降低46%。",
+      "slug": "thermal-damage-strength-drop",
+      "evidence": "FDEM-SHTB 模拟红砂岩，冲击速度1–4 m/s，800 °C 动态强度比0.4，K_d 由1.12增至1.87 MPa·m¹/²，G_c降低46%。实验误差±8%。",
+      "condition": "红砂岩 SHTB 动态拉伸，温度800 °C，冲击速度1–4 m/s。",
+      "limitation": "应变率效应采用解耦DIF近似，未考虑热软化与速率硬化全耦合；二维模型。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+          "locator": "pp. 34-34"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "热损伤使动态增强因子DIF从25 °C 时的1.0–2.2 降至800 °C 时的1.0–1.3，应变率敏感性衰减。",
+      "slug": "dif-thermal-attenuation",
+      "evidence": "FDEM-SHTB 模拟红砂岩，DIF随温度升高显著减小，高应变率下影响更明显。",
+      "condition": "红砂岩 SHTB 拉伸，加热至800 °C。",
+      "limitation": "DIF采用解耦模型，未考虑热-速率耦合效应；高应变率（>10³ s⁻¹）需验证。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+          "locator": "pp. 1-1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "热-力耦合下能量分配从弹性储存（75%）转向断裂耗散（30%），导致破坏模式由单裂纹转为碎裂网络。",
+      "slug": "energy-shift-fragmentation",
+      "evidence": "PFC-FDEM 模拟显示弹性能比例由75%降至35%，断裂能由5%升至30%。",
+      "condition": "热损伤红砂岩，冲击速度1–4 m/s。",
+      "limitation": "二维模型，未考虑三维效应和围压。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+          "locator": "pp. 1-1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "裂纹扩展速度达0.6倍剪切波速时触发多裂纹并行扩展的临界现象。",
+      "slug": "critical-velocity-multi-cracking",
+      "evidence": "FDEM动态模拟中观测到裂纹扩展速度达0.6cs时，单裂纹加速过渡到多裂纹。",
+      "condition": "FDEM动态模拟，均质化模型。",
+      "limitation": "实际岩石非均质性和应力波传播复杂性可能改变阈值。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+          "locator": "pp. 30-30"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "裂纹长度优化算法可保持拓扑不变，减少总长度13.18%，计算效率提升35%，且优化后长度与热应力相关系数r=0.5253。",
+      "slug": "crack-length-optimization-reduction",
+      "evidence": "基于非均匀温度场和Weibull分布的优化算法，总长度减少13.18%，长度分布改变，计算时间缩短35%。",
+      "condition": "裂纹密度ρ<0.3 mm⁻¹，温度T<0.6Tm，非均匀温度场。",
+      "limitation": "线性叠加假设在高密度或高温时误差>15%。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+          "locator": "pp. 22-24"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "PFC-FDEM 跨尺度映射在保留裂纹网络拓扑、密度、方向分布和分形特征前提下，减少裂纹数量65%以上，计算效率提升约35%。",
+      "slug": "pfc-fdem-mapping-efficiency",
+      "evidence": "映射后裂纹总数减少>65%，FDEM计算效率提升35%，能量一致性验证通过（|ΔU|/U ≤ 5%）。",
+      "condition": "红砂岩，25–800 °C，PFC-FDEM耦合。",
+      "limitation": "二维映射，能量校正因子线性近似。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在北山花岗岩中，通过Slug干扰试验的HCC矩阵可量化钻孔间水力连通性的非均质和各向异性。",
+      "slug": "hcc-anisotropy",
+      "evidence": "HCC矩阵不对称，中心孔A2-3总HCC=3.60最高，A2-5仅0.77；自然梯度示踪揭示路径A2-5→A2-3→A2-1。",
+      "condition": "浅层花岗岩，多孔瞬时试验，无压含水层假设。",
+      "limitation": "未封隔，可能混合多裂隙响应；样本量小。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo",
+          "locator": "pp. 5-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "等效流动通道模型反演偶极示踪数据可有效获得裂隙岩体中单/双通道的达西速度、弥散度等参数，且R²>0.85。",
+      "slug": "equivalent-channel-r2",
+      "evidence": "脉冲注入偶极试验拟合10组数据，R²>0.85，得到达西速度0.064–0.209 m/h，弥散度0.083–0.365 m。",
+      "condition": "保守示踪剂NaCl，短时强制梯度，忽略基质扩散。",
+      "limitation": "仅单/双通道假设，不适用于多分支复杂网络。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo",
+          "locator": "pp. 9"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "裂隙迂曲度低于1.5指示单通道优先流，高于1.5提示多通道弥散主导运移。",
+      "slug": "preferential-flow-tortuosity",
+      "evidence": "单通道（A2-3与A2-1等）迂曲度<1.2，双通道至少一条>1.5；与文献推荐范围1.1–3.0吻合。",
+      "condition": "已知等效通道长度与井间距，花岗岩裂隙。",
+      "limitation": "迂曲度阈值基于该场地，外推需验证。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo",
+          "locator": "pp. 9-10"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "纵向弥散度随流径长度增加而增大，与多孔介质标度律一致。",
+      "slug": "dispersivity-scale-relationship",
+      "evidence": "偶极示踪反演的α_L随等效通道长度增加，与Gelhar等, Stichler等汇总数据趋势吻合。",
+      "condition": "花岗岩裂隙，移流-弥散为主。",
+      "limitation": "未考虑非Fickian迁移或长时间尾。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo",
+          "locator": "pp. 10, Fig. 11"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "增大Fisher分布密度指数k可使裂缝方位从近似均匀变为围绕平均方向强烈集中。",
+      "slug": "fisher-k-orientation-control",
+      "evidence": "数值模拟参数分析：k增大时裂缝方位集中度增加。",
+      "condition": "Fisher分布模型适用。",
+      "limitation": "不适用于多峰或各向异性强烈的组。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+          "locator": "pp. 2-3"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "分层建模策略（不同岩性单元单独建模）可将DFN参数反演误差降低18.4%~55.6%。",
+      "slug": "stratified-inversion-reduction",
+      "evidence": "大渡河岸坡，闪长岩四层BP δ*=18.4%，碎裂岩三层BP 8.0%，花岗岩CC 10.3%，均比单一模型显著降低。",
+      "condition": "岩性单元间裂缝几何特征差异显著，有充足平硐数据。",
+      "limitation": "仅单一平硐验证，推广需其他数据。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+          "locator": "pp. 1-2, 22-24"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "神经网络反演（BP/CC）训练于625个合成样本，可将二维裂缝统计映射为三维DFN参数，测试集平均相对误差<30%，高程误差<1.2%。",
+      "slug": "neural-inversion-accuracy",
+      "evidence": "三个岩性测试集，k, α, lmin, lmax误差均<30%，Hbottom和Htop误差≤1.23%。",
+      "condition": "合成数据生成采用统一蒙特卡洛框架，平硐数据充足。",
+      "limitation": "仅通过单个平硐验证，二维到三维不确定性存在。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+          "locator": "pp. 17-19"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "裂缝中心泊松分布假设可能遗漏构造丛集，影响渗流和块体稳定性分析。",
+      "slug": "poisson-position-limitation",
+      "evidence": "文中指出泊松分布不能代表构造聚集区。",
+      "condition": "构造影响区域。",
+      "limitation": "局限性声明，无定量数据。",
+      "confidence": "medium",
+      "status": "contested",
+      "sources": [
+        {
+          "paper_id": "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+          "locator": "pp. 24-25"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "天然裂隙介质为双复杂度系统，仅依靠分形维数不足以完全表征其复杂度。",
+      "slug": "fractal-dimension-uniqueness",
+      "evidence": "分形拓扑维数Dt相同的网络具有不同长度序列，而复杂装配参数（l0,P,F,i）可唯一表征。",
+      "condition": "裂隙网络呈现分形特征，主裂隙可识别。",
+      "limitation": "算法基于理想层次结构和一致标度行为，对非层次系统效果待定。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b",
+          "locator": "pp. 7-7"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "基于分形地形理论的FT-DFN模型重建的裂隙长度序列平均绝对误差MAE为0.21–0.71 mm，优于传统幂律建模（MLE或LR）。",
+      "slug": "fractal-topography-mae",
+      "evidence": "在6个CT煤样切片中，FT-DFN的MAE远低于MLE（MAE>1.47）和LR（MAE>2.50）。",
+      "condition": "二维裂隙网络，直线段简化。",
+      "limitation": "三维推广和极端非均质网络未验证。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b",
+          "locator": "pp. 7-8"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "FracGen仅用一张露头图像即可重建和升尺度裂缝网络，裂缝强度、方位和长度分布与实图高度一致（余弦相似度>0.98）。",
+      "slug": "sinGAN-fracture-upscaling",
+      "evidence": "干燥大陆岩露头，方位余弦相似度0.994，长度0.985；升尺度至16m强度稳定（9.76±0.25 m⁻¹）。",
+      "condition": "图像经二值化和骨架化预处理，裂缝网络具有自相似块结构。",
+      "limitation": "仅二维，未考虑开度变异性；依赖于训练图像的统计代表性。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+          "locator": "pp. 10-11"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Upscaling-GAN可直接从灰度图像生成任意尺寸裂缝网络，保留裂缝开度空间变异性（CV≈0.32-0.37），优于常数开度假设。",
+      "slug": "upscaling-gan-aperture-variability",
+      "evidence": "生成图像开度CV为0.32–0.37（原图0.42），长度幂律α≈3.45–3.57，强度1.48–1.92 m⁻¹，与训练图一致。",
+      "condition": "单张500×500图像训练，二维灰度图。",
+      "limitation": "模型在其它裂缝模式上的泛化能力未知，三维未扩展。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai",
+          "locator": "pp. 6-11"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "GAN生成的裂缝网络在保持局部细节和连通性上优于统计匹配的DFN，更接近天然露头。",
+      "slug": "dfn-vs-gan-realism",
+      "evidence": "视觉和定量对比：FracGen网络保留复杂交错和局部密度变化，DFN网络过于规整。",
+      "condition": "单图训练，DFN统计分布匹配。",
+      "limitation": "比较基于二维定性，未进行力学响应验证。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+          "locator": "pp. 15-16"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "采动裂缝网络演化分为快速生长、稳定生长和弱影响三个阶段，分形维数和连通性随之变化。",
+      "slug": "mining-crack-three-stages",
+      "evidence": "平顶山工作面钻孔监测，分形维数在距工作面>70m极慢，30-70m均匀增长，<30m快速饱和。",
+      "condition": "特定煤层地质和开采条件。",
+      "limitation": "基于单一工作面，未考虑微米级裂缝。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+          "locator": "pp. 1, 6-7"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "采动渗透性增强率（PER）呈现“缓慢增长→快速增长→显著下降”序列，峰值可达2490。",
+      "slug": "per-evolution-sequence",
+      "evidence": "基于三维DFN的分形PER模型计算，PER在采动后期急剧下降。",
+      "condition": "以距工作面67.5m为初始状态，PER为相对变化。",
+      "limitation": "模型基于等效二维截面分形维数，未耦合体积应变。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+          "locator": "pp. 17-18"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "采动增强渗透性各向异性强烈：z方向峰值PER是x方向的6.86倍，是y方向的4446.38倍。",
+      "slug": "per-anisotropy-magnitude",
+      "evidence": "基于分形PER模型计算，三个主方向PER差异巨大。",
+      "condition": "本工作面特定应力场和节理组。",
+      "limitation": "PER模型未直接测量三维迂曲维数，外推需谨慎。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+          "locator": "pp. 18"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "液氮（LN₂）冷却使400°C加热花岗岩的渗透率增加5.24倍，分形维数增大到2.48，形成复杂张性裂缝网络。",
+      "slug": "ln2-permeability-increase",
+      "evidence": "共和盆地花岗岩，液氮冷却后渗透率1.31 mD（未处理0.25 mD），三维分形维数2.48。",
+      "condition": "400°C加热，液氮冷却，稳态法围压5 MPa。",
+      "limitation": "小尺寸样品，未模拟长期循环和真实储层应力。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+          "locator": "pp. 5-6, 11-12"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "冷却速率越高，花岗岩热裂缝的三维分形维数越大，裂缝网络越复杂。",
+      "slug": "cooling-rate-fractal-complexity",
+      "evidence": "分形维数：未处理2.43，空气2.24，水2.37，液氮2.48。",
+      "condition": "400°C初始温度，不同冷却介质。",
+      "limitation": "仅比较三种冷却介质，其它超临界流体等未涉。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+          "locator": "pp. 5-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "高温遇水冷却使花岗岩在任何温度下均发生强度劣化，不存在低温平台；800°C时遇水冷却单轴抗压强度降低36.0%。",
+      "slug": "water-cooling-instant-degradation",
+      "evidence": "综述汇总实验数据，遇水冷却σc/σc0 = -0.0009t+0.9976 (R²=0.9716)，无拐点。",
+      "condition": "任意温度遇水冷却，花岗岩。",
+      "limitation": "数据来自汇总不同花岗岩，存在产地差异。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展",
+          "locator": "pp. 5-7"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "循环冷却下岩石损伤主要累积于前5次循环，之后力学参数趋于稳定。",
+      "slug": "cyclic-cooling-damage-saturation",
+      "evidence": "多文献数据，第1次循环后σc、E、σt骤降，循环>5次后变化微小。",
+      "condition": "循环热冲击1~30次，温度250~650°C。",
+      "limitation": "未考虑化学耦合和长期运行。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展",
+          "locator": "pp. 7-9"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "液氮冷却对高温花岗岩强度劣化显著，800°C时单轴抗压强度降幅可达88.5%。",
+      "slug": "ln2-ucs-drastic-drop",
+      "evidence": "综述汇总，σc/σc0=−0.0009t+1.0743 (R²=0.9318)。",
+      "condition": "液氮冷却，温度100~800°C，花岗岩。",
+      "limitation": "液氮数据样本量相对较少。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展",
+          "locator": "pp. 9-12"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "高温自然冷却下，花岗岩单轴抗压强度和弹性模量在300 °C以上线性下降，300°C以下基本不变；抗拉强度转折温度为200°C。",
+      "slug": "ucs-normalized-linear-fit",
+      "evidence": "分段拟合：t>300°C σc/σc0=−0.00123t+1.3619 (R²=0.9772)；E/E0=−0.00148t+1.444 (R²=0.9949)；σt转折200°C。",
+      "condition": "高温自然冷却，花岗岩。",
+      "limitation": "转折温度基于统计，个别花岗岩可能偏移。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展",
+          "locator": "pp. 5-9"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在约4.2 km深花岗岩中，开放与闭合节理的粗糙度参数（平均JRC、Sz、偏度、峰度）高度一致，指示共同起源。",
+      "slug": "deep-jrc-open-closed-similarity",
+      "evidence": "7条节理（5开2合）经CT重构后，JRC平均值相近，最大JRC方向集中~161.2°（std 5.4°）。",
+      "condition": "浦项PX-2井，深度4219–4223 m，节理与取芯角度10–30°。",
+      "limitation": "样本量小（7条），闭合节理仅2条。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using",
+          "locator": "pp. 6-8"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "JRC具有尺度依赖性，在采样面积达到一定阈值后平均JRC收敛，但最大JRC方向在小面积下即已稳定。",
+      "slug": "jrc-anisotropy-convergence",
+      "evidence": "OJ-1收敛面积1600 mm²，OJ-4 6006 mm²，OJ-5 1406 mm²；方向均较早稳定。",
+      "condition": "面向花岗岩节理，点云网格0.1 mm。",
+      "limitation": "指标仅基于Li & Zhang公式的JRC，未比较其他方法。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using",
+          "locator": "pp. 5-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "EGS 储层改造面临工程三难：有效连通、避免热短路和控制诱发地震，三者相互制衡。",
+      "slug": "egs-trilemma",
+      "evidence": "25个全球项目实践表明，三项目标冲突，任何单一技术均无法同时满足。",
+      "condition": "EGS项目，深度3–5 km，温度100–200°C的结晶岩储层。",
+      "limitation": "为概念框架，未进行定量模拟验证。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+          "locator": "section 2.2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "在天然裂缝发育且注入压力未远超σmin时，水力刺激以剪切或混合机制为主，而非纯张裂。",
+      "slug": "shear-mixed-mode-dominance",
+      "evidence": "19个项目的加权判别表明多数成功项目以剪切或混合模式为主导。",
+      "condition": "存在一定发育程度的天然裂缝，注入压力适中。",
+      "limitation": "判别基于公开文献的微震和液压数据，证据强度不一。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+          "locator": "section 3.1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "多级水力刺激可通过空间分割增大有效热交换体积，但其有效性受邻级应力阴影效应制约。",
+      "slug": "multi-stage-complexity",
+      "evidence": "工程案例和概念分析，应力阴影和自支撑裂纹长期导流性未知。",
+      "condition": "高应力结晶岩环境，高温大温差。",
+      "limitation": "缺乏专对EGS的耦合模型，现场验证稀少。",
+      "confidence": "medium",
+      "status": "contested",
+      "sources": [
+        {
+          "paper_id": "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+          "locator": "section 3.2.1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "循环软刺激（CSS）通过分散注入能量，可降低单次地震震级，扩大改造体积。",
+      "slug": "css-seismicity-mitigation",
+      "evidence": "Pohang项目应用CSS管理地震风险；实验室疲劳压裂概念支持。",
+      "condition": "需严格限制诱发地震震级的区域。",
+      "limitation": "长周期THMC耦合影响被现有模型忽略，储层尺度可预测性未建立。",
+      "confidence": "low",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+          "locator": "section 3.2.2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "地震云体积（SRV）不等于有效渗透体积，因为微震仅反映脆性破坏，不考虑无震滑移。",
+      "slug": "srv-not-equal-hydraulic-volume",
+      "evidence": "Fenton Hill Phase II SRV大但水力阻抗极高，证实地震活动与渗透率非常不等同。",
+      "condition": "所有依赖微震监测的EGS场地。",
+      "limitation": "需要光纤等补充监测手段约束无震滑移。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+          "locator": "section 3.2.3"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "化学刺激能够以低于破裂压力运行，几乎不引人诱发地震，但作用半径有限。",
+      "slug": "chemical-stimulation-low-seismicity",
+      "evidence": "酸化项目一般无显著微地震响应，主要用于近井解堵。",
+      "condition": "目标矿物可溶（碳酸盐、硅酸盐），试剂热稳定性好。",
+      "limitation": "在花岗岩储层整体增透效果有限，需防止二次沉淀。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+          "locator": "section 4.1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "热刺激作为主导方法严格依赖于极高温度（如>400°C）和发达天然裂缝；在常规花岗岩储层中更适合作为水力刺激后的协同增效工具。",
+      "slug": "thermal-stimulation-scope",
+      "evidence": "Northwest Geysers (~400°C)和Reykjanes (~452°C)项目作为独立方法使用；多数项目为协同。",
+      "condition": "极高温场址或作为复合策略第二阶段。",
+      "limitation": "地质依赖性强，独立适用范围窄。",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+          "locator": "section 5.1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "液氮冷却花岗岩峰前脆性指数降低69%，表明脆性显著提高，有利于裂缝自我支撑。",
+      "slug": "brittleness-increase-ln2",
+      "evidence": "共和盆地花岗岩，液氮冷后B_pre降低69%。",
+      "condition": "400°C加热液氮冷却，单轴压缩。",
+      "limitation": "单次热冲击，无围压。",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+          "locator": "pp. 10-10"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "液氮冷却产生的声发射事件在稳定裂纹扩展阶段即大量出现，最大AE能量率低于其他冷却方式，反映预损伤缓和能量释放。",
+      "slug": "ae-ln2-damage-signals",
+      "evidence": "单轴压缩过程中，液氮样AE累计能量高但最大能量率最低，表明平滑破坏。",
+      "condition": "花岗岩经400°C液氮冷却，单轴压缩。",
+      "limitation": "小尺寸室内试验，与现场微震关系需标定。",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+          "locator": "pp. 8-10"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    }
+  ],
+  "syntheses": [
+    {
+      "title": "热损伤花岗岩的力学响应与跨尺度模拟",
+      "slug": "thermal-damage-cross-scale-mechanics",
+      "central_question": "从矿物热膨胀到宏观动态断裂，热损伤如何通过多尺度裂缝网络传递并控制岩石的强度、脆性和渗透性？",
+      "summary": "基于PFC颗粒流模拟（Zhai 2025）识别的热裂纹三阶段演化，结合热冲击实验（Zhu 2025冷却对比）和文献荟萃（解经宇2025），一致表明高温和快速冷却导致微裂纹密度/分形维数上升、强度线性下降和渗透率数量级增加。PFC-FDEM跨尺度映射方法（Zhai 2025）将这些微观损伤定量桥接到动态断裂响应，揭示能量分配从弹性储存转向断裂耗散，并确认0.6倍剪切波速为多裂纹扩展临界速度。EGS储层改造（Lei 2026）则可利用这些力学规律，通过热刺激和循环冷却优化裂缝网络，但工程三难的权衡在热致裂场景下同样成立。",
+      "evidence_chain": [
+        "PFC模拟显示裂纹密度指数增长（Zhai 2025）",
+        "遇水/液氮冷却导致渗透率激增和强度锐减（Zhu 2025）",
+        "综述归一化强度拟合公式证实冷却介质影响（解经宇2025）",
+        "PFC-FDEM映射实现微观-宏观应力响应（Zhai 2025）",
+        "EGS需平衡连通性与地震风险（Lei 2026）"
+      ],
+      "disagreements": [
+        "空气冷却在某些条件下可闭合天然裂缝、提高强度（Zhu 2025），与普遍强度劣化趋势有差异。"
+      ],
+      "boundary_conditions": [
+        "当前多维模拟限于二维和小尺寸岩样",
+        "全耦合热-力-化学作用未纳入",
+        "不同花岗岩矿物组成差异影响损伤阈值"
+      ],
+      "writing_uses": [
+        "可用于设计EGS储层的热冲击策略",
+        "为深部高地温工程提供强度预测公式"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展",
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "title": "裂缝网络表征：从统计分布到生成式AI的演进",
+      "slug": "fracture-network-characterization-evolution",
+      "central_question": "如何从有限观测数据生成高保真、多尺度的裂缝网络，既保留统计属性又忠实于天然不规则性？",
+      "summary": "传统DFN依赖Fisher、幂律和泊松分布（Zhang 2025, Zhu 2025），但无法捕捉局部拓扑和开度变异性。分形地形理论（Zhao 2025）提出双复杂度系统，用F3s框架表征自相似结构，并利用FT-DFN建模。随后，基于GAN的方法相继出现：FracGen（Zhou 2025）基于SinGAN从单张二值图像升尺度，而Upscaling-GAN（Nie 2026）更进一步，直接从灰度图学习，通过补丁拼接实现任意尺寸生成，同时保留开度空间变异性。这些AI方法在定量相似度上优于传统统计建模，为岩体水-力模拟提供了更真实的几何输入。",
+      "evidence_chain": [
+        "统计DFN在参数反演中达到误差<30%（Zhang 2025 分层策略）",
+        "分形地形模型可唯一表征长度序列（Zhao 2025）",
+        "FracGen余弦相似度>0.98（Zhou 2025）",
+        "Upscaling-GAN保留开度CV（Nie 2026）",
+        "所有AI方法仍需二维推广到三维"
+      ],
+      "disagreements": [
+        "基于统计分布的DFN与GAN生成网络在细节丰富度上存在分歧；但不同方法在不同场景可互补。"
+      ],
+      "boundary_conditions": [
+        "均依赖单张训练图像的代表性",
+        "三维扩展面临数据和计算挑战",
+        "开度变异性仅Upscaling-GAN可直接生成"
+      ],
+      "writing_uses": [
+        "为裂隙岩体渗流-力学模拟提供几何输入",
+        "指导露头/钻孔数据到工程模型的信息升尺度"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "title": "增强型地热系统（EGS）储层改造的技术权衡与未来路径",
+      "slug": "egs-stimulation-tradeoffs",
+      "central_question": "如何在水力、化学和热三种刺激技术之间做出最优组合，以同时实现高效连通、热寿命长和低地震风险？",
+      "summary": "Lei（2026）提出的工程三难框架揭示了有效连通、避免热短路与地震风险之间的根本矛盾。水力刺激创建连通性最强但诱发地震风险最高；化学刺激以低扰动实现近井解堵但作用半径小；热刺激在极高温下可独立造缝但适用范围窄。多级刺激和循环软刺激等技术可部分缓解风险，但应力阴影、无震滑移和长期THMC耦合的不确定性仍是挑战。Zhu（2025）的液氮冷却实验表明高速冷却介质可生成复杂张性裂缝并提高渗透率，为热刺激补充了一种高效致裂工质。未来EGS需要从单一技术依赖转向数据驱动的智能综合管理，并探索超临界CO₂、机械钻进等革命性路径。",
+      "evidence_chain": [
+        "全球25个项目分析确认三难存在（Lei 2026）",
+        "剪切/混合模式已成为水力刺激主导范式（Lei 2026）",
+        "液氮冷却可使渗透率增5倍（Zhu 2025）",
+        "微震不等于有效渗透体积（Lei 2026）",
+        "热刺激效果在高温场址显著（Lei 2026）"
+      ],
+      "disagreements": [
+        "多级刺激和循环注入的效果在未充分耦合的模型中可能被高估",
+        "化学刺激的环境影响长期未知"
+      ],
+      "boundary_conditions": [
+        "结论主要针对低渗透结晶花岗岩（3–5 km，100–200 °C）",
+        "社会接受度决定地震阈值"
+      ],
+      "writing_uses": [
+        "制定EGS项目技术路线图",
+        "指导安全监控和实时决策系统设计"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli"
+      ]
+    },
+    {
+      "title": "裂隙岩体渗透性表征的多尺度方法",
+      "slug": "multiscale-permeability-characterization",
+      "central_question": "如何从实验室到现场尺度统一表征裂缝网络的渗透性，并将微观裂纹几何与宏观渗流响应联系起来？",
+      "summary": "在北山现场，Zhang（2025）利用Slug干扰和偶极示踪试验提取了单/双通道的达西速度和弥散度，并用迂曲度区分优先流和弥散主导迁移。Zhu（2025）则在采动裂缝网络中，建立了基于分形维数和体积应变的渗透性增强率（PER）模型，定量刻画了z方向渗透性增强达数千倍。热损伤实验（Zhu 2025）表明渗透率与冷却速率和分形维数正相关。升尺度方面，FracGen和Upscaling-GAN为生成大尺度裂缝网络提供了手段，但均以恒定开度或简化开度为基础。这些方法展示了从离散裂缝模型到宏观渗透张量的可能链条，但还未完全集成微观和现场尺度的渗透率预测。",
+      "evidence_chain": [
+        "Slug试验HCC矩阵揭示各向异性（Zhang 2025）",
+        "偶极示踪反演达西速度/弥散度（Zhang 2025）",
+        "采动PER达到数千（Zhu 2025）",
+        "液氮冷却渗透率倍增（Zhu 2025）",
+        "GAN升尺度保持裂缝强度但渗透率验证有限"
+      ],
+      "disagreements": [
+        "平行板模型（立方定律）广泛用于渗透率估算，但与CT观测的开度变异性相矛盾"
+      ],
+      "boundary_conditions": [
+        "现场试验受限于钻孔数量和封隔技术",
+        "PER模型基于二维分形等效"
+      ],
+      "writing_uses": [
+        "建立从露头/钻孔到储层模型的渗透率赋值方案",
+        "评估采动或热改造对流体流动的影响"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    }
+  ],
+  "open_questions": [
+    {
+      "question": "如何将二维裂缝网络建模（分形、GAN）有效扩展到三维，并保持连通性、开度变异性及计算可行性？",
+      "slug": "3d-fracture-network-upscaling",
+      "why_it_matters": "真实裂缝岩体为三维，二维模型无法捕捉交切和流动迂曲，限制了渗流和力学模拟的准确性。",
+      "current_evidence": "FracGen、Upscaling-GAN已实现二维升尺度，FT-DFN提供了二维表征框架。三维CT扫描（Zhu 2025）和深孔成像（Zhang 2025）提供数据，但三维建模仍处于概念或结构统计阶段。",
+      "needed_evidence": "开发三维生成式模型（如3D GAN）并利用少量岩心CT或钻孔数据融合训练；验证生成网络的拓扑和渗流一致性。",
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "question": "热-力-化学多场耦合下裂缝网络的长期演化规律如何？",
+      "slug": "thmc-long-term-evolution",
+      "why_it_matters": "EGS长期运行中，温度波动、应力变化和矿物溶解沉淀会持续改变裂缝开度和渗透率，决定储层寿命。",
+      "current_evidence": "现有研究多为短时实验或数值模拟（单次热冲击，无化学反应），循环冷却实验显示参数趋稳（解经宇2025），但化学-力学耦合（如压力溶解）未被纳入。",
+      "needed_evidence": "长期（数月以上）的循环热-水-力-化学实验；开发THMC全耦合数值模型并用现场数据（如Soultz、Pohang）校准。",
+      "sources": [
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "question": "无震滑移对EGS储层渗透率增长的贡献比例如何量化？",
+      "slug": "aseismic-slip-permeability-contribution",
+      "why_it_matters": "微震监测只捕获脆性破裂，若无震滑移主导渗透率提高，则现有储层评估严重低估了有效改造体积。",
+      "current_evidence": "Lei 2026指出SRV不等于有效渗透体积，但无震滑移的直接证据和定量模型稀缺。",
+      "needed_evidence": "利用分布式光纤应变、井间压力瞬变等监测手段，结合速率-状态摩擦模型，反演无震滑移分布，并建立与渗透率变化的关系。",
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "question": "不同岩性（如花岗岩、碳酸盐岩）热损伤和力学响应的普适标度律是否存在？",
+      "slug": "universal-thermal-damage-scaling",
+      "why_it_matters": "当前热损伤公式多针对特定花岗岩，推广至EGS多样化储层时误差较大。",
+      "current_evidence": "解经宇2025汇总了多产地花岗岩，但均限于花岗岩；Zhai 2025的裂纹密度公式参数需重新标定。",
+      "needed_evidence": "系统测试多种岩性（如花岗闪长岩、辉长岩、石灰岩）在不同温度-冷却组合下的力学参数，建立含矿物组分、颗粒尺寸和初始孔隙率的归一化关系。",
+      "sources": [
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展",
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "question": "在EGS现场，如何利用实时监测数据自适应调整液压、化学、热刺激组合策略？",
+      "slug": "adaptive-egs-stimulation",
+      "why_it_matters": "固定刺激方案难以应对异构储层响应，自适应控制有望在实现增产的同时降低地震社会风险。",
+      "current_evidence": "循环软刺激和交通灯系统为实时控制提供基础；数字孪生概念提出但缺乏集成算法。",
+      "needed_evidence": "构建储层数据同化框架，集成分布式光纤、微震、井口参数，训练强化学习智能体，在小型现场试验中验证闭环自适应调整。",
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "question": "GAN或其它生成式AI模型在不同地质背景裂缝网络的泛化能力如何？",
+      "slug": "gan-generalization-fracture",
+      "why_it_matters": "若AI模型严重依赖单张训练图像，其应用将局限于特定露头，无法推广。",
+      "current_evidence": "FracGen和Upscaling-GAN均基于单图训练，泛化未验证。",
+      "needed_evidence": "利用多露头、不同构造域的裂缝图像进行迁移学习或few-shot learning测试，评估生成网络的域外推能力。",
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "question": "如何将毫米级及以下微裂缝纳入采动增强渗透率评价？",
+      "slug": "micro-crack-mining-permeability",
+      "why_it_matters": "气体渗流很大程度上受微米至亚毫米级裂隙控制，现有钻孔监控缺失这些小尺度信息。",
+      "current_evidence": "Zhu 2025钻孔成像只捕捉>1 mm裂缝，模型忽略了微观贡献。",
+      "needed_evidence": "结合显微CT、核磁共振等对煤/岩石微观孔隙裂隙表征，建立多尺度裂缝孔隙耦合渗透率模型，并引入PER框架。",
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "question": "裂缝网络中的粗糙度各向异性如何影响流体流动和溶质运移？",
+      "slug": "roughness-anisotropy-flow",
+      "why_it_matters": "实验室和深孔测量显示JRC方向性（Diaz 2026），若流向与最大粗糙度方向一致可能增加压降或改变弥散。",
+      "current_evidence": "Diaz 2026提取了JRC各向异性，但未与渗流数值耦合。",
+      "needed_evidence": "进行双向渗流实验或直接数值模拟，将粗糙度方向张量与渗透率张量关联，建立宏观各向异性渗透率模型。",
+      "sources": [
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "question": "多级水力刺激的应力阴影在EGS大温差环境下如何演变？",
+      "slug": "stress-shadow-egs-thermal",
+      "why_it_matters": "温度变化引入的热弹性应力可能改变应力阴影区的大小和方向，影响裂缝网络的连通性。",
+      "current_evidence": "目前压裂应力阴影模型多基于等温或小温差，EGS研究未系统考虑热效应。",
+      "needed_evidence": "开展热-流-固耦合数值分析，分析不同温度梯度和注入方案下多裂缝应力干扰演化，并通过现场光纤测量验证。",
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "mode": "apply",
+  "missing_unique_ids": 51,
+  "resolved_ids": 51,
+  "unresolved_ids": 0,
+  "total_replacements": 208,
+  "changed_files": [
+    {
+      "path": "wiki/concepts/acoustic-emission.md",
+      "replacements": 6
+    },
+    {
+      "path": "wiki/concepts/barton-bandis-joint-model.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/concepts/brittle-ductile-transition.md",
+      "replacements": 6
+    },
+    {
+      "path": "wiki/concepts/cooling-methods.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/core-discing.md",
+      "replacements": 6
+    },
+    {
+      "path": "wiki/concepts/excavation-induced-fracture-network.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/forchheimer-flow.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/graph-based-emulator.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/joint-roughness-coefficient.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/liquid-nitrogen-cooling.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/local-thermal-non-equilibrium.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/concepts/normalized-correlation-integral.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/p-wave-velocity.md",
+      "replacements": 6
+    },
+    {
+      "path": "wiki/concepts/permeability-enhancement.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/permeability.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/pore-structure-evolution.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/quartz-alpha-beta-transition.md",
+      "replacements": 6
+    },
+    {
+      "path": "wiki/concepts/scale-effect.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/concepts/thermal-cycling.md",
+      "replacements": 6
+    },
+    {
+      "path": "wiki/concepts/thermal-damage.md",
+      "replacements": 6
+    },
+    {
+      "path": "wiki/concepts/thermal-hardening.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/concepts/thermal-shock.md",
+      "replacements": 6
+    },
+    {
+      "path": "wiki/methods/3d-laser-scanning-for-roughness.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/methods/acoustic-emission-monitoring.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/methods/diametrical-core-deformation-analysis.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/methods/discrete-element-method.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/methods/finite-element-method.md",
+      "replacements": 6
+    },
+    {
+      "path": "wiki/methods/non-parametric-directional-linear-kde.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/methods/rjmcmc-dfn-inversion.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/methods/scanning-electron-microscopy.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/methods/statistical-dfn-generation.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/methods/thermal-shock-and-cycling.md",
+      "replacements": 6
+    },
+    {
+      "path": "wiki/methods/x-ray-ct-imaging-and-3d-reconstruction.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/claims/2d-spanning-cluster-implies-3d-overpercolation.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/3d-dfn-efficiency-gt-2d.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/barton-bandis-superior-to-mohr-coulomb.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/confining-pressure-reverses-ln2-damage.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/epm-vs-dfn-in-charaterizing-edz.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/fault-activation-aseismic-slip.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/fracture-network-structure-controls-flow.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/frc-shear-strength-model.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/granite-brittle-ductile-transition-temperature.md",
+      "replacements": 4
+    },
+    {
+      "path": "wiki/claims/graph-emulator-speed.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/intergranular-cracks-expand-first.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/joint-inversion-microseismic-thermal-improves-dfn.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/nw-se-anisotropy-causes-breakthrough.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/thermal-shock-damage-and-permeability-enhancement.md",
+      "replacements": 8
+    },
+    {
+      "path": "wiki/claims/type-i-fractured-basement-porosity-fracture-derived.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/claims/vp-damage-factor-predicts-strength.md",
+      "replacements": 2
+    },
+    {
+      "path": "wiki/syntheses/data-fusion-permeability-characterization.md",
+      "replacements": 8
+    },
+    {
+      "path": "wiki/syntheses/fracture-geometry-controls-transport.md",
+      "replacements": 8
+    },
+    {
+      "path": "wiki/syntheses/thermal-cycling-damage-accumulation.md",
+      "replacements": 10
+    },
+    {
+      "path": "wiki/syntheses/thermal-damage-mechanisms-granite.md",
+      "replacements": 8
+    },
+    {
+      "path": "wiki/open-questions/open-questions.md",
+      "replacements": 8
+    }
+  ],
+  "mapping": {
+    "2020-pai-an-investigation-on-the-deterioration-of-physical-and-mechanical-properties-of-granite": {
+      "to": "2021-pai-an-investigation-on-the-deterioration-of-physical-and-mechanical-properties-of-granite",
+      "method": "unique-title-prefix"
+    },
+    "2020-yin-experimental-research-on-the-rupture-characteristics-of-fractures-subsequently-filled-b": {
+      "to": "2019-yin-experimental-research-on-the-rupture-characteristics-of-fractures-subsequently-filled-b",
+      "method": "unique-title-prefix"
+    },
+    "2021-yang-peridynamic-simulation": {
+      "to": "2021-yang-peridynamic-simulation-of-fracture-mechanical-behaviour-of-granite-specimen-under-real",
+      "method": "unique-prefix"
+    },
+    "2021-yu-mechanical-test": {
+      "to": "2021-yu-mechanical-test-of-granite-with-multiple-water-thermal-cycles",
+      "method": "unique-prefix"
+    },
+    "2021-zhang-experimental-investigations": {
+      "to": "2021-zhang-experimental-investigations-on-the-tensile-behaviour-of-granite-after-heating-and-wat",
+      "method": "unique-prefix"
+    },
+    "2021-zhang-macroscopic-and-microscopic": {
+      "to": "2021-zhang-macroscopic-and-microscopic-experimental-research-on-granite-properties-after-high-te",
+      "method": "unique-prefix"
+    },
+    "2021-zhao-experimental-study": {
+      "to": "2021-zhao-experimental-study-on-the-physico-mechanical-properties-and-temperature-field-evolutio",
+      "method": "unique-prefix"
+    },
+    "2021-zhao-shear-related-roughness": {
+      "to": "2021-zhao-shear-related-roughness-classification-and-strength-model-of-natural-rock-joint-based",
+      "method": "unique-prefix"
+    },
+    "2021-zhu-changes-in-thermomechanical": {
+      "to": "2021-zhu-changes-in-thermomechanical-properties-due-to-air-and-water-cooling-of-hot-dry-granite",
+      "method": "unique-prefix"
+    },
+    "2021-zhu-impact-of-fracture": {
+      "to": "2021-zhu-impact-of-fracture-geometry-and-topology-on-the-connectivity-and-flow-properties-of-sto",
+      "method": "unique-prefix"
+    },
+    "2021-ziegler-evaluation-of": {
+      "to": "2021-ziegler-evaluation-of-the-diametrical-core-deformation-and-discing-analyses-for-in-situ-str",
+      "method": "unique-prefix"
+    },
+    "2022-afshari-moein-fractal-characteristics": {
+      "to": "2022-afshari-moein-fractal-characteristics-of-fractures-in-crystalline-basement-rocks-insights-f",
+      "method": "unique-prefix"
+    },
+    "2022-cao-damage-deterioration": {
+      "to": "2022-cao-damage-deterioration-mechanism-and-damage-constitutive-modelling-of-red-sandstone-under",
+      "method": "unique-prefix"
+    },
+    "2022-fadel-causes-of-a-premature": {
+      "to": "2022-fadel-causes-of-a-premature-thermal-breakthrough-of-a-hydrothermal-project-in-germany",
+      "method": "unique-prefix"
+    },
+    "2022-fan-evaluation-of-the": {
+      "to": "2022-fan-evaluation-of-the-effects-of-three-different-cooling-methods-on-the-dynamic-mechanical",
+      "method": "unique-prefix"
+    },
+    "2022-feng-study-on-a-damage": {
+      "to": "2022-feng-study-on-a-damage-model-and-uniaxial-compression-simulation-method-of-frozen-thawed-ro",
+      "method": "unique-prefix"
+    },
+    "2022-gao-discing-behavior": {
+      "to": "2022-gao-discing-behavior-and-mechanism-of-cores-extracted-from-songke-2-well-at-depths-below-4",
+      "method": "unique-prefix"
+    },
+    "2022-ge-thermal-damage": {
+      "to": "2022-ge-thermal-damage-and-mechanical-properties-of-high-temperature-sandstone-with-cyclic-heati",
+      "method": "unique-prefix"
+    },
+    "2022-he-numerical-evaluation": {
+      "to": "2022-he-numerical-evaluation-of-heat-extraction-performance-in-enhanced-geothermal-system-consid",
+      "method": "unique-prefix"
+    },
+    "2022-hu-experimental-investigation": {
+      "to": "2022-hu-experimental-investigation-of-the-relationships-among-p-wave-velocity-tensile-strength-a",
+      "method": "unique-prefix"
+    },
+    "2022-li-determination-of-mining": {
+      "to": "2022-li-determination-of-mining-induced-stresses-using-diametral-rock-core-deformations",
+      "method": "unique-prefix"
+    },
+    "2022-su-changes-in-mechanical": {
+      "to": "2022-su-changes-in-mechanical-properties-and-fracture-behaviors-of-heated-marble-subjected-to-li",
+      "method": "unique-prefix"
+    },
+    "2022-trice-fractured-basement": {
+      "to": "2022-trice-fractured-basement-play-development-on-the-uk-and-norwegian-rifted-margins",
+      "method": "unique-prefix"
+    },
+    "2022-unknown-can-we-infer": {
+      "to": "2022-unknown-can-we-infer-the-percolation-status-of-3d-fractured-media-from-2d-outcrops",
+      "method": "unique-prefix"
+    },
+    "2022-viswanathan-from-fluid-flow": {
+      "to": "2022-viswanathan-from-fluid-flow-to-coupled-processes-in-fractured-rock-recent-advances-and-new",
+      "method": "unique-prefix"
+    },
+    "2022-xi-experimental-comparison": {
+      "to": "2022-xi-experimental-comparison-of-mechanical-properties-and-fractal-characteristics-of-geotherm",
+      "method": "unique-prefix"
+    },
+    "2022-xiong-a-three-dimensional-coupled": {
+      "to": "2022-xiong-a-three-dimensional-coupled-thermo-hydro-model-for-geothermal-development-in-discrete",
+      "method": "unique-prefix"
+    },
+    "2022-zhang-高地应力下深部": {
+      "to": "2022-zhang-高地应力下深部岩芯饼化裂缝发展规律及机制研究-study-on-fracture-propagation-and-formation-mechanism-of-core",
+      "method": "unique-prefix"
+    },
+    "2022-zhao-effects-of-temperature": {
+      "to": "2022-zhao-effects-of-temperature-and-increasing-amplitude-cyclic-loading-on-the-mechanical-prope",
+      "method": "unique-prefix"
+    },
+    "2022-zhao-influence-of-multiple": {
+      "to": "2022-zhao-influence-of-multiple-porous-structure-evolution-on-physical-mechanical-properties-and",
+      "method": "unique-prefix"
+    },
+    "2022-zhou-variations-in-stress": {
+      "to": "2022-zhou-variations-in-stress-thresholds-for-heated-granite-subjected-to-rapid-cooling-under-di",
+      "method": "unique-prefix"
+    },
+    "2022-zhu-changes-in-thermomechanical": {
+      "to": "2021-zhu-changes-in-thermomechanical-properties-due-to-air-and-water-cooling-of-hot-dry-granite",
+      "method": "unique-title-prefix"
+    },
+    "2022-zhu-enhancing-fracture": {
+      "to": "2022-zhu-enhancing-fracture-network-characterization-a-data-driven-outcrop-based-analysis",
+      "method": "unique-prefix"
+    },
+    "2022-zhu-hatchfrac-a-fast": {
+      "to": "2022-zhu-hatchfrac-a-fast-open-source-dfn-modeling-software",
+      "method": "unique-prefix"
+    },
+    "2023-barton-advances-in-joint": {
+      "to": "2023-barton-advances-in-joint-roughness-coefficient-jrc-and-its-engineering-applications",
+      "method": "unique-prefix"
+    },
+    "2023-cui-experimental-investigation": {
+      "to": "2023-cui-experimental-investigation-on-the-influence-on-mechanical-properties-and-acoustic-emiss",
+      "method": "unique-prefix"
+    },
+    "2023-deng-study-on-fracture": {
+      "to": "2023-deng-study-on-fracture-surface-damage-and-fluid-flow-characteristics-of-hot-dry-rock-with-d",
+      "method": "unique-prefix"
+    },
+    "2023-dong-experimental-study": {
+      "to": "2023-dong-experimental-study-on-the-effect-of-thermal-shock-on-physical-and-mechanical-propertie",
+      "method": "unique-prefix"
+    },
+    "2023-fan-a-real-time-visual": {
+      "to": "2023-fan-a-real-time-visual-investigation-on-microscopic-progressive-fatigue-deterioration-of-gr",
+      "method": "unique-prefix"
+    },
+    "2023-fan-stress-water-coupling": {
+      "to": "2023-fan-stress-water-coupling-effects-on-failure-of-sandstone-based-on-real-time-ct-technology",
+      "method": "unique-prefix"
+    },
+    "2023-gao-heat-extraction": {
+      "to": "2023-gao-heat-extraction-performance-of-fractured-geothermal-reservoirs-considering-aperture-var",
+      "method": "unique-prefix"
+    },
+    "2023-ge-thermal-damage-of": {
+      "to": "2023-ge-thermal-damage-of-high-temperature-sandstone-subjected-to-cooling-shock-and-its-effect-o",
+      "method": "unique-prefix"
+    },
+    "2023-gomez-a-non-parametric": {
+      "to": "2023-g-mez-a-non-parametric-discrete-fracture-network-model",
+      "method": "alias"
+    },
+    "2023-guo-impact-of-cooling": {
+      "to": "2023-guo-impact-of-cooling-rate-on-mechanical-properties-and-failure-mechanism-of-sandstone-unde",
+      "method": "unique-prefix"
+    },
+    "2023-guo-mechanical-properties": {
+      "to": "2023-guo-mechanical-properties-and-crack-propagation-behavior-of-granite-after-high-temperature",
+      "method": "unique-prefix"
+    },
+    "2023-guo-microcracking-behavior": {
+      "to": "2023-guo-microcracking-behavior-and-damage-mechanism-of-granite-subjected-to-high-temperature-ba",
+      "method": "unique-prefix"
+    },
+    "2023-hua-experimental-study-on": {
+      "to": "2023-hua-experimental-study-on-mode-i-and-mode-ii-fracture-properties-of-heated-sandstone-after",
+      "method": "unique-prefix"
+    },
+    "2023-jalali-high-resolution-characterization": {
+      "to": "2023-jalali-high-resolution-characterization-of-excavation-induced-fracture-network-using-contin",
+      "method": "unique-prefix"
+    },
+    "2023-jiang-fracture-network-characterization": {
+      "to": "2023-jiang-fracture-network-characterization-in-reservoirs-by-joint-inversion-of-microseismicity",
+      "method": "unique-prefix"
+    },
+    "2024-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte": {
+      "to": "2025-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte",
+      "method": "unique-title-prefix"
+    },
+    "2024-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate": {
+      "to": "2023-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate",
+      "method": "unique-title-prefix"
+    }
+  },
+  "unresolved": {}
+}

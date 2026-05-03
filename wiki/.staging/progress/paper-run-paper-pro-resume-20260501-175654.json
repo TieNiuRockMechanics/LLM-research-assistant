@@ -1,0 +1,17 @@
+{
+  "run_id": "paper-pro-resume-20260501-175654",
+  "updated_at": "2026-05-01T21:46:08",
+  "phase": "paper-pages",
+  "status": "running",
+  "total_records": 487,
+  "current_index": 196,
+  "current_paper": "2019-wu-damage-analysis-of-high-temperature-rocks-subjected-to-ln2-thermal-shock",
+  "completed": 75,
+  "skipped_complete": 121,
+  "skipped_over_budget": 0,
+  "failed": 0,
+  "remaining": 291,
+  "avg_seconds_per_completed": 183.38,
+  "eta_seconds": 53364,
+  "eta_at": "2026-05-02T12:35:32"
+}

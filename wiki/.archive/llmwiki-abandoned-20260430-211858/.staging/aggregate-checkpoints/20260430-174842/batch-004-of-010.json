@@ -1,0 +1,1826 @@
+{
+  "concepts": [
+    {
+      "name": "Discrete Fracture Network (DFN)",
+      "slug": "discrete-fracture-network",
+      "definition": "A model representing fractures in a rock mass as a set of discrete planar objects (commonly disks or polygons) with specified geometrical and hydraulic properties, used to simulate fluid flow, solute transport, and mechanical behavior.",
+      "aliases": [
+        "DFN",
+        "离散裂缝网络"
+      ],
+      "boundary": "Applicable to fracture-dominated flow where matrix permeability is negligible or low; assumes planar fracture geometry; may not capture complex vein networks or strongly ductile deformation.",
+      "related_methods": [
+        "dfn-generation-and-modeling",
+        "discrete-fracture-model-flow",
+        "percolation-analysis",
+        "equivalent-porous-medium"
+      ],
+      "related_claims": [
+        "dfn-modeling-evolution-claims",
+        "percolation-critical-condition-claim",
+        "poisson-model-overconnectivity-claim"
+      ],
+      "sources": [
+        "2017-mi-an-enhanced-discrete-fracture-network-model-to-simulate-complex-fracture-distribution",
+        "2017-xu-裂缝性油气藏离散裂缝数值模拟",
+        "2018-dong-储层裂缝随机建模方法研究进展",
+        "2019-dong-analysis-of-relationship-between-underground-space-percolation-and-fracture-properties",
+        "2019-hyman-linking-structural-and-transport-properties-in-three-dimensional-fracture-networks"
+      ]
+    },
+    {
+      "name": "Enhanced Geothermal System (EGS)",
+      "slug": "enhanced-geothermal-system",
+      "definition": "An engineered geothermal reservoir created by artificial stimulation (hydraulic fracturing or shear) of low-permeability hot crystalline rock to extract thermal energy for power generation or direct use.",
+      "aliases": [
+        "EGS",
+        "增强型地热系统"
+      ],
+      "boundary": "Typically targets hot (>150°C) low-permeability crystalline basement; requires hydraulic stimulation; not a natural hydrothermal system; may overlap with sedimentary EGS concepts.",
+      "related_methods": [
+        "thermal-hydraulic-mechanical-coupling-simulation",
+        "tracer-based-fracture-surface-area-estimation",
+        "surrogate-modeling-for-egs",
+        "stress-based-tomography-workflow"
+      ],
+      "related_claims": [
+        "egs-success-transpressive-tectonic-claim",
+        "thm-coupling-importance-claim",
+        "egs-induced-seismicity-uncertainty-claim"
+      ],
+      "sources": [
+        "2017-lu-a-global-review-of-enhanced-geothermal-system-egs",
+        "2017-sun-numerical-simulation-of-the-heat-extraction-in-egs-with-thermal-hydraulic-mechanical-co",
+        "2018-amann-the-seismo-hydromechanical-behavior-during-deep-geothermal-reservoir-stimulations-ope",
+        "2018-asai-performance-evaluation-of-enhanced-geothermal-system-egs-surrogate-models-sensitivity"
+      ]
+    },
+    {
+      "name": "Thermal-Hydraulic-Mechanical (THM) Coupling",
+      "slug": "thermal-hydraulic-mechanical-coupling",
+      "definition": "The coupled processes of heat transfer, fluid flow, and rock deformation in fractured porous media, where changes in temperature, pressure, and stress mutually interact and influence system performance.",
+      "aliases": [
+        "THM coupling",
+        "热-水-力耦合"
+      ],
+      "boundary": "Assumes full coupling among thermal, hydraulic, and mechanical fields; may neglect chemical reactions and phase change unless explicitly added; typically uses continuum or discrete fracture representations.",
+      "related_methods": [
+        "thermal-hydraulic-mechanical-coupling-simulation",
+        "dfm-with-constrained-pebi-grid"
+      ],
+      "related_claims": [
+        "thm-coupling-importance-claim",
+        "thermoporoelastic-drainage-claim"
+      ],
+      "sources": [
+        "2017-sun-numerical-simulation-of-the-heat-extraction-in-egs-with-thermal-hydraulic-mechanical-co",
+        "2018-salimzadeh-a-three-dimensional-coupled-thermo-hydro-mechanical-model-for-deformable-fractur",
+        "2018-salimzadeh-thermoporoelastic-effects-during-heat-extraction-from-low-permeability-reservoir"
+      ]
+    },
+    {
+      "name": "Orthorhombic Anisotropy (OA)",
+      "slug": "orthorhombic-anisotropy",
+      "definition": "A type of elastic anisotropy where a medium has three mutually orthogonal planes of symmetry, used to model shale reservoirs containing both horizontal layering (VTI) and vertical fractures (HTI).",
+      "aliases": [
+        "OA",
+        "正交各向异性"
+      ],
+      "boundary": "Applicable to formations with both VTI background and aligned vertical fracture sets; assumes linear elasticity and small deformation; not suitable for complex fracture geometries with multiple orientations.",
+      "related_methods": [
+        "seismic-azimuthal-inversion-for-odhsr",
+        "orthorhombic-dhsr-derivation"
+      ],
+      "related_claims": [
+        "odhsr-vs-dhsr-claim",
+        "odhsr-low-value-fracability-claim"
+      ],
+      "sources": [
+        "2017-ma-基于正交各向异性介质理论的地应力地震预测方法",
+        "2018-ma-inversion-for-crustal-stress-based-on-azimuthal-seismic-data"
+      ]
+    },
+    {
+      "name": "Differential Horizontal Stress Ratio (DHSR/ODHSR)",
+      "slug": "differential-horizontal-stress-ratio",
+      "definition": "A normalized measure of horizontal stress anisotropy (σy - σx)/σz or related forms, used to indicate the ease of forming complex fracture networks during hydraulic fracturing; ODHSR is the orthorhombic extension accounting for VTI+HTI effects.",
+      "aliases": [
+        "DHSR",
+        "ODHSR",
+        "水平应力差异比"
+      ],
+      "boundary": "Derived under assumptions of zero horizontal strain and orthorhombic symmetry; valid for structurally simple shale reservoirs; not directly applicable to highly faulted or complex tectonic settings.",
+      "related_methods": [
+        "seismic-azimuthal-inversion-for-odhsr",
+        "orthorhombic-dhsr-derivation"
+      ],
+      "related_claims": [
+        "odhsr-vs-dhsr-claim",
+        "odhsr-low-value-fracability-claim",
+        "odhsr-sensitivity-claim"
+      ],
+      "sources": [
+        "2017-ma-基于正交各向异性介质理论的地应力地震预测方法",
+        "2018-ma-inversion-for-crustal-stress-based-on-azimuthal-seismic-data"
+      ]
+    },
+    {
+      "name": "Percolation Threshold",
+      "slug": "percolation-threshold",
+      "definition": "The critical point where a fracture network becomes fully connected across a domain, enabling macroscopic fluid flow; characterized by fracture density, length distribution, and orientation.",
+      "aliases": [
+        "percolation",
+        "逾渗阈值"
+      ],
+      "boundary": "Defined for a given fracture network realization; assumes conductive fractures and impermeable matrix; 2D vs 3D thresholds differ; does not capture partial connectivity or channeling effects.",
+      "related_methods": [
+        "percolation-critical-condition-analysis"
+      ],
+      "related_claims": [
+        "percolation-critical-condition-claim",
+        "power-law-length-exponent-connectivity-claim"
+      ],
+      "sources": [
+        "2019-dong-analysis-of-relationship-between-underground-space-percolation-and-fracture-properties",
+        "2019-hyman-linking-structural-and-transport-properties-in-three-dimensional-fracture-networks"
+      ]
+    },
+    {
+      "name": "Fracture Roughness",
+      "slug": "fracture-roughness",
+      "definition": "The deviation of a fracture surface from a perfectly smooth plane, characterized by parameters like JRC or 3D roughness metrics (AHD), which influences fluid flow, heat transfer, and shear strength.",
+      "aliases": [
+        "joint roughness",
+        "JRC",
+        "粗糙度"
+      ],
+      "boundary": "Characterization is scale-dependent; JRC is a 2D profile metric; 3D parameters like AHD capture anisotropy; influence on flow is significant for moderate apertures under stress.",
+      "related_methods": [
+        "lab-experiment-rough-fracture-heat-transfer",
+        "3d-roughness-parameter-ahd"
+      ],
+      "related_claims": [
+        "roughness-direction-flow-claim",
+        "ahd-shear-anisotropy-claim",
+        "heat-transfer-roughness-claim"
+      ],
+      "sources": [
+        "2017-luo-experimental-investigation-of-the-hydraulic-and-heat-transfer-properties-of-artificiall",
+        "2018-ma-heat-transfer-by-water-flowing-through-rough-fractures-and-distribution-of-local-heat-tr",
+        "2019-ban-new-roughness-parameters-for-3d-roughness-of-rock-joints",
+        "2019-huang-experimental-investigation-of-seepage-and-heat-transfer-in-rough-fractures-for-enhanc"
+      ]
+    },
+    {
+      "name": "Thermal Shock",
+      "slug": "thermal-shock",
+      "definition": "Rapid temperature change inducing high thermal stresses that cause cracking and strength degradation in rocks; commonly achieved by quenching with water or liquid nitrogen.",
+      "aliases": [
+        "thermal shock",
+        "热冲击"
+      ],
+      "boundary": "Effect depends on cooling rate, initial temperature, and rock thermal properties; can produce both temperature gradient and thermal expansion mismatch cracks; not fully representative of in-situ stress conditions.",
+      "related_methods": [
+        "thermal-cycling-treatment-and-characterization",
+        "high-pressure-liquid-nitrogen-jet-drilling"
+      ],
+      "related_claims": [
+        "thermal-quench-strength-reduction-claim",
+        "critical-temperature-thermal-damage-claim",
+        "surface-pore-boiling-claim"
+      ],
+      "sources": [
+        "2018-jin-influence-of-different-thermal-cycling-treatments-on-the-physical-mechanical-and-transp",
+        "2018-kumari-experimental-investigation-of-quenching-effect-on-mechanical-microstructural-and-flo",
+        "2019-huang-mechanism-of-drilling-rate-improvement-using-high-pressure-liquid-nitrogen-jet"
+      ]
+    },
+    {
+      "name": "Hydraulic Stimulation",
+      "slug": "hydraulic-stimulation",
+      "definition": "The injection of high-pressure fluid into a reservoir to enhance permeability by creating new fractures (hydraulic fracturing) or reactivating existing ones (shear stimulation), critical for EGS development.",
+      "aliases": [
+        "stimulation",
+        "水力激发"
+      ],
+      "boundary": "Effectiveness depends on in-situ stress state, natural fracture network, and rock properties; may induce seismicity; mostly studied in crystalline rocks; distinct from proppant fracturing in hydrocarbon reservoirs.",
+      "related_methods": [
+        "stress-based-tomography-workflow",
+        "induced-seismicity-forecast-model"
+      ],
+      "related_claims": [
+        "egs-stimulation-mechanisms-claim",
+        "injection-volume-pressure-seismicity-claim"
+      ],
+      "sources": [
+        "2018-amann-the-seismo-hydromechanical-behavior-during-deep-geothermal-reservoir-stimulations-ope",
+        "2018-trutnevyte-induced-seismicity-hazard-and-risk-by-enhanced-geothermal-systems-an-expert-elic",
+        "2018-afshari-moein-maximum-magnitude-forecast-in-hydraulic-stimulation-based-on-clustering-and-s"
+      ]
+    },
+    {
+      "name": "Stress-Based Tomography",
+      "slug": "stress-based-tomography",
+      "definition": "An inversion method that infers fracture network geometry (location, length) from spatially varying stress orientations and magnitudes measured along a borehole, assuming stress perturbations are caused by slip on natural fractures.",
+      "aliases": [
+        "应力层析成像"
+      ],
+      "boundary": "Assumes 2D plane strain and that stress heterogeneity is solely due to fracture slip under a known far-field stress; requires at least one stress direction and magnitude observation; limited to sparse fractures.",
+      "related_methods": [
+        "stress-based-tomography-workflow"
+      ],
+      "related_claims": [
+        "stress-tomography-requires-multi-component-claim",
+        "stress-tomography-probabilistic-claim"
+      ],
+      "sources": [
+        "2018-afshari-moein-fracture-network-characterization-using-stress-based-tomography"
+      ]
+    },
+    {
+      "name": "Tracer-Based Fracture Surface Area Estimation",
+      "slug": "tracer-based-fracture-surface-area-estimation",
+      "definition": "A methodology using conservative tracer tests and thermal breakthrough curves to estimate the swept pore volume and heat-exchange surface area of fractures in EGS reservoirs.",
+      "aliases": [
+        "示踪剂裂缝表面积估算"
+      ],
+      "boundary": "Assumes negligible matrix permeability, inert tracer, and one-dimensional heat conduction in rock; is sensitive to early termination of tracer tails and requires distinct flow paths.",
+      "related_methods": [
+        "tracer-based-fracture-surface-area-estimation"
+      ],
+      "related_claims": [
+        "tracer-swept-volume-error-claim",
+        "tracer-f-phi-separation-claim"
+      ],
+      "sources": [
+        "2017-shook-use-of-tracers-and-temperature-to-estimate-fracture-surface-area-for-egs-reservoirs"
+      ]
+    },
+    {
+      "name": "Flow Channeling",
+      "slug": "flow-channeling",
+      "definition": "The preferential concentration of fluid flow in a subset of connected fractures due to aperture variability, roughness, or network topology, leading to heterogeneous flow distributions.",
+      "aliases": [
+        "channeling",
+        "流动通道化"
+      ],
+      "boundary": "Occurs when aperture distributions are spatially correlated; increased by roughness and stress-induced aperture changes; reduces effective heat exchange surface area.",
+      "related_methods": [
+        "transparent-dfn-flow-visualization"
+      ],
+      "related_claims": [
+        "channeling-aperture-claim"
+      ],
+      "sources": [
+        "2019-huang-experimental-and-numerical-studies-of-the-hydraulic-properties-of-three-dimensional-f",
+        "2019-hyman-linking-structural-and-transport-properties-in-three-dimensional-fracture-networks"
+      ]
+    },
+    {
+      "name": "Representative Elementary Volume (REV)",
+      "slug": "representative-elementary-volume",
+      "definition": "The minimum volume over which a measured or simulated property (e.g., connectivity, permeability) becomes statistically stationary and can be used to define equivalent continuum parameters.",
+      "aliases": [
+        "REV",
+        "表征单元体"
+      ],
+      "boundary": "Existence depends on fracture density and scale of heterogeneity; a spatial REV for fracture connectivity does not guarantee a hydraulic REV; not applicable to highly sparse networks.",
+      "related_methods": [
+        "equivalent-porous-medium",
+        "hydraulic-tomography"
+      ],
+      "related_claims": [
+        "connectivity-rev-equivalence-claim"
+      ],
+      "sources": [
+        "2019-dong-equivalence-of-discrete-fracture-network-and-porous-media-models-by-hydraulic-tomograp"
+      ]
+    },
+    {
+      "name": "Equivalent Porous Medium (EPM)",
+      "slug": "equivalent-porous-medium",
+      "definition": "A continuum approximation of a fractured rock mass where the hydraulic behavior is represented by effective permeability and porosity fields, used for large-scale flow and transport simulations.",
+      "aliases": [
+        "EPM",
+        "等效多孔介质"
+      ],
+      "boundary": "Valid only when a hydraulic REV exists; may overestimate early breakthrough times and smooth out channeling effects; not suitable for sparse fracture networks without REV.",
+      "related_methods": [
+        "hydraulic-tomography",
+        "equivalent-porous-medium"
+      ],
+      "related_claims": [
+        "connectivity-rev-equivalence-claim"
+      ],
+      "sources": [
+        "2019-dong-equivalence-of-discrete-fracture-network-and-porous-media-models-by-hydraulic-tomograp",
+        "2019-dong-基于随机多边形模型的离散裂缝网络建模方法研究-以鄂尔多斯盆地华庆地区致密储层为例"
+      ]
+    },
+    {
+      "name": "Seismic Prediction of Fractures",
+      "slug": "seismic-fracture-prediction",
+      "definition": "Methods using seismic attributes (amplitude variation, attenuation anisotropy, coherence) to detect and characterize fracture orientation, density, and scale in subsurface reservoirs.",
+      "aliases": [
+        "地震裂缝预测"
+      ],
+      "boundary": "Resolution limited by seismic wavelength; macro-scale (>1/4 wavelength) fractures detected by coherence, meso-scale (1/4–1/100 wavelength) by azimuthal anisotropy; micro-scale fractures invisible.",
+      "related_methods": [
+        "multiscale-fracture-seismic-prediction",
+        "seismic-azimuthal-inversion-for-odhsr"
+      ],
+      "related_claims": [
+        "multiscale-seismic-fracture-prediction-claim"
+      ],
+      "sources": [
+        "2018-wang-ling-ling-seismic-prediction-method-of-multiscale-fractured-reservoir",
+        "2018-ma-inversion-for-crustal-stress-based-on-azimuthal-seismic-data"
+      ]
+    },
+    {
+      "name": "Borehole Image Fracture Characterization",
+      "slug": "borehole-image-fracture-characterization",
+      "definition": "The extraction of three-dimensional fracture geometry (size, elongation ratio, orientation) from intersections of fractures with a cylindrical borehole wall imaged by optical or acoustic tools.",
+      "aliases": [
+        "井壁成像裂缝表征"
+      ],
+      "boundary": "Assumes planar elliptical fractures and uniform spatial distribution; accuracy depends on the probability of full intersection; conventional Ozkaya approximation biased for non-circular fractures.",
+      "related_methods": [
+        "borehole-image-fracture-geometry-estimation"
+      ],
+      "related_claims": [
+        "ozkaya-bias-claim",
+        "elliptical-fracture-geometry-claim"
+      ],
+      "sources": [
+        "2018-prange-characterizing-fracture-geometry-from-borehole-images"
+      ]
+    },
+    {
+      "name": "Cryogenic Quenching",
+      "slug": "cryogenic-quenching",
+      "definition": "Rapid cooling of hot rock using extremely cold fluids like liquid nitrogen (LN2), inducing severe thermal gradients and microcracking to enhance permeability and weaken rock strength.",
+      "aliases": [
+        "低温淬火"
+      ],
+      "boundary": "Involves film boiling and Leidenfrost effects; surface microstructure influences boiling regime; experiments typically at surface conditions; real downhole pressure and stress effects not fully captured.",
+      "related_methods": [
+        "high-pressure-liquid-nitrogen-jet-drilling"
+      ],
+      "related_claims": [
+        "surface-pore-boiling-claim",
+        "ln2-jet-rock-breakage-claim",
+        "thermal-quench-strength-reduction-claim"
+      ],
+      "sources": [
+        "2018-li-cryogenic-quenching-of-rock-using-liquid-nitrogen-as-a-coolant-investigation-of-surface",
+        "2019-huang-mechanism-of-drilling-rate-improvement-using-high-pressure-liquid-nitrogen-jet"
+      ]
+    },
+    {
+      "name": "Supercritical Water Rock Damage",
+      "slug": "supercritical-water-rock-damage",
+      "definition": "The degradation of rock physical and mechanical properties (e.g., strength reduction, increased porosity) caused by exposure to water at temperatures and pressures above its critical point (e.g., 723 K, 45 MPa).",
+      "aliases": [
+        "超临界水岩石损伤"
+      ],
+      "boundary": "Observed in granite under specific HTHP conditions; mechanisms may include mineral dissolution and thermal stress; extrapolation to other lithologies and in-situ reservoir conditions requires further study.",
+      "related_methods": [],
+      "related_claims": [
+        "supercritical-water-damage-claim"
+      ],
+      "sources": [
+        "2019-hu-experiment-investigation-of-granite-damage-under-the-high-temperature-and-high-pressure"
+      ]
+    },
+    {
+      "name": "Thermal Damage Factor",
+      "slug": "thermal-damage-factor",
+      "definition": "A quantitative damage index, commonly defined as D(T) = 1 - E(T)/E0, where E is elastic modulus, to represent the cumulative thermal cracking damage in rock as a function of temperature.",
+      "aliases": [
+        "热损伤因子"
+      ],
+      "boundary": "Based on elastic modulus degradation; does not distinguish between crack types; applicable for slow-heating and cooling conditions; may not capture transient thermal shock effects.",
+      "related_methods": [
+        "thermal-cycling-treatment-and-characterization",
+        "acoustic-emission-damage-monitoring"
+      ],
+      "related_claims": [
+        "elastic-modulus-damage-claim"
+      ],
+      "sources": [
+        "2017-yang-an-experimental-investigation-on-thermal-damage-and-failure-mechanical-behavior-of-gra",
+        "2018-xu-acoustic-emission-and-damage-characteristics-of-granite-subjected-to-high-temperature",
+        "2018-sirdesai-determination-of-thermal-damage-in-rock-specimen-using-intelligent-techniques"
+      ]
+    },
+    {
+      "name": "Natural Fracture Propping",
+      "slug": "natural-fracture-propping",
+      "definition": "The permanent opening of fractures by mineral precipitates, cataclastic debris, or injected sediments that act as natural proppants, maintaining fracture porosity and permeability over geological timescales.",
+      "aliases": [
+        "天然裂缝支撑"
+      ],
+      "boundary": "Observed in fractured basement reservoirs with hydrothermal activity; requires coupling between fracturing, fluid flow, and cementation; propping effectiveness depends on clast/mineral strength and later diagenesis.",
+      "related_methods": [],
+      "related_claims": [
+        "fracture-propping-claim"
+      ],
+      "sources": [
+        "2019-holdsworth-natural-fracture-propping-and-earthquake-induced-oil-migration-in-fractured-base"
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "name": "DFN Generation and Modeling",
+      "slug": "dfn-generation-and-modeling",
+      "purpose": "To create stochastic or deterministic discrete representations of fracture networks for flow, transport, and geomechanical simulations.",
+      "workflow": "Define statistical distributions of fracture orientation, size, intensity, and shape (disks/polygons); generate realizations using point processes (e.g., Poisson, cluster); validate against outcrop, borehole, or geophysical data.",
+      "inputs": [
+        "Fracture set statistics (orientation, size distribution, intensity)",
+        "Spatial domain"
+      ],
+      "outputs": [
+        "3D fracture network realizations",
+        "Connectivity graphs"
+      ],
+      "assumptions": [
+        "Fractures are planar polygons or disks",
+        "Positions follow a stationary stochastic process",
+        "Fracture properties independent of stress state during generation"
+      ],
+      "strengths": [
+        "Captures discrete flow pathways",
+        "Flexible incorporation of heterogeneity",
+        "Can condition to hard and soft data"
+      ],
+      "limitations": [
+        "Requires extensive input statistics",
+        "Connectivity may be overestimated for Poisson models",
+        "Computational cost for dense networks"
+      ],
+      "related_concepts": [
+        "discrete-fracture-network",
+        "percolation-threshold",
+        "representative-elementary-volume"
+      ],
+      "sources": [
+        "2018-dong-储层裂缝随机建模方法研究进展",
+        "2019-dong-analysis-of-relationship-between-underground-space-percolation-and-fracture-properties",
+        "2019-hyman-linking-structural-and-transport-properties-in-three-dimensional-fracture-networks",
+        "2019-dong-基于随机多边形模型的离散裂缝网络建模方法研究-以鄂尔多斯盆地华庆地区致密储层为例"
+      ]
+    },
+    {
+      "name": "THM Coupling Simulation",
+      "slug": "thermal-hydraulic-mechanical-coupling-simulation",
+      "purpose": "To numerically solve coupled thermal, hydraulic, and mechanical equations for fractured geothermal reservoirs, capturing stress-dependent permeability and heat extraction.",
+      "workflow": "Define governing equations for mass, energy, and momentum; couple using finite element or finite volume methods; iterate between deformation, fluid flow, and heat transfer; update fracture apertures with stress.",
+      "inputs": [
+        "Rock thermal and mechanical properties",
+        "Initial stress, pressure, temperature fields",
+        "Fracture network geometry",
+        "Injection/production rates"
+      ],
+      "outputs": [
+        "Temperature and pressure evolution",
+        "Stress and displacement fields",
+        "Fracture aperture and permeability changes"
+      ],
+      "assumptions": [
+        "Small strain linear thermoelasticity for matrix",
+        "Darcy flow and cubic law for fractures",
+        "Local thermal equilibrium in matrix (or non-equilibrium option)",
+        "Single-phase fluid"
+      ],
+      "strengths": [
+        "Captures feedback between stress, flow, and temperature",
+        "Can evaluate long-term EGS performance"
+      ],
+      "limitations": [
+        "High computational cost",
+        "Simplified fracture contact models",
+        "Often 2D or idealized 3D geometries",
+        "Neglects chemical reactions and phase change"
+      ],
+      "related_concepts": [
+        "thermal-hydraulic-mechanical-coupling",
+        "enhanced-geothermal-system",
+        "discrete-fracture-network"
+      ],
+      "sources": [
+        "2017-sun-numerical-simulation-of-the-heat-extraction-in-egs-with-thermal-hydraulic-mechanical-co",
+        "2018-salimzadeh-a-three-dimensional-coupled-thermo-hydro-mechanical-model-for-deformable-fractur",
+        "2018-salimzadeh-thermoporoelastic-effects-during-heat-extraction-from-low-permeability-reservoir"
+      ]
+    },
+    {
+      "name": "Reversible Jump MCMC Inversion",
+      "slug": "reversible-jump-mcmc-inversion",
+      "purpose": "To probabilistically infer fracture network geometry and number from tracer tomography data by allowing the number of fractures to vary during inversion.",
+      "workflow": "Define a prior fracture length distribution; generate proposals to add, delete, or modify fractures; accept/reject based on Metropolis-Hastings-Green algorithm; produce ensemble of DFN realizations.",
+      "inputs": [
+        "Cross-hole conservative tracer concentration curves",
+        "Prior fracture length distribution",
+        "Borehole-fixed fracture connections"
+      ],
+      "outputs": [
+        "Posterior DFN realizations",
+        "Fracture probability maps"
+      ],
+      "assumptions": [
+        "2D vertical plane",
+        "Conservative tracer, no matrix diffusion",
+        "Known fixed fractures connecting sources/receivers",
+        "Straight-line fracture segments"
+      ],
+      "strengths": [
+        "Variable dimension parameter estimation",
+        "Quantifies uncertainty",
+        "Can identify primary transport pathways"
+      ],
+      "limitations": [
+        "Tested only on 2D synthetic cases",
+        "Depends on prior fracture length distribution",
+        "Ignores matrix diffusion"
+      ],
+      "related_concepts": [
+        "discrete-fracture-network",
+        "tracer-based-fracture-surface-area-estimation"
+      ],
+      "sources": [
+        "2017-somogyv-ri-synthetic-fracture-network-characterization-with-transdimensional-inversion"
+      ]
+    },
+    {
+      "name": "Tracer-Based Fracture Surface Area Estimation",
+      "slug": "tracer-based-fracture-surface-area-estimation",
+      "purpose": "To estimate the total swept pore volume and heat-exchange surface area of fractures in EGS using conservative tracer tests and production temperature history.",
+      "workflow": "Perform a tracer injection test; calculate swept pore volume from mean residence time; construct F-Φ (flow vs. storage capacity) curves to identify multiple flow paths; allocate volumes and flow fractions; fit thermal model to estimate surface area.",
+      "inputs": [
+        "Tracer concentration history",
+        "Injection/production flow rates",
+        "Production temperature history",
+        "Rock thermal properties"
+      ],
+      "outputs": [
+        "Swept pore volume per fracture",
+        "Flow fraction per pathway",
+        "Fracture surface area"
+      ],
+      "assumptions": [
+        "Zero matrix permeability",
+        "Inert tracer, no adsorption",
+        "1D heat conduction perpendicular to fracture",
+        "Constant injection temperature"
+      ],
+      "strengths": [
+        "Non-invasive",
+        "Combines hydraulic and thermal data",
+        "Can handle multiple fractures"
+      ],
+      "limitations": [
+        "Requires complete tracer recovery",
+        "Not validated with field data",
+        "Neglects matrix leakage"
+      ],
+      "related_concepts": [
+        "tracer-based-fracture-surface-area-estimation",
+        "enhanced-geothermal-system"
+      ],
+      "sources": [
+        "2017-shook-use-of-tracers-and-temperature-to-estimate-fracture-surface-area-for-egs-reservoirs"
+      ]
+    },
+    {
+      "name": "Stress-Based Tomography Workflow",
+      "slug": "stress-based-tomography-workflow",
+      "purpose": "To image deep fracture networks from borehole stress data by inverting stress perturbations caused by fracture slip.",
+      "workflow": "Generate a prior DFN; apply far-field stresses and solve contact mechanics (with Barton-Bandis model) for stress perturbations; compare with observed stress orientations and magnitudes along borehole; use MCMC to sample DFN parameters and generate fracture probability maps.",
+      "inputs": [
+        "Borehole stress orientation and magnitude profiles",
+        "Far-field stress tensor",
+        "Prior fracture length/density distributions"
+      ],
+      "outputs": [
+        "Posterior DFN ensembles",
+        "Fracture probability maps"
+      ],
+      "assumptions": [
+        "2D plane strain",
+        "Stress heterogeneity solely from fracture slip",
+        "Barton-Bandis friction model",
+        "Known far-field stress"
+      ],
+      "strengths": [
+        "Probabilistic, provides uncertainty",
+        "Directly uses stress data to infer fractures"
+      ],
+      "limitations": [
+        "Tested only on 2D synthetic cases",
+        "Fixed fracture count",
+        "Requires at least one stress magnitude and one orientation"
+      ],
+      "related_concepts": [
+        "stress-based-tomography",
+        "discrete-fracture-network"
+      ],
+      "sources": [
+        "2018-afshari-moein-fracture-network-characterization-using-stress-based-tomography"
+      ]
+    },
+    {
+      "name": "Borehole Image Fracture Geometry Estimation",
+      "slug": "borehole-image-fracture-geometry-estimation",
+      "purpose": "To estimate elliptical fracture size, elongation ratio, and orientation from partial and full intersections on borehole images.",
+      "workflow": "Model fractures as ellipses intersecting a cylindrical borehole; derive exact probability of full intersection; use relative azimuth histograms of partial fractures to estimate elongation and rotation; apply Bayesian inference for size distribution parameters.",
+      "inputs": [
+        "Borehole image fracture trace data",
+        "Borehole diameter and trajectory"
+      ],
+      "outputs": [
+        "Fracture long semi-axis size distribution",
+        "Elongation ratio and rotation angle"
+      ],
+      "assumptions": [
+        "Planar elliptical fractures",
+        "Uniform random distribution of fracture centers",
+        "Infinite borehole"
+      ],
+      "strengths": [
+        "More accurate than Ozkaya approximation",
+        "Uncertainty quantification"
+      ],
+      "limitations": [
+        "Assumes elliptical shape",
+        "Not tested on real field data",
+        "Ignores fracture interaction effects"
+      ],
+      "related_concepts": [
+        "borehole-image-fracture-characterization",
+        "discrete-fracture-network"
+      ],
+      "sources": [
+        "2018-prange-characterizing-fracture-geometry-from-borehole-images"
+      ]
+    },
+    {
+      "name": "Hydraulic Tomography",
+      "slug": "hydraulic-tomography",
+      "purpose": "To image spatial variations in hydraulic conductivity and storativity by sequentially performing pumping tests and using inversion of head responses.",
+      "workflow": "Perform multiple pumping tests in different borehole intervals; measure transient head responses; invert for 2D/3D hydraulic parameter fields using an equivalent porous medium or geostatistical framework.",
+      "inputs": [
+        "Pumping/injection flow rates",
+        "Head responses at multiple locations"
+      ],
+      "outputs": [
+        "Spatial maps of hydraulic conductivity (K) and specific storage (Ss)"
+      ],
+      "assumptions": [
+        "Darcy flow",
+        "Equivalent porous medium representation",
+        "Known boundary conditions"
+      ],
+      "strengths": [
+        "High-resolution subsurface imaging",
+        "Can be combined with tracer tests",
+        "Well-established inversion algorithms"
+      ],
+      "limitations": [
+        "Assumes existence of REV",
+        "May smooth out discrete fracture features",
+        "Inversion non-uniqueness"
+      ],
+      "related_concepts": [
+        "equivalent-porous-medium",
+        "representative-elementary-volume",
+        "discrete-fracture-network"
+      ],
+      "sources": [
+        "2019-dong-equivalence-of-discrete-fracture-network-and-porous-media-models-by-hydraulic-tomograp"
+      ]
+    },
+    {
+      "name": "Percolation Critical Condition Analysis",
+      "slug": "percolation-critical-condition-analysis",
+      "purpose": "To determine the connectivity state of a fracture network and derive critical relationships between fracture density and size for onset of percolation.",
+      "workflow": "Generate many 2D DFN realizations with varying fracture count and mean length; detect spanning clusters using box-and-scanline intersection methods; fit power-law relations between mean length and count at low, medium, and high percolation probability.",
+      "inputs": [
+        "Fracture number",
+        "Mean fracture length",
+        "Fracture orientation distribution"
+      ],
+      "outputs": [
+        "Percolation probability curves",
+        "Critical length-count functions"
+      ],
+      "assumptions": [
+        "2D network",
+        "Uniformly distributed fractures",
+        "Exponential or constant length distributions",
+        "Steady-state Poisson process"
+      ],
+      "strengths": [
+        "Direct use of fracture parameters",
+        "Quick evaluation of connectivity"
+      ],
+      "limitations": [
+        "2D only",
+        "Assumes random orientations",
+        "Limited parameter range in fits"
+      ],
+      "related_concepts": [
+        "percolation-threshold",
+        "discrete-fracture-network"
+      ],
+      "sources": [
+        "2019-dong-analysis-of-relationship-between-underground-space-percolation-and-fracture-properties"
+      ]
+    },
+    {
+      "name": "Surrogate Modeling for EGS",
+      "slug": "surrogate-modeling-for-egs",
+      "purpose": "To build computationally cheap empirical models that approximate the output of full-physics THM simulations for parametric sensitivity analysis and optimization of EGS design.",
+      "workflow": "Design numerical experiments using Box-Behnken or similar designs; run THM simulations for combinations of key parameters (well spacing, fracture spacing, injection rate, etc.); fit second-order polynomial functions to output (production temperature); interpolate over time.",
+      "inputs": [
+        "Design parameter ranges (well spacing, fracture spacing, inclination, injection temperature, rate)",
+        "Numerical simulation results"
+      ],
+      "outputs": [
+        "Predicted production temperature profiles",
+        "Parameter importance ranking"
+      ],
+      "assumptions": [
+        "2nd-order polynomial adequately captures response",
+        "Parameters independent",
+        "Numerical model captures essential physics"
+      ],
+      "strengths": [
+        "Rapid parameter screening",
+        "Uncertainty quantification"
+      ],
+      "limitations": [
+        "Approximate, extrapolation risky",
+        "Depends on base model accuracy",
+        "Site-specific calibration required"
+      ],
+      "related_concepts": [
+        "enhanced-geothermal-system"
+      ],
+      "sources": [
+        "2018-asai-performance-evaluation-of-enhanced-geothermal-system-egs-surrogate-models-sensitivity"
+      ]
+    },
+    {
+      "name": "Thermal Cycling Treatment and Characterization",
+      "slug": "thermal-cycling-treatment-and-characterization",
+      "purpose": "To quantify the effects of slow vs. rapid thermal cycling on physical, mechanical, and transport properties of rocks for geothermal applications.",
+      "workflow": "Heat rock specimens to target temperatures (up to 1000 °C) at controlled rates; apply slow cooling (furnace) or rapid quenching (water); measure mass, P-wave velocity, UCS, elastic modulus, and gas permeability before and after; analyze microcracks via microscopy or CT.",
+      "inputs": [
+        "Heating rate, target temperatures",
+        "Cooling method (slow/quench)",
+        "Rock type, specimen dimensions"
+      ],
+      "outputs": [
+        "Mass loss, porosity, wave velocity",
+        "Stress-strain curves",
+        "Permeability",
+        "Crack density and morphology"
+      ],
+      "assumptions": [
+        "Uniform heating during slow ramp",
+        "Damage primarily thermal",
+        "Room-temperature testing represents residual damage"
+      ],
+      "strengths": [
+        "Direct quantification of thermal damage",
+        "Compares cooling methods",
+        "Identifies critical temperature thresholds"
+      ],
+      "limitations": [
+        "Small specimen sizes",
+        "Post-cooling tests, not in-situ",
+        "Single lithology limits generalization"
+      ],
+      "related_concepts": [
+        "thermal-shock",
+        "thermal-damage-factor",
+        "fracture-roughness"
+      ],
+      "sources": [
+        "2017-yang-an-experimental-investigation-on-thermal-damage-and-failure-mechanical-behavior-of-gra",
+        "2017-yang-experimental-investigation-on-triaxial-mechanical-and-permeability-behavior-of-sandsto",
+        "2018-jin-influence-of-different-thermal-cycling-treatments-on-the-physical-mechanical-and-transp",
+        "2018-zhang-laboratory-investigation-on-physical-and-mechanical-properties-of-granite-after-heati"
+      ]
+    },
+    {
+      "name": "Acoustic Emission Damage Monitoring",
+      "slug": "acoustic-emission-damage-monitoring",
+      "purpose": "To track the evolution of thermal and mechanical cracking in rocks under loading or heating by recording high-frequency acoustic emissions.",
+      "workflow": "Attach AE sensors to specimen; load or heat while recording AE hits, event locations, and energy; correlate with stress-strain curves or temperature; derive damage parameters using statistical models (e.g., Weibull).",
+      "inputs": [
+        "AE waveforms and arrival times",
+        "Loading/temperature history"
+      ],
+      "outputs": [
+        "AE hit rate curves",
+        "Crack initiation and damage thresholds",
+        "Spatial event distributions"
+      ],
+      "assumptions": [
+        "AE events represent crack formation/growth",
+        "Sensor coupling adequate",
+        "Wave velocity known"
+      ],
+      "strengths": [
+        "Real-time monitoring of damage progression",
+        "Sensitive to microcracking"
+      ],
+      "limitations": [
+        "Attenuation and scattering",
+        "Difficult source mechanism interpretation",
+        "Requires calibration"
+      ],
+      "related_concepts": [
+        "thermal-damage-factor"
+      ],
+      "sources": [
+        "2017-zhao-experimental-investigation-on-thermal-cracking-permeability-under-hthp-and-application",
+        "2018-xu-acoustic-emission-and-damage-characteristics-of-granite-subjected-to-high-temperature",
+        "2018-kumari-experimental-investigation-of-quenching-effect-on-mechanical-microstructural-and-flo"
+      ]
+    },
+    {
+      "name": "X-ray CT Microcrack Quantification",
+      "slug": "x-ray-ct-microcrack-quantification",
+      "purpose": "To visualize and quantify 3D thermal microcrack networks in rock specimens using high-resolution X-ray computed tomography.",
+      "workflow": "Scan specimens before and after thermal treatment at micron-scale voxel resolution; segment phases (minerals, pores, cracks) based on density contrasts; calculate crack density, connectivity, and porosity; perform statistical analysis.",
+      "inputs": [
+        "CT projection images",
+        "Mineral density references"
+      ],
+      "outputs": [
+        "3D crack and pore networks",
+        "Crack volume fraction",
+        "Connectivity metrics"
+      ],
+      "assumptions": [
+        "Density differences distinguish phases",
+        "Resolution sufficient for cracks of interest",
+        "No beam hardening artifacts"
+      ],
+      "strengths": [
+        "Non-destructive 3D visualization",
+        "Quantitative crack morphology"
+      ],
+      "limitations": [
+        "Resolution limits fine cracks (<10 µm)",
+        "Phase overlaps in mineral densities",
+        "Long scan times"
+      ],
+      "related_concepts": [
+        "thermal-shock",
+        "thermal-damage-factor"
+      ],
+      "sources": [
+        "2017-yang-an-experimental-investigation-on-thermal-damage-and-failure-mechanical-behavior-of-gra",
+        "2019-isaka-quantification-of-thermally-induced-microcracks-in-granite-using-x-ray-ct-imaging-and"
+      ]
+    },
+    {
+      "name": "High-Pressure Liquid Nitrogen Jet Drilling",
+      "slug": "high-pressure-liquid-nitrogen-jet-drilling",
+      "purpose": "To enhance rock breakage rate in deep hard formations by combining high-pressure jet impact with severe thermal shock from liquid nitrogen.",
+      "workflow": "Pre-heat rock specimens to simulated formation temperatures; impinge high-pressure LN2 jet; measure rock removal depth, mechanical property degradation (UCS, elastic modulus) via comparison with air cooling; infer thermal stress contribution.",
+      "inputs": [
+        "Rock type and initial temperature",
+        "Jet pressure (e.g., 25 MPa)",
+        "LN2 flow"
+      ],
+      "outputs": [
+        "Breakage depth and volume",
+        "Strength reduction factors"
+      ],
+      "assumptions": [
+        "Rock is linearly elastic",
+        "Surface heat transfer dominated by quenching regimes",
+        "No in-situ stress effects"
+      ],
+      "strengths": [
+        "Synergistic thermal-mechanical rock removal",
+        "Lower threshold pressure for volume breakage"
+      ],
+      "limitations": [
+        "Surface experiments only",
+        "Fixed jet pressure",
+        "Does not consider borehole stability or circulation"
+      ],
+      "related_concepts": [
+        "cryogenic-quenching",
+        "thermal-shock"
+      ],
+      "sources": [
+        "2019-huang-mechanism-of-drilling-rate-improvement-using-high-pressure-liquid-nitrogen-jet"
+      ]
+    },
+    {
+      "name": "Seismic Azimuthal Inversion for ODHSR",
+      "slug": "seismic-azimuthal-inversion-for-odhsr",
+      "purpose": "To estimate the orthorhombic differential horizontal stress ratio from pre-stack azimuthal seismic data for fracability evaluation.",
+      "workflow": "Process wide-azimuth seismic data into partial angle stacks; perform azimuthal elastic impedance inversion to obtain P- and S-wave velocities, density, and HTI anisotropic parameters; compute ODHSR using derived orthorhombic stress equations.",
+      "inputs": [
+        "Pre-stack azimuthal seismic gathers",
+        "Well log data for calibration"
+      ],
+      "outputs": [
+        "3D ODHSR volume",
+        "Fracability index maps"
+      ],
+      "assumptions": [
+        "Orthorhombic symmetry (VTI background + HTI fractures)",
+        "Zero horizontal strain",
+        "Linear slip theory"
+      ],
+      "strengths": [
+        "3D continuous stress field from seismic",
+        "Direct fracability indicator"
+      ],
+      "limitations": [
+        "Model-dependent",
+        "Sensitive to parameter uncertainties",
+        "Assumes simple tectonic setting"
+      ],
+      "related_concepts": [
+        "orthorhombic-anisotropy",
+        "differential-horizontal-stress-ratio"
+      ],
+      "sources": [
+        "2018-ma-inversion-for-crustal-stress-based-on-azimuthal-seismic-data",
+        "2017-ma-基于正交各向异性介质理论的地应力地震预测方法"
+      ]
+    },
+    {
+      "name": "Multiscale Fracture Seismic Prediction",
+      "slug": "multiscale-fracture-seismic-prediction",
+      "purpose": "To predict macro- and meso-scale fracture distributions using a combination of curvature-based coherence and pre-stack attenuation anisotropy.",
+      "workflow": "For macro-fractures: compute multi-directional coherence via curvelet transform, determine minimum coherence azimuth for fracture orientation and density. For meso-fractures: invert pre-stack azimuthal attenuation attribute ε_Q from HTI-based theory. Integrate results based on fracture density distribution.",
+      "inputs": [
+        "3D wide-azimuth seismic data",
+        "Well log data for calibration"
+      ],
+      "outputs": [
+        "Macro-fracture density and orientation maps",
+        "Meso-fracture density maps"
+      ],
+      "assumptions": [
+        "HTI medium for meso-scale fractures",
+        "Fracture scale separation is valid",
+        "Coherence minima correspond to fracture orientation"
+      ],
+      "strengths": [
+        "Separates macro and meso scales",
+        "Utilizes complementary seismic attributes"
+      ],
+      "limitations": [
+        "Micro-fractures (<1/100 wavelength) undetectable",
+        "Attenuation anisotropy inversion is inherently non-unique",
+        "Method tested only on physical model"
+      ],
+      "related_concepts": [
+        "seismic-fracture-prediction",
+        "differential-horizontal-stress-ratio"
+      ],
+      "sources": [
+        "2018-wang-ling-ling-seismic-prediction-method-of-multiscale-fractured-reservoir"
+      ]
+    },
+    {
+      "name": "Discrete Fracture Model with Constrained PEBI Grid",
+      "slug": "dfm-with-constrained-pebi-grid",
+      "purpose": "To simulate fluid flow in fractured reservoirs using a discrete fracture model with Voronoi (PEBI) grids that conform to complex fracture geometries.",
+      "workflow": "Represent fractures as (n-1)-dimensional faces within a PEBI grid; discretize governing equations using finite volume method; couple matrix and fracture flow via star-delta transformation; employ fully implicit or IMPES scheme.",
+      "inputs": [
+        "Fracture network geometry",
+        "Matrix and fracture properties",
+        "Fluid PVT data"
+      ],
+      "outputs": [
+        "Pressure and saturation fields",
+        "Production profiles"
+      ],
+      "assumptions": [
+        "Fractures are planar",
+        "Darcy flow in matrix and fractures",
+        "Type b/c fractured reservoirs"
+      ],
+      "strengths": [
+        "Accurate fracture representation",
+        "Mass conservative",
+        "Handles complex networks"
+      ],
+      "limitations": [
+        "Grid generation complexity",
+        "Computational cost for dense fracture networks",
+        "Assumes matrix flow 1D perpendicular to fractures (some implementations)"
+      ],
+      "related_concepts": [
+        "discrete-fracture-network"
+      ],
+      "sources": [
+        "2017-xu-裂缝性油气藏离散裂缝数值模拟",
+        "2017-mi-an-enhanced-discrete-fracture-network-model-to-simulate-complex-fracture-distribution"
+      ]
+    },
+    {
+      "name": "Transparent DFN Flow Visualization",
+      "slug": "transparent-dfn-flow-visualization",
+      "purpose": "To directly observe and quantify flow channeling in complex 3D fracture networks using transparent physical models with spatially variable apertures.",
+      "workflow": "Machine fracture surfaces with prescribed aperture distributions using 5-axis milling; assemble transparent blocks; inject dyed fluid and record flow patterns via high-resolution camera; measure pressure drops; compare with numerical simulations.",
+      "inputs": [
+        "3D fracture network geometry and aperture maps",
+        "Flow rate",
+        "Dye injection"
+      ],
+      "outputs": [
+        "Flow channel images",
+        "Effective permeability",
+        "Validation data for numerical models"
+      ],
+      "assumptions": [
+        "Smooth parallel walls at contact points",
+        "Optical transparency preserves flow fidelity",
+        "Negligible surface roughness effects beyond prescribed aperture"
+      ],
+      "strengths": [
+        "Direct visualization of channeling",
+        "Validation of numerical models",
+        "Controlled aperture heterogeneity"
+      ],
+      "limitations": [
+        "Single sparse network",
+        "Limited to low confining pressures",
+        "Resin matrix different from rock"
+      ],
+      "related_concepts": [
+        "flow-channeling",
+        "fracture-roughness"
+      ],
+      "sources": [
+        "2019-huang-experimental-and-numerical-studies-of-the-hydraulic-properties-of-three-dimensional-f"
+      ]
+    },
+    {
+      "name": "3D Roughness Parameter AHD",
+      "slug": "3d-roughness-parameter-ahd",
+      "purpose": "To characterize anisotropic roughness of rock joints for shear strength prediction using an equivalent height difference parameter.",
+      "workflow": "Scan joint surface topography; project to rectangular grid; compute equivalent height differences considering shear/dilatant failure modes based on critical aspect ratio; average along a chosen direction to obtain AHD; derive fractal dimension D_AHD.",
+      "inputs": [
+        "3D surface point cloud"
+      ],
+      "outputs": [
+        "Direction-dependent AHD values",
+        "Fractal dimension D_AHD"
+      ],
+      "assumptions": [
+        "Joints can be modeled as rectangular asperities",
+        "Failure follows shear or non-shear mode",
+        "Fractal scaling holds within 0.25–3 mm"
+      ],
+      "strengths": [
+        "Captures roughness anisotropy",
+        "Physically linked to shear strength"
+      ],
+      "limitations": [
+        "Critical aspect ratio depends on intact rock properties",
+        "Validity of fractal scaling at larger scales uncertain",
+        "Not directly validated with 3D shear tests"
+      ],
+      "related_concepts": [
+        "fracture-roughness"
+      ],
+      "sources": [
+        "2019-ban-new-roughness-parameters-for-3d-roughness-of-rock-joints"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Transpressive tectonic settings are favorable for successful EGS development based on a review of 18 global sites.",
+      "slug": "egs-success-transpressive-tectonic-claim",
+      "evidence": "Qualitative association from global EGS site review.",
+      "condition": "Crystalline basement EGS sites.",
+      "limitation": "Observational correlation; other factors not excluded.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2017-lu-a-global-review-of-enhanced-geothermal-system-egs",
+          "locator": "pp. 1-1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Installing additional injection wells in conventional hydrothermal fields is a viable strategy to increase productivity for Taiwan, based on international experience.",
+      "slug": "re-injection-well-viable-taiwan-claim",
+      "evidence": "Review of international EGS sites.",
+      "condition": "Existing hydrothermal fields with known geothermal potential.",
+      "limitation": "Recommendation based on foreign experience; requires local reservoir simulation and field testing.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2017-lu-a-global-review-of-enhanced-geothermal-system-egs",
+          "locator": "pp. 1-1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "The orthorhombic differential horizontal stress ratio (ODHSR) better captures the combined effect of horizontal layering (VTI) and vertical fractures (HTI) than the conventional HTI-based DHSR, making it more suitable for shale fracability evaluation.",
+      "slug": "odhsr-vs-dhsr-claim",
+      "evidence": "Derivations based on orthorhombic medium theory; validation with well log and seismic data.",
+      "condition": "Shale reservoirs with both VTI background and HTI fractures; simple tectonic setting with zero horizontal strain.",
+      "limitation": "Formula complexity; assumes orthorhombic symmetry; not validated in complex structural settings.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2017-ma-基于正交各向异性介质理论的地应力地震预测方法",
+          "locator": "pp. 5-9"
+        },
+        {
+          "paper_id": "2018-ma-inversion-for-crustal-stress-based-on-azimuthal-seismic-data",
+          "locator": "pp. 1-2, 6-9"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Low ODHSR values derived from azimuthal seismic inversion successfully identify zones where hydraulic fracturing can form complex fracture networks.",
+      "slug": "odhsr-low-value-fracability-claim",
+      "evidence": "Real-world application in an eastern China shale prospect with complex faulting.",
+      "condition": "Structurally simple but fractured shale reservoir; wide-azimuth seismic data available.",
+      "limitation": "Model-dependent; requires accurate HTI parameter inversion; sensitivity to VTI parameters not fully explored.",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2018-ma-inversion-for-crustal-stress-based-on-azimuthal-seismic-data",
+          "locator": "pp. 6-9"
+        }
+      ],
+      "supports": [
+        "odhsr-vs-dhsr-claim"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "In almost impermeable granite, permeability increases sharply beyond a critical temperature threshold, which decreases with increasing confining pressure.",
+      "slug": "critical-temperature-permeability-claim",
+      "evidence": "HTHP experiments on granite showing a two-stage permeability curve; 4700% increase in permeability across threshold.",
+      "condition": "Granite under high temperatures (up to 500 °C) and confining pressures; residual gas permeability measurement.",
+      "limitation": "Results from a single granite type; intergranular vs. intragranular stress inference qualitative; not tested in field conditions.",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2017-zhao-experimental-investigation-on-thermal-cracking-permeability-under-hthp-and-application",
+          "locator": "pp. 2-5"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Acoustic emission technology can identify multiple thermal cracking periods during heating; permeability peaks synchronously with AE activity, showing oscillatory evolution.",
+      "slug": "ae-permeability-synchrony-claim",
+      "evidence": "Simultaneous AE and permeability measurements during heating to 500 °C.",
+      "condition": "HTHP triaxial test on granitic rock.",
+      "limitation": "AE source mechanisms not differentiated; sample representativeness uncertain; correlation is empirical.",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2017-zhao-experimental-investigation-on-thermal-cracking-permeability-under-hthp-and-application",
+          "locator": "pp. 3-5"
+        }
+      ],
+      "supports": [
+        "critical-temperature-permeability-claim"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "Rapid cooling (quenching) generates gradient thermal cracks that dominate the permeability increase and strength degradation in granite compared to slow cooling, with effects intensifying above 500-600 °C.",
+      "slug": "rapid-cooling-dominates-damage-claim",
+      "evidence": "Comparison of slow vs. quick cooling treatments on granite: UCS, elastic modulus, and permeability differences.",
+      "condition": "Granite heated to 200–900 °C; single thermal cycle; atmospheric pressure.",
+      "limitation": "Single rock type; cooling rates not varied systematically beyond two extremes; long-term and cyclic effects not studied.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2018-jin-influence-of-different-thermal-cycling-treatments-on-the-physical-mechanical-and-transp",
+          "locator": "pp. 1-1, 7-8"
+        },
+        {
+          "paper_id": "2018-zhang-laboratory-investigation-on-physical-and-mechanical-properties-of-granite-after-heati",
+          "locator": "pp. 4-6"
+        }
+      ],
+      "supports": [
+        "critical-temperature-permeability-claim"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "Thermal quenching of Strathbogie granite reduces compressive strength by ~70% and increases porosity ~6-fold, mainly due to intergranular cracking from thermal expansion mismatch and temperature gradients.",
+      "slug": "thermal-quench-strength-reduction-claim",
+      "evidence": "Experimental comparison of intact and quenched granite: UCS drop, porosity increase from 1.16% to ~7%.",
+      "condition": "Specific granite composition (quartz dominant); quenching from <800 °C.",
+      "limitation": "Single lithology; residual measurements at room temperature; no in-situ stress or fluid chemistry effects.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2018-kumari-experimental-investigation-of-quenching-effect-on-mechanical-microstructural-and-flo",
+          "locator": "pp. 1-2, 5-6"
+        }
+      ],
+      "supports": [
+        "rapid-cooling-dominates-damage-claim"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "The multilevel micro-scale pores on rock surfaces act as intense bubble nucleation sites during film boiling, raising the Leidenfrost point by ~130 °C and destabilizing the vapor film, thus accelerating cooling.",
+      "slug": "surface-pore-boiling-claim",
+      "evidence": "LN2 quenching experiments on sandstone and copper; SEM imaging of surface pores.",
+      "condition": "Homogeneous sandstone with surface pore sizes 20–150 µm; LN2 saturated at ambient pressure.",
+      "limitation": "Only one rock type tested; contact angle approximated from water; effect of high-pressure reservoir conditions unknown.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2018-li-cryogenic-quenching-of-rock-using-liquid-nitrogen-as-a-coolant-investigation-of-surface",
+          "locator": "pp. 1-1, 6-7"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "High-pressure liquid nitrogen jet drilling achieves volumetric rock breakage at a threshold initial rock temperature (150 °C for granite) with depth increasing with temperature, due to synergistic thermal shock and jet impact.",
+      "slug": "ln2-jet-rock-breakage-claim",
+      "evidence": "Laboratory jet tests on granite, shale, and sandstone at various initial temperatures; UCS and elastic modulus 18-51% degradation.",
+      "condition": "Granite, initial temperature ≥ 150 °C; jet pressure 25 MPa; no confining stress.",
+      "limitation": "Atmospheric pressure tests; no downhole simulation; jet pressure fixed; long-term feasibility not evaluated.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2019-huang-mechanism-of-drilling-rate-improvement-using-high-pressure-liquid-nitrogen-jet",
+          "locator": "pp. 4-6, 7-8"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "THM coupling significantly influences EGS heat extraction performance; neglecting mechanical deformation can over- or underestimate thermal output.",
+      "slug": "thm-coupling-importance-claim",
+      "evidence": "2D discrete fracture THM simulations compared to non-coupled or partially coupled cases.",
+      "condition": "Fractured crystalline EGS reservoir; thermal non-equilibrium model.",
+      "limitation": "2D only; no field data validation; assumes single-phase liquid and linear thermoelasticity.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2017-sun-numerical-simulation-of-the-heat-extraction-in-egs-with-thermal-hydraulic-mechanical-co",
+          "locator": "pp. 1-2, 8-9"
+        },
+        {
+          "paper_id": "2018-salimzadeh-a-three-dimensional-coupled-thermo-hydro-mechanical-model-for-deformable-fractur",
+          "locator": "pp. 9-10"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "In low-permeability geothermal reservoirs, using an undrained thermal expansion coefficient leads to earlier thermal breakthrough and overestimates cooling-induced fracture opening compared to using drained (solid skeleton) coefficients.",
+      "slug": "thermoporoelastic-drainage-claim",
+      "evidence": "Numerical simulations of a horizontal disk fracture in a Habanero-like reservoir; undrained case breakthrough ~21 years vs. 27.6 years drained.",
+      "condition": "Low-porosity (φ=0.01) saturated crystalline rock; single fracture; constant injection rate.",
+      "limitation": "Idealized geometry; no chemical reactions or phase changes; limited to Biot coefficient α=1 case.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2018-salimzadeh-thermoporoelastic-effects-during-heat-extraction-from-low-permeability-reservoir",
+          "locator": "pp. 10-11"
+        }
+      ],
+      "supports": [
+        "thm-coupling-importance-claim"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "For international experts assessing a hypothetical EGS scenario, quantitative estimates of induced seismicity probability (e.g., annual probability of M≥3) span orders of magnitude (0.2% to 99.8%), reflecting deep cognitive uncertainty.",
+      "slug": "egs-induced-seismicity-uncertainty-claim",
+      "evidence": "Structured expert elicitation with 14 hazard experts on a defined hypothetical scenario.",
+      "condition": "Hypothetical future EGS project, non-volcanic granite, 5 km depth, 80 M m³ reservoir, traffic light system in place.",
+      "limitation": "Limited expert sample; hypothetical scenario; no real project data.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2018-trutnevyte-induced-seismicity-hazard-and-risk-by-enhanced-geothermal-systems-an-expert-elic",
+          "locator": "pp. 5"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "In isotropic fracture networks under triaxial stress, the direction of maximum permeability tends to align with the intermediate principal stress (S2) due to shear-induced aperture anisotropy.",
+      "slug": "permeability-aligns-with-intermediate-stress-claim",
+      "evidence": "Numerical simulations coupling DFN mechanics and flow with roughness-dependent fracture transmissivity.",
+      "condition": "Isotropic fracture network, three unequal far-field stresses, rock mass with matrix permeability.",
+      "limitation": "Linear elastic isotropic host rock; single roughness wavelength; no dilatancy or plastic yielding considered.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2018-lang-relationship-between-the-orientation-of-maximum-permeability-and-intermediate-principa",
+          "locator": "pp. 1-1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Local stress perturbation (Euclidean distance from mean stress) is positively linearly correlated with local fracture intensity (total length per area) in 2D fractured media.",
+      "slug": "stress-perturbation-fracture-intensity-correlation-claim",
+      "evidence": "Numerical simulations on synthetic and natural 2D DFN patterns under various frictional and stress conditions.",
+      "condition": "2D plane-strain/plane-stress; fractures independent of contemporary stress; friction coefficient fixed.",
+      "limitation": "2D only; fixed scale 10x10 m; ignores stress shadows and residual stress effects.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2018-lei-correlation-between-fracture-network-properties-and-stress-variability-in-geological-me",
+          "locator": "pp. 1-1, 10-11"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "The Ozkaya (2003) formula systematically overestimates the probability of full intersection for non-circular fractures, leading to downward-biased estimates of fracture radius, especially for elongated fractures.",
+      "slug": "ozkaya-bias-claim",
+      "evidence": "Monte Carlo simulations comparing new exact formula with Ozkaya approximation for various elongation ratios.",
+      "condition": "Borehole imaging; elliptical fracture assumption; increasing elongation ratio.",
+      "limitation": "Assumes planar elliptical fractures and uniform random center distribution; not verified with field data.",
+      "confidence": "high",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2018-prange-characterizing-fracture-geometry-from-borehole-images",
+          "locator": "pp. 8-11"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Borehole image analysis using relative azimuth histograms of partial fractures can uniquely recover fracture elongation ratio and rotation angle, decoupling shape from size estimation.",
+      "slug": "elliptical-fracture-geometry-claim",
+      "evidence": "Derivation and synthetic case demonstration showing azimuth histogram peaks depend only on ε and α for known θ.",
+      "condition": "Elliptical fractures; known borehole-to-fracture normal angle; partial intersections available.",
+      "limitation": "Synthetic data only; requires sufficient partial fractures; assumes no truncation biases.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2018-prange-characterizing-fracture-geometry-from-borehole-images",
+          "locator": "pp. 11-14"
+        }
+      ],
+      "supports": [
+        "ozkaya-bias-claim"
+      ],
+      "contradicts": []
+    },
+    {
+      "claim": "In three-dimensional fracture networks with identical P32 intensity, a smaller power-law length exponent (α) results in fewer but longer fractures, higher percolation density, and lower tortuosity.",
+      "slug": "power-law-length-exponent-connectivity-claim",
+      "evidence": "DFN simulations: α=1.6 networks have lowest tortuosity (1.36) and highest connectivity compared to α=2.6 (2.71).",
+      "condition": "Sparse, non-periodic 3D DFNs with uniform orientation and constant aperture; no matrix diffusion.",
+      "limitation": "Synthetic networks only; constant aperture; no roughness or stress effects; limited parameter range.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2019-hyman-linking-structural-and-transport-properties-in-three-dimensional-fracture-networks",
+          "locator": "pp. 4-5, 8-10"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "The critical percolation condition for 2D DFN can be described by power-law relationships between mean fracture length and fracture number, allowing rapid connectivity assessment.",
+      "slug": "percolation-critical-condition-claim",
+      "evidence": "Numerical percolation experiments on DFN with varying n and mean length; high correlation of power-law fits.",
+      "condition": "2D uniform Poisson fracture networks; exponential or constant length distributions.",
+      "limitation": "2D only; random orientations; limited parameter ranges; not yet scaled for 3D or anisotropic networks.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2019-dong-analysis-of-relationship-between-underground-space-percolation-and-fracture-properties",
+          "locator": "pp. 5-7"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Hydraulic tomography based on an equivalent porous medium (EPM) model accurately predicts flow fields in a discrete fracture network only when a spatial REV of fracture connectivity probability exists; otherwise it only captures large-scale connected paths.",
+      "slug": "connectivity-rev-equivalence-claim",
+      "evidence": "2D synthetic HT experiments on three DFN models with increasing density; comparison of EPM-inverted K fields with DFN flow.",
+      "condition": "2D DFN without matrix; Poisson fracture center process; known spatial REV criterion.",
+      "limitation": "2D only; no field validation; fracture density ranges limited; assumes constant aperture and no matrix.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2019-dong-equivalence-of-discrete-fracture-network-and-porous-media-models-by-hydraulic-tomograp",
+          "locator": "pp. 1-1"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Swept pore volume from a single tracer test, combined with F-Φ curve analysis, can separate individual fracture volumes and flow fractions even for multi-modal responses, if rate is stable.",
+      "slug": "tracer-f-phi-separation-claim",
+      "evidence": "Numerical examples with two damage zones; relative error <3% for swept volume; F-Φ curve breakpoints identify multiple fractures.",
+      "condition": "EGS reservoir with negligible matrix permeability; stable injection/production rates; inert tracer.",
+      "limitation": "Assumes instantaneous equilibrium; early termination of tracer tail underestimates volume; field validation lacking.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2017-shook-use-of-tracers-and-temperature-to-estimate-fracture-surface-area-for-egs-reservoirs",
+          "locator": "pp. 5-6"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Using reversible jump MCMC inversion on cross-hole tracer data successfully generates fracture probability maps and identifies main transport pathways without predefining fracture count.",
+      "slug": "rjmcmc-fracture-inversion-claim",
+      "evidence": "Application to 2D synthetic cases with conservative tracer tomography.",
+      "condition": "2D vertical section; conservative tracer; prior fracture length distribution known.",
+      "limitation": "Tested only on synthetic 2D cases; neglects matrix diffusion; depends on prior.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2017-somogyv-ri-synthetic-fracture-network-characterization-with-transdimensional-inversion",
+          "locator": "pp. 1-1, 3-4"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Stress-based tomography requires simultaneous use of at least one stress orientation and one stress magnitude observation; using only stress direction is insufficient to constrain DFN geometry.",
+      "slug": "stress-tomography-requires-multi-component-claim",
+      "evidence": "Synthetic DFN inversion tests showing non-uniqueness when only Shmax direction is used.",
+      "condition": "2D plane strain; fracture slip dominance; known far-field stress.",
+      "limitation": "Synthetic cases only; fixed number of fractures; no 3D validation.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2018-afshari-moein-fracture-network-characterization-using-stress-based-tomography",
+          "locator": "pp. 6-7"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "In time-lapse MT monitoring, phase tensor analysis avoids static shift and galvanic distortion artifacts, preserving direction information of resistivity changes induced by fracturing.",
+      "slug": "phase-tensor-mt-monitoring-claim",
+      "evidence": "Review of EGS field cases (Soultz, Paralana).",
+      "condition": "Surface MT monitoring during EGS stimulation; high-resistivity basement with conductive fluid injection.",
+      "limitation": "Changes often near noise level; conductive overburden dampens signals; subsurface resistivity model required.",
+      "confidence": "medium",
+      "status": "supported",
+      "sources": [
+        {
+          "paper_id": "2017-thiel-electromagnetic-monitoring-of-hydraulic-fracturing-relationship-to-permeability-seism",
+          "locator": "pp. 9-11"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "In laboratory experiments, local heat transfer coefficient along rough fractures increases sharply near the inlet and then approaches a constant value, and overall heat transfer increases with JRC roughness.",
+      "slug": "heat-transfer-roughness-claim",
+      "evidence": "3D-printed rough fracture samples (JRC 0-2, 10-12, 18-20); numerical and experimental agreement.",
+      "condition": "Laminar water flow; 1 MPa confining pressure; 90 °C specimen temperature.",
+      "limitation": "Cement mortar samples; surface roughness not identical to natural fractures; small scale; single-phase, constant fluid properties.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2018-ma-heat-transfer-by-water-flowing-through-rough-fractures-and-distribution-of-local-heat-tr",
+          "locator": "pp. 1-1, 8-9"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "High roughness perpendicular to flow direction significantly reduces flow capacity due to formation of large joint conduits that increase flow impedance.",
+      "slug": "roughness-direction-flow-claim",
+      "evidence": "EGS seepage experiments with 3D-printed JRC profiles oriented axially/radially.",
+      "condition": "Cement mortar fractured specimens; JRC 10-12 and 18-20; confining pressure 5-15 MPa.",
+      "limitation": "Only two JRC combinations; cement mortar not granite; single fracture; small specimen size.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2019-huang-experimental-investigation-of-seepage-and-heat-transfer-in-rough-fractures-for-enhanc",
+          "locator": "pp. 6-8"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "The 3D roughness parameter AHD reflects shear strength anisotropy of rock joints, with different values for different shear directions.",
+      "slug": "ahd-shear-anisotropy-claim",
+      "evidence": "Five joint surfaces scanned at 0.25 mm resolution; AHD varies with direction (e.g., 8.60 vs 5.78).",
+      "condition": "Planar joints; sampling interval 0.25-3 mm; known critical aspect ratio mc.",
+      "limitation": "mc depends on intact rock properties; fractal scaling not verified beyond 3 mm; no direct 3D shear test validation.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2019-ban-new-roughness-parameters-for-3d-roughness-of-rock-joints",
+          "locator": "pp. 6-9"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Mineral-cemented clastic injections in fractured basement can act as permanent natural proppants, maintaining fracture openness over geological timescales and facilitating hydrocarbon storage.",
+      "slug": "fracture-propping-claim",
+      "evidence": "Core observations from Rona Ridge (Clair field) showing oil-bearing layered sandstones and carbonate cements within fractures.",
+      "condition": "Buried basement highs with hydrothermal fluid circulation and adjacent sediment sources.",
+      "limitation": "Observations from a single region; propping effectiveness under stress changes not quantified; diagenetic overprint uncertain.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2019-holdsworth-natural-fracture-propping-and-earthquake-induced-oil-migration-in-fractured-base",
+          "locator": "pp. 1-1, 2-3"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Radial water jet drilled holes in surface sandstone do not follow straight trajectories but exhibit overall upward deflection and short-radius doglegs due to lithological heterogeneity.",
+      "slug": "rjd-trajectory-deflection-claim",
+      "evidence": "Geometry logs from five horizontal holes in Gildehaus quarry.",
+      "condition": "Surface conditions, Bentheim sandstone with bedding and fractures.",
+      "limitation": "Surface experiments only; no downhole pressure, stress, or saturation effects; ROP resolution may miss small-scale variations.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2018-reinsch-insights-into-the-radial-water-jet-drilling-technology-application-in-a-quarry",
+          "locator": "pp. 1-2, 8-10"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "Granite exposed to supercritical water (723 K, 45 MPa) exhibits significantly greater reduction in P-wave velocity and compressive strength than granite heated in air, indicating severe damage.",
+      "slug": "supercritical-water-damage-claim",
+      "evidence": "Comparison of SCW-heated, air-heated, and untreated granite: damage factor 21.93% higher for SCW group.",
+      "condition": "Chinese northwestern granite; standard cylindrical specimens; specific SCW condition.",
+      "limitation": "Uncertain mechanism (dissolution vs. thermal stress); mineral analysis based on small samples; not field-validated.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2019-hu-experiment-investigation-of-granite-damage-under-the-high-temperature-and-high-pressure",
+          "locator": "pp. 1-1, 4-5"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    },
+    {
+      "claim": "In tight sandstone, 400 °C is a threshold temperature where elastic modulus drops sharply (83.3%), while porosity and strength change more significantly above 400 °C due to quartz phase transition.",
+      "slug": "sandstone-400c-threshold-claim",
+      "evidence": "Experiments on Shandong sandstone: elastic modulus reduction, pore volume increase, UCS change at 25-600 °C.",
+      "condition": "Fine-grained homogeneous sandstone; slow heating and cooling at atmospheric pressure.",
+      "limitation": "Single sandstone type; no confining pressure; chemical effects not isolated.",
+      "confidence": "medium",
+      "status": "provisional",
+      "sources": [
+        {
+          "paper_id": "2017-zhang-pore-characteristics-and-mechanical-properties-of-sandstone-under-the-influence-of-te",
+          "locator": "pp. 1-2"
+        }
+      ],
+      "supports": [],
+      "contradicts": []
+    }
+  ],
+  "syntheses": [
+    {
+      "title": "Thermal stimulation techniques for permeability enhancement in crystalline rocks",
+      "slug": "thermal-stimulation-permeability-synthesis",
+      "central_question": "How do different thermal stimulation methods (slow heating, quenching, cryogenic LN2) affect the creation of permeability-enhancing fracture networks in granitic rocks?",
+      "summary": "Multiple experimental studies converge on a two-stage thermal damage model: below a critical temperature range (300–500 °C for granite, depending on cooling rate and confining pressure), microcracking initiates mainly at grain boundaries due to thermal expansion mismatch; above the threshold, especially with rapid cooling, transgranular cracks and quartz α-β transition (573 °C) cause dramatic increases in porosity and permeability. Rapid quenching (water or LN2) induces thermal gradient cracks that dominate permeability enhancement. In EGS, these results suggest that stimulation design can benefit from thermal shock to augment hydraulic fracture permeability, though the scaling of lab results to reservoir conditions remains a key challenge.",
+      "evidence_chain": [
+        "Zhao (2017) shows a critical temperature for permeability jump in granite under HTHP, with threshold decreasing with confining pressure.",
+        "Jin (2018) and Zhang (2018) demonstrate that rapid cooling produces more extensive damage and permeability increase than slow cooling.",
+        "Kumari (2018) quantifies up to 70% strength loss and 6× porosity increase from quenching.",
+        "Li (2018) and Huang (2019) explore cryogenic LN2 quenching, highlighting surface boiling effects and volumetric rock breakage."
+      ],
+      "disagreements": [
+        "The exact magnitude of permeability increase varies by orders of magnitude depending on measurement conditions (gas vs. water, confining pressure).",
+        "Whether supercritical water induces chemical dissolution or purely thermal stress remains unclear (Hu 2019).",
+        "Cyclic thermal loading vs. single-event damage is not yet compared in a systematic manner."
+      ],
+      "boundary_conditions": [
+        "Results are largely based on lab-scale intact specimens; field-scale effects such as joint interactions, in-situ stress, and fracture roughness are not fully captured.",
+        "Lithologies are primarily granitic; sandstones show similar trends but with different threshold temperatures (Yang 2017, Zhang 2017)."
+      ],
+      "writing_uses": [
+        "Designing thermal stimulation protocols for EGS and super-hot rock extraction.",
+        "Supporting the development of thermally assisted drilling technologies."
+      ],
+      "sources": [
+        "2017-zhao-experimental-investigation-on-thermal-cracking-permeability-under-hthp-and-application",
+        "2018-jin-influence-of-different-thermal-cycling-treatments-on-the-physical-mechanical-and-transp",
+        "2018-zhang-laboratory-investigation-on-physical-and-mechanical-properties-of-granite-after-heati",
+        "2018-kumari-experimental-investigation-of-quenching-effect-on-mechanical-microstructural-and-flo",
+        "2018-li-cryogenic-quenching-of-rock-using-liquid-nitrogen-as-a-coolant-investigation-of-surface",
+        "2019-huang-mechanism-of-drilling-rate-improvement-using-high-pressure-liquid-nitrogen-jet"
+      ]
+    },
+    {
+      "title": "Advances in discrete fracture network modeling and multi-scale characterization",
+      "slug": "dfn-modeling-and-characterization-synthesis",
+      "central_question": "How can we accurately model and characterize fracture networks across scales using stochastic, geophysical, and hydraulic methods?",
+      "summary": "DFN modeling has evolved from simple Poisson disk models to complex polygonal and hierarchical (parent-daughter) models that better reflect natural patterns. Connectivity and percolation thresholds can now be related directly to fracture density and length statistics. Characterization has advanced through borehole image analysis, which now decouples fracture shape from size for elliptical fractures (Prange 2018), and through stress-based tomography that infers fracture locations from borehole stress perturbations (Afshari Moein 2018). Seismic methods can separate macro- and meso-scale fractures using coherence and anisotropy, but micro-fractures remain below resolution. Hydraulic tomography can image effective properties but requires a spatial REV for equivalence with DFN (Dong 2019). rjMCMC inversion of tracer data offers a probabilistic alternative. Despite progress, integrating these multi-scale, multi-method data into a unified, conditioned DFN remains an open challenge.",
+      "evidence_chain": [
+        "Dong (2018 review) classifies DFN modeling methods and highlights improvements in shape, location processes, and attribute distributions.",
+        "Dong (2019 percolation) defines critical percolation relationships for 2D DFNs.",
+        "Prange (2018) provides a rigorous solution for fracture size from borehole images, correcting Ozkaya bias.",
+        "Afshari Moein (2018) uses stress tomography to image fractures in 2D.",
+        "Somogyvári (2017) applies rjMCMC for variable-dimension inversion.",
+        "Wang LL (2018) separates fracture scales using seismic attributes.",
+        "Dong (2019 HT) establishes conditions for EPM equivalence of DFN."
+      ],
+      "disagreements": [
+        "The choice between DFN and EPM models remains case-dependent; spatial REV existence is a criterion but not universally applicable.",
+        "Validation of inversion methods with real field data is generally lacking; most tests are on synthetic data."
+      ],
+      "boundary_conditions": [
+        "Many methods assume 2D or simplified 3D; full 3D complex networks with realistic apertures and stress-dependence are still computationally challenging.",
+        "Fracture network models are only as good as their input statistics, which are often sparse."
+      ],
+      "writing_uses": [
+        "Guiding integrated fracture characterization workflows in geothermal and hydrocarbon reservoirs.",
+        "Evaluating the reliability of DFN-based flow predictions."
+      ],
+      "sources": [
+        "2018-dong-储层裂缝随机建模方法研究进展",
+        "2019-dong-analysis-of-relationship-between-underground-space-percolation-and-fracture-properties",
+        "2018-prange-characterizing-fracture-geometry-from-borehole-images",
+        "2018-afshari-moein-fracture-network-characterization-using-stress-based-tomography",
+        "2017-somogyv-ri-synthetic-fracture-network-characterization-with-transdimensional-inversion",
+        "2018-wang-ling-ling-seismic-prediction-method-of-multiscale-fractured-reservoir",
+        "2019-dong-equivalence-of-discrete-fracture-network-and-porous-media-models-by-hydraulic-tomograp"
+      ]
+    },
+    {
+      "title": "Coupled THM processes and their impact on EGS performance and induced seismicity",
+      "slug": "thm-processes-egs-synthesis",
+      "central_question": "How do thermal, hydraulic, and mechanical interactions control permeability evolution, heat extraction efficiency, and the risk of induced seismicity in EGS?",
+      "summary": "THM coupling is essential for realistic EGS simulation: cold fluid injection causes thermal contraction and stress changes that alter fracture apertures, leading to non-linear pressure diffusion and flow channeling (Sun 2017, Salimzadeh 2018). The choice of drained versus undrained thermal expansion coefficients significantly affects predicted thermal breakthrough times (Salimzadeh 2018 thermoporoelastic). Field observations (Amann 2018) confirm that stimulation involves both hydraulic fracturing and shear reactivation, controlled by the natural fracture network and stress state. Permeability enhancement is spatially heterogeneous and often dominated by a few major flow paths. Induced seismicity remains a major uncertainty, with expert elicitation showing extreme disagreement even for well-defined scenarios (Trutnevyte 2018). Emerging methods like stress-based tomography and clustering-based magnitude forecasts (Afshari Moein 2018) attempt to constrain these risks, but validation lags behind modeling.",
+      "evidence_chain": [
+        "Sun (2017) demonstrates THM feedback in 2D discrete fracture models.",
+        "Salimzadeh (2018) provides a 3D fully coupled THM model with contact mechanics.",
+        "Salimzadeh (2018, thermoporoelastic) highlights the importance of drainage condition for thermal stress.",
+        "Amann (2018) synthesizes field evidence of mixed-mechanism stimulation.",
+        "Trutnevyte (2018) reveals deep uncertainty in seismicity probability estimates.",
+        "Afshari Moein (2018 magnitude) proposes early microseismicity-based forecasting."
+      ],
+      "disagreements": [
+        "The relative importance of hydraulic fracturing vs. shear dilation in crystalline rocks is site-specific and not fully predictable a priori.",
+        "Numerical models lack long-term chemical and creep effects, which may be significant over decades."
+      ],
+      "boundary_conditions": [
+        "Most THM models assume single-phase flow and ignore fluid-rock chemistry, limiting applicability to high-enthalpy systems with boiling or mineral precipitation.",
+        "Induced seismicity models are highly dependent on the assumed friction law and initial stress state."
+      ],
+      "writing_uses": [
+        "Framing EGS reservoir engineering studies and risk assessment.",
+        "Identifying key parameters for monitoring and operational optimization."
+      ],
+      "sources": [
+        "2017-sun-numerical-simulation-of-the-heat-extraction-in-egs-with-thermal-hydraulic-mechanical-co",
+        "2018-salimzadeh-a-three-dimensional-coupled-thermo-hydro-mechanical-model-for-deformable-fractur",
+        "2018-salimzadeh-thermoporoelastic-effects-during-heat-extraction-from-low-permeability-reservoir",
+        "2018-amann-the-seismo-hydromechanical-behavior-during-deep-geothermal-reservoir-stimulations-ope",
+        "2018-trutnevyte-induced-seismicity-hazard-and-risk-by-enhanced-geothermal-systems-an-expert-elic",
+        "2018-afshari-moein-maximum-magnitude-forecast-in-hydraulic-stimulation-based-on-clustering-and-s"
+      ]
+    }
+  ],
+  "open_questions": [
+    {
+      "question": "What is the long-term evolution of permeability in EGS reservoirs under coupled THMC (thermal-hydraulic-mechanical-chemical) processes, including mineral dissolution/precipitation and creep?",
+      "slug": "long-term-permeability-evolution-thmc",
+      "why_it_matters": "EGS projects need to sustain permeability and heat exchange for decades; unknown chemical and creep effects could lead to permeability decline or enhancement, affecting economic viability.",
+      "current_evidence": "Experimental and numerical THM models (Sun 2017, Salimzadeh 2018) consider only mechanical deformation and heat transfer, ignoring geochemical reactions. Some experiments show mineral dissolution under supercritical water (Hu 2019), but long-term reservoir-scale effects are unconstrained.",
+      "needed_evidence": "Long-term (multi-year) field tests with tracer and pressure monitoring; laboratory experiments under realistic reservoir conditions coupling stress, flow, and reactive transport; physics-based models incorporating kinetics.",
+      "sources": [
+        "2017-sun-numerical-simulation-of-the-heat-extraction-in-egs-with-thermal-hydraulic-mechanical-co",
+        "2019-hu-experiment-investigation-of-granite-damage-under-the-high-temperature-and-high-pressure",
+        "2018-salimzadeh-a-three-dimensional-coupled-thermo-hydro-mechanical-model-for-deformable-fractur"
+      ]
+    },
+    {
+      "question": "How can we reliably forecast the maximum magnitude of induced earthquakes during hydraulic stimulation, and what is the relative influence of injection volume, pressure, rate, and geological factors?",
+      "slug": "forecast-maximum-magnitude-induced-seismicity",
+      "why_it_matters": "Induced seismicity is a major societal risk for EGS; robust forecasting is essential for traffic light systems and regulatory acceptance.",
+      "current_evidence": "Afshari Moein (2018) proposed a double-power-law model based on early microseismicity clustering and size distribution, validated on Basel data. Trutnevyte (2018) showed expert estimates of M≥3 probability range from 0.2% to 99.8%, indicating deep uncertainty.",
+      "needed_evidence": "Prospective real-time forecasting tests during multiple EGS stimulations; systematic comparison of injection protocols; improved understanding of stress transfer on pre-existing faults; incorporation of fault slip models.",
+      "sources": [
+        "2018-afshari-moein-maximum-magnitude-forecast-in-hydraulic-stimulation-based-on-clustering-and-s",
+        "2018-trutnevyte-induced-seismicity-hazard-and-risk-by-enhanced-geothermal-systems-an-expert-elic"
+      ]
+    },
+    {
+      "question": "Can deep in-situ fracture network geometry be uniquely resolved from sparse borehole stress measurements alone, or is a combination with geophysical imaging mandatory?",
+      "slug": "fracture-network-resolution-stress-methods",
+      "why_it_matters": "Borehole stress data are often the only direct deep measurements; if they cannot uniquely constrain DFN, complementary data or new inversion strategies are needed for geothermal exploration.",
+      "current_evidence": "Afshari Moein (2018) showed 2D stress tomography can produce probability maps but cannot uniquely determine network geometry. The method requires both stress direction and magnitude. Lei (2018) found correlation between stress perturbations and fracture density, but forward models neglect stress shadowing.",
+      "needed_evidence": "3D extension with combined stress, seismic, and tracer data; field tests in well-characterized reservoirs; quantification of resolution and uncertainty as a function of fracture density and data quality.",
+      "sources": [
+        "2018-afshari-moein-fracture-network-characterization-using-stress-based-tomography",
+        "2018-lei-correlation-between-fracture-network-properties-and-stress-variability-in-geological-me"
+      ]
+    },
+    {
+      "question": "To what extent can upscaling of DFN properties to equivalent continuum models be automated and validated for realistic 3D fracture networks with heterogeneous apertures?",
+      "slug": "dfn-upscaling-to-epm",
+      "why_it_matters": "Field-scale reservoir simulations require continuum models. Reliable upscaling from DFN to EPM is essential for operational forecasting, but current criteria (e.g., spatial REV of connectivity) are not robust.",
+      "current_evidence": "Dong (2019 HT) demonstrated EPM equivalence only when a spatial REV exists; otherwise, only large-scale connectivity is captured. Hyman (2019) and Huang N (2019) show strong channeling effects that violate EPM assumptions.",
+      "needed_evidence": "Systematic parameter studies on 3D DFN with varying density, length distribution, and aperture heterogeneity; comparison of DFN vs. EPM predictions for transport (heat and solute) as well as flow; development of error metrics for upscaling.",
+      "sources": [
+        "2019-dong-equivalence-of-discrete-fracture-network-and-porous-media-models-by-hydraulic-tomograp",
+        "2019-hyman-linking-structural-and-transport-properties-in-three-dimensional-fracture-networks",
+        "2019-huang-experimental-and-numerical-studies-of-the-hydraulic-properties-of-three-dimensional-f"
+      ]
+    },
+    {
+      "question": "How do thermal stimulation techniques (quenching, cryogenic fluids, thermal cycling) affect rock properties in the presence of in-situ stress, fluid saturation, and long-term fatigue?",
+      "slug": "thermal-stimulation-under-in-situ-conditions",
+      "why_it_matters": "Most thermal damage experiments are on small dry samples at ambient pressure; extending results to downhole conditions is critical for designing effective stimulation and drilling technologies.",
+      "current_evidence": "Kumari (2018) and Jin (2018) report dramatic strength reduction and permeability increase under zero stress. Zhao (2017) shows confining pressure reduces the thermal cracking threshold. Huang Z (2019) demonstrated LN2 jet breakage at surface conditions.",
+      "needed_evidence": "Triaxial experiments under simultaneous heating/quenching and realistic stress and pore pressure; cyclic thermal loading tests; borehole-scale field trials of thermal stimulation.",
+      "sources": [
+        "2017-zhao-experimental-investigation-on-thermal-cracking-permeability-under-hthp-and-application",
+        "2018-kumari-experimental-investigation-of-quenching-effect-on-mechanical-microstructural-and-flo",
+        "2019-huang-mechanism-of-drilling-rate-improvement-using-high-pressure-liquid-nitrogen-jet"
+      ]
+    }
+  ]
+}

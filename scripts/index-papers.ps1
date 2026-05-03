@@ -1,31 +1,27 @@
-param(
+﻿param(
     [string]$IndexName = "papers",
-    [string]$PaperDirectory,
-    [string]$IndexDirectory,
     [Parameter(ValueFromRemainingArguments = $true)]
     [string[]]$ExtraArgs
 )
 
 $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
-if (-not $PaperDirectory) {
-    $PaperDirectory = Join-Path $ProjectRoot "data\\papers"
-}
-if (-not $IndexDirectory) {
-    $IndexDirectory = Join-Path $ProjectRoot "data\\indexes"
+$PaperDirectory = Join-Path $ProjectRoot "data\papers"
+$IndexDirectory = Join-Path $ProjectRoot "data\indexes"
+$Python = "python"
+$VenvPython = Join-Path $ProjectRoot ".venv\Scripts\python.exe"
+
+if (Test-Path $VenvPython) {
+    $Python = $VenvPython
 }
 
 New-Item -ItemType Directory -Force $PaperDirectory | Out-Null
 New-Item -ItemType Directory -Force $IndexDirectory | Out-Null
 
-& (Join-Path $ProjectRoot "scripts\\pqa.ps1") `
-    "--index" $IndexName `
-    "--agent.index.paper_directory" $PaperDirectory `
-    "--agent.index.index_directory" $IndexDirectory `
-    "--agent.index.concurrency" "1" `
-    "--parsing.multimodal" "false" `
-    "--parsing.use_doc_details" "false" `
+$env:PYTHONUTF8 = "1"
+& $Python `
+    (Join-Path $ProjectRoot "scripts\pqa-api.py") `
     "index" `
-    $PaperDirectory `
+    "--index-name" $IndexName `
     @ExtraArgs
 
 exit $LASTEXITCODE

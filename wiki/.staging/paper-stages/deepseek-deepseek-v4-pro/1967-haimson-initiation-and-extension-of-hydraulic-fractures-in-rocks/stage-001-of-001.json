@@ -1,0 +1,196 @@
+{
+  "schema_version": "paper-stage-v1-2026-04-30",
+  "one_line_summary": "This paper derives a poroelastic criterion for initiation and extension of vertical hydraulic fractures in porous rock, accounting for three wellbore stress fields, and shows how the derived equations can determine in situ horizontal stresses.",
+  "research_question": "How does fluid penetration into porous rock alter the stresses and pressures required to initiate and extend a vertical hydraulic fracture, and how can the derived pressure-fracture dimension relationships be inverted to determine regional horizontal stresses?",
+  "study_area_data": [
+    "Oil-bearing porous permeable formations at depth (generic petroleum reservoir setting); no specific geographic location mentioned."
+  ],
+  "methods": [
+    "Superposition of three stress fields: (1) far-field horizontal stresses modified by a circular wellbore, (2) pressure difference between wellbore fluid and formation pore fluid, (3) radial fluid flow into the formation treated via thermoelastic analogy.",
+    "Application of the poroelastic constant α = 1 – C_r/C_b and Darcy's law to derive flow-induced stresses.",
+    "Use of Muskhelishvili's complex variable method to solve for displacements and width of a thin crack under non-uniform pressure and far-field stresses.",
+    "Approximation of fluid pressure distribution along the fracture by a polynomial and imposing finite-stress tip condition to relate pressure to crack dimensions.",
+    "Numerical examples using measured elastic properties to illustrate Eqs. (44)–(46)."
+  ],
+  "key_findings": [
+    "The wellbore fluid pressure required to initiate a vertical fracture (breakdown pressure) is a function of the two unequal horizontal principal stresses, tensile strength, formation pore pressure, and poroelastic constant α [Eq. (10)].",
+    "For nonpenetrating fluids the initiation criterion reduces to Hubbert's criterion, whereas penetrating fluid reduces the effective tangential stress due to pore pressure build-up at the wellbore wall [Eq. (13) vs. Eq. (10)].",
+    "During constant-injection-rate extension, the wellbore pressure needed to keep the fracture open depends on the maximum horizontal regional stress normal to the fracture plane, the injection pressure, the fracture dimensions, and the rock's poroelastic constants; it is independent of the minimum horizontal stress [Eq. (44) and surrounding text].",
+    "The maximum fracture width W_max can be expressed as a linear function of the ratio of wellbore pressure to the regional stress, enabling stress determination if W_max and L are known [Eqs. (44)–(46)].",
+    "Porous elastic parameters (E, ν, α) must be known to obtain realistic stress estimates from hydraulic fracturing data."
+  ],
+  "evidence": [
+    {
+      "evidence": "A criterion is proposed for the initiation of vertical hydraulic fracturing taking into consideration the three stress fields around the wellbore arising from (1) nonhydrostatic regional stresses, (2) the difference between the fluid pressure in the wellbore and the formation fluid pressure, and (3) the radial fluid flow through porous rock from the wellbore into the formation.",
+      "source": "[Haimson 1967, pp. 1-2]",
+      "conditions": "Wellbore in elastic, porous, isotropic, homogeneous rock; fluid properties similar to formation pore fluid.",
+      "notes": "Abstract summary."
+    },
+    {
+      "evidence": "The wellbore fluid pressure required to initiate a fracture is a function of the porous elastic constants of the rock, the two unequal horizontal principal regional stresses, the tensile strength of the rock and the formation fluid pressure.",
+      "source": "[Haimson 1967, pp. 1-2]",
+      "conditions": "Smooth wellbore wall, elastic rock, penetrating fluid.",
+      "notes": ""
+    },
+    {
+      "evidence": "At a constant injection rate the fracture extends to equilibrium, and the pressure required to keep it open is a function of the porous elastic constants, the regional stress normal to the fracture plane, the formation fluid pressure, and the crack dimensions. The same expression may also be used to estimate the vertical fracture width.",
+      "source": "[Haimson 1967, pp. 1-2]",
+      "conditions": "Steady-state injection, penetrating fluid.",
+      "notes": "Extension pressure relation to fracture dimensions."
+    },
+    {
+      "evidence": "The minimum pressure difference required to induce fracture is given by Eq. (10): p_w^{crit} = [ (3σ₂₂ − σ₁₁) + α (1−2ν)/(1−ν) P₀ + σ_t ] / [1 − α (1−2ν)/(1−ν) ] (in effective stress form).",
+      "source": "[Haimson 1967, pp. 4-5]",
+      "conditions": "Penetrating fracturing fluid, r = r_w, θ = 0, π.",
+      "notes": "Eq. (10) derived from superposition of stress fields and tensile failure criterion σ_θθ^eff = σ_t."
+    },
+    {
+      "evidence": "For nonpenetrating injection fluid the fracture initiation criterion becomes p_w^{crit} = 3σ₂₂ − σ₁₁ + σ_t (effective stress form), identical to Hubbert's criterion.",
+      "source": "[Haimson 1967, pp. 4-5]",
+      "conditions": "Nonpenetrating fluid, pore pressure at wellbore wall remains P₀.",
+      "notes": "Eq. (13) in text."
+    },
+    {
+      "evidence": "The well fluid pressure p_f (at the wellbore during extension) is independent of the minimum regional effective principal stress σ₁₁.",
+      "source": "[Haimson 1967, pp. 6]",
+      "conditions": "Equilibrium crack under constant injection rate.",
+      "notes": "From Eq. (31) derivation for boundary loading displacement."
+    },
+    {
+      "evidence": "The total width of the fracture W at the wellbore (maximum width) is given by Eq. (44): Wₘₐₓ = (2L/E) [ (p_f + σ₂₂) + (α/2)(1−2ν) (p_f − P₀) ] × [2(1−ν²) − α(1−2ν)].",
+      "source": "[Haimson 1967, pp. 7]",
+      "conditions": "Plane strain, penetrating fluid, steady-state fluid flow, crack in equilibrium, far-field σ₂₂ normal to fracture.",
+      "notes": "Combines displacement due to boundary loading and fluid flow into formation."
+    },
+    {
+      "evidence": "The relationship between the ratio Wₘₐₓ/L and the wellbore pressure p_f is linear for the same regional stress field (σ₁₁, σ₂₂ = constant).",
+      "source": "[Haimson 1967, pp. 8]",
+      "conditions": "Constant regional stress field, i.e., within one field.",
+      "notes": "Allows estimation of unknown stresses from measured p_f and Wₘₐₓ/L."
+    },
+    {
+      "evidence": "The results do not constitute a complete solution ... a prior knowledge of one of the fracture dimensions is necessary to accurately determine the other.",
+      "source": "[Haimson 1967, pp. 8]",
+      "conditions": "General limitation of the derived equations.",
+      "notes": "Acknowledged incompleteness."
+    },
+    {
+      "evidence": "Contrary to what was previously believed, the porous elastic parameters of the rock (E, ν, α) must be known to obtain realistic results.",
+      "source": "[Haimson 1967, pp. 9]",
+      "conditions": "Stress determination from hydraulic fracturing data in porous formations.",
+      "notes": "Refers to earlier studies that neglected poroelastic effects."
+    }
+  ],
+  "limitations": [
+    "Requires prior knowledge of one fracture dimension (L or Wₘₐₓ) to determine the other; the theory does not independently predict both.",
+    "Assumes steady-state fluid flow in the formation during fracture extension.",
+    "The fracture is modelled as a thin crack of length 2L in an infinite homogeneous medium; wellbore influence neglected for fractures longer than wellbore diameter.",
+    "The pressure distribution along the fracture is approximated by a polynomial expansion; exact distribution unknown.",
+    "The analysis is 2D plane strain, assuming constant stress distribution over a depth range.",
+    "Results are analytical but rely on linear poroelasticity and isotropic homogeneous rock; anisotropy, heterogeneity, and non-Darcy flow are not considered."
+  ],
+  "assumptions_conditions": [
+    "Rock is elastic, porous, isotropic, and homogeneous.",
+    "Formation is under nonhydrostatic regional stress; one principal stress is vertical and equals overburden weight (S₃₃ = −ρgD).",
+    "Wellbore wall is smooth and circular in cross-section.",
+    "Fluid flow through the rock obeys Darcy's law.",
+    "The injected fluid has properties similar to the formation pore fluid.",
+    "The whole medium is an infinitely long cylinder; any horizontal cross-section deforms identically and is subject to the same stress distribution.",
+    "The vertical fracture initiates at θ = 0, π and extends symmetrically in a plane normal to the maximum horizontal stress direction.",
+    "For extension analysis, the wellbore is negligible; the fracture is modeled as a thin crack of length 2L; stresses at the crack tips are finite (equilibrium condition).",
+    "The fluid pressure distribution along the crack is approximated by a polynomial; steady-state flow is assumed (∇²p = 0)."
+  ],
+  "variables_parameters": [
+    "S₁₁, S₂₂, S₃₃: total principal regional stresses (S₃₃ = −ρD, vertical)",
+    "σ₁₁, σ₂₂: effective horizontal principal stresses (σᵢⱼ = Sᵢⱼ + P₀)",
+    "P₀: original formation pore pressure",
+    "p_w: wellbore fluid pressure; p_f = p_w − P₀ (pressure difference during extension); p_w^{crit} for initiation; p_c for final extension pressure",
+    "α = 1 − Cᵣ/C_b: poroelastic constant (Biot's coefficient)",
+    "ν: Poisson's ratio; E: Young's modulus",
+    "σ_t: tensile strength of the rock",
+    "r_w: wellbore radius; L: half-length of fracture; W, Wₘₐₓ: fracture width and maximum width at wellbore",
+    "G: shear modulus; λ: Lamé constant",
+    "u, v: displacements in x, y directions",
+    "R, γ: polar coordinates in mapped plane; ζ = R e^{iγ} mapping variable",
+    "p(x): fluid pressure distribution along fracture (above P₀); pf at wellbore, pL at tip"
+  ],
+  "reusable_claims": [
+    {
+      "claim": "For penetrating fluids, the breakdown pressure is reduced compared to the nonpenetrating case because the pore pressure at the wellbore wall equals the wellbore pressure, leading to a poroelastic stress component that opposes the far-field compressive stresses.",
+      "source": "[Haimson 1967, pp. 4-5]",
+      "condition": "Penetrating fluid, α > 0.",
+      "limitation": "Applies only when the injected fluid is compatible with the formation fluid; non-damaging to permeability."
+    },
+    {
+      "claim": "The initiation pressure for a penetrating fluid is given by Eq. (10): p_w^{crit} = P₀ + [ (3σ₂₂ − σ₁₁) + α(1−2ν)/(1−ν) P₀ + σ_t ] / [1 − α(1−2ν)/(1−ν) ].",
+      "source": "[Haimson 1967, pp. 4-5]",
+      "condition": "Elastic, porous, homogeneous rock; smooth circular borehole; hydrostatic pore fluid; plane strain; tensile failure at θ = 0, π.",
+      "limitation": "Assumes linear elasticity and tensile failure criterion; does not account for plastic deformation or shear failure."
+    },
+    {
+      "claim": "During fracture extension at constant injection rate, the wellbore pressure p_f is independent of the minimum horizontal regional stress σ₁₁.",
+      "source": "[Haimson 1967, pp. 6]",
+      "condition": "Equilibrium crack; steady-state fluid flow; plane strain.",
+      "limitation": "The fracture orientation must be vertical and normal to σ₂₂; if not, the relationship changes."
+    },
+    {
+      "claim": "The maximum fracture width at the wellbore Wₘₐₓ can be predicted from Eq. (44): Wₘₐₓ = (2L/E)[(p_f + σ₂₂) + (α/2)(1−2ν)(p_f − P₀)] × [2(1−ν²) − α(1−2ν)].",
+      "source": "[Haimson 1967, pp. 7]",
+      "condition": "Known L, σ₂₂, E, ν, α, P₀, and measured p_f; penetrating fluid; steady-state injection.",
+      "limitation": "Requires independent knowledge of L or σ₂₂; does not apply to non-steady-state or non-Darcy flow."
+    },
+    {
+      "claim": "If the ratio Wₘₐₓ/L can be estimated (e.g., from hydrodynamic volume calculations) and p_f is measured, the maximum horizontal effective stress σ₂₂ can be obtained from Eq. (45), and σ₁₁ from Eq. (10) or (46), thus determining both horizontal principal stresses.",
+      "source": "[Haimson 1967, pp. 7-8]",
+      "condition": "Known E, ν, α, σ_t, P₀; fracture orientation identified; penetrating fluid.",
+      "limitation": "The ratio Wₘₐₓ/L must be supplied by an auxiliary method; the method is inverse and relies on the correctness of the elasticity model."
+    },
+    {
+      "claim": "The relationship between Wₘₐₓ/L and p_f is linear for a constant regional stress state (i.e., within a single stress field).",
+      "source": "[Haimson 1967, pp. 8]",
+      "condition": "σ₂₂ constant; same rock properties.",
+      "limitation": "Linearity is lost if regional stress varies or if the rock exhibits nonlinear behavior."
+    }
+  ],
+  "candidate_concepts": [
+    "[[poroelasticity]]",
+    "[[hydraulic fracture initiation]]",
+    "[[hydraulic fracture extension]]",
+    "[[breakdown pressure]]",
+    "[[thermoelastic analogy]]",
+    "[[Biot coefficient]]",
+    "[[effective stress]]",
+    "[[plane strain crack]]",
+    "[[Muskhelishvili method]]"
+  ],
+  "candidate_methods": [
+    "[[superposition of stress fields]]",
+    "[[thermoelastic analogy for porous flow]]",
+    "[[Muskhelishvili complex potential method]]",
+    "[[conformal mapping of crack geometry]]",
+    "[[Darcy flow solution in transformed plane]]"
+  ],
+  "connections": [
+    "Extends Hubbert & Willis (1957) hydraulic fracturing criterion to incorporate poroelastic effects of penetrating fluid.",
+    "Directly builds on Biot's poroelasticity theory and the thermoelastic analogy (Biot 1941, 1956; Lubinski 1954; Geertsma 1957).",
+    "Uses the finite-stress crack tip condition and complex variable elasticity methods of Muskhelishvili (1963) and the infinite plate crack solution of Bowie (1956).",
+    "Addresses earlier works (e.g., Scheidegger 1962, Kehle 1964) that underestimated the influence of porous elastic constants."
+  ],
+  "open_questions": [
+    "How can the total fracture volume be estimated from injection rate using hydrodynamics to simultaneously determine L and Wₘₐₓ?",
+    "What is the exact pressure distribution along the fracture under steady-state flow conditions?",
+    "How well does the assumption of steady-state flow and polynomial pressure distribution hold in real field operations?",
+    "Can the method be extended to non-vertical fractures and to anisotropic or layered formations?"
+  ],
+  "coverage_notes": "The supplied fragments cover the complete theoretical development: abstract, assumptions, stress state derivation, fracture initiation criterion, extension analysis (including boundary loading and fluid flow displacements), derivation of Eq. (44), numerical examples, and conclusions. Nomenclature and references are included. The evidence extracted is well supported by the fragments.",
+  "_meta": {
+    "paper_id": "1967-haimson-initiation-and-extension-of-hydraulic-fractures-in-rocks",
+    "stage_index": 1,
+    "stage_count": 1,
+    "source_block_count": 7,
+    "source_chars": 31038,
+    "source_signature": "c5e721913e8f9c0833ce0e88cc0fdea85fe998a0",
+    "model": "deepseek/deepseek-v4-pro",
+    "compiled_at": "2026-04-30T21:58:34"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "paper-pro-resume-20260502-002211",
+  "updated_at": "2026-05-02T00:55:56",
+  "phase": "paper-pages",
+  "status": "running",
+  "total_records": 487,
+  "current_index": 215,
+  "current_paper": "2019-xu-peak-shear-strength-of-compacted-gmz-bentonites-in-saline-solution",
+  "completed": 10,
+  "skipped_complete": 203,
+  "skipped_over_budget": 0,
+  "failed": 2,
+  "remaining": 272,
+  "avg_seconds_per_completed": 202.43,
+  "eta_seconds": 55061,
+  "eta_at": "2026-05-02T16:13:37"
+}

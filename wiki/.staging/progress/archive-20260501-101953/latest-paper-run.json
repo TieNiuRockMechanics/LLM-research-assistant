@@ -1,0 +1,14 @@
+{
+  "run_id": "paper-pro-smoke",
+  "updated_at": "2026-04-30T23:06:27",
+  "phase": "paper-pages",
+  "status": "running",
+  "total_records": 1,
+  "completed": 0,
+  "skipped_complete": 0,
+  "skipped_over_budget": 0,
+  "failed": 0,
+  "remaining": 1,
+  "model": "deepseek/deepseek-v4-pro",
+  "single_pass_char_budget": 320000
+}

@@ -1,0 +1,19 @@
+﻿{
+    "run_id":  "paper-pro-20260501-104416",
+    "updated_at":  "2026-05-01T16:43:18",
+    "phase":  "paper-pages-paused",
+    "status":  "paused",
+    "total_records":  487,
+    "current_index":  122,
+    "current_paper":  "2016-gao-fracture-size-estimation-using-data-from-multiple-boreholes",
+    "completed":  121,
+    "skipped_complete":  1,
+    "skipped_over_budget":  0,
+    "failed":  0,
+    "remaining":  365,
+    "avg_seconds_per_completed":  178.03,
+    "eta_seconds":  64980,
+    "eta_at":  "2026-05-02T10:46:18",
+    "paused_at":  "2026-05-01T16:45:02",
+    "pause_reason":  "manual pause to review LLM Wiki language standard"
+}

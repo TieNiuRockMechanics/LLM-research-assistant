@@ -1,0 +1,142 @@
+{
+  "schema_version": "paper-stage-v1-2026-04-30",
+  "one_line_summary": "A spectral-type simulation method using the fast Fourier transform (FFT) is presented to efficiently generate spatially correlated fracture set properties (orientation, spacing, trace length, waviness) for normally and exponentially distributed data.",
+  "research_question": "How can spatially correlated fracture set properties be efficiently simulated while preserving their measured spatial covariance structure?",
+  "study_area_data": [
+    "Fracture set properties from unspecified field mapping data; examples simulate 256 values of dip and dip direction (normal) and spacing/trace length/waviness (exponential)."
+  ],
+  "methods": [
+    "Estimation of variogram γ(h) from mapped fracture data along the mean vector of the set",
+    "Conversion of variogram to covariance function C(h) = σ² − γ(h)",
+    "Computation of spectral density Sm via discrete Fourier transform of C(h) using FFT",
+    "Frequency‑domain simulation: generate uncorrelated Fourier coefficients with variances determined by Sm",
+    "For normally distributed properties: assign real and imaginary parts of coefficients variances according to eqs (5)–(6), then inverse FFT to obtain zero‑mean, properly correlated series; add back the original mean",
+    "For exponentially distributed properties: use the relation that an exponential variable Xχ²(2) is the sum of squares of two independent normal N(0, σ²) variables; derive covariance C(h) from the target exponential covariance Cu(h) via C(h) = [Cu(h)/4]^(½); simulate two normal series with that C(h) and σ² = μu/2, then square and sum to get exponential values",
+    "Implementation on DECsystem-20 using FFT algorithm"
+  ],
+  "key_findings": [
+    "The method reproduces the target mean, variance, and variogram of the corresponding fracture property (Figs. 1, 2).",
+    "Simulation of 256 normally distributed values required 0.60 s CPU time; 256 exponentially distributed values took 0.82 s.",
+    "The approach works for both normal (dip, dip direction) and exponential (spacing, trace length, waviness) distributions.",
+    "Each property is simulated independently; cross‑correlation between properties is not modelled."
+  ],
+  "evidence": [
+    {
+      "evidence": "The covariance function needed for the simulation can be obtained directly from the variogram function estimated for the fracture set property of interest.",
+      "source": "[Miller 1985, p. 43]",
+      "conditions": "The variogram is estimated along the mean vector of the fracture set; lag often measured in number of fractures.",
+      "notes": "Equation (2): C(h) = σ² − γ(h), where γ(h) is from eq. (1)."
+    },
+    {
+      "evidence": "The spectral density of a random process is the Fourier transform of the covariance function. … A digital estimate of the spectral density can be rapidly computed by applying the FFT to the digitized covariance function.",
+      "source": "[Miller 1985, p. 43]",
+      "conditions": "Covariance function must be real‑valued and symmetric; digitization interval Δh, period T = NΔh.",
+      "notes": "Eq. (3) defines S_m = Δh Σ C_n e^{−i2πmn/N}."
+    },
+    {
+      "evidence": "If A_m = U_m − iV_m, then Var(U_m) = T S_m for m = 0 or N/2, otherwise T S_m/2; Var(V_m) = 0 for m = 0 or N/2, otherwise T S_m/2.",
+      "source": "[Miller 1985, p. 44]",
+      "conditions": "Applies to normally distributed simulation. Z and Z' are independent N(0,1) random numbers.",
+      "notes": "Equations (5)–(8). Conjugate symmetries given in eq. (9)."
+    },
+    {
+      "evidence": "An exponential random variable is distributed as a χ² variable with 2 df. … Let U = σ² X = Y² + Z², then E[U] = 2σ², Var[U] = 4σ⁴. … Cu(h) = 4 C²(h).",
+      "source": "[Miller 1985, pp. 45‑46]",
+      "conditions": "Y and Z are independent N(0,σ²).",
+      "notes": "Equation (13). Thus C(h) = [Cu(h)/4]^(½) and σ² = μu/2 are used in the normal simulation that underlies the exponential series."
+    },
+    {
+      "evidence": "The simulation of N exponential fracture set data consists of simulating two series of normally distributed data … each series having N values, mean zero, variance σ², covariance function C(h); the desired exponential values U_i = X_i² + Y_i².",
+      "source": "[Miller 1985, p. 50]",
+      "conditions": "C(h) obtained via eq. (14); σ² via eq. (15).",
+      "notes": ""
+    },
+    {
+      "evidence": "Simulation examples … performed on a DECsystem‑20 computer … required 0.60 and 0.82 s of CPU time, respectively. … Figures 1 and 2 illustrate the results.",
+      "source": "[Miller 1985, p. 50]",
+      "conditions": "256 normally distributed values (Fig. 1) and 256 exponentially distributed values (Fig. 2).",
+      "notes": "CPU times demonstrate efficiency via FFT."
+    }
+  ],
+  "limitations": [
+    "Cross‑correlation between different fracture set properties is not modelled (the properties are simulated independently).",
+    "When digitizing the covariance function, care must be taken to choose digitization interval and period to avoid aliasing.",
+    "The Fourier transform implicitly assumes a periodic function, which may not reflect the true behaviour beyond the sampled region.",
+    "The ‘nugget effect’ (y‑intercept of the variogram) is difficult to incorporate directly; two ad‑hoc methods are described (sharp climb near origin or addition of white noise in frequency domain)."
+  ],
+  "assumptions_conditions": [
+    "The random process represented by mapped fracture data is covariance stationary (covariance depends only on lag, not location).",
+    "The probability density of the random variable is constant within the fracture set, implying constant mean and variance.",
+    "Fracture orientation data (dip, dip direction) are approximately normally distributed; spacing, trace length, and waviness are typically exponential or lognormal (lognormal can be transformed to normal).",
+    "The covariance function is real‑valued and symmetric about lag zero, leading to a real‑valued symmetric spectral density.",
+    "Fracture set simulation uses Fourier coefficients that are uncorrelated in the frequency domain."
+  ],
+  "variables_parameters": [
+    "γ(h): estimated variogram at lag h (h in number of fractures or distance)",
+    "Z(xi): sample value of fracture property at location xi",
+    "N: number of sample values",
+    "C(h): estimated covariance function at lag h",
+    "σ²: estimated variance of data",
+    "S_m: m‑th discrete value of spectral density",
+    "Δh: digitization interval for covariance function",
+    "T = NΔh: period",
+    "A_m = U_m − iV_m: Fourier coefficients",
+    "μ_u: mean of exponential variable (U); used to derive σ² = μ_u/2",
+    "X, Y: independent normal N(0,σ²) random variables used to construct exponential variate U = X² + Y²"
+  ],
+  "reusable_claims": [
+    {
+      "claim": "For a covariance stationary process, the spectral density is the Fourier transform of the covariance function; simulating uncorrelated Fourier coefficients with variance assigned from the spectral density and then inverse‑FT yields a real‑valued series with the desired covariance function.",
+      "source": "[Miller 1985, pp. 43‑44]",
+      "condition": "The process must be covariance stationary and have a known or estimated covariance function.",
+      "limitation": "Assumes no cross‑correlation with other variables; requires careful handling of digitization (aliasing) and nugget effect."
+    },
+    {
+      "claim": "If an exponential random variable U is modelled as the sum of squares of two independent N(0,σ²) variables, then its covariance function satisfies Cu(h) = 4 C²(h), where C(h) is the covariance of the normal variables; the normal‑distribution simulation can be adapted to generate correlated exponential data.",
+      "source": "[Miller 1985, pp. 45,50]",
+      "condition": "Applicable when the target property follows an exponential distribution and its variogram/covariance function is available.",
+      "limitation": "The underlying normal variables must have a valid covariance function and the method preserves only the first two moments and the covariance of the exponential series, not higher‑order dependencies."
+    }
+  ],
+  "candidate_concepts": [
+    "[[spectral density]]",
+    "[[variogram]]",
+    "[[covariance function]]",
+    "[[covariance stationary process]]",
+    "[[fast Fourier transform (FFT) simulation]]",
+    "[[aliasing]]",
+    "[[nugget effect]]",
+    "[[exponential distribution simulation]]",
+    "[[χ² distribution with 2 degrees of freedom]]",
+    "[[frequency-domain simulation]]"
+  ],
+  "candidate_methods": [
+    "[[spectral simulation of spatially correlated data]]",
+    "[[FFT-based simulation]]",
+    "[[geostatistical simulation using variogram and spectral density]]"
+  ],
+  "connections": [
+    "Cites Borgman (1973a,b) for spectral analysis and statistical properties of FFT coefficients.",
+    "Cites Miller (1979) and LaPointe (1980) for geostatistical analysis (variogram) of fracture sets.",
+    "Cites Journel (1974) for relationship between variogram and covariance.",
+    "References Call & Nicholas (1978) on standard Monte Carlo methods that cannot incorporate spatial correlation.",
+    "References Robertson (1970), Call et al. (1976), Cruden (1977), McMahon (1974), Bridges (1976), Baecher (1983) for distribution types of fracture properties.",
+    "Research sponsored by Climax Molybdenum Company (AMAX Inc.)."
+  ],
+  "open_questions": [
+    "How can cross‑correlation among multiple fracture properties be incorporated into the spectral simulation? (The paper mentions ‘current research work’ indicates a more sophisticated method.)",
+    "What is the optimal way to handle the nugget effect within the frequency‑domain simulation framework?",
+    "How sensitive are the simulation results to the choice of digitization interval Δh and period T for real field data with limited sampling?"
+  ],
+  "coverage_notes": "The fragments cover the full paper (pp. 41‑52) including introduction, assumptions, spectral background, simulation procedures for normal and exponential data, examples, conclusions, and references. All key aspects of the method and its application are described. The paper does not provide original field data or a detailed case study; it focuses on the simulation methodology and its validation via example generations.",
+  "_meta": {
+    "paper_id": "1985-miller-spectral-type-simulation-of-spatially-correlated-fracture-set-properties",
+    "stage_index": 1,
+    "stage_count": 1,
+    "source_block_count": 5,
+    "source_chars": 22651,
+    "source_signature": "6e1f88d63431ac6cf71166f19203e0dedb4be665",
+    "model": "deepseek/deepseek-v4-pro",
+    "compiled_at": "2026-04-30T22:21:03"
+  }
+}

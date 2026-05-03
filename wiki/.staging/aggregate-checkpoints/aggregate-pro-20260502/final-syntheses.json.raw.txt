@@ -1,0 +1,644 @@
+{
+  "syntheses": [
+    {
+      "title": "裂缝网络分形标度与连通性",
+      "slug": "fracture-fractal-connectivity",
+      "central_question": "分形几何如何决定裂缝网络的逾渗特征和流动性质？",
+      "summary": "众多研究一致表明天然裂缝网络（节理、断层）在长度和空间分布上具有幂律/分形标度。Davy et al. (2010) 的 UFM 模型将这种标度归因于简单的力学抑制规则，并预测网络处于临界连通状态。Bour & Davy (1997, 1998)、Darcel et al. (2003) 和 Nakaya et al. (2003) 等人通过逾渗模拟建立了连通性转变与分形参数（D, a, lmax/L）的定量关系，发现 a=D+1 常为自相似情形。这使得从露头测量推导的标度参数可直接评估岩体渗透潜力。",
+      "evidence_chain": [
+        "Bour & Davy (1997): 连通性三种区制取决于 a",
+        "Bour et al. (2002): Hornelen 节理满足 a=D+1",
+        "Darcel et al. (2003): 分形相关下逾渗阈值尺度不变条件",
+        "Nakaya et al. (2003): 二元分形网络逾渗阈值方程",
+        "Davy et al. (2010): UFM 模型预测 a=D+1 的必然性"
+      ],
+      "disagreements": [
+        "a=D+1 是否是普适规律存在争议，Kusky 等构造模型暗示外力学长度可能改变标度。"
+      ],
+      "boundary_conditions": [
+        "仅当裂隙生长不受地层厚度等外部特征尺度控制时，a=D+1 标度才成立。"
+      ],
+      "writing_uses": [
+        "可用于评估是否达到临界逾渗，为深部储层激发策略提供依据。"
+      ],
+      "sources": [
+        "1997-bour-connectivity-of-random-fault-networks-following-a-power-law-fault-length-distribution",
+        "2002-bour-a-statistical-scaling-model-for-fracture-network-geometry-with-validation-on-a-multisc",
+        "2003-darcel-connectivity-properties-of-two-dimensional-fracture-networks-with-stochastic-fractal",
+        "2003-nakaya-percolation-conditions-in-binary-fractal-fracture-networks-applications-to-rock-frac",
+        "2010-davy-a-likely-universal-model-of-fracture-scaling-and-its-consequence-for-crustal-hydromech"
+      ]
+    },
+    {
+      "title": "多尺度裂缝表征的偏差校正与几何参数提取",
+      "slug": "multi-scale-fracture-characterization-biases-correction",
+      "central_question": "如何从有偏的钻孔或露头采样中可靠提取裂缝网络的真实几何参数，并从有限一维和二维数据推断三维特征？",
+      "summary": "综合传统偏差校正方法（Kulatilake 1984, Genter 1997, Ortega 2006）和近期从2D迹线推断3D几何和分形参数的发展（Huang 2017, Dong 2019, Moein 2019），建立从数据采集到DFN建模的可靠工作流。校正了定向、截断和尺度偏差，并利用体视学和分形方法反演长度、密度和分形维数，为渗透率预测提供基础。",
+      "evidence_chain": [
+        "Kulatilake (1984): 定向偏差校正权重函数",
+        "Genter (1997): 成像-岩心对比及校正系数",
+        "Ortega (2006): 尺度无关裂缝强度",
+        "Berkowitz et al. (1998): 反演技圆盘直径分布",
+        "Darcel et al. (2003): 分形网络的体视学",
+        "Gupta (2006): 圆柱巷道迹线分析",
+        "Sisavath et al. (2004): 线数据分解框架",
+        "2017-huang 利用二维迹线图渗透率预测三维渗透率，R²达0.845",
+        "2019-dong 建立逾渗临界方程并给出四级连通性评价",
+        "2019-li 利用分形几何重建 DFN",
+        "2017-lei 综述 DFN 类型及 HM 耦合方法",
+        "2019-moein 证明二维点相关函数是估算钻孔裂隙分形维数最稳定方法，但1D→3D反演欠定"
+      ],
+      "disagreements": [
+        "不同方法对裂隙形状假设（圆盘 vs. 多边形）可能导致不同结果；校正系数通常在局部标定，普适性存疑。",
+        "对于裂隙位置的均匀分布与聚类分布哪种更普遍存在分歧",
+        "盒计数维数与相关维数哪种更适合描述裂隙空间模式，文献中二者并存"
+      ],
+      "boundary_conditions": [
+        "需假设一定的空间分布（如泊松过程或分形模型）；数据量需满足统计要求。",
+        "所有方法假设裂隙为平面圆盘或多边形，未考虑非平面、多分支",
+        "长度分布的截断和最小测量尺寸影响参数估计"
+      ],
+      "writing_uses": [
+        "可指导野外工作设计，确定所需最小样本量和测量精度，以支撑 DFN 建模。",
+        "为现场DFN构建提供方法选择指南"
+      ],
+      "sources": [
+        "1984-kulatilake-sampling-bias-on-orientation-of-discontinuities",
+        "1997-genter-comparative-analysis-of-direct-core-and-indirect-borehole-imaging-tools-collection-o",
+        "1998-berkowitz-stereological-analysis-of-fracture-network-structure-in-geological-formations",
+        "2001-bonnet-scaling-of-fracture-systems-in-geological-media",
+        "2003-darcel-stereological-analysis-of-fractal-fracture-networks",
+        "2004-sisavath-geometry-percolation-and-transport-properties-of-fracture-networks-derived-from-li",
+        "2006-ortega-a-scale-independent-approach-to-fracture-intensity-and-average-spacing-measurement",
+        "2006-gupta-stereological-analysis-of-fracture-networks-along-cylindrical-galleries",
+        "2017-huang-estimation-of-permeability-of-3-d-discrete-fracture-networks-an-alternative-possibili",
+        "2019-dong-analysis-of-relationship-between-underground-space-percolation-and-fracture-properties",
+        "2019-li-characterization-of-a-jointed-rock-mass-based-on-fractal-geometry-theory",
+        "2017-lei-the-use-of-discrete-fracture-networks-for-modelling-coupled-geomechanical-and-hydrologi",
+        "2019-moein-scaling-of-fracture-patterns-in-three-deep-boreholes-and-implications-for-constrainin"
+      ]
+    },
+    {
+      "title": "离散裂隙网络（DFN）建模演进：从随机统计到物理成因与生成式AI",
+      "slug": "dfn-modeling-evolution",
+      "central_question": "DFN建模方法从纯统计泊松分布到基于力学约束的生长模型再到生成式AI，如何影响网络的连通性、渗透率和通道化等关键属性的表征？",
+      "summary": "经典泊松DFN系统性地高估连通性和渗透率；运动学模型（KFM）引入T形交切和丛集性，更接近天然网络；近期生成式对抗网络（GAN）可从单张图像生成高保真多尺度网络，推动建模向数据驱动与物理约束融合的方向发展。裂隙尺寸-导水性相关和内部非均质性对传导行为也有决定性影响。",
+      "evidence_chain": [
+        "Maillot (2016) 系统地对比了 KFM 模型与等效泊松模型的连通性及流动模拟数据，发现了系统性偏差（Poisson-vs-kinematic-connectivity）。",
+        "de Dreuzy (2012) 发现裂隙内部孔径的非均质性与网络拓扑的耦合导致整体等效渗透率的额外降低，且引入的耦合校正因子 a2 在系统尺寸 >20 倍相关长度后可以忽略。",
+        "Hyman (2016) 证明了裂隙尺寸与导水性的正相关性可使渗透率相对于常系数网络提高 2.5 倍。",
+        "Zhao (2015) 和 Lei (2015) 的工作确认了裂隙网络的分形本质，为基于分形理论的 DFN 生长和升尺度提供了几何统一性。",
+        "Bonneau (2016) 顺次生成过程能引入类应力影和聚集效应，证明在多个构造阶段中持续调整空间分形维数和连接度。",
+        "统计DFN在参数反演中达到误差<30%（Zhang 2025 分层策略）",
+        "分形地形模型可唯一表征长度序列（Zhao 2025）",
+        "FracGen余弦相似度>0.98（Zhou 2025）",
+        "Upscaling-GAN保留开度CV（Nie 2026）",
+        "所有AI方法仍需二维推广到三维"
+      ],
+      "disagreements": [
+        "但是，目前还没有确定如何在天然网络中校准 KFM 的众多参数（如成核率、生长指数、停止模式）。其模型对关联维数 Dc 的表达如何直接与渗透率映射也尚在研究中。",
+        "部分人认为，只要统计参数（分布函数、强度、走向）校准得足够精细，随机泊松 DFN 在 REV（代表性单元体）尺度上的等效行为与实际差异不大，这种对高维网络的从简处理在经济和时间上都更可行。",
+        "基于统计分布的DFN与GAN生成网络在细节丰富度上存在分歧；但不同方法在不同场景可互补。"
+      ],
+      "boundary_conditions": [
+        "在裂隙网络密度高、系统尺寸大（远大于 REV）时，泊松和运动学模型的结果趋向收敛。",
+        "在模拟非构造成因裂隙（如冷却节理）时，运动学生长模型的适用性尚待验证。",
+        "均依赖单张训练图像的代表性；三维扩展面临数据和计算挑战"
+      ],
+      "writing_uses": [
+        "在引言的段落中介绍 DFN 的发展史、对比新老建模理念。",
+        "针对油气或地热储层的 DFN 建模研究，阐述为什么需要对经典的双孔介质或泊松 DFN 进行修改，并阐明新模型所依据的力学机制。",
+        "为岩体水-力模拟提供几何输入，指导露头/钻孔数据到工程模型的信息升尺度。"
+      ],
+      "sources": [
+        "2016-maillot-connectivity-permeability-and-channeling-in-randomly-distributed-and-kinematically",
+        "2016-bonneau-impact-of-a-stochastic-sequential-initiation-of-fractures-on-the-spatial-correlatio",
+        "2016-hyman-fracture-size-and-transmissivity-correlations-implications-for-transport-simulations",
+        "2012-de-dreuzy-influence-of-fracture-scale-heterogeneity-on-the-flow-properties-of-three-dimensi",
+        "2015-zhao-three-dimensional-fractal-distribution-of-the-number-of-rock-mass-fracture-surfaces-an",
+        "2015-lei-a-new-approach-to-upscaling-fracture-network-models-while-preserving-geostatistical-and",
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "title": "裂缝网络几何对渗流、传热与溶质运移的控制",
+      "slug": "fracture-geometry-controls-transport",
+      "central_question": "裂隙密度、长度分布、开度变化和拓扑连通性如何决定流体流动的通道化、热突破和溶质反常传输？",
+      "summary": "DFN模拟和逾渗分析表明，等效渗透率与裂缝密度服从幂律或指数关系，逾渗阈值是流动突破的关键。裂缝长度-开度关联和孔径变异性显著重组网络流场、加剧通道化并改变活性表面积，导致热提取效率快速衰减。在逾渗阈值附近，死端裂隙占比最大，产生强烈的非菲克拖尾，弥散系数与Péclet数呈普适幂律标度。这些发现强调仅用平均参数不能可靠估计传导能力，必须计入几何非均质性和拓扑连通性。",
+      "evidence_chain": [
+        "DFN 渗透率统计分布 (Chen 2020a,b)",
+        "逾渗对热-流耦合的决定性影响 (Yao 2020)",
+        "真实孔径分布导致尺度桥接 (Hyman 2021)",
+        "合成岩体模型 (SRM) 力学响应 (Xu 2021)",
+        "2022-unknown-can-we-infer 提出了2D露头与3D网络渗透状态的定量关系。",
+        "2022-zhu-enhancing-fracture 用拓扑三元图、连通性指数(CB)和应力依赖的渗透模型展示了连通到导流的鸿沟。",
+        "2022-viswanathan-from-fluid-flow 发现仅临界应力裂缝开启时渗透率增加仅8%，而全开放时增加262%。",
+        "2023-gao-heat-extraction 发现孔径非均质性导致有效流动面积占比极低（<40%）。",
+        "Yoon (2023) 发现死端裂隙占比在逾渗阈值处最大，产生最强拖尾。",
+        "Yin (2024) 提出考虑大裂隙的特征 Péclet 数，使所有 DFN 的弥散系数坍缩为单条标度曲线。",
+        "Dong (2024) 建立了分形维数与裂缝数量、长度和方向的定量关系。"
+      ],
+      "disagreements": [
+        "对于 DFN 中长度-开度关联模型的选取（恒断裂韧度 vs 恒驱动应力），导致等效渗透率差异可达数量级。",
+        "高密度网络中，逾渗阈值附近二维和三维连通性差异显著，简化模型可能低估实际渗透率。",
+        "不同裂缝尺寸分布（幂律 vs 指数）对逾渗阈值和弥散的影响尚未完全统一。",
+        "对于网络连通性到渗透率的转化，不同模拟方法（如连续介质、离散网络、图论模型）给出的定量预测差异显著。"
+      ],
+      "boundary_conditions": [
+        "硬岩（花岗岩、片麻岩、石灰岩）低基质渗透率，裂隙以离散面或线表征，层流达西流。",
+        "主要基于2D/3D随机DFN；不考虑基质扩散；裂缝面内均匀开度。",
+        "适用于所有裂缝性储层，但在低应力差、所有裂缝均开放的理想条件下，几何连通性与水力传导的关系更强。"
+      ],
+      "writing_uses": [
+        "为现场水力试验（抽水/注水）解译提供概念模型。",
+        "指导地热储层靶向井位部署以提高扫掠效率。",
+        "用于核废料处置、地热储层评估等场景，从裂缝密度和方向直接估算弥散风险。",
+        "设计示踪试验时，根据估计的逾渗状态预测试验时长和解释方法。"
+      ],
+      "sources": [
+        "2020-chen-equivalent-permeability-distribution-for-fractured-porous-rocks-correlating-fracture-a",
+        "2020-chen-equivalent-permeability-distribution-for-fractured-porous-rocks-the-influence-of-fract",
+        "2020-yao-effects-of-fracture-density-roughness-and-percolation-of-fracture-network-on-heat-flow",
+        "2021-hyman-scale-bridging-in-three-dimensional-fracture-networks-characterizing-the-effects-of-v",
+        "2021-xu-裂隙网络对岩体试件单轴压缩力学特性影响研究",
+        "2022-unknown-can-we-infer",
+        "2022-zhu-enhancing-fracture",
+        "2022-viswanathan-from-fluid-flow",
+        "2023-gao-heat-extraction",
+        "2023-yoon-effects-of-dead-end-fractures-on-non-fickian-transport-in-three-dimensional-discrete-f",
+        "2024-yin-p-clet-number-dependent-longitudinal-dispersion-in-discrete-fracture-networks",
+        "2024-shaoqun-dong-relationship-between-box-counting-fractal-dimension-and-properties-of-fracture"
+      ]
+    },
+    {
+      "title": "多源数据驱动的裂缝网络表征与渗透性多尺度表征",
+      "slug": "data-fusion-permeability-characterization",
+      "central_question": "如何融合地质统计、微震、示踪等异构数据，通过贝叶斯反演和升尺度方法，降低深部裂缝网络和渗透性估计的不确定性？",
+      "summary": "当前趋势已从依赖单一数据源转向多源数据约束的贝叶斯反演。首先利用露头、测井等构建先验模型，再利用微震和热示踪数据通过rjMCMC等算法更新裂缝网络几何和物理性质，生成裂缝概率图和不确定性量化。升尺度方面，结合分形和渗透率模型，可从离散裂隙模型过渡到宏观渗透张量，但三维高保真网络的渗透性验证仍不足。",
+      "evidence_chain": [
+        "2023-jiang-fracture-network-characterization 通过合成案例，展示了使用rjMCMC联合微震和热突破数据推断裂缝网络，并定量化其不确定性。",
+        "2023-jalali-high-resolution-characterization 将等效介质反演（EPM）与离散网络反演（DFN-RJMCMC）成功应用到真实的现场气动试验数据中。",
+        "2023-gomez-a-non-parametric 为非参数先验建模（方向和尺寸的联合密度估计）提供了方法。",
+        "2022-afshari-moein-fractal-characteristics 为从野外露头/钻孔数据中提取稳健的统计和分形特征提供了基础知识。",
+        "Slug试验HCC矩阵揭示各向异性（Zhang 2025）",
+        "偶极示踪反演达西速度/弥散度（Zhang 2025）",
+        "采动PER达到数千（Zhu 2025）",
+        "液氮冷却渗透率倍增（Zhu 2025）",
+        "GAN升尺度保持裂缝强度但渗透率验证有限"
+      ],
+      "disagreements": [
+        "微震事件的‘干/湿’分类和处理是最易引入偏差的步骤，这本身依赖于对地震源机制的准确反演，目前仍有较大不确定性。",
+        "平行板模型（立方定律）广泛用于渗透率估算，但与CT观测的开度变异性相矛盾"
+      ],
+      "boundary_conditions": [
+        "非常依赖于高精度动态监测数据（如DAS/DTS光纤、高灵敏度地震台网）的可用性。",
+        "目前主要适用于控制性构造的裂缝表征，对于由几十万条微小裂缝组成的密集网络，计算成本仍较高。",
+        "升尺度模型尚未完全集成微观和现场尺度的渗透率预测。"
+      ],
+      "writing_uses": [
+        "可以作为综述或前言中引出‘前沿表征方法’的框架。",
+        "为未来地热/E&P现场如何综合采集和分析多源数据（监测设计、数据处理、解释一体化）提供了清晰的技术路线图。",
+        "建立从露头/钻孔到储层模型的渗透率赋值方案。"
+      ],
+      "sources": [
+        "2023-jiang-fracture-network-characterization",
+        "2023-jalali-high-resolution-characterization",
+        "2023-gomez-a-non-parametric",
+        "2022-afshari-moein-fractal-characteristics",
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "title": "高温花岗岩热损伤机理：冷却方式、矿物相变与热应力效应",
+      "slug": "thermal-damage-mechanisms-granite",
+      "central_question": "在高温（200-600°C）下，不同冷却速率和介质如何通过宏观热梯度和微观热膨胀失配诱发花岗岩损伤？石英α-β相变的关键作用是什么？",
+      "summary": "多项实验一致表明，400-600°C为花岗岩热损伤的关键阈值，与573°C的石英α→β相变密切相关。快速冷却（水冷、液氮）产生的温度梯度导致表面拉应力，引发自表向内的宏观裂纹；同时，不同矿物热膨胀系数不匹配在晶界诱发穿晶和晶间微裂纹。液氮因超低温热应力最大，但水冷因无气膜且汽化潜热带走更多热量，总损伤常高于液氮。这些机制共同导致渗透率激增和强度骤降，为EGS热刺激提供了物理基础。",
+      "evidence_chain": [
+        "2017-yang: 600°C为花岗岩脆-延转变温度，CT观测裂纹网络",
+        "2018-jin: 慢冷与快冷分别导致热循环裂纹和热梯度裂纹，机制不同",
+        "2019-isaka: CT量化快冷慢冷微裂纹空间分布，快冷连通性显著更高",
+        "2017-kant: 首次加热至500°C热导率永久衰减，支持Kaiser效应",
+        "2018-zhang: 渗透率在500°C后急剧增加，弹性模量下降",
+        "2021-kang: 不同冷却方式对比实验，液氮在>600°C时渗透率提升数百倍",
+        "2020-sha: 水冷与液氮损伤对比，水冷总损伤更大",
+        "2021-rong: 冷却方式造成强度差异，水冷损伤最大",
+        "2019-wu: 液氮冷却导致更多穿晶裂纹",
+        "2022-su: 液氮冷却大理岩的宏观拉应力>10MPa，微观拉应力>15Pa",
+        "2023-guo: CT-GBM模拟显示晶界应力集中、率先开裂",
+        "2022-fan: 水冷因水-岩化学作用最终损伤更严重",
+        "2022-zhou: 高围压条件下热冲击损伤差异可能反转",
+        "2023-wu: 实验对比三种冷却，水冷损伤>液氮>空气",
+        "2024-xi: NMR显示水冷产生更多大孔和连通性",
+        "2024-suo: 数值模型表明水冷换热系数达850 W/m²K，液氮因气膜效应仅约30%"
+      ],
+      "disagreements": [
+        "关于液氮与水冷在 ≤400 °C 时优势的争议：部分研究认为液氮因 Leidenfrost 效应在低温段效果不佳，但多循环或粗糙表面可减弱该效应。",
+        "部分研究（如 Kang 2021）得出液氮总损伤大于水冷，可能与实验冷却时间、介质温度和测量方法有关。",
+        "关于热应力的作用性质存在不同观点：Yin (2016) 将其视为一种加剧损伤的‘伪围压’，而传统三轴理论认为围压应该增加强度和延性。",
+        "不同花岗岩由于颗粒尺寸和矿物组成的差异，门槛温度和劣化幅度有所不同。"
+      ],
+      "boundary_conditions": [
+        "常压或低压下有效；高围压（>30 MPa）会抑制裂纹萌生和渗透率变化",
+        "适用于花岗岩、长英质硬岩；高温段 (>400 °C) 效应显著",
+        "试样尺寸 Φ25–50 mm，加热温度 400–600 °C，缓慢升温避免额外损伤",
+        "冷却介质为水或液氮，实验室无围压或低围压"
+      ],
+      "writing_uses": [
+        "可为地热储层热刺激的注入温度和排量设计提供依据",
+        "在储层增透方案对比中，阐明以水作为压裂液或急冷介质的优势"
+      ],
+      "sources": [
+        "2017-yang-an-experimental-investigation-on-thermal-damage-and-failure-mechanical-behavior-of-gra",
+        "2018-jin-influence-of-different-thermal-cycling-treatments-on-the-physical-mechanical-and-transp",
+        "2019-isaka-quantification-of-thermally-induced-microcracks-in-granite-using-x-ray-ct-imaging-and",
+        "2017-kant-thermal-properties-of-central-aare-granite-for-temperatures-up-to-500-c-irreversible-c",
+        "2018-zhang-laboratory-investigation-on-physical-and-mechanical-properties-of-granite-after-heati",
+        "2021-kang-experimental-study-on-the-physical-and-mechanical-variations-of-hot-granite-under-diff",
+        "2020-sha-experimental-evaluation-of-physical-and-mechanical-properties-of-geothermal-reservoir-r",
+        "2021-rong-experimental-investigation-on-physical-and-mechanical-properties-of-granite-subjected",
+        "2019-wu-variations-of-physical-and-mechanical-properties-of-heated-granite-after-rapid-cooling-w",
+        "2022-su-changes-in-mechanical",
+        "2023-guo-microcracking-behavior",
+        "2022-fan-evaluation-of-the",
+        "2022-zhou-variations-in-stress",
+        "2023-wu-effect-of-cooling-methods-on-mechanical-behaviors-and-thermal-damage-distributions-of-gr",
+        "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm",
+        "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under"
+      ]
+    },
+    {
+      "title": "热循环作用下岩石损伤累积与饱和规律",
+      "slug": "thermal-cycling-damage-accumulation",
+      "central_question": "多次热-冷循环如何导致花岗岩和砂岩物理力学性质劣化？劣化速率和饱和趋势受哪些因素控制？",
+      "summary": "循环加热-急冷实验表明，损伤主要在前5-10次循环内快速累积，随后增速趋缓甚至饱和。P波速度、孔隙度、强度等参数可用指数或对数函数拟合；抗拉强度对循环热损伤最敏感。首次冲击造成的裂纹网络为后续循环提供了应力释放空间，导致热应力水平下降（Kaiser效应）。当温度超过阈值（如>500°C）时，矿物相变和严重热失配可能导致损伤重新加速。这些规律为地热储层长期运营提供了评估依据。",
+      "evidence_chain": [
+        "不同循环次数 (0–35 次) 对比实验 (Rong 2021; Junique 2021; Li 2021)",
+        "孔隙度、波速、AE 监测 (Pai 2021; Zhao 2020)",
+        "NMR 与 CT 微结构变化追踪",
+        "2021-yu-mechanical-test, 2021-zhang-macroscopic-and-microscopic, 2023-cui-experimental-investigation均记录了花岗岩或砂岩在P波速度、强度随循环次数的前期剧降和后期趋缓。",
+        "2022-ge-thermal-damage和2022-cao-damage-deterioration研究长周期或高温水冷循环，指出在>600°C后，经典饱和趋势可能被打破，劣化重新加速。",
+        "2022-ge-thermal-damage引入的‘弹性核’概念提供了一个物理模型，解释了为何前期损伤集中于表面并逐步向内推进。",
+        "Harshini (2024) 对 Harcourt 花岗岩 900 °C 循环 5 次发现强度首次降 55%，后续降速减缓。",
+        "Xi (2024) 核磁共振显示孔隙度增长在 0–2 次循环达 133%，2–6 次仅 11.6%。",
+        "Zhu (2023) 综述统计多组循环数据，证实前 5 次循环主导了劣化。"
+      ],
+      "disagreements": [
+        "少数研究观察到 10 次循环后仍有缓慢劣化，可能与加热温度和冷却速率有关。",
+        "热强化现象（如 200–300 °C 时 UCS 短暂上升）在不同循环次数中也可能出现。",
+        "关于饱和循环数的界定：12 次、15 次或 20 次不等，取决于岩石类型和温度。"
+      ],
+      "boundary_conditions": [
+        "循环温度固定 (通常在 300–500 °C)，急冷介质为水或液氮；实验室无围压或低围压",
+        "升温速率 5–10 °C/min，保温 2–4 h",
+        "验证了花岗岩、砂岩；其他岩性数据不足"
+      ],
+      "writing_uses": [
+        "为干热岩储层寿命评估和循环注水方案优化提供依据",
+        "设计数值模型时简化损伤演化规律，只需考虑前几个循环即可",
+        "解释现场多次压裂后产能递减的内在物理原因"
+      ],
+      "sources": [
+        "2021-rong-experimental-investigation-on-physical-and-mechanical-properties-of-granite-subjected",
+        "2021-junique-experimental-investigation-of-the-effect-of-quenching-cycles-on-the-physico-chemica",
+        "2021-li-factors-affecting-pore-structure-of-granite-under-cyclic-heating-and-cooling-a-nuclear-m",
+        "2020-pai-an-investigation-on-the-deterioration-of-physical-and-mechanical-properties-of-granite",
+        "2020-zhao-exploratory-experimental-study-on-the-mechanical-properties-of-granite-subjected-to-cy",
+        "2021-yu-mechanical-test",
+        "2021-zhang-macroscopic-and-microscopic",
+        "2023-cui-experimental-investigation",
+        "2022-ge-thermal-damage",
+        "2024-harshini-australia-s-geothermal-frontier-unlocking-granite-s-energy-secrets",
+        "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm",
+        "2023-zhu-a-comprehensive-review-on-mechanical-responses-of-granite-in-enhanced-geothermal-system"
+      ]
+    },
+    {
+      "title": "岩石热损伤的多尺度表征与定量无损评价",
+      "slug": "thermal-damage-quantitative-characterization",
+      "central_question": "如何利用XRD、SEM、NMR、CT、超声和热导率等多尺度手段，建立热损伤的定量指标，并实现基于波速等无损参数的损伤评估？",
+      "summary": "热处理（尤其 >400 °C）显著改变花岗岩微观孔裂隙结构。XRD、SEM、NMR等揭示矿物相变和微裂纹演化，CT和超声可量化裂纹密度和分布。热导率随损伤线性下降，且与P波速度、孔隙度呈强线性相关。通过基于波速定义的损伤变量，可统一不同冷却方式下的劣化趋势，实现了从微观到宏观的无损定量表征，为深部地热和核废料处置工程提供关键物性参数。",
+      "evidence_chain": [
+        "Xi (2024) 用 NMR 孔隙率损伤和波速损伤拟合出 R²>0.97 的相关曲线。",
+        "Bu (2024) 发现热导率也与微裂纹密度呈线性负相关，并可统一到损伤框架。",
+        "Yang (2024) 的颗粒基模型模拟了加热‑冷却全过程微裂纹的萌生和扩展，验证了晶间裂纹的主导地位。",
+        "Li (2021) 热处理（尤其 >400 °C）显著降低花岗岩热导率，降幅可达 50% 以上；水冷比空气冷却降幅更大。",
+        "Li (2020) 发现热导率与 P 波速度呈强线性正相关，与孔隙度呈强线性负相关。",
+        "Verma (2021) AI 预测模型验证了热导率与损伤关系。"
+      ],
+      "disagreements": [
+        "不同岩石类型（砂岩、花岗岩、灰岩）的损伤演变批次存在差异，尤其是沉积岩的烧结和方解石分解使损伤趋势更复杂。",
+        "孔隙度—强度关系在某些砂岩中并非单调。",
+        "水冷增加热导率非均匀度的原因：是宏观裂纹集聚还是石英相变导致的局部弱化，不同作者侧重不同。"
+      ],
+      "boundary_conditions": [
+        "适用于结晶岩，尤其是含石英花岗岩；干燥条件；常压室温测量",
+        "热导率变化以基质热传导为主，忽略对流辐射"
+      ],
+      "writing_uses": [
+        "支持利用地球物理测井（声波）推演深部岩体热物性",
+        "为设计增强型地热系统的换热功率提供输入参数",
+        "构建高温岩石本构模型时，可以将孔隙率或波速作为内变量"
+      ],
+      "sources": [
+        "2024-xi-experimental-study-on-pore-characteristics-evolution-and-rock-damage-mechanism-of-therma",
+        "2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling",
+        "2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s",
+        "2021-li-thermal-damage-effect-on-the-thermal-conductivity-inhomogeneity-of-granite",
+        "2020-li-effect-of-mechanical-damage-on-the-thermal-conductivity-of-granite",
+        "2021-verma-prediction-of-thermal-conductivity-and-damage-in-indian-jalore-granite-for-design-of"
+      ]
+    },
+    {
+      "title": "热损伤花岗岩的力学响应与跨尺度模拟",
+      "slug": "thermal-damage-cross-scale-mechanics",
+      "central_question": "从矿物热膨胀到宏观动态断裂，热损伤如何通过多尺度裂缝网络传递并控制岩石的强度、脆性和渗透性？",
+      "summary": "基于PFC颗粒流模拟（Zhai 2025）识别的热裂纹三阶段演化，结合热冲击实验（Zhu 2025冷却对比）和文献荟萃（解经宇2025），一致表明高温和快速冷却导致微裂纹密度/分形维数上升、强度线性下降和渗透率数量级增加。PFC-FDEM跨尺度映射方法（Zhai 2025）将这些微观损伤定量桥接到动态断裂响应，揭示能量分配从弹性储存转向断裂耗散，并确认0.6倍剪切波速为多裂纹扩展临界速度。EGS储层改造（Lei 2026）则可利用这些力学规律，通过热刺激和循环冷却优化裂缝网络，但工程三难的权衡在热致裂场景下同样成立。",
+      "evidence_chain": [
+        "PFC模拟显示裂纹密度指数增长（Zhai 2025）",
+        "遇水/液氮冷却导致渗透率激增和强度锐减（Zhu 2025）",
+        "综述归一化强度拟合公式证实冷却介质影响（解经宇2025）",
+        "PFC-FDEM映射实现微观-宏观应力响应（Zhai 2025）",
+        "EGS需平衡连通性与地震风险（Lei 2026）"
+      ],
+      "disagreements": [
+        "空气冷却在某些条件下可闭合天然裂缝、提高强度（Zhu 2025），与普遍强度劣化趋势有差异。"
+      ],
+      "boundary_conditions": [
+        "当前多维模拟限于二维和小尺寸岩样",
+        "全耦合热-力-化学作用未纳入",
+        "不同花岗岩矿物组成差异影响损伤阈值"
+      ],
+      "writing_uses": [
+        "可用于设计EGS储层的热冲击策略",
+        "为深部高地温工程提供强度预测公式"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展",
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "title": "热-水-力（THM）多场耦合实验与数值模拟进展",
+      "slug": "thm-coupling-experiment-simulation",
+      "central_question": "如何在实验室和数值模型中重现温度-应力-流体压力共同作用下裂隙岩体的非单调渗透率演化及热提取过程？",
+      "summary": "综合高温三轴实验、循环淬火实验和从单裂隙到DFN的全耦合THM模拟，结果表明渗透率随温度和应力的演化并非单调“升温增渗”，而是可先降后升，存在300°C和500°C附近的转折点。实验发现，冷却速率和围压显著影响裂纹萌生与闭合；数值模型则强调了裂隙变形、冷缩通道化和热孔弹性对长期热提取效率的控制。目前仍缺乏高效的大规模三维并行求解器。",
+      "evidence_chain": [
+        "Yin (2016) 对比了花岗岩在‘高温后’和‘高温下’加载，发现了弹性模量、峰值应力、破坏模式的系统性差异（HT-UCS-brittle-ductile-transition）。",
+        "Siratovich (2015) 通过对比快速淬火与缓慢冷却，发现淬火大幅提高花岗闪长岩、玄武岩等渗透率近 4 个数量级（thermal-shock-enhances-permeability）。",
+        "Kim (2014) 发现在低中温下进行多次热循环，均质细粒岩石会出现‘裂纹愈合’效应，与非均质粗粒岩石的‘裂纹生长’效应完全相反（crack-healing-vs-growth-by-thermal-shock）。",
+        "Shao (2016) 发现褐煤渗透率在特定温度（~150°C, 350°C）和孔隙压力（0.5-1 MPa, 3.5-5 MPa）区间出现拐点和峰值。",
+        "Yu (2015) 研究了红砂岩在三轴压缩过程中的渗透率演化，将其分为裂纹闭合—弹性—稳定扩展—非稳定扩展—峰后五个阶段。",
+        "2017-sun基于离散裂隙模型建立THM全耦合有限元，揭示EGS中渗透率-温度-应力的强相互作用",
+        "2018-salimzadeh提出三维全耦合THM模型并引入增广拉格朗日接触力学，证明冷缩导致裂隙开度先增后因应力重分布而减速",
+        "2017-luo实验发现粗糙花岗岩裂隙渗流受面积比和围压控制，高温下粘度下降使水力传导系数增大",
+        "2019-huang通过3D打印和可视化实验给出粗糙度方向对换热的影响",
+        "2017-chen提出基于裂隙几何特征的FGC渗透率模型",
+        "Meng (2021a) 实时高温三轴渗透试验显示损伤砂岩渗透率先降后升",
+        "Meng (2021b) 揭示了渗流压力与损伤度的耦合影响非单调渗透率",
+        "Yang (2020) 实时高温实验对比高温后处理数据，说明热-力竞争引起的塑性闭合效应"
+      ],
+      "disagreements": [
+        "关于裂隙内热交换是否可用局部热平衡（LTE）假设，多数EGS模拟采用LTNE，但个别模型为简化仍用LTE",
+        "渗透率与有效应力的经验关系（指数型、幂律型）在深层地热条件下的适用性缺乏统一认识",
+        "Meng 等强调热塑性变形导致孔裂隙闭合，而另一些研究将弱化归因于矿物相变膨胀。",
+        "关于热应力的作用性质存在不同观点：Yin (2016) 将其视为一种加剧损伤的‘伪围压’，而传统三轴理论认为围压应该增加强度和延性。"
+      ],
+      "boundary_conditions": [
+        "大多数数值研究限于单裂隙或二维模型，三维多分支真实几何模拟计算成本高",
+        "实验室推导的粗糙裂隙关系升尺度到现场裂隙网络仍有不确定性",
+        "氮气作为渗流介质，静水/三轴应力达数十 MPa，最高温度 650 °C，适用于完整或含单裂缝的沉积岩",
+        "实时高温实验与高温后处理实验条件有本质区别"
+      ],
+      "writing_uses": [
+        "文献综述中可用于梳理EGS模拟方法的发展脉络",
+        "方法部分可引用作为THM耦合建模的基础",
+        "撰写一篇关于地热和深层化石能源开采中储层物性演化的综述，讨论多场耦合的共性与差异",
+        "为深部能源开发提供定量化的储层增产效果预测的理论基础"
+      ],
+      "sources": [
+        "2016-yin-comparison-of-mechanical-properties-in-high-temperature-and-thermal-treatment-granite",
+        "2015-siratovich-saturated-heating-and-quenching-of-three-crustal-rocks-and-implications-for-ther",
+        "2014-kim-effect-of-rapid-thermal-cooling-on-mechanical-rock-properties",
+        "2016-shao-effect-of-temperature-on-permeability-and-mechanical-characteristics-of-lignite",
+        "2015-yu-experimental-investigation-on-mechanical-properties-and-permeability-evolution-of-red-sa",
+        "2014-liu-mechanical-properties-of-qinling-biotite-granite-after-high-temperature-treatment",
+        "2017-sun-numerical-simulation-of-the-heat-extraction-in-egs-with-thermal-hydraulic-mechanical-co",
+        "2018-salimzadeh-a-three-dimensional-coupled-thermo-hydro-mechanical-model-for-deformable-fractur",
+        "2017-luo-experimental-investigation-of-the-hydraulic-and-heat-transfer-properties-of-artificiall",
+        "2019-huang-experimental-investigation-of-seepage-and-heat-transfer-in-rough-fractures-for-enhanc",
+        "2017-chen-experimental-study-on-the-effect-of-fracture-geometric-characteristics-on-the-permeabi",
+        "2021-meng-experimental-study-on-permeability-and-porosity-evolution-of-host-rock-with-varying-da",
+        "2021-meng-experimental-study-on-permeability-evolution-and-nonlinear-seepage-characteristics-of",
+        "2020-yang-an-experimental-study-of-effect-of-high-temperature-on-the-permeability-evolution-and"
+      ]
+    },
+    {
+      "title": "增强型地热系统（EGS）储层改造：诱发地震机制与技术抉择",
+      "slug": "egs-stimulation-seismicity-tradeoffs",
+      "central_question": "如何在水力、化学和热刺激中优化组合，以同时实现高效连通、热寿命长和低地震风险？",
+      "summary": "综合历史现场试验（Rangely, Soultz, Basel）和全球25个项目分析，阐明了孔隙压力扩散触发先存断层剪切滑移是EGS增产的主要机制，但诱发地震风险是三难权衡的核心。水力刺激连通性最强但震级风险最高；化学和热刺激作用半径小但扰动低。通过循环软刺激、多级注入和交通灯系统可缓解风险，但长期THMC耦合不确定性仍是挑战。",
+      "evidence_chain": [
+        "Raleigh (1976): Rangely 压力-地震活动循环",
+        "Barton (1995): 临界应力断层导水",
+        "Cornet (2007): Soultz 天然状态远离破坏，提供破坏准则",
+        "Häring (2008): Basel 1 渗透率增强400倍",
+        "Deichmann (2009): Basel 震源机制与压力扩散驱动的迁移",
+        "全球25个项目分析确认三难存在（Lei 2026）",
+        "剪切/混合模式已成为水力刺激主导范式（Lei 2026）",
+        "液氮冷却可使渗透率增5倍（Zhu 2025）",
+        "微震不等于有效渗透体积（Lei 2026）",
+        "热刺激效果在高温场址显著（Lei 2026）"
+      ],
+      "disagreements": [
+        "可能的最大震级上限和级联破裂机制尚不明确；剪切与非剪切（如张裂）贡献的比例因场地而异。",
+        "多级刺激和循环注入的效果在未充分耦合的模型中可能被高估",
+        "化学刺激的环境影响长期未知"
+      ],
+      "boundary_conditions": [
+        "必须存在与现今应力场呈有利角度的弱面；基岩要有一定渗透率以容许压力扩散。",
+        "结论主要针对低渗透结晶花岗岩（3–5 km，100–200 °C）",
+        "社会接受度决定地震阈值"
+      ],
+      "writing_uses": [
+        "可用于EGS储层激发设计，明确安全注入压力窗口和地震风险缓解策略（如交通灯系统）。",
+        "制定EGS项目技术路线图",
+        "指导安全监控和实时决策系统设计"
+      ],
+      "sources": [
+        "1976-raleigh-the-rangely-field-an-experiment-in-earthquake-control-at-rangely-colorado",
+        "1995-barton-fluid-flow-along-potentially-active-faults-in-crystalline-rock",
+        "2007-cornet-how-close-to-failure-is-a-granite-rock-mass-at-a-5-km-depth",
+        "2008-h-ring-characterisation-of-the-basel-1-enhanced-geothermal-system",
+        "2009-deichmann-earthquakes-induced-by-the-stimulation-of-an-enhanced-geothermal-system-below-bas",
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli"
+      ]
+    },
+    {
+      "title": "深部煤与地热资源开发中渗透率的多场控制",
+      "slug": "deep-energy-permeability-controls",
+      "central_question": "在地热和煤炭地下气化等原位开发过程中，渗透率如何随温度、有效应力、热刺激和物理化学作用演化？",
+      "summary": "渗透率是决定地热和煤炭地下气化可行性的关键参数。不同类型、不同尺度的实验共同揭示了渗透率对温度和应力场的敏感性：在 EGS 中，水力剪切和化学溶蚀是初始增产手段，而长期注采过程中，热刺激（特别是快速淬火）是进一步大幅提高渗透率的最有效手段，可使其增加数个数量级。然而，在原位高温条件下，岩石的热膨胀和蠕变会急剧降低渗透率。对于煤炭，各向异性的热解产物产出和焦化收缩与膨胀的竞争控制着渗透率的波动峰值（如 150°C, 350°C）。因此，这些深部资源开发必须采用包含热-水-力-化（THMC）的耦合数值模型来进行储层管理的预测。",
+      "evidence_chain": [
+        "Siratovich (2015) 发现快速淬火可使花岗岩渗透率提高近4个数量级，是缓慢冷却的数十倍。",
+        "Shao (2016) 和 Yu (2015) 揭示了在不同温度下褐煤和砂岩的渗透率呈现非单调演化，由热开裂和塑性流动共同决定。",
+        "Zang (2014) 和 Genter (2010) 总结了 EGS 中注入压力和流量与微地震和储层压实、通道短路等风险并存。",
+        "Cao (2016) 的数值模拟证明了工质（水 vs. SCCO₂）的密度和粘度变化对流动空间分布和取热速率的影响巨大。"
+      ],
+      "disagreements": [
+        "关于长期的地球化学效应（如矿物溶解与沉淀），会否导致冷却裂隙重新闭合而抵消热刺激的增益？实验室时间尺度太短，而现场示踪和地球化学数据在这方面的反馈模型尚缺乏共识。",
+        "对于煤渗透率随温度的复杂演化，其实验数据多基于氮气渗透，与真实热解气组分（多组分吸附与膨胀效应）差距较大。"
+      ],
+      "boundary_conditions": [
+        "所有这些渗透率增益都要求在增产过程中产生的新生裂隙是张开的。如果储层处于强烈的挤压应力状态（逆断层环境），那么多数对 EGS 有益的剪切扩容机制将无法奏效。",
+        "在煤炭地下气化中，干馏区前方的渗透率可能由体积应变以及热导致的干燥和收缩所主导，这与含水地热系统的基础完全不同。"
+      ],
+      "writing_uses": [
+        "撰写一篇关于地热和深层化石能源开采中储层物性演化的综述，讨论多场耦合的共性与差异。",
+        "为深部能源开发提供定量化的储层增产效果预测的理论基础。"
+      ],
+      "sources": [
+        "2015-siratovich-saturated-heating-and-quenching-of-three-crustal-rocks-and-implications-for-ther",
+        "2016-shao-effect-of-temperature-on-permeability-and-mechanical-characteristics-of-lignite",
+        "2015-yu-experimental-investigation-on-mechanical-properties-and-permeability-evolution-of-red-sa",
+        "2014-zang-analysis-of-induced-seismicity-in-geothermal-reservoirs-an-overview",
+        "2016-cao-numerical-study-on-variable-thermophysical-properties-of-heat-transfer-fluid-affecting",
+        "2010-genter-contribution-of-the-exploration-of-deep-crystalline-fractured-reservoir-of-soultz-to"
+      ]
+    },
+    {
+      "title": "裂隙表面粗糙度多尺度表征及其对渗流、传热和剪切强度的影响",
+      "slug": "fracture-roughness-multi-physics",
+      "central_question": "如何从微观分形到宏观JRC统一描述裂隙粗糙度，并量化它对单裂隙和网络中流动非线性、换热系数和剪切强度的影响？",
+      "summary": "综合统计参数、分形方法和机器学习在JRC预测中的应用，以及粗糙度对单裂隙和网络THM过程的影响。在微观层面，粗糙度通过沟槽化控制涡流生成和非线性流；在宏观上，粗糙度关联着JRC和剪切强度，ML方法可提高预测精度至误差<7%。粗糙度对OHTC的影响集中在凹槽和凸起，流速在凹槽处最大、换热增加。",
+      "evidence_chain": [
+        "Jang (2014) 和 Li (2015) 确定了统计参数和分形维数与JRC之间的定量关系，并指出了第4条标准剖面的系统偏差（JRC-4th-profile-deviation）。",
+        "Briggs (2017) 利用 LBM 发现了粗糙度控制着裂隙流的涡流生成和强非线性（三区模型），为 Forchheimer 流提供了微观机理解释。",
+        "He (2016) 和 Luo (2016) 确立了单裂隙表面粗糙度对局部换热系数和宏观热突破的影响，指出 Barton 等机械-水力隙宽模型主导了这一过程的宏观表现。",
+        "de Dreuzy (2012) 和 Maillot (2016) 揭示了裂隙内部的非均质性（孔径）和网络拓扑（T/X 交叉）耦合，导致泊松 DFN 与运动学 DFN 的等效渗透率出现系统性差异，且后者通道化更强。",
+        "Hyman (2016) 指出裂隙尺寸与导水性的正相关是控制 DFN 渗透率和溶质突破的一级参数。",
+        "Tian (2025) 通过 100 组试验构建新标准剖面，并用 PSO‑RBF 网络预测 JRC，测试 MAPE 4.79%。",
+        "Song (2025) 使用 GA‑BP 模型融合五维形态参数，JRC 回归 R>0.99，抗剪强度误差 7.25%。",
+        "传统对比：Z₂ 方法平均误差 ~28%，D_Lee 分形法 ~17%。"
+      ],
+      "disagreements": [
+        "关于分形维数的计算，Jang (2014) 强调在整个分规范围内回归相关性最高，而此前 Kulatilake 等人 (1997) 推荐使用忽略两端平坦段的“合适范围”，两者在方法论上存在根本分歧（D-to-JRC-relation-method-dependent）。",
+        "关于粗糙度对宏观流热的影响，Luo (2016) 指出其重要性强烈依赖所选的机械-水力隙宽经验模型。",
+        "神经网络模型过度依赖训练数据的覆盖范围和 JRC 标签的准确性，部分数据集的 JRC 通过反算获得，存在不确定性。"
+      ],
+      "boundary_conditions": [
+        "所有这些结论都基于低速层流假设，不适用于高速湍流或含有大量活动填充物的开裂情况。",
+        "实验室尺度的轮廓线（~100 mm）能否直接代表米级至公里级储层裂隙的力学水利行为？这种尺度的升尺度缺乏物理基础。",
+        "多数粗糙度表征忽略了法向应力下的接触点分布及其对渗流通道曲折度和各向异性的影响。"
+      ],
+      "writing_uses": [
+        "可用于撰写一篇关于裂隙表面粗糙度多尺度定量化及其对EGS渗流和热传导行为的跨尺度影响的前沿综述。",
+        "在特定实验方法章节（如单裂隙渗流传热试验）或在 EGS 产热量数值模拟的敏感性分析中，论证为何必须考虑粗糙度。",
+        "提出基于多源形态参数的 JRC 智能评估框架，替代传统标准曲线对比法。",
+        "在边坡稳定性分析中，引入更准确的节理强度参数。"
+      ],
+      "sources": [
+        "2010-tatone-a-new-2d-discontinuity-roughness-parameter-and-its-correlation-with-jrc",
+        "2014-jang-determination-of-joint-roughness-coefficients-using-roughness-parameters",
+        "2015-li-relationship-between-joint-roughness-coefficient-and-fractal-dimension-of-rock-fracture",
+        "2016-he-effects-of-surface-roughness-on-the-heat-transfer-characteristics-of-water-flow-through",
+        "2016-luo-the-role-of-fracture-surface-roughness-in-macroscopic-fluid-flow-and-heat-transfer-in-f",
+        "2012-de-dreuzy-influence-of-fracture-scale-heterogeneity-on-the-flow-properties-of-three-dimensi",
+        "2016-hyman-fracture-size-and-transmissivity-correlations-implications-for-transport-simulations",
+        "2016-maillot-connectivity-permeability-and-channeling-in-randomly-distributed-and-kinematically",
+        "2017-briggs-numerical-modeling-of-the-effects-of-roughness-on-flow-and-eddy-formation-in-fractur",
+        "2025-song-a-back-propagation-neural-network-optimized-by-genetic-algorithm-for-rock-joint-roughn",
+        "2025-tian-assessment-method-of-surface-morphology-based-on-100-shear-tests-and-pso-rbf-neural-ne"
+      ]
+    },
+    {
+      "title": "华北克拉通破坏：时限、机制与构造争议",
+      "slug": "ncc-destruction-debates",
+      "central_question": "华北克拉通从稳定性到破坏的根本动力学机制是什么？是一次由太平洋俯冲引起的早白垩世整体事件，还是多期次、多种体制（如碰撞与俯冲叠合）的结果？",
+      "summary": "不同证据链均揭示了华北东部发生的一次大规模岩石圈减薄事件。地震学和地球化学数据（如接收函数成像和早白垩世富水玄武岩）普遍将太平洋板块的西向俯冲及其在地幔过渡带的滞留视为主要驱动力，并得出峰期为 ~125 Ma 的结论。然而，在克拉通的拼合和破坏范围上仍存在根本性争议：Zhu 等人（2012）等人认同东部地块和西部地块沿约 1.85 Ga 的“横贯华北造山带（TNCO）”碰撞聚合；而 Kusky 等人（2016）通过一系列基于多学科的比较大地构造学分析提出，TNCO 并非碰撞缝合带，华北克拉通实际上是由多条更古老的太古代末碰撞带拼贴而成，其北缘在 >1.9 Ga 之前是一个安第斯型的活动陆缘。这两套对立模型对理解华北的稳定性本质和重点矿集区的基底背景具有截然不同的含义。",
+      "evidence_chain": [
+        "地震勘探和石油化学特征支持 Zhu 等人关于太平洋俯冲导致峰期为~125 Ma 破坏及其主要限于东部重力梯度带以东的论述（NCC-destruction-peak-125Ma, pacific-subduction-drives-destruction）。",
+        "Kusky (2016) 从威尔逊旋迴的视角，识别出多条蛇绿岩和混杂岩，提出了华北克拉通的向外增生模型，直接质疑 TNCO 的存在（Trans-North-China-Orogen-concept-abandoned）。",
+        "Zhao & Cawood (2012) 的综述提供了一个与 Kusky 相对立、支持传统 TNCO 模型的构造框架。"
+      ],
+      "disagreements": [
+        "核心争议点在于是否存在一条贯穿华北的 1.85 Ga 碰撞造山带（TNCO）。支持者认为其在变质年龄、P-T-t 轨迹和地球化学带上都存在对应证据；而反对者（如Kusky）认为该带是由后期中新生代断层活动所限定的，其内部并未发现匹配的专属蛇绿岩和沉积记录，不符合现代威尔逊旋迴中造山带的定义。"
+      ],
+      "boundary_conditions": [
+        "研究都受限于前寒武纪地体强变质、多期叠加的复杂性，直接的年代学测定和原始构造关系往往被后期岩浆或构造事件掩盖。",
+        "鄂尔多斯等地区被大面积覆盖，地球物理推断模型存在多解性。"
+      ],
+      "writing_uses": [
+        "提供华北克拉通前寒武纪构造与中生代破坏事件的研究综述，阐明大陆演化的动力学争论。",
+        "在针对华北克拉通的矿产控制因素（如破碎蚀变岩型金矿）研究中，分析不同基底模型对成矿预测的影响。"
+      ],
+      "sources": [
+        "2012-zhu-destruction-of-the-north-china-craton",
+        "2011-zhu-timing-scale-and-mechanism-of-the-destruction-of-the-north-china-craton",
+        "2012-zhao-precambrian-geology-of-china",
+        "2016-kusky-insights-into-the-tectonic-evolution-of-the-north-china-craton-through-comparative-te"
+      ]
+    },
+    {
+      "title": "X 射线 CT 图像中的射线束硬化校正及其在多孔介质中的应用",
+      "slug": "beam-hardening-ct-geomaterials",
+      "central_question": "如何有效地识别和校正高密度、非均质地质材料 CT 图像中的射线束硬化伪影，并将校正后的图像用于更准确的矿物相分割和裂隙参数提取？",
+      "summary": "在岩石物理和构造地质研究中，微米/纳米 CT 是关键技术，但多色 X 射线导致的射线束硬化伪影（图像中心区域变暗的“杯状”伪影）会严重干扰对矿物相的密度判识和图像分割。对圆柱形岩心的后重建校正证明 BHA 是径向对称的函数。对简单圆柱体，可利用单相材料的径向衰减曲线，通过指数拟合（μ = μ0 e^(-k√(R²-r²))）构建仿真图像，然后从原图中减去，实现分割与校正的同步化。对于更复杂的或非柱状的地质样品，专家可以导向的迭代样条优化法（Ketcham 与 Hanna, 2014），它可以寻找能最小化选定 ROI 内 CT 数方差的最优样条校正函数，无需预知 X 射线能谱。这两种途径在应对高原子序数矿物、孔洞或多物相复杂样品时各有利弊。",
+      "evidence_chain": [
+        "Jovanović 等人（2013）验证了在圆柱形地质岩心（蒸发岩、花岗岩）中，BHA 遵循径向函数，并展示了基于差值图像的逐相分割法（radial-bha-correction）。",
+        "Ketcham 与 Hanna（2014）证明了基于样条函数和专家定义 ROI 的迭代优化法在高度非均质且几何不规则的样品（如沥青混凝土、生物化石）中也能有效校正 BHA 并限制次级伪影（spline-based-bh-correction）。"
+      ],
+      "disagreements": [
+        "哪种是最佳的目标函数？Ketcham 与 Hanna (2014) 通过铜立方体实验发现，仅用固相 ROI 优化可以使内部均匀但边缘感观变差；而联合空气和固相 ROI（双物质）优化可以改善几何边界（如边角更直）但却使内部精度下降。这意味着没有一种通用的“最佳”校正函数，校正的效果取决于用户的使用目的（密度保真度 vs 尺寸测量精度）。"
+      ],
+      "boundary_conditions": [
+        "两种方法都假设主要伪影来自于射线束硬化，并对散射、环状伪影等其他噪声非常敏感。",
+        "Jovanović 等人的径向函数法要求试样是精确的垂直圆柱体，而 Ketcham 与 Hanna 的方法需要用户有丰富经验选取不受其它伪影干扰的 ROI。"
+      ],
+      "writing_uses": [
+        "在数字岩石物理或 CT 图像处理的方法论章节中，结合用户目的讨论 BHA 的影响及现有校正方案的局限性。",
+        "为其他研究者提供在缺乏光谱信息的台式 CT 设备上如何做定量分割的参考操作流程。"
+      ],
+      "sources": [
+        "2013-jovanovi-simultaneous-segmentation-and-beam-hardening-correction-in-computed-microtomograph",
+        "2014-ketcham-beam-hardening-correction-for-x-ray-computed-tomography-of-heterogeneous-natural-ma"
+      ]
+    },
+    {
+      "title": "基于岩心的地应力测量方法比较",
+      "slug": "core-based-stress-measurement-comparison",
+      "central_question": "各种基于岩心的地应力估算方法（DCDA、ASR、DSCA、AE）的准确性与适用性如何？",
+      "summary": "岩心直径变形分析（DCDA）是近年快速发展的方法，通过高精度直径测量和弹性解算二维差分应力，并经多种现场验证有效。相较于声发射凯瑟效应、差应变曲线分析等方法，DCDA 的物理基础更清晰且无需复杂的加载历史，但要求岩石近似各向同性且具备微米级测量能力。联合破裂面形貌各向异性可进一步指示应力方向。",
+      "evidence_chain": [
+        "Meng (2025) 在隧道花岗岩中对比了 DCDA 和水压致裂结果，应力方向偏差 <15°，大小吻合。",
+        "Li (2023) 建立了体积应变方程解决 DCDA 中原始直径未知的问题。",
+        "Dargahizarandi (2025) 集成了超声波速度映射，实现三维应力张量估算。"
+      ],
+      "disagreements": [
+        "DCDA 获得的应力数值与套芯法或水压致裂仍存在 15–20% 的差异，弹性参数和各向异性是主要误差源。",
+        "对于高度各向异性的页岩或片麻岩，DCDA 表现不佳，而 ASR 或 DSCA 可能更适用。"
+      ],
+      "boundary_conditions": [
+        "适合深部均质花岗岩等火成岩；钻孔轴需与一个主应力平行。"
+      ],
+      "writing_uses": [
+        "在无法开展水压致裂的场合，推荐 DCDA 作为替代。",
+        "阐明现有岩心应力测试方法的优缺点，引导方法选择。"
+      ],
+      "sources": [
+        "2025-meng-evaluation-of-the-diametrical-core-deformation-analysis-dcda-and-fracture-surface-morp",
+        "2023-li-methodology-for-the-estimation-of-mining-face-stresses-using-rock-core-diametrical-defor",
+        "2025-dargahizarandi-determination-of-3d-stress-state-using-a-novel-integrated-diametrical-core-d"
+      ]
+    }
+  ]
+}

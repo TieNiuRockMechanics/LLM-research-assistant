@@ -1,0 +1,3064 @@
+{
+  "concepts": [
+    {
+      "name": "增强型地热系统 (EGS) / 干热岩地热",
+      "slug": "enhanced-geothermal-system",
+      "definition": "通过人工造缝（如水力剪切、压裂、化学或热刺激）在低渗透、高温（通常>150°C）岩体中创建或增强裂缝网络，形成人工热储，通过注入井注入冷流体并从生产井提取高温流体以进行发电或直接利用的技术体系。区别于天然高渗热液系统，适用于干热岩（HDR）、深部结晶岩地热开发。",
+      "aliases": [
+        "Enhanced Geothermal System",
+        "EGS",
+        "HDR",
+        "Hot Dry Rock",
+        "Engineered Geothermal Systems",
+        "enhanced geothermal system",
+        "干热岩地热",
+        "工程地热系统",
+        "deep geothermal reservoir"
+      ],
+      "boundary": "适用于高温（>150°C）低渗结晶岩体；不适用于天然高渗沉积岩型热液系统；开发面临诱发地震、工质漏失和热衰减等挑战。",
+      "related_methods": [
+        "hydraulic-stimulation",
+        "chemical-stimulation",
+        "thermal-stimulation",
+        "tracer-testing",
+        "microseismic-monitoring",
+        "discrete-fracture-network-modelling",
+        "hydraulic-fracturing",
+        "hydraulic-shearing",
+        "multi-stage-stimulation",
+        "cyclic-soft-stimulation",
+        "co2-egs-simulation"
+      ],
+      "related_claims": [
+        "egs-induced-seismicity-exceeds-volume-model",
+        "low-injection-temperature-increases-long-term-heat-extraction",
+        "co2-heat-extraction-higher",
+        "SCCO2-natural-convection",
+        "thermal-shock-enhances-permeability",
+        "shear-reactivation-enhances-permeability",
+        "injection-volume-controls-seismicity",
+        "cyclic-stimulation-reduces-seismicity",
+        "multi-stage-complexity",
+        "egs-trilemma"
+      ],
+      "sources": [
+        "1996-genter-analysis-of-macroscopic-fractures-in-granite-in-the-hdr-geothermal-well-eps-1-soultz",
+        "2008-h-ring-characterisation-of-the-basel-1-enhanced-geothermal-system",
+        "2010-dezayes-overview-of-the-fracture-network-at-different-scales-within-the-granite-reservoir-o",
+        "2010-genter-contribution-of-the-exploration-of-deep-crystalline-fractured-reservoir-of-soultz-to",
+        "2012-feng-development-program-of-hot-dry-rock-geothermal-resource-in-the-yangbajing-basin-of-chi",
+        "2014-zang-analysis-of-induced-seismicity-in-geothermal-reservoirs-an-overview",
+        "2015-siratovich-saturated-heating-and-quenching-of-three-crustal-rocks-and-implications-for-ther",
+        "2015-zhu-a-review-of-geothermal-energy-resources-development-and-applications-in-china-current-s",
+        "2016-cao-numerical-study-on-variable-thermophysical-properties-of-heat-transfer-fluid-affecting",
+        "2016-olasolo-enhanced-geothermal-systems-egs-a-review",
+        "2017-lu-a-global-review-of-enhanced-geothermal-system-egs",
+        "2018-asai-performance-evaluation-of-enhanced-geothermal-system-egs-surrogate-models-sensitivity",
+        "2019-moore-the-utah-frontier-observatory-for-research-in-geothermal-energy-forge-an-internationa",
+        "2020-rossi-a-combined-thermo-mechanical-drilling-technology-for-deep-geothermal-and-hard-rock-re",
+        "2021-kang-experimental-study-on-the-physical-and-mechanical-variations-of-hot-granite-under-diff",
+        "2020-zhou-investigation-on-fracture-creation-in-hot-dry-rock-geothermal-formations-of-china-duri",
+        "2024-xue-integrated-technological-and-economic-feasibility-comparisons-of-enhanced-geothermal-sy",
+        "2024-mu-investigation-on-the-heat-extraction-performance-considering-a-rough-fracture-network-in",
+        "2023-zhu-a-comprehensive-review-on-mechanical-responses-of-granite-in-enhanced-geothermal-system",
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "离散裂隙网络 (DFN)",
+      "slug": "discrete-fracture-network",
+      "definition": "将岩体中的裂隙作为离散几何对象（如线段、圆盘、椭圆），通过统计参数（位置、产状、长度、开度等）显式生成网络，用于模拟渗流、溶质运移、热传导和力学行为。",
+      "aliases": [
+        "DFN",
+        "Discrete Fracture Network",
+        "discrete fracture network",
+        "离散裂缝网络",
+        "discrete fracture network",
+        "stochastic fracture network",
+        "3D DFN",
+        "fracture system"
+      ],
+      "boundary": "假设岩块不透水或基质渗流可忽略；需要大量几何统计参数，且网络生成常基于泊松过程或分形模型；真实裂隙的空间相关性和成因机制往往被简化。",
+      "related_methods": [
+        "stochastic-DFN-generation",
+        "fractal-DFN-generation",
+        "dfn-permeability-simulation",
+        "kinematic-fracture-generation",
+        "sequential-parent-daughter-poisson-process",
+        "recursive-cell-culture",
+        "multi-scale-dfn-modelling",
+        "monte-carlo-dfn",
+        "3dec-simulation",
+        "rjns3d-toolbox",
+        "fractal-topography-dfn",
+        "fracgen",
+        "upscaling-gan",
+        "dfn-flow-simulation",
+        "dfn-inversion"
+      ],
+      "related_claims": [
+        "DFN-flow-channelization",
+        "REV-existence-depends-on-aperture-variance",
+        "kinematic-dfn-permeability-lower",
+        "Poisson-vs-kinematic-connectivity",
+        "size-T-correlation-important",
+        "Jc-dominance-by-aperture",
+        "dfn-requires-realistic-clustering-and-scaling",
+        "dfn-epm-equivalence-depends-on-spatial-rev",
+        "dead-end-fractures-enhance-solute-tailing",
+        "fracture-density-controls-flow"
+      ],
+      "sources": [
+        "1995-watanabe-fractal-geometry-characterization-of-geothermal-reservoir-fracture-networks",
+        "2007-baghbanan-hydraulic-properties-of-fractured-rock-masses-with-correlated-fracture-length-and",
+        "2009-xu-a-new-computer-code-for-discrete-fracture-network-modelling",
+        "2009-kim-estimation-of-fracture-porosity-of-naturally-fractured-reservoirs-with-no-matrix-porosi",
+        "2012-de-dreuzy-influence-of-fracture-scale-heterogeneity-on-the-flow-properties-of-three-dimensi",
+        "2013-davy-a-model-of-fracture-nucleation-growth-and-arrest-and-consequences-for-fracture-density",
+        "2013-lang-fractured-reservoir-modeling-method-based-on-discrete-fracture-network-model",
+        "2016-bonneau-impact-of-a-stochastic-sequential-initiation-of-fractures-on-the-spatial-correlatio",
+        "2016-hyman-fracture-size-and-transmissivity-correlations-implications-for-transport-simulations",
+        "2016-maillot-connectivity-permeability-and-channeling-in-randomly-distributed-and-kinematically",
+        "2016-liu-critical-hydraulic-gradient-for-nonlinear-flow-through-rock-fracture-networks-the-roles",
+        "2017-lei-the-use-of-discrete-fracture-networks-for-modelling-coupled-geomechanical-and-hydrologi",
+        "2018-dong-储层裂缝随机建模方法研究进展",
+        "2019-hyman-linking-structural-and-transport-properties-in-three-dimensional-fracture-networks",
+        "2020-hyman-flow-channeling-in-fracture-networks-characterizing-the-effect-of-density-on-preferen",
+        "2021-huang-development-and-application-of-three-dimensional-discrete-fracture-network-modeling-a",
+        "2021-hyman-scale-bridging-in-three-dimensional-fracture-networks-characterizing-the-effects-of-v",
+        "2023-ojeda-discrete-fracture-network-dfn-analysis-to-quantify-the-reliability-of-borehole-derive",
+        "2023-yoon-effects-of-dead-end-fractures-on-non-fickian-transport-in-three-dimensional-discrete-f",
+        "2024-yin-p-clet-number-dependent-longitudinal-dispersion-in-discrete-fracture-networks",
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "分形维数",
+      "slug": "fractal-dimension",
+      "definition": "描述裂隙网络空间分布、长度分布或表面粗糙度自相似性的标度指数。常用盒计数维数 D0、关联维数 D2、分形拓扑维数 Dt 等，值越高表示填充越密或形态越复杂。",
+      "aliases": [
+        "fractal dimension",
+        "D",
+        "D0",
+        "Dc",
+        "D2",
+        "Db",
+        "Dt",
+        "D_3D",
+        "分形维数",
+        "Fractal Dimension",
+        "盒计数维数",
+        "分形拓扑维数"
+      ],
+      "boundary": "仅在有限的无标度区间内有效；不同计算方法（盒计数、关联积分等）结果可能不同；实际裂隙系统可能存在特征尺度使得分形假设不成立。",
+      "related_methods": [
+        "box-counting-method",
+        "correlation-integral",
+        "divider-method",
+        "updated-h-l-method",
+        "two-point-correlation-function",
+        "lacunarity-analysis",
+        "normalized-correlation-integral-method",
+        "fractal-per-model",
+        "fractal-topography-modeling"
+      ],
+      "related_claims": [
+        "fracture-length-power-law",
+        "fractal-distribution-of-fractures",
+        "DL-equals-DS-minus-1",
+        "fractal-length-distribution-satisfied",
+        "scaling-regimes-common",
+        "fracture-networks-in-deep-boreholes-exhibit-fractal-correlation-dimension-0-8-0-9",
+        "fractal-dimension-uniqueness",
+        "thermal-crack-fractal-dimension-cooling-rate",
+        "mining-crack-fractal-dimension-saturation",
+        "fractal-dimension-decreases-with-thermal-damage",
+        "fractal-dimension-links-to-permeability"
+      ],
+      "sources": [
+        "1987-hirata-fractal-structure-of-spatial-distribution-of-microfracturing-in-rock",
+        "1990-letters-to-nature-nature-letters-to-nature",
+        "1992-davy-experimental-discovery-of-scaling-laws-relating-fractal-dimensions-and-the-length-dist",
+        "1995-cowie-multifractal-scaling-properties-of-a-growing-fault-population",
+        "1995-watanabe-fractal-geometry-characterization-of-geothermal-reservoir-fracture-networks",
+        "2001-bonnet-scaling-of-fracture-systems-in-geological-media",
+        "2002-bour-a-statistical-scaling-model-for-fracture-network-geometry-with-validation-on-a-multisc",
+        "2003-darcel-stereological-analysis-of-fractal-fracture-networks",
+        "2010-tatone-a-new-2d-discontinuity-roughness-parameter-and-its-correlation-with-jrc",
+        "2011-bae-characterization-of-joint-roughness-in-granite-by-applying-the-scan-circle-technique-to",
+        "2014-jang-determination-of-joint-roughness-coefficients-using-roughness-parameters",
+        "2014-zhang-a-new-method-estimating-the-2d-joint-roughness-coefficient-for-discontinuity-surfaces",
+        "2015-li-relationship-between-joint-roughness-coefficient-and-fractal-dimension-of-rock-fracture",
+        "2010-roy-lacunarity-analysis-of-fracture-networks-evidence-for-scale-dependent-clustering",
+        "2013-kruhl-fractal-geometry-techniques-in-the-quantification-of-complex-rock-structures-a-specia",
+        "2014-miao-a-fractal-analysis-of-permeability-for-fractured-rocks",
+        "2015-zhao-three-dimensional-fractal-distribution-of-the-number-of-rock-mass-fracture-surfaces-an",
+        "2016-liu-a-fractal-model-based-on-a-new-governing-equation-of-fluid-flow-in-fractures-for-charac",
+        "2017-lai-a-review-on-pore-structure-characterization-in-tight-sandstones",
+        "2019-moein-scaling-of-fracture-patterns-in-three-deep-boreholes-and-implications-for-constrainin",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2024-shaoqun-dong-relationship-between-box-counting-fractal-dimension-and-properties-of-fracture"
+      ]
+    },
+    {
+      "name": "幂律长度分布",
+      "slug": "power-law-length-distribution",
+      "definition": "裂隙长度（或开度等）服从幂律形式 n(l) ∝ l^{-a}，指数 a 通常在 1.5–3.5 之间，反映裂隙系统的无尺度性和多尺度特征。",
+      "aliases": [
+        "power-law distribution",
+        "power-law length distribution",
+        "exponent a",
+        "length distribution exponent",
+        "幂律分布",
+        "Power-law Length Distribution",
+        "fracture size scaling"
+      ],
+      "boundary": "拟合受限于数据截断和删失效应，需采用最大似然估计等校正方法；天然裂隙网络在极小和极大尺度可能存在偏离。",
+      "related_methods": [
+        "maximum-likelihood-estimation",
+        "censoring-correction",
+        "power-law-fitting",
+        "power-law-mle-fitting"
+      ],
+      "related_claims": [
+        "fracture-length-power-law",
+        "b-value-length-exponent-relation",
+        "power-law-length-exponent-controls-network-connectivity",
+        "fractal-length-distribution-satisfied"
+      ],
+      "sources": [
+        "1992-davy-experimental-discovery-of-scaling-laws-relating-fractal-dimensions-and-the-length-dist",
+        "1995-cowie-multifractal-scaling-properties-of-a-growing-fault-population",
+        "1997-bour-connectivity-of-random-fault-networks-following-a-power-law-fault-length-distribution",
+        "1998-berkowitz-stereological-analysis-of-fracture-network-structure-in-geological-formations",
+        "2001-bonnet-scaling-of-fracture-systems-in-geological-media",
+        "2002-bour-a-statistical-scaling-model-for-fracture-network-geometry-with-validation-on-a-multisc",
+        "2014-miao-a-fractal-analysis-of-permeability-for-fractured-rocks",
+        "2015-lei-a-new-approach-to-upscaling-fracture-network-models-while-preserving-geostatistical-and",
+        "2016-liu-a-fractal-model-based-on-a-new-governing-equation-of-fluid-flow-in-fractures-for-charac",
+        "2017-huang-estimation-of-permeability-of-3-d-discrete-fracture-networks-an-alternative-possibili",
+        "2019-hyman-linking-structural-and-transport-properties-in-three-dimensional-fracture-networks",
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "逾渗阈值",
+      "slug": "percolation-threshold",
+      "definition": "裂隙网络从孤立状态转变为全局连通团簇所需的临界裂隙密度或连接概率。当系统达到该阈值时，宏观输运性质（如渗透率、电导率）发生突变。",
+      "aliases": [
+        "percolation threshold",
+        "pc",
+        "critical density",
+        "逾渗阈值",
+        "percolation parameter",
+        "Percolation Threshold"
+      ],
+      "boundary": "理论上基于无限大系统，有限系统需通过有限尺寸标度外推；实际阈值依赖于裂隙形状、产状分布和长度指数 a。",
+      "related_methods": [
+        "percolation-simulation",
+        "finite-size-scaling",
+        "percolation-analysis",
+        "resistor-network-model"
+      ],
+      "related_claims": [
+        "percolation-threshold-dependence-on-a-D",
+        "critical-fractal-density-scale-invariant",
+        "percolation-threshold-controls-permeability",
+        "mt-detects-percolation-threshold-crossing-by-resistivity-drop",
+        "percolation-enhances-flow"
+      ],
+      "sources": [
+        "1997-bour-connectivity-of-random-fault-networks-following-a-power-law-fault-length-distribution",
+        "2003-darcel-connectivity-properties-of-two-dimensional-fracture-networks-with-stochastic-fractal",
+        "2003-nakaya-percolation-conditions-in-binary-fractal-fracture-networks-applications-to-rock-frac",
+        "2006-feng-research-on-laws-of-2d-percolation-of-fully-random-distribution-fracture-media",
+        "2016-lei-tectonic-interpretation-of-the-connectivity-of-a-multiscale-fracture-system-in-limeston",
+        "2016-maillot-connectivity-permeability-and-channeling-in-randomly-distributed-and-kinematically",
+        "2017-kirkby-three-dimensional-resistor-network-modeling-of-the-resistivity-and-permeability-of-f",
+        "2019-dong-analysis-of-relationship-between-underground-space-percolation-and-fracture-properties",
+        "2020-yao-effects-of-fracture-density-roughness-and-percolation-of-fracture-network-on-heat-flow"
+      ]
+    },
+    {
+      "name": "节理粗糙度系数 (JRC)",
+      "slug": "joint-roughness-coefficient",
+      "definition": "用于量化岩石节理表面粗糙程度的无量纲经验参数，范围通常 0–20（或更高）。JRC 值越大，表面越粗糙，对抗剪强度和渗流特性影响显著。",
+      "aliases": [
+        "Joint Roughness Coefficient",
+        "JRC",
+        "节理粗糙度系数",
+        "joint roughness coefficient",
+        "rock joint roughness"
+      ],
+      "boundary": "具有尺度效应（尺寸越大 JRC 越小）和各向异性；视觉对比法易产生系统性低估；不同数字化方法和采样间隔可导致结果差异。",
+      "related_methods": [
+        "visual-comparison-method-for-jrc",
+        "statistical-parameter-for-jrc",
+        "2d-roughness-parameter-evaluation",
+        "fractal-dimension-for-jrc",
+        "scan-circle-technique",
+        "updated-h-l-method",
+        "lambda-method-for-jrc",
+        "Z2-calculation",
+        "laser-surface-scanning",
+        "jrc-jcs-model",
+        "multi-direction-jrc",
+        "li-zhang-jrc-formula"
+      ],
+      "related_claims": [
+        "JRC-relationship-sampling-interval-dependent",
+        "JRC-4th-profile-deviation",
+        "D-to-JRC-relation-method-dependent",
+        "JRC-smooth-walls-ignored",
+        "visual-comparison-underestimates-jrc-by-2-3-units",
+        "3d-roughness-parameters-correlate-with-jrc",
+        "jrc-increases-with-temperature-and-cycles",
+        "jrc-alone-insufficient-to-predict-shear-strength",
+        "jrc-anisotropy-convergence",
+        "deep-jrc-stress-direction",
+        "Z2-sufficient-for-JRC",
+        "fractal-methods-not-necessary-for-JRC",
+        "claim-jrc-scale-effect"
+      ],
+      "sources": [
+        "2010-tatone-a-new-2d-discontinuity-roughness-parameter-and-its-correlation-with-jrc",
+        "2011-bae-characterization-of-joint-roughness-in-granite-by-applying-the-scan-circle-technique-to",
+        "2014-jang-determination-of-joint-roughness-coefficients-using-roughness-parameters",
+        "2014-zhang-a-new-method-estimating-the-2d-joint-roughness-coefficient-for-discontinuity-surfaces",
+        "2015-li-relationship-between-joint-roughness-coefficient-and-fractal-dimension-of-rock-fracture",
+        "2017-li-uncertainties-in-estimating-the-roughness-coefficient-of-rock-fracture-surfaces",
+        "2019-ban-new-roughness-parameters-for-3d-roughness-of-rock-joints",
+        "2020-ban-a-modified-roughness-index-based-on-the-root-mean-square-of-the-first-derivative-and-it",
+        "2020-bao-geometrical-heterogeneity-of-the-joint-roughness-coefficient-revealed-by-3d-laser-scann",
+        "2021-marsch-comparative-evaluation-of-statistical-and-fractal-approaches-for-jrc-calculation-bas",
+        "2023-barton-advances-in-joint",
+        "2025-song-a-back-propagation-neural-network-optimized-by-genetic-algorithm-for-rock-joint-roughn",
+        "2025-gu-effects-of-high-temperature-and-thermal-cycles-on-fracture-surface-s-roughness-of-granit",
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "立方定律 / 平行板模型",
+      "slug": "cubic-law",
+      "definition": "描述流体通过光滑平行板裂缝的流量与隙宽的立方成正比（Q ∝ b³），是裂隙渗流的基本方程。",
+      "aliases": [
+        "cubic law",
+        "parallel plate model",
+        "k = e²/12",
+        "平行板立方律",
+        "cubic law"
+      ],
+      "boundary": "适用于层流、隙宽远小于裂缝延伸长度的情况；粗糙度、接触面积和弯曲度引入偏差因子，需用水力开度修正。",
+      "related_methods": [
+        "radial-flow-test",
+        "hydraulic-aperture-inversion",
+        "parallel-plate-permeability"
+      ],
+      "related_claims": [
+        "cubic-law-valid-closed-fractures",
+        "aperture-dominance-in-fracture-flow",
+        "spatial-aperture-variation-lowers-permeability-below-parallel-plate-value"
+      ],
+      "sources": [
+        "1980-witherspoon-validity-of-cubic-law-for-fluid-flow-in-a-deformable-rock-fracture",
+        "2005-auradou-permeability-anisotropy-induced-by-the-shear-displacement-of-rough-fracture-walls",
+        "2017-chen-experimental-study-on-the-effect-of-fracture-geometric-characteristics-on-the-permeabi",
+        "2019-huang-experimental-and-numerical-studies-of-the-hydraulic-properties-of-three-dimensional-f",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "代表性体积元 (REV)",
+      "slug": "representative-elementary-volume",
+      "definition": "能够表征岩体等效连续介质性质的最小体积，当物理参数（如渗透率）在该体积以上不再随尺寸波动时存在。",
+      "aliases": [
+        "REV",
+        "Representative Elementary Volume",
+        "representative elementary volume",
+        "代表性体积元"
+      ],
+      "boundary": "仅在裂隙密度高、连通性好且隙宽方差小时成立；隙宽对数正态分布或长度-隙宽相关时可能无 REV 或 REV 极大。",
+      "related_methods": [
+        "directional-permeability-test",
+        "finite-size-scaling",
+        "spatial-rev-analysis",
+        "homogenization"
+      ],
+      "related_claims": [
+        "REV-size-increases-with-aperture-variance",
+        "constant-aperture-underestimates-REV",
+        "sparse-dfn-lacks-spatial-rev"
+      ],
+      "sources": [
+        "2007-baghbanan-hydraulic-properties-of-fractured-rock-masses-with-correlated-fracture-length-and",
+        "2019-dong-equivalence-of-discrete-fracture-network-and-porous-media-models-by-hydraulic-tomograp"
+      ]
+    },
+    {
+      "name": "有效应力",
+      "slug": "effective-stress",
+      "definition": "作用在岩石骨架上的应力，等于总应力减去孔隙流体压力（σ' = σ - αP_f），控制岩石破坏、裂隙开度和渗流特性。",
+      "aliases": [
+        "effective stress",
+        "Terzaghi's principle",
+        "σ' = σ - P_f",
+        "Effective Stress"
+      ],
+      "boundary": "Biot 系数 α 在部分情况下需引入；适用于脆性岩石，高塑性软岩可能偏离。",
+      "related_methods": [
+        "effective-stress-analysis"
+      ],
+      "related_claims": [
+        "effective-stress-controls-failure",
+        "pore-pressure-reduces-effective-stress-triggering-slip",
+        "high-pore-pressure-drives-fracturing"
+      ],
+      "sources": [
+        "1967-haimson-initiation-and-extension-of-hydraulic-fractures-in-rocks",
+        "1976-raleigh-the-rangely-field-an-experiment-in-earthquake-control-at-rangely-colorado",
+        "1996-sibson-structural-permeability-of-fluid-driven-fault-fracture-meshes",
+        "2011-lian-simulation-of-ground-stress-field-and-fracture-anticipation-with-effect-of-pore-pressu",
+        "2016-shao-effect-of-temperature-on-permeability-and-mechanical-characteristics-of-lignite"
+      ]
+    },
+    {
+      "name": "声发射 (AE)",
+      "slug": "acoustic-emission",
+      "definition": "岩石在受力、热裂或破裂过程中因微裂纹萌生和扩展而释放弹性波的现象，通过 AE 传感器接收波形信号，用于实时监测损伤演化和识别破坏模式。",
+      "aliases": [
+        "Acoustic Emission",
+        "AE",
+        "acoustic emission",
+        "声发射",
+        "microseismicity",
+        "微震"
+      ],
+      "boundary": "仅表征脆性破裂事件；信号受噪音、传感器布置和衰减影响；门槛值设置影响计数。",
+      "related_methods": [
+        "ae-monitoring",
+        "ae-source-location",
+        "acoustic-emission-monitoring",
+        "ae-monitoring-during-compression"
+      ],
+      "related_claims": [
+        "ae-reflects-thermal-crack-density",
+        "post-peak-ae-indicates-shear-failure",
+        "ae-ringing-count-increases-with-thermal-damage",
+        "ae-b-value-decrease-precedes-failure",
+        "ae-crack-damage-stress-ratio-decreases-with-temperature",
+        "ae-ln2-damage-signals",
+        "claim-ae-parameter-crack-mode-classification"
+      ],
+      "sources": [
+        "2004-li-北京房山花岗岩原地应力状态-ae-法估计",
+        "2017-kumari-mechanical-behaviour-of-australian-strathbogie-granite-under-in-situ-stress-and-temp",
+        "2017-yang-an-experimental-investigation-on-thermal-damage-and-failure-mechanical-behavior-of-gra",
+        "2018-xu-acoustic-emission-and-damage-characteristics-of-granite-subjected-to-high-temperature",
+        "2020-weng-influence-of-heating-cooling-cycles-on-the-micro-macrocracking-characteristics-of-ruch",
+        "2020-sha-experimental-evaluation-of-physical-and-mechanical-properties-of-geothermal-reservoir-r",
+        "2023-cui-experimental-investigation",
+        "2023-ge-thermal-damage-of",
+        "2022-cao-damage-deterioration",
+        "2025-bu-temperature-dependent-acoustic-emission-characteristics-and-statistical-constitutive-mod",
+        "2024-zheng-physical-and-mechanical-properties-and-damage-mechanism-of-sandstone-at-high-temperat"
+      ]
+    },
+    {
+      "name": "热损伤 (Thermal Damage)",
+      "slug": "thermal-damage",
+      "definition": "由于高温、温度梯度或温度循环引起的岩石矿物热膨胀不匹配、相变和脱水，导致微裂纹萌生、扩展和物理力学性质（如强度、模量、波速、导热系数）的不可逆劣化。",
+      "aliases": [
+        "thermal damage",
+        "thermal cracking",
+        "heat-induced damage",
+        "thermal degradation",
+        "thermal deterioration",
+        "D(T)",
+        "热损伤",
+        "thermal damage",
+        "granite thermal damage",
+        "thermal microcracking"
+      ],
+      "boundary": "低温（<200–400°C）以粒间裂纹为主，超过500–600°C（尤其石英相变后）损伤骤增；主要体现为脆性损伤，不包括高温塑性流动或化学蚀变。",
+      "related_methods": [
+        "p-wave-velocity-measurement",
+        "porosity-measurement",
+        "microscopy",
+        "scanning-electron-microscopy",
+        "acoustic-emission-monitoring",
+        "nuclear-magnetic-resonance-porosimetry",
+        "damage-variable-by-elastic-modulus",
+        "pfc-thermal-mechanical-simulation",
+        "ct-3d-reconstruction",
+        "sem-fracture-observation",
+        "ae-monitoring"
+      ],
+      "related_claims": [
+        "ucs-drops-abruptly-below-600-celsius-for-granite",
+        "thermal-damage-reduces-wave-velocity",
+        "ucs-decreases-with-temperature",
+        "thermal-crack-three-stages",
+        "ucs-normalized-linear-fit",
+        "thermal-damage-factor-correlates-with-strength",
+        "threshold-temperature-for-granite-is-400-to-600-c",
+        "claim-thermal-damage-threshold-400-600-c",
+        "thermal-damage-reduces-thermal-conductivity",
+        "water-cooling-increases-thermal-inhomogeneity",
+        "first-cycle-causes-most-damage"
+      ],
+      "sources": [
+        "2017-kant-thermal-properties-of-central-aare-granite-for-temperatures-up-to-500-c-irreversible-c",
+        "2018-jin-influence-of-different-thermal-cycling-treatments-on-the-physical-mechanical-and-transp",
+        "2019-isaka-quantification-of-thermally-induced-microcracks-in-granite-using-x-ray-ct-imaging-and",
+        "2017-yang-an-experimental-investigation-on-thermal-damage-and-failure-mechanical-behavior-of-gra",
+        "2018-sirdesai-determination-of-thermal-damage-in-rock-specimen-using-intelligent-techniques",
+        "2020-qin-physical-and-mechanical-properties-of-granite-after-high-temperature-treatment",
+        "2021-li-thermal-damage-effect-on-the-thermal-conductivity-inhomogeneity-of-granite",
+        "2020-shen-thermal-deterioration-of-high-temperature-granite-after-cooling-shock-multiple-identif",
+        "2021-yang-peridynamic-simulation",
+        "2022-ge-thermal-damage",
+        "2023-ge-thermal-damage-of",
+        "2023-wu-effect-of-cooling-methods-on-mechanical-behaviors-and-thermal-damage-distributions-of-gr",
+        "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm",
+        "2025-bu-temperature-dependent-acoustic-emission-characteristics-and-statistical-constitutive-mod",
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "热冲击 (Thermal Shock)",
+      "slug": "thermal-shock",
+      "definition": "高温岩石接触低温流体（水、液氮等）时，由于急剧的温度梯度产生高幅热应力，导致微裂纹网络萌生与扩展的过程。",
+      "aliases": [
+        "thermal shock",
+        "thermal shock cracking",
+        "热冲击开裂",
+        "冷却冲击",
+        "thermal shock",
+        "热冲击"
+      ],
+      "boundary": "区别于慢速冷却的热退化效应；损伤程度取决于温差、冷却速率和岩石热物理性质；存在 Leidenfrost 效应等影响。",
+      "related_methods": [
+        "heating-cooling-cycle-treatment",
+        "liquid-nitrogen-cooling-test",
+        "laboratory-thermal-shock-treatment",
+        "water-quenching-treatment"
+      ],
+      "related_claims": [
+        "claim-thermal-shock-damage-gt-natural-cooling",
+        "claim-water-cooling-damage-gt-ln2",
+        "thermal-shock-damage-dominates-in-cooling-phase",
+        "thermal-shock-spatial-damage-gradient",
+        "rapid-quenching-reduces-strength-and-increases-permeability-more-than-slow-cooling",
+        "ln2-cooling-causes-most-severe-damage"
+      ],
+      "sources": [
+        "2019-wu-on-the-tensile-mechanical-characteristics-of-fine-grained-granite-after-heating-cooling",
+        "2020-sha-experimental-evaluation-of-physical-and-mechanical-properties-of-geothermal-reservoir-r",
+        "2021-kang-experimental-study-on-the-physical-and-mechanical-variations-of-hot-granite-under-diff",
+        "2021-zhao-experimental-study",
+        "2022-xi-experimental-comparison",
+        "2023-dong-experimental-study",
+        "2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s",
+        "2025-he-spatial-variability-and-quantitative-characterization-of-thermal-shock-damage-in-sandsto"
+      ]
+    },
+    {
+      "name": "冷却方式与冷却速率",
+      "slug": "cooling-methods",
+      "definition": "高温岩石在实验室或工程中的降温手段，包括空气自然冷却、水冷却、液氮急速冷却等，不同介质和接触方式导致冷却速率和损伤程度差异显著。",
+      "aliases": [
+        "cooling methods",
+        "冷却方式",
+        "water cooling",
+        "liquid nitrogen cooling",
+        "air cooling",
+        "cooling media",
+        "冷却介质",
+        "cooling rate",
+        "thermal shock",
+        "quenching"
+      ],
+      "boundary": "冷却速率是决定热冲击损伤的关键参数，快冷（如水淬）产生热梯度裂纹，慢冷主要产生热循环裂纹；工程中受原位应力和多相流影响。",
+      "related_methods": [
+        "water-quenching-treatment",
+        "slow-cooling-treatment",
+        "laboratory-thermal-shock-treatment"
+      ],
+      "related_claims": [
+        "water-cooling-reduces-strength-more-than-air",
+        "ln2-creates-more-complex-crack-networks",
+        "ln2-cools-faster-than-water",
+        "cooling-rate-affects-damage-spatial-distribution",
+        "rapid-quenching-enhances-permeability-by-orders-of-magnitude",
+        "ln2-cooling-increases-permeability-more-than-water-cooling"
+      ],
+      "sources": [
+        "2017-kumari-temperature-dependent-mechanical-behaviour-of-australian-strathbogie-granite-with-di",
+        "2018-jin-influence-of-different-thermal-cycling-treatments-on-the-physical-mechanical-and-transp",
+        "2020-shen-thermal-deterioration-of-high-temperature-granite-after-cooling-shock-multiple-identif",
+        "2023-wu-effect-of-cooling-methods-on-mechanical-behaviors-and-thermal-damage-distributions-of-gr",
+        "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under",
+        "2024-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "液氮冷却 (LN₂ Cooling)",
+      "slug": "liquid-nitrogen-cooling",
+      "definition": "利用 –196°C 液氮接触高温岩石，产生极端温度梯度和热应力，形成复杂的裂纹网络，显著提升渗透率。可能伴随 Leidenfrost 效应。",
+      "aliases": [
+        "LN2 cooling",
+        "liquid nitrogen",
+        "cryogenic fracturing",
+        "cryogenic stimulation",
+        "液氮冷却",
+        "liquid nitrogen thermal shock"
+      ],
+      "boundary": "适用于干热岩等高温岩体；需要考虑管材低温脆性和传热效率。",
+      "related_methods": [
+        "liquid-nitrogen-immersion",
+        "ln2-assisted-fracturing",
+        "laboratory-thermal-shock-treatment"
+      ],
+      "related_claims": [
+        "ln2-cools-faster-than-water",
+        "ln2-creates-wide-cracks",
+        "ln2-cooling-increases-permeability-more-than-water-cooling",
+        "ln2-cooling-reduces-ucs-and-wave-velocity",
+        "brittleness-increase-ln2"
+      ],
+      "sources": [
+        "2019-wu-variations-of-physical-and-mechanical-properties-of-heated-granite-after-rapid-cooling-w",
+        "2021-kang-experimental-study-on-the-physical-and-mechanical-variations-of-hot-granite-under-diff",
+        "2021-rong-experimental-investigation-on-physical-and-mechanical-properties-of-granite-subjected",
+        "2023-lai-study-on-damage-characteristics-of-hot-dry-rock-by-liquid-nitrogen-cyclic-cold-shocks-b",
+        "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under",
+        "2024-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte"
+      ]
+    },
+    {
+      "name": "热循环 / 循环热冲击",
+      "slug": "thermal-cycling",
+      "definition": "多次加热-冷却循环导致裂纹累积和物理力学性质劣化的过程。首次循环通常引起最大损伤，后续循环损伤增速递减并趋于饱和。",
+      "aliases": [
+        "thermal cycling",
+        "cyclic thermal shock",
+        "cyclic heating-cooling",
+        "加热-冷却循环",
+        "cyclic thermal treatment",
+        "repeated heating-cooling",
+        "thermal fatigue",
+        "cyclic thermal fatigue",
+        "热-冷循环"
+      ],
+      "boundary": "循环效应受温度范围、冷却速率和循环次数影响；一般 5-20 次后损伤趋于稳定。",
+      "related_methods": [
+        "cyclic-heating-cooling-experiment",
+        "nuclear-magnetic-resonance-pore-structure",
+        "cyclic-thermal-treatment",
+        "heating-and-water-cooling-cycle-treatment"
+      ],
+      "related_claims": [
+        "first-cycle-causes-most-damage",
+        "cyclic-thermal-shock-enhances-porosity",
+        "claim-damage-increases-with-cycles",
+        "claim-first-cycle-dominant-damage",
+        "thermal-cycle-damage-saturates-after-5-10-cycles",
+        "cyclic-cooling-damage-saturation"
+      ],
+      "sources": [
+        "2021-rong-experimental-investigation-on-physical-and-mechanical-properties-of-granite-subjected",
+        "2020-weng-influence-of-heating-cooling-cycles-on-the-micro-macrocracking-characteristics-of-ruch",
+        "2020-zhao-exploratory-experimental-study-on-the-mechanical-properties-of-granite-subjected-to-cy",
+        "2021-yu-mechanical-test",
+        "2021-zhang-macroscopic-and-microscopic",
+        "2023-cui-experimental-investigation",
+        "2024-harshini-australia-s-geothermal-frontier-unlocking-granite-s-energy-secrets",
+        "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm",
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "热导率 (Thermal Conductivity)",
+      "slug": "thermal-conductivity",
+      "definition": "表征岩石传导热量能力的物理量（单位 W/(m·K)），受矿物组成、孔隙度、微裂纹和温度等因素控制，热损伤会导致其不可逆下降。",
+      "aliases": [
+        "thermal conductivity",
+        "heat conductivity",
+        "λ",
+        "导热系数",
+        "thermal inhomogeneity factor"
+      ],
+      "boundary": "需保证一维稳态热流测量；原位热导率受应力和流体影响；高温下矿物相变和热开裂会导致突变。",
+      "related_methods": [
+        "optical-scanning-thermal-conductivity",
+        "transient-plane-source",
+        "hot-disk-transient-plane-source",
+        "laser-flash-analysis",
+        "thermal-conductivity-measurement"
+      ],
+      "related_claims": [
+        "thermal-conductivity-decreases-with-temperature-and-thermal-damage",
+        "thermal-damage-reduces-thermal-conductivity",
+        "water-cooling-increases-thermal-inhomogeneity",
+        "TC-4-stage-model-of-sandstone"
+      ],
+      "sources": [
+        "2016-sun-thermal-properties-of-sandstone-after-treatment-at-high-temperature",
+        "2012-sun-3d-thermal-structure-of-the-continental-lithosphere-beneath-china-and-adjacent-regions",
+        "2017-kant-thermal-properties-of-central-aare-granite-for-temperatures-up-to-500-c-irreversible-c",
+        "2019-sun-effect-of-high-temperatures-on-the-thermal-properties-of-granite",
+        "2020-li-effect-of-mechanical-damage-on-the-thermal-conductivity-of-granite",
+        "2021-li-thermal-damage-effect-on-the-thermal-conductivity-inhomogeneity-of-granite",
+        "2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling",
+        "2025-wu-thermal-property-of-reservoir-rocks-at-thermal-mechanical-coupled-conditions-and-resulta"
+      ]
+    },
+    {
+      "name": "热扩散率 (Thermal Diffusivity)",
+      "slug": "thermal-diffusivity",
+      "definition": "衡量温度在岩石中传播快慢的参数，等于导热系数除以密度与比热容的乘积（κ = λ/(ρ·c)）。",
+      "aliases": [
+        "thermal diffusivity",
+        "κ",
+        "α"
+      ],
+      "boundary": "对高温和快速冷却敏感；与纵波波速有强线性关系。",
+      "related_methods": [
+        "laser-flash-analysis"
+      ],
+      "related_claims": [
+        "thermal-diffusivity-decreases-after-cyclical-quenching"
+      ],
+      "sources": [
+        "2019-sun-effect-of-high-temperatures-on-the-thermal-properties-of-granite",
+        "2019-sun-the-effect-of-rapid-cooling-on-the-thermal-diffusivity-of-granite"
+      ]
+    },
+    {
+      "name": "对流换热系数 (Convective Heat Transfer Coefficient)",
+      "slug": "convective-heat-transfer-coefficient",
+      "definition": "表征流体与固体壁面之间对流换热强度的参数 (h)，决定裂隙地热系统中从岩石到流体的热提取速率。",
+      "aliases": [
+        "heat transfer coefficient",
+        "h",
+        "surface heat transfer coefficient"
+      ],
+      "boundary": "在层流与湍流、光滑与粗糙裂隙中差异大；受局部温度与流速影响。",
+      "related_methods": [
+        "two-equation-thermal-model",
+        "inverse-heat-conduction-method"
+      ],
+      "related_claims": [
+        "local-htc-peaks-at-fracture-entrance",
+        "perpendicular-roughness-enhances-heat-transfer"
+      ],
+      "sources": [
+        "2017-heinze-a-dynamic-heat-transfer-coefficient-between-fractured-rock-and-flowing-fluid",
+        "2018-ma-heat-transfer-by-water-flowing-through-rough-fractures-and-distribution-of-local-heat-tr"
+      ]
+    },
+    {
+      "name": "局部热非平衡模型 (LTNE)",
+      "slug": "local-thermal-non-equilibrium",
+      "definition": "假设岩石基质与裂隙内流体温度不同，热量通过对流交换的模型，适用于高流速、热交换不充分的裂隙系统。",
+      "aliases": [
+        "LTNE",
+        "Local Thermal Non-Equilibrium",
+        "local thermal non-equilibrium",
+        "Local Thermal Non-equilibrium"
+      ],
+      "boundary": "与局部热平衡 (LTE) 相对；在低流速或高比表面积下可退化为 LTE；精度依赖于体积换热系数。",
+      "related_methods": [
+        "two-equation-thermal-model",
+        "ltne-heat-transfer-model"
+      ],
+      "related_claims": [
+        "ltne-model-necessary-for-high-flow-fracture-heat-transfer"
+      ],
+      "sources": [
+        "2017-heinze-a-dynamic-heat-transfer-coefficient-between-fractured-rock-and-flowing-fluid",
+        "2017-sun-numerical-simulation-of-the-heat-extraction-in-egs-with-thermal-hydraulic-mechanical-co",
+        "2022-he-numerical-evaluation",
+        "2022-viswanathan-from-fluid-flow"
+      ]
+    },
+    {
+      "name": "热-流-固-化耦合 (THM/THMC)",
+      "slug": "thm-thmc-coupling",
+      "definition": "岩体中温度场（T）、渗流场（H）、应力变形场（M）及化学场（C）之间的相互作用与协同演化框架，用于预测地热、核废料处置等长期行为。",
+      "aliases": [
+        "THMC coupling",
+        "THM coupling",
+        "Coupled THMC Processes",
+        "coupled thermal-hydraulic-mechanical processes",
+        "热-水-力-化耦合",
+        "热-流-固耦合"
+      ],
+      "boundary": "全耦合模型计算成本高、参数需求大；实际应用常根据问题简化或忽略其中一个过程。",
+      "related_methods": [
+        "thm-finite-element-simulation",
+        "triaxial-permeability-test-under-temperature",
+        "thm-numerical-simulation"
+      ],
+      "related_claims": [
+        "real-time-temperature-shows-different-permeability",
+        "stress-closure-reduces-permeability",
+        "cooling-induces-tensile-stress-around-wellbore",
+        "thm-simulations-predict-fracture-propagation"
+      ],
+      "sources": [
+        "2010-genter-contribution-of-the-exploration-of-deep-crystalline-fractured-reservoir-of-soultz-to",
+        "2016-cao-numerical-study-on-variable-thermophysical-properties-of-heat-transfer-fluid-affecting",
+        "2020-yang-an-experimental-study-of-effect-of-high-temperature-on-the-permeability-evolution-and",
+        "2021-meng-experimental-study-on-permeability-evolution-and-nonlinear-seepage-characteristics-of",
+        "2023-xue-effect-of-water-cooling-shock-on-fracture-initiation-and-morphology-of-high-temperature",
+        "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under"
+      ]
+    },
+    {
+      "name": "石英 α-β 相变",
+      "slug": "quartz-alpha-beta-transition",
+      "definition": "石英在约 573°C 由低温 α 相转变为高温 β 相，伴随约 4–5% 的体积膨胀和各向异性变形，是含石英岩石高温热损伤的关键因素。",
+      "aliases": [
+        "Quartz α-β transition",
+        "α-β石英相变",
+        "573°C phase transition",
+        "quartz-alpha-beta-transition"
+      ],
+      "boundary": "相变可逆，但膨胀-收缩过程引发的微裂纹是永久性的；仅适用于含石英的岩石。",
+      "related_claims": [
+        "quartz-transition-causes-accelerated-degradation-above-500c",
+        "thermal-expansion-anisotropy-drives-cracking",
+        "claim-400-600-c-critical-damage"
+      ],
+      "related_methods": [],
+      "sources": [
+        "2016-yin-comparison-of-mechanical-properties-in-high-temperature-and-thermal-treatment-granite",
+        "2016-sun-thermal-properties-of-sandstone-after-treatment-at-high-temperature",
+        "2021-zhang-experimental-investigations",
+        "2022-ge-thermal-damage",
+        "2023-guo-mechanical-properties",
+        "2023-zhu-a-comprehensive-review-on-mechanical-responses-of-granite-in-enhanced-geothermal-system",
+        "2024-yang-multiscale-damage-and-thermal-stress-evolution-characteristics-of-rocks-with-thermal-s"
+      ]
+    },
+    {
+      "name": "脆-塑性转变",
+      "slug": "brittle-ductile-transition",
+      "definition": "岩石随温度升高或围压增大，破坏模式从脆性断裂（张拉或剪切）向半脆性或韧性流动转变的过程。",
+      "aliases": [
+        "brittle-ductile transition",
+        "brittle-plastic transition",
+        "brittle-ductile transition",
+        "脆延转换",
+        "ductile failure"
+      ],
+      "boundary": "转变不是一个绝对温度点；花岗岩约在 600–800°C；受矿物组成、围压和应变速率影响。",
+      "related_methods": [
+        "uniaxial-compression-test"
+      ],
+      "related_claims": [
+        "granite-failure-mode-shifts-from-splitting-to-shear-above-600-celsius",
+        "claim-bdt-temperature-600c-granite"
+      ],
+      "sources": [
+        "2016-yin-comparison-of-mechanical-properties-in-high-temperature-and-thermal-treatment-granite",
+        "2017-yang-an-experimental-investigation-on-thermal-damage-and-failure-mechanical-behavior-of-gra",
+        "2022-cao-damage-deterioration",
+        "2023-guo-mechanical-properties",
+        "2021-zhu-changes-in-thermomechanical"
+      ]
+    },
+    {
+      "name": "诱发地震",
+      "slug": "induced-seismicity",
+      "definition": "由流体注入或开采等人类活动改变地下应力状态而触发的地震事件，是 EGS 开发的首要环境风险。",
+      "aliases": [
+        "induced seismicity",
+        "induced earthquake",
+        "induzierte Seismizität",
+        "Induced Seismicity",
+        "注入诱发地震",
+        "微地震"
+      ],
+      "boundary": "区别于天然构造地震；受控于临界应力断层、注入量和方案；停泵后应力重新分布阶段可能发生较大事件。",
+      "related_methods": [
+        "seismicity-monitoring",
+        "moment-tensor-inversion",
+        "microseismic-monitoring",
+        "traffic-light-system"
+      ],
+      "related_claims": [
+        "injection-volume-controls-seismicity",
+        "LME-after-shut-in",
+        "cyclic-stimulation-reduces-seismicity",
+        "egs-induced-seismicity-exceeds-volume-model",
+        "fault-architecture-controls-maximum-magnitude",
+        "srv-not-equal-hydraulic-volume"
+      ],
+      "sources": [
+        "2007-cornet-how-close-to-failure-is-a-granite-rock-mass-at-a-5-km-depth",
+        "2009-deichmann-earthquakes-induced-by-the-stimulation-of-an-enhanced-geothermal-system-below-bas",
+        "2014-zang-analysis-of-induced-seismicity-in-geothermal-reservoirs-an-overview",
+        "2017-kim-induced-seismicity-assessing-whether-the-2017-mw-5-4-pohang-earthquake-in-south-korea-w",
+        "2018-afshari-moein-maximum-magnitude-forecast-in-hydraulic-stimulation-based-on-clustering-and-s",
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "孔隙压力",
+      "slug": "pore-pressure",
+      "definition": "岩石孔隙或裂隙中流体所具有的压力，是控制有效应力、断层稳定性和流体流动的关键参数。",
+      "aliases": [
+        "Pore Pressure",
+        "Pp",
+        "pore pressure"
+      ],
+      "boundary": "在地壳浅部通常接近静水压力，但在快速沉降或构造挤压地区可发育超压；准确预测需结合地质、地球物理和钻井数据。",
+      "related_concepts": [
+        "effective-stress"
+      ],
+      "related_claims": [
+        "high-pore-pressure-drives-fracturing"
+      ],
+      "sources": [
+        "2011-lian-simulation-of-ground-stress-field-and-fracture-anticipation-with-effect-of-pore-pressu"
+      ]
+    },
+    {
+      "name": "岩芯饼化",
+      "slug": "core-discing",
+      "definition": "在高地应力地区钻探取芯时，岩芯自发破裂成饼状或盘状的现象，是应力释放导致的拉-剪复合破坏。",
+      "aliases": [
+        "Core discing",
+        "Core Disking",
+        "岩饼"
+      ],
+      "boundary": "主要发生在高应力、较完整结晶岩中；饼化程度与主应力大小和差应力相关。",
+      "related_claims": [
+        "sigma1-over-sigmat-controls-disking",
+        "excavation-damage-controls-disking",
+        "claim-discing-indicates-high-stress",
+        "claim-discing-tension-dominated"
+      ],
+      "sources": [
+        "2010-lim-core-disking-and-its-relationship-with-stress-magnitude-for-lac-du-bonnet-granite",
+        "2011-li-深部岩体岩芯饼化特征分析与形成机制研究",
+        "2022-zhang-高地应力下深部",
+        "2022-gao-discing-behavior",
+        "2021-ziegler-evaluation-of"
+      ]
+    },
+    {
+      "name": "孔隙结构演化",
+      "slug": "pore-structure-evolution",
+      "definition": "在热、力或化学作用下，岩石内部不同尺度孔隙（微孔、中孔、大孔）在数量、尺寸和连通性上的动态变化过程。",
+      "aliases": [
+        "pore evolution",
+        "孔隙发育",
+        "Multiple porous structure evolution",
+        "multi-scale damage",
+        "multi-scale pore structure evolution"
+      ],
+      "boundary": "关注损伤的非均匀性和尺度依赖性；不同尺度孔隙对宏观性质（渗透率、热导率）的贡献不同。",
+      "related_methods": [
+        "nuclear-magnetic-resonance-porosimetry",
+        "ct-scanning"
+      ],
+      "related_claims": [
+        "micropores-dominate-porosity-increase-at-low-temperature",
+        "porosity-increases-exponentially-with-temperature",
+        "claim-meso-macropores-control-mechanics",
+        "nmr-tracks-cycle-pore-growth"
+      ],
+      "sources": [
+        "2017-lai-a-review-on-pore-structure-characterization-in-tight-sandstones",
+        "2021-li-factors-affecting-pore-structure-of-granite-under-cyclic-heating-and-cooling-a-nuclear-m",
+        "2021-jiang-pore-structure-alteration-and-permeability-enhancement-of-shale-under-cyclic-thermal",
+        "2022-zhao-influence-of-multiple",
+        "2024-xi-experimental-study-on-pore-characteristics-evolution-and-rock-damage-mechanism-of-therma",
+        "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm"
+      ]
+    },
+    {
+      "name": "孔隙度",
+      "slug": "porosity",
+      "definition": "岩石中空隙体积与总体积之比，包括基质孔隙和裂隙，是热传输和流体储存的关键参数。",
+      "aliases": [
+        "porosity",
+        "φ",
+        "孔隙度"
+      ],
+      "boundary": "高温作用下因热开裂而增大；致密砂岩中与渗透率关系复杂。",
+      "related_methods": [
+        "mercury-injection-capillary-pressure",
+        "nuclear-magnetic-resonance"
+      ],
+      "related_claims": [
+        "porosity-increases-abruptly-above-500-degree-celsius-in-granite"
+      ],
+      "sources": [
+        "2017-lai-a-review-on-pore-structure-characterization-in-tight-sandstones",
+        "2019-isaka-quantification-of-thermally-induced-microcracks-in-granite-using-x-ray-ct-imaging-and"
+      ]
+    },
+    {
+      "name": "渗透率",
+      "slug": "permeability",
+      "definition": "衡量岩石或裂隙网络允许流体通过的能力，单位为 m² 或 Darcy，受有效应力、开度和粗糙度控制。",
+      "aliases": [
+        "permeability",
+        "k"
+      ],
+      "boundary": "裂隙岩体中渗透率常表现出强烈的各向异性和尺度效应。",
+      "related_methods": [
+        "transient-pulse-permeability-test",
+        "cubic-law-inversion",
+        "permeability-measurement"
+      ],
+      "related_claims": [
+        "permeability-exhibit-decrease-then-increase-with-stress-ratio",
+        "rapid-quenching-enhances-permeability-by-orders-of-magnitude",
+        "permeability-increases-by-two-orders-after-500c",
+        "confining-pressure-reduces-permeability-enhancement"
+      ],
+      "sources": [
+        "2017-zhao-experimental-investigation-on-thermal-cracking-permeability-under-hthp-and-application",
+        "2018-kumari-experimental-investigation-of-quenching-effect-on-mechanical-microstructural-and-flo",
+        "2023-zhu-不同冷却速率下干热花岗岩渗透率演化特征对比研究",
+        "2024-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte"
+      ]
+    },
+    {
+      "name": "渗透率增强",
+      "slug": "permeability-enhancement",
+      "definition": "岩石在热损伤或水力刺激后因微裂纹形成和连通导致的渗透率显著增加，是干热岩储层改造的核心目标。",
+      "aliases": [
+        "permeability increase",
+        "增渗"
+      ],
+      "boundary": "受围压抑制；实验室测得的渗透率可能比原位条件高估。",
+      "related_methods": [
+        "permeability-measurement",
+        "tracer-test-analysis"
+      ],
+      "related_claims": [
+        "permeability-increases-by-two-orders-after-500c",
+        "confining-pressure-reduces-permeability-enhancement"
+      ],
+      "sources": [
+        "2023-zhu-不同冷却速率下干热花岗岩渗透率演化特征对比研究",
+        "2024-gomah-damage-mechanism-and-permeability-evolution-of-high-temperature-granodiorite-subjecte"
+      ]
+    },
+    {
+      "name": "裂隙开度",
+      "slug": "fracture-aperture",
+      "definition": "裂隙两壁面间的有效张开宽度，包括机械开度和水力开度，是控制裂隙渗流和溶质运移的关键参数。",
+      "aliases": [
+        "fracture aperture",
+        "b",
+        "e",
+        "隙宽",
+        "aperture",
+        "裂缝开度"
+      ],
+      "boundary": "受有效正应力、粗糙度和剪切位移影响；空间非均质导致沟道流。",
+      "related_methods": [
+        "hydraulic-aperture-inversion",
+        "point-cloud-matching-method"
+      ],
+      "related_claims": [
+        "contact-ratio-increases-with-stress-and-reduces-effective-aperture",
+        "upscaling-gan-aperture-variability"
+      ],
+      "sources": [
+        "2017-chen-experimental-study-on-the-effect-of-fracture-geometric-characteristics-on-the-permeabi",
+        "2018-lang-relationship-between-the-orientation-of-maximum-permeability-and-intermediate-principa",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "接触比",
+      "slug": "contact-ratio",
+      "definition": "裂隙平面内接触面积与总面积之比，反映粗糙裂隙在应力作用下闭合程度，增大接触比急剧降低渗透率。",
+      "aliases": [
+        "contact ratio",
+        "ω"
+      ],
+      "boundary": "定义中的零开度阈值影响数值。",
+      "related_methods": [
+        "utsp-covering-method"
+      ],
+      "related_claims": [
+        "fine-grained-rock-has-higher-contact-ratio-under-stress"
+      ],
+      "sources": [
+        "2017-chen-experimental-study-on-the-effect-of-fracture-geometric-characteristics-on-the-permeabi"
+      ]
+    },
+    {
+      "name": "断层损伤带",
+      "slug": "fault-damage-zone",
+      "definition": "围绕断层核心的高裂隙密度区域，渗透率和力学性质与围岩和断层核显著不同，宽度随断层位移增加但增长速率逐渐降低。",
+      "aliases": [
+        "Fault Damage Zone"
+      ],
+      "boundary": "结构受岩性、应力状态和演化历史控制；胶结作用可封闭裂隙，但在扩容区仍可保持高渗。",
+      "related_methods": [
+        "microfracture-density-transects",
+        "borehole-image-log"
+      ],
+      "related_claims": [
+        "damage-zone-width-scales-with-displacement",
+        "channelized-flow-in-fault-zones"
+      ],
+      "sources": [
+        "2010-faulkner-a-review-of-recent-developments-concerning-the-structure-mechanics-and-fluid-flow",
+        "2014-voorn-porosity-permeability-and-3d-fracture-network-characterisation-of-dolomite-reservoir",
+        "2016-wennberg-the-characteristics-of-open-fractures-in-carbonate-reservoirs-and-their-impact-on"
+      ]
+    },
+    {
+      "name": "断层-裂缝网格",
+      "slug": "fault-fracture-mesh",
+      "definition": "由剪切断层、张裂缝和混合型裂缝相互交织的三维网络，在近最小主应力方向的高流体压力下可自组织形成高渗透通道。",
+      "aliases": [
+        "fault-fracture mesh",
+        "Hill mesh"
+      ],
+      "boundary": "需要高流体压力（P_f ≈ σ₃）和非均质岩体；网格沿 σ₂ 方向优先连通。",
+      "related_methods": [
+        "mohr-circle-analysis",
+        "field-mapping-fracture-networks"
+      ],
+      "related_claims": [
+        "fault-fracture-mesh-self-organization",
+        "sigma2-directional-permeability"
+      ],
+      "sources": [
+        "1996-sibson-structural-permeability-of-fluid-driven-fault-fracture-meshes"
+      ]
+    },
+    {
+      "name": "临界应力断层",
+      "slug": "critically-stressed-fault",
+      "definition": "处于库仑破裂准则临界状态的断层，其剪切应力与有效正应力之比接近摩擦系数 μ≈0.6，在流体压力扰动下易滑动并成为流体通道。",
+      "aliases": [
+        "critically stressed fault",
+        "potential active fault"
+      ],
+      "boundary": "依赖于摩擦系数和原地应力状态；仅当孔隙压力足够降低有效正应力时才发生滑动。",
+      "related_methods": [
+        "coulomb-failure-criterion",
+        "stress-projection-fault-plane"
+      ],
+      "related_claims": [
+        "critically-stressed-faults-dominant-flow-paths",
+        "seismicity-induced-by-fluid-pressure"
+      ],
+      "sources": [
+        "1995-barton-fluid-flow-along-potentially-active-faults-in-crystalline-rock",
+        "2007-cornet-how-close-to-failure-is-a-granite-rock-mass-at-a-5-km-depth",
+        "2009-deichmann-earthquakes-induced-by-the-stimulation-of-an-enhanced-geothermal-system-below-bas"
+      ]
+    },
+    {
+      "name": "剪切扩容",
+      "slug": "shear-dilation",
+      "definition": "裂隙在剪切过程中由于表面粗糙度导致两壁相互抬升，引起体积增加和开度增大的现象；是 EGS 中通过水力剪切激活天然裂隙并提高渗透率的核心机制。",
+      "aliases": [
+        "Shear Dilation",
+        "Dilatancy",
+        "shear dilation"
+      ],
+      "boundary": "其幅度和持久性受有效正应力、滑动位移和粗糙度影响；高正应力下粗糙度可能磨损。",
+      "related_claims": [
+        "shear-dilation-creates-flow-channels"
+      ],
+      "sources": [
+        "2010-genter-contribution-of-the-exploration-of-deep-crystalline-fractured-reservoir-of-soultz-to"
+      ]
+    },
+    {
+      "name": "储层改造体积 (SRV)",
+      "slug": "stimulated-reservoir-volume",
+      "definition": "在水力压裂或其它储层增产措施中，水力裂缝和激活的天然裂缝网络所共同形成的总体积，是非常规储层经济开采的关键指标。",
+      "aliases": [
+        "Stimulated Reservoir Volume",
+        "SRV"
+      ],
+      "boundary": "三维体积，大小受地应力、岩石力学和天然裂缝分布影响；现场估算依赖于微地震和压裂资料，但 SRV 不等于有效渗透体积。",
+      "related_claims": [
+        "srv-not-equal-hydraulic-volume"
+      ],
+      "sources": [
+        "2016-wang-waterless-fracturing-technologies-for-unconventional-reservoirs-opportunities-for-liqu",
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "裂缝性储层 / 裂隙储层",
+      "slug": "fractured-reservoir",
+      "definition": "以裂隙为主要储集空间和渗透通道的岩体，通常基质渗透率极低，流体流动由裂缝网络控制。",
+      "aliases": [
+        "fractured reservoir",
+        "fracture reservoir",
+        "fractured porous media",
+        "喀斯特化岩溶储层"
+      ],
+      "boundary": "具有强烈非均质性；经典双重孔隙度模型可能因沟槽化流动而失效。",
+      "related_methods": [
+        "discrete-fracture-network-modelling",
+        "hydraulic-tomography"
+      ],
+      "related_claims": [
+        "percolation-threshold-controls-permeability",
+        "shear-dilation-creates-flow-channels"
+      ],
+      "sources": [
+        "2010-dezayes-structure-of-the-low-permeable-naturally-fractured-geothermal-reservoir-at-soultz",
+        "2010-genter-contribution-of-the-exploration-of-deep-crystalline-fractured-reservoir-of-soultz-to",
+        "2012-tong-kaijun-reservoir-evaluation-and-fracture-chracterization-of-the-metamorphic-buried-hil",
+        "2016-wennberg-the-characteristics-of-open-fractures-in-carbonate-reservoirs-and-their-impact-on",
+        "2017-lei-the-use-of-discrete-fracture-networks-for-modelling-coupled-geomechanical-and-hydrologi",
+        "2018-lang-relationship-between-the-orientation-of-maximum-permeability-and-intermediate-principa",
+        "2019-dong-equivalence-of-discrete-fracture-network-and-porous-media-models-by-hydraulic-tomograp"
+      ]
+    },
+    {
+      "name": "沟槽化流动 / 优先流",
+      "slug": "channelized-flow",
+      "definition": "在裂隙或断裂带中，流体流动并非均匀而是集中在少数主导通道中的现象，主要由粗糙度、胶结和化学溶蚀等引起。",
+      "aliases": [
+        "Channelized Flow",
+        "Channelled Flow",
+        "Flow Channeling",
+        "沟槽化流动",
+        "preferential flow pathway"
+      ],
+      "boundary": "挑战传统平行板模型和 REV 概念；有效基质-裂缝接触面积远小于几何面积。",
+      "related_claims": [
+        "channelized-flow-in-fault-zones",
+        "kinematic-dfn-channeling-stronger",
+        "preferential-flow-tortuosity"
+      ],
+      "related_methods": [],
+      "sources": [
+        "2016-wennberg-the-characteristics-of-open-fractures-in-carbonate-reservoirs-and-their-impact-on",
+        "2016-maillot-connectivity-permeability-and-channeling-in-randomly-distributed-and-kinematically"
+      ]
+    },
+    {
+      "name": "裂隙迂曲度",
+      "slug": "fracture-tortuosity",
+      "definition": "等效流动通道长度与井间直线距离之比，反映裂隙几何弯曲程度，用于区分优先流和弥散主导迁移。",
+      "aliases": [
+        "fracture tortuosity",
+        "裂隙迂曲度"
+      ],
+      "boundary": "迂曲度<1.5 指示单通道优先流，>1.5 可能为多通道弥散主导；阈值基于特定试验条件。",
+      "related_claims": [
+        "preferential-flow-tortuosity"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "迂曲分形维数",
+      "slug": "tortuosity-fractal-dimension",
+      "definition": "描述流体在裂缝中流动路径迂曲程度的分形维数 DT 或 Dl，影响有效渗透率。",
+      "aliases": [
+        "tortuosity fractal dimension",
+        "DT",
+        "Dl",
+        "迂曲分形维数"
+      ],
+      "boundary": "当前基于二维截面推测三维值，缺乏直接测量。",
+      "related_methods": [
+        "fractal-per-model"
+      ],
+      "related_claims": [],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "各向异性渗透率",
+      "slug": "anisotropic-permeability",
+      "definition": "岩体渗透率随方向变化的特性，由裂缝优先方位、开度和粗糙度等控制，在采动和热致裂中表现显著。",
+      "aliases": [
+        "anisotropic permeability",
+        "渗透率各向异性"
+      ],
+      "boundary": "等效连续渗透率张量假设流动为 Darcy 流；密集裂隙网络中可能需离散裂缝模型校正。",
+      "related_claims": [
+        "per-anisotropy-magnitude",
+        "hcc-anisotropy"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "Forchheimer 流动",
+      "slug": "forchheimer-flow",
+      "definition": "描述多孔介质或裂隙中高速非线性流动的模型，在 Darcy 定律基础上增加与流速平方成正比的惯性项。",
+      "aliases": [
+        "Forchheimer law",
+        "非线性流",
+        "nonlinear flow",
+        "Forchheimer flow"
+      ],
+      "boundary": "当雷诺数较大、惯性效应不可忽略时适用；高速注采和近井地带常见。",
+      "related_methods": [
+        "forchheimer-flow-simulation"
+      ],
+      "related_claims": [],
+      "sources": [
+        "2022-xiong-a-three-dimensional-coupled"
+      ]
+    },
+    {
+      "name": "临界水力梯度 (Jc)",
+      "slug": "critical-hydraulic-gradient",
+      "definition": "表征裂隙中流体流动从线性 Darcy 流向非线性 Forchheimer 流转化的阈值水力梯度，对隙宽最为敏感。",
+      "aliases": [
+        "Critical Hydraulic Gradient",
+        "Jc"
+      ],
+      "boundary": "受隙宽、交点数和粗糙度控制；作为实用判据，普适性关系仍需验证。",
+      "related_claims": [
+        "Jc-dominance-by-aperture"
+      ],
+      "sources": [
+        "2016-liu-critical-hydraulic-gradient-for-nonlinear-flow-through-rock-fracture-networks-the-roles"
+      ]
+    },
+    {
+      "name": "裂缝强度 (P21)",
+      "slug": "fracture-intensity-p21",
+      "definition": "单位面积裂缝总迹长，是一种常用的二维裂缝密度度量。",
+      "aliases": [
+        "fracture intensity",
+        "P21",
+        "裂缝强度"
+      ],
+      "boundary": "仅反映迹线长度密度，不直接等价于三维裂缝密度或连通性。",
+      "related_methods": [
+        "circular-scanline-method"
+      ],
+      "related_claims": [
+        "fracgen-intensity-stability"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "盒计数法",
+      "slug": "box-counting-method",
+      "definition": "用不同尺寸的盒子覆盖裂缝图像，统计包含裂缝的盒子数，通过幂律关系估计分形维数。",
+      "aliases": [
+        "box-counting method",
+        "盒计数法",
+        "box-counting-fractal-dimension"
+      ],
+      "boundary": "对二值化阈值和图像分辨率敏感；可能因裂缝交切和孤立点产生偏差。",
+      "related_methods": [
+        "box-counting-fractal-dimension"
+      ],
+      "related_claims": [],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "缺项性 (Lacunarity)",
+      "slug": "lacunarity",
+      "definition": "度量空间模式异质性或“空隙”分布的分形参数，用于补充分形维数，揭示聚类程度差异。",
+      "aliases": [
+        "Lacunarity",
+        "缺项性"
+      ],
+      "boundary": "对裂隙丰度敏感，需标准化；标准化缺项性 L* 能消除丰度效应。",
+      "related_methods": [
+        "lacunarity-analysis"
+      ],
+      "related_claims": [],
+      "sources": [
+        "2010-roy-lacunarity-analysis-of-fracture-networks-evidence-for-scale-dependent-clustering"
+      ]
+    },
+    {
+      "name": "归一化相关积分 (NCI)",
+      "slug": "normalized-correlation-integral",
+      "definition": "一种定量裂缝空间分布聚集程度（关联维数 D2）的方法，通过计算裂缝点对距离分布判断是否满足幂律标度。",
+      "aliases": [
+        "NCI",
+        "correlation dimension",
+        "相关系分维"
+      ],
+      "boundary": "假设单分形系统；需在适当尺度范围内避免边界效应和低采样率。",
+      "related_methods": [
+        "normalized-correlation-integral-method"
+      ],
+      "related_claims": [
+        "claim-fracture-spatial-distribution-fractal"
+      ],
+      "sources": [
+        "2022-afshari-moein-fractal-characteristics"
+      ]
+    },
+    {
+      "name": "自仿射裂隙",
+      "slug": "self-affine-fracture",
+      "definition": "裂隙壁面高度服从幂律功率谱，具有自仿射分形特征，常用 Hurst 指数 ζ 描述，约 0.7–0.8。",
+      "aliases": [
+        "self-affine fracture",
+        "Hurst exponent",
+        "ζ",
+        "Self-affine Roughness",
+        "Anisotropic Self-affinity"
+      ],
+      "boundary": "自仿射范围受相关长度限制；壁面对合后产生与法向位移相关的孔径场。",
+      "related_methods": [
+        "power-spectrum-analysis",
+        "mechanical-profilometry",
+        "fourier-power-spectrum-analysis",
+        "lidar-scanning"
+      ],
+      "related_claims": [
+        "shear-displacement-creates-aperture-anisotropy",
+        "self-affine-surfaces-control-permeability-anisotropy",
+        "fault-roughness-anisotropic",
+        "roughness-displacement-independent"
+      ],
+      "sources": [
+        "2005-auradou-permeability-anisotropy-induced-by-the-shear-displacement-of-rough-fracture-walls",
+        "2012-candela-roughness-of-fault-surfaces-over-nine-decades-of-length-scales"
+      ]
+    },
+    {
+      "name": "体视学分析",
+      "slug": "stereological-analysis",
+      "definition": "从低维采样数据（如迹线）推断高维几何参数（如裂隙直径分布）的统计方法。",
+      "aliases": [
+        "stereology",
+        "stereological analysis",
+        "体视学分析"
+      ],
+      "boundary": "需假设裂隙形状（如圆盘）和均匀随机空间分布；实际网络常违背这些假设。",
+      "related_methods": [
+        "trace-length-inversion",
+        "probabilistic-intersection-model"
+      ],
+      "related_claims": [
+        "stereological-relation-a_d=a_{d-1}+1",
+        "trace-length-distribution-insensitive-to-size-distribution"
+      ],
+      "sources": [
+        "1998-berkowitz-stereological-analysis-of-fracture-network-structure-in-geological-formations",
+        "2003-darcel-stereological-analysis-of-fractal-fracture-networks",
+        "2006-gupta-stereological-analysis-of-fracture-networks-along-cylindrical-galleries"
+      ]
+    },
+    {
+      "name": "水热蚀变断裂带 (HAFZ)",
+      "slug": "hydrothermally-altered-fractured-zone",
+      "definition": "经历了热水溶液蚀变及充填作用的裂隙带，常见于地热系统，主导流体流动，是水力/化学增产改造的主要目标。",
+      "aliases": [
+        "HAFZ",
+        "Hydrothermally Altered and Fractured Zone"
+      ],
+      "boundary": "天然状态下渗透率可能很低；增产效果取决于能否有效打开已充填裂隙以及应力场方向。",
+      "related_concepts": [
+        "fractured-reservoir"
+      ],
+      "sources": [
+        "2010-dezayes-structure-of-the-low-permeable-naturally-fractured-geothermal-reservoir-at-soultz",
+        "2010-genter-contribution-of-the-exploration-of-deep-crystalline-fractured-reservoir-of-soultz-to"
+      ]
+    },
+    {
+      "name": "开挖诱导裂缝网络 (EDZ)",
+      "slug": "excavation-induced-fracture-network",
+      "definition": "地下工程开挖过程中，由于围岩应力重分布和施工扰动，在开挖面附近形成的裂缝网络，显著改变局部岩体的水力传导特性。",
+      "aliases": [
+        "Excavation Damaged Zone",
+        "EDZ",
+        "开挖损伤区",
+        "excavation-induced fracture network"
+      ],
+      "boundary": "受开挖方式、初始应力场和岩体力学性质控制；与天然裂缝网络不同。",
+      "related_methods": [
+        "cross-hole-pneumatic-tests"
+      ],
+      "related_claims": [],
+      "sources": [
+        "2023-jalali-high-resolution-characterization"
+      ]
+    },
+    {
+      "name": "井壁稳定性",
+      "slug": "wellbore-stability",
+      "definition": "钻井过程中井眼围岩在应力、温度、流体压力联合作用下保持完整的能力。",
+      "aliases": [
+        "wellbore stability",
+        "井壁失稳"
+      ],
+      "boundary": "主要受地应力、钻井液密度、温度梯度和岩石强度控制；冷却可降低破裂压力，但也可能扩大损伤区。",
+      "related_methods": [
+        "wellbore-stress-analysis"
+      ],
+      "related_claims": [
+        "cooling-reduces-fracture-initiation-pressure",
+        "ln2-cooling-can-enlarge-wellbore-damage-zone"
+      ],
+      "sources": [
+        "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under"
+      ]
+    },
+    {
+      "name": "地温梯度",
+      "slug": "geothermal-gradient",
+      "definition": "地球内部温度随深度增加的速率，一般为 25–30 °C/km，构造活动区可达更高值。",
+      "aliases": [
+        "thermal gradient",
+        "地温梯度"
+      ],
+      "boundary": "受热源、岩石热导率和地下水对流影响；局部可能存在异常。",
+      "related_methods": [
+        "temperature-logging"
+      ],
+      "related_claims": [
+        "high-geothermal-gradient-improves-heat-extraction"
+      ],
+      "sources": [
+        "2025-wu-thermal-property-of-reservoir-rocks-at-thermal-mechanical-coupled-conditions-and-resulta"
+      ]
+    },
+    {
+      "name": "岩心直径变形分析 (DCDA)",
+      "slug": "diametrical-core-deformation-analysis",
+      "definition": "通过高精度测量岩心应力释放后的直径椭圆度，结合弹性理论反演钻孔平面内的主应力差和方向的方法。",
+      "aliases": [
+        "DCDA",
+        "core diametrical deformation",
+        "岩心变形法"
+      ],
+      "boundary": "要求岩石近似线弹性各向同性；钻孔轴需近似平行于一个主应力。",
+      "related_methods": [
+        "dcd-measurement"
+      ],
+      "related_claims": [
+        "dcda-estimates-stress-magnitude-and-orientation",
+        "dcda-requires-micrometer-precision-diameter-measurement"
+      ],
+      "sources": [
+        "2023-li-methodology-for-the-estimation-of-mining-face-stresses-using-rock-core-diametrical-defor",
+        "2025-meng-evaluation-of-the-diametrical-core-deformation-analysis-dcda-and-fracture-surface-morp"
+      ]
+    },
+    {
+      "name": "滑动摩擦系数",
+      "slug": "coefficient-of-friction",
+      "definition": "μ 是描述断层或节理面摩擦强度的参数。Byerlee 定律指出，大多数岩石中 μ 约为 0.6–0.85；显著低于此值的断层称为“弱断层”。",
+      "aliases": [
+        "Coefficient of Friction",
+        "μ"
+      ],
+      "boundary": "弱断层可能由高孔隙流体压力、软弱矿物、动态弱化等导致。",
+      "related_concepts": [
+        "rate-and-state-friction",
+        "dynamic-weakening"
+      ],
+      "sources": [
+        "2010-faulkner-a-review-of-recent-developments-concerning-the-structure-mechanics-and-fluid-flow"
+      ]
+    },
+    {
+      "name": "速率-状态摩擦定律 (RSF)",
+      "slug": "rate-and-state-friction",
+      "definition": "描述岩石摩擦强度随滑动速率和接触状态演化的经验关系，核心参数包括 a, b、Dc，是模拟地震成核和粘滑行为的重要本构。",
+      "aliases": [
+        "Rate- and State-dependent Friction",
+        "RSF"
+      ],
+      "boundary": "现象学模型，高速滑动时参数变化并触发动态弱化；实验室参数外推至天然断层存在不确定性。",
+      "related_concepts": [
+        "coefficient-of-friction"
+      ],
+      "sources": [
+        "2010-faulkner-a-review-of-recent-developments-concerning-the-structure-mechanics-and-fluid-flow"
+      ]
+    },
+    {
+      "name": "动态弱化",
+      "slug": "dynamic-weakening",
+      "definition": "断层在高滑动速率（~0.1–1 m/s）下摩擦系数急剧下降的现象，机制包括热增压、闪热和摩擦熔融等。",
+      "aliases": [
+        "Dynamic Weakening"
+      ],
+      "boundary": "仅在快速滑动阶段有效；大位移、大尺度上的综合贡献和机制相互作用尚未完全厘清。",
+      "related_concepts": [
+        "coefficient-of-friction"
+      ],
+      "sources": [
+        "2010-faulkner-a-review-of-recent-developments-concerning-the-structure-mechanics-and-fluid-flow"
+      ]
+    },
+    {
+      "name": "尺寸/尺度效应",
+      "slug": "scale-effect",
+      "definition": "岩石力学性质（强度、模量）和节理粗糙度（JRC）随试样或块体尺寸增大而降低的现象。",
+      "aliases": [
+        "scale effect",
+        "尺度效应",
+        "size effect"
+      ],
+      "boundary": "源于非均匀性；JRC 的经典经验尺度校正式为 JRC_n = JRC_0 (L_n/L_0)^{-0.02 JRC_0}，但不能无限外推。",
+      "related_concepts": [
+        "joint-roughness-coefficient"
+      ],
+      "related_claims": [
+        "claim-jrc-scale-effect"
+      ],
+      "sources": [
+        "2023-barton-advances-in-joint"
+      ]
+    },
+    {
+      "name": "声发射 Kaiser 效应",
+      "slug": "ae-kaiser-effect",
+      "definition": "岩石在受力过程中，只有当应力超过其历史上承受过的最大应力时，才会产生大量声发射信号；可用于推断原地应力。",
+      "aliases": [
+        "Kaiser effect",
+        "acoustic emission stress memory",
+        "AE Kaiser effect"
+      ],
+      "boundary": "适用于硬岩；长期静载和加载速率影响 Kaiser 点。",
+      "related_methods": [
+        "ae-stress-measurement",
+        "oriented-core-testing"
+      ],
+      "related_claims": [
+        "ae-method-yields-in-situ-stress",
+        "kaiser-effect-validated-against-hydrofracturing"
+      ],
+      "sources": [
+        "2004-li-北京房山花岗岩原地应力状态-ae-法估计"
+      ]
+    },
+    {
+      "name": "P 波速度 / 超声波速",
+      "slug": "p-wave-velocity",
+      "definition": "超声波纵波在岩石中的传播速度，对微裂纹和孔隙敏感，是热损伤和力学性质变化的间接指标。",
+      "aliases": [
+        "P-wave velocity",
+        "Vp",
+        "S-wave velocity",
+        "超声波速",
+        "ultrasonic wave velocity"
+      ],
+      "boundary": "用于整体平均损伤评估，对局部裂纹敏感度有限；波速受裂隙密度、张开度及含水状态共同影响。",
+      "related_methods": [
+        "ultrasonic-velocity-test",
+        "ultrasonic-velocity-measurement"
+      ],
+      "related_claims": [
+        "claim-vp-linear-relation-strength",
+        "claim-vp-assess-thermal-damage",
+        "vp-decreases-nonlinearly-with-temperature",
+        "vp-damage-factor-can-predict-ucs-loss"
+      ],
+      "sources": [
+        "2021-zhu-changes-in-thermomechanical",
+        "2022-hu-experimental-investigation",
+        "2023-cui-experimental-investigation",
+        "2024-bu-deterioration-of-equivalent-thermal-conductivity-of-granite-subjected-to-heating-cooling",
+        "2024-zheng-physical-and-mechanical-properties-and-damage-mechanism-of-sandstone-at-high-temperat"
+      ]
+    },
+    {
+      "name": "核磁共振 (NMR) 孔隙表征",
+      "slug": "nuclear-magnetic-resonance",
+      "definition": "利用低场核磁共振仪测量岩石中孔隙流体的弛豫时间 T₂ 谱，通过谱峰位置和面积反演孔隙尺寸分布、可动流体比例和渗透率。",
+      "aliases": [
+        "NMR",
+        "nuclear magnetic resonance",
+        "核磁共振测孔",
+        "T2 relaxation",
+        "movable porosity"
+      ],
+      "boundary": "假设表面弛豫为主；需要试样饱和；不能分辨非连通孔隙；信号受顺磁性矿物干扰。",
+      "related_methods": [
+        "nuclear-magnetic-resonance-porosimetry",
+        "nmr-t2-spectrum",
+        "nmr-permeability-estimation"
+      ],
+      "related_claims": [
+        "nmr-tracks-cycle-pore-growth",
+        "nmr-derived-permeability-correlates-with-measured",
+        "t2-spectrum-shift-right-indicates-pore-enlargement",
+        "nmr-porosity-correlates-with-wave-velocity-damage"
+      ],
+      "sources": [
+        "2020-mahanta-an-insight-into-pore-network-models-of-high-temperature-heat-treated-sandstones-usi",
+        "2021-li-factors-affecting-pore-structure-of-granite-under-cyclic-heating-and-cooling-a-nuclear-m",
+        "2021-jiang-pore-structure-alteration-and-permeability-enhancement-of-shale-under-cyclic-thermal",
+        "2024-xi-experimental-study-on-pore-characteristics-evolution-and-rock-damage-mechanism-of-therma",
+        "2024-xi-evaluation-of-pore-characteristics-evolution-and-damage-mechanism-of-granite-under-therm"
+      ]
+    },
+    {
+      "name": "CT 扫描 / 微 CT",
+      "slug": "ct-scanning",
+      "definition": "利用 X 射线 CT 获取岩石内部三维密度分布，用于定量分析孔隙/裂隙体积、空间分布和连通性，实时 CT 可加载下观测裂纹演化。",
+      "aliases": [
+        "micro-CT",
+        "X-ray CT",
+        "3D CT scanning",
+        "computed tomography",
+        "CT 扫描",
+        "微CT"
+      ],
+      "boundary": "分辨率受限于设备（微米级），低于分辨率的结构无法识别。",
+      "related_methods": [
+        "micro-ct-scanning",
+        "3d-pore-network-extraction",
+        "x-ray-ct-joint-surface-reconstruction"
+      ],
+      "related_claims": [
+        "ct-reveals-crack-network",
+        "ct-confirms-spatial-gradient-damage",
+        "deep-jrc-stress-direction"
+      ],
+      "sources": [
+        "2020-fan-spatial-gradient-distributions-of-thermal-shock-induced-damage-to-granite",
+        "2020-mahanta-an-insight-into-pore-network-models-of-high-temperature-heat-treated-sandstones-usi",
+        "2021-gao-real-time-visual-analysis-of-the-microcracking-behavior-of-thermally-damaged-granite-un",
+        "2013-jovanovi-simultaneous-segmentation-and-beam-hardening-correction-in-computed-microtomograph",
+        "2014-ketcham-beam-hardening-correction-for-x-ray-computed-tomography-of-heterogeneous-natural-ma",
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "数字图像相关 (DIC)",
+      "slug": "digital-image-correlation",
+      "definition": "通过追踪试样表面散斑图案的变形计算全场位移与应变，用于识别裂纹萌生位置、应变集中带和破坏过程。",
+      "aliases": [
+        "DIC",
+        "digital image correlation",
+        "full-field strain measurement"
+      ],
+      "boundary": "仅适用于表面观测，精度依赖于图像分辨率和散斑质量。",
+      "related_methods": [
+        "dic-strain-analysis",
+        "dic-crack-monitoring"
+      ],
+      "related_claims": [
+        "dic-captures-strain-localization",
+        "dic-aids-crack-damage-threshold"
+      ],
+      "sources": [
+        "2020-weng-influence-of-heating-cooling-cycles-on-the-micro-macrocracking-characteristics-of-ruch",
+        "2021-ge-effect-of-high-temperature-on-mode-i-fracture-toughness-of-granite-subjected-to-liquid-n"
+      ]
+    },
+    {
+      "name": "超临界二氧化碳 (SCCO2)",
+      "slug": "supercritical-co2",
+      "definition": "处于临界点（31.1°C, 7.38 MPa）以上的二氧化碳流体，作为 EGS 工质可产生更强的自然对流和更高的热提取率。",
+      "aliases": [
+        "SCCO2",
+        "Supercritical CO2"
+      ],
+      "boundary": "优势仅在中高压超临界条件下成立；对储层物性变化的敏感性更高。",
+      "related_claims": [
+        "co2-heat-extraction-higher",
+        "SCCO2-natural-convection"
+      ],
+      "sources": [
+        "2016-cao-numerical-study-on-variable-thermophysical-properties-of-heat-transfer-fluid-affecting",
+        "2016-olasolo-enhanced-geothermal-systems-egs-a-review"
+      ]
+    },
+    {
+      "name": "莱登弗罗斯特效应",
+      "slug": "leidenfrost-effect",
+      "definition": "液体接触远高于其沸点的高温表面时形成绝热蒸汽膜，极大降低换热效率的现象，影响液氮压裂或注水冷却效率。",
+      "aliases": [
+        "Leidenfrost Effect"
+      ],
+      "boundary": "取决于表面温度、液体性质和表面粗糙度；优化注速可部分抵消。",
+      "related_concepts": [
+        "thermal-stimulation"
+      ],
+      "sources": [
+        "2014-fan-regulated-transient-pool-boiling-of-water-during-quenching-on-nanostructured-surfaces-w",
+        "2016-wang-waterless-fracturing-technologies-for-unconventional-reservoirs-opportunities-for-liqu"
+      ]
+    },
+    {
+      "name": "水力刺激 / 水力压裂",
+      "slug": "hydraulic-stimulation",
+      "definition": "通过向储层注入高压流体（水、支撑剂等），降低有效应力，激活或创造裂缝网络以提高渗透率的储层改造技术。",
+      "aliases": [
+        "hydraulic stimulation",
+        "hydro-shearing",
+        "水力压裂",
+        "水力剪切",
+        "hydraulic fracturing",
+        "压裂"
+      ],
+      "boundary": "在 EGS 中目标以剪切滑动为主；需控制诱发地震；水稀缺或人口密集区风险高。",
+      "related_methods": [
+        "shear-stimulation",
+        "injection-rate-step-test",
+        "multi-stage-stimulation",
+        "cyclic-soft-stimulation"
+      ],
+      "related_claims": [
+        "viscous-fluid-maintains-tensile-fracture-growth",
+        "low-viscosity-water-prompts-shear-activation",
+        "shear-mixed-mode-dominance",
+        "multi-stage-complexity",
+        "css-seismicity-mitigation"
+      ],
+      "sources": [
+        "2018-amann-the-seismo-hydromechanical-behavior-during-deep-geothermal-reservoir-stimulations-ope",
+        "2019-moore-the-utah-frontier-observatory-for-research-in-geothermal-energy-forge-an-internationa",
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "化学刺激",
+      "slug": "chemical-stimulation",
+      "definition": "通过注入酸液或螯合剂溶解矿物堵塞或蚀刻裂缝面，改善近井或裂缝导流能力，通常以低于破裂压力运行。",
+      "aliases": [
+        "chemical stimulation",
+        "酸化",
+        "螯合剂刺激"
+      ],
+      "boundary": "作用半径有限，在花岗岩中常作为辅助手段；深部递送和二次沉淀是挑战。",
+      "related_claims": [
+        "chemical-stimulation-low-seismicity"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "热刺激 (Thermal Stimulation)",
+      "slug": "thermal-stimulation",
+      "definition": "利用注入冷流体与储层间的温差驱使热应力扩展天然或人工裂缝以增强渗透率的技术。",
+      "aliases": [
+        "thermal stimulation",
+        "热致裂",
+        "cooling fracturing",
+        "热刺激",
+        "Thermal Stimulation",
+        "Cryogenic Fracturing"
+      ],
+      "boundary": "作为独立方法需极高温差和发达天然裂缝；常作为水力刺激后的协同增效工具。",
+      "related_methods": [
+        "quenching-experiment"
+      ],
+      "related_claims": [
+        "thermal-stimulation-scope",
+        "thermal-shock-enhances-permeability"
+      ],
+      "sources": [
+        "2014-kim-effect-of-rapid-thermal-cooling-on-mechanical-rock-properties",
+        "2015-siratovich-saturated-heating-and-quenching-of-three-crustal-rocks-and-implications-for-ther",
+        "2016-wang-waterless-fracturing-technologies-for-unconventional-reservoirs-opportunities-for-liqu",
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems",
+        "2025-zhu-physico-mechanical-properties-of-granite-after-thermal-treatments-using-different-cooli"
+      ]
+    },
+    {
+      "name": "工程三难 (EGS Trilemma)",
+      "slug": "engineering-trilemma",
+      "definition": "EGS 储层改造中必须同时权衡的三个相互冲突目标：有效连通、避免热短路和控制诱发地震。",
+      "aliases": [
+        "Engineering Trilemma",
+        "EGS trilemma",
+        "工程三难"
+      ],
+      "boundary": "适用于 EGS 储层改造策略评估。",
+      "related_claims": [
+        "egs-trilemma"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "多级刺激",
+      "slug": "multi-stage-stimulation",
+      "definition": "用封隔器或可溶球分段注入，实现空间上分割储层，增大改造体积并抑制热短路。",
+      "aliases": [
+        "multi-stage stimulation",
+        "多级压裂",
+        "分段压裂"
+      ],
+      "boundary": "应力阴影和自支撑裂缝长期导流性在 EGS 高温环境下是未知挑战。",
+      "related_claims": [
+        "multi-stage-complexity"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "循环软刺激 (CSS)",
+      "slug": "cyclic-soft-stimulation",
+      "definition": "通过多周期间断注入分散能量，将岩石破坏模式从单次大断裂转向渐进的微裂纹扩展，以降低单次地震震级。",
+      "aliases": [
+        "CSS",
+        "Cyclic Soft Stimulation",
+        "循环软刺激",
+        "疲劳压裂"
+      ],
+      "boundary": "长周期 THMC 耦合影响尚不明确；实验室参数向储层尺度外推缺乏可靠模型。",
+      "related_claims": [
+        "css-seismicity-mitigation"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "混合机制刺激 (MMS)",
+      "slug": "mixed-mechanism-stimulation",
+      "definition": "在水力刺激中同时激活已有裂缝的剪切滑移和纯张裂过程，以兼顾连通性与风险控制。",
+      "aliases": [
+        "mixed-mechanism stimulation",
+        "MMS",
+        "混合刺激"
+      ],
+      "boundary": "判别依赖于微震震源机制反演和注入压力数据，场地证据强度可能有限。",
+      "related_claims": [
+        "shear-mixed-mode-dominance"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "无震滑移",
+      "slug": "aseismic-slip",
+      "definition": "流体注入过程中发生的非地震性缓慢剪切滑移，可贡献渗透率提高而不产生可检测地震波。",
+      "aliases": [
+        "aseismic slip",
+        "无声滑移"
+      ],
+      "boundary": "无法通过微震直接监测，需应变或光纤传感补充；定量贡献仍是挑战。",
+      "related_claims": [
+        "srv-not-equal-hydraulic-volume"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "微震监测",
+      "slug": "microseismic-monitoring",
+      "definition": "通过布设地震检波器阵列记录储层改造和采热过程中诱发的小地震事件，评估裂缝扩展范围和地震风险。",
+      "aliases": [
+        "microseismic monitoring",
+        "微震监测"
+      ],
+      "boundary": "微震云体积（SRV）不等于有效渗透体积；无震滑移、流体扩散和热效应不能被微震直接捕捉。",
+      "related_claims": [
+        "srv-not-equal-hydraulic-volume"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "示踪测试",
+      "slug": "tracer-test",
+      "definition": "向注入井注入化学示踪剂，在生产井监测浓度突破曲线（BTC），以估算储层连通性、体积和传热表面积等的现场试验方法。",
+      "aliases": [
+        "tracer test",
+        "示踪剂测试",
+        "breakthrough curve analysis"
+      ],
+      "boundary": "需要足够的示踪剂质量和采样时长；解释模型依赖于流动假设。",
+      "related_methods": [
+        "tracer-test-analysis"
+      ],
+      "related_claims": [
+        "tracer-breakthrough-curve-reveals-flow-path",
+        "adsorbing-tracers-estimate-heat-transfer-surface-area"
+      ],
+      "sources": [
+        "2023-ren-a-comprehensive-review-of-tracer-tests-in-enhanced-geothermal-systems",
+        "2024-hua-tracer-test-based-dimensionality-reduction-model-for-characterizing-fracture-network-an"
+      ]
+    },
+    {
+      "name": "裂缝网络重建",
+      "slug": "fracture-network-reconstruction",
+      "definition": "利用有限观测数据（如露头图像、钻孔信息）通过统计或机器学习方法生成具有代表性的三维/二维裂缝网络。",
+      "aliases": [
+        "fracture network reconstruction",
+        "裂缝网络重构",
+        "裂缝网络重建"
+      ],
+      "boundary": "二维重建无法完全捕捉三维连通性；三维重建依赖输入数据质量。",
+      "related_methods": [
+        "monte-carlo-dfn",
+        "fracgen",
+        "upscaling-gan",
+        "fractal-topography-dfn",
+        "neural-network-inversion"
+      ],
+      "related_claims": [
+        "single-image-upscaling-claim",
+        "upscaling-gan-aperture-variability",
+        "dfn-vs-gan-realism"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai",
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "裂缝网络升尺度",
+      "slug": "fracture-network-upscaling",
+      "definition": "将小尺度裂缝图像或模型扩展到大尺度，并保持统计特征或结构一致性的方法。",
+      "aliases": [
+        "fracture network upscaling",
+        "升尺度",
+        "upscaling"
+      ],
+      "boundary": "大多数方法依赖于图像自相似性或预设统计模型；长程结构一致性有待验证。",
+      "related_methods": [
+        "fracgen",
+        "upscaling-gan"
+      ],
+      "related_claims": [
+        "single-image-upscaling-claim",
+        "upscaling-gan-aperture-variability"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "生成对抗网络 (GAN)",
+      "slug": "generative-adversarial-network",
+      "definition": "一种由生成器与判别器相互博弈的深度学习框架，用于从数据中学习分布并生成新的样本，在裂隙网络重建和升尺度中得到应用。",
+      "aliases": [
+        "GAN",
+        "Generative Adversarial Network",
+        "生成对抗网络"
+      ],
+      "boundary": "训练稳定性依赖于网络结构和损失函数设计；小样本下可能面临模式坍塌。",
+      "related_methods": [
+        "fracgen",
+        "upscaling-gan",
+        "sinGAN"
+      ],
+      "related_claims": [
+        "sinGAN-fracture-upscaling",
+        "upscaling-gan-aperture-variability"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers",
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "FracGen",
+      "slug": "fracgen",
+      "definition": "基于 SinGAN 的非参数裂缝网络重建和升尺度模型，仅需单张露头图像即可生成多尺度网络。",
+      "aliases": [
+        "FracGen",
+        "SinGAN-based fracture generation"
+      ],
+      "boundary": "仅支持二维，需要二值化预处理，不能自动生成变开度。",
+      "related_methods": [
+        "fracgen"
+      ],
+      "related_claims": [
+        "sinGAN-fracture-upscaling"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "Upscaling-GAN",
+      "slug": "upscaling-gan",
+      "definition": "一种基于 GAN 的两阶段算法，从单张小尺度裂缝图像学习，通过补丁拼接生成任意尺寸的高保真裂缝网络，同时保持开度变异性。",
+      "aliases": [
+        "Upscaling-GAN",
+        "AI-Geo AIG-Upscaling"
+      ],
+      "boundary": "当前为二维，单图训练泛化能力未验证，极长程结构一致性待研究。",
+      "related_methods": [
+        "upscaling-gan-framework"
+      ],
+      "related_claims": [
+        "upscaling-gan-aperture-variability"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "PFC 颗粒流模型",
+      "slug": "pfc-grain-based-model",
+      "definition": "利用颗粒流方法将岩石抽象为粘结颗粒集合，通过细观参数表征矿物接触和热力行为，用于模拟热开裂等过程。",
+      "aliases": [
+        "PFC",
+        "Particle Flow Code",
+        "parallel bond model",
+        "PFC颗粒流模型"
+      ],
+      "boundary": "二维模型未考虑三维效应；矿物组分简化，模型参数需多目标优化标定。",
+      "related_methods": [
+        "pfc-thermal-mechanical-simulation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "FDEM 内聚力模型",
+      "slug": "fdem-cohesive-zone-model",
+      "definition": "采用零厚度内聚力单元和双线性牵引-分离法则模拟裂纹萌生与扩展的有限元-离散元耦合方法。",
+      "aliases": [
+        "FDEM",
+        "Finite-Discrete Element Method",
+        "cohesive zone model",
+        "FDEM内聚力模型"
+      ],
+      "boundary": "网格依赖性和温度弱化本构的简化可能影响复杂路径的裂纹模拟精度。",
+      "related_methods": [
+        "fdem-dem-simulation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "多尺度跨平台耦合 (PFC-FDEM)",
+      "slug": "multi-scale-cross-platform-coupling",
+      "definition": "将颗粒流离散元（PFC）的微观热裂纹信息映射到有限-离散元（FDEM）的宏观动态力学模型，实现微观损伤到宏观响应的跨尺度桥接。",
+      "aliases": [
+        "PFC-FDEM coupling",
+        "multi-scale cross-platform coupling",
+        "PFC-FDEM多尺度耦合"
+      ],
+      "boundary": "目前为二维热力顺序耦合；热-力全耦合、三维映射和不同岩性的通用性待发展。",
+      "related_methods": [
+        "pfc-thermal-mechanical-simulation",
+        "fdem-dem-simulation"
+      ],
+      "related_claims": [
+        "pfc-fdem-mapping-efficiency",
+        "energy-consistency-mapping"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "应变率敏感性 / 动态增强因子 (DIF)",
+      "slug": "strain-rate-sensitivity",
+      "definition": "岩石动态强度随应变率提高而增大的特性，常用动态增强因子 DIF（动态强度与准静态强度之比）表征。",
+      "aliases": [
+        "strain-rate sensitivity",
+        "rate dependence",
+        "应变率效应",
+        "DIF",
+        "Dynamic Increase Factor",
+        "动态增强因子"
+      ],
+      "boundary": "解耦假设下有效；高应变率（>10³ s⁻¹）和全耦合效应可能导致偏差。",
+      "related_methods": [
+        "decoupled-dif-model"
+      ],
+      "related_claims": [
+        "dif-thermal-attenuation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "能量分配机制 (弹性-断裂转变)",
+      "slug": "energy-partitioning",
+      "definition": "外力做功在岩石内部转化为弹性储存能和断裂耗散能的分配比例；热损伤使能量流从弹性储存转向断裂耗散，改变破坏模式。",
+      "aliases": [
+        "energy partitioning",
+        "elastic-to-fracture energy shift",
+        "能量分配机制"
+      ],
+      "boundary": "适用于动态拉伸条件下的热损伤岩石；围压和循环加载下的分配规律可能不同。",
+      "related_methods": [
+        "fdem-dem-simulation"
+      ],
+      "related_claims": [
+        "energy-shift-fragmentation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "裂纹屏蔽与应力放大效应",
+      "slug": "crack-shielding-effect",
+      "definition": "相邻裂纹通过应力场相互作用，抑制或增强裂纹扩展的现象。",
+      "aliases": [
+        "crack shielding",
+        "stress amplification",
+        "裂纹屏蔽效应"
+      ],
+      "boundary": "线性叠加近似在裂纹密度高时误差增大。",
+      "related_methods": [
+        "pfc-thermal-mechanical-simulation"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "动态临界速度 (0.6Cs)",
+      "slug": "dynamic-critical-velocity",
+      "definition": "裂纹扩展速度达到 0.6 倍剪切波速时，系统从单裂纹加速过渡到多裂纹并行扩展的临界阈值。",
+      "aliases": [
+        "dynamic critical velocity",
+        "0.6cs",
+        "动态临界速度"
+      ],
+      "boundary": "基于均质化 FDEM 模拟，真实岩石的非均质性可能导致具体值变化。",
+      "related_claims": [
+        "critical-velocity-multi-cracking"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "Weibull 分布随机调制",
+      "slug": "weibull-distribution-modulation",
+      "definition": "利用 Weibull 分布引入随机性，调制裂纹长度或强度分布以模拟岩石材料的非均质性。",
+      "aliases": [
+        "Weibull distribution",
+        "Weibull随机调制"
+      ],
+      "boundary": "形状参数 k 和尺度参数 λ 需根据特定材料校准。",
+      "related_methods": [
+        "weibull-crack-length-optimization"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "裂纹长度优化算法",
+      "slug": "crack-length-optimization",
+      "definition": "在保持网络拓扑不变的前提下，基于热力学驱动和 Weibull 随机调制，优化热裂纹长度以适应跨尺度映射。",
+      "aliases": [
+        "crack length optimization",
+        "热力学驱动的裂纹长度优化"
+      ],
+      "boundary": "线性叠加假设在裂纹密度 ρ<0.3 mm⁻¹ 且温度<0.6Tm 时误差<15%；不适用于强相互作用网络。",
+      "related_methods": [
+        "weibull-crack-length-optimization"
+      ],
+      "related_claims": [
+        "crack-length-optimization-reduction"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "拓扑保持",
+      "slug": "topology-preservation",
+      "definition": "在裂纹优化或映射过程中保持裂纹网络的连接性和相交关系不变。",
+      "aliases": [
+        "topology preservation",
+        "拓扑保持"
+      ],
+      "boundary": "二维映射中可定量保持；三维推广困难。",
+      "related_methods": [
+        "weibull-crack-length-optimization"
+      ],
+      "related_claims": [
+        "crack-length-optimization-reduction"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "应力阴影",
+      "slug": "stress-shadow",
+      "definition": "先段压裂产生的附加应力场对邻段裂缝扩展的抑制作用，影响多级刺激效果。",
+      "aliases": [
+        "stress shadow",
+        "应力阴影"
+      ],
+      "boundary": "现有模型多基于等温或小温差，EGS 大温差下热弹性效应可能显著改变阴影效应。",
+      "related_claims": [
+        "multi-stage-complexity"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "自支撑裂缝",
+      "slug": "self-propping-fractures",
+      "definition": "依靠剪切位移产生粗糙面不匹配而保持开度的裂缝，无需人工支撑剂。",
+      "aliases": [
+        "self-propping",
+        "自支撑裂缝"
+      ],
+      "boundary": "长期高温水岩反应可能改变粗糙度和导流性，退化规律不明确。",
+      "related_claims": [
+        "self-propping-degradation"
+      ],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "分形地形理论",
+      "slug": "fractal-topography-theory",
+      "definition": "将裂隙网络视为双复杂度系统，用标度空亏度 P、标度覆盖度 F 和演化层级 i 刻画其分形结构和空间异质性。",
+      "aliases": [
+        "fractal topography theory",
+        "分形地形理论"
+      ],
+      "boundary": "假设裂隙具有层次结构和一致标度行为；对于非层次、多标度系统仅能提取广义 P。",
+      "related_concepts": [
+        "dual-complexity-system"
+      ],
+      "related_methods": [
+        "fractal-topography-modeling"
+      ],
+      "related_claims": [
+        "fractal-dimension-uniqueness",
+        "fractal-topography-mae"
+      ],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "双复杂度系统",
+      "slug": "dual-complexity-system",
+      "definition": "天然裂隙介质具有原始复杂度（由主裂隙几何定义）和行为复杂度（由标度不变行为和随机性定义）的双重特性。",
+      "aliases": [
+        "dual-complexity system",
+        "双复杂度系统"
+      ],
+      "boundary": "适用于具有分形特征的裂隙网络；若系统无自相似性，行为复杂度定义可能失效。",
+      "related_concepts": [
+        "fractal-topography-theory"
+      ],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "F3s 框架",
+      "slug": "f3s-framework",
+      "definition": "结合主裂隙几何（G）、分形地形（Ω_Pi）和随机性（ρ）的统一裂隙网络表征框架。",
+      "aliases": [
+        "F3s framework",
+        "F3s(G,Ω,ρ)"
+      ],
+      "boundary": "目前为二维框架，三维扩展待验证。",
+      "related_methods": [
+        "fractal-topography-dfn"
+      ],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "FT-DFN 模型",
+      "slug": "ft-dfn-model",
+      "definition": "基于分形地形理论构建的离散裂隙网络模型，通过分形迭代生长形成裂隙结构。",
+      "aliases": [
+        "FT-DFN",
+        "Fractal Topography-based DFN"
+      ],
+      "boundary": "模型输出的裂隙位置和角度假设为独立分布；对连通性的精细表征有限。",
+      "related_methods": [
+        "fractal-topography-dfn"
+      ],
+      "related_claims": [
+        "fractal-topography-mae"
+      ],
+      "sources": [
+        "2025-zhao-characterizing-the-intrinsic-complexity-of-natural-fracture-networks-a-novel-fractal-b"
+      ]
+    },
+    {
+      "name": "Fisher 分布",
+      "slug": "fisher-distribution",
+      "definition": "描述球面数据（裂缝产状）围绕平均方向集中程度的概率分布，由密度指数 k 控制。",
+      "aliases": [
+        "Fisher distribution",
+        "Fisher 分布",
+        "球面正态分布"
+      ],
+      "boundary": "假设裂缝方向成群且均匀围绕平均方向；不适用于多峰或强各向异性分布。",
+      "related_methods": [
+        "dips-fracture-grouping"
+      ],
+      "related_claims": [
+        "fisher-k-orientation-control"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "对数正态长度分布",
+      "slug": "log-normal-length-distribution",
+      "definition": "裂缝长度取对数后服从正态分布，常用 μ 和 σ 描述，常在露头图像中因截断效应显现。",
+      "aliases": [
+        "log-normal distribution",
+        "对数正态分布"
+      ],
+      "boundary": "主要适用于二维出露迹线；三维裂缝尺寸分布可能为指数或幂律。",
+      "related_methods": [
+        "log-normal-fitting"
+      ],
+      "related_claims": [
+        "fracture-length-lognormal"
+      ],
+      "sources": [
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "粗糙度各向异性",
+      "slug": "roughness-anisotropy",
+      "definition": "节理表面粗糙度随方向显著变化的特性，影响剪切强度、剪胀和流体流动的各向异性。",
+      "aliases": [
+        "roughness anisotropy",
+        "各向异性粗糙度"
+      ],
+      "boundary": "基于 JRC 的椭圆拟合提供主方向；精确值受测量方向和尺度影响。",
+      "related_methods": [
+        "ellipse-fitted-jrc-direction"
+      ],
+      "related_claims": [
+        "jrc-anisotropy-convergence"
+      ],
+      "sources": [
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "单轴抗压强度归一化 (Normalized UCS)",
+      "slug": "normalized-ucs",
+      "definition": "以室温初始值为基准的单轴抗压强度比值，用于消除不同花岗岩批次差异，研究温度效应。",
+      "aliases": [
+        "normalized UCS",
+        "σc/σc0"
+      ],
+      "boundary": "归一化假设室温下性质一致，忽略了原始孔隙率和微裂纹差异。",
+      "related_claims": [
+        "ucs-normalized-linear-fit"
+      ],
+      "sources": [
+        "2025-解经宇-我国干热花岗岩在不同冷却条件下的力学响应研究进展"
+      ]
+    },
+    {
+      "name": "裂隙孔隙压力扩散",
+      "slug": "pore-pressure-diffusion",
+      "definition": "注入或抽出的流体在裂隙介质中引起孔隙压力的时空传播，控制诱发地震的时空演化。",
+      "aliases": [
+        "pore pressure diffusion",
+        "pressure diffusion"
+      ],
+      "boundary": "基于均质扩散方程；实际裂隙网络非均质性强，扩散系数可能随尺度变化。",
+      "related_methods": [
+        "hydraulic-diffusivity-estimation",
+        "microseismic-cloud-analysis"
+      ],
+      "related_claims": [
+        "seismicity-migration-follows-pressure-diffusion",
+        "injection-stops-seismicity-continues-at-cloud-edges"
+      ],
+      "sources": [
+        "2007-cornet-how-close-to-failure-is-a-granite-rock-mass-at-a-5-km-depth",
+        "2009-deichmann-earthquakes-induced-by-the-stimulation-of-an-enhanced-geothermal-system-below-bas"
+      ]
+    },
+    {
+      "name": "克拉通破坏",
+      "slug": "craton-destruction",
+      "definition": "原本稳定的大陆克拉通岩石圈根底发生减薄、拆沉或热力学侵蚀，导致失去稳定性的地质过程。华北克拉通破坏峰期为~125Ma。",
+      "aliases": [
+        "Craton Destruction",
+        "Decratonization"
+      ],
+      "boundary": "破坏不等同于简单的岩石圈减薄；通常需要大洋俯冲作用的参与。",
+      "related_concepts": [
+        "lithospheric-thinning"
+      ],
+      "related_claims": [
+        "NCC-destruction-peak-125Ma",
+        "pacific-subduction-drives-destruction"
+      ],
+      "sources": [
+        "2011-zhu-timing-scale-and-mechanism-of-the-destruction-of-the-north-china-craton",
+        "2012-zhu-destruction-of-the-north-china-craton"
+      ]
+    },
+    {
+      "name": "华北克拉通 (NCC)",
+      "slug": "north-china-craton",
+      "definition": "中国最古老的克拉通之一，由东、西两个地块沿中部造山带在约 1.85 Ga 拼合而成，东部在中生代经历了显著破坏和岩石圈减薄。",
+      "aliases": [
+        "North China Craton",
+        "NCC",
+        "华北克拉通"
+      ],
+      "boundary": "破坏范围限于东部太行山重力梯度带以东；西部仍保留较厚的岩石圈根。",
+      "related_concepts": [
+        "craton-destruction"
+      ],
+      "related_claims": [
+        "NCC-destruction-peak-125Ma",
+        "pacific-subduction-drives-destruction",
+        "Trans-North-China-Orogen-concept-abandoned"
+      ],
+      "sources": [
+        "2011-zhu-timing-scale-and-mechanism-of-the-destruction-of-the-north-china-craton",
+        "2012-zhu-destruction-of-the-north-china-craton",
+        "2012-zhao-precambrian-geology-of-china",
+        "2016-kusky-insights-into-the-tectonic-evolution-of-the-north-china-craton-through-comparative-te"
+      ]
+    },
+    {
+      "name": "威尔逊旋回",
+      "slug": "wilson-cycle",
+      "definition": "描述大陆从裂谷到碰撞拼合最后稳定化的完整构造演化序列。",
+      "aliases": [
+        "Wilson Cycle"
+      ],
+      "boundary": "在早前寒武纪地体应用存在争议；晚太古代及之后的构造样式可能与显生宙相似。",
+      "sources": [
+        "2016-kusky-insights-into-the-tectonic-evolution-of-the-north-china-craton-through-comparative-te"
+      ]
+    },
+    {
+      "name": "露头类似物",
+      "slug": "outcrop-analogue",
+      "definition": "将地表出露的岩石作为地下储层或岩体的地质模型参考，用其几何数据指导地下建模。",
+      "aliases": [
+        "Outcrop Analogue",
+        "露头类似物"
+      ],
+      "boundary": "不可能与地下目标完全一致；风化、成岩作用可能影响测量的准确性。",
+      "related_concepts": [
+        "soft-data-vs-hard-data"
+      ],
+      "sources": [
+        "2014-howell-the-application-of-outcrop-analogues-in-geological-modelling-a-review-present-status"
+      ]
+    },
+    {
+      "name": "训练图像",
+      "slug": "training-image",
+      "definition": "在多地质统计学（MPS）建模中，一种包含目标地质模式的数字化概念模型，用于约束地下模型的属性分布。",
+      "aliases": [
+        "Training Image",
+        "TI"
+      ],
+      "boundary": "质量和代表性直接决定模型预测效果；应包含所有可能的地下模式且是平稳的。",
+      "related_concepts": [
+        "outcrop-analogue"
+      ],
+      "sources": [
+        "2014-howell-the-application-of-outcrop-analogues-in-geological-modelling-a-review-present-status"
+      ]
+    },
+    {
+      "name": "软数据与硬数据",
+      "slug": "soft-data-vs-hard-data",
+      "definition": "硬数据指可直接精度测量的数据（如井点厚度），软数据指定性、概念性或统计性的信息（如相组合、宽厚比统计关系）。",
+      "aliases": [
+        "Soft data vs Hard data",
+        "软数据与硬数据"
+      ],
+      "boundary": "硬数据用于条件化模型，软数据用于构建概念模型；错误使用软数据可能导致建模错误。",
+      "sources": [
+        "2014-howell-the-application-of-outcrop-analogues-in-geological-modelling-a-review-present-status"
+      ]
+    },
+    {
+      "name": "节理面形状",
+      "slug": "joint-planar-shape",
+      "definition": "岩石中节理的平面形状可以是椭圆形、矩形或不规则多边形；不受限制的节理倾向于椭圆形。",
+      "aliases": [
+        "Joint Planar Shape",
+        "Joint Shape"
+      ],
+      "boundary": "从二维露头推断三维形状是不确定的逆问题。",
+      "related_claims": [
+        "unrestricted-joints-elliptical"
+      ],
+      "sources": [
+        "2010-zhang-the-planar-shape-of-rock-joints",
+        "2014-jin-analytical-expressions-for-the-size-distribution-function-of-elliptical-joints"
+      ]
+    },
+    {
+      "name": "潜山裂缝型油藏",
+      "slug": "buried-hill-reservoir",
+      "definition": "赋存于古潜山基底（变质岩、花岗岩等）中，以构造裂缝和风化溶蚀孔洞为主要储渗空间的油藏。",
+      "aliases": [
+        "Buried Hill Reservoir",
+        "潜山裂缝型油藏"
+      ],
+      "boundary": "非均质性强，高产与低产井相邻分布；裂缝有效性评价需结合地应力方向等动态资料。",
+      "related_claims": [
+        "fracture-effectiveness-max-stress-angle"
+      ],
+      "sources": [
+        "2012-tong-kaijun-reservoir-evaluation-and-fracture-chracterization-of-the-metamorphic-buried-hil"
+      ]
+    },
+    {
+      "name": "低渗透致密储层",
+      "slug": "low-permeability-tight-reservoir",
+      "definition": "基质渗透率极低（通常<1 mD）的储层，如页岩气、致密砂岩气和结晶岩储层，必须依赖天然或人工裂缝进行经济开采。",
+      "aliases": [
+        "Low-permeability Reservoir",
+        "Tight Reservoir"
+      ],
+      "boundary": "流体流动主要由裂缝网络控制，基质贡献可忽略。",
+      "related_concepts": [
+        "fractured-reservoir"
+      ],
+      "sources": [
+        "2016-wang-waterless-fracturing-technologies-for-unconventional-reservoirs-opportunities-for-liqu"
+      ]
+    },
+    {
+      "name": "射线束硬化伪影",
+      "slug": "beam-hardening-artifact",
+      "definition": "在 X 射线 CT 扫描中，由于多色射线束的低能光子被优先吸收导致平均能量增加而产生的图像伪影，表现为中心偏暗。",
+      "aliases": [
+        "Beam-hardening Artifact",
+        "BHA",
+        "Cupping Artifact"
+      ],
+      "boundary": "在非均质或复杂形状样品中难以精确校正；后重建径向函数校正法有助分割。",
+      "related_methods": [
+        "radial-bha-correction",
+        "spline-based-bh-correction"
+      ],
+      "sources": [
+        "2013-jovanovi-simultaneous-segmentation-and-beam-hardening-correction-in-computed-microtomograph",
+        "2014-ketcham-beam-hardening-correction-for-x-ray-computed-tomography-of-heterogeneous-natural-ma"
+      ]
+    },
+    {
+      "name": "渗透率升尺度",
+      "slug": "permeability-upscaling",
+      "definition": "将小尺度（岩心、单裂隙）渗透率参数转化为大尺度（网格块、储层）等效水力行为的平均化过程，是 DFN 和储层建模的核心挑战。",
+      "aliases": [
+        "Permeability Upscaling"
+      ],
+      "boundary": "有效性依赖于 REV 的存在；非均质性极强或幂律分布的网络中 REV 可能不存在。",
+      "related_methods": [
+        "dfn-permeability-simulation",
+        "geomechanical-upscaling-method"
+      ],
+      "related_claims": [
+        "kinematic-dfn-permeability-lower",
+        "permeability-depth-relation-global",
+        "scale-effect-in-fractured-rock"
+      ],
+      "sources": [
+        "2012-de-dreuzy-influence-of-fracture-scale-heterogeneity-on-the-flow-properties-of-three-dimensi",
+        "2015-lei-a-new-approach-to-upscaling-fracture-network-models-while-preserving-geostatistical-and",
+        "2017-achtziger-zupan-a-new-global-database-to-improve-predictions-of-permeability-distribution-i"
+      ]
+    },
+    {
+      "name": "等效多孔介质模型 (EPM)",
+      "slug": "equivalent-porous-media",
+      "definition": "将裂隙岩体的渗流行为等效为连续多孔介质的模型，其参数由岩体内部结构升尺度得到。",
+      "aliases": [
+        "EPM",
+        "equivalent porous media",
+        "等效连续介质"
+      ],
+      "boundary": "要求存在 REV；不能反映优势通道流。",
+      "related_methods": [
+        "hydraulic-tomography-inversion"
+      ],
+      "related_claims": [
+        "dfn-epm-equivalence-depends-on-spatial-rev"
+      ],
+      "sources": [
+        "2019-dong-equivalence-of-discrete-fracture-network-and-porous-media-models-by-hydraulic-tomograp"
+      ]
+    },
+    {
+      "name": "Barton-Bandis 节理模型",
+      "slug": "barton-bandis-joint-model",
+      "definition": "经典的非线性经验抗剪强度准则 τ = σ_n tan[JRC·log10(JCS/σ_n) + φ_r]，将节理抗剪与 JRC、JCS 和残余摩擦角联系起来。",
+      "aliases": [
+        "Barton-Bandis criterion",
+        "JRC-JCS model",
+        "Barton-Bandis节理模型"
+      ],
+      "boundary": "适用于无充填、具互锁性的岩石节理，且法向应力范围内岩石呈脆性；JRC 估计带有主观性。",
+      "related_concepts": [
+        "joint-roughness-coefficient"
+      ],
+      "related_claims": [
+        "claim-bb-model-more-accurate-than-mc"
+      ],
+      "sources": [
+        "2023-barton-advances-in-joint",
+        "2021-zhao-shear-related-roughness"
+      ]
+    },
+    {
+      "name": "基于图的模拟器 (Graph-based Emulator)",
+      "slug": "graph-based-emulator",
+      "definition": "一种通过将复杂地质模型（如 DFN）映射为拓扑图，利用图论和机器学习进行超快速流体与溶质传输模拟的代理模型。",
+      "aliases": [
+        "graph emulator",
+        "图模拟器"
+      ],
+      "boundary": "牺牲部分物理细节以换取计算速度的大幅提升（可达4个数量级），适用于不确定性量化。",
+      "related_methods": [
+        "graph-based-dfn-simulator"
+      ],
+      "sources": [
+        "2022-viswanathan-from-fluid-flow"
+      ]
+    },
+    {
+      "name": "热硬化 (Thermal Hardening)",
+      "slug": "thermal-hardening",
+      "definition": "某些岩石在适度升温（200-500°C）后，由于矿物热膨胀使原有微裂隙闭合，导致强度或弹性模量短时升高的现象。",
+      "aliases": [
+        "热强化",
+        "heating strengthening",
+        "thermal compaction"
+      ],
+      "boundary": "与热损伤共存的竞争机制；当温度超过阈值后，热开裂损伤将主导。",
+      "related_claims": [
+        "claim-thermal-hardening-at-low-temp"
+      ],
+      "sources": [
+        "2022-zhao-effects-of-temperature",
+        "2021-zhang-experimental-investigations"
+      ]
+    },
+    {
+      "name": "归一化质量通量",
+      "slug": "normalized-mass-flux",
+      "definition": "示踪剂质量通量与注入质量和抽水速率的比值，用于拟合解析模型反演运移参数。",
+      "aliases": [
+        "normalized mass flux",
+        "yi"
+      ],
+      "boundary": "适用于脉冲注入等短时试验，忽略井筒储存和化学反应。",
+      "related_methods": [
+        "equivalent-channel-inversion"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "纵向弥散度",
+      "slug": "longitudinal-dispersivity",
+      "definition": "反映在流动方向上溶质混合的宏观参数，在裂隙介质中随流径长度增大。",
+      "aliases": [
+        "longitudinal dispersivity",
+        "αL",
+        "纵向弥散度"
+      ],
+      "boundary": "标度律的普适性受裂隙网络非均质性影响；大尺度预测需谨慎。",
+      "related_claims": [
+        "dispersivity-scale-relationship"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "等效流动通道模型",
+      "slug": "equivalent-flow-channel-model",
+      "definition": "将裂隙岩体中的溶质运移简化为一条或多条一维移流-弥散通道，用于反演达西速度、弥散度等参数。",
+      "aliases": [
+        "equivalent flow channel model",
+        "等效通道模型"
+      ],
+      "boundary": "忽略基质扩散和通道内的速度变化；适用于短时保守示踪剂试验。",
+      "related_methods": [
+        "equivalent-channel-inversion"
+      ],
+      "related_claims": [
+        "equivalent-channel-r2",
+        "preferential-flow-tortuosity"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "KGS 解析模型",
+      "slug": "kgs-analytical-model",
+      "definition": "用于分析 Slug 试验的解析解，考虑无压含水层、部分贯穿井和侧向无限延伸等条件，反演径向水力传导系数。",
+      "aliases": [
+        "KGS model",
+        "KGS analytical solution"
+      ],
+      "boundary": "假设均质各向同性无压含水层，不适用于强非均质裂隙网络。",
+      "related_methods": [
+        "kgs-analytical-model"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "水力连通系数 (HCC)",
+      "slug": "hydraulic-connectivity-coefficient",
+      "definition": "基于 Slug 干扰试验中观测孔与抽水孔最大水位降深比值定义的参数，用于量化钻孔间水力连通性的程度和方向性。",
+      "aliases": [
+        "HCC",
+        "Hydraulic Connectivity Coefficient",
+        "水力连通系数"
+      ],
+      "boundary": "适用于裂隙介质瞬时水位响应分析；假设观测孔和源孔处于同一无压含水层系统。",
+      "related_methods": [
+        "hcc-matrix-analysis",
+        "slug-interference-test"
+      ],
+      "related_claims": [
+        "hcc-anisotropy",
+        "preferential-flow-tortuosity"
+      ],
+      "sources": [
+        "2025-zhang-in-situ-interference-and-tracer-tests-in-granite-rock-with-fractures-at-beishan-explo"
+      ]
+    },
+    {
+      "name": "渗透性增强率 (PER)",
+      "slug": "permeability-enhancement-rate",
+      "definition": "采动等扰动条件下，渗透率相对初始值随体积应变的瞬时变化率，用于评价裂缝网络演化对渗流能力的各向异性提升。",
+      "aliases": [
+        "PER",
+        "Permeability Enhancement Rate",
+        "渗透率增强率"
+      ],
+      "boundary": "基于分形理论与立方定律的等效模型，未显式考虑微米级裂缝和基质渗流；当前仅在采动工作面尺度验证。",
+      "related_methods": [
+        "fractal-per-model"
+      ],
+      "related_claims": [
+        "per-evolution-sequence",
+        "per-anisotropy-magnitude"
+      ],
+      "sources": [
+        "2025-zhu-mining-induced-fracture-network-reconstruction-and-anisotropic-mining-enhanced-permeabi"
+      ]
+    },
+    {
+      "name": "图像特征提取",
+      "slug": "image-based-feature-extraction",
+      "definition": "从裂缝图像中通过数字图像处理自动提取几何参数，如迹长、方位、分形维数等。",
+      "aliases": [
+        "image-based feature extraction",
+        "PCAS",
+        "FracPaQ"
+      ],
+      "boundary": "提取精度受图像分辨率、二值化阈值和预处理影响；可能遗漏微小或连接不完整的裂缝。",
+      "related_methods": [
+        "pcas-image-processing",
+        "fracpaq-toolbox",
+        "complex-shearlet-detection"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre",
+        "2025-zhou-fracgen-natural-fracture-networks-reconstruction-and-upscaling-using-generative-advers"
+      ]
+    },
+    {
+      "name": "神经网络参数反演",
+      "slug": "neural-network-parameter-inversion",
+      "definition": "利用训练好的 BP 或 CC 神经网络从二维裂隙统计参数反演三维 DFN 模型参数。",
+      "aliases": [
+        "neural network parameter inversion",
+        "NN inversion"
+      ],
+      "boundary": "反演精度依赖于训练数据库的代表性；仅通过单条平硐数据验证。",
+      "related_methods": [
+        "bp-neural-network",
+        "cc-neural-network"
+      ],
+      "related_claims": [
+        "stratified-inversion-reduction"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre"
+      ]
+    },
+    {
+      "name": "分层建模策略",
+      "slug": "stratified-modeling-strategy",
+      "definition": "按岩性或力学单元将研究区划分为子区，分别建立裂缝网络或反演模型以捕捉空间非均质性。",
+      "aliases": [
+        "stratified modeling",
+        "分层建模"
+      ],
+      "boundary": "层间界面需精确划分；若裂缝特征渐变而非突变效果可能下降。",
+      "related_methods": [
+        "stratified-modeling-strategy"
+      ],
+      "related_claims": [
+        "stratified-inversion-reduction"
+      ],
+      "sources": [
+        "2025-zhang-intelligent-construction-method-for-rock-slope-fracture-network-model-based-on-discre"
+      ]
+    },
+    {
+      "name": "Ripley's K 函数",
+      "slug": "ripley-k-function",
+      "definition": "空间点模式分析方法，用于量化裂缝位置的空间聚散程度，判断是否服从泊松过程。",
+      "aliases": [
+        "Ripley's K function",
+        "Ripley K"
+      ],
+      "boundary": "对样本窗口边界效应敏感；需与泊松过程期望比较。",
+      "related_methods": [
+        "ripley-k-function"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "正弦剪切波变换",
+      "slug": "complex-shearlet-transform",
+      "definition": "一种多尺度几何分析方法，用于检测图像中的曲线和边缘，实现自动化裂缝迹线提取。",
+      "aliases": [
+        "complex shearlet transform",
+        "复剪切波变换"
+      ],
+      "boundary": "提取完整性取决于图像对比度和噪声，可能漏检低对比度或细小裂缝。",
+      "related_methods": [
+        "complex-shearlet-detection"
+      ],
+      "sources": [
+        "2026-nie-constructing-large-scale-high-fidelity-fracture-networks-based-on-generative-ai"
+      ]
+    },
+    {
+      "name": "多目标粒子群优化 (PSO Calibration)",
+      "slug": "pso-calibration",
+      "definition": "利用粒子群优化算法同时拟合多个细观力学参数目标（如强度、模量），对 PFC 模型进行标定。",
+      "aliases": [
+        "multi-objective PSO",
+        "粒子群优化标定"
+      ],
+      "boundary": "标定结果依赖于目标函数的选择和优化迭代次数，可能陷入局部最优。",
+      "related_methods": [
+        "pso-calibration"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    },
+    {
+      "name": "X 射线 CT 节理提取",
+      "slug": "x-ray-ct-joint-extraction",
+      "definition": "利用高分辨率 CT 扫描获取岩心内部节理的密度差异图像，重建闭合和开放节理的三维表面形貌。",
+      "aliases": [
+        "X-ray CT joint extraction",
+        "CT节理提取"
+      ],
+      "boundary": "闭合节理识别要求愈合矿物与围岩存在可分辨的密度差异；分辨率影响小尺度粗糙度的捕捉。",
+      "related_methods": [
+        "x-ray-ct-joint-surface-reconstruction"
+      ],
+      "related_claims": [
+        "deep-jrc-stress-direction"
+      ],
+      "sources": [
+        "2026-diaz-surface-roughness-characterization-of-open-and-closed-rock-joints-in-deep-cores-using"
+      ]
+    },
+    {
+      "name": "注水返排率 (Flowback Efficiency)",
+      "slug": "flowback-efficiency",
+      "definition": "EGS 水力刺激中，注入流体中最终产出的体积比例，反映流体损失和对环境的影响。",
+      "aliases": [
+        "flowback efficiency",
+        "返排率"
+      ],
+      "boundary": "高流体损失可能永久消耗水资源并破坏闭环循环目标。",
+      "related_claims": [],
+      "sources": [
+        "2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems"
+      ]
+    },
+    {
+      "name": "裂缝方向余弦退火迭代优化",
+      "slug": "cosine-annealing-crack-direction",
+      "definition": "基于热弹性本构和最大能量释放率准则，采用余弦退火调度和随机扰动更新裂纹方向，使其趋向局部最大主应力方向。",
+      "aliases": [
+        "crack direction optimization",
+        "cosine annealing"
+      ],
+      "boundary": "应用于二维热裂纹模型，与三维非均匀应力场的结果可能有差异。",
+      "related_methods": [
+        "crack-direction-optimization"
+      ],
+      "sources": [
+        "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+      ]
+    }
+  ]
+}

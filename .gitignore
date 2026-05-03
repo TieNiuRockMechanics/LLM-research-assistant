@@ -5,6 +5,12 @@
 tmp/
 data/indexes/
 data/papers/*.pdf
+data/papers/_failed-pdf/
 data/zotero-import-manifest.json
+data/conversations/
+data/.archive/
+logs/
+node_modules/
 __pycache__/
 *.pyc
+*.tmp

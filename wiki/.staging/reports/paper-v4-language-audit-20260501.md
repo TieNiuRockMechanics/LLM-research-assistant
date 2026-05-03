@@ -1,0 +1,137 @@
+# Paper v4 Language Audit
+
+- schema_version: paper-v4-2026-04-30
+- total_pages: 122
+- zh_pages: 66
+- mixed_pages: 0
+- en_pages: 56
+- rule: zh if CJK/(CJK+Latin) >= 0.30; mixed if 0.08-0.30; en if < 0.08
+
+## English Pages
+- `1980-witherspoon-validity-of-cubic-law-for-fluid-flow-in-a-deformable-rock-fracture.md` | cjk_ratio=0.000 | CJK=0 | Latin=10656
+- `1984-kulatilake-sampling-bias-on-orientation-of-discontinuities.md` | cjk_ratio=0.000 | CJK=0 | Latin=6494
+- `1992-davy-experimental-discovery-of-scaling-laws-relating-fractal-dimensions-and-the-length-dist.md` | cjk_ratio=0.000 | CJK=0 | Latin=8336
+- `1995-cowie-multifractal-scaling-properties-of-a-growing-fault-population.md` | cjk_ratio=0.000 | CJK=0 | Latin=9929
+- `1997-bai-thermoporoelastic-coupling-with-application-to-consolidation.md` | cjk_ratio=0.000 | CJK=0 | Latin=9541
+- `1998-zhao-thermal-evolution-of-archean-basement-rocks-from-the-eastern-part-of-the-north-china-c.md` | cjk_ratio=0.000 | CJK=0 | Latin=9316
+- `2000-borgos-practicalities-of-extrapolating-one-dimensional-fault-and-fracture-size-frequency-di.md` | cjk_ratio=0.000 | CJK=0 | Latin=13827
+- `2000-collin-analysis-and-prediction-of-thermal-shock-in-brittle-materials.md` | cjk_ratio=0.000 | CJK=0 | Latin=9470
+- `2001-bonnet-scaling-of-fracture-systems-in-geological-media.md` | cjk_ratio=0.000 | CJK=0 | Latin=10743
+- `2002-liu-a-note-on-unsaturated-flow-in-two-dimensional-fracture-networks.md` | cjk_ratio=0.000 | CJK=0 | Latin=12309
+- `2002-ren-late-mesozoic-and-cenozoic-rifting-and-its-dynamic-setting-in-eastern-china-and-adjacen.md` | cjk_ratio=0.000 | CJK=0 | Latin=12037
+- `2003-darcel-stereological-analysis-of-fractal-fracture-networks.md` | cjk_ratio=0.000 | CJK=0 | Latin=9486
+- `2003-kusky-paleoproterozoic-tectonic-evolution-of-the-north-china-craton.md` | cjk_ratio=0.000 | CJK=0 | Latin=8599
+- `2003-nakaya-percolation-conditions-in-binary-fractal-fracture-networks-applications-to-rock-frac.md` | cjk_ratio=0.000 | CJK=0 | Latin=9780
+- `2005-luo-controls-on-the-quality-of-archean-metamorphic-and-jurassic-volcanic-reservoir-rocks-fr.md` | cjk_ratio=0.000 | CJK=0 | Latin=11996
+- `2005-schorlemmer-variations-in-earthquake-size-distribution-across-different-stress-regimes.md` | cjk_ratio=0.000 | CJK=0 | Latin=8764
+- `2005-zhao-late-archean-to-paleoproterozoic-evolution-of-the-north-china-craton-key-issues-revisi.md` | cjk_ratio=0.000 | CJK=0 | Latin=8510
+- `2007-an-three-dimensional-thermal-structure-of-the-chinese-continental-crust-and-upper-mantle.md` | cjk_ratio=0.000 | CJK=0 | Latin=9798
+- `2007-cornet-how-close-to-failure-is-a-granite-rock-mass-at-a-5-km-depth.md` | cjk_ratio=0.000 | CJK=0 | Latin=12211
+- `2007-kusky-tectonic-evolution-of-the-north-china-block-from-orogen-to-craton-to-orogen.md` | cjk_ratio=0.000 | CJK=0 | Latin=8836
+- `2008-barth-l-my-estimates-of-fracture-density-and-uncertainties-from-well-data.md` | cjk_ratio=0.000 | CJK=0 | Latin=12943
+- `2008-feng-zengchao-control-effect-of-fissure-scale-on-deformation-and-failure-of-rock-mass.md` | cjk_ratio=0.000 | CJK=0 | Latin=5734
+- `2008-tao-heat-flow-distribution-in-chinese-continent-and-its-adjacent-areas.md` | cjk_ratio=0.000 | CJK=0 | Latin=9085
+- `2008-zhang-thermal-shock-behavior-of-sic-whisker-reinforced-diboride-ultrahigh-temperature-ceram.md` | cjk_ratio=0.000 | CJK=0 | Latin=8744
+- `2008.md` | cjk_ratio=0.000 | CJK=0 | Latin=4605
+- `2009-iassonov-segmentation-of-x-ray-computed-tomography-images-of-porous-materials-a-crucial-ste.md` | cjk_ratio=0.000 | CJK=0 | Latin=8721
+- `2009-xu-a-new-computer-code-for-discrete-fracture-network-modelling.md` | cjk_ratio=0.012 | CJK=119 | Latin=10152
+- `2009-zhao-investigation-of-fractal-distribution-law-for-the-trace-number-of-random-and-grouped-f.md` | cjk_ratio=0.000 | CJK=0 | Latin=0
+- `2010-bunger-stochastic-analysis-of-core-discing-for-estimation-of-in-situ-stress.md` | cjk_ratio=0.000 | CJK=0 | Latin=8484
+- `2010-davy-a-likely-universal-model-of-fracture-scaling-and-its-consequence-for-crustal-hydromech.md` | cjk_ratio=0.000 | CJK=0 | Latin=10533
+- `2010-dezayes-structure-of-the-low-permeable-naturally-fractured-geothermal-reservoir-at-soultz.md` | cjk_ratio=0.000 | CJK=0 | Latin=8638
+- `2010-faulkner-a-review-of-recent-developments-concerning-the-structure-mechanics-and-fluid-flow.md` | cjk_ratio=0.000 | CJK=0 | Latin=10294
+- `2010-lim-core-disking-and-its-relationship-with-stress-magnitude-for-lac-du-bonnet-granite.md` | cjk_ratio=0.000 | CJK=0 | Latin=9163
+- `2010-zhang-the-planar-shape-of-rock-joints.md` | cjk_ratio=0.000 | CJK=0 | Latin=14403
+- `2011-bae-characterization-of-joint-roughness-in-granite-by-applying-the-scan-circle-technique-to.md` | cjk_ratio=0.000 | CJK=0 | Latin=9985
+- `2011-lian-simulation-of-ground-stress-field-and-fracture-anticipation-with-effect-of-pore-pressu.md` | cjk_ratio=0.000 | CJK=0 | Latin=12440
+- `2011-zhu-timing-scale-and-mechanism-of-the-destruction-of-the-north-china-craton.md` | cjk_ratio=0.000 | CJK=0 | Latin=9077
+- `2012-feng-development-program-of-hot-dry-rock-geothermal-resource-in-the-yangbajing-basin-of-chi.md` | cjk_ratio=0.000 | CJK=0 | Latin=9506
+- `2012-sun-3d-thermal-structure-of-the-continental-lithosphere-beneath-china-and-adjacent-regions.md` | cjk_ratio=0.000 | CJK=0 | Latin=10468
+- `2012-tong-kaijun-reservoir-evaluation-and-fracture-chracterization-of-the-metamorphic-buried-hil.md` | cjk_ratio=0.000 | CJK=0 | Latin=12138
+- `2012-zhao-precambrian-geology-of-china.md` | cjk_ratio=0.000 | CJK=0 | Latin=10677
+- `2013-jovanovi-simultaneous-segmentation-and-beam-hardening-correction-in-computed-microtomograph.md` | cjk_ratio=0.000 | CJK=0 | Latin=9459
+- `2013-kruhl-fractal-geometry-techniques-in-the-quantification-of-complex-rock-structures-a-specia.md` | cjk_ratio=0.000 | CJK=0 | Latin=13043
+- `2014-fan-regulated-transient-pool-boiling-of-water-during-quenching-on-nanostructured-surfaces-w.md` | cjk_ratio=0.000 | CJK=0 | Latin=11922
+- `2014-ketcham-beam-hardening-correction-for-x-ray-computed-tomography-of-heterogeneous-natural-ma.md` | cjk_ratio=0.000 | CJK=0 | Latin=13987
+- `2014-rao-tectonic-activity-and-structural-features-of-active-intracontinental-normal-faults-in-t.md` | cjk_ratio=0.000 | CJK=0 | Latin=10565
+- `2014-zang-analysis-of-induced-seismicity-in-geothermal-reservoirs-an-overview.md` | cjk_ratio=0.000 | CJK=0 | Latin=12061
+- `2015-abdollahipour-numerical-investigation-of-effect-of-crack-geometrical-parameters-on-hydrauli.md` | cjk_ratio=0.000 | CJK=0 | Latin=8086
+- `2015-lei-a-new-approach-to-upscaling-fracture-network-models-while-preserving-geostatistical-and.md` | cjk_ratio=0.000 | CJK=0 | Latin=10146
+- `2015-liu-a-fractal-model-for-characterizing-fluid-flow-in-fractured-rock-masses-based-on-randoml.md` | cjk_ratio=0.000 | CJK=0 | Latin=10246
+- `2016-he-effects-of-surface-roughness-on-the-heat-transfer-characteristics-of-water-flow-through.md` | cjk_ratio=0.000 | CJK=0 | Latin=8579
+- `2016-huang-fluid-friction-and-heat-transfer-through-a-single-rough-fracture-in-granitic-rock-und.md` | cjk_ratio=0.000 | CJK=0 | Latin=9816
+- `2016-hyman-fracture-size-and-transmissivity-correlations-implications-for-transport-simulations.md` | cjk_ratio=0.000 | CJK=0 | Latin=11695
+- `2016-liu-critical-hydraulic-gradient-for-nonlinear-flow-through-rock-fracture-networks-the-roles.md` | cjk_ratio=0.000 | CJK=0 | Latin=13096
+- `2016-olasolo-enhanced-geothermal-systems-egs-a-review.md` | cjk_ratio=0.000 | CJK=0 | Latin=12021
+- `2016-yin-comparison-of-mechanical-properties-in-high-temperature-and-thermal-treatment-granite.md` | cjk_ratio=0.000 | CJK=0 | Latin=12865
+
+## Chinese Pages
+- `1967-haimson-initiation-and-extension-of-hydraulic-fractures-in-rocks.md` | cjk_ratio=0.707 | CJK=2390 | Latin=989
+- `1971-mogi-fracture-and-flow-of-rocks-under-high-triaxial-compression.md` | cjk_ratio=0.726 | CJK=2744 | Latin=1037
+- `1976-raleigh-the-rangely-field-an-experiment-in-earthquake-control-at-rangely-colorado.md` | cjk_ratio=0.647 | CJK=2554 | Latin=1393
+- `1985-miller-spectral-type-simulation-of-spatially-correlated-fracture-set-properties.md` | cjk_ratio=0.577 | CJK=2256 | Latin=1653
+- `1987-hirata-fractal-structure-of-spatial-distribution-of-microfracturing-in-rock.md` | cjk_ratio=0.611 | CJK=1918 | Latin=1219
+- `1990-letters-to-nature-nature-letters-to-nature.md` | cjk_ratio=0.544 | CJK=1936 | Latin=1622
+- `1995-barton-fluid-flow-along-potentially-active-faults-in-crystalline-rock.md` | cjk_ratio=0.663 | CJK=2071 | Latin=1051
+- `1995-watanabe-fractal-geometry-characterization-of-geothermal-reservoir-fracture-networks.md` | cjk_ratio=0.603 | CJK=3036 | Latin=2001
+- `1995-路基强度及变形分析研究-煤炭学报-路基强度及变形分析研究.md` | cjk_ratio=0.794 | CJK=1648 | Latin=428
+- `1996-genter-analysis-of-macroscopic-fractures-in-granite-in-the-hdr-geothermal-well-eps-1-soultz.md` | cjk_ratio=0.612 | CJK=2835 | Latin=1801
+- `1996-sibson-structural-permeability-of-fluid-driven-fault-fracture-meshes.md` | cjk_ratio=0.637 | CJK=2592 | Latin=1477
+- `1997-berckhemer-petrophysical-properties-of-the-9-km-deep-crustal-section-at-ktb.md` | cjk_ratio=0.569 | CJK=3856 | Latin=2916
+- `1997-bour-connectivity-of-random-fault-networks-following-a-power-law-fault-length-distribution.md` | cjk_ratio=0.544 | CJK=2000 | Latin=1677
+- `1997-genter-comparative-analysis-of-direct-core-and-indirect-borehole-imaging-tools-collection-o.md` | cjk_ratio=0.568 | CJK=2699 | Latin=2055
+- `1997-xu-地应力研究现状与展望.md` | cjk_ratio=0.796 | CJK=2577 | Latin=661
+- `1998-berkowitz-stereological-analysis-of-fracture-network-structure-in-geological-formations.md` | cjk_ratio=0.472 | CJK=2641 | Latin=2959
+- `1998-zhang-estimating-the-mean-trace-length-of-rock-discontinuities.md` | cjk_ratio=0.537 | CJK=1781 | Latin=1538
+- `1999-bour-clustering-and-size-distributions-of-fault-patterns-theory-and-measurements.md` | cjk_ratio=0.530 | CJK=1461 | Latin=1294
+- `2001-ketcham-acquisition-optimization-and-interpretation-of-x-ray-computed-tomographic-imagery-a.md` | cjk_ratio=0.553 | CJK=2233 | Latin=1808
+- `2002-bour-a-statistical-scaling-model-for-fracture-network-geometry-with-validation-on-a-multisc.md` | cjk_ratio=0.589 | CJK=3501 | Latin=2443
+- `2002-张国民-中国大陆地震震源深度及其构造含义.md` | cjk_ratio=0.788 | CJK=3115 | Latin=839
+- `2003-bao-modeling-and-computer-simulation-of-ultrasonic-sonic-driller-corer-usdc.md` | cjk_ratio=0.795 | CJK=2688 | Latin=695
+- `2003-darcel-connectivity-properties-of-two-dimensional-fracture-networks-with-stochastic-fractal.md` | cjk_ratio=0.591 | CJK=2217 | Latin=1534
+- `2003-darcel-cross-correlation-between-length-and-position-in-real-fracture-networks.md` | cjk_ratio=0.729 | CJK=2764 | Latin=1026
+- `2004-ge-new-approach-to-measure-goestress-local-borehole-wall-complete-stress-relief-method.md` | cjk_ratio=0.776 | CJK=2178 | Latin=627
+- `2004-li-北京房山花岗岩原地应力状态-ae-法估计.md` | cjk_ratio=0.554 | CJK=1652 | Latin=1328
+- `2004-sisavath-geometry-percolation-and-transport-properties-of-fracture-networks-derived-from-li.md` | cjk_ratio=0.678 | CJK=3043 | Latin=1446
+- `2005-auradou-permeability-anisotropy-induced-by-the-shear-displacement-of-rough-fracture-walls.md` | cjk_ratio=0.597 | CJK=2685 | Latin=1810
+- `2006-feng-research-on-laws-of-2d-percolation-of-fully-random-distribution-fracture-media.md` | cjk_ratio=0.598 | CJK=1478 | Latin=995
+- `2006-gupta-stereological-analysis-of-fracture-networks-along-cylindrical-galleries.md` | cjk_ratio=0.658 | CJK=2355 | Latin=1223
+- `2006-ortega-a-scale-independent-approach-to-fracture-intensity-and-average-spacing-measurement.md` | cjk_ratio=0.562 | CJK=3308 | Latin=2577
+- `2006-song-estimation-of-a-joint-diameter-distribution-by-an-implicit-scheme-and-interpolation-te.md` | cjk_ratio=0.723 | CJK=1908 | Latin=732
+- `2007-baghbanan-hydraulic-properties-of-fractured-rock-masses-with-correlated-fracture-length-and.md` | cjk_ratio=0.493 | CJK=1866 | Latin=1919
+- `2007-feng-zengchao-二维孔隙裂隙双重介质逾渗规律研究.md` | cjk_ratio=0.669 | CJK=1570 | Latin=777
+- `2007-l-numerical-simulation-of-percolation-law-of-3d-porous-and-fractured-double-medium.md` | cjk_ratio=0.612 | CJK=1331 | Latin=844
+- `2008-h-ring-characterisation-of-the-basel-1-enhanced-geothermal-system.md` | cjk_ratio=0.730 | CJK=3001 | Latin=1112
+- `2009-deichmann-earthquakes-induced-by-the-stimulation-of-an-enhanced-geothermal-system-below-bas.md` | cjk_ratio=0.641 | CJK=3148 | Latin=1761
+- `2009-feng-investigating-the-scale-effects-in-strength-of-fractured-rock-mass.md` | cjk_ratio=0.734 | CJK=1938 | Latin=704
+- `2009-kim-estimation-of-fracture-porosity-of-naturally-fractured-reservoirs-with-no-matrix-porosi.md` | cjk_ratio=0.470 | CJK=1854 | Latin=2089
+- `2010-genter-contribution-of-the-exploration-of-deep-crystalline-fractured-reservoir-of-soultz-to.md` | cjk_ratio=0.586 | CJK=2217 | Latin=1566
+- `2010-roy-lacunarity-analysis-of-fracture-networks-evidence-for-scale-dependent-clustering.md` | cjk_ratio=0.563 | CJK=2035 | Latin=1580
+- `2010-tatone-a-new-2d-discontinuity-roughness-parameter-and-its-correlation-with-jrc.md` | cjk_ratio=0.588 | CJK=1958 | Latin=1370
+- `2011-li-深部岩体岩芯饼化特征分析与形成机制研究.md` | cjk_ratio=0.797 | CJK=3215 | Latin=819
+- `2011-ni-tectonics-and-mechanisms-of-uplift-in-the-central-uplift-belt-of-the-huimin-depression.md` | cjk_ratio=0.806 | CJK=2700 | Latin=649
+- `2012-de-dreuzy-influence-of-fracture-scale-heterogeneity-on-the-flow-properties-of-three-dimensi.md` | cjk_ratio=0.697 | CJK=2693 | Latin=1173
+- `2012-song-relocation-of-small-to-moderate-earthquakes-in-shanxi-province-and-its-relation-to-the.md` | cjk_ratio=0.773 | CJK=3130 | Latin=918
+- `2012-zhu-destruction-of-the-north-china-craton.md` | cjk_ratio=0.621 | CJK=2855 | Latin=1739
+- `2013-davy-a-model-of-fracture-nucleation-growth-and-arrest-and-consequences-for-fracture-density.md` | cjk_ratio=0.584 | CJK=2472 | Latin=1761
+- `2013-lang-fractured-reservoir-modeling-method-based-on-discrete-fracture-network-model.md` | cjk_ratio=0.769 | CJK=2492 | Latin=747
+- `2014-howell-the-application-of-outcrop-analogues-in-geological-modelling-a-review-present-status.md` | cjk_ratio=0.607 | CJK=3404 | Latin=2205
+- `2014-jang-determination-of-joint-roughness-coefficients-using-roughness-parameters.md` | cjk_ratio=0.532 | CJK=2115 | Latin=1857
+- `2014-jin-analytical-expressions-for-the-size-distribution-function-of-elliptical-joints.md` | cjk_ratio=0.664 | CJK=2603 | Latin=1317
+- `2014-kim-effect-of-rapid-thermal-cooling-on-mechanical-rock-properties.md` | cjk_ratio=0.709 | CJK=2682 | Latin=1102
+- `2014-liu-mechanical-properties-of-qinling-biotite-granite-after-high-temperature-treatment.md` | cjk_ratio=0.796 | CJK=2430 | Latin=621
+- `2014-miao-a-fractal-analysis-of-permeability-for-fractured-rocks.md` | cjk_ratio=0.434 | CJK=1857 | Latin=2424
+- `2014-voorn-porosity-permeability-and-3d-fracture-network-characterisation-of-dolomite-reservoir.md` | cjk_ratio=0.619 | CJK=3510 | Latin=2158
+- `2014-zhang-a-new-method-estimating-the-2d-joint-roughness-coefficient-for-discontinuity-surfaces.md` | cjk_ratio=0.510 | CJK=1444 | Latin=1389
+- `2015-li-relationship-between-joint-roughness-coefficient-and-fractal-dimension-of-rock-fracture.md` | cjk_ratio=0.512 | CJK=1990 | Latin=1900
+- `2015-siratovich-saturated-heating-and-quenching-of-three-crustal-rocks-and-implications-for-ther.md` | cjk_ratio=0.717 | CJK=3296 | Latin=1304
+- `2015-yu-experimental-investigation-on-mechanical-properties-and-permeability-evolution-of-red-sa.md` | cjk_ratio=0.705 | CJK=2536 | Latin=1059
+- `2015-zhao-three-dimensional-fractal-distribution-of-the-number-of-rock-mass-fracture-surfaces-an.md` | cjk_ratio=0.701 | CJK=2274 | Latin=971
+- `2015-zhu-a-review-of-geothermal-energy-resources-development-and-applications-in-china-current-s.md` | cjk_ratio=0.759 | CJK=1816 | Latin=578
+- `2016-gao-fracture-size-estimation-using-data-from-multiple-boreholes.md` | cjk_ratio=0.777 | CJK=3312 | Latin=951
+- `2016-liu-a-fractal-model-based-on-a-new-governing-equation-of-fluid-flow-in-fractures-for-charac.md` | cjk_ratio=0.615 | CJK=2766 | Latin=1732
+- `2016-maillot-connectivity-permeability-and-channeling-in-randomly-distributed-and-kinematically.md` | cjk_ratio=0.552 | CJK=2838 | Latin=2305
+- `2016-shao-effect-of-temperature-on-permeability-and-mechanical-characteristics-of-lignite.md` | cjk_ratio=0.536 | CJK=1925 | Latin=1668
+
+## Mixed Pages
+- none
