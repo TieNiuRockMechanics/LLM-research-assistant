@@ -1,6 +1,6 @@
 # Project State
 
-Last updated: 2026-05-02
+Last updated: 2026-05-03
 
 This file is the current operational snapshot for the Zotero PaperQA Assistant. It exists so the project can be resumed safely even if chat history changes, an account changes, or a long run is interrupted.
 
@@ -98,3 +98,22 @@ These should always be preceded by:
 - Single-paper Pro compilation is resumable.
 - Aggregate generation now uses batch checkpoints and category-level final merge checkpoints.
 - Network interruption can still kill one in-flight API request, but completed checkpoints are retained.
+
+## 2026-05-03 Changes
+
+### Routing (major simplification)
+- All regex-based routing removed. Auto mode always retrieves; LLM decides how to respond.
+- No more status/collection/overview templates. One unified answer path.
+- Budget simplified: single 300,000-char limit, no per-group quotas.
+
+### UI (rewrite)
+- React frontend (web/) with FastAPI backend (server.py). ChatGPT-style design.
+- Conversation history auto-saved to data/conversations/.
+- Source display: renamed groups, paper references resolved from wiki slugs, Obsidian+PDF links.
+- PDFs served through API endpoint (no broken file:// links).
+
+### Code Quality
+- Shared utility module (scripts/_lib.py).
+- Atomic file writes in wiki_compile.py.
+- 103 unit tests (tests/).
+- 25+ bug fixes (Obsidian URI, int_env(0), stale index blocking, OSError catch, etc.).

@@ -1,195 +1,105 @@
-# LLM Wiki Follow-up Tasks
+# Project TODO
 
-This file tracks pending work for the Zotero PaperQA Assistant LLM Wiki pipeline.
+Last updated: 2026-05-03
 
-## Current Run
+---
 
-- [x] Finish DeepSeek V4 Pro single-paper page rewrite for all active journal articles.
-- [x] Repair incomplete paper pages and the long review paper that previously exceeded the single-pass budget.
-- [x] After completion, audit `wiki/papers/` before starting aggregate generation:
-  - [x] Empty or near-empty pages.
-  - [x] Missing required headings.
-  - [x] Non-v4 or stale pages.
-  - [x] `Source Coverage` presence and full-index metadata.
-  - [x] Citation/provenance label format:
-    - [x] normalize labels to `[Author Year, pp. x-y]`.
-    - [x] replace full-width brackets, citation-only parentheses, non-ASCII page-range dashes, and `pp.x` forms.
-    - [x] report ambiguous page-only labels that cannot safely infer author/year.
-  - [x] Page length distribution.
-  - [x] Chinese/English/mixed language distribution.
-  - [x] Failed or skipped records in `wiki/.staging`.
-  - [x] Add citation-format generation rules and a reusable normalization lint/script before aggregate generation.
-- [x] Pre-aggregate paper-page status on 2026-05-02:
-  - `wiki/papers`: 487 pages.
-  - missing required headings: 0.
-  - non-Pro or stale pages: 0.
-  - skipped over budget: 0.
-  - failed: 0.
-  - shortest page: 3,778 chars; median: 8,097 chars; p95: 18,224 chars; max: 22,892 chars.
-  - citation normalization dry-run after cleanup: 0 files changed.
+## ✅ Done (since 2026-05-02)
 
-## Aggregate Layer
+### Routing & Retrieval
+- [x] Removed hardcoded domain detection — auto mode always retrieves, no regex gatekeeping
+- [x] Removed keyword-based wiki search — pure semantic retrieval
+- [x] Removed route classification (`is_status_query`, `decide_knowledge_mode`, template-based answers)
+- [x] LLM decides how to respond — no more fixed templates for "状态查询" / "全库概览"
+- [x] Budget simplified to single total-char limit (300,000 chars), no group quotas
+- [x] Removed retrieval hard limits — PaperQA top_k/doc_top_n raised, budget is the only gate
 
-- [x] Set aggregate budgets from real paper-page statistics instead of fixed guesses.
-- [x] Reassess these defaults before Pro aggregate generation:
-  - `LLM_WIKI_AGGREGATE_CARD_CHAR_BUDGET = 70000`
-  - `LLM_WIKI_AGGREGATE_BATCH_CHAR_BUDGET = 700000`
-  - `LLM_WIKI_AGGREGATE_MERGE_CHAR_BUDGET = 700000`
-  - `LLM_WIKI_AGGREGATE_TIMEOUT = 1800`
-  - `LLM_WIKI_AGGREGATE_MAX_MERGE_ROUNDS = 6`
-- [x] Increase aggregate item caps so the knowledge layer is not compressed into too few items:
-  - `LLM_WIKI_MAX_CONCEPTS = 160`
-  - `LLM_WIKI_MAX_METHODS = 160`
-  - `LLM_WIKI_MAX_CLAIMS = 320`
-  - `LLM_WIKI_MAX_SYNTHESES = 120`
-  - `LLM_WIKI_MAX_OPEN_QUESTIONS = 90`
-  - batch-level max item caps raised in `scripts/run_pro_aggregate.ps1`.
-- [ ] Make batch aggregation high-recall for reusable knowledge units, not paper summaries.
-- [ ] Ensure final merge builds cross-batch relationships, contradictions, supports, aliases, and source links.
-- [ ] Keep aggregate output Chinese-first, with English terms, abbreviations, variables, and aliases preserved.
-- [ ] Consider adding a topic-clustering stage before global aggregate pages:
-  - global map
-  - topic pages
-  - concepts
-  - methods
-  - claims
-  - syntheses
-  - open questions
-- [x] Keep aggregate checkpoints and refuse silent truncation when merge does not converge.
-- [x] Run Pro aggregate generation.
-- [ ] Audit generated aggregate layer before retrieval/answering changes.
-  - [x] Basic post-run integrity check:
-    - aggregate pages written successfully
-    - category final merges completed
-    - source-link repair applied
-    - no missing aggregate source-link targets remain
-  - [ ] Deeper content audit still pending:
-    - per-paper aggregate coverage
-    - contradiction/support density
-    - short-page semantic adequacy
-    - cross-batch relationship quality
+### UI
+- [x] React frontend with ChatGPT-style design (web/)
+- [x] FastAPI backend (server.py)
+- [x] Conversation history with auto-save (data/conversations/)
+- [x] Model selector near input area
+- [x] AI avatar color matches route indicator (green=chat, amber=knowledge)
+- [x] Source display: renamed groups (概念与方法 / 论文解读 / 原文验证 / 补充线索)
+- [x] Source display: wiki items show paper references with Obsidian + PDF links
+- [x] Source display: paper_evidence deduplicated against wiki papers
+- [x] Source display: PDF links served via API endpoint (no more broken file:// links)
+- [x] Paper references resolved from wiki slugs to full titles
+- [x] One-click startup script (run-web.cmd)
 
-## Incremental Updates
+### Code Quality
+- [x] Shared utility module (scripts/_lib.py) — unified load_dotenv, int_env, parse_simple_frontmatter, etc.
+- [x] Atomic file writes in wiki_compile.py for paper pages, progress, checkpoints
+- [x] 103 unit tests (tests/)
+- [x] Fixed: Obsidian URI never worked (env read at module import → lazy read)
+- [x] Fixed: int_env(0) silently returned default
+- [x] Fixed: stale index blocked incremental import of new PDFs
+- [x] Fixed: OSError crash in import-zotero.py content dedup
+- [x] Fixed: PaperQA search errors silently swallowed
+- [x] Fixed: chunk_texts oversized items now warned
+- [x] Fixed: resolve_paper_source_id unresolved now warned
+- [x] Fixed: CJK_RE now covers Extension B+ characters
+- [x] Fixed: COLLECTION_QUERY_RE over-broad triggering of library overview
+- [x] Fixed: infer_question_intent concept check before claim check
+- [x] PowerShell scripts: hardcoded Python path → dynamic detection
+- [x] .env.example budgets synced with actual Pro run values
 
-- [ ] Split future updates into clear stages:
-  - update vector index for new PDFs only
-  - generate single-paper pages for new papers only
-  - generate new paper cards
-  - update aggregate layer
-- [ ] Add an aggregate incremental update mode:
+---
+
+## 🔲 Next — Engineering
+
+### Wiki Compiler
+- [ ] Remove ~300 lines of dead multi-stage pipeline code in wiki_compile.py
+- [ ] Add incremental aggregate update mode:
   - compare new paper cards with existing aggregate pages
   - propose add/update/merge/delete patches
   - write patches to `wiki/.staging/aggregate-deltas/<run_id>/`
-  - apply only after validation.
-- [ ] Define thresholds:
-  - small update: incremental aggregate patch
-  - medium update: incremental patch plus audit
-  - large update or new domain: full aggregate rebuild
-- [ ] Track which paper pages have already been included in the current aggregate layer.
-- [ ] Design a safer operator-led database workflow:
-  - avoid exposing high-risk database/vector/wiki rebuild actions as ordinary front-end buttons.
-  - let the user describe the update goal in chat, then inspect inputs, dry-run, report impact, and execute only the needed stage.
-  - keep destructive or high-token operations out of casual UI actions.
-- [x] Write a database operation guide for routine maintenance:
-  - what counts as a standard journal-paper import.
-  - what happens when Zotero receives new PDFs.
-  - how to import a standalone folder of papers.
-  - how to import a folder of AI conversation Markdown files.
-  - when vector indexing is needed.
-  - when single-paper Wiki pages are needed.
-  - when aggregate Wiki updates are needed.
-  - expected costs, risks, and rollback/resume behavior.
-- [ ] Define future source intake folders after the knowledge base stabilizes:
-  - incoming Zotero PDFs.
-  - standalone paper folders.
-  - AI conversation Markdown folders.
-  - failed/unsupported documents.
-  - manual-review queue.
+  - apply only after validation
+- [ ] Define update thresholds:
+  - small update (1-5 papers): incremental aggregate patch
+  - medium (5-30 papers): incremental patch + audit
+  - large or new domain: full aggregate rebuild
+- [ ] Track which paper pages have been included in current aggregate layer
 
-## Retrieval And Answering
+### Answer Quality
+- [ ] Evaluate answer quality on representative Chinese research questions
+- [ ] Add deeper aggregate audit: per-paper coverage, contradiction/support density, cross-batch quality
+- [ ] Consider citation-aware prompting for "补引用" (add-citation) type tasks
 
-- [x] Build a Wiki semantic index after aggregate pages exist.
-- [x] Index separate Wiki layers with metadata:
-  - aggregate pages
-  - paper pages
-  - claims
-  - methods
-  - concepts
-  - syntheses
-  - open questions
-- [ ] Add Chinese/English query rewriting for retrieval.
-- [x] Supplement keyword Wiki search with semantic retrieval.
-- [x] Retrieve in layers:
-  - aggregate structure first
-  - paper pages second
-  - PaperQA original evidence third
-- [x] Add answer planning so DeepSeek uses Wiki as structure and PaperQA chunks as evidence.
-- [ ] Evaluate answer quality after semantic + layered retrieval on representative Chinese research questions.
-- [ ] Keep source display grouped by role:
-  - LLM Wiki aggregate structure
-  - LLM Wiki paper page
-  - PaperQA original evidence
-  - other Wiki leads
-- [ ] Improve citations to readable labels such as `[Wang 2018, pp. 5-7]`, and keep these labels parseable for source grouping and Obsidian links.
+### Conversation Memory
+- [ ] Staged conversation-to-wiki workflow
+- [ ] Save useful chat insights into `wiki/inbox/` with provenance
+- [ ] Review/apply step for conversation-derived updates
 
-## Quality Gates
+### Operations
+- [ ] Improve long-run monitoring (progress, ETA, token usage)
+- [ ] Improve network resilience (distinguish Wi-Fi down / VPN / API timeout)
+- [ ] Record failed papers in persistent retry queue
+- [ ] Operator-led database workflow — high-risk actions through chat guidance, not UI buttons
+- [ ] Define source intake folders: incoming Zotero, standalone papers, AI conversations, failed docs
 
-- [ ] Before each expensive Pro run, do a dry-run and inspect:
-  - input record count
-  - included/excluded item types
-  - expected output paths
-  - resume/force behavior
-  - completeness-affecting budgets and caps.
-- [x] Before aggregate generation, produce an audit report and require it to pass:
-  - no near-empty paper pages
-  - required headings present
-  - no stale Fast-generated pages mixed into the Pro set
-  - citation labels normalized or explicitly reported
-  - oversized/failed/skipped records accounted for.
-- [ ] After aggregate generation, audit:
-  - item counts by layer
-  - source coverage by paper
-  - unresolved conflicts
-  - merge-round convergence
-  - truncation/refusal logs.
-- [ ] Keep every irreversible or high-token operation resumable and checkpointed.
-- [ ] Never silently truncate source material in a completeness-critical stage; fail with a report instead.
+---
 
-## Conversation Memory
+## 🔲 Next — Content
 
-- [ ] Add a staged conversation-to-wiki workflow.
-- [ ] Save useful chat insights into `wiki/inbox/` with provenance and status.
-- [ ] Do not merge chat answers into durable Wiki pages without evidence.
-- [ ] Add a review/apply step for conversation-derived updates.
+### Wiki Quality
+- [ ] Audit `wiki/concepts/normalized-ucs.md` and `wiki/concepts/self-propping-fractures.md` (flagged as short)
+- [ ] Deeper aggregate audit: per-paper coverage, contradiction/support visibility, cross-batch relationships
+- [ ] Make batch aggregation high-recall for reusable knowledge units (not paper summaries)
+- [ ] Ensure final merge builds cross-batch relationships, contradictions, supports, aliases
+- [ ] Keep aggregate output Chinese-first with English terms preserved
 
-## Operations
+### Coverage
+- [ ] Increase open-questions coverage (currently only 1 page)
+- [ ] Topic-clustering stage before global aggregate pages
 
-- [ ] Improve long-run monitoring:
-  - current paper
-  - completed/skipped/failed/remaining
-  - ETA
-  - latest API error
-  - token usage when available
-- [ ] Improve network resilience:
-  - distinguish Wi-Fi down, VPN/proxy refused, API timeout, incomplete read.
-  - consider API health checks in addition to ping checks.
-- [ ] Add safer resume behavior after transient API failures.
-- [ ] Record failed papers in a persistent retry queue.
-- [ ] Avoid broad or unexplained hard-coded limits; document every limit that affects completeness.
+---
 
-## Current State Snapshot
+## 📊 Current State
 
-- [x] Active evidence corpus is built and usable.
-- [x] `wiki/papers/`: 487 Pro-generated single-paper pages.
-- [x] Aggregate layer generated:
-  - `concepts`: 131
-  - `methods`: 88
-  - `claims`: 127
-  - `syntheses`: 16
-  - `open-questions`: 1
-- [x] Aggregate source-link repair completed; unresolved link targets: 0.
-- [x] Current aggregate warnings are limited to:
-  - `wiki/concepts/normalized-ucs.md`
-  - `wiki/concepts/self-propping-fractures.md`
-- [ ] Retrieval/answering layer is still the main unfinished product area.
-- [ ] Operator workflow docs and state snapshot need to stay synced with real runs.
+- PDFs: 513
+- PaperQA indexed: 513
+- Wiki paper pages: 487 (all Pro-generated)
+- Wiki aggregate: concepts 131 / methods 88 / claims 127 / syntheses 16 / open-questions 1
+- Wiki semantic index: 10,777 units (embedding-3, 1024d)
+- Tests: 103 passing

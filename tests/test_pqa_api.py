@@ -14,42 +14,6 @@ pqa_api = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(pqa_api)
 
 
-class TestDecideKnowledgeMode:
-    def test_always_returns_knowledge(self):
-        assert pqa_api.decide_knowledge_mode("hello", "always") == "knowledge"
-        assert pqa_api.decide_knowledge_mode("随便聊聊", "always") == "knowledge"
-
-    def test_never_returns_chat(self):
-        assert pqa_api.decide_knowledge_mode("查论文", "never") == "chat"
-        assert pqa_api.decide_knowledge_mode("what do my papers say", "never") == "chat"
-
-    def test_auto_always_tries_knowledge(self):
-        """auto mode always attempts retrieval; fallback to chat happens in answer_chat()"""
-        assert pqa_api.decide_knowledge_mode("不要查", "auto") == "knowledge"
-        assert pqa_api.decide_knowledge_mode("你好天气怎么样", "auto") == "knowledge"
-        assert pqa_api.decide_knowledge_mode("我的论文", "auto") == "knowledge"
-        assert pqa_api.decide_knowledge_mode("什么是数据库", "auto") == "knowledge"
-        assert pqa_api.decide_knowledge_mode("帮我写代码", "auto") == "knowledge"
-
-
-class TestIsStatusQuery:
-    def test_chinese_status_queries(self):
-        assert pqa_api.is_status_query("知识库里有几篇论文") is True
-        assert pqa_api.is_status_query("论文数量是多少") is True
-        assert pqa_api.is_status_query("有多少篇论文") is True
-        assert pqa_api.is_status_query("数据库规模") is True
-
-    def test_english_status_queries(self):
-        assert pqa_api.is_status_query("how many papers in the library") is True
-        assert pqa_api.is_status_query("library status") is True
-        assert pqa_api.is_status_query("index count") is True
-
-    def test_non_status_queries(self):
-        assert pqa_api.is_status_query("fracture connectivity是什么") is False
-        assert pqa_api.is_status_query("帮我总结这些论文") is False
-        assert pqa_api.is_status_query("你好") is False
-
-
 class TestInferQuestionIntent:
     def test_overview_is_default(self):
         assert pqa_api.infer_question_intent("你好") == "overview"

@@ -50,15 +50,6 @@ OPEN_QUESTION_QUERY_RE = re.compile(
     r"开放问题|未解决|研究空白|未来方向|后续研究|局限|不足|open questions?|research gaps?|future work|limitations?",
     re.IGNORECASE,
 )
-# Routing is now retrieval-first: auto mode always tries retrieval, and
-# answer_chat() falls back to chat if nothing useful is found. No regex needed.
-COLLECTION_QUERY_RE = re.compile(
-    r"这些论文|这\d+篇|全部论文|所有论文|整个(论文|文献|知识)库|"
-    r"(数据库|知识库|本地库|论文库|文献库).*(分别|各自|每篇|内容|讲|概览|总结|有多少|几篇)|"
-    r"(论文|文献).*(分别|各自|每篇).*(讲|内容|总结|概览)|"
-    r"these papers|all papers|all documents|entire library|whole library",
-    re.IGNORECASE,
-)
 QUESTION_COMPARISON_RE = re.compile(
     r"比较|对比|区别|差异|异同|优缺点|哪种更|哪个更|compare|comparison|versus|\bvs\.?\b",
     re.IGNORECASE,
@@ -357,26 +348,6 @@ def contains_cjk(text: str) -> bool:
     return bool(CJK_RE.search(text))
 
 
-def decide_knowledge_mode(question: str, requested: str) -> str:
-    """Route the question. auto mode always tries retrieval first;
-    if nothing useful is found, it falls back to chat in answer_chat()."""
-    if requested == "always":
-        return "knowledge"
-    if requested == "never":
-        return "chat"
-    # auto: always try retrieval — the results speak for themselves
-    return "knowledge"
-
-
-def is_status_query(question: str) -> bool:
-    normalized = re.sub(r"\s+", "", question.lower())
-    status_signals = r"几篇|多少篇|数量|规模|状态|count|status|how\s*many|总数"
-    library_signals = r"论文|文献|paper|document|库|library|index|知识库|文献库|论文库|本地库"
-    if re.search(status_signals, normalized) and re.search(library_signals, normalized):
-        return True
-    return False
-
-
 def paper_directory_for_index(project_root: Path, index_name: str) -> Path:
     topic_dir = project_root / "data" / "papers" / index_name
     if topic_dir.exists():
@@ -453,125 +424,6 @@ def wiki_paper_files(wiki_dir: Path) -> list[Path]:
     if not papers_dir.exists():
         return []
     return sorted(path for path in papers_dir.glob("*.md") if path.is_file())
-
-
-def wiki_paper_cards(project_root: Path) -> list[dict[str, str]]:
-    wiki_dir = project_root / "wiki"
-    cards: list[dict[str, str]] = []
-    for path in wiki_paper_files(wiki_dir):
-        try:
-            content = path.read_text(encoding="utf-8-sig", errors="replace")
-        except OSError:
-            continue
-        fields = parse_simple_frontmatter(content)
-        title = fields.get("title") or path.stem
-        paper_id = fields.get("paper_id") or path.stem
-        summary = (
-            extract_markdown_section(content, "One-line Summary")
-            or extract_markdown_section(content, "Research Question")
-            or extract_markdown_section(content, "Key Findings")
-            or "这篇论文已经进入 LLM Wiki，但页面中没有可直接抽取的一句话摘要。"
-        )
-        cards.append(
-            {
-                "paper_id": paper_id,
-                "title": title,
-                "summary": summary,
-                "citation": fields.get("citation", ""),
-                "source_pdf": fields.get("source_pdf", ""),
-            }
-        )
-    return cards
-
-
-def answer_status(question: str, project_root: Path, index_name: str) -> dict:
-    status = library_status(project_root, index_name)
-    stale_note = ""
-    if status["paper_count"] != status["index_document_count"]:
-        stale_note = (
-            "\n注意：PDF 文件数和索引文档数不一致，说明有论文文件尚未进入 PaperQA 索引。"
-            "请在 UI 中点击“更新数据库”，或运行 `python .\\scripts\\update_paper_database.py --format json`。"
-        )
-    answer = (
-        f"当前本地知识库状态（索引：{index_name}）：\n\n"
-        f"- PDF 论文文件：{status['paper_count']} 篇\n"
-        f"- PaperQA 索引文档：{status['index_document_count']} 篇\n"
-        f"- LLM Wiki 论文页：{status['wiki_paper_page_count']} 页\n"
-        f"- Wiki Markdown 笔记：{status['wiki_note_count']} 条\n"
-        f"- 最近 Zotero 导入记录：{status['recent_import_count']} 篇\n"
-        f"- 索引状态：{'可用' if status['index_exists'] else '未建立或不完整'}\n\n"
-        "全库概览类问题会尽量覆盖所有索引文档；普通主题问题只会召回相关片段。"
-        f"{stale_note}"
-    )
-    return {
-        "question": question,
-        "answer": answer,
-        "references": "",
-        "source_items": [],
-        "has_successful_answer": True,
-        "context_count": 0,
-        "cost": 0,
-        "route": "status",
-        "knowledge_mode": "metadata",
-        "search_query": "",
-        "usage": {},
-        "library_status": status,
-    }
-
-
-def answer_library_overview(question: str, project_root: Path, index_name: str) -> dict:
-    status = library_status(project_root, index_name)
-    cards = wiki_paper_cards(project_root)
-    max_items = int(os.environ.get("PQA_LIBRARY_OVERVIEW_MAX_ITEMS", "300"))
-    visible_cards = cards[:max_items]
-    hidden = max(len(cards) - len(visible_cards), 0)
-
-    lines = [
-        f"当前统一论文库中，PaperQA 索引文档为 {status['index_document_count']} 篇，"
-        f"LLM Wiki 论文页为 {len(cards)} 页。",
-        "",
-    ]
-    if status["index_document_count"] != len(cards):
-        lines.append(
-            "索引数和 Wiki 论文页数略有差异时，通常是 Zotero 中有重复 PDF、同题名条目合并，"
-            "或者存在旧的 Wiki 页面；论文检索仍以 PaperQA 索引文档数为准。"
-        )
-        lines.append("")
-    if not cards:
-        lines.append("还没有可用的 Wiki 论文页。请先点击“生成/更新 LLM Wiki”。")
-    else:
-        lines.append("下面按 LLM Wiki 论文页列出每篇论文的简要内容：")
-        lines.append("")
-        for index, card in enumerate(visible_cards, start=1):
-            lines.append(f"{index}. {card['title']}：{card['summary']}")
-        if hidden:
-            lines.append("")
-            lines.append(f"还有 {hidden} 篇没有在本次回答中展开，可把问题限定到某个主题、年份或 Zotero 标签。")
-
-    source_items = [
-        {
-            "type": "wiki",
-            "label": "LLM Wiki paper pages",
-            "path": str((project_root / "wiki" / "papers").resolve()),
-            "relative_path": "wiki/papers",
-            "obsidian_uri": obsidian_uri_for(project_root / "wiki" / "index.md"),
-            "preview": f"{len(cards)} paper pages in wiki/papers.",
-        }
-    ]
-    return {
-        "question": question,
-        "answer": "\n".join(lines).strip(),
-        "references": f"- LLM Wiki paper pages: wiki/papers ({len(cards)} pages)",
-        "source_items": source_items,
-        "has_successful_answer": True,
-        "context_count": len(cards),
-        "cost": 0,
-        "route": "knowledge",
-        "knowledge_mode": "wiki-catalog",
-        "search_query": "",
-        "usage": {},
-        "library_status": status,
-    }
 
 
 def wiki_terms(text: str) -> set[str]:
@@ -1330,19 +1182,13 @@ async def answer_chat(
     index_name: str,
     knowledge: str,
 ) -> dict:
-    if is_status_query(question):
-        return answer_status(question, project_root, index_name)
-    if knowledge != "never" and COLLECTION_QUERY_RE.search(question):
-        return answer_library_overview(question, project_root, index_name)
-
-    route = decide_knowledge_mode(question, knowledge)
     contexts: list[dict] = []
     search_query = ""
     query_package: dict[str, Any] = {}
     context_budget_meta: dict[str, Any] = {}
     wiki_retrieval_meta: dict[str, Any] = {}
 
-    if route == "knowledge":
+    if knowledge != "never":
         settings = make_settings(project_root, index_name, rebuild_index=False)
         search_query = await build_search_query(question)
         query_package = build_query_package(question, search_query)
@@ -1354,15 +1200,10 @@ async def answer_chat(
             settings,
             top_k=int(os.environ.get("PQA_CONTEXT_TOP_K", "50")),
             doc_top_n=int(os.environ.get("PQA_DOC_TOP_N", "50")),
-            broad_collection=bool(
-                COLLECTION_QUERY_RE.search(question)
-                or COLLECTION_QUERY_RE.search(search_query)
-            ),
+            broad_collection=False,
         )
         contexts, context_budget_meta = budget_contexts(wiki_hits + paper_hits)
         context_budget_meta = {**wiki_retrieval_meta, **context_budget_meta}
-        if not contexts and knowledge == "auto":
-            route = "chat"
 
     context_text, references, source_items = format_local_context(contexts)
     synthesis_plan = ""
@@ -1380,6 +1221,7 @@ async def answer_chat(
         temperature=final_temperature,
     )
     usage = merge_usage(plan_usage, answer_usage)
+    route = "knowledge" if contexts else "chat"
     return {
         "question": question,
         "answer": answer.strip(),
