@@ -1,0 +1,28 @@
+{
+  "input": "C:\\Users\\shuixin2\\Desktop\\论文参考文献.xlsx",
+  "output_dir": "F:\\shuixin code\\zotero-paperqa-assistant\\data\\excel-import",
+  "records": 199,
+  "with_urls": 163,
+  "with_doi": 73,
+  "access_groups": {
+    "auto_pdf_candidate": 71,
+    "title_or_note_only": 36,
+    "manual_or_institution_required": 89,
+    "metadata_only": 1,
+    "needs_review": 2
+  },
+  "publishers": {
+    "ScienceDirect": 81,
+    "Springer": 67,
+    "unknown": 36,
+    "Wiley": 4,
+    "CNKI": 3,
+    "MDPI": 3,
+    "ACS": 1,
+    "Web of Science": 1,
+    "www.hindawi.com": 1,
+    "rockmech.whrsm.ac.cn": 1,
+    "Frontiers": 1
+  },
+  "longform_or_book_candidates": 0
+}

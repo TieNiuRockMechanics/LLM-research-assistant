@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "papers/2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol.md",
+                "file": "syntheses/dfn-modeling-evolution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol"
+              "title": "dfn-modeling-evolution"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse",
+                "sortOrder": "byCreatedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 455.5
+    "width": 460.5
   },
   "right": {
     "id": "45f920099eba136e",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "papers/2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol.md",
+                "file": "papers/2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-zhai-pfc-fdem-multi-scale-cross-platform-numerical-simulation-of-thermal-crack-network-evol 的反向链接列表"
+              "title": "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under 的反向链接列表"
             }
           },
           {
@@ -162,12 +162,26 @@
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "62252b95dc388045",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "papers/2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under.md"
+              },
+              "icon": "lucide-info",
+              "title": "2024-suo-experimental-and-numerical-simulation-research-on-hot-dry-rock-wellbore-stability-under的笔记属性"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 575.5
+    "width": 575.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,31 +196,32 @@
   },
   "active": "4323b059f9458fbb",
   "lastOpenFiles": [
-    "papers/2023-xi-impacts-of-different-cooling-methods-on-the-dynamic-tensile-properties-of-thermal-treate.md",
-    "papers/2017-yang-an-experimental-investigation-on-thermal-damage-and-failure-mechanical-behavior-of-gra.md",
-    "papers/2019-li-characterization-of-a-jointed-rock-mass-based-on-fractal-geometry-theory.md",
-    "methods/multifractal-analysis.md",
-    "syntheses/thermal-damage-quantitative-characterization.md",
-    "index.md",
+    "syntheses/multi-scale-fracture-characterization-biases-correction.md",
     "syntheses/fracture-fractal-connectivity.md",
-    "papers/2019-dong-analysis-of-relationship-between-underground-space-percolation-and-fracture-properties.md",
-    "papers/1967-haimson-initiation-and-extension-of-hydraulic-fractures-in-rocks.md",
-    "papers/2024-yin-p-clet-number-dependent-longitudinal-dispersion-in-discrete-fracture-networks.md",
-    "methods/thm-coupled-simulation.md",
-    "methods/stratified-modeling-strategy.md",
-    "methods/steady-state-gas-permeability.md",
-    "methods/statistical-parameter-for-jrc.md",
-    "methods/spectral-simulation.md",
-    "methods/slug-interference-test.md",
-    "methods/skeletonization-distance-transform.md",
-    "methods/sequential-parent-daughter-poisson-process.md",
-    "methods/seismic-receiver-function-migration.md",
-    "methods/schmidt-hammer-rebound-test.md",
-    "methods/scanline-sampling.md",
-    "methods/scan-circle-technique.md",
-    "methods/monte-carlo-percolation-simulation.md",
-    "methods/moment-tensor-inversion.md",
-    "methods/microseismic-monitoring.md",
-    "methods/mercury-injection-capillary-pressure.md"
+    "syntheses/ncc-destruction-debates.md",
+    "methods/power-law-mle-fitting.md",
+    "claims/deep-jrc-open-closed-similarity.md",
+    "concepts/flowback-efficiency.md",
+    "methods/pre-peak-brittleness-index.md",
+    "open-questions/open-questions.md",
+    "syntheses/core-based-stress-measurement-comparison.md",
+    "papers/2020-robert-implications-on-large-scale-flow-of-the-fractured-egs-reservoir-soultz-inferred-from.md",
+    "papers/2023-li-structural-properties-and-failure-characteristics-of-granite-after-thermal-treatment-and.md",
+    "papers/2019-zhang-production-capacity-and-mining-plan-optimization-of-fault-fracture-controlled-egs-mod.md",
+    "papers/2024-bu-temperature-dependent-acoustic-emission-characteristics-and-statistical-constitutive-mod.md",
+    "papers/2022-li-断控裂缝定量表征与三维建模.md",
+    "papers/2009-lachassagne-hydrogeological-model-of-a-high-energy-geothermal-field-bouillante-area-guadelo.md",
+    "papers/2022-chaipornkaew-predicting-off-fault-deformation-from-experimental-strike-slip-fault-images-us.md",
+    "papers/2006-yuan-present-day-geothermal-characteristics-in-south-china.md",
+    "papers/2026-lei-a-review-of-reservoir-stimulation-technologies-for-enhanced-geothermal-systems.md",
+    "papers/2017-roquera-fault-controlled-development-of-shallow-hydrothermal-systems-structural-and-mineral.md",
+    "papers/2005-xu-裂缝性砂岩油藏储层表征研究.md",
+    "papers/2015-周方奇-低渗透油藏嵌入离散裂缝模型的数值模拟研究-博士学位论文-低渗透油藏嵌入离散裂缝模型的数值模拟研究.md",
+    "papers/2017-taillefer-fault-related-controls-on-upward-hydrothermal-flow-an-integrated-geological-study.md",
+    "papers/2005-dietrich-flow-and-transport-in-fractured-porous-media.md",
+    "papers/2013-bense-fault-zone-hydrogeology.md",
+    "papers/2004-coussy-poromechanics.md",
+    "papers/2000-cello-fault-properties-and-fluid-flow-patterns-from-quaternary-faults-in-the-apennines-ital.md",
+    "index.md.tmp"
   ]
 }

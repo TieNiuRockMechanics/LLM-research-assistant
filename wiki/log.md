@@ -806,3 +806,416 @@ Record major ingest/update runs here.
 - 2026-05-02T16:02:46 - aggregate: write aggregate pages done promoted=363
 
 - 2026-05-02T16:02:49 - ingested 487 paper records; wrote 363 pages; skipped_over_budget=0; failed=0; problems=0; warnings=106
+
+- 2026-05-04T14:30:02 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-143002 shard=0/2
+
+- 2026-05-04T14:30:02 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-143002 shard=1/2
+
+- 2026-05-04T14:30:24 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T14:30:24 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T14:30:24 - aggregate: loaded index records raw=821
+
+- 2026-05-04T14:30:24 - aggregate: deduplicated records count=801
+
+- 2026-05-04T14:30:24 - aggregate: deduplicated records count=801
+
+- 2026-05-04T14:30:24 - aggregate: applied limit=10 remaining=10
+
+- 2026-05-04T14:30:24 - aggregate: applied limit=10 remaining=10
+
+- 2026-05-04T14:30:24 - aggregate: applied shard index=0 count=2 global_records=10 shard_records=5
+
+- 2026-05-04T14:30:24 - aggregate: applied shard index=1 count=2 global_records=10 shard_records=5
+
+- 2026-05-04T14:34:40 - ingested 5 paper records; wrote 5 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T14:34:42 - ingested 5 paper records; wrote 5 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T14:44:13 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-144413 shard=0/1
+
+- 2026-05-04T14:44:27 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T14:44:27 - aggregate: loaded index records raw=821
+
+- 2026-05-04T14:46:00 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-144600 shard=0/1
+
+- 2026-05-04T14:46:15 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T14:46:15 - aggregate: loaded index records raw=821
+
+- 2026-05-04T14:46:15 - aggregate: deduplicated records count=801
+
+- 2026-05-04T14:46:15 - aggregate: applied limit=20 remaining=20
+
+- 2026-05-04T14:49:37 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-144937 shard=0/1
+
+- 2026-05-04T14:49:52 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T14:49:52 - aggregate: loaded index records raw=821
+
+- 2026-05-04T14:49:52 - aggregate: deduplicated records count=801
+
+- 2026-05-04T14:49:52 - aggregate: applied limit=0 remaining=0
+
+- 2026-05-04T14:49:52 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T14:49:52 - aggregate: loaded index records raw=821
+
+- 2026-05-04T14:49:52 - aggregate: deduplicated records count=801
+
+- 2026-05-04T14:49:52 - aggregate: applied limit=0 remaining=0
+
+- 2026-05-04T14:49:52 - ingested 0 paper records; wrote 0 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T14:49:52 - ingested 0 paper records; wrote 0 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T14:53:27 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-145327 shard=0/1
+
+- 2026-05-04T14:53:42 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T14:53:42 - aggregate: loaded index records raw=821
+
+- 2026-05-04T14:53:42 - aggregate: deduplicated records count=801
+
+- 2026-05-04T14:56:41 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-145641 shard=0/1
+
+- 2026-05-04T14:56:55 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T14:56:55 - aggregate: loaded index records raw=821
+
+- 2026-05-04T14:56:55 - aggregate: deduplicated records count=801
+
+- 2026-05-04T15:02:03 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-150203 shard=0/1
+
+- 2026-05-04T15:02:16 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T15:02:16 - aggregate: loaded index records raw=821
+
+- 2026-05-04T15:02:17 - aggregate: deduplicated records count=801
+
+- 2026-05-04T15:02:17 - aggregate: applied limit=0 remaining=0
+
+- 2026-05-04T15:02:17 - ingested 0 paper records; wrote 0 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T15:05:47 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-150547 shard=0/1
+
+- 2026-05-04T15:06:01 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T15:06:01 - aggregate: loaded index records raw=821
+
+- 2026-05-04T15:06:01 - aggregate: deduplicated records count=801
+
+- 2026-05-04T15:12:35 - ingested 801 paper records; wrote 492 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T15:22:37 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T15:22:37 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T15:23:40 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T15:23:40 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T15:25:01 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T15:25:01 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T15:26:09 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T15:26:09 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T15:41:22 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-154122 shard=0/1
+
+- 2026-05-04T15:41:22 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-154122 shard=0/1
+
+- 2026-05-04T15:41:37 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T15:41:37 - aggregate: loaded index records raw=821
+otero item type kept for review: 317
+
+- 2026-05-04T15:41:37 - aggregate: loaded index records raw=821
+
+- 2026-05-04T15:41:37 - aggregate: deduplicated records count=801
+
+- 2026-05-04T15:41:37 - aggregate: deduplicated records count=801
+
+- 2026-05-04T15:47:44 - ingested 801 paper records; wrote 492 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T15:47:54 - ingested 801 paper records; wrote 492 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T16:02:04 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:02:04 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:02:59 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:02:59 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:13:56 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-161356 shard=0/1
+
+- 2026-05-04T16:13:56 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-161356 shard=0/1
+
+- 2026-05-04T16:14:10 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:14:10 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:14:10 - aggregate: loaded index records raw=800
+
+- 2026-05-04T16:14:10 - aggregate: deduplicated records count=780
+
+- 2026-05-04T16:14:10 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:14:10 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:14:10 - aggregate: loaded index records raw=800
+
+- 2026-05-04T16:14:10 - aggregate: deduplicated records count=780
+
+- 2026-05-04T16:17:58 - ingested 780 paper records; wrote 492 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T16:18:22 - ingested 780 paper records; wrote 492 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T16:25:47 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-162547 shard=0/1
+
+- 2026-05-04T16:25:47 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-162547 shard=0/1
+
+- 2026-05-04T16:26:02 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:26:02 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:26:02 - aggregate: loaded index records raw=800
+
+- 2026-05-04T16:26:02 - aggregate: deduplicated records count=780
+
+- 2026-05-04T16:26:02 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:26:02 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:26:02 - aggregate: loaded index records raw=800
+
+- 2026-05-04T16:26:02 - aggregate: deduplicated records count=780
+
+- 2026-05-04T16:31:54 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-163154 shard=0/1
+
+- 2026-05-04T16:31:54 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-163154 shard=0/1
+
+- 2026-05-04T16:32:08 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:32:08 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:32:08 - aggregate: loaded index records raw=800
+
+- 2026-05-04T16:32:08 - aggregate: deduplicated records count=780
+
+- 2026-05-04T16:32:08 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:32:08 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:32:08 - aggregate: loaded index records raw=800
+
+- 2026-05-04T16:32:08 - aggregate: deduplicated records count=780
+
+- 2026-05-04T16:42:06 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-164206 shard=0/1
+
+- 2026-05-04T16:42:20 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:42:20 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:42:20 - aggregate: loaded index records raw=800
+
+- 2026-05-04T16:42:20 - aggregate: deduplicated records count=780
+
+- 2026-05-04T16:42:20 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:42:20 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:42:20 - aggregate: loaded index records raw=800
+
+- 2026-05-04T16:42:20 - aggregate: deduplicated records count=780
+
+- 2026-05-04T16:43:42 - ingested 780 paper records; wrote 512 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T16:44:11 - ingested 780 paper records; wrote 512 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2
+
+- 2026-05-04T16:45:22 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-164522 shard=0/1
+
+- 2026-05-04T16:45:22 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-164522 shard=0/1
+
+- 2026-05-04T16:45:37 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:45:37 - aggregate: loaded index records raw=821
+
+- 2026-05-04T16:45:37 - aggregate: deduplicated records count=801
+
+- 2026-05-04T16:45:37 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:45:37 - aggregate: loaded index records raw=821
+
+- 2026-05-04T16:45:37 - aggregate: deduplicated records count=801
+
+- 2026-05-04T16:52:39 - aggregate: skipped non-allowed Zotero item types: {'book': 3, 'thesis': 18}
+
+- 2026-05-04T16:52:39 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:53:16 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-165316 shard=0/1
+
+- 2026-05-04T16:53:30 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:53:30 - aggregate: loaded index records raw=821
+
+- 2026-05-04T16:53:30 - aggregate: deduplicated records count=801
+
+- 2026-05-04T16:54:18 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T16:55:17 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T17:10:52 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-171052 shard=0/1
+
+- 2026-05-04T17:10:52 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-171052 shard=0/1
+
+- 2026-05-04T17:11:07 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T17:11:07 - aggregate: loaded index records raw=821
+
+- 2026-05-04T17:11:07 - aggregate: deduplicated records count=801
+
+- 2026-05-04T17:11:10 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T17:11:10 - aggregate: loaded index records raw=821
+
+- 2026-05-04T17:11:10 - aggregate: deduplicated records count=801
+
+- 2026-05-04T17:16:12 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-171612 shard=0/1
+
+- 2026-05-04T17:16:27 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T17:16:27 - aggregate: loaded index records raw=821
+
+- 2026-05-04T17:16:27 - aggregate: deduplicated records count=801
+
+- 2026-05-04T17:17:04 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T17:22:49 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T17:27:16 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-172716 shard=0/1
+
+- 2026-05-04T17:27:30 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T17:27:30 - aggregate: loaded index records raw=821
+
+- 2026-05-04T17:27:30 - aggregate: deduplicated records count=801
+
+- 2026-05-04T17:28:49 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-172849 shard=0/2
+
+- 2026-05-04T17:28:49 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-172849 shard=1/2
+
+- 2026-05-04T17:29:04 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T17:29:04 - aggregate: loaded index records raw=821
+
+- 2026-05-04T17:29:04 - aggregate: deduplicated records count=801
+
+- 2026-05-04T17:29:04 - aggregate: applied shard index=1 count=2 global_records=801 shard_records=400
+
+- 2026-05-04T17:29:04 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T17:29:04 - aggregate: loaded index records raw=821
+
+- 2026-05-04T17:29:04 - aggregate: deduplicated records count=801
+
+- 2026-05-04T17:29:04 - aggregate: applied shard index=0 count=2 global_records=801 shard_records=401
+
+- 2026-05-04T22:53:27 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-225327 shard=0/2
+
+- 2026-05-04T22:53:50 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260504-225350 shard=1/2
+
+- 2026-05-04T22:53:50 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T22:53:50 - aggregate: loaded index records raw=821
+
+- 2026-05-04T22:53:50 - aggregate: deduplicated records count=802
+
+- 2026-05-04T22:53:50 - aggregate: applied shard index=0 count=2 global_records=802 shard_records=401
+
+- 2026-05-04T22:54:05 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-04T22:54:05 - aggregate: loaded index records raw=821
+
+- 2026-05-04T22:54:05 - aggregate: deduplicated records count=802
+
+- 2026-05-04T22:54:05 - aggregate: applied shard index=1 count=2 global_records=802 shard_records=401
+
+- 2026-05-05T00:45:57 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260505-004557 shard=0/2
+
+- 2026-05-05T00:45:57 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260505-004557 shard=1/2
+
+- 2026-05-05T00:46:11 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-05T00:46:11 - aggregate: loaded index records raw=821
+
+- 2026-05-05T00:46:11 - aggregate: deduplicated records count=802
+
+- 2026-05-05T00:46:11 - aggregate: applied shard index=0 count=2 global_records=802 shard_records=401
+
+- 2026-05-05T00:46:11 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-05T00:46:11 - aggregate: loaded index records raw=821
+
+- 2026-05-05T00:46:11 - aggregate: deduplicated records count=802
+
+- 2026-05-05T00:46:11 - aggregate: applied shard index=1 count=2 global_records=802 shard_records=401
+
+- 2026-05-05T00:47:21 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260505-004721 shard=0/2
+
+- 2026-05-05T00:47:35 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-05T00:47:35 - aggregate: loaded index records raw=821
+
+- 2026-05-05T00:47:35 - aggregate: deduplicated records count=802
+
+- 2026-05-05T00:47:35 - aggregate: applied shard index=0 count=2 global_records=802 shard_records=401
+
+- 2026-05-05T00:48:21 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260505-004821 shard=1/2
+
+- 2026-05-05T00:48:39 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-05T00:48:39 - aggregate: loaded index records raw=821
+
+- 2026-05-05T00:48:39 - aggregate: deduplicated records count=802
+
+- 2026-05-05T00:48:39 - aggregate: applied shard index=1 count=2 global_records=802 shard_records=401
+
+- 2026-05-05T10:20:24 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260505-102024 shard=0/2
+
+- 2026-05-05T10:20:38 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-05T10:20:38 - aggregate: loaded index records raw=821
+
+- 2026-05-05T10:20:38 - aggregate: deduplicated records count=802
+
+- 2026-05-05T10:20:38 - aggregate: applied shard index=0 count=2 global_records=802 shard_records=401
+
+- 2026-05-05T10:21:48 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260505-102148 shard=1/2
+
+- 2026-05-05T10:22:02 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-05T10:22:02 - aggregate: loaded index records raw=821
+
+- 2026-05-05T10:22:02 - aggregate: deduplicated records count=802
+
+- 2026-05-05T10:22:02 - aggregate: applied shard index=1 count=2 global_records=802 shard_records=401
+
+- 2026-05-05T11:25:03 - ingested 401 paper records; wrote 400 pages; skipped_over_budget=1; failed=0; problems=0; warnings=2
+
+- 2026-05-05T11:40:15 - ingested 401 paper records; wrote 399 pages; skipped_over_budget=2; failed=0; problems=0; warnings=2
+
+- 2026-05-05T11:52:35 - aggregate: ingest start index=papers aggregate_only=False no_aggregate=True force=False resume=True run_id=20260505-115235 shard=0/1
+
+- 2026-05-05T11:52:57 - aggregate: indexed records with unknown Zotero item type kept for review: 317
+
+- 2026-05-05T11:52:57 - aggregate: loaded index records raw=821
+
+- 2026-05-05T11:52:57 - aggregate: deduplicated records count=802
+
+- 2026-05-05T11:59:00 - ingested 802 paper records; wrote 802 pages; skipped_over_budget=0; failed=0; problems=0; warnings=2

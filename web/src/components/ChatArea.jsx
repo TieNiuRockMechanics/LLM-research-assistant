@@ -5,6 +5,7 @@ import EmptyState from './EmptyState';
 const MODEL_OPTIONS = {
   'deepseek/deepseek-v4-flash': 'DeepSeek V4 Flash',
   'deepseek/deepseek-v4-pro': 'DeepSeek V4 Pro',
+  'mimo/mimo-v2.5-pro': 'MiMo V2.5 Pro',
 };
 
 export default function ChatArea({ messages, loading, onSend, model, onModelChange, sidebarOpen }) {

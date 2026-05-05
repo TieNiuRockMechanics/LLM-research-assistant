@@ -1,0 +1,204 @@
+{
+  "zotero_sqlite": "C:\\Users\\shuixin2\\Zotero\\zotero.sqlite",
+  "top_level_bibliographic_items": 706,
+  "with_pdf_attachment": 314,
+  "without_pdf_attachment": 392,
+  "item_type_counts": {
+    "journalArticle": 641,
+    "thesis": 23,
+    "webpage": 15,
+    "book": 14,
+    "conferencePaper": 12,
+    "computerProgram": 1
+  },
+  "no_pdf_by_item_type": {
+    "journalArticle": 350,
+    "webpage": 15,
+    "conferencePaper": 12,
+    "book": 11,
+    "thesis": 3,
+    "computerProgram": 1
+  },
+  "no_pdf_samples": [
+    {
+      "itemID": 12,
+      "key": "YEFISJRD",
+      "type": "journalArticle",
+      "title": "包含变质岩分类三要素的主要变质岩分类表"
+    },
+    {
+      "itemID": 13,
+      "key": "UAMAJZU7",
+      "type": "journalArticle",
+      "title": "Characteristics, controlling factors and petroleum geologic significance of fractures in the Archean crystalline basement rocks: A case study of the South Jinzhou oilfield in Liaodong Bay depression, North China"
+    },
+    {
+      "itemID": 15,
+      "key": "6DEBLUZ2",
+      "type": "journalArticle",
+      "title": "Reservoir evaluation and fracture chracterization of the metamorphic buried hill reservoir in Bohai Bay Basin"
+    },
+    {
+      "itemID": 18,
+      "key": "A7DRLDKE",
+      "type": "journalArticle",
+      "title": "Reservoir properties and controlling factors of contact metamorphic zones of the diabase in the northern slope of the Gaoyou Sag, Subei Basin, eastern China"
+    },
+    {
+      "itemID": 24,
+      "key": "IG32D8YQ",
+      "type": "webpage",
+      "title": "山西省岩石地层-出版社"
+    },
+    {
+      "itemID": 25,
+      "key": "S8CZLMYB",
+      "type": "journalArticle",
+      "title": "The dynamic response of sites with earth fissures as revealed by microtremor analysis——A case study in the Linfen Basin, China"
+    },
+    {
+      "itemID": 35,
+      "key": "UBE5D9R7",
+      "type": "webpage",
+      "title": "Description of Natural Fracture Systems for Quantitative Use in Petroleum Geology | AAPG Bulletin | GeoScienceWorld"
+    },
+    {
+      "itemID": 36,
+      "key": "FBVEGXZI",
+      "type": "journalArticle",
+      "title": "Relationships between fractures"
+    },
+    {
+      "itemID": 47,
+      "key": "8R8P3JXG",
+      "type": "journalArticle",
+      "title": "Characteristics and genetic mechanism of large granitic buried-hill reservoir, a case study from PengLai oil field of Bohai Bay Basin, north China"
+    },
+    {
+      "itemID": 57,
+      "key": "XFUKX372",
+      "type": "journalArticle",
+      "title": "Geochemistry of petroleum systems in the Niuzhuang South Slope of Bohai Bay Basin: Part 4. Evidence for new exploration horizons in a maturely explored petroleum province"
+    },
+    {
+      "itemID": 58,
+      "key": "VV3Q2B67",
+      "type": "journalArticle",
+      "title": "Origin of organic matter from tectonic zones in the Western Tatra Mountains Crystalline Basement, Poland: An example of bitumen—source rock correlation"
+    },
+    {
+      "itemID": 64,
+      "key": "9FGKZG22",
+      "type": "journalArticle",
+      "title": "渤海海域大型太古界潜山储层形成条件及地质意义"
+    },
+    {
+      "itemID": 71,
+      "key": "XRIFQN5D",
+      "type": "journalArticle",
+      "title": "Three-dimensional miarolitic cavity distribution in the Kakkonda granite from borehole WD-1a using X-ray computerized tomography"
+    },
+    {
+      "itemID": 72,
+      "key": "IYSBV6Z9",
+      "type": "journalArticle",
+      "title": "Natural fractures in a metamorphic buried hill reservoir, Bozhong 19–6 area, Bohai Bay Basin, China"
+    },
+    {
+      "itemID": 79,
+      "key": "3KWD8BSF",
+      "type": "journalArticle",
+      "title": "Tracer-test-based dimensionality reduction model for characterizing fracture network and predicting flow and transport in fracture aquifer"
+    },
+    {
+      "itemID": 80,
+      "key": "9687MFNB",
+      "type": "journalArticle",
+      "title": "Field Comparison of DNA-Labeled Nanoparticle and Solute Tracer Transport in a Fractured Crystalline Rock"
+    },
+    {
+      "itemID": 82,
+      "key": "TXHKQF24",
+      "type": "webpage",
+      "title": "多孔介质多场耦合作用及其工程响应"
+    },
+    {
+      "itemID": 85,
+      "key": "2X4INWYA",
+      "type": "journalArticle",
+      "title": "Experimental study of fracture evolution in enhanced geothermal systems based on fractal theory"
+    },
+    {
+      "itemID": 87,
+      "key": "SMTJYMVN",
+      "type": "journalArticle",
+      "title": "Coupled Hydro-Mechanical Analysis of Gas Production in Fractured Shale Reservoir by Random Fracture Network Modeling"
+    },
+    {
+      "itemID": 90,
+      "key": "2JU8ALNQ",
+      "type": "journalArticle",
+      "title": "Experiment investigation of granite damage under the high-temperature and high-pressure supercritical water condition"
+    },
+    {
+      "itemID": 92,
+      "key": "BDNAQ4ZW",
+      "type": "journalArticle",
+      "title": "Particle blockage mechanism of a weakly consolidated sandstone geothermal reservoir during tailwater recharge"
+    },
+    {
+      "itemID": 93,
+      "key": "Y4IC6HB6",
+      "type": "journalArticle",
+      "title": "Mechanical properties of Qinling biotite granite after high temperature treatment"
+    },
+    {
+      "itemID": 97,
+      "key": "2DFPIQYC",
+      "type": "journalArticle",
+      "title": "Investigating the effect of water quenching cycles on mechanical behaviors for granites after conventional triaxial compression"
+    },
+    {
+      "itemID": 99,
+      "key": "PE8QRL49",
+      "type": "journalArticle",
+      "title": "Study on mechanical characteristics and damage model of layered sandstone after high temperature action"
+    },
+    {
+      "itemID": 108,
+      "key": "YFPB9NQS",
+      "type": "journalArticle",
+      "title": "The effect of rapid cooling on the thermal diffusivity of granite"
+    },
+    {
+      "itemID": 113,
+      "key": "5TTRJ2AZ",
+      "type": "journalArticle",
+      "title": "Thermal properties of sandstone after treatment at high temperature"
+    },
+    {
+      "itemID": 126,
+      "key": "XF3MCWYP",
+      "type": "journalArticle",
+      "title": "Influence of cooling medium on granite thermal shock fracture"
+    },
+    {
+      "itemID": 135,
+      "key": "WQWCB9K5",
+      "type": "journalArticle",
+      "title": "Impacts of different cooling methods on the dynamic tensile properties of thermal-treated granite"
+    },
+    {
+      "itemID": 139,
+      "key": "9LV7KV9Y",
+      "type": "journalArticle",
+      "title": "Analysis and prediction of thermal shock in brittle materials"
+    },
+    {
+      "itemID": 143,
+      "key": "HFHWHQBF",
+      "type": "journalArticle",
+      "title": "Experimental investigation of seepage and heat transfer in rough fractures for enhanced geothermal systems"
+    }
+  ]
+}

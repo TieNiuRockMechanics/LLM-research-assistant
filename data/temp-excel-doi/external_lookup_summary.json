@@ -1,0 +1,17 @@
+{
+  "input": "F:\\shuixin code\\zotero-paperqa-assistant\\data\\temp-excel-doi\\doi_manifest.csv",
+  "records": 120,
+  "original_with_doi": 53,
+  "found_by_external_lookup": 62,
+  "lookup_review_only": 0,
+  "unresolved": 5,
+  "all_records_with_doi_after_lookup": 115,
+  "unique_dois_after_lookup": 110,
+  "outputs": {
+    "enriched_manifest": "F:\\shuixin code\\zotero-paperqa-assistant\\data\\temp-excel-doi\\doi_manifest_enriched.csv",
+    "external_lookup_results": "F:\\shuixin code\\zotero-paperqa-assistant\\data\\temp-excel-doi\\doi_external_lookup_results.csv",
+    "unresolved": "F:\\shuixin code\\zotero-paperqa-assistant\\data\\temp-excel-doi\\doi_unresolved_after_lookup.csv",
+    "unique_doi_list": "F:\\shuixin code\\zotero-paperqa-assistant\\data\\temp-excel-doi\\doi_list_all_unique.txt",
+    "row_order_doi_list": "F:\\shuixin code\\zotero-paperqa-assistant\\data\\temp-excel-doi\\doi_list_all_by_excel_row.txt"
+  }
+}

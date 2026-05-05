@@ -1,0 +1,24 @@
+{
+  "input": "C:\\Users\\shuixin2\\Desktop\\临时记录的信息.xlsx",
+  "output_dir": "F:\\shuixin code\\zotero-paperqa-assistant\\data\\temp-excel-doi",
+  "sheets": [
+    "Sheet1"
+  ],
+  "records": 120,
+  "with_hyperlinks": 120,
+  "with_local_doi": 53,
+  "unique_local_doi": 51,
+  "needs_external_lookup": 67,
+  "domains": {
+    "www.sciencedirect.com": 59,
+    "link.springer.com": 49,
+    "www.mdpi.com": 3,
+    "onlinelibrary.wiley.com": 2,
+    "kns.cnki.net": 2,
+    "webofscience.clarivate.cn": 1,
+    "agupubs.onlinelibrary.wiley.com": 1,
+    "www.hindawi.com": 1,
+    "rockmech.whrsm.ac.cn": 1,
+    "www.frontiersin.org": 1
+  }
+}

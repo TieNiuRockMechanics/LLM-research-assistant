@@ -1,0 +1,579 @@
+﻿row,title,url,doi,domain,publisher_hint,access_group,item_kind_hint,tags,evaluation,inspiration,author_info,features,conclusions,useful_figures_data,notes
+2,Damage Analysis of High-Temperature Rocks Subjected to LN2 Thermal Shock | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-018-1711-y,10.1007/s00603-018-1711-y,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,,,液氮热冲击下高温岩石的损伤分析,砂岩、花岗岩、页岩液氮冲击，力学强度、渗透性变化,液氮冲击三种岩石的力学强度响应、破坏形式、渗透性变化。讨论了膨胀系数不同和原生孔洞、矿物大小的影响,,"作者信息: 液氮热冲击下高温岩石的损伤分析
+特点: 砂岩、花岗岩、页岩液氮冲击，力学强度、渗透性变化
+结论: 液氮冲击三种岩石的力学强度响应、破坏形式、渗透性变化。讨论了膨胀系数不同和原生孔洞、矿物大小的影响"
+3,Variations of Physical and Mechanical Properties of Heated Granite After Rapid Cooling with Liquid Nitrogen | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-018-1727-3,10.1007/s00603-018-1727-3,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,,,液氮快速冷却后加热花岗岩物理机械性能的变化,空冷、水冷、液氮花岗岩热冲击，波速、UCS，渗透性,200-400变化不大，400-600看到明显变化,,"作者信息: 液氮快速冷却后加热花岗岩物理机械性能的变化
+特点: 空冷、水冷、液氮花岗岩热冲击，波速、UCS，渗透性
+结论: 200-400变化不大，400-600看到明显变化"
+4,,,,,unknown,title_or_note_only,article_candidate,,“更快的冷却速度在岩石的外部区域产生更高的拉应力，这有助于加剧岩石的劣化”。,,,页岩液氮热冲击，波速、UCS，扫描电镜,,,"评价: “更快的冷却速度在岩石的外部区域产生更高的拉应力，这有助于加剧岩石的劣化”。
+特点: 页岩液氮热冲击，波速、UCS，扫描电镜"
+5,Study on Damage Characteristics of Hot Dry Rock by Liquid Nitrogen Cyclic Cold Shocks Based on Ultrasonic Testing | Energy & Fuels (acs.org),https://pubs.acs.org/doi/full/10.1021/acs.energyfuels.3c03229,10.1021/acs.energyfuels.3c03229,pubs.acs.org,ACS,manual_or_institution_required,article_candidate,,,,基于超声检测的液氮循环冷冲击干热岩石损伤特性研究,花岗岩液氮热冲击，核磁，超声波波速测试，孔隙率变化,高温、热冲击循环次数和孔隙率的关系，用波速表征损伤,,"作者信息: 基于超声检测的液氮循环冷冲击干热岩石损伤特性研究
+特点: 花岗岩液氮热冲击，核磁，超声波波速测试，孔隙率变化
+结论: 高温、热冲击循环次数和孔隙率的关系，用波速表征损伤"
+6,,,,,unknown,title_or_note_only,article_candidate,,,,,花岗岩350℃热冲击,显微成像的特征，计算了热膨胀系数等等内容,,"特点: 花岗岩350℃热冲击
+结论: 显微成像的特征，计算了热膨胀系数等等内容"
+7,Study on Fracture Surface Damage and Fluid Flow Characteristics of Hot Dry Rock with Different Failure Modes under Repeated Thermal Shock | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-023-03526-6?utm_source=xmol&utm_medium=affiliate&utm_content=meta&utm_campaign=DDCN_1_GL01_metadata,10.1007/s00603-023-03526-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,,,重复热冲击下不同破坏模式干热岩石裂隙表面损伤及流体流动特性研究,花岗岩劈裂后 热冲击，形貌粗糙度，粗糙度分形计算,采用分形维数判断粗糙度,,"作者信息: 重复热冲击下不同破坏模式干热岩石裂隙表面损伤及流体流动特性研究
+特点: 花岗岩劈裂后 热冲击，形貌粗糙度，粗糙度分形计算
+结论: 采用分形维数判断粗糙度"
+8,,,,,unknown,title_or_note_only,article_candidate,,,,低温液氮冷却和热冲击对伊格尔福特页岩岩石物理和形态特征的影响,常温致密页岩、液氮压裂、粗糙度、硬度（压痕）、电镜、驱油,,,"作者信息: 低温液氮冷却和热冲击对伊格尔福特页岩岩石物理和形态特征的影响
+特点: 常温致密页岩、液氮压裂、粗糙度、硬度（压痕）、电镜、驱油"
+9,,,,,unknown,title_or_note_only,article_candidate,,花岗岩中心钻孔，研究钻孔周围的热冲击破裂,,不同冷却冲击下高温花岗岩的热裂特性,花岗岩中心钻孔，20 0 -20盐水热冲击孔周围破裂情况,,,"评价: 花岗岩中心钻孔，研究钻孔周围的热冲击破裂
+作者信息: 不同冷却冲击下高温花岗岩的热裂特性
+特点: 花岗岩中心钻孔，20 0 -20盐水热冲击孔周围破裂情况"
+10,高温花岗岩冷却冲击后热劣化：多重识别及损伤机制 |工程地质与环境通报,https://link.springer.com/article/10.1007/s10064-020-01888-7?utm_source=xmol&utm_medium=affiliate&utm_content=meta&utm_campaign=DDCN_1_GL01_metadata,10.1007/s10064-020-01888-7,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,,,氯化钙溶液冷却,花岗岩20 0 -20氯化钙溶液中热冲击冷却，波速、强度、损伤研究,,,"作者信息: 氯化钙溶液冷却
+特点: 花岗岩20 0 -20氯化钙溶液中热冲击冷却，波速、强度、损伤研究"
+11,,,,,unknown,title_or_note_only,article_candidate,,,,快速冷却引起的热冲击对砂岩力学性能的影响,砂岩热冲击的力学相应，波速、SEM，破坏形式，声发射,,,"作者信息: 快速冷却引起的热冲击对砂岩力学性能的影响
+特点: 砂岩热冲击的力学相应，波速、SEM，破坏形式，声发射"
+12,,,,,unknown,title_or_note_only,article_candidate,,,,高温砂岩冷却冲击热损伤及其对断裂声发射信号捕获的影响,砂岩，热冲击后的力学响应，波速、声发射，SEM，XRD,这张图用的人挺多的,,"作者信息: 高温砂岩冷却冲击热损伤及其对断裂声发射信号捕获的影响
+特点: 砂岩，热冲击后的力学响应，波速、声发射，SEM，XRD
+结论: 这张图用的人挺多的"
+13,Effect of surface heat transfer coefficient gradient on thermal shock failure of ceramic materials under rapid cooling condition - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0272884218303961,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,沸水和水对流换热系数不同的原因,,快速冷却条件下表面传热系数梯度对陶瓷材料热冲击失效的影响,讨论了水和沸水的对流换热系数，对陶瓷复合材料的淬火后强度的影响,,,"评价: 沸水和水对流换热系数不同的原因
+作者信息: 快速冷却条件下表面传热系数梯度对陶瓷材料热冲击失效的影响
+特点: 讨论了水和沸水的对流换热系数，对陶瓷复合材料的淬火后强度的影响"
+14,Thermal shock behavior of SiC-whisker-reinforced diboride ultrahigh-temperature ceramics - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1359646208001589,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,沸水和水对流换热系数不同的原因,,SiC晶须增强二硼化物超高温陶瓷的热冲击行为,解释了沸水和水在热冲击时的区别，（h梯度的差距可达三个数量级）可以作为重要参考,常温水和沸水淬火的区别,,"评价: 沸水和水对流换热系数不同的原因
+作者信息: SiC晶须增强二硼化物超高温陶瓷的热冲击行为
+特点: 解释了沸水和水在热冲击时的区别，（h梯度的差距可达三个数量级）可以作为重要参考
+结论: 常温水和沸水淬火的区别"
+15,Experimental studies on the effect of cyclic thermal shock and cooling methods on the mechanical properties and fracture behavior of prefabricated fissured sandstone - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0167844222003202,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,追踪/不同水温20 50 80热冲击,工作量大，单独研究了冷却介质和水温，但是没有一起比较谁的影响更严重，也没有从工程改变的难易程度和经济性上讨论,,循环热冲击和冷却方式对预制裂隙砂岩力学性能和断裂行为影响的试验研究,预制了小裂缝，400℃砂岩在空气、20 50 80水中热冲击，UCS，P波波速，循环热冲击，拟合了水温和循环次数，数值模拟研究了对流换热系数和温度的影响，计算了模拟的最大主应力,p波符合温差越大热冲击越严重的规律。第一次热冲击效果最好，超过四次循环影响不大。以杨氏模量的衰减作为损伤变量，获得水温、循环次数的拟合公式,砂岩模拟参数,"标记: 追踪/不同水温20 50 80热冲击
+评价: 工作量大，单独研究了冷却介质和水温，但是没有一起比较谁的影响更严重，也没有从工程改变的难易程度和经济性上讨论
+作者信息: 循环热冲击和冷却方式对预制裂隙砂岩力学性能和断裂行为影响的试验研究
+特点: 预制了小裂缝，400℃砂岩在空气、20 50 80水中热冲击，UCS，P波波速，循环热冲击，拟合了水温和循环次数，数值模拟研究了对流换热系数和温度的影响，计算了模拟的最大主应力
+结论: p波符合温差越大热冲击越严重的规律。第一次热冲击效果最好，超过四次循环影响不大。以杨氏模量的衰减作为损伤变量，获得水温、循环次数的拟合公式
+可供参考的图和数据: 砂岩模拟参数"
+16,高温花岗岩经不同冷却冲击的热裂纹特性 |国际骨折杂志 (springer.com),https://link.springer.com/article/10.1007/s10704-020-00470-2,10.1007/s10704-020-00470-2,link.springer.com,Springer,auto_pdf_candidate,article_candidate,高温花岗岩在-20 0 20℃热冲击,,,高温花岗岩遭受不同冷却冲击的热裂纹特性,,,,"标记: 高温花岗岩在-20 0 20℃热冲击
+作者信息: 高温花岗岩遭受不同冷却冲击的热裂纹特性"
+17,https://www.sciencedirect.com/science/article/pii/S0375650518303778?via%3Dihub,https://www.sciencedirect.com/science/article/pii/S0375650518303778?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,非常重要的参考,是热冲击CT方面非常全的论文。已经提到了热冲击边界处的破裂，但是并未研究分布的具体规律,,使用 X 射线 CT 成像和分析量化花岗岩中的热致微裂纹,25-1000℃高温花岗岩，球棍模型，等效半径 CT裂缝分析 说明600-800的损伤比较明显,,5℃/min,"标记: 非常重要的参考
+评价: 是热冲击CT方面非常全的论文。已经提到了热冲击边界处的破裂，但是并未研究分布的具体规律
+作者信息: 使用 X 射线 CT 成像和分析量化花岗岩中的热致微裂纹
+特点: 25-1000℃高温花岗岩，球棍模型，等效半径 CT裂缝分析 说明600-800的损伤比较明显
+可供参考的图和数据: 5℃/min"
+18,,,,,unknown,title_or_note_only,article_candidate,,砂岩400℃以下无明显损伤，600-800明显,,循环加热-冷却处理高温砂岩热损伤及力学性能,砂岩循环热冲击的波速、力学响应，能量耗散，,砂岩在超过600℃的强度衰减不容忽视，青砂岩高温变成红色的机理,,"评价: 砂岩400℃以下无明显损伤，600-800明显
+作者信息: 循环加热-冷却处理高温砂岩热损伤及力学性能
+特点: 砂岩循环热冲击的波速、力学响应，能量耗散，
+结论: 砂岩在超过600℃的强度衰减不容忽视，青砂岩高温变成红色的机理"
+19,Evaluation of the effects of three different cooling methods on the dynamic mechanical properties of thermal-treated sandstone | Bulletin of Engineering Geology and the Environment (springer.com),https://link.springer.com/article/10.1007/s10064-022-02630-1,10.1007/s10064-022-02630-1,link.springer.com,Springer,auto_pdf_candidate,article_candidate,参考,热冲击拉应力的公式。损伤严重程度依次是：水冷、液氮、空冷。他解释为水的软化作用，而没有解释成液氮的莱顿弗罗斯特效应,,3种不同冷却方式对热处理砂岩动态力学性能的影响评价,霍普金森杆，砂岩，空冷、水、液氮热冲击，,400℃以上砂岩损伤显著恶化。提出了热冲击损伤的三个因素：1.不同膨胀系数 2.石英相变加剧不同的膨胀 3. 温度梯度导致的破裂,热冲击拉应力的公式,"标记: 参考
+评价: 热冲击拉应力的公式。损伤严重程度依次是：水冷、液氮、空冷。他解释为水的软化作用，而没有解释成液氮的莱顿弗罗斯特效应
+作者信息: 3种不同冷却方式对热处理砂岩动态力学性能的影响评价
+特点: 霍普金森杆，砂岩，空冷、水、液氮热冲击，
+结论: 400℃以上砂岩损伤显著恶化。提出了热冲击损伤的三个因素：1.不同膨胀系数 2.石英相变加剧不同的膨胀 3. 温度梯度导致的破裂
+可供参考的图和数据: 热冲击拉应力的公式"
+20,Experimental comparison of mechanical properties and fractal characteristics of geothermal reservoir rocks after different cooling treatments - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S2352484722007612?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,对全过程热破坏的机理讨论的还可以，可以参考。但是看起来好像和上一行这一篇论文用的数据一样，损伤程度排序也是一样的，对液氮的解释也一样。,,不同冷却处理后地热储层岩石力学性能及分形特征的试验比较,400 600 800砂岩、花岗岩  空冷、水冷、液氮热冲击后，霍普金森杆动力响应。,讨论还挺细致：首先拆分成温度场影响和应力响应，温度场影响又拆分成高温和冷却两个过程分别讨论，应力场影响从不均匀热膨胀和温度梯度造成破坏两个角度讨论。最后讨论了碎片分形与加热温度的关系,,"评价: 对全过程热破坏的机理讨论的还可以，可以参考。但是看起来好像和上一行这一篇论文用的数据一样，损伤程度排序也是一样的，对液氮的解释也一样。
+作者信息: 不同冷却处理后地热储层岩石力学性能及分形特征的试验比较
+特点: 400 600 800砂岩、花岗岩  空冷、水冷、液氮热冲击后，霍普金森杆动力响应。
+结论: 讨论还挺细致：首先拆分成温度场影响和应力响应，温度场影响又拆分成高温和冷却两个过程分别讨论，应力场影响从不均匀热膨胀和温度梯度造成破坏两个角度讨论。最后讨论了碎片分形与加热温度的关系"
+21,,,,,unknown,title_or_note_only,article_candidate,,,,温度和冷却方式对花岗岩力学性能影响的试验研究：对地热开采的启示,常规花岗岩热冲击，空冷水冷 单轴压缩强度 波速,,,"作者信息: 温度和冷却方式对花岗岩力学性能影响的试验研究：对地热开采的启示
+特点: 常规花岗岩热冲击，空冷水冷 单轴压缩强度 波速"
+22,Experimental Investigation on Physical and Mechanical Properties of Granite Subjected to Cyclic Heating and Liquid Nitrogen Cooling | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-021-02390-6,10.1007/s00603-021-02390-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,只有液氮和空冷,,循环加热和液氮冷却花岗岩物理力学性能试验研究,花岗岩 循环液氮热冲击 和空冷对比，力学强度、波速、孔隙率、显微薄片下的破裂分析，用损伤变量表征破坏的强度（还是直接用热冲击处理以后的值来计算的）,,,"评价: 只有液氮和空冷
+作者信息: 循环加热和液氮冷却花岗岩物理力学性能试验研究
+特点: 花岗岩 循环液氮热冲击 和空冷对比，力学强度、波速、孔隙率、显微薄片下的破裂分析，用损伤变量表征破坏的强度（还是直接用热冲击处理以后的值来计算的）"
+23,,,,,unknown,title_or_note_only,article_candidate,,,,水-空气组合冷却循环处理的花岗岩的力学性能和破坏特性,花岗岩热冲击，上面一半空冷下面一半水冷，循环热冲击，然后力学试验、显微镜下图片、声发射、破坏形式,,,"作者信息: 水-空气组合冷却循环处理的花岗岩的力学性能和破坏特性
+特点: 花岗岩热冲击，上面一半空冷下面一半水冷，循环热冲击，然后力学试验、显微镜下图片、声发射、破坏形式"
+24,Experimental investigation of the effect of quenching cycles on the physico-chemical properties of granites - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0375650521001929,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,参考，有价值,文章很长，工作量很大，手段非常规。参考对热冲击后冷却水成分的化验方法,,热冲击循环对花岗岩理化性质影响的实验研究,热冲击循环对不同风化程度的花岗岩的影响，基于波速推断E，基于核磁推断孔隙率，化验了热冲击后的冷却水的化学变化，基于孔隙率通过公式推测渗透率，还做了CT关于裂缝大小数量的分析,1. 风化程度（也就是初始孔隙率）对热冲击有很大影响；2. 循环热冲击能加快损伤（200℃要循环10-15次才有损伤，400℃第一次就损伤）,引言中提到“在经过热处理的花岗岩上用水快速冷却比缓慢冷却引起的损害更大（Isaka等人，2018;Shao等人，2014）。因此，缓慢冷却样品的渗透率在400°C时非常微弱地增加，在500°C时增加2.3倍，在600°C时增加35.6倍，而快速淬火样品的渗透率在400°C时增加2.9倍，在500°C时增加15.3倍，甚至在600°C时增加79.3倍（Jin等人，2019）”,"标记: 参考，有价值
+评价: 文章很长，工作量很大，手段非常规。参考对热冲击后冷却水成分的化验方法
+作者信息: 热冲击循环对花岗岩理化性质影响的实验研究
+特点: 热冲击循环对不同风化程度的花岗岩的影响，基于波速推断E，基于核磁推断孔隙率，化验了热冲击后的冷却水的化学变化，基于孔隙率通过公式推测渗透率，还做了CT关于裂缝大小数量的分析
+结论: 1. 风化程度（也就是初始孔隙率）对热冲击有很大影响；2. 循环热冲击能加快损伤（200℃要循环10-15次才有损伤，400℃第一次就损伤）
+可供参考的图和数据: 引言中提到“在经过热处理的花岗岩上用水快速冷却比缓慢冷却引起的损害更大（Isaka等人，2018;Shao等人，2014）。因此，缓慢冷却样品的渗透率在400°C时非常微弱地增加，在500°C时增加2.3倍，在600°C时增加35.6倍，而快速淬火样品的渗透率在400°C时增加2.9倍，在500°C时增加15.3倍，甚至在600°C时增加79.3倍（Jin等人，2019）”"
+25,,,,,unknown,title_or_note_only,article_candidate,,,,循环冷热处理下红砂岩损伤渗流试验研究,红砂岩  循环热冲击10次20次、力学强度、渗透测试、拟合损伤公式,,,"作者信息: 循环冷热处理下红砂岩损伤渗流试验研究
+特点: 红砂岩  循环热冲击10次20次、力学强度、渗透测试、拟合损伤公式"
+26,,,,,unknown,title_or_note_only,article_candidate,,,,澳大利亚Strathbogie花岗岩在地应力和温度条件下的力学行为：在地热能开采中的应用,花岗岩实时高温三轴力学试验,,,"作者信息: 澳大利亚Strathbogie花岗岩在地应力和温度条件下的力学行为：在地热能开采中的应用
+特点: 花岗岩实时高温三轴力学试验"
+27,实时高温和三维应力作用下花岗岩的力学性能 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160920308893?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,,实时高温三轴试验,,,特点: 实时高温三轴试验
+28,On the tensile mechanical characteristics of fine-grained granite after heating/cooling treatments with different cooling rates - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0013795218317502,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,不同冷却速率下细晶粒花岗岩加热/冷却处理后的拉伸力学特性,花岗岩水、空气热冲击冷却后的巴西劈裂，研究抗拉强度、表面粗糙度,,,"作者信息: 不同冷却速率下细晶粒花岗岩加热/冷却处理后的拉伸力学特性
+特点: 花岗岩水、空气热冲击冷却后的巴西劈裂，研究抗拉强度、表面粗糙度"
+29,空气、水和高粘度流体冷却对加热岩石的物理和机械性能的实验研究 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S2352380822000041,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,参考,研究了冷却介质的影响，我后期可以考虑直接用钻井液来进行热冲击，研究井壁周围破裂情况,,空气、水和高粘度流体冷却加热岩石物理力学性质的试验研究,花岗岩、石灰岩，在水、空气、高粘度流体热冲击后的强度,有详细的空冷水冷100-800的力学数据,,"标记: 参考
+评价: 研究了冷却介质的影响，我后期可以考虑直接用钻井液来进行热冲击，研究井壁周围破裂情况
+作者信息: 空气、水和高粘度流体冷却加热岩石物理力学性质的试验研究
+特点: 花岗岩、石灰岩，在水、空气、高粘度流体热冲击后的强度
+结论: 有详细的空冷水冷100-800的力学数据"
+30,,,,,unknown,title_or_note_only,article_candidate,引用,吴师兄论文，通过模拟研究了热冲击损伤的空间分布,,冷却方法对花岗岩力学行为和热损伤分布的影响：实验与模拟,花岗岩空气、水中热冲击，巴西劈裂。200 300 400 500 600的抗拉强度  声发射和DIC   然后热冲击热力耦合模拟，分析了热冲击损伤的空间分布,,Chen等（2017）研究了升温速率对花岗岩力学行为的影响，发现5 °C/min是北山花岗岩热损伤的临界升温速率。,"标记: 引用
+评价: 吴师兄论文，通过模拟研究了热冲击损伤的空间分布
+作者信息: 冷却方法对花岗岩力学行为和热损伤分布的影响：实验与模拟
+特点: 花岗岩空气、水中热冲击，巴西劈裂。200 300 400 500 600的抗拉强度  声发射和DIC   然后热冲击热力耦合模拟，分析了热冲击损伤的空间分布
+可供参考的图和数据: Chen等（2017）研究了升温速率对花岗岩力学行为的影响，发现5 °C/min是北山花岗岩热损伤的临界升温速率。"
+31,Numerical modelling of heat shock‐assisted rock fracture - Pressacco - 2020 - International Journal for Numerical and Analytical Methods in Geomechanics - Wiley Online Library,https://onlinelibrary.wiley.com/doi/full/10.1002/nag.3004,10.1002/nag.3004,onlinelibrary.wiley.com,Wiley,manual_or_institution_required,article_candidate,,数值模拟计算热冲击破裂,,热冲击辅助岩石裂缝的数值模拟,,,,"评价: 数值模拟计算热冲击破裂
+作者信息: 热冲击辅助岩石裂缝的数值模拟"
+32,Experimental study on mode I and mode II fracture properties of heated sandstone after two different cooling treatments - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S2352380823000175,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,室温抗拉强度3MPa,,两种不同冷却处理后加热砂岩I.型和II.型断裂特性试验研究,100 300℃砂岩热冲击 水 空气，Ⅰ和Ⅱ型断裂韧度的测试,,Cui等研究了不同水冷处理后加热花岗岩的拉伸力学性能和劈裂面粗糙度，26他们建立了抗拉强度和裂面粗糙度之间的关系。,"评价: 室温抗拉强度3MPa
+作者信息: 两种不同冷却处理后加热砂岩I.型和II.型断裂特性试验研究
+特点: 100 300℃砂岩热冲击 水 空气，Ⅰ和Ⅱ型断裂韧度的测试
+可供参考的图和数据: Cui等研究了不同水冷处理后加热花岗岩的拉伸力学性能和劈裂面粗糙度，26他们建立了抗拉强度和裂面粗糙度之间的关系。"
+33,Impacts of different cooling methods on the dynamic tensile properties of thermal-treated granite - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160923001120,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,不同冷却方式对热处理花岗岩动态拉伸性能的影响,花岗岩热冲击冷却，水、液氮、空气，霍普金森杆，采用波速表征的热冲击损伤因子，,,,"作者信息: 不同冷却方式对热处理花岗岩动态拉伸性能的影响
+特点: 花岗岩热冲击冷却，水、液氮、空气，霍普金森杆，采用波速表征的热冲击损伤因子，"
+34,Experimental study of real-time temperature-dependent nonlinear deformation of sandstone - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0016236123019221,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,实时高温砂岩的参考文献（有空要把这些实时高温的都看一遍，和高温后试验的结果进行对比）,,砂岩实时温度随温度非线性变形试验研究,温度较低，只到150℃，但是他的参考文献有参考的价值,实时高温砂岩的参考文献,,"评价: 实时高温砂岩的参考文献（有空要把这些实时高温的都看一遍，和高温后试验的结果进行对比）
+作者信息: 砂岩实时温度随温度非线性变形试验研究
+特点: 温度较低，只到150℃，但是他的参考文献有参考的价值
+结论: 实时高温砂岩的参考文献"
+35,,,,,unknown,title_or_note_only,article_candidate,,证明实时高温的强度小于冷却后的强度,,实时高温和自然冷却后花岗岩机械性能和破碎特性的比较研究,自然冷却下的试样强度大于实时高温下的强度。,,,"评价: 证明实时高温的强度小于冷却后的强度
+作者信息: 实时高温和自然冷却后花岗岩机械性能和破碎特性的比较研究
+特点: 自然冷却下的试样强度大于实时高温下的强度。"
+36,Pore characteristic evolution and damage deterioration of granite subjected to the thermal and cooling treatments combined with the NMR method | Bulletin of Engineering Geology and the Environment (springer.com),https://link.springer.com/article/10.1007/s10064-023-03215-2,10.1007/s10064-023-03215-2,link.springer.com,Springer,auto_pdf_candidate,article_candidate,核磁，三篇都认为水冷大于液氮大于空冷,讨论了不同表征的热冲击损伤因子之间的关系，还讨论了基于孔隙的分形维数,,花岗岩在热处理和冷却处理中结合核磁共振（NMR）方法的孔隙特征演变和损伤恶化,花岗岩水、空气、液氮热冲击，核磁研究孔隙度大小，基于波速、孔隙率建立热冲击损伤因子的表征，找到与高温、冷却介质的关系,基于波速的损伤因子计算公式,基于孔隙率的损伤因子计算公式,"标记: 核磁，三篇都认为水冷大于液氮大于空冷
+评价: 讨论了不同表征的热冲击损伤因子之间的关系，还讨论了基于孔隙的分形维数
+作者信息: 花岗岩在热处理和冷却处理中结合核磁共振（NMR）方法的孔隙特征演变和损伤恶化
+特点: 花岗岩水、空气、液氮热冲击，核磁研究孔隙度大小，基于波速、孔隙率建立热冲击损伤因子的表征，找到与高温、冷却介质的关系
+结论: 基于波速的损伤因子计算公式
+可供参考的图和数据: 基于孔隙率的损伤因子计算公式"
+37,Experimental study on pore characteristics evolution and rock damage mechanism of thermal-cooling treated sandstone - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0950061824026400?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,还是核磁,,热冷处理砂岩孔隙特性演化及岩石损伤机理的试验研究,核磁 电镜,,,"评价: 还是核磁
+作者信息: 热冷处理砂岩孔隙特性演化及岩石损伤机理的试验研究
+特点: 核磁 电镜"
+38,Evaluation of pore characteristics evolution and damage mechanism of granite under thermal-cooling cycle based on nuclear magnetic resonance technology - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S2949891024004718?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,是上一篇的补充,,基于核磁共振技术的花岗岩热冷却循环下孔隙特性演化及损伤机理评价,试验内容和前面那一篇相同。分析了核磁参数、孔径大小分布、孔隙率对比、还分析了基于核磁、孔径、物理强度的损伤参数,,,"评价: 是上一篇的补充
+作者信息: 基于核磁共振技术的花岗岩热冷却循环下孔隙特性演化及损伤机理评价
+特点: 试验内容和前面那一篇相同。分析了核磁参数、孔径大小分布、孔隙率对比、还分析了基于核磁、孔径、物理强度的损伤参数"
+39,,,,,unknown,title_or_note_only,article_candidate,,可以参考对基于波速、孔隙、力学强度的损伤参数的定义,,冻融岩损伤模型及单轴压缩模拟方法研究,黄砂岩冻融循环、UCS、波速、孔隙度、能量变化、PFC模拟,,,"评价: 可以参考对基于波速、孔隙、力学强度的损伤参数的定义
+作者信息: 冻融岩损伤模型及单轴压缩模拟方法研究
+特点: 黄砂岩冻融循环、UCS、波速、孔隙度、能量变化、PFC模拟"
+40,,,,,unknown,title_or_note_only,article_candidate,,,,基于实时CT技术的应力-水耦合对砂岩破坏的影响,实时CT，扫描了全过程的破坏特征,,,"作者信息: 基于实时CT技术的应力-水耦合对砂岩破坏的影响
+特点: 实时CT，扫描了全过程的破坏特征"
+41,,,,,unknown,title_or_note_only,article_candidate,下一篇论文的参考,关于花岗岩热冲击后剪切面粗糙度的研究,,水冷循环后完整花岗岩直接剪切形成的裂缝形态特征,花岗岩热冲击处理后剪切试验，剪切面粗糙度研究,,,"标记: 下一篇论文的参考
+评价: 关于花岗岩热冲击后剪切面粗糙度的研究
+作者信息: 水冷循环后完整花岗岩直接剪切形成的裂缝形态特征
+特点: 花岗岩热冲击处理后剪切试验，剪切面粗糙度研究"
+42,Investigation of the microstructural characteristics of heated sandstone by micro-computed tomography technique | Environmental Earth Sciences (springer.com),https://link.springer.com/article/10.1007/s12665-022-10514-6,10.1007/s12665-022-10514-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,,,显微计算机层析成像技术研究加热砂岩的微观结构特征,高温砂岩  CT，孔隙率、XRD变化、孔隙连通性,,,"作者信息: 显微计算机层析成像技术研究加热砂岩的微观结构特征
+特点: 高温砂岩  CT，孔隙率、XRD变化、孔隙连通性"
+43,An insight into pore-network models of high-temperature heat-treated sandstones using computed tomography - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1875510020300810,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,基于计算机断层扫描的高温热处理砂岩孔隙网络模型,高温砂岩CT，分析联通孔、孤立孔、球棍结构，对温度区间分析的比较详细,,,"作者信息: 基于计算机断层扫描的高温热处理砂岩孔隙网络模型
+特点: 高温砂岩CT，分析联通孔、孤立孔、球棍结构，对温度区间分析的比较详细"
+44,,,,,unknown,title_or_note_only,article_candidate,,,,温度影响下砂岩的孔隙特性及力学性能,高温砂岩压汞研究了nm级别的孔隙的尺寸分布，及分形维数，但是规律好像和um不太一样？,,,"作者信息: 温度影响下砂岩的孔隙特性及力学性能
+特点: 高温砂岩压汞研究了nm级别的孔隙的尺寸分布，及分形维数，但是规律好像和um不太一样？"
+45,,,,,unknown,title_or_note_only,article_candidate,,,,孔隙度和孔隙结构的表征和分析,孔隙测试方法的综述，包括各种测试方法,,,"作者信息: 孔隙度和孔隙结构的表征和分析
+特点: 孔隙测试方法的综述，包括各种测试方法"
+46,Effect of Different Cooling Treatments on the Tensile Properties and Fracture Modes of Granite Heated at Different Temperatures | Natural Resources Research (springer.com),https://link.springer.com/article/10.1007/s11053-022-10027-w,10.1007/s11053-022-10027-w,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,液氮的莱顿弗罗斯特效应,,不同冷却处理对不同温度加热花岗岩拉伸性能及断裂模式的影响,花岗岩水、液氮热冲击后的巴西劈裂试验，测试了断面粗糙度，研究声发射、抗拉强度,157℃是转折点，小于这一温度时，液氮损伤严重，大于这一温度，水冷损伤严重。大于这一温度时，莱顿弗罗斯特效应影响严重，需要对液氮流动状态或者材料表面状态进行改造以提高液氮的损伤效果,,"评价: 液氮的莱顿弗罗斯特效应
+作者信息: 不同冷却处理对不同温度加热花岗岩拉伸性能及断裂模式的影响
+特点: 花岗岩水、液氮热冲击后的巴西劈裂试验，测试了断面粗糙度，研究声发射、抗拉强度
+结论: 157℃是转折点，小于这一温度时，液氮损伤严重，大于这一温度，水冷损伤严重。大于这一温度时，莱顿弗罗斯特效应影响严重，需要对液氮流动状态或者材料表面状态进行改造以提高液氮的损伤效果"
+47,Variations in Stress Thresholds for Heated Granite Subjected to Rapid Cooling under Different Confining Pressures | Natural Resources Research (springer.com),https://link.springer.com/article/10.1007/s11053-022-10098-9,10.1007/s11053-022-10098-9,link.springer.com,Springer,auto_pdf_candidate,article_candidate,启发：在我的论文模拟中同时引入导热系数和热膨胀系数的非均质（采用同一个非均质函数，写入两个解析函数中代表热膨胀系数和导热系数）,液氮的莱顿弗罗斯特效应,,不同围压下快速冷却加热花岗岩应力阈值的变化,液氮、水热冲击处理花岗岩（25 200 400），分析不同围压下，力学强度的响应。他的结论是液氮热冲击强度低于水，理由是有莱顿弗罗斯特效应，换热不充分,模拟参考：水的温度和传热系数设定为25 °C，1000 W/（m2·K），分别（Tang 等人，2020 年）。液氮的温度和传热系数设定为−196 °C，100 W/（m2·K），分别（Tang 等人，2020 年）,,"标记: 启发：在我的论文模拟中同时引入导热系数和热膨胀系数的非均质（采用同一个非均质函数，写入两个解析函数中代表热膨胀系数和导热系数）
+评价: 液氮的莱顿弗罗斯特效应
+作者信息: 不同围压下快速冷却加热花岗岩应力阈值的变化
+特点: 液氮、水热冲击处理花岗岩（25 200 400），分析不同围压下，力学强度的响应。他的结论是液氮热冲击强度低于水，理由是有莱顿弗罗斯特效应，换热不充分
+结论: 模拟参考：水的温度和传热系数设定为25 °C，1000 W/（m2·K），分别（Tang 等人，2020 年）。液氮的温度和传热系数设定为−196 °C，100 W/（m2·K），分别（Tang 等人，2020 年）"
+49,,,,,unknown,title_or_note_only,article_candidate,,思考如何使液氮冲击更剧烈,,"抑制 1,000 °C 以上的莱顿弗罗斯特效应，实现持续热冷却",改变表面纹理，来解决1000℃以上的莱顿弗罗斯特效应,,,"评价: 思考如何使液氮冲击更剧烈
+作者信息: 抑制 1,000 °C 以上的莱顿弗罗斯特效应，实现持续热冷却
+特点: 改变表面纹理，来解决1000℃以上的莱顿弗罗斯特效应"
+50,Factors affecting pore structure of granite under cyclic heating and cooling: A nuclear magnetic resonance investigation - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0375650521001589,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,研究比较深入，值得参考分析。。这篇文章对于高温下矿物的变化的描述很仔细，可以参考,我发现他们做核磁的，都会研究孔径分布、孔径分形、和基于核磁的渗透性。多次循环热冲击以后效果不明显，不是因为热破裂阻止了进一步的热冲击，这样说不合理，因为热破裂的发生会导致导热性能降低、裂缝的存在会给冷却水提供渗流通道，这都会加强热冲击破裂的程度，要解释循环热冲击造成的衰减变小，需要从别的角度解释,,循环加热和冷却作用下影响花岗岩孔隙结构的因素研究,花岗岩循环加热冷却，空气缓慢冷却、风扇空冷、20℃初始条件水冷、20℃循环冷却、75℃水冷；核磁研究孔隙率，及孔径分布，基于核磁可以推断渗透率；孔隙分形；测了波速，基于波速研究损伤。讨论了：冷却速度快慢对热冲击应力的影响；认为循环冲击产生的破碎边界会阻止热的传递，也就是阻止了进一步热冲击破坏,同样的，和范立峰引用了相同的脆性材料热冲击最大拉应力的公式，这个公式引入了考虑传热快慢的因素fβ。,,"标记: 研究比较深入，值得参考分析。。这篇文章对于高温下矿物的变化的描述很仔细，可以参考
+评价: 我发现他们做核磁的，都会研究孔径分布、孔径分形、和基于核磁的渗透性。多次循环热冲击以后效果不明显，不是因为热破裂阻止了进一步的热冲击，这样说不合理，因为热破裂的发生会导致导热性能降低、裂缝的存在会给冷却水提供渗流通道，这都会加强热冲击破裂的程度，要解释循环热冲击造成的衰减变小，需要从别的角度解释
+作者信息: 循环加热和冷却作用下影响花岗岩孔隙结构的因素研究
+特点: 花岗岩循环加热冷却，空气缓慢冷却、风扇空冷、20℃初始条件水冷、20℃循环冷却、75℃水冷；核磁研究孔隙率，及孔径分布，基于核磁可以推断渗透率；孔隙分形；测了波速，基于波速研究损伤。讨论了：冷却速度快慢对热冲击应力的影响；认为循环冲击产生的破碎边界会阻止热的传递，也就是阻止了进一步热冲击破坏
+结论: 同样的，和范立峰引用了相同的脆性材料热冲击最大拉应力的公式，这个公式引入了考虑传热快慢的因素fβ。"
+51,Analysis and prediction of thermal shock in brittle materials - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1359645400000112,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,fβ的原始文献,fβ=1/(a/(L1*H1/K1)+b-c*2.71828^(-d/(L1*H1/K1)))        σtmax=fβ*E1*A1*(T0-T1)/(1-V1),,脆性材料热冲击的分析与预测,提出了计算热冲击时边界处最大拉应力的公式,,,"标记: fβ的原始文献
+评价: fβ=1/(a/(L1*H1/K1)+b-c*2.71828^(-d/(L1*H1/K1)))        σtmax=fβ*E1*A1*(T0-T1)/(1-V1)
+作者信息: 脆性材料热冲击的分析与预测
+特点: 提出了计算热冲击时边界处最大拉应力的公式"
+52,不同冷却速率下干热花岗岩渗透率演化特征对比研究 - 中国知网 (cnki.net),https://kns.cnki.net/kcms2/article/abstract?v=fCqJ37DMrBmVFLbPALmoK9Tnx-1kHB6irKuYBFHkYnrPWxE0VoKcZBkZdNq3WDFavas-d8JQvYb3mdy-Q3zqBk6iLUCCrBDcmmm0A40OQG8h6EHV66suVA==&uniplatform=NZKPT,,kns.cnki.net,CNKI,manual_or_institution_required,article_candidate,值得参考！,不同矿物的膨胀系数不同、相同矿物的不同方向膨胀系数不同、石英相变体积膨胀、金属键断裂产生微小缺陷。详情参考文章的讨论第一部分,,不同冷却速率下干热花岗岩渗透率演化特征对比研究,花岗岩热冲击、空冷下的：渗透性、显微薄片的裂缝统计、CT的体积孔隙率变化，讨论了：高温、热冲击、围压对渗透性的影响,,,"标记: 值得参考！
+评价: 不同矿物的膨胀系数不同、相同矿物的不同方向膨胀系数不同、石英相变体积膨胀、金属键断裂产生微小缺陷。详情参考文章的讨论第一部分
+作者信息: 不同冷却速率下干热花岗岩渗透率演化特征对比研究
+特点: 花岗岩热冲击、空冷下的：渗透性、显微薄片的裂缝统计、CT的体积孔隙率变化，讨论了：高温、热冲击、围压对渗透性的影响"
+53,Changes in thermomechanical properties due to air and water cooling of hot dry granite rocks under unconfined compression - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0960148121001865,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,总结了大量的空冷水冷数据文献,,无约束压缩条件下热干花岗岩空冷和水冷引起的热机械特性变化,花岗岩不同温度 空冷水冷  热冲击单轴压缩，波速、强度、显微切片统计裂缝参数。讨论中：总结了大量的空冷水冷数据，采用杨氏模量、波速作为损伤变量对破坏程度进行表征，波速对温度更敏感,,,"评价: 总结了大量的空冷水冷数据文献
+作者信息: 无约束压缩条件下热干花岗岩空冷和水冷引起的热机械特性变化
+特点: 花岗岩不同温度 空冷水冷  热冲击单轴压缩，波速、强度、显微切片统计裂缝参数。讨论中：总结了大量的空冷水冷数据，采用杨氏模量、波速作为损伤变量对破坏程度进行表征，波速对温度更敏感"
+54,,,,,unknown,title_or_note_only,article_candidate,重要综述参考,朱振南的综述也很全面,,花岗岩在增强型地热系统（EGSs）中的力学响应研究进展,非常全面的对岩石热冲击进行了综述总结,,,"标记: 重要综述参考
+评价: 朱振南的综述也很全面
+作者信息: 花岗岩在增强型地热系统（EGSs）中的力学响应研究进展
+特点: 非常全面的对岩石热冲击进行了综述总结"
+55,,,,,unknown,title_or_note_only,article_candidate,实时高温、热冲击、缓慢冷却的对比,缓慢冷却的强度高于实时高温，热冲击在600℃前比实时高温低一点，600以后随着温度的升高，强度的衰减更大。,,富含粘土的砂岩在极端温度下进行冷却处理后的热力学行为实验研究,进行了砂岩实时高温-高温空冷-高温水冷的对比试验，力学强度、声发射。结合SEM、XRD，对矿物成分的分析还是比较细致的,缓慢冷却和热冲击冷却在600℃以后都有明显下降，而实时高温降幅非常小,,"标记: 实时高温、热冲击、缓慢冷却的对比
+评价: 缓慢冷却的强度高于实时高温，热冲击在600℃前比实时高温低一点，600以后随着温度的升高，强度的衰减更大。
+作者信息: 富含粘土的砂岩在极端温度下进行冷却处理后的热力学行为实验研究
+特点: 进行了砂岩实时高温-高温空冷-高温水冷的对比试验，力学强度、声发射。结合SEM、XRD，对矿物成分的分析还是比较细致的
+结论: 缓慢冷却和热冲击冷却在600℃以后都有明显下降，而实时高温降幅非常小"
+56,,,,,unknown,title_or_note_only,article_candidate,,花岗岩晶粒对热冲击的影响,,冷却速率对不同粒径加热Strathbogie花岗岩力学性能的影响,由大到小三种粒径的花岗岩进行高温（200-800）热冲击（空冷水冷）试验，测得试验后的力学强度,,,"评价: 花岗岩晶粒对热冲击的影响
+作者信息: 冷却速率对不同粒径加热Strathbogie花岗岩力学性能的影响
+特点: 由大到小三种粒径的花岗岩进行高温（200-800）热冲击（空冷水冷）试验，测得试验后的力学强度"
+57,Mechanical properties of Qinling biotite granite after high temperature treatment - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160914001804,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,秦岭黑云母花岗岩高温处理后的力学性能,高温缓慢冷却后秦岭花岗岩的：波速变化、力学强度、动力学响应,,,"作者信息: 秦岭黑云母花岗岩高温处理后的力学性能
+特点: 高温缓慢冷却后秦岭花岗岩的：波速变化、力学强度、动力学响应"
+58,Saturated heating and quenching of three crustal rocks and implications for thermal stimulation of permeability in geothermal reservoirs - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160915300526,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,空冷、水冷 对渗透性的改变的具体参数（超级大）,,三种地壳岩石的饱和加热和淬火及其对地热储层渗透性热刺激的影响,对比了热冲击和缓慢加热下、Lanhelin花岗闪长岩、霍尔斯韦尔玄武岩、阿兰代尔流纹岩，孔隙率、声发射、显微镜SEM、渗透性,渗透性变化的差异超级大,,"评价: 空冷、水冷 对渗透性的改变的具体参数（超级大）
+作者信息: 三种地壳岩石的饱和加热和淬火及其对地热储层渗透性热刺激的影响
+特点: 对比了热冲击和缓慢加热下、Lanhelin花岗闪长岩、霍尔斯韦尔玄武岩、阿兰代尔流纹岩，孔隙率、声发射、显微镜SEM、渗透性
+结论: 渗透性变化的差异超级大"
+59,Real-Time Visual Analysis of the Microcracking Behavior of Thermally Damaged Granite Under Uniaxial Loading | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-021-02639-0,10.1007/s00603-021-02639-0,link.springer.com,Springer,auto_pdf_candidate,article_candidate,UCS的实时CT扫描,热冲击冷却后试件的UCS CT实时观察,,单轴荷载下热损伤花岗岩微裂纹行为的实时可视化分析,热冲击花岗岩的UCS实时CT研究，研究了3d孔隙、两个方向的切片二维裂缝分布，最后对比了未处理的实时CT破坏形式,,,"标记: UCS的实时CT扫描
+评价: 热冲击冷却后试件的UCS CT实时观察
+作者信息: 单轴荷载下热损伤花岗岩微裂纹行为的实时可视化分析
+特点: 热冲击花岗岩的UCS实时CT研究，研究了3d孔隙、两个方向的切片二维裂缝分布，最后对比了未处理的实时CT破坏形式"
+60,The effects of thermal treatments on the fatigue crack growth of Beishan granite: an in situ observation study | Bulletin of Engineering Geology and the Environment (springer.com),https://link.springer.com/article/10.1007/s10064-020-01966-w,10.1007/s10064-020-01966-w,link.springer.com,Springer,auto_pdf_candidate,article_candidate,新技术手段,高温处理自然冷却后，与力学试验同步的实时SEM,,热处理对北山花岗岩疲劳裂纹扩展的影响：原位观察研究,高温后的UCS、2 Hz 的正弦循环载荷。,,,"标记: 新技术手段
+评价: 高温处理自然冷却后，与力学试验同步的实时SEM
+作者信息: 热处理对北山花岗岩疲劳裂纹扩展的影响：原位观察研究
+特点: 高温后的UCS、2 Hz 的正弦循环载荷。"
+61,A Real-Time Visual Investigation on Microscopic Progressive Fatigue Deterioration of Granite Under Cyclic Loading | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-023-03326-y,10.1007/s00603-023-03326-y,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,花岗岩疲劳破坏的实时CT研究,,循环荷载作用下花岗岩微观渐进式疲劳劣化实时视觉研究,循环加卸载的实时CT,,实时高温状态下的疲劳破坏（循环加卸载）、热冲击处理后的循环加卸载？是否有人研究？,"评价: 花岗岩疲劳破坏的实时CT研究
+作者信息: 循环荷载作用下花岗岩微观渐进式疲劳劣化实时视觉研究
+特点: 循环加卸载的实时CT
+可供参考的图和数据: 实时高温状态下的疲劳破坏（循环加卸载）、热冲击处理后的循环加卸载？是否有人研究？"
+62,Changes in the thermodynamic properties of alkaline granite after cyclic quenching following high temperature action - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S2095268621000835?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,循环热冲击/拟合了  波速/导热系数-温度-循环次数的关系,,高温作用后循环淬火后碱性花岗岩热力学性质的变化,花岗岩水中循环热冲击，处理后的波速、导热系数、UCS。讨论了热冲击破裂的原因：1.热膨胀（同种矿物不同方向的膨胀系数不同，不同矿物的膨胀系数不同）；2. 温度梯度导致的热破裂。,,,"评价: 循环热冲击/拟合了  波速/导热系数-温度-循环次数的关系
+作者信息: 高温作用后循环淬火后碱性花岗岩热力学性质的变化
+特点: 花岗岩水中循环热冲击，处理后的波速、导热系数、UCS。讨论了热冲击破裂的原因：1.热膨胀（同种矿物不同方向的膨胀系数不同，不同矿物的膨胀系数不同）；2. 温度梯度导致的热破裂。"
+63,Study on the Effect of Sandstone Microscopic Damage and Dynamic Compressive Properties After Heat Treatment | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-021-02733-3,10.1007/s00603-021-02733-3,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,可引用：在损伤本构模型方面，大多数学者使用高温后变化的物理参数（孔隙率、波速、弹性模量、CT数、导热系数、密度和体积）来建立损伤因子（Li et al. 2021-Thermal damage effect on the thermal conductivity inhomogeneity of granite）,,热处理后砂岩微观损伤及动态压缩性能研究,砂岩（20-1000）高温处理后，XRD分析成分变化、核磁分析孔隙率变化，霍普金森杆分析动态应力相关分析,这句可以用在论文中,,"评价: 可引用：在损伤本构模型方面，大多数学者使用高温后变化的物理参数（孔隙率、波速、弹性模量、CT数、导热系数、密度和体积）来建立损伤因子（Li et al. 2021-Thermal damage effect on the thermal conductivity inhomogeneity of granite）
+作者信息: 热处理后砂岩微观损伤及动态压缩性能研究
+特点: 砂岩（20-1000）高温处理后，XRD分析成分变化、核磁分析孔隙率变化，霍普金森杆分析动态应力相关分析
+结论: 这句可以用在论文中"
+64,Thermal damage effect on the thermal conductivity inhomogeneity of granite - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160920309497?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,可引用：根据 Jansen 等人的说法，36当温度变化在很短的时间内发生时，晶间裂纹可能由另一个不同的过程引发：材料中的高温梯度。这些温度梯度通过不同的膨胀系数放大不同的膨胀效应来起作用。,,热损伤对花岗岩导热系数不均匀性的影响,花岗岩热冲击和空冷以后的平面上的导热系数分布、波速变化。拟合了孔隙率与导热系数的关系。研究了平面上导热系数的不均匀程度。推导了热损伤的公式。热冲击处理后的导热系数更小,其实我倒感觉这一点点导热系数的不均匀分布基本不影响整个的应力分布和温度分布,,"评价: 可引用：根据 Jansen 等人的说法，36当温度变化在很短的时间内发生时，晶间裂纹可能由另一个不同的过程引发：材料中的高温梯度。这些温度梯度通过不同的膨胀系数放大不同的膨胀效应来起作用。
+作者信息: 热损伤对花岗岩导热系数不均匀性的影响
+特点: 花岗岩热冲击和空冷以后的平面上的导热系数分布、波速变化。拟合了孔隙率与导热系数的关系。研究了平面上导热系数的不均匀程度。推导了热损伤的公式。热冲击处理后的导热系数更小
+结论: 其实我倒感觉这一点点导热系数的不均匀分布基本不影响整个的应力分布和温度分布"
+65,Effect of Mechanical Damage on the Thermal Conductivity of Granite | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-019-01956-9,10.1007/s00603-019-01956-9,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,力学损伤会导致导热性降低,,机械损伤对花岗岩导热系数的影响,花岗岩循环加卸载处理后，测试导热性：力学损伤导致导热性降低、不均匀性增加。饱和条件下导热性大于不饱和,,,"评价: 力学损伤会导致导热性降低
+作者信息: 机械损伤对花岗岩导热系数的影响
+特点: 花岗岩循环加卸载处理后，测试导热性：力学损伤导致导热性降低、不均匀性增加。饱和条件下导热性大于不饱和"
+66,Effect of thermal damage on mechanical and permeability properties of sandstone | Arabian Journal of Geosciences (springer.com),https://link.springer.com/article/10.1007/s12517-021-08098-9,10.1007/s12517-021-08098-9,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,,,热损伤对砂岩力学和渗透性能的影响,高温砂岩处理后，波速、UCS、三轴渗透实验,200以前强度增强渗透性减小，400-600渗透性急剧增加,,"作者信息: 热损伤对砂岩力学和渗透性能的影响
+特点: 高温砂岩处理后，波速、UCS、三轴渗透实验
+结论: 200以前强度增强渗透性减小，400-600渗透性急剧增加"
+67,Effect of Thermal Treatment on the Physical and Mechanical Properties of Sandstone: Insights from Experiments and Simulations | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-022-02791-1,10.1007/s00603-022-02791-1,link.springer.com,Springer,auto_pdf_candidate,article_candidate,重要参考两个表：1 热处理后岩石强度的研究；2 砂岩不同矿物的详细模拟参数,砂岩由青变红；400℃是砂岩力学强度衰减的临界值；给了石英、长石、粘土矿物的各种模拟参数，进行了非均质模拟,,热处理对砂岩物理机械性能的影响：来自实验和模拟的见解,高温处理后的砂岩压缩试验。推导建立了损伤模型，采用comsol with matlab进行模拟。,采用Knuth-Durstenfeld 随机算法来表征考虑矿物成分的岩石非均质性（Yang 等人，2020 年：https://www.sciencedirect.com/science/article/pii/S1365160920309394?via%3Dihub；https://www.sciencedirect.com/science/article/pii/S0266352X19304781?via%3Dihub）,砂岩不同矿物的模拟参数,"标记: 重要参考两个表：1 热处理后岩石强度的研究；2 砂岩不同矿物的详细模拟参数
+评价: 砂岩由青变红；400℃是砂岩力学强度衰减的临界值；给了石英、长石、粘土矿物的各种模拟参数，进行了非均质模拟
+作者信息: 热处理对砂岩物理机械性能的影响：来自实验和模拟的见解
+特点: 高温处理后的砂岩压缩试验。推导建立了损伤模型，采用comsol with matlab进行模拟。
+结论: 采用Knuth-Durstenfeld 随机算法来表征考虑矿物成分的岩石非均质性（Yang 等人，2020 年：https://www.sciencedirect.com/science/article/pii/S1365160920309394?via%3Dihub；https://www.sciencedirect.com/science/article/pii/S0266352X19304781?via%3Dihub）
+可供参考的图和数据: 砂岩不同矿物的模拟参数"
+68,杨圣奇论文X6,,,,unknown,title_or_note_only,article_candidate,,,,,,,,
+69,An experimental investigation on thermal damage and failure mechanical behavior of granite after exposure to different high temperature treatments - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0375650516301110?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,,,,,
+70,Experimental investigation on triaxial mechanical and permeability behavior of sandstone after exposure to different high temperature treatments - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0375650517300068?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,,,,,
+71,An Experimental Study of Effect of High Temperature on the Permeability Evolution and Failure Response of Granite Under Triaxial Compression | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-019-01982-7,10.1007/s00603-019-01982-7,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,,,,,,,
+72,Peridynamic simulation on fracture mechanical behavior of granite containing a single fissure after thermal cycling treatment - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0266352X19304781?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,,,,,
+73,Peridynamic simulation of fracture mechanical behaviour of granite specimen under real-time temperature and post-temperature treatments - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160920309394?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,,,,,
+74,Numerical simulation of permeability evolution in granite after thermal treatment - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0266352X20302688?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,,,,,
+75,Influence of stress and high-temperature treatment on the permeability evolution behavior of sandstone | Acta Mechanica Sinica (springer.com),https://link.springer.com/article/10.1007/s10409-018-0824-6,10.1007/s10409-018-0824-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,,,应力和高温处理对砂岩渗透演化行为的影响,,,,作者信息: 应力和高温处理对砂岩渗透演化行为的影响
+76,Structural properties and failure characteristics of granite after thermal treatment and water cooling | Geomechanics and Geophysics for Geo-Energy and Geo-Resources (springer.com),https://link.springer.com/article/10.1007/s40948-023-00716-y,10.1007/s40948-023-00716-y,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,启发：温度越高，对花岗岩的损伤越大，在这基础上进行热冲击，造成的热冲击破坏越严重（1.高温导致整体导热系数降低，2.水能从表面裂缝进去提高换热能力）,,花岗岩热处理水冷后的结构性质及破坏特征,花岗岩不同高温热冲击冷却后：CT分析了不同直径的孔占比的演变；不同温度的XRD成分演变；UCS和AE分析；能量变化（形变与耗散能）分析，提出了基于能量的损伤因子；讨论了高温下石英相变、讨论了不同破坏形式的占比,,,"评价: 启发：温度越高，对花岗岩的损伤越大，在这基础上进行热冲击，造成的热冲击破坏越严重（1.高温导致整体导热系数降低，2.水能从表面裂缝进去提高换热能力）
+作者信息: 花岗岩热处理水冷后的结构性质及破坏特征
+特点: 花岗岩不同高温热冲击冷却后：CT分析了不同直径的孔占比的演变；不同温度的XRD成分演变；UCS和AE分析；能量变化（形变与耗散能）分析，提出了基于能量的损伤因子；讨论了高温下石英相变、讨论了不同破坏形式的占比"
+77,Tensile Properties and Damage Evolution Laws of Granite After High- and Low-Temperature Cycles | Natural Resources Research (springer.com),https://link.springer.com/article/10.1007/s11053-022-10025-y,10.1007/s11053-022-10025-y,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,多次循环后破坏幅度衰减,,花岗岩高低温循环后的拉伸性能及损伤演化规律,600℃高温花岗岩循环液氮热冲击：P波波速、核磁孔隙率、巴西劈裂强度和声发射。,多次循环后破坏效果衰减的问题：在600 °C处理下，花岗岩的损伤程度并未随处理次数的增加而呈线性下降，而是在一定程度上得到缓解。Zhang等人（2021）认为，温度效应导致岩石内部孔隙变大，从而提高了岩石适应热变形的能力，导致热应力水平下降。,,"评价: 多次循环后破坏幅度衰减
+作者信息: 花岗岩高低温循环后的拉伸性能及损伤演化规律
+特点: 600℃高温花岗岩循环液氮热冲击：P波波速、核磁孔隙率、巴西劈裂强度和声发射。
+结论: 多次循环后破坏效果衰减的问题：在600 °C处理下，花岗岩的损伤程度并未随处理次数的增加而呈线性下降，而是在一定程度上得到缓解。Zhang等人（2021）认为，温度效应导致岩石内部孔隙变大，从而提高了岩石适应热变形的能力，导致热应力水平下降。"
+78,Experimental investigation on the influence on mechanical properties and acoustic emission characteristics of granite after heating and water-cooling cycles | Geomechanics and Geophysics for Geo-Energy and Geo-Resources (springer.com),https://link.springer.com/article/10.1007/s40948-023-00627-y,10.1007/s40948-023-00627-y,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,三次热冲击循环以后，循环次数增加，损伤程度的增幅减弱,,加热和水冷循环后对花岗岩力学性能和声发射特性影响的试验研究,400℃花岗岩循环水中热冲击：质量、体积、P波、UCS、AE、破坏形式、,全过程的损伤是高温——热冲击——循环 三者叠加产生的,,"评价: 三次热冲击循环以后，循环次数增加，损伤程度的增幅减弱
+作者信息: 加热和水冷循环后对花岗岩力学性能和声发射特性影响的试验研究
+特点: 400℃花岗岩循环水中热冲击：质量、体积、P波、UCS、AE、破坏形式、
+结论: 全过程的损伤是高温——热冲击——循环 三者叠加产生的"
+79,Experimental investigations on the tensile behaviour of granite after heating and water-cooling treatment | Bulletin of Engineering Geology and the Environment (springer.com),https://link.springer.com/article/10.1007/s10064-021-02284-5,10.1007/s10064-021-02284-5,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,,,花岗岩加热水冷处理后拉伸行为的试验研究,25、200-600水冷花岗岩热冲击后的巴西劈裂抗拉强度。,,,"作者信息: 花岗岩加热水冷处理后拉伸行为的试验研究
+特点: 25、200-600水冷花岗岩热冲击后的巴西劈裂抗拉强度。"
+80,Mechanical test of granite with multiple water-thermal cycles-All Databases (clarivate.cn),https://webofscience.clarivate.cn/wos/alldb/full-record/WOS:000611981200001,,webofscience.clarivate.cn,Web of Science,metadata_only,article_candidate,,抗压强度和抗拉强度都随着循环次数线性降低，这结论是不是有问题啊,,花岗岩的多次水热循环力学试验,300℃循环水冷热冲击下的 UCS、巴西劈裂。拟合了抗拉强度和抗压强度的线性关系。抗拉强度、抗压强度都随着循环次数的增加线性降低。循环0-12次时，抗拉抗压强度缓慢减小，大于12次，两者均快速减小,,,"评价: 抗压强度和抗拉强度都随着循环次数线性降低，这结论是不是有问题啊
+作者信息: 花岗岩的多次水热循环力学试验
+特点: 300℃循环水冷热冲击下的 UCS、巴西劈裂。拟合了抗拉强度和抗压强度的线性关系。抗拉强度、抗压强度都随着循环次数的增加线性降低。循环0-12次时，抗拉抗压强度缓慢减小，大于12次，两者均快速减小"
+81,Thermal properties of Central Aare granite for temperatures up to 500°C: Irreversible changes due to thermal crack formation - Kant - 2017 - Geophysical Research Letters - Wiley Online Library,https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2016GL070990,10.1002/2016GL070990,agupubs.onlinelibrary.wiley.com,Wiley,manual_or_institution_required,article_candidate,,5次循环加热冷却下，导热、热扩散系数、比热容变化。（可引用：进一步的加热/冷却循环对于热性能的额外退化是无效的，因为材料现在可以膨胀到开裂的晶界中，并且热应力不足以导致进一步的开裂。）,,中阿勒花岗岩在高达500°C的温度下的热性能：由于热裂纹的形成而发生不可逆的变化,0-500℃花岗岩空冷后的导热、热扩散、热容变化。,比热容全程没什么太大变化；导热和热扩散系数在第一次循环有明显变化，后面几次基本没有明显衰减。,,"评价: 5次循环加热冷却下，导热、热扩散系数、比热容变化。（可引用：进一步的加热/冷却循环对于热性能的额外退化是无效的，因为材料现在可以膨胀到开裂的晶界中，并且热应力不足以导致进一步的开裂。）
+作者信息: 中阿勒花岗岩在高达500°C的温度下的热性能：由于热裂纹的形成而发生不可逆的变化
+特点: 0-500℃花岗岩空冷后的导热、热扩散、热容变化。
+结论: 比热容全程没什么太大变化；导热和热扩散系数在第一次循环有明显变化，后面几次基本没有明显衰减。"
+82,https://link.springer.com/article/10.1007/s40948-022-00388-0,https://link.springer.com/article/10.1007/s40948-022-00388-0,10.1007/s40948-022-00388-0,link.springer.com,Springer,auto_pdf_candidate,article_candidate,内容很多，等获取全文以后再仔细分析,循环热冲击后  三轴试验,,循环热冲击对三轴压缩下花岗岩力学行为的影响,不同温度循环热冲击后，XRD、电镜、声发射、三轴力学强度、破坏形式。详细讨论了围压、循环次数、温度对抗压强度的影响,,,"标记: 内容很多，等获取全文以后再仔细分析
+评价: 循环热冲击后  三轴试验
+作者信息: 循环热冲击对三轴压缩下花岗岩力学行为的影响
+特点: 不同温度循环热冲击后，XRD、电镜、声发射、三轴力学强度、破坏形式。详细讨论了围压、循环次数、温度对抗压强度的影响"
+83,The role of multiple heating and water cooling cycles on physical and mechanical responses of granite rocks | Geomechanics and Geophysics for Geo-Energy and Geo-Resources (springer.com),https://link.springer.com/article/10.1007/s40948-021-00267-0,10.1007/s40948-021-00267-0,link.springer.com,Springer,auto_pdf_candidate,article_candidate,和上面一篇差不多，区别一个单轴一个三轴,循环热冲击后 单轴压缩,,多次加热和水冷循环对花岗岩岩石物理力学响应的作用,循环热冲击后，单轴强度、XRD、AE,,,"标记: 和上面一篇差不多，区别一个单轴一个三轴
+评价: 循环热冲击后 单轴压缩
+作者信息: 多次加热和水冷循环对花岗岩岩石物理力学响应的作用
+特点: 循环热冲击后，单轴强度、XRD、AE"
+84,变热循环后砂岩物理力学性能试验研究 |工程地质与环境通报 (springer.com),https://link.springer.com/article/10.1007/s10064-020-01779-x,10.1007/s10064-020-01779-x,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,高于400℃，砂岩的各项指标才有明显衰减///室温抗拉强度5MPa////砂岩导热系数,,不同温度循环热冲击下砂岩的物理力学性质,100-600水冷热冲击砂岩的：抗拉强度、颜色变化、导热系数变化、波速变化。,高温下各种矿物的线膨胀系数参考图,,"评价: 高于400℃，砂岩的各项指标才有明显衰减///室温抗拉强度5MPa////砂岩导热系数
+作者信息: 不同温度循环热冲击下砂岩的物理力学性质
+特点: 100-600水冷热冲击砂岩的：抗拉强度、颜色变化、导热系数变化、波速变化。
+结论: 高温下各种矿物的线膨胀系数参考图"
+85,Thermal properties of sandstone after treatment at high temperature - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160916300338?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,可以参考高温下砂岩的热物理参数,,砂岩高温处理后的热性能,25-900℃砂岩缓慢冷却后，导热系数、热扩散系数、比热容。孔隙率与上述参数的变化关系,,,"评价: 可以参考高温下砂岩的热物理参数
+作者信息: 砂岩高温处理后的热性能
+特点: 25-900℃砂岩缓慢冷却后，导热系数、热扩散系数、比热容。孔隙率与上述参数的变化关系"
+86,The effect of rapid cooling on the thermal diffusivity of granite - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0926985118307869,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,400℃是裂纹宽度迅速增大的阈值，是热扩散系数快速降低的阈值,,快速冷却对花岗岩热扩散率的影响,两种花岗岩不同高温水中热冲击处理不同循环，热扩散系数。讨论了：①热扩散系数和导热系数的关系；②不同矿物在不同温度下的热扩散系数；③热扩散率和晶间裂纹、晶内裂纹的关系，和裂缝宽度长度的关系，,,,"评价: 400℃是裂纹宽度迅速增大的阈值，是热扩散系数快速降低的阈值
+作者信息: 快速冷却对花岗岩热扩散率的影响
+特点: 两种花岗岩不同高温水中热冲击处理不同循环，热扩散系数。讨论了：①热扩散系数和导热系数的关系；②不同矿物在不同温度下的热扩散系数；③热扩散率和晶间裂纹、晶内裂纹的关系，和裂缝宽度长度的关系，"
+87,Macroscopic and microscopic experimental research on granite properties after high-temperature and water-cooling cycles - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0375650521000390,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,400℃阈值；第一次循环效果最明显，后面不明显,,高温水冷循环后花岗岩特性的宏观和微观实验研究,不同温度花岗岩水中循环热冲击以后的：力学强度、波速、裂纹数量密度。结论是：400℃是破坏阈值，第一次循环以后的衰减都远没有第一次大。讨论：①热破裂=不均匀膨胀+热冲击的拉应力+疲劳损伤。②基于波速表征的损伤。③多次循环效果不明显的原因归结为E的衰减和裂缝空隙的增多,,,"评价: 400℃阈值；第一次循环效果最明显，后面不明显
+作者信息: 高温水冷循环后花岗岩特性的宏观和微观实验研究
+特点: 不同温度花岗岩水中循环热冲击以后的：力学强度、波速、裂纹数量密度。结论是：400℃是破坏阈值，第一次循环以后的衰减都远没有第一次大。讨论：①热破裂=不均匀膨胀+热冲击的拉应力+疲劳损伤。②基于波速表征的损伤。③多次循环效果不明显的原因归结为E的衰减和裂缝空隙的增多"
+88,Influence of multiple porous structure evolution on physical–mechanical properties and damage mechanism of sandstone heated continuously/periodically with the identical heating time | Bulletin of Engineering Geology and the Environment (springer.com),https://link.springer.com/article/10.1007/s10064-022-03020-3,10.1007/s10064-022-03020-3,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,可引用：600 °C处理后水冷组与空冷组组合样品之间的差异是由热冲击引起的。热冲击更容易形成表面裂纹，这为冷却介质的浸泡提供了有利的通道。水沿着间隙深入试样，并继续在轨道中进行快速的热交换。,,多孔结构演化对连续/定期加热且加热时间相同的砂岩物理力学性能和损伤机理的影响,两种方式的加热（200-800）循环5次以后，UCS、BTS、AE、核磁、,,,"评价: 可引用：600 °C处理后水冷组与空冷组组合样品之间的差异是由热冲击引起的。热冲击更容易形成表面裂纹，这为冷却介质的浸泡提供了有利的通道。水沿着间隙深入试样，并继续在轨道中进行快速的热交换。
+作者信息: 多孔结构演化对连续/定期加热且加热时间相同的砂岩物理力学性能和损伤机理的影响
+特点: 两种方式的加热（200-800）循环5次以后，UCS、BTS、AE、核磁、"
+89,"Influence of different thermal cycling treatments on the physical, mechanical and transport properties of granite - ScienceDirect",https://www.sciencedirect.com/science/article/pii/S0375650518300907?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,渗透性引用,600℃时水冷渗透性增大了79.3倍，空冷增大了35.6倍,,不同热冲击处理对花岗岩物理、力学和渗透性的影响,空冷水冷不同温度花岗岩的，体积、质量、波速、UCS、BTS、渗透性变化,,,"标记: 渗透性引用
+评价: 600℃时水冷渗透性增大了79.3倍，空冷增大了35.6倍
+作者信息: 不同热冲击处理对花岗岩物理、力学和渗透性的影响
+特点: 空冷水冷不同温度花岗岩的，体积、质量、波速、UCS、BTS、渗透性变化"
+90,高温下花岗岩的声发射和损伤特性 - 徐 - 2018 - 材料科学与工程进展 - Wiley 在线图书馆,https://onlinelibrary.wiley.com/doi/10.1155/2018/8149870,10.1155/2018/8149870,onlinelibrary.wiley.com,Wiley,manual_or_institution_required,article_candidate,,实时高温下花岗岩的力学强度和声发射相应,,,,,,评价: 实时高温下花岗岩的力学强度和声发射相应
+91,花岗岩实时高温和自然冷却后力学性能及碰撞特性的比较研究 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-023-03380-6,10.1007/s00603-023-03380-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,实时高温和缓慢冷却处理下的动力学响应参数,,,实时、高温后、动力学参数差异,,,"评价: 实时高温和缓慢冷却处理下的动力学响应参数
+特点: 实时、高温后、动力学参数差异"
+92,共和花岗岩在实时高温下的力学损伤和蠕变特性试验研究 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0375650524001871?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,实时高温下的单轴、蠕变试验,,没有提到与高温冷却后的情况做对比,,,,"评价: 实时高温下的单轴、蠕变试验
+作者信息: 没有提到与高温冷却后的情况做对比"
+93,高温高压超临界水条件下花岗岩损伤的实验研究 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0920410519304851,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,超临界水花岗岩热处理,对比了室温、马弗炉加热、超临界水加热的花岗岩的强度、波速、显微薄片等常见参数，以及SEM图像、XRD成分分析的结果,,,但是最后也没给出合理的超临界水加热花岗岩导致热损伤更严重的理由,,,"标记: 超临界水花岗岩热处理
+评价: 对比了室温、马弗炉加热、超临界水加热的花岗岩的强度、波速、显微薄片等常见参数，以及SEM图像、XRD成分分析的结果
+特点: 但是最后也没给出合理的超临界水加热花岗岩导致热损伤更严重的理由"
+94,单轴压缩作用下花岗岩的温度依赖性声发射特性及统计本构模型 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775524003664,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,热处理后 花岗岩的相关参数,对比了不同温度缓慢冷却以后花岗岩的各项参数,,在花岗岩上钻孔埋传感器了,对损伤的分析还是很深入的，具体的计算了热损伤、力学损伤、总损伤,,,"标记: 热处理后 花岗岩的相关参数
+评价: 对比了不同温度缓慢冷却以后花岗岩的各项参数
+作者信息: 在花岗岩上钻孔埋传感器了
+特点: 对损伤的分析还是很深入的，具体的计算了热损伤、力学损伤、总损伤"
+95,高温花岗岩和热处理花岗岩的机械性能比较 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S100363261664311X?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,实时高温和高温后的强度对比,对比了不同温度下、实时高温和高温缓慢冷却后的强度、变形、破坏形式,,高温单轴强度,数据量挺多，可以参考,,,"标记: 实时高温和高温后的强度对比
+评价: 对比了不同温度下、实时高温和高温缓慢冷却后的强度、变形、破坏形式
+作者信息: 高温单轴强度
+特点: 数据量挺多，可以参考"
+96,高温处理后花岗岩的物理机械性能 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-019-01919-0,10.1007/s00603-019-01919-0,link.springer.com,Springer,auto_pdf_candidate,article_candidate,被引108次,高温处理后的花岗岩的力学性能以及常规分析,,,东西做的很全，可以用来当参考文献,,,"标记: 被引108次
+评价: 高温处理后的花岗岩的力学性能以及常规分析
+特点: 东西做的很全，可以用来当参考文献"
+97,高温对花岗岩热性能的影响 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-019-1733-0,10.1007/s00603-019-1733-0,link.springer.com,Springer,auto_pdf_candidate,article_candidate,孙强,高温缓慢冷却后测得导热参数及波速,,,导热系数变化的的参考文献,,,"标记: 孙强
+评价: 高温缓慢冷却后测得导热参数及波速
+特点: 导热系数变化的的参考文献"
+103,Influence of Real-Time Heating on Mechanical Behaviours of Rocks (hindawi.com),https://www.hindawi.com/journals/ace/2020/8879922/,,www.hindawi.com,www.hindawi.com,needs_review,article_candidate,,作为参考,,实时加热对岩石力学行为的影响,分析了实时高温（到800℃）下，花岗岩、砂岩、大理岩的UCS,,,"评价: 作为参考
+作者信息: 实时加热对岩石力学行为的影响
+特点: 分析了实时高温（到800℃）下，花岗岩、砂岩、大理岩的UCS"
+104,Experimental study on permeability and porosity evolution of host rock with varying damage degrees in excavation damaged area under real-time ultra-high temperature and triaxial stress/seepage pressure condition | Bulletin of Engineering Geology and the Environment (springer.com),https://link.springer.com/article/10.1007/s10064-021-02408-x,10.1007/s10064-021-02408-x,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,通过三轴预加载获得了不同损伤程度的试件，然后在这基础上再进行渗透实验，这种思路可以借鉴,,实时超高温三轴应力/渗压条件下开挖破坏区不同破坏程度围岩渗透率和孔隙度演化试验研究,通过预三轴加载，获得了不同破坏程度的试件，然后进行渗透测试，获得了不同温度、渗透压下的渗透性,,,"评价: 通过三轴预加载获得了不同损伤程度的试件，然后在这基础上再进行渗透实验，这种思路可以借鉴
+作者信息: 实时超高温三轴应力/渗压条件下开挖破坏区不同破坏程度围岩渗透率和孔隙度演化试验研究
+特点: 通过预三轴加载，获得了不同破坏程度的试件，然后进行渗透测试，获得了不同温度、渗透压下的渗透性"
+105,Damage deterioration mechanism and damage constitutive modelling of red sandstone under cyclic thermal-cooling treatments | Archives of Civil and Mechanical Engineering (springer.com),https://link.springer.com/article/10.1007/s43452-022-00505-6,10.1007/s43452-022-00505-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,循环次数增加，峰值强度线性降低（和前面的有出入），温度越高，循环后的降幅越大,,循环热冷处理下红砂岩损伤劣化机理及损伤本构模型,循环热冲击下砂岩的UCS、破坏形式、声发射。讨论了损伤本构模型,,,"评价: 循环次数增加，峰值强度线性降低（和前面的有出入），温度越高，循环后的降幅越大
+作者信息: 循环热冷处理下红砂岩损伤劣化机理及损伤本构模型
+特点: 循环热冲击下砂岩的UCS、破坏形式、声发射。讨论了损伤本构模型"
+106,The effect of high temperature on tensile strength of sandstone - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1359431116319524,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,高温缓慢冷却砂岩的抗拉强度,,高温对砂岩抗拉强度的影响,0-900℃砂岩缓慢冷却后的BTS，波速，以及两者关系,,,"评价: 高温缓慢冷却砂岩的抗拉强度
+作者信息: 高温对砂岩抗拉强度的影响
+特点: 0-900℃砂岩缓慢冷却后的BTS，波速，以及两者关系"
+107,Heat-capacity measurements of sandstone at high temperatures | Geomechanics and Geophysics for Geo-Energy and Geo-Resources (springer.com),https://link.springer.com/article/10.1007/s40948-018-0099-1?utm_source=xmol&utm_medium=affiliate&utm_content=meta&utm_campaign=DDCN_1_GL01_metadata,10.1007/s40948-018-0099-1,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,等获取全文以后补充完整,,高温砂岩热容测量,,,,"评价: 等获取全文以后补充完整
+作者信息: 高温砂岩热容测量"
+108,Applied Sciences | Free Full-Text | Physical and Mechanical Properties and Damage Mechanism of Sandstone at High Temperatures (mdpi.com),https://www.mdpi.com/2076-3417/14/1/444,,www.mdpi.com,MDPI,auto_pdf_candidate,article_candidate,,针对升温速率对砂岩强度的影响,,高温下砂岩的物理力学性能及损伤机理,不同升温速率、不同高温对UCS强度和杨氏模量的影响,升温速率越大、强度越小。。温度升高，强度先增大后减小，600℃以前增大，以后减小。（真的假的啊，感觉这个临界值有点离谱）,,"评价: 针对升温速率对砂岩强度的影响
+作者信息: 高温下砂岩的物理力学性能及损伤机理
+特点: 不同升温速率、不同高温对UCS强度和杨氏模量的影响
+结论: 升温速率越大、强度越小。。温度升高，强度先增大后减小，600℃以前增大，以后减小。（真的假的啊，感觉这个临界值有点离谱）"
+109,Investigation of high-temperature effects on the strengthening and degradation of mechanical property in sandstone - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0306261923018962,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,参考,高温砂岩缓慢冷却的典型文章，强度、成分、孔隙数据都有。（引用：相比600以前，600℃下以后微孔显著减小、介孔显著增多；总体孔隙率随着温度的升高而增大，400以前增幅不大，400以后快速增大。）,,高温对砂岩力学性能强化和退化的影响研究,砂岩缓慢加热缓慢冷却，UCS、孔隙率、核磁。结果显示：200-600强度增加，600-800强度衰减。,相比600以前，600℃下，介孔显著增多；总体孔隙率随着温度的升高而增大。,,"标记: 参考
+评价: 高温砂岩缓慢冷却的典型文章，强度、成分、孔隙数据都有。（引用：相比600以前，600℃下以后微孔显著减小、介孔显著增多；总体孔隙率随着温度的升高而增大，400以前增幅不大，400以后快速增大。）
+作者信息: 高温对砂岩力学性能强化和退化的影响研究
+特点: 砂岩缓慢加热缓慢冷却，UCS、孔隙率、核磁。结果显示：200-600强度增加，600-800强度衰减。
+结论: 相比600以前，600℃下，介孔显著增多；总体孔隙率随着温度的升高而增大。"
+110,Changes in mechanical properties and fracture behaviors of heated marble subjected to liquid nitrogen cooling - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0013794422000236?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,数值模拟部分和我的思路差不多，可以参考,,液氮冷却下加热大理岩力学性能及断裂行为的变化,液氮热冲击和空冷（25 100 200 300）以后，UCS AE 波速 压汞实验孔隙变化 破坏形式 破坏面粗糙度。通过数值模拟讨论了由于热膨胀系数差异引起的破坏。,,,"评价: 数值模拟部分和我的思路差不多，可以参考
+作者信息: 液氮冷却下加热大理岩力学性能及断裂行为的变化
+特点: 液氮热冲击和空冷（25 100 200 300）以后，UCS AE 波速 压汞实验孔隙变化 破坏形式 破坏面粗糙度。通过数值模拟讨论了由于热膨胀系数差异引起的破坏。"
+111,Experimental Evaluation of Physical and Mechanical Properties of Geothermal Reservoir Rock after Different Cooling Treatments | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-020-02200-5,10.1007/s00603-020-02200-5,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,花岗岩：液氮大于水大于空冷。上面砂岩是水大于液氮大于空冷。,,不同冷却处理后地热储层岩石物理力学性质试验评价,高温花岗岩 水冷 空冷 液氮处理后，UCS 波速 孔隙率 AE 破坏形式 显微镜下微裂缝 的变化，总结是液氮高于水高于空冷。讨论部分主要两部分：①用波速、强度表征热冲击损伤；②分析热冲击的损伤机制。,,,"评价: 花岗岩：液氮大于水大于空冷。上面砂岩是水大于液氮大于空冷。
+作者信息: 不同冷却处理后地热储层岩石物理力学性质试验评价
+特点: 高温花岗岩 水冷 空冷 液氮处理后，UCS 波速 孔隙率 AE 破坏形式 显微镜下微裂缝 的变化，总结是液氮高于水高于空冷。讨论部分主要两部分：①用波速、强度表征热冲击损伤；②分析热冲击的损伤机制。"
+112,Effects of rapid cooling treatment on heated sandstone: a comparison between water and liquid nitrogen cooling | Bulletin of Engineering Geology and the Environment (springer.com),https://link.springer.com/article/10.1007/s10064-019-01571-6,10.1007/s10064-019-01571-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,液氮损伤大于水,,快速冷却处理对加热砂岩的影响：水冷与液氮冷却的比较,0-600高温砂岩，水冷液氮冷处理后的：UCS、破坏形式、波速、抗拉强度、断裂韧性。讨论了：①拟合了波速和强度的关系；②引用了了最大边界拉应力的公式，然后分析了对流换热系数的差异。最后在结论里也说了，整个过程的破坏要分成高温的破坏和冷却的破坏，来分别找原因,,,"评价: 液氮损伤大于水
+作者信息: 快速冷却处理对加热砂岩的影响：水冷与液氮冷却的比较
+特点: 0-600高温砂岩，水冷液氮冷处理后的：UCS、破坏形式、波速、抗拉强度、断裂韧性。讨论了：①拟合了波速和强度的关系；②引用了了最大边界拉应力的公式，然后分析了对流换热系数的差异。最后在结论里也说了，整个过程的破坏要分成高温的破坏和冷却的破坏，来分别找原因"
+113,Cryogenic quenching of rock using liquid nitrogen as a coolant: Investigation of surface effects - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0017931017325954,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,关于液氮沸腾、传热系数、材料表面情况相关的引言写的很全面，值得参考,岩石液氮淬火的表面效应研究,,使用液氮作为冷却剂对岩石进行低温淬火：表面效应研究,测试了光滑表面、粗糙表面、刻线表面、涂油表面岩石在液氮中的LFP温度的变化。,,,"标记: 关于液氮沸腾、传热系数、材料表面情况相关的引言写的很全面，值得参考
+评价: 岩石液氮淬火的表面效应研究
+作者信息: 使用液氮作为冷却剂对岩石进行低温淬火：表面效应研究
+特点: 测试了光滑表面、粗糙表面、刻线表面、涂油表面岩石在液氮中的LFP温度的变化。"
+114,Regulated transient pool boiling of water during quenching on nanostructured surfaces with modified wettability from superhydrophilic to superhydrophobic - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0017931014003305,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,表面亲疏水对于热冲击沸腾的重要性？,亲疏表面在热冲击过程中对沸腾的影响,,在纳米结构表面淬火过程中调节水的瞬态池沸腾，润湿性从超亲水性改性到超疏水性,采用具有极端润湿性的纳米结构表面，可以增强沸腾传热或保持稳定的薄膜沸相，从而主动调节瞬态池沸腾。,,,"标记: 表面亲疏水对于热冲击沸腾的重要性？
+评价: 亲疏表面在热冲击过程中对沸腾的影响
+作者信息: 在纳米结构表面淬火过程中调节水的瞬态池沸腾，润湿性从超亲水性改性到超疏水性
+特点: 采用具有极端润湿性的纳米结构表面，可以增强沸腾传热或保持稳定的薄膜沸相，从而主动调节瞬态池沸腾。"
+115,Waterless fracturing technologies for unconventional reservoirs-opportunities for liquid nitrogen - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1875510016305996,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,无水压裂研究综述,,非常规油藏的无水压裂技术——液氮的机遇,,,,"评价: 无水压裂研究综述
+作者信息: 非常规油藏的无水压裂技术——液氮的机遇"
+117,液氮超低温诱导岩石类材料裂缝形成机制研究 (whrsm.ac.cn),http://rockmech.whrsm.ac.cn/CN/abstract/abstract31955.shtml,,rockmech.whrsm.ac.cn,rockmech.whrsm.ac.cn,needs_review,article_candidate,,试验和理论推导，研究了液氮对孔壁破裂的影响，分析了不同距离的破坏。,,液氮超低温诱导岩石类材料裂缝形成机制研究,,,,"评价: 试验和理论推导，研究了液氮对孔壁破裂的影响，分析了不同距离的破坏。
+作者信息: 液氮超低温诱导岩石类材料裂缝形成机制研究"
+118,Effect of Rapid Thermal Cooling on Mechanical Rock Properties | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-013-0523-3,10.1007/s00603-013-0523-3,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,引言中关于热应力的描述很好，可以参考,,快速热冷却对机械岩石性质的影响,100 200 300高温以后用风扇空冷，断裂韧度和抗拉强度发生了变化。其他还做了点循环加热冷却，没有仔细看，因为温度太低了。,,,"评价: 引言中关于热应力的描述很好，可以参考
+作者信息: 快速热冷却对机械岩石性质的影响
+特点: 100 200 300高温以后用风扇空冷，断裂韧度和抗拉强度发生了变化。其他还做了点循环加热冷却，没有仔细看，因为温度太低了。"
+119,https://www.sciencedirect.com/science/article/pii/S0960148121011435?via%3Dihub#bib46,https://www.sciencedirect.com/science/article/pii/S0960148121011435?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,太重要了！,和我的预想完全符合，并且我能更好的解释这一现象。另外的启发：由于缺乏液氮输送的耐低温管道和液氮压裂的高效支撑剂，以及消除莱顿弗罗斯特效应的流动参数优化等诸多科学技术难点依然存在。（这部分内容可以考虑写专利）——解释清楚了液氮损伤大于水大于空气的原因了。但是适用于花岗岩，砂岩不知道适用不适用。,,不同冷却处理下热花岗岩物理力学变化的试验研究,25 200 400 600 800高温花岗岩水、空气、液氮冷却。测试：体积、质量、密度、波速、孔隙率、渗透率。测试UCS、抗拉强度、SEM。讨论：①热冲击破坏机理（引用了边界处最大拉应力的计算公式，从对流换热系数变化的角度讨论了液氮损伤最严重的原因，算是给之前“液氮虽然温度低对流换热系数大，但是容易产生莱顿弗罗斯特效应反而降低换热能力，因此谁也不知道到底液氮冷冲击是强还是弱”的论断下了结论。）②把高温缓慢冷却看作是高温造成的损伤，水冷和液氮冷的值减去缓慢冷却的值看作是冷冲击过程的损伤，对比发现高温造成的损伤远远大于冷却的损伤。他后面解释说：因为导热性差，所以温度梯度在试件内不能快速扩散，并且试件小，热冲击时间持续短，所以热冲击造成的损伤小于高温的损伤。这是错误的，因为热冲击造成的影响范围有限，如果仅考虑热冲击的作用范围造成的损伤，那还是比高温的损伤大的。,"Li等[50]发现圆柱形物体在LNC下的传热系数高于WC，Wu等[51]和Wang等[33]发现LNC的效应比WC强，我们的研究也证实了这一点。
+加热花岗岩试件上的裂纹增加了传热表面的韧性，这也显著降低了莱顿霜冻效应对冷冲击的影响[52\53]。
+加热处理通常对花岗岩试件的物理和机械性能有显著且不可逆的影响[32,54]。",,"标记: 太重要了！
+评价: 和我的预想完全符合，并且我能更好的解释这一现象。另外的启发：由于缺乏液氮输送的耐低温管道和液氮压裂的高效支撑剂，以及消除莱顿弗罗斯特效应的流动参数优化等诸多科学技术难点依然存在。（这部分内容可以考虑写专利）——解释清楚了液氮损伤大于水大于空气的原因了。但是适用于花岗岩，砂岩不知道适用不适用。
+作者信息: 不同冷却处理下热花岗岩物理力学变化的试验研究
+特点: 25 200 400 600 800高温花岗岩水、空气、液氮冷却。测试：体积、质量、密度、波速、孔隙率、渗透率。测试UCS、抗拉强度、SEM。讨论：①热冲击破坏机理（引用了边界处最大拉应力的计算公式，从对流换热系数变化的角度讨论了液氮损伤最严重的原因，算是给之前“液氮虽然温度低对流换热系数大，但是容易产生莱顿弗罗斯特效应反而降低换热能力，因此谁也不知道到底液氮冷冲击是强还是弱”的论断下了结论。）②把高温缓慢冷却看作是高温造成的损伤，水冷和液氮冷的值减去缓慢冷却的值看作是冷冲击过程的损伤，对比发现高温造成的损伤远远大于冷却的损伤。他后面解释说：因为导热性差，所以温度梯度在试件内不能快速扩散，并且试件小，热冲击时间持续短，所以热冲击造成的损伤小于高温的损伤。这是错误的，因为热冲击造成的影响范围有限，如果仅考虑热冲击的作用范围造成的损伤，那还是比高温的损伤大的。
+结论: Li等[50]发现圆柱形物体在LNC下的传热系数高于WC，Wu等[51]和Wang等[33]发现LNC的效应比WC强，我们的研究也证实了这一点。
+加热花岗岩试件上的裂纹增加了传热表面的韧性，这也显著降低了莱顿霜冻效应对冷冲击的影响[52\53]。
+加热处理通常对花岗岩试件的物理和机械性能有显著且不可逆的影响[32,54]。"
+120,热损伤环面花岗岩失效模式的尺寸效应 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160923000059,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,太重要了！,值得参考,,热损伤环面花岗岩失效模式的尺寸效应,不同尺寸的圆环在高温处理下的破坏形式,,,"标记: 太重要了！
+评价: 值得参考
+作者信息: 热损伤环面花岗岩失效模式的尺寸效应
+特点: 不同尺寸的圆环在高温处理下的破坏形式"
+121,Impact of cooling rate on mechanical properties and failure mechanism of sandstone under thermal–mechanical coupling effect | International Journal of Coal Science & Technology (springer.com),https://link.springer.com/article/10.1007/s40789-023-00584-7,10.1007/s40789-023-00584-7,link.springer.com,Springer,auto_pdf_candidate,article_candidate,其实完全可以在这个模拟的基础上继续做不同尺度的试件在相同的热冲击条件下，破裂分区的规律,PFC数值模拟热冲击的分区破裂规律,,热力耦合作用下冷却速率对砂岩力学性能及破坏机理的影响,岩石材料热冲击力学实验，PFC数值模拟。测试了力学强度，做了数值模拟。主要研究了破裂的分区,,,"标记: 其实完全可以在这个模拟的基础上继续做不同尺度的试件在相同的热冲击条件下，破裂分区的规律
+评价: PFC数值模拟热冲击的分区破裂规律
+作者信息: 热力耦合作用下冷却速率对砂岩力学性能及破坏机理的影响
+特点: 岩石材料热冲击力学实验，PFC数值模拟。测试了力学强度，做了数值模拟。主要研究了破裂的分区"
+122,Mechanical Properties and Crack Propagation Behavior of Granite After High Temperature Treatment Based on a Thermo-Mechanical Grain-Based Model | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-023-03408-x,10.1007/s00603-023-03408-x,link.springer.com,Springer,auto_pdf_candidate,article_candidate,有PFC模拟的各种矿物的详细参数,,,基于热机械晶粒模型的花岗岩高温处理后力学性能及裂纹扩展行为,,,,"标记: 有PFC模拟的各种矿物的详细参数
+作者信息: 基于热机械晶粒模型的花岗岩高温处理后力学性能及裂纹扩展行为"
+123,基于CT-GBM数值模拟的高温花岗岩微开裂行为及损伤机理 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0266352X23001428,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,基于CT数据的PFC模拟,扫CT、拆分不同矿物成分、建立PFC数值模型、力学试验标定模拟参数、数值模拟不同温度下的破坏情况,,,CT+PFC,,,"标记: 基于CT数据的PFC模拟
+评价: 扫CT、拆分不同矿物成分、建立PFC数值模型、力学试验标定模拟参数、数值模拟不同温度下的破坏情况
+特点: CT+PFC"
+124,Multiscale damage and thermal-stress evolution characteristics of rocks with thermal storage potential under thermal shocks - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S2352152X24002159,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,启发，还没有PFC的液氮热冲击的研究,PFC模拟热冲击,,热冲击下储热岩石多尺度损伤及热应力演化特征,基于热冲击PFC模拟，分析了裂纹的生成、UCS的大小与温度、热冲击的关系，分析了试件中心和边界的热应力，分析了不同位置的裂纹（晶间晶内）,,,"标记: 启发，还没有PFC的液氮热冲击的研究
+评价: PFC模拟热冲击
+作者信息: 热冲击下储热岩石多尺度损伤及热应力演化特征
+特点: 基于热冲击PFC模拟，分析了裂纹的生成、UCS的大小与温度、热冲击的关系，分析了试件中心和边界的热应力，分析了不同位置的裂纹（晶间晶内）"
+125,Numerical modelling of heat shock‐assisted rock fracture - Pressacco - 2020 - International Journal for Numerical and Analytical Methods in Geomechanics - Wiley Online Library,https://onlinelibrary.wiley.com/doi/full/10.1002/nag.3004,10.1002/nag.3004,onlinelibrary.wiley.com,Wiley,manual_or_institution_required,article_candidate,,PFC模拟边界破坏严重,,热冲击辅助岩石破裂的数值模拟,PFC热冲击模拟的常规流程方法,,,"评价: PFC模拟边界破坏严重
+作者信息: 热冲击辅助岩石破裂的数值模拟
+特点: PFC热冲击模拟的常规流程方法"
+126,An investigation on the deterioration of physical and mechanical properties of granite after cyclic thermal shock - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0375650521002091,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,循环热冲击，ansys热力耦合模拟,参考文中的ansys热力耦合模拟的结果,,循环热冲击后花岗岩物理力学性能恶化的研究,循环热冲击处理后 力学强度、声发射、裂纹扩展的变化，结合ansys数值模拟研究热和力的作用关系,,,"标记: 循环热冲击，ansys热力耦合模拟
+评价: 参考文中的ansys热力耦合模拟的结果
+作者信息: 循环热冲击后花岗岩物理力学性能恶化的研究
+特点: 循环热冲击处理后 力学强度、声发射、裂纹扩展的变化，结合ansys数值模拟研究热和力的作用关系"
+127,W.G.P. Kumari,,,,unknown,title_or_note_only,article_candidate,Australia's geothermal frontier: Unlocking Granite's energy secrets - ScienceDirect,,,,,,,标记: Australia's geothermal frontier: Unlocking Granite's energy secrets - ScienceDirect
+128,,,,,unknown,title_or_note_only,article_candidate,"Kumari, WGP (Author) – 17 – All Databases (clarivate.cn)",,,,,,,"标记: Kumari, WGP (Author) – 17 – All Databases (clarivate.cn)"
+130,"Kang, Fangchao",,,,unknown,title_or_note_only,article_candidate,"Kang, Fangchao (Author) – 5 – All Databases (clarivate.cn)",,,,,,,"标记: Kang, Fangchao (Author) – 5 – All Databases (clarivate.cn)"
+132,Effect of high temperature on mode-I fracture toughness of granite subjected to liquid nitrogen cooling - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0013794421002745?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,高温对液氮冷却作用花岗岩I.型断裂韧性的影响,温度400℃是阈值，开始出现跨晶裂缝。600℃以后晶间和跨晶裂缝共同出现,,,"作者信息: 高温对液氮冷却作用花岗岩I.型断裂韧性的影响
+特点: 温度400℃是阈值，开始出现跨晶裂缝。600℃以后晶间和跨晶裂缝共同出现"
+133,液氮冷冲击作用下高温花岗岩的损伤评价与统计本构模型 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-022-02779-x,10.1007/s00603-022-02779-x,link.springer.com,Springer,auto_pdf_candidate,article_candidate,液氮热冲击：高温-液氮、高温-空冷、室温-液氮,力学试验的处理结果可以参考,,"Zhiheng Chen, Song Sha, Lida Xu, Junsong Quan, Guan Rong & Maiyong Jiang",,,,"标记: 液氮热冲击：高温-液氮、高温-空冷、室温-液氮
+评价: 力学试验的处理结果可以参考
+作者信息: Zhiheng Chen, Song Sha, Lida Xu, Junsong Quan, Guan Rong & Maiyong Jiang"
+134,Effect of liquid nitrogen cooling on mechanical characteristics and fracture morphology of layer coal under Brazilian splitting test - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S136516092100407X?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,如何分析粗糙面的分形维数？？？可以借鉴在我处理粗糙度的论文中。,,液氮冷却对巴西劈裂试验下层煤力学特性及裂缝形貌的影响,煤体层理角度不同，常温放入液氮中，UCS和巴西劈裂 的强度变化。测试了断面的粗糙度,,,"评价: 如何分析粗糙面的分形维数？？？可以借鉴在我处理粗糙度的论文中。
+作者信息: 液氮冷却对巴西劈裂试验下层煤力学特性及裂缝形貌的影响
+特点: 煤体层理角度不同，常温放入液氮中，UCS和巴西劈裂 的强度变化。测试了断面的粗糙度"
+136,Study on Fracture Surface Damage and Fluid Flow Characteristics of Hot Dry Rock with Different Failure Modes under Repeated Thermal Shock | Rock Mechanics and Rock Engineering (springer.com),https://link.springer.com/article/10.1007/s00603-023-03526-6?utm_source=xmol&utm_medium=affiliate&utm_content=meta&utm_campaign=DDCN_1_GL01_metadata,10.1007/s00603-023-03526-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,这篇文章的参考文献很好，要看一看,热冲击对试件劈裂粗糙面的影响和对渗流的影响,,反复热冲击作用下不同破坏模式干热岩裂缝面损伤及流体流动特性研究,劈裂圆柱和剪切圆柱形成粗糙面。然后对这个面进行循环热冲击，然后进行粗糙度测试，和渗流测试。,,,"标记: 这篇文章的参考文献很好，要看一看
+评价: 热冲击对试件劈裂粗糙面的影响和对渗流的影响
+作者信息: 反复热冲击作用下不同破坏模式干热岩裂缝面损伤及流体流动特性研究
+特点: 劈裂圆柱和剪切圆柱形成粗糙面。然后对这个面进行循环热冲击，然后进行粗糙度测试，和渗流测试。"
+137,Quantitative visualization and characteristics of gas flow in 3D pore-fracture system of tight rock based on Lattice Boltzmann simulation - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1875510021000743?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,对孔隙率和分形的研究，和黄旭东的论文相似,,基于格子玻尔兹曼模拟的致密岩三维孔隙裂缝系统气流定量可视化及特征,致密砂岩CT，基于REV研究了孔隙分布、分形维数与孔隙率的关系（和旭东的研究相似）。做了脉冲法的渗透，然后基于格子玻尔兹曼模拟了渗透性，试验和模拟的结果相似，然后基于模拟研究了流动规律,,,"评价: 对孔隙率和分形的研究，和黄旭东的论文相似
+作者信息: 基于格子玻尔兹曼模拟的致密岩三维孔隙裂缝系统气流定量可视化及特征
+特点: 致密砂岩CT，基于REV研究了孔隙分布、分形维数与孔隙率的关系（和旭东的研究相似）。做了脉冲法的渗透，然后基于格子玻尔兹曼模拟了渗透性，试验和模拟的结果相似，然后基于模拟研究了流动规律"
+138,https://www.sciencedirect.com/science/article/pii/S0375650522000530#bib0109,https://www.sciencedirect.com/science/article/pii/S0375650522000530,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,裂缝表征是地热工业中感兴趣的领域之一，因为裂缝充当流动管道，有助于地热储层的储层渗透性，特别是在增强型地热系统中。裂缝表征涉及确定裂缝的性质、网络、密度和应力相关特性，这与有效的油井放置、建模和预测地热储层的性能有关。Zhang等人（2015）使用基于混合ANN-GA的位移回分析方法来估计假设的自然裂缝储层的裂缝刚度，地应力和弹性参数周等人（2021）。 使用深度神经网络替代模型推断地热储层离散裂缝网络的裂缝密度和分形维数 .他们的研究表明，断裂密度受到数据的良好约束，而分形维数则更难确定。,,地下地热能中的机器学习：二十年回顾,,"Zhang, S., Yin, S., ASCE, M., and Yanguang Yuan (2015). Estimation of Fracture Stiffness, In Situ Stresses, and Elastic Parameters of Naturally Fractured Geothermal Reservoirs. International Journal of Geomechanics. Volume 15, Issue 1.",,"评价: 裂缝表征是地热工业中感兴趣的领域之一，因为裂缝充当流动管道，有助于地热储层的储层渗透性，特别是在增强型地热系统中。裂缝表征涉及确定裂缝的性质、网络、密度和应力相关特性，这与有效的油井放置、建模和预测地热储层的性能有关。Zhang等人（2015）使用基于混合ANN-GA的位移回分析方法来估计假设的自然裂缝储层的裂缝刚度，地应力和弹性参数周等人（2021）。 使用深度神经网络替代模型推断地热储层离散裂缝网络的裂缝密度和分形维数 .他们的研究表明，断裂密度受到数据的良好约束，而分形维数则更难确定。
+作者信息: 地下地热能中的机器学习：二十年回顾
+结论: Zhang, S., Yin, S., ASCE, M., and Yanguang Yuan (2015). Estimation of Fracture Stiffness, In Situ Stresses, and Elastic Parameters of Naturally Fractured Geothermal Reservoirs. International Journal of Geomechanics. Volume 15, Issue 1."
+139,https://www.sciencedirect.com/science/article/pii/S2214509523007817,https://www.sciencedirect.com/science/article/pii/S2214509523007817,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,不同角度砂岩高温后的三轴压缩强度,,层状砂岩高温作用后力学特性及损伤模型研究,20-800℃的不同层理角度的砂岩在马弗炉中自然冷却后，三轴压缩力学强度。研究了强度与温度、角度的关系，以及建立了考虑温度、角度的统计损伤本构模型,,,"评价: 不同角度砂岩高温后的三轴压缩强度
+作者信息: 层状砂岩高温作用后力学特性及损伤模型研究
+特点: 20-800℃的不同层理角度的砂岩在马弗炉中自然冷却后，三轴压缩力学强度。研究了强度与温度、角度的关系，以及建立了考虑温度、角度的统计损伤本构模型"
+140,Experimental investigation on mechanical properties and permeability evolution of red sandstone after heat treatments | Journal of Zhejiang University-SCIENCE A (springer.com),https://link.springer.com/article/10.1631/jzus.A1400362,10.1631/jzus.A1400362,link.springer.com,Springer,auto_pdf_candidate,article_candidate,砂岩渗透 三轴力学,400-600℃砂岩渗透性增大两倍,,热处理后红砂岩力学性能及渗透率演化试验研究,砂岩高温自然冷却后，测试了初始渗透性，然后测试了三轴压裂过程中渗透率的变化。结论：应力-应变过程中的渗透率随裂纹的演化而变化,,,"标记: 砂岩渗透 三轴力学
+评价: 400-600℃砂岩渗透性增大两倍
+作者信息: 热处理后红砂岩力学性能及渗透率演化试验研究
+特点: 砂岩高温自然冷却后，测试了初始渗透性，然后测试了三轴压裂过程中渗透率的变化。结论：应力-应变过程中的渗透率随裂纹的演化而变化"
+141,"Investigation on pore structure characteristics of ultra-tight sandstone reservoirs in the upper Triassic Xujiahe Formation of the northern Sichuan Basin, China - ScienceDirect",https://www.sciencedirect.com/science/article/pii/S0264817222000307,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,致密砂岩 压汞 分形,基于压汞计算孔隙分形,,川北盆地上三叠统徐家河组超致密砂岩储层孔隙结构特征研究,分析了不同直径孔隙的形成与矿物成分的关系。压汞并计算分形，超致密储层孔隙的非均质性主要由孔隙大小和裂缝决定,,,"标记: 致密砂岩 压汞 分形
+评价: 基于压汞计算孔隙分形
+作者信息: 川北盆地上三叠统徐家河组超致密砂岩储层孔隙结构特征研究
+特点: 分析了不同直径孔隙的形成与矿物成分的关系。压汞并计算分形，超致密储层孔隙的非均质性主要由孔隙大小和裂缝决定"
+142,裂缝表面粗糙度在裂隙岩石中宏观流体流动和传热中的作用 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160916300879,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,DFN网络，考虑粗糙度裂缝、传热研究,主要集中在粗糙度DFN模型的渗流传热特点,,裂缝表面粗糙度在裂隙岩石中宏观流体流动和传热中的作用,,参考DFN网络中嵌入随机粗糙度的方法，以及粗糙度参数的统计引入方法,,"标记: DFN网络，考虑粗糙度裂缝、传热研究
+评价: 主要集中在粗糙度DFN模型的渗流传热特点
+作者信息: 裂缝表面粗糙度在裂隙岩石中宏观流体流动和传热中的作用
+结论: 参考DFN网络中嵌入随机粗糙度的方法，以及粗糙度参数的统计引入方法"
+143,考虑粗壁裂缝的增强型地热系统采热性能的数值评估 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0960148122002099,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,对比了平板和粗糙两种裂缝面下的，DFN传热,,考虑粗壁裂缝的增强型地热系统热提取性能的数值评价,,,,"评价: 对比了平板和粗糙两种裂缝面下的，DFN传热
+作者信息: 考虑粗壁裂缝的增强型地热系统热提取性能的数值评价"
+145,使用不同冷却介质进行热处理后花岗岩的物理力学性能 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775524005146,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,未处理 400℃花岗岩经过空冷 水冷 液氮 处理后的各项参数的对比研究,数值大小可以参考，其他没什么新意,,,,,,"标记: 未处理 400℃花岗岩经过空冷 水冷 液氮 处理后的各项参数的对比研究
+评价: 数值大小可以参考，其他没什么新意"
+146,液氮冷却后加热花岗岩的物理力学性能和微观结构演化模式研究 |地质力学和地质物理学,https://link.springer.com/article/10.1007/s40948-023-00720-2,10.1007/s40948-023-00720-2,link.springer.com,Springer,auto_pdf_candidate,article_candidate,高温花岗岩在液氮中热冲击冷却,折线图画的挺好的可以参考,,,全文流程：处理-密度、导热系数、孔隙率、波速、力学强度与变形-CT扫描拿到分形维数-NMR分析孔径变化-XRD分析矿物成分变化-机理讨论-工程应用,,,"标记: 高温花岗岩在液氮中热冲击冷却
+评价: 折线图画的挺好的可以参考
+特点: 全文流程：处理-密度、导热系数、孔隙率、波速、力学强度与变形-CT扫描拿到分形维数-NMR分析孔径变化-XRD分析矿物成分变化-机理讨论-工程应用"
+147,液氮冷却状态对煤机械性能和压裂特性的影响 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-022-02851-6,10.1007/s00603-022-02851-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,很有意思，做了液氮冷却和液氮冷却后快速加热的试验,液氮冷却后快速加热可以做研究,,,我可以提出新方法：高温岩石液氮刺激以后快速通入高温蒸汽。同时做两个内容，一个完整岩石，一个有劈裂粗糙面的,,,"标记: 很有意思，做了液氮冷却和液氮冷却后快速加热的试验
+评价: 液氮冷却后快速加热可以做研究
+特点: 我可以提出新方法：高温岩石液氮刺激以后快速通入高温蒸汽。同时做两个内容，一个完整岩石，一个有劈裂粗糙面的"
+153,变质岩裂缝地层论文,,,,unknown,title_or_note_only,article_candidate,,,,,,,,
+154,"Metamorphic geothermal reservoir characterisation—A case study in the Jinlun geothermal area, Taitung, Taiwan - ScienceDirect",https://www.sciencedirect.com/science/article/pii/S0375650517302390,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,台湾的变质岩裂缝热储,,变质地热储层特征——以台湾台东金仑地热区为例,分析台湾的地质构造特征，从构造环境、重力、电阻率方面，论述了台湾地热赋存于变质岩裂缝储层中,,,"评价: 台湾的变质岩裂缝热储
+作者信息: 变质地热储层特征——以台湾台东金仑地热区为例
+特点: 分析台湾的地质构造特征，从构造环境、重力、电阻率方面，论述了台湾地热赋存于变质岩裂缝储层中"
+155,"The reservoir characteristics and their significance for deliverability in metamorphic granite buried hill: a case study from the JZS oil field in the Liaodong Bay Basin, NE China | Arabian Journal of Geosciences (springer.com)",https://link.springer.com/article/10.1007/s12517-019-4823-0?utm_source=xmol&utm_medium=affiliate&utm_content=meta&utm_campaign=DDCN_1_GL01_metadata,10.1007/s12517-019-4823-0,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,前人研究表明，裂缝是变质岩的主要储集空间。,,变质花岗岩埋山储层特征及其意义——以东北辽东湾盆地JZS油田为例,,,,"评价: 前人研究表明，裂缝是变质岩的主要储集空间。
+作者信息: 变质花岗岩埋山储层特征及其意义——以东北辽东湾盆地JZS油田为例"
+168,地震,,,,unknown,title_or_note_only,article_candidate,,,,,,,,
+169,Fault and fracture network characterization using seismic data: a study based on neural network models assessment | Geomechanics and Geophysics for Geo-Energy and Geo-Resources (springer.com),https://link.springer.com/article/10.1007/s40948-022-00352-y?utm_source=xmol&utm_medium=affiliate&utm_content=meta&utm_campaign=DDCN_1_GL01_metadata,10.1007/s40948-022-00352-y,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,采用地震数据对断层进行预测判断,,基于地震数据的断层和裂缝网络表征：基于神经网络模型评估的研究,,,,"评价: 采用地震数据对断层进行预测判断
+作者信息: 基于地震数据的断层和裂缝网络表征：基于神经网络模型评估的研究"
+170,Seismic prediction method of multiscale fractured reservoir | Applied Geophysics (springer.com),https://link.springer.com/article/10.1007/s11770-018-0667-8,10.1007/s11770-018-0667-8,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,基于储层裂缝密度分布的宏观和中尺度裂缝预测方法,,多尺度裂缝性储层地震预测方法,,,,"评价: 基于储层裂缝密度分布的宏观和中尺度裂缝预测方法
+作者信息: 多尺度裂缝性储层地震预测方法"
+171,全文阅读--XML全文阅读--中国知网 (cnki.net),https://kns.cnki.net/KXReader/Detail?invoice=Ze5jysWNmCyhq%2FexYlmtcpAx%2B4PZoYA8QHiPCLzN57bFYNocgmO%2BQeSE59FSeSlE0qdoD8bIifDGc3sttfB%2BZsUHg4hDrypqKsmiEreelDUxBhpT%2BVLqwIYQMHFcQ6lFzM%2F7PPUGyqYJ8Mh96B9xDP5WI%2BktVNUa1r%2FzQC6KtVg%3D&DBCODE=CJFD&FileName=KXTB200209003&TABLEName=cjfd2002&nonce=82914259E29348169BA2554D80D224E2&TIMESTAMP=1706847579275&uid=,,kns.cnki.net,CNKI,manual_or_institution_required,article_candidate,,华北地区震源深度14KM，这一深度的地壳力学变形特性,,中国大陆地震震源深度极其构造含义,,,,"评价: 华北地区震源深度14KM，这一深度的地壳力学变形特性
+作者信息: 中国大陆地震震源深度极其构造含义"
+172,全文阅读--XML全文阅读--中国知网 (cnki.net),https://kns.cnki.net/KXReader/Detail?invoice=HOdonuYlt2Eo40ZoLG6%2BqkiLXcWK3juTeqHXxFQCx%2BybemIBKOw7BURWCEFzOHm8Tu2dkqvh%2BjVU2Nf0AV5uqcYFLJ%2FuOWGcNFdKVIRwG7Zavzu%2F3LyGLAy3Kx29iEfBcd4TNSbeLCkcBKdmSk5gmF0WuoTuEvfWqWn8iWEjDvo%3D&DBCODE=CJFQ&FileName=DQWX201202013&TABLEName=cjfdlast2022&nonce=EB7DC1933C2647178A4E441E6984B750&TIMESTAMP=1706847176207&uid=,,kns.cnki.net,CNKI,manual_or_institution_required,article_candidate,,山西地震深度及分布,,山西地震带中小震精确位置及其显示的山西地震构造特征,,,,"评价: 山西地震深度及分布
+作者信息: 山西地震带中小震精确位置及其显示的山西地震构造特征"
+174,潜山油气藏,,,,unknown,title_or_note_only,article_candidate,,,,,,,,
+175,https://www.sciencedirect.com/science/article/pii/S0264817223003082,https://www.sciencedirect.com/science/article/pii/S0264817223003082,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,中国渤海湾盆地渤中19-6区变质潜山储层天然裂缝,,,,作者信息: 中国渤海湾盆地渤中19-6区变质潜山储层天然裂缝
+176,https://www.frontiersin.org/articles/10.3389/feart.2022.935508/full,https://www.frontiersin.org/articles/10.3389/feart.2022.935508/full,10.3389/feart.2022.935508/full,www.frontiersin.org,Frontiers,auto_pdf_candidate,article_candidate,,变质岩几乎没有原生孔隙，只有构造运动和流体活动形成的裂缝和次生孔隙,,渤海湾盆地渤中凹陷太古宙变质基底埋山储层裂缝发育特征及其控制因素,,,,"评价: 变质岩几乎没有原生孔隙，只有构造运动和流体活动形成的裂缝和次生孔隙
+作者信息: 渤海湾盆地渤中凹陷太古宙变质基底埋山储层裂缝发育特征及其控制因素"
+179,储层物性研究,,,,unknown,title_or_note_only,article_candidate,,,,,,,,
+183,水热力耦合,,,,unknown,title_or_note_only,article_candidate,,,,,,,,
+184,https://www.sciencedirect.com/science/article/pii/S0013795221003501,https://www.sciencedirect.com/science/article/pii/S0013795221003501,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,裂隙岩在热-水力-力学耦合环境下的渗透性演化与非线性渗流特性试验研究——以锡山地区沉积岩为例,,,,作者信息: 裂隙岩在热-水力-力学耦合环境下的渗透性演化与非线性渗流特性试验研究——以锡山地区沉积岩为例
+192,地层岩芯裂缝分析,,,,unknown,title_or_note_only,article_candidate,,,,,,,,
+194,https://www.sciencedirect.com/science/article/pii/S0191814121000948,https://www.sciencedirect.com/science/article/pii/S0191814121000948,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,,,莱茵河上游地堑中部天然裂缝性地热储层的结构特征,,,,作者信息: 莱茵河上游地堑中部天然裂缝性地热储层的结构特征
+196,重新审视每个裂缝的大小和空间模式：从岩体表面到内部的推断 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775524005134,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,基于蒙特卡洛进行模拟,找到了一种根据展现在表面的裂缝的情况，判断裂缝真实大小的方法,,,进一步的，如果这个方法能走的同，其实可以算一下表面分形维数和空间分形维数之间的关系,这个研究很重要，要参考,,"标记: 基于蒙特卡洛进行模拟
+评价: 找到了一种根据展现在表面的裂缝的情况，判断裂缝真实大小的方法
+特点: 进一步的，如果这个方法能走的同，其实可以算一下表面分形维数和空间分形维数之间的关系
+结论: 这个研究很重要，要参考"
+206,花岗岩经受热-冷却处理的等效导热系数劣化 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775523003475?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,可以参考他的PFC模拟的设置，看看不同速率的冷却是如何在模拟中实现的,,花岗岩在加热-冷却处理下的等效导热率劣化,空冷、水冷、液氮冷以后，花岗岩等效导热性的劣化,边界先破裂,,"评价: 可以参考他的PFC模拟的设置，看看不同速率的冷却是如何在模拟中实现的
+作者信息: 花岗岩在加热-冷却处理下的等效导热率劣化
+特点: 空冷、水冷、液氮冷以后，花岗岩等效导热性的劣化
+结论: 边界先破裂"
+210,表面粗糙度,,,,unknown,title_or_note_only,article_candidate,,,,,,,,
+212,高温和热循环对花岗岩裂缝表面粗糙度的影响——3D形貌洞察 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S167477552400341X,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,给出了6个粗糙度参数的计算方法,,高温和热循环对花岗岩裂缝表面粗糙度的影响,计算了6中粗糙度参数，平面的立体的，面积啥的好几种。；计算了上下两个面的闭合状态,,,"评价: 给出了6个粗糙度参数的计算方法
+作者信息: 高温和热循环对花岗岩裂缝表面粗糙度的影响
+特点: 计算了6中粗糙度参数，平面的立体的，面积啥的好几种。；计算了上下两个面的闭合状态"
+213,不同破坏模式的干热岩石在反复热冲击作用下的裂缝表面损伤及流体流动特性研究 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-023-03526-6?utm_source=xmol&utm_medium=affiliate&utm_content=meta&utm_campaign=DDCN_1_GL01_metadata,10.1007/s00603-023-03526-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,计算了裂隙面分形维数、裂隙开度分形维数，值得参考,,不同破坏模式的干热岩石在反复热冲击作用下的裂缝表面损伤及流体流动特性研究 |岩石力学和岩石工程,,,,"评价: 计算了裂隙面分形维数、裂隙开度分形维数，值得参考
+作者信息: 不同破坏模式的干热岩石在反复热冲击作用下的裂缝表面损伤及流体流动特性研究 |岩石力学和岩石工程"
+214,循环剪切作用下岩石裂隙中非达西流的各向异性 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775524005547,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,考虑了断面粗糙度各向异性对非达西渗流的各向异性的影响，非常重要，是我的一个重要参考,,,,,,评价: 考虑了断面粗糙度各向异性对非达西渗流的各向异性的影响，非常重要，是我的一个重要参考
+215,基于一阶导数均方根的修正粗糙度指数及其与岩石节理峰值剪切强度的关系 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S0013795220317956?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,这个老师的课题组做了一系列粗糙度相关的研究，需要关注一下,,,,,,评价: 这个老师的课题组做了一系列粗糙度相关的研究，需要关注一下
+216,用于岩石节理 3D 粗糙度的新粗糙度参数 |工程地质与环境通报,https://link.springer.com/article/10.1007/s10064-018-1394-3?utm_source=xmol&utm_medium=affiliate&utm_content=meta&utm_campaign=DDCN_1_GL01_metadata,10.1007/s10064-018-1394-3,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,提出了一个新的三维的粗糙度（ADH粗糙度），还有粗糙度的分形维数，可以参考,,,讨论一种新的JRC表征方法是否合理时，要基于巴顿等人的数据做验证或者说在他们的数据基础上做拟合。,,,"评价: 提出了一个新的三维的粗糙度（ADH粗糙度），还有粗糙度的分形维数，可以参考
+特点: 讨论一种新的JRC表征方法是否合理时，要基于巴顿等人的数据做验证或者说在他们的数据基础上做拟合。"
+218,基于大型天然岩石痕迹数据集的 JRC 计算统计方法和分形方法的比较评价 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-020-02348-0,10.1007/s00603-020-02348-0,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,概述了从JRC粗糙度提出以后的各种计算方法以及对表面粗糙情况的反映，最后指出：用Z2就能很好的描述粗糙情况，并且输入数据要以1mm作为插值间隔，并对数据进行去趋势处理（我理解就是把曲线调整水平）,,,回顾了巴顿提出10条代表曲线至今的JRC计算分析历史,,,"评价: 概述了从JRC粗糙度提出以后的各种计算方法以及对表面粗糙情况的反映，最后指出：用Z2就能很好的描述粗糙情况，并且输入数据要以1mm作为插值间隔，并对数据进行去趋势处理（我理解就是把曲线调整水平）
+特点: 回顾了巴顿提出10条代表曲线至今的JRC计算分析历史"
+219,使用变异函数方法对天然岩石节理粗糙度的非平稳性、非均质性、尺度效应和各向异性研究 |工程地质与环境通报,https://link.springer.com/article/10.1007/s10064-021-02321-3?fromPaywallRec=false,10.1007/s10064-021-02321-3,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,杜时贵团队提出了他们的粗糙度计算公式，基于分形维数的,,,“变异函数方法是准确量化粗糙度的最佳方法之一。结果还表明 DxKv是可用于精确粗糙度量化的可靠参数。”,,,"评价: 杜时贵团队提出了他们的粗糙度计算公式，基于分形维数的
+特点: “变异函数方法是准确量化粗糙度的最佳方法之一。结果还表明 DxKv是可用于精确粗糙度量化的可靠参数。”"
+220,使用粗糙度参数确定关节粗糙度系数 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-013-0535-z,10.1007/s00603-013-0535-z,link.springer.com,Springer,auto_pdf_candidate,article_candidate,计算公式有参考价值,基于巴顿给的那些曲线，综述了各种情况，给出了不同采样间距下，各种参数与JRC的关系,,,“但是，需要注意的是，Z 2仅凭这些值不足以评估节理粗糙度，因为这些值随采样间隔而变化（Yu 和 Vayssade 1991;Chun 和 Kim 2001 年）。”,“Z2会随着采样间距的增大而减小”,,"标记: 计算公式有参考价值
+评价: 基于巴顿给的那些曲线，综述了各种情况，给出了不同采样间距下，各种参数与JRC的关系
+特点: “但是，需要注意的是，Z 2仅凭这些值不足以评估节理粗糙度，因为这些值随采样间隔而变化（Yu 和 Vayssade 1991;Chun 和 Kim 2001 年）。”
+结论: “Z2会随着采样间距的增大而减小”"
+221,基于模糊综合评价的天然岩石节理剪切相关粗糙度分类与强度模型 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160920309163?via=ihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,赵延林,采用模糊评价的方式，研究了粗糙度与剪切强度之间的关系,,,,,,"标记: 赵延林
+评价: 采用模糊评价的方式，研究了粗糙度与剪切强度之间的关系"
+222,岩石裂缝表面节理粗糙度系数与分形维数的关系 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160915000143?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,李彦容,研究了三种分形维数的计算方法以及用于评估JRC 的准确性,,,,,,"标记: 李彦容
+评价: 研究了三种分形维数的计算方法以及用于评估JRC 的准确性"
+223,裂缝表面粗糙度在裂隙岩石中宏观流体流动和传热中的作用 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160916300879?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,赵志宏团队,离散裂隙网络考虑裂缝粗糙度的渗流和传热模拟研究,,,,,,"标记: 赵志宏团队
+评价: 离散裂隙网络考虑裂缝粗糙度的渗流和传热模拟研究"
+224,新的二维不连续性粗糙度参数及其与JRC的相关性 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160910001036?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,提到了粗糙度的方向性（各向异性）,很早就提出了粗糙度的方向性，并且指出最大粗糙度和最小粗糙度的比值可以用来衡量粗糙度的各向异性的程度。,,,只是简单的提了一下粗糙度的各向异性分析，我觉得不仅要考虑比值大小，还要考虑绝对值的大小，以及与剪切方向的关系，总之考虑的因素要多一点，在这个上面继续做一点文章,,,"标记: 提到了粗糙度的方向性（各向异性）
+评价: 很早就提出了粗糙度的方向性，并且指出最大粗糙度和最小粗糙度的比值可以用来衡量粗糙度的各向异性的程度。
+特点: 只是简单的提了一下粗糙度的各向异性分析，我觉得不仅要考虑比值大小，还要考虑绝对值的大小，以及与剪切方向的关系，总之考虑的因素要多一点，在这个上面继续做一点文章"
+225,接头粗糙度系数 （JRC） 的研究进展及其工程应用 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775523000550?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,JRC的各向异性已经被研究的非常多了,要研究JRC方向性，必须仔细参考这篇文章的图和内容,,,,,,"标记: JRC的各向异性已经被研究的非常多了
+评价: 要研究JRC方向性，必须仔细参考这篇文章的图和内容"
+226,三维激光扫描揭示的节理粗糙度系数的几何异质性 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S001379521930314X,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,讨论了采样间距对JRC的影响；讨论了粗糙度各向异性的相关内容,感觉研究做了一半，只发现采样间距越小，JRC越大，也没给出个更深入的解释或者应该怎么处理,,,分形维数和JRC的计算用了谢和平的方法：,,,"标记: 讨论了采样间距对JRC的影响；讨论了粗糙度各向异性的相关内容
+评价: 感觉研究做了一半，只发现采样间距越小，JRC越大，也没给出个更深入的解释或者应该怎么处理
+特点: 分形维数和JRC的计算用了谢和平的方法："
+227,估算岩石断裂表面粗糙度系数的不确定性 |工程地质与环境通报,https://link.springer.com/article/10.1007/s10064-016-0994-z?fromPaywallRec=false,10.1007/s10064-016-0994-z,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,综述了很多方法对JRC计算的公式，讨论了采样间距对计算结果的影响,,,“本研究基于从文献中检索到的 223 个岩石节理剖面。在这些概况中，112 个用于研究根据不同 SI 定量估计 JRC 的不确定性，而 111 个用于研究视觉估计的不确定性。得出以下结论：”,,,"评价: 综述了很多方法对JRC计算的公式，讨论了采样间距对计算结果的影响
+特点: “本研究基于从文献中检索到的 223 个岩石节理剖面。在这些概况中，112 个用于研究根据不同 SI 定量估计 JRC 的不确定性，而 111 个用于研究视觉估计的不确定性。得出以下结论：”"
+228,岩石裂缝的三维节理粗糙度系数值的估算 |工程地质与环境通报,https://link.springer.com/article/10.1007/s10064-017-1150-0,10.1007/s10064-017-1150-0,link.springer.com,Springer,auto_pdf_candidate,article_candidate,综述了3D-JRC的发展历程，给出了3D-JRC的计算公式,,,,,,,标记: 综述了3D-JRC的发展历程，给出了3D-JRC的计算公式
+229,一种估算岩体中不连续面的 2D 节理粗糙度系数的新方法 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160914002500?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,给出了在Z2基础上改进的JRC计算方法,,,,,,,标记: 给出了在Z2基础上改进的JRC计算方法
+230,循环加热和空气冷却处理下花岗岩裂缝的剪切性能变化 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775524001161?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,高温后缓慢冷却，最多80次循环，然后做直剪试验，分析粗糙度变化与热循环之间的关系,,,,,,,标记: 高温后缓慢冷却，最多80次循环，然后做直剪试验，分析粗糙度变化与热循环之间的关系
+234,基于大型天然岩石痕迹数据集的 JRC 计算统计方法和分形方法的比较评价 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-020-02348-0,10.1007/s00603-020-02348-0,link.springer.com,Springer,auto_pdf_candidate,article_candidate,粗糙度计算“去势”处理、1mm插值采样,,,,,,,标记: 粗糙度计算“去势”处理、1mm插值采样
+245,RJNS3D的相关文献,,,,unknown,title_or_note_only,article_candidate,,,,,,,,
+246,基于分形理论的采矿诱导裂缝网络重建和各向异性采矿增强渗透率评估 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775524003950,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,基于RJNS3D重建裂缝模型的全过程,,,,,,评价: 基于RJNS3D重建裂缝模型的全过程
+254,储层岩石在热-机械耦合条件下的热特性及其对地热系统性能的影响 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-025-04587-5,10.1007/s00603-025-04587-5,link.springer.com,Springer,auto_pdf_candidate,article_candidate,花岗岩的传热参数,测试了 不同压力、不同温度下的共和花岗岩、康定花岗岩和松辽砂岩 的热物性参数。也做了热流固耦合，研究了热物性参数对采热寿命、储层应力场的影响,,,传热学参数的测试比较详细,,,"标记: 花岗岩的传热参数
+评价: 测试了 不同压力、不同温度下的共和花岗岩、康定花岗岩和松辽砂岩 的热物性参数。也做了热流固耦合，研究了热物性参数对采热寿命、储层应力场的影响
+特点: 传热学参数的测试比较详细"
+255,基于 100 次剪切试验和 PSO-RBF 神经网络的表面形貌评估方法 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-025-04566-w,10.1007/s00603-025-04566-w,link.springer.com,Springer,auto_pdf_candidate,article_candidate,不同的JRC参数的缺点；3D雕刻粗糙面剪切试验；神经网络多参数判断JRC值,Z2 sf Rp等等参数可以分为 角度型参数和高度型参数，角度类型参数的预测结果明显优于高度类型参数,,,,,,"标记: 不同的JRC参数的缺点；3D雕刻粗糙面剪切试验；神经网络多参数判断JRC值
+评价: Z2 sf Rp等等参数可以分为 角度型参数和高度型参数，角度类型参数的预测结果明显优于高度类型参数"
+256,液氮冷却冲击作用下高温花岗闪长岩的损伤机理及渗透率演化 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-025-04520-w,10.1007/s00603-025-04520-w,link.springer.com,Springer,auto_pdf_candidate,article_candidate,比较常规,200-600℃高温花岗岩在液氮中冷却以后的：显微破坏情况、体积密度、渗透性、力学强度、波速数据。可供参考,实时体积的测量：未处理、实时高温、实时低温、冷却过程的体积变化和质量变化：应该搞一个绝热的垫板，否则会影响秤的准确性,,,,,"标记: 比较常规
+评价: 200-600℃高温花岗岩在液氮中冷却以后的：显微破坏情况、体积密度、渗透性、力学强度、波速数据。可供参考
+启发: 实时体积的测量：未处理、实时高温、实时低温、冷却过程的体积变化和质量变化：应该搞一个绝热的垫板，否则会影响秤的准确性"
+257,考虑采样方法和几何特性，重新审视尺度对节理粗糙度系数和剪切强度的影响 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775524004104,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,PFC模拟粗糙剪切；,提出了移动窗口采样代替传统的缩放窗口采样，使得不同尺度下的粗糙度值差异不那么大；后面又进行了PFC剪切模拟，研究了粗糙度与剪切之间的关系,需要再仔细看看参考一下,,,,,"标记: PFC模拟粗糙剪切；
+评价: 提出了移动窗口采样代替传统的缩放窗口采样，使得不同尺度下的粗糙度值差异不那么大；后面又进行了PFC剪切模拟，研究了粗糙度与剪切之间的关系
+启发: 需要再仔细看看参考一下"
+258,单轴压缩作用下花岗岩的温度依赖性声发射特性及统计本构模型 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775524003664,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,加热-自然冷却以后的单轴压缩力学强度、波速、声发射,试验普通，引用整理的数据不少，可供参考；讨论了力学损伤和热损伤，可参考,,,,,,"标记: 加热-自然冷却以后的单轴压缩力学强度、波速、声发射
+评价: 试验普通，引用整理的数据不少，可供参考；讨论了力学损伤和热损伤，可参考"
+259,基于遗传算法优化的反向传播神经网络，用于岩石节理粗糙度评估 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775524005602,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,GABP神经网络的JRC预测,有具体流程，看着很细但是好像又不是很细,,,,,,"标记: GABP神经网络的JRC预测
+评价: 有具体流程，看着很细但是好像又不是很细"
+267,岩芯,,,,unknown,title_or_note_only,article_candidate,,,,,,,,
+269,通过将扫描圆技术应用于钻孔电视机的图像来表征花岗岩的节理粗糙度 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-011-0134-9,10.1007/s00603-011-0134-9,link.springer.com,Springer,auto_pdf_candidate,article_candidate,,这篇文章非常好，整体工作是基于钻孔录像获得的井壁裂缝轨迹，以及取芯的粗糙面进行的，提到了断面粗糙度的方向性，涉及到了计算粗糙度分形的方法，讨论了裂缝断面轨迹和断面粗糙度之间的关系，这个思路非常好，期望通过裂缝轨迹来预估断面粗糙度，我的工作也可以沿着这样的方向做,,,钻孔录像获得裂缝轨迹、计算轨迹分形维数、计算断面粗糙度、讨论轨迹粗糙度和断面粗糙度的关系,这个研究非常有意思！,,"评价: 这篇文章非常好，整体工作是基于钻孔录像获得的井壁裂缝轨迹，以及取芯的粗糙面进行的，提到了断面粗糙度的方向性，涉及到了计算粗糙度分形的方法，讨论了裂缝断面轨迹和断面粗糙度之间的关系，这个思路非常好，期望通过裂缝轨迹来预估断面粗糙度，我的工作也可以沿着这样的方向做
+特点: 钻孔录像获得裂缝轨迹、计算轨迹分形维数、计算断面粗糙度、讨论轨迹粗糙度和断面粗糙度的关系
+结论: 这个研究非常有意思！"
+270,使用新型集成直径型芯变形和超声分析确定 3D 应力状态 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-025-04427-6,10.1007/s00603-025-04427-6,link.springer.com,Springer,auto_pdf_candidate,article_candidate,DCDA方法，在引言中有表述,"内容：常见的DCDA方法是判断垂直于钻进方向上，岩芯直径的微小变化，来评估地应力。但是这种方法只适用于二维平面，本研究结合超声测量，确定了空间倾角，实现了3D的地应力估计。
+具体的，是在钻孔岩芯上，按照不同的角度钻取更多非常小直径的岩芯，进行单轴压缩测试和波速测试。
+最后，结合工程上获得的地应力结果，验证了本方法的准确性",DCDA其实是直径的变化，与马鞍状轨迹的关系？可以根据点云数据测一下（直接捕获点云的外轮廓信息，钻进方向来定向（侧面垂直的两个点），将点云投影到垂直于钻进方向的平面上）,,,,,"标记: DCDA方法，在引言中有表述
+评价: 内容：常见的DCDA方法是判断垂直于钻进方向上，岩芯直径的微小变化，来评估地应力。但是这种方法只适用于二维平面，本研究结合超声测量，确定了空间倾角，实现了3D的地应力估计。
+具体的，是在钻孔岩芯上，按照不同的角度钻取更多非常小直径的岩芯，进行单轴压缩测试和波速测试。
+最后，结合工程上获得的地应力结果，验证了本方法的准确性
+启发: DCDA其实是直径的变化，与马鞍状轨迹的关系？可以根据点云数据测一下（直接捕获点云的外轮廓信息，钻进方向来定向（侧面垂直的两个点），将点云投影到垂直于钻进方向的平面上）"
+271,使用直径岩芯变形测定采矿引起的应力 |国际煤炭科学与技术杂志,https://link.springer.com/article/10.1007/s40789-022-00549-2,10.1007/s40789-022-00549-2,link.springer.com,Springer,auto_pdf_candidate,article_candidate,应该也是DCDA方法，测试岩芯直径变形的方法一样,同样是测直径变形情况，结合USC数据，估计地应力情况,设计不同围压、温度、矿物、原生层理、情况下，微型钻孔取芯，分析饼化情况，分析表面粗糙度,,,,,"标记: 应该也是DCDA方法，测试岩芯直径变形的方法一样
+评价: 同样是测直径变形情况，结合USC数据，估计地应力情况
+启发: 设计不同围压、温度、矿物、原生层理、情况下，微型钻孔取芯，分析饼化情况，分析表面粗糙度"
+272,利用岩心直径变形估算采矿工作面应力的方法 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160922002660,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,和上一篇”使用直径岩芯变形测定采矿引起的应力“内容大致相同，但是这俩研究主要研究水平方向的钻孔岩芯变形,,,,,,,标记: 和上一篇”使用直径岩芯变形测定采矿引起的应力“内容大致相同，但是这俩研究主要研究水平方向的钻孔岩芯变形
+273,基于直径岩心变形技术的采矿前沿稳定性评价实用方法,https://www.mdpi.com/2075-163X/14/4/385,,www.mdpi.com,MDPI,auto_pdf_candidate,article_candidate,同上，加了模拟,,,,,,,标记: 同上，加了模拟
+274,用于采矿诱导应力估计的直径型芯变形技术验证：案例研究 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-024-03866-x,10.1007/s00603-024-03866-x,link.springer.com,Springer,auto_pdf_candidate,article_candidate,同上，主要是工程数据分析,,,,,,,标记: 同上，主要是工程数据分析
+275,用于原位应力估计的直径型芯变形分析 （DCDA） 和裂缝表面形态的评估 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-025-04512-w?fromPaywallRec=false,10.1007/s00603-025-04512-w,link.springer.com,Springer,auto_pdf_candidate,article_candidate,DCDA+表面粗糙度,"DCDA方法在测量出直径的变化再结合杨氏模量和泊松比，就能估算地应力
+讨论部分：地应力大小和方向的估计","他没有用表面形貌做粗糙度的数据
+这篇论文的参考文献非常值得仔细分析","Qingsen Meng, Yanjun Shang, Jianjun Chi, Shengwen Qi, Muhammad Hasan & Xuetao Yi",1：”因为裂缝表面的各向异性在小于 0.4-0.5 毫米的尺度上消失：,断层开槽的最小尺度 |地质学 |地球科学世界,,"标记: DCDA+表面粗糙度
+评价: DCDA方法在测量出直径的变化再结合杨氏模量和泊松比，就能估算地应力
+讨论部分：地应力大小和方向的估计
+启发: 他没有用表面形貌做粗糙度的数据
+这篇论文的参考文献非常值得仔细分析
+作者信息: Qingsen Meng, Yanjun Shang, Jianjun Chi, Shengwen Qi, Muhammad Hasan & Xuetao Yi
+特点: 1：”因为裂缝表面的各向异性在小于 0.4-0.5 毫米的尺度上消失：
+结论: 断层开槽的最小尺度 |地质学 |地球科学世界"
+276,,,,,unknown,title_or_note_only,article_candidate,,,,,2：弹性各向异性可以通过垂直于核心轴的 P 波速度的圆周变化来识别。如果这种各向异性很明显，例如，最大 P 波速度超过最小 20% 或更多，则不应将 DCDA 应用于核心样品,一种用于原位应力测量的岩心直径变形分析新方法 - ScienceDirect,,"特点: 2：弹性各向异性可以通过垂直于核心轴的 P 波速度的圆周变化来识别。如果这种各向异性很明显，例如，最大 P 波速度超过最小 20% 或更多，则不应将 DCDA 应用于核心样品
+结论: 一种用于原位应力测量的岩心直径变形分析新方法 - ScienceDirect"
+277,用于估计原位应力的岩心盘随机分析 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-009-0051-3,10.1007/s00603-009-0051-3,link.springer.com,Springer,auto_pdf_candidate,article_candidate,非常重要，分析岩芯饼的厚度,没有尝试区分自然裂缝和钻井诱发的裂缝，因为声学井筒扫描表明，绝大多数岩心压裂是钻井诱发的。例如，即使在最浅、岩芯裂缝最少的区域，岩心也出现了 275 处裂缝，而在声学扫描的同一截面中可以看到 40 处。因此，作为上限，天然裂缝将占岩心中观察到的裂缝总数的 15% 以下。在许多情况下，它会明显减少。事实上，在井筒扫描中，相对于天然裂缝，岩心压裂的普遍性可能会使任何将岩心盘与天然裂缝联系起来的尝试都变得徒劳无功。,我可以研究岩心饼化前后的距离变化、研究不同的饼化厚度与矿物成分、力学强度之间的关系（这就涉及到另一个问题，微小的样本的力学强度测试是否合理？）,Andrew P. Bunger,,,,"标记: 非常重要，分析岩芯饼的厚度
+评价: 没有尝试区分自然裂缝和钻井诱发的裂缝，因为声学井筒扫描表明，绝大多数岩心压裂是钻井诱发的。例如，即使在最浅、岩芯裂缝最少的区域，岩心也出现了 275 处裂缝，而在声学扫描的同一截面中可以看到 40 处。因此，作为上限，天然裂缝将占岩心中观察到的裂缝总数的 15% 以下。在许多情况下，它会明显减少。事实上，在井筒扫描中，相对于天然裂缝，岩心压裂的普遍性可能会使任何将岩心盘与天然裂缝联系起来的尝试都变得徒劳无功。
+启发: 我可以研究岩心饼化前后的距离变化、研究不同的饼化厚度与矿物成分、力学强度之间的关系（这就涉及到另一个问题，微小的样本的力学强度测试是否合理？）
+作者信息: Andrew P. Bunger"
+278,Lac du Bonnet 花岗岩的岩心盘及其与应力大小的关系 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160909001749?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,非常重要，分析了岩芯饼化厚度与应力之间的关系,根据岩芯饼归一化厚度（厚度与直径的关系），划分了不同的饼化级别与应力条件的关系,,S.S. Lim，C.D. Martin,,,,"标记: 非常重要，分析了岩芯饼化厚度与应力之间的关系
+评价: 根据岩芯饼归一化厚度（厚度与直径的关系），划分了不同的饼化级别与应力条件的关系
+作者信息: S.S. Lim，C.D. Martin"
+279,通过实验室测试对钻孔引起的岩芯损伤进行定量研究 |Acta Geotechnica,https://link.springer.com/article/10.1007/s11440-023-01917-1?fromPaywallRec=false,10.1007/s11440-023-01917-1,link.springer.com,Springer,auto_pdf_candidate,article_candidate,研究非常全面，在不同围压下进行花岗岩钻孔，研究岩芯饼化情况。,研究工作量很大，围压钻孔试验+单轴压缩力学试验+显微镜下裂缝分析,他没考虑温度、原生层理分布的影响,"Zhiheng Chen, Guan Rong, Junsong Quan & Lida Xu",,,,"标记: 研究非常全面，在不同围压下进行花岗岩钻孔，研究岩芯饼化情况。
+评价: 研究工作量很大，围压钻孔试验+单轴压缩力学试验+显微镜下裂缝分析
+启发: 他没考虑温度、原生层理分布的影响
+作者信息: Zhiheng Chen, Guan Rong, Junsong Quan & Lida Xu"
+280,"松科2号井在4,500 m以下深度提取的岩心的盘片行为及机理 - ScienceDirect",https://www.sciencedirect.com/science/article/pii/S1365160921003580?via%3Dihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,,钻井概况——饼化特征概述——饼化表面形貌扫描——饼化完整性系数——数值模拟结合松辽盆地地应力数据分析,"他这个饼化完整性分析存疑。
+不过他似乎研究了距离圆心不同位置的区域的粗糙度，我可以参考这个思路","高明中一个 b,郝海春一个,薛守宁c,佟璐 一个 b,崔鹏飞一个,高亚男d,谢静b,杨本高一个 b,谢和平一个 b",,,,"评价: 钻井概况——饼化特征概述——饼化表面形貌扫描——饼化完整性系数——数值模拟结合松辽盆地地应力数据分析
+启发: 他这个饼化完整性分析存疑。
+不过他似乎研究了距离圆心不同位置的区域的粗糙度，我可以参考这个思路
+作者信息: 高明中一个 b,郝海春一个,薛守宁c,佟璐 一个 b,崔鹏飞一个,高亚男d,谢静b,杨本高一个 b,谢和平一个 b"
+281,岩芯钻探引起的岩心直径变形和断裂的数值模拟 |阿拉伯地球科学杂志,https://link.springer.com/article/10.1007/s12517-021-09378-0?fromPaywallRec=false,10.1007/s12517-021-09378-0,link.springer.com,Springer,auto_pdf_candidate,article_candidate,结合DCDA的方法，通过abaqus数值模拟，研究了矿物各向异性对DCDA应力估计的影响,简单参考,如何模拟饼化的开裂？我记得有一篇类似论文,,,,,"标记: 结合DCDA的方法，通过abaqus数值模拟，研究了矿物各向异性对DCDA应力估计的影响
+评价: 简单参考
+启发: 如何模拟饼化的开裂？我记得有一篇类似论文"
+282,瑞士巴塞尔地热钻孔 4.9 km 深岩芯的直径岩芯变形评估和圆盘分析及其原位应力估计和应用 |岩石力学和岩石工程,https://link.springer.com/article/10.1007/s00603-021-02631-8?fromPaywallRec=false,10.1007/s00603-021-02631-8,link.springer.com,Springer,auto_pdf_candidate,article_candidate,非常重要的论文，讨论部分要好好看,"basel-1钻井的概况（位置及周边情况、岩性情况、力学强度测试结果）——DCDA测量（对比了CMM方法与点云扫描方法的差异，证明点云扫描的精度足够）、饼化轨迹分析、不同方向波速测量、和数值模拟。
+数值模拟研究了各向同性、各向异性对DCDA结果的影响，结果证明各向异性显著影响DCDA准确性","当前的DCDA方法只针对均质岩石材料，对于非均质的还没有好的解决办法
+现在是应力释放研究DCDA，我能不能用加载研究？但是好像不行，力没有办法均匀加载，也就是没有办法获得加载以后的圆的变形情况
+另外，现在马鞍状表面粗糙形貌的研究有点问题，没人关注大波和小波的影响。我后续可以分析不同半径处、去波情况对粗糙度的影响",Martin Ziegler & Benoît Valley,"""使用 Basel-1 核心时，我们从核心指标估计应力方向的能力是有限的，因为 Basel-1 核心没有定向。但是，我们可以探索独立估计量之间的相对一致性。""",,,"标记: 非常重要的论文，讨论部分要好好看
+评价: basel-1钻井的概况（位置及周边情况、岩性情况、力学强度测试结果）——DCDA测量（对比了CMM方法与点云扫描方法的差异，证明点云扫描的精度足够）、饼化轨迹分析、不同方向波速测量、和数值模拟。
+数值模拟研究了各向同性、各向异性对DCDA结果的影响，结果证明各向异性显著影响DCDA准确性
+启发: 当前的DCDA方法只针对均质岩石材料，对于非均质的还没有好的解决办法
+现在是应力释放研究DCDA，我能不能用加载研究？但是好像不行，力没有办法均匀加载，也就是没有办法获得加载以后的圆的变形情况
+另外，现在马鞍状表面粗糙形貌的研究有点问题，没人关注大波和小波的影响。我后续可以分析不同半径处、去波情况对粗糙度的影响
+作者信息: Martin Ziegler & Benoît Valley
+特点: ""使用 Basel-1 核心时，我们从核心指标估计应力方向的能力是有限的，因为 Basel-1 核心没有定向。但是，我们可以探索独立估计量之间的相对一致性。"""
+283,通过 X 射线 CT 成像进行深岩芯直径变形和节理粗糙度评估的应力估计,https://www.mdpi.com/1424-8220/20/23/6802,,www.mdpi.com,MDPI,auto_pdf_candidate,article_candidate,CT扫描、DCDA、表面粗糙度方向,基于CT数据研究了DCDA和表面粗糙度，讨论了DCDA应力方向性与表面粗糙方向性的差异与关系,,"Hanna Kim 1,Melvin B. Diaz 2,*,Joo Yeon Kim 2,Yong-Bok Jung 1 andKwang Yeom Kim 2,*",Yeo 等人，41显示关节平面中的流体流动可以是各向异性的，在垂直于剪切位移的方向上流动更多  ？？？,剪切位移对岩石裂缝孔径和渗透率的影响 - ScienceDirect,,"标记: CT扫描、DCDA、表面粗糙度方向
+评价: 基于CT数据研究了DCDA和表面粗糙度，讨论了DCDA应力方向性与表面粗糙方向性的差异与关系
+作者信息: Hanna Kim 1,Melvin B. Diaz 2,*,Joo Yeon Kim 2,Yong-Bok Jung 1 andKwang Yeom Kim 2,*
+特点: Yeo 等人，41显示关节平面中的流体流动可以是各向异性的，在垂直于剪切位移的方向上流动更多  ？？？
+结论: 剪切位移对岩石裂缝孔径和渗透率的影响 - ScienceDirect"
+284,利用X射线计算机断层扫描技术表征深岩心中开放和封闭岩石节理的表面粗糙度 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1365160917301594?via=ihub,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,CT扫描岩芯，分析粗糙度，粗糙度方向性,采样区域大小与JRC、JRC各向异性,,,,,,"标记: CT扫描岩芯，分析粗糙度，粗糙度方向性
+评价: 采样区域大小与JRC、JRC各向异性"
+290,使用不同冷却介质进行热处理后花岗岩的物理力学性能 - ScienceDirect,https://www.sciencedirect.com/science/article/pii/S1674775524005146,,www.sciencedirect.com,ScienceDirect,manual_or_institution_required,article_candidate,花岗岩 不同冷却介质冷却,实验做得很全，但是数据分析很浅,可以参考他的一些数据,"Haiyan Zhu a b, Zixi Jiao a b, Peng Zhao c, Xuanhe Tang a b, Shijie Chen a b, Lei Tao a b",,,,"标记: 花岗岩 不同冷却介质冷却
+评价: 实验做得很全，但是数据分析很浅
+启发: 可以参考他的一些数据
+作者信息: Haiyan Zhu a b, Zixi Jiao a b, Peng Zhao c, Xuanhe Tang a b, Shijie Chen a b, Lei Tao a b"

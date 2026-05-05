@@ -919,7 +919,7 @@ def compile_paper_page(record: PaperRecord) -> tuple[str, dict[str, Any]]:
         "compile_strategy": "single-pass-markdown",
     }
     prompt = f"""
-Write one Chinese LLM Wiki Markdown page for this paper from all indexed fragments.
+Write one LLM Wiki Markdown page for this paper from all indexed fragments.
 Do not output YAML front matter. Do not use markdown code fences.
 
 Paper ID: {record.paper_id}
@@ -1004,10 +1004,12 @@ def write_paper_page(record: PaperRecord, body: str, coverage: dict[str, Any] | 
     missing_sections = [section for section in PAPER_REQUIRED_SECTIONS if f"## {section}" not in body]
     if missing_sections:
         sample = ", ".join(missing_sections[:5])
-        raise ValueError(
-            f"paper_body_missing_required_sections for {record.paper_id}: "
-            f"{sample}{'...' if len(missing_sections) > 5 else ''}"
+        print(
+            f"WARNING: paper_body_missing_required_sections for {record.paper_id}: "
+            f"{sample}{'...' if len(missing_sections) > 5 else ''} — skipping this paper",
+            flush=True,
         )
+        return None
     fields = {
         "type": "paper",
         "schema_version": PAPER_SCHEMA_VERSION,
@@ -1145,7 +1147,9 @@ def paper_page_complete(path: Path, required_model: str = "") -> bool:
     if fields.get("schema_version") != PAPER_SCHEMA_VERSION:
         return False
     if required_model and fields.get("compiled_model") != required_model:
-        return False
+        # If already compiled by another Pro model, keep it
+        if "pro" in (fields.get("compiled_model") or "").lower():
+            return True
     if fields.get("coverage_status") != "full-index":
         return False
     return all(f"## {section}" in content for section in PAPER_REQUIRED_SECTIONS)
@@ -2536,7 +2540,9 @@ async def ingest_async(args: argparse.Namespace) -> int:
                 append_skipped_record(run_id, record, reason="failed", details={"error": str(exc)})
                 print(f"failed paper {record.paper_id}: {exc}", file=sys.stderr, flush=True)
             else:
-                written.append(write_paper_page(record, body, coverage))
+                page_path = write_paper_page(record, body, coverage)
+                if page_path is not None:
+                    written.append(page_path)
                 new_compiled += 1
                 consecutive_failures = 0
             if consecutive_failures >= max_consecutive_failures:

@@ -229,9 +229,30 @@ def make_settings(
     )
 
 
-def deepseek_model_name() -> str:
+def llm_model_name() -> str:
     model = os.environ.get("PQA_LLM_MODEL", DEFAULT_LLM_MODEL)
-    return model.removeprefix("deepseek/")
+    return model.split("/", 1)[1] if "/" in model else model
+
+
+def llm_api_config() -> tuple[str, str, str]:
+    """Returns (api_base, api_key, model_name) based on model prefix."""
+    model = os.environ.get("PQA_LLM_MODEL", DEFAULT_LLM_MODEL)
+    prefix = model.split("/", 1)[0] if "/" in model else ""
+    model_name = model.split("/", 1)[1] if "/" in model else model
+
+    if prefix == "mimo":
+        api_base = os.environ.get("MIMO_BASE_URL", "https://token-plan-cn.xiaomimimo.com/v1").rstrip("/")
+        api_key = os.environ.get("MIMO_API_KEY", "").strip()
+        if not api_key:
+            raise RuntimeError("MIMO_API_KEY is missing in .env.")
+        return api_base, api_key, model_name
+
+    # Default: DeepSeek
+    api_base = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com").rstrip("/")
+    api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
+    if not api_key:
+        raise RuntimeError("DEEPSEEK_API_KEY is missing in .env.")
+    return api_base, api_key, model_name
 
 
 def apply_llm_model_override(model: str | None) -> None:
@@ -262,7 +283,7 @@ def post_json(url: str, headers: dict[str, str], payload: dict, timeout: int) ->
         raise RuntimeError(f"Connection failed: {exc.reason}") from exc
 
 
-def call_deepseek(
+def call_llm(
     messages: list[dict[str, str]],
     *,
     temperature: float = 0.2,
@@ -272,16 +293,15 @@ def call_deepseek(
     max_tokens: int | None = None,
     response_format: dict[str, str] | None = None,
 ) -> tuple[str, dict]:
-    api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
-    if not api_key:
-        raise RuntimeError("DEEPSEEK_API_KEY is missing in .env.")
+    api_base, api_key, model_name = llm_api_config()
+    is_deepseek = "api.deepseek.com" in api_base
 
-    attempts = int(os.environ.get("DEEPSEEK_RETRY_ATTEMPTS", "3"))
+    attempts = int(os.environ.get("LLM_RETRY_ATTEMPTS", "3"))
     last_error: Exception | None = None
     for attempt in range(1, max(attempts, 1) + 1):
         try:
             payload: dict[str, Any] = {
-                "model": deepseek_model_name(),
+                "model": model_name,
                 "messages": messages,
             }
             if thinking is True:
@@ -295,13 +315,10 @@ def call_deepseek(
                 payload["max_tokens"] = max_tokens
             if response_format:
                 payload["response_format"] = response_format
-            # DeepSeek thinking mode ignores temperature. Keep it off explicit
-            # thinking calls so logs and requests match the API contract.
             if thinking is not True:
                 payload["temperature"] = temperature
             response = post_json(
-                os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com").rstrip("/")
-                + "/chat/completions",
+                api_base + "/chat/completions",
                 {
                     "Authorization": f"Bearer {api_key}",
                     "Content-Type": "application/json",
@@ -316,15 +333,19 @@ def call_deepseek(
                 raise
             wait_seconds = min(60, 2**attempt)
             print(
-                f"DeepSeek request failed on attempt {attempt}/{attempts}: {exc}; retrying in {wait_seconds}s",
+                f"LLM request failed on attempt {attempt}/{attempts}: {exc}; retrying in {wait_seconds}s",
                 file=sys.stderr,
                 flush=True,
             )
             time.sleep(wait_seconds)
     else:
-        raise RuntimeError(f"DeepSeek request failed: {last_error}") from last_error
+        raise RuntimeError(f"LLM request failed: {last_error}") from last_error
     content = response["choices"][0]["message"].get("content", "")
     return content, response.get("usage", {})
+
+
+# Backward compatibility alias
+call_deepseek = call_llm
 
 
 def merge_usage(*usages: dict) -> dict:
@@ -1204,6 +1225,15 @@ async def answer_chat(
         )
         contexts, context_budget_meta = budget_contexts(wiki_hits + paper_hits)
         context_budget_meta = {**wiki_retrieval_meta, **context_budget_meta}
+        # If top relevance is too low, discard — question is off-topic
+        if contexts:
+            top_score = max(
+                (float(c.get("rank_score", c.get("score", 0)) or 0) for c in contexts),
+                default=0,
+            )
+            min_score = float_env("PQA_MIN_RELEVANCE_SCORE", 300)
+            if top_score < min_score:
+                contexts = []
 
     context_text, references, source_items = format_local_context(contexts)
     synthesis_plan = ""
@@ -1232,7 +1262,7 @@ async def answer_chat(
         "cost": 0,
         "route": route,
         "knowledge_mode": knowledge,
-        "model": deepseek_model_name(),
+        "model": llm_model_name(),
         "synthesis_layer": bool(synthesis_plan),
         "search_query": search_query,
         "retrieval": {
@@ -1337,7 +1367,7 @@ def build_parser() -> argparse.ArgumentParser:
     chat_parser.add_argument("--format", choices=["text", "json"], default="text")
     chat_parser.add_argument(
         "--model",
-        choices=["deepseek/deepseek-v4-flash", "deepseek/deepseek-v4-pro"],
+        choices=["deepseek/deepseek-v4-flash", "deepseek/deepseek-v4-pro", "mimo/mimo-v2.5-pro"],
         default=None,
         help="Override the DeepSeek model for this request.",
     )
